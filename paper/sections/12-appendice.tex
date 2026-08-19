@@ -13,36 +13,69 @@ paired differences the exact permutation test is the sign flip --- under the nul
 binary's difference is exchangeable --- and with $2^{45}$ assignments we sample 50{,}000 at a declared
 seed and report the Monte Carlo error of the $p$ itself, a sampled $p$ being an estimate.
 
-\begin{table}[h]
-\centering
-\caption{Sign-flip permutation against the pre-registered Student's $t$. Holm applies the same
-fixed $m=10$ as the pre-registered family.}
-\label{tab:permutazione}
-\footnotesize
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}lrrrr@{}}
-\toprule
-& $p$ Student & $p$ permutation & MC error & difference \\
-\midrule
-T6 & 0.0191 & 0.0135 & 0.0008 & $-0.0055$ \\
-T3 & 0.0218 & 0.0228 & 0.0011 & $+0.0010$ \\
-T1 & 0.0334 & 0.0319 & 0.0012 & $-0.0014$ \\
-T2 & 0.1107 & 0.1194 & 0.0023 & $+0.0087$ \\
-T5 & 0.1159 & 0.1205 & 0.0023 & $+0.0046$ \\
-T8 & 0.2844 & 0.3267 & 0.0033 & $+0.0423$ \\
-T7 & 0.2095 & 0.5032 & 0.0035 & $+0.2937$ \\
-T4 & 0.6363 & 0.7754 & 0.0030 & $+0.1391$ \\
-\bottomrule
-\end{tabular}
-\end{table}
+\input{tables/permutazione}
 
-\textbf{No test passes Holm under either series}, so the family outcome does not depend on the
-distributional assumption and the objection closes without altering anything pre-registered.
+\textbf{No test passes Holm under any of the three series}, so the family outcome does not depend on the
+distributional assumption, and nothing pre-registered changes.
 
 Two contrasts disagree by more than the Monte Carlo error, informatively: T7 moves from 0.21 to 0.50 and
 T4 from 0.64 to 0.78, and both are the contrasts with the smallest observed variance, where the $t$
 divides by a standard error the permutation test never uses. That the $t$ reports smaller $p$ exactly
 where variance is smallest is the mechanism rather than a coincidence, and it supports the reading of
-\S\ref{sec:results}: T7's narrow interval reflects absence of noise rather than power. This analysis is
-not pre-registered and does not replace the frozen one --- had the two diverged on the family outcome the
-reportable conclusion would still be the pre-registered one, with the divergence declared.
+\S\ref{sec:results}: T7's narrow interval reflects how little that cell varies, not how much evidence it
+carries. This analysis is a sensitivity
+result and does not replace the frozen one: had the series diverged on the family outcome, the reportable
+conclusion would be the pre-registered one with the divergence stated beside it.
+
+\section{A run-level model, and what it changes}
+\label{sec:appendice-glmm}
+
+The pre-registered test operates on per-binary means. A reader may ask what a model at run level would
+have found, and the released rows allow the answer to be computed rather than argued. A marginal binomial
+model with cluster-robust errors --- GEE with exchangeable working correlation, clustered on the binary,
+over each contrast's individual test outcomes --- gives $z{=}-2.43$ ($p{=}0.0152$) on T3, $z{=}-2.45$
+($p{=}0.0142$) on T6, and $z{=}1.63$ ($p{=}0.1039$) on T5. That is the frozen test's reading: the same two
+nominal significances, the same non-significance, and nothing surviving Holm at $m{=}10$. The run-level
+structure changes no conclusion.
+
+The same script also fits a variational binomial mixed model, and we report it as a caution rather than a
+result: it returns $|z|$ between 5 and 17 on the same contrasts where the paired $t$ and the GEE both give
+$|z|$ between 1.6 and 2.5, which is the signature of a variational approximation understating posterior
+uncertainty, not of an effect the design missed. Both fits are exploratory, enter no family, and their
+reading criterion was written into the script before the numbers existed.
+
+\section{Provenance of the re-collection's concordance diagnostics}
+\label{sec:appendice-provenienza}
+
+\S\ref{sec:threats} grounds the re-collection's role in the apparatus: the shared-workspace mechanism is
+absent there by construction. The four concordance diagnostics are a separate instrument, and this appendix
+records their provenance so that a reader auditing the artifact finds the timings already stated rather
+than having to reconstruct them. Every figure recomputes from the released rows.
+
+\begin{table}[h]
+\centering
+\caption{What existed when each artefact carrying the four thresholds was written. Shares are of the 5{,}880 rows the re-collection
+eventually produced, which yield the 5{,}809 valid measurements reported elsewhere. ``Contrasts computable'' counts how many of the eight
+paired contrasts had both their cells complete at that moment. All three counts are reconstructed from the
+timestamps carried by the released rows, at the exact second of each event; the git history is what dates
+the events, not what supplies the counts.}
+\label{tab:provenienza}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}P{0.34\linewidth}rrr@{}}
+\toprule
+artefact and timestamp & rows & share & contrasts computable \\
+\midrule
+analysis script, file timestamp & 112 & 1.9\% & 0 of 8 \\
+amendment prose, file timestamp & 1{,}611 & 27.4\% & 2 of 8 \\
+both, entering version control & 4{,}318 & 73.4\% & 5 of 8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. Relative to the re-collection, the thresholds were fixed while the batch had produced
+one cell of sixteen from a single model, and six of the eight paired contrasts remained uncomputable even
+at the latest of the three timestamps. Relative to the original collection, which had completed, they were
+fixed with its outcome known. The four are accordingly used as \textbf{pre-specified concordance
+diagnostics on a comparison}, and the choice of primary basis rests on the apparatus (\S\ref{sec:threats}),
+where the contaminating mechanism is absent by construction.

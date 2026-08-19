@@ -129,4 +129,4 @@ if __name__ == "__main__":
     print(f"    una graduatoria concorda con se stessa su tutte le coppie: "
           f"{'ok' if ok3 else 'FALLITO'}")
     if not all([ok1, ok2, ok3]):
-        raise SystemExit("  il calcolo del bound non rispetta le sue proprieta' (exit 2)")
+        raise SystemExit("  il calcolo del bound non rispetta le sue proprieta'")

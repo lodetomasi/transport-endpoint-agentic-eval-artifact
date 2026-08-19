@@ -67,7 +67,7 @@ calcolo di potenza.
 |---|---|
 | `README.md` | riformulare — non è congelato |
 | `research/CENSIMENTO.md` | riformulare — non è congelato |
-| `DIREZIONI.md` §C2, in `onus.ai` | riformulare — altro repository |
+| `DIREZIONI.md` §C2, in `<altro-repository>` | riformulare — altro repository |
 | `PREREGISTRAZIONE.md` §2 | **non si tocca** |
 
 `PERCORSO.md` §8 voce 1 diceva di applicarla anche alla pre-registrazione. **Non si fa**: la

@@ -6,7 +6,7 @@ dopo: una guardia si prova prima, e nei due sensi. Il senso che manca piu' spess
 secondo — senza di esso, una funzione che dichiara *tutto* incompleto passerebbe il primo
 controllo e sembrerebbe corretta.
 
-Cosa proteggono: `onus:harness-critic` ha verificato che la ri-raccolta scritta di getto
+Cosa proteggono: `<revisione-avversariale-dell-apparato>` ha verificato che la ri-raccolta scritta di getto
 avrebbe (a) risposto «CHIUSA gia'» su tutte e sedici le celle spendendo zero con exit 0,
 oppure (b) sovrascritto le 5.760 traiettorie della raccolta originale, perche' il tag della
 workdir si deriva dallo STEM del file e non dal percorso.

@@ -38,27 +38,32 @@ You're missing a field name---line 140 of file references.bib
  : %  [nota di verifica, non stampata]
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 319 of file references.bib
+You're missing a field name---line 333 of file references.bib
  : 
  : %  [nota di verifica, non stampata] PDF letto in proprio il 2026-08-15, v7 del 12/06/2026.
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 344 of file references.bib
+You're missing a field name---line 358 of file references.bib
  : 
  : %  [nota di verifica, non stampata] PDF letto in proprio il 2026-08-15. Verbatim:
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 360 of file references.bib
+You're missing a field name---line 375 of file references.bib
  : 
  : %  [nota di verifica, non stampata] PDF letto in proprio il 2026-08-16, v3 del 17/11/2025.
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 389 of file references.bib
+You're missing a field name---line 404 of file references.bib
  : 
  : %  [nota di verifica, non stampata] Metadati verificati il 2026-08-16. Documenta che una
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 432 of file references.bib
+ : 
+ : %  [nota di verifica, non stampata] Abstract fetchato il 2026-08-19 da arxiv.org/abs/2410.20247,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in bfcl-leaderboard
 Warning--to sort, need author or key in bfcl-issue606
 Warning--empty year in bfcl-issue606
-(There were 11 error messages)
+(There were 12 error messages)

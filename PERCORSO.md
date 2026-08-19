@@ -140,7 +140,7 @@ incrocia il trasporto con l'identità del cloud gestito a parità di pesi, né c
 cancellazione di un modello come effetto di selezione di prima classe.
 
 *Da applicare a `PREREGISTRAZIONE.md` §2, `research/CENSIMENTO.md`, `README.md` e
-`DIREZIONI.md` §C2 (in `onus.ai`) — è una riformulazione, non un cambio di disegno.*
+`DIREZIONI.md` §C2 (in `<altro-repository>`) — è una riformulazione, non un cambio di disegno.*
 
 ---
 
@@ -221,7 +221,7 @@ turni ed è provvisorio; si ricalcola a cella chiusa.
 
 ## 6-ter. Il nome dell'algoritmo arrivava al modello — e la raccolta è ripartita da zero
 
-**2026-08-14.** Trovato da `onus:harness-critic`, verificato di persona, e due dei tre canali il
+**2026-08-14.** Trovato da `<revisione-avversariale-dell-apparato>`, verificato di persona, e due dei tre canali il
 critico non li aveva visti. → `registro/EMENDAMENTO-03-nome-algoritmo.md`.
 
 | canale | stato |
@@ -339,7 +339,7 @@ n = 4, e **non** una conferma indipendente. Trovato dall'auditor, non da noi.
 4. Correggere l'etichetta «test esatto sulle stesse quantità» per T9: il misto usa entrambe le
    infrastrutture, l'esatto solo Databricks.
 5. Ricondurre a una sola fonte il seme di C1: `PREREGISTRAZIONE.md` §1 dice «+3,0 / −10,4»,
-   `DIREZIONI.md` di `onus.ai` dice «+2,8 / −10,7». `potenza.py` ricalcola dai CSV, quindi la potenza non è
+   `DIREZIONI.md` di `<altro-repository>` dice «+2,8 / −10,7». `potenza.py` ricalcola dai CSV, quindi la potenza non è
    affetta — ma il testo deve dire un numero solo.
 6. L'immagine Docker nel deposito.
 
@@ -359,9 +359,9 @@ $139,58 di un tetto di $200. Il grafo di ricerca è al nodo `write`, con `test` 
 
 ```bash
 cd ~/c2-tool-transport
-python3 ~/onus-v5.2/plugins/onus/scripts/graph.py status    # dove siamo sul grafo
+python3 ~/<tooling>/graph.py status    # dove siamo sul grafo
 ./verifica_hash.sh                                          # i 5 congelati sono intatti?
-python3 ~/onus-v5.2/plugins/onus/scripts/paper.py scan paper --strict
+python3 ~/<tooling>/paper.py scan paper --strict
 ```
 
 **Non riavviare la raccolta.** È finita, la sorveglianza ha rilevato la quiete da sé e ha
@@ -370,7 +370,7 @@ sono state rimosse perché eseguirle ora produrrebbe run che nessuna cella aspet
 
 ### Cosa resta, in ordine
 
-1. **`gate_paper`**: il gauntlet completo su `paper/`, `/onus:judge paper/ paper`. Pretende
+1. **`gate_paper`**: il gauntlet completo su `paper/`, `/<gauntlet-di-revisione> paper/ paper`. Pretende
    `ironrules.py verify` a zero, zero Fatal aperti, verdetto di riproducibilità
    *Reproducible*, e decisione accept o minor-revision.
 2. **Il conteggio delle pagine**, che nessuno ha ancora fatto: `pdflatex` non è nella shell di

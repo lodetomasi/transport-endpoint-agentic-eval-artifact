@@ -132,7 +132,7 @@ def autotest():
         esiti.append(n == atteso)
         print(f"    {'ok  ' if n == atteso else 'FALLITO'} {eti:<52} -> {n} (atteso {atteso})")
     if not all(esiti):
-        raise SystemExit("  il metodo di conteggio non rispetta le sue proprieta' (exit 2)")
+        raise SystemExit("  il metodo di conteggio non rispetta le sue proprieta'")
     print()
 
 

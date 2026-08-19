@@ -1,0 +1,17 @@
+cell	N	median_turns	Q1	Q3	pct_reaching_budget	pct_early_termination	termination_reason
+c2r_claude-haiku-4-5_bedrock_native	362	4.0	3.0	5.0	0.00	100.00	sottomissione via tool 362
+c2r_claude-haiku-4-5_bedrock_text	362	4.0	4.0	5.0	0.00	100.00	turno finale di sottomissione 362
+c2r_claude-haiku-4-5_databricks_native	362	4.0	3.0	5.0	0.00	100.00	sottomissione via tool 362
+c2r_claude-haiku-4-5_databricks_text	361	4.0	4.0	5.0	0.00	100.00	turno finale di sottomissione 361
+c2r_claude-sonnet-4-5_bedrock_native	362	3.0	3.0	4.0	0.00	100.00	sottomissione via tool 362
+c2r_claude-sonnet-4-5_bedrock_text	360	5.0	4.0	6.0	0.00	100.00	turno finale di sottomissione 360
+c2r_claude-sonnet-4-5_databricks_native	360	3.0	3.0	4.0	0.00	100.00	sottomissione via tool 360
+c2r_claude-sonnet-4-5_databricks_text	362	5.0	4.0	5.0	0.00	100.00	turno finale di sottomissione 362
+c2r_gpt-oss-120b_bedrock_native	397	6.0	4.0	8.0	6.30	93.70	sottomissione via tool 349, budget esaurito 25, fallimento infrastruttura 23
+c2r_gpt-oss-120b_bedrock_text	366	4.0	3.0	4.0	0.00	100.00	turno finale di sottomissione 361, fallimento infrastruttura 5
+c2r_gpt-oss-120b_databricks_native	419	5.0	4.0	7.0	10.02	89.98	sottomissione via tool 354, budget esaurito 42, fallimento infrastruttura 23
+c2r_gpt-oss-120b_databricks_text	364	3.0	3.0	3.0	0.00	100.00	turno finale di sottomissione 360, fallimento infrastruttura 4
+c2r_llama-3.3-70b_bedrock_native	360	4.0	4.0	4.0	0.00	100.00	sottomissione via tool 360
+c2r_llama-3.3-70b_bedrock_text	361	4.0	4.0	5.0	0.00	100.00	turno finale di sottomissione 355, sottomissione via tool 6
+c2r_llama-3.3-70b_databricks_native	360	6.0	5.0	7.0	0.28	99.72	sottomissione via tool 359, budget esaurito 1
+c2r_llama-3.3-70b_databricks_text	362	4.0	4.0	5.0	0.00	100.00	turno finale di sottomissione 356, sottomissione via tool 6

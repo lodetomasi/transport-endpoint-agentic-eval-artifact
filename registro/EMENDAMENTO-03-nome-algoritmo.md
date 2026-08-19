@@ -1,7 +1,7 @@
 # Emendamento 03 — il nome dell'algoritmo arrivava al modello, da tre canali
 
 **Data**: 2026-08-14, scritto **prima** della modifica.
-**Trovato da**: `onus:harness-critic` (il primo canale), poi verificato di persona — e il
+**Trovato da**: `<revisione-avversariale-dell-apparato>` (il primo canale), poi verificato di persona — e il
 secondo e il terzo il critico non li aveva visti.
 **Stato**: raccolta **ferma**, 2.390 misurazioni, $17,08 spesi.
 

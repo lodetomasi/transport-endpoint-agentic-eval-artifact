@@ -1,0 +1,18 @@
+{
+  "prima": {
+    "parole": 14160,
+    "tabelle": 11,
+    "figure": 2,
+    "meccanismi": 8,
+    "RQ": 6,
+    "test": 9
+  },
+  "dopo": {
+    "parole": 15315,
+    "tabelle": 11,
+    "figure": 2,
+    "meccanismi": 8,
+    "RQ": 6,
+    "test": 9
+  }
+}

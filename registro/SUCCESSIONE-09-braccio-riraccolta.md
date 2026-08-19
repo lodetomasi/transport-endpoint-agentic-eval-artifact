@@ -1,7 +1,7 @@
 # Successione 09 — un terzo braccio: la ri-raccolta isolata
 
 **Data**: 2026-08-15, scritta **prima** della modifica e **prima** di spendere.
-**Innesco**: `EMENDAMENTO-06` decide la ri-raccolta; `onus:harness-critic`, convocato dal gate
+**Innesco**: `EMENDAMENTO-06` decide la ri-raccolta; `<revisione-avversariale-dell-apparato>`, convocato dal gate
 dei $5, ha verificato che **il codice per eseguirla non esiste** e ha trovato quattro modi in
 cui scriverlo di getto avrebbe distrutto dati o comprato righe che nessuno legge.
 

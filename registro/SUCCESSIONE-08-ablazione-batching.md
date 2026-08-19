@@ -71,7 +71,7 @@ fatto nascere il primo CSV dell'ablazione come `_redo2`, prendendo il posto libe
 del confermativo.
 
 Entrambe ora passano da `percorso_cella()`, che è l'unico posto dove si decide dove sta il file
-di una cella. La prima l'ha trovata `onus:harness-critic` prima della raccolta; la seconda è
+di una cella. La prima l'ha trovata `<revisione-avversariale-dell-apparato>` prima della raccolta; la seconda è
 saltata fuori guardando il nome del primo file prodotto.
 
 ## Il costo, e perché si ferma qui

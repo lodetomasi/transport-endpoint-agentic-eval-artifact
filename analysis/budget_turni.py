@@ -35,7 +35,7 @@ def trasporto(cella):
     Con un test di sottostringa, `c2a_..._native1` — il tag del braccio di ablazione —
     risultava "nativo", e le sue traiettorie sarebbero finite nel bucket che sostiene
     l'argomento sul confondimento del batching, gonfiandolo con dati che nativo pieno non
-    sono. Trovato da `onus:harness-critic` prima che l'ablazione raccogliesse.
+    sono. Trovato da `<revisione-avversariale-dell-apparato>` prima che l'ablazione raccogliesse.
     """
     # Il tag e' c2_<modello>_<infra>_<trasporto>[<suffisso di ripresa>]. Il trasporto va
     # riconosciuto con un confine: `endswith` da solo perde tutte le riesecuzioni (_redo,
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     print(f"  traiettorie totali: {n_tot}")
     if not n_tot:
         raise SystemExit(f"  nessuna traiettoria con prefisso {PREFISSO!r}: il filtro scarta "
-                         "tutto, e zero non e' una misura (exit 2)")
+                         "tutto, e zero non e' una misura")
     print(f"  che esauriscono il budget: {n_pieni}  ({100*n_pieni/n_tot:.1f}%)\n")
     print(f"  {'braccio':<12}{'totali':>8}{'al budget':>12}{'quota':>9}")
     for tr in ("nativo", "testuale"):

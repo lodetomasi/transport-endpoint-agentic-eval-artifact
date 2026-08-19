@@ -34,6 +34,14 @@ esclusione.
 | 04 | `src/raccogli_c2.py` | [SUCCESSIONE-04-partizione.md](registro/SUCCESSIONE-04-partizione.md) |
 | 05 | `src/llm/llm_client.py` | [SUCCESSIONE-05-toolconfig-converse.md](registro/SUCCESSIONE-05-toolconfig-converse.md) |
 | 06 | `src/raccogli_c2.py` | [SUCCESSIONE-06-sesto-meccanismo.md](registro/SUCCESSIONE-06-sesto-meccanismo.md) |
+| 07 | (nessun file congelato: dichiara la minaccia della workdir condivisa) | [SUCCESSIONE-07-rischio-workdir.md](registro/SUCCESSIONE-07-rischio-workdir.md) |
+| 08 | `src/raccogli_c2.py` | [SUCCESSIONE-08-ablazione-batching.md](registro/SUCCESSIONE-08-ablazione-batching.md) |
+| 09 | `src/raccogli_c2.py`, `src/completa_celle.py` | [SUCCESSIONE-09-braccio-riraccolta.md](registro/SUCCESSIONE-09-braccio-riraccolta.md) |
+
+Le voci 08 e 09 toccano lo stesso file gia' coperto dalle voci piu' vecchie: e' la catena, non una
+duplicazione. Questo indice elencava sei voci mentre sul disco ce n'erano nove — la guardia automatica
+non ne risentiva (verifica `verifica_hash.sh` legge la directory, non questa tabella), ma un lettore
+umano sottocontava di un terzo.
 
 Un documento di successione deve **nominare il file e dichiarare l'hash effettivo**. Nominarlo
 soltanto non basta: una successione qualunque nel passato del file coprirebbe in silenzio ogni
@@ -58,7 +66,13 @@ timestamp dei dati grezzi. I numeri esatti, ognuno ricalcolabile dai CSV in `res
 
 - `confronto_riraccolta.py` scritto (mtime 2026-08-15 22:01) -> 112 righe su 5.880, **1,9%**
 - `EMENDAMENTO-06` scritto (mtime 2026-08-16 08:22) -> 1.611 righe, 27,4%
-- entrambi committati (`8e64dd9`, 2026-08-16 15:35) -> 4.315 righe, **73,4%**
+- entrambi committati (`8e64dd9`, 2026-08-16 15:35:36) -> 4.318 righe, **73,4%**
+
+I tre conteggi si ricalcolano dai timestamp delle righe in `results/riraccolta/` con
+`python3 revisione/stato_a_cutoff.py <istante>`, al **secondo esatto** dell'evento. Una versione
+precedente di questo elenco riportava 4.315 per il terzo, che e' lo stesso conteggio troncato al minuto:
+i due numeri non erano in disaccordo, erano a due precisioni. Vale la pena dirlo perche' e' il tipo di
+divergenza che un revisore trova e legge come un'incoerenza.
 
 (Elenco e non tabella di proposito: `verifica_hash.sh` legge ogni riga che inizia con una barra
 verticale come una voce «file | hash», quindi una tabella markdown in questo file gli fa

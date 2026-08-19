@@ -1,41 +1,68 @@
 \section{Method}
 \label{sec:method}
 
+This section fixes four things the rest of the paper rests on: what a trial measures, what the
+pre-registration froze together with the hypotheses, how a tool call travels under each transport, and
+which failures do not count as a measurement.
+
 \subsection{The task}
 
 Each trial gives a model one stripped x86-64 binary, decompiled with a static analysis server, and asks
 it to reconstruct compilable C source. The candidate is compiled in a pinned container and executed
-against the unit tests of the original program, and the score is the fraction that pass.
+against the unit tests of the original program, and the score is the fraction that pass. The suites ---
+five tests per binary --- are inherited with the corpus rather than sized by us, and what that granularity
+costs the variance decomposition is measured in \S\ref{sec:granularita}.
 
-Pass-rate is a \emph{lower bound} on semantic equivalence and we report it as such throughout: a
+Pass-rate is a \emph{lower bound} on semantic equivalence and it is reported as such throughout: a
 candidate correct but differing in an untested behaviour scores below one, and one wrong in an untested
-behaviour scores above its true worth. We use it because it is executable and adversarially hard to game,
+behaviour scores above its true worth. It is used because it is executable and adversarially hard to game,
 not because it is tight.
 
 \subsection{Pre-registration}
 
-The hypotheses, the test family, the falsifiers, and \emph{the analysis script} were frozen by
-content hash before a single row of data existed. Registered reports have been available in this
-field since 2020~\citep{ernst2023registered}; what we add is the second half of that freeze.
+The hypotheses, the test family, the falsifiers, and \emph{the analysis script} were frozen by content
+hash on 2026-08-13 at 22:00, and the first data row of any batch is timestamped 32 minutes later; the
+first row of the batch this paper retains is 22 hours later. Both precedences are verifiable from the
+committed history. Registered reports have been available in this field since
+2020~\citep{ernst2023registered}; what we add is the second half of that freeze.
 
-Two of the ten tests are an exception we state here rather than let a reader find it in the artifact,
-because the exception is the more informative case. T9 (heterogeneity across models) and T10
-(transport $\times$ infrastructure interaction) were declared in the family at the freeze but emitted a
-non-computable $p$, and were implemented eleven hours later under a dated succession document written
-\emph{before} the change. Collection had begun, so the freeze does not cover them strictly, and their
-guarantee is a weaker but checkable property: neither could be informed by the data that existed ---
-three cells were on disk, all of a \emph{single} model, while T9 compares the transport effect
-\emph{between} models and T10 needs both transports on both infrastructures, one of which had not
-started. Both entered Holm at the $m=10$ fixed before any data existed, so the correction they face was
-not chosen after seeing them. Fixing the hypotheses while writing the analysis after seeing the data
-leaves intact every degree of freedom pre-registration exists to remove: which test, on which subset,
-with which exclusion. Every subsequent change to a frozen file is documented before the change and
-checked by a guard, and the register is in the artifact.
+\textbf{Two of the ten tests carry a different status.} T9 (heterogeneity across models) and T10 (transport $\times$ infrastructure
+interaction) belong to the family fixed at the freeze, but the frozen script emitted a non-computable $p$
+for them; they were implemented eleven hours after the freeze, under a dated succession document written
+\emph{before} the change. Collection had begun by then, so their implementation is covered by a
+timestamped amendment rather than by the freeze. What is checkable is the state of the data at that
+moment: 861 rows, in three cells of a \emph{single} model. T9 compares the transport effect \emph{between}
+models and T10 needs both transports on both infrastructures, so neither test was computable from what
+existed. Both entered Holm at the $m=10$ fixed
+before any data existed, so the correction they face was not chosen after seeing them. What was inspected before writing that document was the row count and the schema validity of
+what existed; no per-model result was computed or read. Every subsequent change to a frozen file is
+documented before the change and checked by a guard, and the register is in the artifact.
+
+\begin{table}[h]
+\caption{The three batches the text names, and where each ended. The 861 rows visible when T9 and T10 were
+implemented belong to the batch later invalidated for the algorithm-name leak, so they are not part of
+either collection this paper reports.}
+\label{tab:lotti}
+\centering
+\small
+\begin{tabular}{@{}P{0.30\linewidth}rP{0.42\linewidth}@{}}
+\toprule
+batch & rows & where it ended \\
+\midrule
+algorithm-name leak & 2{,}390 & invalidated and retained; the 861 rows visible at the T9/T10 amendment are inside it \\
+Bedrock final-turn (M7) & 453 & invalidated and retained; that cell re-collected against a corrected client \\
+original collection & 5{,}805 & reported throughout beside the primary basis \\
+isolated-workspace re-collection & 5{,}809 & the primary basis (\S\ref{sec:results}) \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{The two transports}
 
 The manipulated variable is how a tool call travels between the model and the harness. Both
-transports offer the same tools, the same schemas, and the same twelve turns.
+transports offer the same four tools, the same schemas, and the same budget: twelve exploration turns
+plus one mandatory final submission turn. A trajectory ends when the model submits a candidate through
+the \texttt{submit\_candidate} tool, or when the budget is exhausted and the final turn is taken.
 
 \textbf{Native.} The request carries a \texttt{tools} field. The model emits a structured
 tool-call object, which the runtime parses; results return in the role the provider's API
@@ -74,11 +101,11 @@ would end the trajectory at turn one and score the protocol rather than the mode
 
 \subsection{What counts as a measurement}
 
-One predicate decides whether a row is a measurement, and collector and analysis use the same one --- two
-definitions of validity, one per half of a pipeline, diverge silently. It has two clauses, and we state
-them here because every number in this paper is computed over the rows they admit: a row is a measurement
+One predicate decides whether a row is a measurement, and collector and analysis use the same one, because
+two definitions of validity, one per half of a pipeline, diverge silently. It has two clauses, and they are stated
+here because every number in this paper is computed over the rows they admit: a row is a measurement
 unless the endpoint reported an infrastructure failure, or the harness itself raised. Rows the predicate
-rejects are kept in the released data with the reason attached --- they are the subject of
-\S\ref{sec:census}, not attrition --- and the artifact states the failure that motivated each clause.
+rejects are kept in the released data with the reason attached, since they are the subject of
+\S\ref{sec:census} rather than attrition, and the deposit states the failure that motivated each clause.
 
 

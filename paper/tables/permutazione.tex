@@ -1,0 +1,22 @@
+% Generata da analysis/permutazione.py --latex — non modificare a mano.
+\begin{table}[h]
+\centering
+\caption{\textbf{Two sensitivity series beside the pre-registered one.} The \emph{frozen} column is the $p$ the pre-registered script emits and is the series Table~\ref{tab:tests} reports; the other two were computed after the data existed and are sensitivity analyses, not confirmatory results. \emph{Exact} is the exact Student series on the same paired quantities; \emph{sign-flip} is the distribution-free permutation on 50{,}000 sampled sign assignments at a declared seed. Holm applies the same fixed $m{=}10$ throughout. The Monte Carlo column is the standard error of the sampled $p$ itself: a $p$ obtained by sampling is an estimate, and reporting it without its uncertainty would be the error this paper objects to elsewhere. No test passes its Holm threshold under any of the three series, so the family outcome does not depend on which one is read.}
+\label{tab:permutazione}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+& $p$ frozen & $p$ exact & $p$ sign-flip & MC error & exact $\rightarrow$ flip \\
+\midrule
+T6 & 0.0155 & 0.0191 & 0.0137 & 0.0005 & $-0.0053$ \\
+T3 & 0.0181 & 0.0218 & 0.0223 & 0.0007 & $+0.0005$ \\
+T1 & 0.0290 & 0.0334 & 0.0332 & 0.0008 & $-0.0002$ \\
+T5 & 0.0893 & 0.1159 & 0.1206 & 0.0015 & $+0.0047$ \\
+T2 & 0.1055 & 0.1107 & 0.1214 & 0.0015 & $+0.0107$ \\
+T7 & 0.2054 & 0.2095 & 0.4999 & 0.0022 & $+0.2904$ \\
+T8 & 0.2812 & 0.2844 & 0.3232 & 0.0021 & $+0.0388$ \\
+T4 & 0.6358 & 0.6363 & 0.7751 & 0.0019 & $+0.1388$ \\
+\bottomrule
+\end{tabular}
+\end{table}

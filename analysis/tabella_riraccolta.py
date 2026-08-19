@@ -68,13 +68,14 @@ if __name__ == "__main__":
     print("% Generata da analysis/tabella_riraccolta.py — non modificare a mano.")
     print("\\begin{table}[t]")
     print("\\centering")
-    print("\\caption{The same eight contrasts measured twice: the original collection, and an "
-          "independent re-collection on workspaces isolated per cell. Differences in percentage "
-          "points; the last column states whether the re-collected effect falls inside the "
-          "original 95\\% interval. The criteria and their "
-          "thresholds were written before the comparison could be computed; their timing is "
-          "stated precisely in \\S\\ref{sec:threats}, where it is weaker than the "
-          "pre-registration's.}")
+    print("\\caption{The same eight contrasts measured twice: the original collection, and the "
+          "isolated-workspace re-collection that carries the primary analysis. Differences in "
+          "percentage points; the last column states whether the re-collected effect falls inside "
+          "the original 95\\% interval. The four thresholds are \\textbf{pre-specified "
+          "concordance diagnostics}, not a pre-registered rule: \\S\\ref{sec:threats} states "
+          "when each was written and against what was already known. What licenses the "
+          "re-collection as the primary basis is not these diagnostics but the apparatus: the "
+          "shared-workspace mechanism is removed by construction.}")
     print("\\label{tab:riraccolta}")
     print("\\footnotesize")
     print("\\setlength{\\tabcolsep}{5pt}")

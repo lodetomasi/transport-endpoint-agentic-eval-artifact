@@ -1,7 +1,7 @@
 # Redazione del deposito
 
 Questo deposito e' un **oggetto diverso** dal repository di lavoro: esportato senza `.git`,
-senza le cartelle di memoria degli agent, e con i nomi che identificano autore e
+senza le cartelle di memoria dell'assistente, e con i nomi che identificano autore e
 organizzazione sostituiti da segnaposto.
 
 **La sede e' a cieco singolo, quindi la redazione NON serve all'anonimato** — questo documento
@@ -31,6 +31,16 @@ stringa qui sotto e' stata sostituita ovunque comparisse, senza eccezioni per fi
 | _(withheld: la stessa in minuscolo)_ | `<organizzazione>` | la stessa in minuscolo |
 | _(withheld: sede di sottomissione di C1)_ | `<sede-anonima>` | sede di sottomissione di C1 |
 | _(withheld: sede di sottomissione di C1)_ | `<sede-anonima>` | sede di sottomissione di C1 |
+| _(withheld: cartella di memoria dell'assistente)_ | `<cartelle-agent>/` | cartella di memoria dell'assistente |
+| _(withheld: file di istruzioni del repository)_ | `<istruzioni-di-progetto>` | file di istruzioni del repository |
+| _(withheld: nome del tooling)_ | `<assistente>` | nome del tooling |
+| _(withheld: nome di un agent di revisione)_ | `<revisione-avversariale-dell-apparato>` | nome di un agent di revisione |
+| _(withheld: nome di un agent di revisione)_ | `<gauntlet-di-revisione>` | nome di un agent di revisione |
+| _(withheld: nome di un agent di revisione)_ | `<controllo-del-registro>` | nome di un agent di revisione |
+| _(withheld: lo stesso, in forma breve)_ | `<revisione-avversariale-dell-apparato>` | lo stesso, in forma breve |
+| _(withheld: percorso del tooling di ricerca)_ | `<tooling>` | percorso del tooling di ricerca |
+| _(withheld: nome di un repository del tooling)_ | `<altro-repository>` | nome di un repository del tooling |
+| _(withheld: nome di variabile d'ambiente che nomina il tooling)_ | `C2_PRICING` | nome di variabile d'ambiente che nomina il tooling |
 | _(withheld: titolo di C1, ricavato da references.bib)_ | `<titolo-capitolo-precedente>` | titolo di C1, ricavato da references.bib |
 | _(withheld: le prime cinque parole dello stesso titolo)_ | `<titolo-capitolo-precedente>` | le prime cinque parole dello stesso titolo |
 
@@ -61,7 +71,7 @@ Un revisore che ricalcola trova percio' due catene coerenti, e sa quale sta guar
   semplicemente fuori dal deposito.
 - **`results/workv3/`** — directory di lavoro della compilazione, sovrascritta per
   costruzione. Non e' una traccia di audit di niente, e includerla suggerirebbe che lo sia.
-- **le cartelle di memoria degli agent** (`.claude/`) — contenevano percorsi assoluti e il
+- **le cartelle di memoria dell'assistente** — contenevano percorsi assoluti e il
   nome della venue.
 
 ## Cosa c'e', e va letto sapendo cos'e'

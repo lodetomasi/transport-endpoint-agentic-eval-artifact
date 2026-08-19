@@ -42,7 +42,7 @@ def percorso_cella(eti, infra, trasporto, suf, braccio="confermativo"):
     regola viveva in due copie, il driver dell'ablazione chiedeva a questa funzione se la
     cella fosse completa e riceveva la risposta del braccio CONFERMATIVO — che e' chiuso.
     Il driver avrebbe stampato «CHIUSA gia'», speso zero e chiuso con successo, senza
-    raccogliere niente. Trovato da `onus:harness-critic` prima della raccolta.
+    raccogliere niente. Trovato da `<revisione-avversariale-dell-apparato>` prima della raccolta.
 
     IL PREFISSO NEL NOME NON E' COSMETICO. `run_minipilot` deriva il tag della workdir e
     della directory di traiettorie da `Path(--out).stem`, cioe' dal NOME e non dal percorso.
@@ -90,7 +90,7 @@ def prossimo_suffisso(eti, infra, trasporto, braccio="confermativo"):
     raccolta confermativa, il primo file dell'ablazione e' nato `_redo2` — un nome che
     dichiara una seconda ripresa dove c'era una prima raccolta. Peggio: con tutti e quattro i
     suffissi confermativi occupati, il driver sarebbe uscito con «esauriti i suffissi» per una
-    cella di ablazione vuota. Stesso difetto che `harness-critic` ha trovato in `deficit`, in
+    cella di ablazione vuota. Stesso difetto che `<revisione-avversariale-dell-apparato>` ha trovato in `deficit`, in
     una seconda funzione."""
     for suf in SUFFISSI:
         if not os.path.exists(percorso_cella(eti, infra, trasporto, suf, braccio)):

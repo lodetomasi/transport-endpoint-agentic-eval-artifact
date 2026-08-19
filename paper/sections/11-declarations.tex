@@ -12,9 +12,6 @@ This work received no specific grant from any funding agency. Inference costs we
 author's institution and are itemised per arm in the replication package, so the cost of each
 number is auditable beside the number.
 
-There are no acknowledgements: the author is the sole contributor, and this statement is therefore
-already separate from any.
-
 \subsection*{Ethical approval}
 
 Not applicable. The study involves no human participants and no personal data. It measures
@@ -23,9 +20,8 @@ published limits of both platforms, and reports the responses those endpoints re
 
 \subsection*{Informed consent}
 
-Not applicable. The study has no human participants, so there is no one from whom consent could
-be sought. The subjects of measurement are four commercial inference endpoints, and what was
-collected from them is the text they returned to documented requests.
+Not applicable. The study has no human participants. The subjects of measurement are commercial inference
+endpoints, and what was collected from them is the text they returned to documented requests.
 
 \subsection*{Author contributions}
 
@@ -47,38 +43,34 @@ by a script released with it, re-running from the released rows; no figure is dr
 % Il repository e' il deposito operativo, citato per URL; il DOI permanente si deposita
 % all'accettazione, perche' un DOI si ottiene depositando e non prima. La frase sotto dice
 % quello che e' vero oggi invece di promettere un identificatore che non esiste ancora.
-The two numbers this paper takes from the preceding chapter are re-runnable here: the deposit carries a
+The two numbers this paper takes from the companion study are re-runnable here: the deposit carries a
 snapshot of exactly the cells they need with their per-turn logs, so both the calibration inversion and the
-tool-exposure asymmetry recompute without leaving the artifact. It does not carry the rest of that chapter,
-and says so.
+tool-exposure asymmetry recompute without leaving the artifact. The rest of that study is not part of
+this deposit.
 
 Three commands regenerate everything a reader might want to check, and they are the ones we ran:
 
 \begin{quote}\footnotesize\ttfamily\raggedright
 python3 analysis/numeri\_paper.py \textrm{--- every number in prose}\\
 python3 analysis/tabella\_principale.py \textrm{--- Table \ref{tab:tests}}\\
-python3 analysis/tabella\_principale.py -{}-varianza \textrm{--- Table \ref{tab:variance}}
+python3 analysis/tabella\_principale.py -{}-varianza \textrm{--- Table \ref{tab:variance}}\\
+python3 analysis/conteggio\_m8.py \textrm{--- the trajectories M8 rejected, per batch}
 \end{quote}
 
 \noindent
-The first carries its own known-answer check: pointed at the original collection it must reproduce the
-numbers this paper reported before the re-collection, and exits non-zero otherwise --- which is what
-makes the new series trustworthy rather than merely recomputed, and what caught a ratio reported as 77
-whose value is 76.3. Each collection is selected by the same three environment variables
-(\texttt{C2\_RESULTS}, \texttt{C2\_PATTERN}, \texttt{C2\_PREFISSO}); setting only one yields an index
-built on one batch and queried with the keys of the other, which returns zero rather than raising.
+The first carries a known-answer check: pointed at the original collection it must reproduce the numbers
+this paper reported before the re-collection, and exits non-zero otherwise. The deposit's README states
+how each collection is selected and what a partial selection returns.
 
-The package is openly available at \artifacturl{}\ and will be deposited on a permanent archive with a
-DOI on acceptance. Cloud workspace and profile names, absolute paths and one internal account identifier
-are replaced by placeholders, because infrastructure names belong to an employer rather than to a study,
-and \texttt{REDAZIONE.md} lists every substitution; nothing else is redacted, the venue being
-single-blind. Redaction changes the content hash of a frozen file and this paper quotes those hashes, so
-the deposit carries its own recomputed table alongside that document, with the integrity guard run inside
-the deposit and passing there. Two further properties are checkable rather than asserted: the result
-directory is append-only, invalidated batches moved and annotated with the recomputation beside each
-rather than deleted; and every change to a frozen file carries a document written before the change,
-declaring the previous and the new hash, with a guard rejecting any divergence no document accounts
-for.
+The package is openly available at \artifacturl{}\ and will be deposited on a permanent archive with a DOI
+on acceptance. Cloud workspace and profile names, absolute paths and one internal account identifier are
+replaced by placeholders, and the deposit carries a substitution table stating every one by its reason;
+nothing else is redacted, the venue being single-blind. Because redaction changes the content hash of a
+frozen file and this paper quotes those hashes, the deposit carries its own recomputed table with the
+integrity guard run and passing inside it. Two properties are checkable rather than asserted: the result
+directory is append-only, with invalidated batches moved and annotated with their recomputation rather
+than deleted; and every change to a frozen file carries a document written before the change, declaring
+the previous and the new hash, with a guard rejecting any divergence no document accounts for.
 
 \subsection*{Conflict of interest}
 
@@ -98,10 +90,7 @@ the transport --- is the subject of the paper rather than only its practice.
 
 \subsection*{Use of language models in this work}
 
-Language models are the object of study here, and they were also used as a tool while
-conducting it --- to draft and review code and prose --- which the community guidelines ask to
-be declared separately from their role as
-subject~\citep{baltes2026guidelines}. No measurement, no number, and no decision reported in
-this paper was produced by that use: every quantity comes from a committed script run against
-committed rows, and the guards described above exist precisely because an author who accepts a
-generated number without recomputing it has no way to notice when it is wrong.
+Language models are the object of study here, and they were also used as a tool while conducting it --- to
+draft and review code and prose --- which the community guidelines ask to be declared separately from their
+role as subject~\citep{baltes2026guidelines}. No measurement, no number and no decision reported in this
+paper was produced by that use: every quantity comes from a committed script run against committed rows.

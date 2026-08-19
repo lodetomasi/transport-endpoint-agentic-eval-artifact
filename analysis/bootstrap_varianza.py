@@ -130,7 +130,7 @@ if __name__ == "__main__":
     print("\n  IL CRITERIO DI R1, e la sua risposta")
     t3 = esiti.get("T3")
     if not t3:
-        raise SystemExit("  T3 non calcolabile: il criterio non si puo' applicare (exit 2)")
+        raise SystemExit("  T3 non calcolabile: il criterio non si puo' applicare")
     copre = t3["lo_q"] <= 0.50 <= t3["hi_q"]
     print(f"    l'IC95 della quota di rumore di T3 e' "
           f"[{100*t3['lo_q']:.1f}%, {100*t3['hi_q']:.1f}%]")
@@ -161,7 +161,7 @@ if __name__ == "__main__":
               f"replicazioni censurate: {'ok' if tutte_cens else 'FALLITO'}")
         print("      (e' la firma del clamp a zero, non evidenza di varianza residua nulla)")
     if not all(ok):
-        raise SystemExit("  il bootstrap non rispetta le sue proprieta' strutturali (exit 2)")
+        raise SystemExit("  il bootstrap non rispetta le sue proprieta' strutturali")
     print("\n  Il numero fra parentesi in coda a ogni riga e' la quota di replicazioni in cui la")
     print("  varianza residua e' stata censurata a zero. Dove e' alta, il quantile inferiore di")
     print("  K_inf e' zero per costruzione dello stimatore e non per evidenza nei dati.")

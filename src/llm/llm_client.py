@@ -48,9 +48,9 @@ from typing import Any
 _CONFIG_DIR = Path(__file__).parent / "configs"
 # Le tariffe stanno in configs/ del PROGETTO, non accanto al client: sono una
 # decisione dello studio (quale endpoint, quale SKU, con quale fonte), non una
-# proprieta' del codice. ONUS_PRICING per un progetto che le tiene altrove.
+# proprieta' del codice. C2_PRICING per un progetto che le tiene altrove.
 _PRICING_PATH = Path(os.environ.get(
-    "ONUS_PRICING",
+    "C2_PRICING",
     Path(__file__).resolve().parents[2] / "configs" / "pricing.json"))
 
 _DEFAULT_DATABRICKS_PROFILE = "<profilo-databricks>"  # only known-working profile on this host (SPEC-mini-pilot.md)

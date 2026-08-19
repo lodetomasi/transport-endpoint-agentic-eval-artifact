@@ -68,8 +68,67 @@ def holm(coppie, m):
     return fuori
 
 
+def p_congelati():
+    """I p che lo script congelato emette, presi dallo stesso comando che un lettore lancia.
+    Servono qui perche' l'appendice e' il posto in cui le TRE serie stanno accanto: la
+    pre-registrata, l'esatta di Student e la sign-flip. Separarle in tre tabelle diverse e' il
+    modo piu' facile per far leggere come confermativa una serie che non lo e'."""
+    import subprocess
+    r = subprocess.run([sys.executable, os.path.join(QUI, "analyze_c2.py"),
+                        "--results", os.environ.get("C2_RESULTS", "results/riraccolta")],
+                       capture_output=True, text=True, cwd=os.path.dirname(QUI))
+    if r.returncode != 0:
+        raise SystemExit("analyze_c2 e' uscito %d" % r.returncode)
+    fuori = {}
+    for riga in r.stdout.splitlines():
+        c = riga.split()
+        if c and c[0].startswith("T") and c[0][1:].isdigit():
+            fuori[c[0]] = float(c[-1])
+    return fuori
+
+
+def latex(righe, B):
+    """La tabella dell'appendice, generata. Era trascritta a mano, e la trascrizione e' andata alla
+    deriva: il paper dichiarava B=50.000 mentre i numeri stampati venivano da B=20.000. Un seggio di
+    conformita' l'ha trovato rigenerando con l'invocazione documentata e confrontando byte per byte.
+    Una tabella che si genera non puo' divergere dal proprio script."""
+    print("% Generata da analysis/permutazione.py --latex — non modificare a mano.")
+    print(r"\begin{table}[h]")
+    print(r"\centering")
+    b_tex = f"{B:,}".replace(",", "{,}")   # solo il NUMERO prende il separatore TeX: la prima
+    # versione applicava .replace alla stringa intera e trasformava la virgola della prosa in
+    # «Student's $t${,} on», che si compone come un separatore di migliaia dentro una frase.
+    print(r"\caption{\textbf{Two sensitivity series beside the pre-registered one.} The "
+          r"\emph{frozen} column is the $p$ the pre-registered script emits and is the series "
+          r"Table~\ref{tab:tests} reports; the other two were computed after the data existed and "
+          r"are sensitivity analyses, not confirmatory results. \emph{Exact} is the exact Student "
+          r"series on the same paired quantities; \emph{sign-flip} is the distribution-free "
+          r"permutation on " + b_tex + r" sampled sign assignments at a declared seed. Holm applies "
+          r"the same fixed $m{=}10$ throughout. The Monte Carlo column is the standard error of the "
+          r"sampled $p$ itself: a $p$ obtained by sampling is an estimate, and reporting it without "
+          r"its uncertainty would be the error this paper objects to elsewhere. No test passes its "
+          r"Holm threshold under any of the three series, so the family outcome does not depend on "
+          r"which one is read.}")
+    print(r"\label{tab:permutazione}")
+    print(r"\footnotesize")
+    print(r"\setlength{\tabcolsep}{4pt}")
+    cong = p_congelati()
+    print(r"\begin{tabular}{@{}lrrrrr@{}}")
+    print(r"\toprule")
+    print(r"& $p$ frozen & $p$ exact & $p$ sign-flip & MC error & exact $\rightarrow$ flip \\")
+    print(r"\midrule")
+    for tid, ps, pp, se in righe:
+        pc = cong.get(tid)
+        pc_s = f"{pc:.4f}" if pc is not None else "---"
+        print(f"{tid} & {pc_s} & {ps:.4f} & {pp:.4f} & {se:.4f} & ${pp-ps:+.4f}$ \\\\")
+    print(r"\bottomrule")
+    print(r"\end{tabular}")
+    print(r"\end{table}")
+
+
 if __name__ == "__main__":
     conf = "--confermativa" in sys.argv
+    vuole_latex = "--latex" in sys.argv
     B = B_DEFAULT
     if "--B" in sys.argv:
         B = int(sys.argv[sys.argv.index("--B") + 1])
@@ -80,12 +139,14 @@ if __name__ == "__main__":
     from scipy import stats
 
     rng = random.Random(SEME)
-    print(f"  sign-flip su {B} permutazioni, seme={SEME}, "
-          f"raccolta {'confermativa' if conf else 'primaria'}\n")
-    print(f"  {'':5}{'K':>4}{'delta':>9}{'p Student':>12}{'p permut.':>12}"
-          f"{'MC err':>9}{'differenza':>12}")
+    if not vuole_latex:
+        print(f"  sign-flip su {B} permutazioni, seme={SEME}, "
+              f"raccolta {'confermativa' if conf else 'primaria'}\n")
+        print(f"  {'':5}{'K':>4}{'delta':>9}{'p Student':>12}{'p permut.':>12}"
+              f"{'MC err':>9}{'differenza':>12}")
 
     coppie = []
+    righe_tab = []
     for tid, mod, ca, cb in sv.CONTRASTI:
         a = sv.runs_per_binario(mod, *ca)
         b = sv.runs_per_binario(mod, *cb)
@@ -98,8 +159,18 @@ if __name__ == "__main__":
         p_stud = 2 * stats.t.sf(abs(t), df=len(diff) - 1)
         p_perm, se, _ = sign_flip(diff, B, rng)
         coppie.append((tid, p_perm))
-        print(f"  {tid:<5}{len(com):>4}{100*med:>+8.2f}{p_stud:>12.4f}{p_perm:>12.4f}"
-              f"{se:>9.4f}{p_perm - p_stud:>+12.4f}")
+        righe_tab.append((tid, p_stud, p_perm, se))
+        if not vuole_latex:
+            print(f"  {tid:<5}{len(com):>4}{100*med:>+8.2f}{p_stud:>12.4f}{p_perm:>12.4f}"
+                  f"{se:>9.4f}{p_perm - p_stud:>+12.4f}")
+
+    if vuole_latex:
+        # Ordinate per il p CONGELATO, non per l'esatto: la prima colonna e' quella confermativa,
+        # e una tabella ordinata su una colonna di sensibilita' si legge fuori ordine nell'altra.
+        _cong = p_congelati()
+        righe_tab.sort(key=lambda r: _cong.get(r[0], r[1]))
+        latex(righe_tab, B)
+        raise SystemExit(0)
 
     print(f"\n  Holm step-down sui p di permutazione, m={M_FAMIGLIA} fisso "
           f"(la stessa politica del pre-registrato)")
@@ -137,4 +208,4 @@ if __name__ == "__main__":
     print(f"    44 differenze a somma zero (nessun effetto) -> p={p_n:.4f}: "
           + ("ok" if p_n > 0.5 else "FALLITO: dovrebbe essere grande"))
     if not all(ok):
-        raise SystemExit("  il test di permutazione non rispetta le sue proprieta' (exit 2)")
+        raise SystemExit("  il test di permutazione non rispetta le sue proprieta'")

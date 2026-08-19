@@ -16,6 +16,11 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
+% `array` per >{\raggedright\arraybackslash} nelle colonne p{}: in colonna singola la
+% giustificazione dentro una colonna stretta produce underfull da badness 7740, e una parola
+% lunga quanto la colonna produce overfull. Ragged right toglie entrambe le cause.
+\usepackage{array}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage{graphicx}
 \graphicspath{{figures/}}
 \usepackage{xcolor}
@@ -29,7 +34,7 @@
 % `xurl` al posto di `url`: in colonna singola l'URL del deposito sbordava di 80,9pt perche'
 % `url` non spezza dentro un percorso. `xurl` lo spezza dove capita, che per un URL e' corretto.
 \usepackage{xurl}
-\newcommand{\artifacturl}{\url{https://github.com/<utente>/transport-endpoint-agentic-eval}}
+\newcommand{\artifacturl}{\url{https://github.com/<utente>/transport-endpoint-agentic-eval-artifact}}
 % Il repository e' il deposito operativo; il DOI permanente si ottiene all'accettazione,
 % ed e' l'unico modo di ottenerlo. La sezione Data Availability dichiara entrambe le cose
 % invece di promettere un DOI come se esistesse.

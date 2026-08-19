@@ -5,16 +5,20 @@
 \label{sec:rqs}
 
 Six questions organise what follows: three answered by the pre-registered family, three by evidence
-labelled exploratory wherever it appears. They expound a design frozen before collection --- no
-hypothesis, test or comparison is added, and the family stays at $m=10$ (\S\ref{sec:family}).
+labelled exploratory wherever it appears. The confirmatory family is the one frozen before collection and
+its size stays at $m=10$ throughout (\S\ref{sec:family}); the exploratory questions are additions, and
+Table~\ref{tab:rqs} says which is which and when each was formed.
 
 \begin{table}[t]
 \centering
-\caption{The six questions, what answers each, and its status. Confirmatory items map onto
-hypotheses frozen before collection; exploratory items are reported as such throughout.}
+\caption{The six questions, what answers each, and its evidentiary status. Confirmatory items map onto
+hypotheses frozen before collection; the two tests behind RQ3 belong to that frozen family but were
+implemented under a timestamped amendment after collection had begun (\S\ref{sec:method}). RQ4 was
+pre-registered as an exploratory census. RQ5 and RQ6 arose while the apparatus ran and are exploratory
+wherever they appear.}
 \label{tab:rqs}
 \small
-\begin{tabular}{@{}p{0.07\linewidth}p{0.55\linewidth}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}l P{0.55\linewidth} P{0.31\linewidth}@{}}
 \toprule
  & question & answered by \\
 \midrule
@@ -23,38 +27,41 @@ RQ1 & By how much does the transport of a tool call move the measured score, at 
 RQ2 & By how much does the serving endpoint move it, at fixed model and transport? &
       H2, tests T5--T8 \emph{(confirmatory)} \\
 RQ3 & Is the transport's effect constant across models, and do transport and endpoint
-      interact? & H3 and H4, tests T9--T10 \emph{(confirmatory)} \\
+      interact? & H3 and H4, tests T9--T10 \emph{(confirmatory; implemented under amendment)} \\
 RQ4 & By which mechanisms does an endpoint remove a model from an evaluation before it
-      produces a score? & the census, \S\ref{sec:census} \emph{(exploratory)} \\
+      produces a score? & the census, \S\ref{sec:census} \emph{(exploratory,
+      pre-registered as such)} \\
 RQ5 & How much of the transport difference is the loss of call batching rather than the
       change of format? & the constrained-native arm, \S\ref{sec:rq5}
-      \emph{(exploratory)} \\
-RQ6 & Does a power calibration transfer between apparatuses that share model, corpus and
-      metric? & \S\ref{sec:results} \emph{(exploratory)} \\
+      \emph{(exploratory, arose during execution)} \\
+RQ6 & Does a variance calibration transfer between apparatuses that share model, corpus and
+      metric? & \S\ref{sec:rq6} \emph{(exploratory, arose during execution)} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-RQ4 through RQ6 were not all asked at the outset: RQ4 was pre-registered as an exploratory census,
-while RQ5 and RQ6 are questions the apparatus raised while it ran. What protects them is not that they
-were anticipated but that each is answered by a quantity a reader can recompute --- verbatim endpoint
-responses, an arm with a stopping criterion fixed in advance, and two calibrations from two
-apparatuses.
+RQ4 was pre-registered as an exploratory census. RQ5 and RQ6 were formed while the apparatus ran, and
+nothing here presents them otherwise: RQ5 after the batching rates of the collected cells were known, RQ6
+after the variance decomposition of this study's own data existed. What they rest on is not anticipation
+but recomputability --- verbatim endpoint responses, an arm with a stopping criterion fixed before it ran,
+and two calibrations a reader can recompute from the released rows.
 
 \subsection{The grid}
 
-Four models, each served by both Databricks and Amazon Bedrock under two transports: sixteen cells. We
-name the platforms rather than abstract them --- the venue is single-blind, and the mechanisms of
+Four models, each served by both Databricks and Amazon Bedrock under two transports: sixteen cells. The platforms are named rather than abstracted. The venue is single-blind, and the mechanisms of
 \S\ref{sec:census} quote the endpoints verbatim, so a reader recognises the platform from the message
 whatever we call it and can re-issue each probe against the platform that produced it. Every cell runs
-the same 45 held-out binaries eight times, so the design plans 5{,}760 trials while the primary
-re-collection delivers 5{,}809 and the replication batch 5{,}805. The three numbers differ for one
-reason: a run returning an infrastructure failure is logged as a record and \emph{re-run}, so a cell can
-end with more valid measurements than the 360 it planned. The surplus --- 49 above plan and 45 --- is not
-a bonus but the count of runs an endpoint refused or dropped, which \S\ref{sec:census} treats as the
-subject rather than as attrition, and one cell ends \emph{below} plan at 44 binaries of 45 for the reason
-given in \S\ref{sec:ottavo}. Turn budget, temperature and output cap are identical in every cell and
-recorded per row rather than assumed.
+the same 45 held-out binaries eight times, so the design plans 5{,}760 trials while the isolated-workspace
+re-collection delivers 5{,}809 valid measurements and the original collection 5{,}805. The three numbers
+differ for one reason: a run returning an infrastructure failure is logged as a record and \emph{re-run},
+so a cell can end with more valid measurements than the 360 it planned. Every cell of both batches carries
+all 45 binaries; the surplus --- 49 above plan in one batch and 45 in the other --- is the count of runs an
+endpoint refused or dropped, which \S\ref{sec:census} treats as the subject rather than as attrition. One
+binary of one cell ends at seven valid runs of eight rather than 45 binaries of 45, for the reason given in
+\S\ref{sec:ottavo}. Turn budget, temperature and output cap are identical in every cell and recorded per
+row rather than assumed. The re-collection cost \$139.40 across the sixteen cells, from \$1.22 to \$21.90
+per cell, and every row carries its own cost so the price of any number in this paper is auditable beside
+it.
 
 \begin{table}[h]
 \caption{The grid. Every cell is the same corpus under a different apparatus.}
@@ -68,54 +75,52 @@ infrastructures & 2 (Databricks, Amazon Bedrock) \\
 transports & 2 (native, textual) \\
 cells & $4\times2\times2 = 16$ \\
 binaries per cell & 45, held out, frozen by hash \\
+corpus provenance & inherited with the companion study, not drawn from a public benchmark \\
 runs per binary & 8 \\
 trials & 5{,}760 planned, 5{,}809 measured \\
-turn budget & 12 \\
+turn budget & 12 exploration turns $+$ 1 mandatory submission turn \\
+termination & submission through the tool, or budget exhausted \\
 temperature & 0.0 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{Why we say \emph{nominal} model}
+\label{sec:nominal}
 
-Throughout we write \emph{nominal model} rather than \emph{the same weights}. Two managed
-clouds advertising the same open-weights model may serve different quantisations, different
-runtime versions, or route to a different variant under load, and neither exposes enough to
-settle it. Verifying byte-identity is not possible from the outside, so we do not claim it: what
-we hold fixed is the model \emph{identity a user selects}, which is exactly the thing a
-published evaluation names in its table.
-
-This is not a hedge, it is the object of study. If two endpoints selling the same name behave
-differently, that difference belongs in the method section of every paper that names the model
-and not the endpoint --- whether the cause is the weights, the runtime, or the routing.
+Throughout we write \emph{nominal model} rather than \emph{the same weights}. Two managed clouds
+advertising the same open-weights model may serve different quantisations, different runtime versions, or
+route to a different variant under load, and neither exposes enough to settle it --- a divergence already
+measured directly, on 11 of 31 commercial endpoints for four Llama models~\citep{gao2025equality}. What we hold fixed is
+therefore the model \emph{identity a user selects}, which is exactly what a published evaluation names in
+its table --- and if two services selling one name behave differently, that difference belongs in the
+method section of every paper that names the model and not the service, whatever its cause.
 
 \subsection{Hypotheses, and why two of them are disjunctive}
+\label{sec:ipotesi}
 
-We ask whether the transport moves the score at fixed infrastructure (H1), whether the
-infrastructure moves it at fixed transport (H2), whether the transport's effect is constant
-across models (H3), and whether transport and infrastructure interact (H4).
-
-This matters for how the result is read. An interval that excludes effects above some
-magnitude is not the same claim as no difference, and we never write the second when the data
-support only the first.
+Both factors are manipulated \emph{as deployed}: a transport is a format together with the context volume
+that format costs (\S\ref{sec:threats}), and an endpoint is a serving stack together with whatever weights
+it actually loads (\S\ref{sec:nominal}). The hypotheses quantify over those compounds, not over idealised
+single-variable versions no experiment on managed clouds can isolate. We ask whether the transport moves
+the score at fixed infrastructure (H1), whether the infrastructure moves it at fixed transport (H2),
+whether the transport's effect is constant across models (H3), and whether the two interact (H4). An
+interval that excludes effects above some magnitude is not the same claim as no difference, and the second is never
+written where the data support only the first.
 
 \subsection{The test family, and why its size does not shrink}
 \label{sec:family}
 
-Ten tests were pre-registered as one family with Holm step-down. The family size is fixed. It
-does not shrink when a cell turns out to be inconclusive, uninteresting, or unexecutable,
-because removing a member after seeing the data lowers the thresholds of every survivor --- a
-correction that grows more permissive exactly as one learns which tests one would like to
-pass.
+Ten tests were pre-registered as one family with Holm step-down, and the family size is fixed. It does not
+shrink when a cell turns out to be inconclusive, uninteresting or unexecutable, because removing a member
+after seeing the data lowers the thresholds of every survivor --- a correction growing more permissive
+exactly as one learns which tests one would like to pass. The deliberate consequence is that contrasts
+nobody disputes consume correction budget, which is the price of fixing $m$ before the data exist.
 
-One consequence is deliberate and worth naming: the family includes contrasts nobody
-disputes, and those contrasts consume correction budget. That is the price of fixing $m$
-before the data exist, and it is cheaper than the alternative.
+\subsection{Six defaults inherited from the companion study}
 
-\subsection{Six defaults inherited from the preceding chapter}
-
-Six constraints are inherited from the preceding chapter, each traceable to a defect that produced a
-clean and false number: unwrapped candidate source, functions in native order, symbol tables stripped,
+Six constraints are inherited from the companion study~\citep{companion2026baseline}, each traceable to
+a defect that produced a clean and false number: unwrapped candidate source, functions in native order, symbol tables stripped,
 a reasoning-only turn not recorded as a zero, a price guard that refuses \emph{before} the provider
 call, and the token-limit parameter sent under the one name the endpoint accepts. None is a discovery
 --- each is a default a competent implementer would set, which is what makes the list worth publishing

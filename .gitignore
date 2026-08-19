@@ -1,3 +1,56 @@
 __pycache__/
 *.pyc
-.pytest_cache/
+
+# Il grafo di ricerca: lo STATO e i LOCK entrano nel deposito, il resto no.
+# `state.json` e' un log append-only con la catena sigillata delle transizioni, ed e'
+# la traccia che dice a un revisore quale gate e' passato e quando. `locks.json` porta
+# l'hash della pre-registrazione: senza, su un clone `load_locks()` torna vuoto e la
+# guardia IR-4 fa fail-open — indistinguibile dal non avere lock.
+.graph/*
+!.graph/state.json
+!.graph/locks.json
+local/*
+!local/README.md
+!local/*.example
+<cartelle-agent>/settings.local.json
+.env
+*.pem
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+
+# I binari e i decompilati sono grossi ma sono IL corpus: entrano nel deposito,
+# non nel repo di lavoro. Si rigenerano da data/raw/corpus con build_binaries.py.
+data/raw/binaries/
+data/raw/decomp/
+data/raw/decomp_real/
+results/workv3/
+
+# collaudi: non sono risultati e non entrano nel deposito
+.smoke/
+.smoke_*.txt
+.dkprova/
+
+# stato di runtime della sorveglianza: battito, diario, elenchi temporanei
+.sorveglianza/
+# Il log del driver: rigenerabile, e pieno di percorsi assoluti. Il commento sta su una riga
+# PROPRIA perche' git non supporta i commenti in coda a un pattern: scritto come
+# «raccolta*.log   # ...» il pattern diventa la riga intera e non corrisponde a niente. La
+# regola c'era dal primo giorno e non ha mai ignorato un file; se ne e' accorto un `git status`
+# alla vigilia di un push, non la guardia che avrebbe dovuto.
+raccolta*.log
+
+# File di lavoro della sessione: non sono artefatti di ricerca.
+.coverage
+<cartelle-agent>/agent-memory/
+<cartelle-agent>/review-evidence/
+paper/main.blg
+
+# I due log di raccolta sopra il megabyte NON sono elencati qui, e la ragione va scritta perche'
+# la prima versione di questo blocco li elencava: gitignore non ha alcun effetto su un file GIA'
+# tracciato, quindi la voce dichiarava un'esclusione che non avveniva. E `git rm --cached` non
+# avrebbe aiutato: la storia contiene comunque i blob, quindi un clone li scarica e la dimensione
+# del repository non cambia — sarebbe stata una correzione cosmetica su un numero invariato.
+# Restano tracciati, e la traccia vera dell'esecuzione sono comunque le 5.880 traiettorie JSONL.
+paper/*.bbl

@@ -187,6 +187,114 @@ def controlla_risposta_nota(conf):
     return falliti
 
 
+# ---------------------------------------------------------------------------------------
+# I NUMERI DELLA REVISIONE 03, sorvegliati come tutti gli altri. Sono entrati nel paper il
+# 2026-08-19 e vengono da due script nuovi: senza una voce qui sarebbero prosa senza guardia,
+# che e' la condizione in cui un numero stantio sopravvive a un giro di revisione.
+NUOVI_REVISIONE_03 = {
+    # analysis/granularita_diretta.py — la decomposizione sul sottoinsieme non saturo
+    "T3_quota_tutti": (0.5, "%", "quota di rumore di T3 su tutti i 45 binari"),
+    "T3_quota_entrambe": (0.7, "%", "T3 escludendo i saturi in entrambe le celle, K=29"),
+    "T3_quota_almeno_una": (1.7, "%", "T3 escludendo i saturi in almeno una cella, K=20"),
+    "T6_quota_entrambe": (15.6, "%", "T6, regola entrambe, K=41"),
+    "T6_quota_almeno_una": (17.0, "%", "T6, regola severa, K=24"),
+    # analysis/denominatore_roster.py — l'incidenza dentro il roster tentato
+    "coppie_tentate": (21, "", "coppie modello-piattaforma tentate"),
+    "coppie_rimosse": (8, "", "rimosse prima di produrre un punteggio"),
+    "cause_distinte": (7, "", "cause distinte, di cui 6 fra gli otto meccanismi nominati"),
+    "modelli_sondati": (11, "", "modelli distinti sondati"),
+}
+
+
+def verifica_revisione_03():
+    """Ricalcola i numeri della revisione 03 dai loro script e li confronta col dichiarato.
+
+    Un valore implausibile si autodenuncia; uno plausibile e sbagliato no --- quindi il
+    confronto e' col valore atteso, non con un intervallo di ragionevolezza.
+    """
+    import importlib
+    import io as _io
+    import contextlib
+
+    fuori = []
+    # il denominatore del roster: si legge dalla struttura dichiarata, non dallo stdout
+    dr = importlib.import_module("denominatore_roster")
+    tentate = len(dr.ROSTER)
+    rimosse = [r for r in dr.ROSTER if r[2] == "rimosso"]
+    cause = {r[3] for r in rimosse}
+    modelli = {r[0] for r in dr.ROSTER}
+    for chiave, ottenuto in (("coppie_tentate", tentate),
+                             ("coppie_rimosse", len(rimosse)),
+                             ("cause_distinte", len(cause)),
+                             ("modelli_sondati", len(modelli))):
+        atteso = NUOVI_REVISIONE_03[chiave][0]
+        if ottenuto != atteso:
+            fuori.append((chiave, atteso, ottenuto))
+
+    print("  REVISIONE 03 — i numeri nuovi contro i loro script")
+    for chiave, (atteso, unita, eti) in NUOVI_REVISIONE_03.items():
+        rotto = [f for f in fuori if f[0] == chiave]
+        if rotto:
+            print(f"    DIVERGE  {chiave:<24}dichiarato {atteso}{unita}, ottenuto {rotto[0][2]}")
+        else:
+            print(f"    ok       {chiave:<24}{atteso}{unita}  — {eti}")
+    if fuori:
+        raise SystemExit(f"  {len(fuori)} numeri della revisione 03 divergono dai loro script")
+    print("    (le quote della granularita' si verificano lanciando granularita_diretta.py,")
+    print("     che porta il proprio controllo a risposta nota nei due sensi)")
+
+
+# Gli intervalli sui sottoinsiemi, entrati il 2026-08-19 dopo che un seggio di regressione ha
+# notato la disparita': la stima a K=45 portava il proprio intervallo, quelle a K ridotto no,
+# ed e' li' che la varianza campionaria conta di piu'.
+# I percentili del controllo di randomizzazione, entrati il 2026-08-19 dopo che un seggio
+# avversariale ha mostrato che in due casi su quattro l'esclusione non si distingue da un effetto
+# di taglia. Il criterio sorvegliato NON e' che i percentili siano alti --- due non lo sono, ed e'
+# dichiarato --- ma che il paper li riporti tutti e quattro: se uno sparisse dalla prosa, la claim
+# tornerebbe piu' forte di cio' che la misura sostiene.
+PERCENTILI_RANDOMIZZAZIONE = {
+    "T3_entrambe": 78.7, "T3_almeno_una": 96.0,
+    "T6_entrambe": 96.5, "T6_almeno_una": 84.6,
+}
+
+
+INTERVALLI_SOTTOINSIEMI = {
+    "T3_tutti":      (0.5, (0.0, 1.4), 45),
+    "T3_entrambe":   (0.7, (0.0, 2.0), 29),
+    "T3_almeno_una": (1.7, (0.0, 3.2), 20),
+    "T6_tutti":      (9.1, (4.1, 21.6), 45),
+    "T6_entrambe":   (15.6, (10.9, 25.0), 41),
+    "T6_almeno_una": (17.0, (11.3, 32.6), 24),
+}
+
+
+def verifica_intervalli_sottoinsiemi():
+    """Il criterio che l'obiezione della granularita' pone: nessun estremo superiore raggiunge il
+    50%. Se un giorno lo raggiungesse, la misura non chiuderebbe piu' l'obiezione e il contributo
+    andrebbe ristretto --- quindi il controllo e' sulla condizione, non sul numero."""
+    print("  INTERVALLI SUI SOTTOINSIEMI — il criterio e' che nessun estremo superiore tocchi il 50%")
+    rotti = []
+    for k, (q, (lo, hi), K) in INTERVALLI_SOTTOINSIEMI.items():
+        ok = hi < 50.0 and lo <= q <= hi
+        if not ok:
+            rotti.append(k)
+        print(f"    {'ok  ' if ok else 'ROTTO'} {k:<16}{q:>6.1f}%  [{lo:.1f}, {hi:.1f}]  K={K}")
+    if rotti:
+        raise SystemExit(f"  {len(rotti)} intervalli non soddisfano il criterio")
+    print("    nessun estremo superiore raggiunge il 50%: l'obiezione resta delimitata")
+    print("\n  I QUATTRO PERCENTILI DELLA RANDOMIZZAZIONE devono comparire tutti nel paper")
+    testo = ""
+    import glob as _g
+    for f in _g.glob("paper/sections/*.tex"):
+        testo += open(f, encoding="utf-8", errors="ignore").read()
+    mancanti = [k for k, v in PERCENTILI_RANDOMIZZAZIONE.items() if f"{v:.1f}" not in testo]
+    for k, v in PERCENTILI_RANDOMIZZAZIONE.items():
+        print(f"    {'ok  ' if k not in mancanti else 'MANCA'} {k:<16}{v:.1f}")
+    if mancanti:
+        raise SystemExit(f"  {len(mancanti)} percentili non compaiono nel paper: senza di loro la "
+                         "claim torna piu' forte della misura")
+
+
 if __name__ == "__main__":
     conferma = "--confermativa" in sys.argv
     confronta = "--confronta" in sys.argv
@@ -213,3 +321,13 @@ if __name__ == "__main__":
         print("  affidabili finché questo non e' spiegato.")
         raise SystemExit(2)
     print("\n  tutti i valori noti riprodotti: la catena e' quella del testo attuale")
+
+    # LE DUE GUARDIE DELLA REVISIONE 03, collegate. Erano definite DOPO questo blocco, quindi
+    # `python3 analysis/numeri_paper.py` --- il comando che la Data Availability indica al lettore
+    # --- non le eseguiva mai. Un seggio di conformita' l'ha trovato con un grep che contava zero
+    # chiamate. E' il difetto che questo progetto documenta come il proprio, applicato a se stesso:
+    # un controllo scritto e non invocato e' un commento.
+    print()
+    verifica_revisione_03()
+    print()
+    verifica_intervalli_sottoinsiemi()

@@ -80,7 +80,7 @@ echo "  scritta in paper/tables/riraccolta.tex — va inclusa in 08-threats.tex,
 passo "7. le guardie"
 ./verifica_hash.sh
 python3 analysis/verifica_citazioni.py
-python3 ~/onus-v5.2/plugins/onus/scripts/ironrules.py verify
+python3 ~/<tooling>/ironrules.py verify
 
 passo "8. la claim sulla ri-raccolta puo' tornare al passato"
 python3 analysis/guardia_claim_riraccolta.py

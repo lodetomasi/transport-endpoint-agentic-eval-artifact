@@ -59,7 +59,7 @@ scrivere l'analisi a dati visti lascia intatta tutta la libertà che la pre-regi
 doveva chiudere — quale test, su quale sottoinsieme, con quale esclusione.
 
 ```bash
-./verifica_hash.sh     # 5 file, e pretende che una successione NOMINI il file divergente
+./verifica_hash.sh     # 6 file, e pretende che una successione NOMINI il file divergente
 ```
 
 Ogni modifica a un file congelato ha un `registro/SUCCESSIONE-NN-*.md` scritto **prima**, con l'effetto
@@ -107,7 +107,7 @@ spenda oltre. Il primo è un referto.
 
 ```
 PREREGISTRAZIONE.md      ipotesi, falsificatori, famiglia di 10 test, m fisso
-HASH-CONGELATI.md        i 5 file congelati e le successioni
+HASH-CONGELATI.md        i 6 file congelati e le successioni
 SUCCESSIONE-NN-*.md      ogni modifica a un file congelato, con l'effetto isolato
 research/CENSIMENTO.md   quali modelli ogni infrastruttura serve, e quali cancella
 analysis/analyze_c2.py   scritta prima dei dati

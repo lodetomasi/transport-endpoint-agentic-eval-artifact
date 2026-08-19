@@ -1,102 +1,130 @@
 \section{Discussion}
 \label{sec:discussion}
 
-\subsection{A null confirmatory result that is not a null finding}
-
-Ten pre-registered tests, none surviving correction --- and the reason is measurable rather than
-mysterious. The design was sized on a standard deviation borrowed from the preceding
-chapter~\citep{companion2026baseline}, and that borrowing is where the study earns its keep: the
-quantity borrowed turns out not to be a property of the model, so no care at design time would have
-produced a different number of binaries. Where the pre-registration recorded 84\% run-to-run noise and
-a floor of thirteen binaries, the same nominal contrast here gives 0.5\% and 668. Not an underestimate
---- an inversion, and the lever the previous chapter said would work is the one that buys nothing here.
-
-This is the finding we did not go looking for, and \S\ref{sec:rq6} places it against the literature on
-borrowed effect sizes. The consequence for a designer belongs here: inheriting that calibration would
-not merely have left them under-powered, it would have sent their budget to the axis that buys
-nothing. The rival account for the decomposition --- that
-the granularity of the metric produces the spread on its own --- is bounded in
-\S\ref{sec:granularita} by the two conditions it would and would not have to explain, with the
-figures for each.
-
 \subsection{Why the census carries the weight}
 
-The confirmatory arm and the census differ in what it takes to overturn them. Every number in
-\S\ref{sec:results} is a point estimate with an interval that a larger study could move; nothing in
-\S\ref{sec:census} is an estimate, since an endpoint either returned that message or it did not and the
-artifact carries the request that produced it. A referee who disbelieves the census can re-run the probe;
-one who disbelieves the contrasts has to re-run 5{,}809 trials.
+The transport moves a number, which is a bias. The endpoint deletes a row, which is a selection. The two
+also differ in what it takes to check them: the census is checked by re-issuing a probe, the contrasts by
+re-running 5{,}809 trials. \textbf{Nothing in \S\ref{sec:census} is an estimate} --- an endpoint returned
+that message or it did not, and the artifact carries the request and the configuration that produced it ---
+while every number in \S\ref{sec:results} is a point estimate with an interval a larger study could move.
 
+The distinction that matters for reading \S\ref{sec:results} is between a \emph{null} result and an
+\emph{uninformative} one, and what separates them is stated per contrast rather than for the design: the
+effect each contrast could have resolved given its own dispersion ranges over a factor of 23.7. A design
+sized on a single band would have quoted one number for eight contrasts that differ by more than an order
+of magnitude in what they could separate.
+
+
+\subsection{What the null confirmatory family could resolve}
+
+Ten pre-registered tests, none passing its threshold, and the sizing that produced them is locatable.
+\S\ref{sec:rq6} measures the lever that binds on this apparatus at the number of tasks --- 0.5\%
+run-to-run noise and a floor of 668 binaries on the contrast with the largest observed dispersion ---
+against the 84\% and thirteen the design was sized on.
+
+\textbf{The consequence for a designer is that the sizing axis is itself an empirical question, answerable
+only on the apparatus that will be used.} A calibration inherited across apparatuses can send a budget to
+repeated runs when what binds is task diversity, and no amount of care at design time substitutes for
+measuring it. The rival account for the decomposition --- that the granularity of the metric produces the
+spread on its own --- is measured rather than argued: \S\ref{sec:granularita} recomputes the decomposition
+on the subsets where the metric is at neither floor nor ceiling.
 
 \subsection{When to discard a batch, and when not to}
 
 Two batches were invalidated and re-collected rather than patched, and the rule separating them from the
-one we kept is reusable. \textbf{Discard when the contaminating channel is systematic and asymmetric
+one kept is reusable. \textbf{Discard when the contaminating channel is systematic and asymmetric
 between the compared arms; report and bound it otherwise.}
 
-The larger invalidation --- 2{,}390 measurements --- meets that test exactly: the algorithm's name reached
-the model through three separate channels and the two arms encountered one at different rates, so left in
-place it would have turned part of the transport effect into a measure of how often each transport stumbled
-onto the answer. No downstream analysis separates a contaminant that correlates with the
-manipulated variable.
+The larger invalidation --- 2{,}390 measurements --- meets that test: the algorithm's name reached the model
+through three separate channels and the two arms encountered one at different rates, so left in place it
+would have turned part of the transport effect into a measure of how often each transport stumbled onto the
+answer. No downstream analysis separates a contaminant that correlates with the manipulated variable.
 
 The shared working directory (\S\ref{sec:threats}) fails the same test in the other direction:
-non-directional noise, some thirty times in the original batch's 5{,}805 measurements, with no asymmetry
-between arms.
-Discarding it would have been a gesture rather than a correction, so we bounded it, probed it, and
-re-collected on isolated workspaces. Two practices made the rule applicable rather than rhetorical:
-channels were enumerated per channel and not per intention --- the third was found because we listed every
-place the model could read --- and both batches remain in the artifact with their recomputation.
+non-directional, thirty times in the original batch's 5{,}805 measurements, with no asymmetry between arms.
+So it was bounded, probed, and re-collected on isolated workspaces rather than discarded. Both batches
+remain in the artifact with their recomputation.
 
 \subsection{What an evaluation should report}
 
 What follows amends an existing checklist rather than proposing a new one: the community guidelines already
-require the harness to be described once it goes beyond bare API calls~\citep{baltes2026guidelines}, and each
-field below either sharpens that requirement or extends it to one they do not name. Each costs a line in a
-method section, and Table~\ref{tab:checklist} states them as fields because a recommendation phrased as prose
-is one a reader agrees with and does not apply. The first carries the argument of \S\ref{sec:runtime}: a
-model name does not identify a measurable system, the same nominal model on two clouds being two apparatuses
-that differ in score stability as well as in score.
+require the harness to be described once it goes beyond bare API calls~\citep{baltes2026guidelines}, and
+each field below either sharpens that requirement or makes explicit something those guidelines leave
+implicit. Each costs a line in a method section, and Table~\ref{tab:checklist} states them as fields
+because a recommendation phrased as prose is one a reader agrees with and does not apply. The first two
+carry the argument of \S\ref{sec:runtime}: a model name does not identify a measurable system, two
+deployed services under one model identity differing in trajectory length, latency and reported context
+volume.
 
 \begin{table}[t]
 \centering
-\caption{What an agentic evaluation should declare. The first four sharpen requirements that
-already exist~\citep{baltes2026guidelines}; the last two have no counterpart in current
-checklists.}
+\caption{\textbf{What to declare in the method section of an agentic evaluation.} Eight fields, each one
+line, enough to reconstruct the interaction apparatus. The first six sharpen or make explicit what the
+guidelines we extend already require of a harness description~\citep{baltes2026guidelines}; the last two
+are not explicit in that checklist. The comparison is against that source alone. This table is meant to be copied into a method section as it stands, and it is the
+transferable output of this study together with the variance-decomposition method of \S\ref{sec:varianza}.}
 \label{tab:checklist}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}p{0.26\linewidth}p{0.66\linewidth}@{}}
+\begin{tabular}{@{}P{0.27\linewidth}P{0.65\linewidth}@{}}
 \toprule
 field & what it means \\
 \midrule
-transport & how a tool call is encoded: native function calling, a textual protocol, typed
-  code stubs --- and whether more than one call per turn is admitted \\
-endpoint & which service served the weights, not only the model name \\
-model and version & the identifier the endpoint accepts, including any regional prefix \\
-configuration & temperature, token limits, turn budget, seed where honoured \\
+transport & how a tool call is encoded --- native function calling, a prompted-text protocol, typed code
+  stubs --- \emph{and} whether more than one call per turn is admitted, since that is a second
+  manipulation travelling inside the first \\
+endpoint and API surface & which service served the weights, under which API and version, from which
+  region; not only the model name \\
+model identifier & the string the endpoint accepts, including any regional or inference-profile prefix,
+  which can change the response to an otherwise identical request \\
+decoding configuration & temperature, output cap, context limit, and seed where the endpoint honours one \\
+interaction budget & the maximum number of turns \emph{and} the condition that ends a trajectory, since
+  effects are conditional on both --- validated against the target API's documented request contract
+  (tool-choice values, multiple calls per turn) \emph{before} the protocol is frozen, since a protocol
+  that the endpoint cannot express costs a whole cell \\
+tools and their provenance & the tools offered, their schema, and the version of any external analysis
+  tool they wrap --- or, where that version is not recorded, the frozen tool outputs released in its place \\
 \textbf{models excluded} & which models were considered and not measured \\
-\textbf{reason for each} & the endpoint's own message, verbatim, or the policy that applied \\
+\textbf{reason for each} & the endpoint's own message, verbatim, together with the configuration under
+  which it was returned \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Five propositions that should outlive this task}
+The study's own values are in \S\ref{sec:design} and \S\ref{sec:method}. The tool row admits two ways of
+being met, and this deposit takes the stronger one: rather than naming a decompiler version a reader would
+then have to obtain, it ships the decompilation outputs themselves, frozen and hashed --- which is what the
+harness consumes, so every trial reproduces without resolving a version at all.
+
+\subsection{Seven propositions that should outlive this task}
 \label{sec:proposizioni}
 
-The effect sizes here belong to one task family, four models and two clouds, and we claim nothing beyond
-that. What we offer beyond it are five propositions about how experiments of this kind behave, each
-instantiated by this study rather than proved in general.
+Within the scope \S\ref{sec:threats} bounds, seven propositions about how experiments of this kind behave,
+each instantiated by this study rather than proved in general.
 
 \begin{enumerate}
   \item The transport belongs beside temperature in a method section.
   \item An endpoint can produce missing experimental units, whose cost \S\ref{sec:bound} bounds.
-  \item Variance components can be apparatus-specific, so an inherited calibration must be recomputed on
-        one's own data as soon as the first cell exists.
-  \item A pre-flight must exercise realistic conversational states: two of our eight mechanisms fire only
-        in a state a single-call probe never reaches.
+  \item Variance structure differed substantially across the contrasts of this study, so a single
+        inherited calibration is unreliable across the cells of one design. What follows for a designer is
+        an independent pilot calibration, or an internal re-estimation whose rule is specified in advance
+        and read blind to the outcome --- not a recalibration decided once the first outcome-bearing cell
+        is visible, which would reintroduce the design freedom the pre-registration removes.
+  \item A pre-flight must exercise realistic conversational states: three of our eight mechanisms are
+        invisible to a probe that sends one call per turn, and a fourth is reachable only during
+        execution.
   \item Metric granularity limits what a variance decomposition can say. We report the floor and ceiling
-        shares beside ours, and did not size the tests per task.
+        shares beside ours, recompute the decomposition on the subset where the metric is at neither
+        (\S\ref{sec:granularita}), and did not size the tests per task.
+  \item An incidence rate for pre-score removal requires a \emph{sampled} roster, not an assembled one.
+        Ours is assembled --- the models two clouds happened to serve, plus those probed while building the
+        sample --- so it yields the fraction inside itself, 8 of 21 pairs, and no rate beyond. The measure
+        this study does not supply is a probe run against a roster drawn by a stated sampling rule, which
+        would turn eight existence proofs into an estimate with an interval.
+  \item Whether a variance component is specific to an apparatus is not decidable from one apparatus. Two
+        collections of ours agree with each other, which is reproducibility and not transfer; the question
+        needs two apparatuses whose calibrations are both verifiable, and the one we inherited was not.
 \end{enumerate}
 
 \noindent

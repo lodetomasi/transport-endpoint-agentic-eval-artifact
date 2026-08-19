@@ -6,65 +6,80 @@ a transport that carries tool calls between the model and the harness, an endpoi
 the weights, a set of tools with a particular return format, and a decoding configuration. The
 model's name appears in the table. The apparatus does not.
 
-This paper measures how much of the number belongs to the apparatus rather than to the model,
-and finds that the question has two answers of different kinds. The transport moves a number,
-which is a bias: it can be bounded, and a reader who knows its size can correct for it. The
-endpoint deletes a row, which is a selection: it cannot be bounded, because the model that was
+This paper measures how much of that number the apparatus determines rather than the model, and finds
+two answers of different kinds. The transport moves a number, which is a
+bias. The endpoint deletes a row, which is a selection. A bias can be bounded, and a reader who knows
+its size can correct for it. A selection cannot, because the model that was
 refused has no line in the table to correct.
 
-\subsection{The confound this chapter removes}
+\subsection{The confound this study removes}
 
-The preceding chapter of this programme~\citep{companion2026baseline} measured a 10.4pp drop when one
-model moved from native function calling to a textual protocol. That chapter is a companion manuscript
-under double-anonymous review, so a reader cannot obtain it and we do not ask anyone to take its numbers
-on trust: both figures this paper draws from it recompute from a snapshot of the exact cells they need,
-released here with their per-turn logs. On a single infrastructure that number admits two readings no
+A companion study~\citep{companion2026baseline} measured a 10.4pp drop when one model moved from native
+function calling to a textual protocol. It is a companion manuscript
+under double-anonymous review, so a reader cannot obtain it. Both figures this paper draws from it
+recompute from a snapshot of the exact cells they need, released in the deposit with their per-turn logs. On a single infrastructure that number admits two readings no
 further collection on that infrastructure can separate --- a property of the model, or of that
 provider's shim --- because model and infrastructure are perfectly confounded when there is only one
 endpoint.
 
-Serving the same nominal model from two managed clouds separates them: if the difference persists it
-belongs to the model, if it moves it belongs to the infrastructure. That cell --- same nominal model,
-two commercial endpoints, transport manipulated as a paired factor, on a multi-turn downstream task ---
-is what this study contributes as a design, and to our knowledge it has not been run.
+Serving the same nominal model from two managed clouds tests something a single endpoint cannot: whether
+the measured outcome changes across deployed services at fixed nominal model identity. It does not, by
+itself, say which component of a service produced any difference it finds --- the two stacks differ in
+several observable quantities at once (\S\ref{sec:runtime}) --- but a difference that survives the change
+of service is a difference the model's name alone does not describe. That cell --- same nominal model, two
+commercial endpoints, transport manipulated as a paired factor, on a multi-turn downstream task --- is what
+this study contributes as a design, and to our knowledge it has not been run.
 
 \subsection{Contributions}
 
 The order below is the one in which we would have a reader weigh them, not the one in which they were
-planned.
+planned. \textbf{The first is the primary contribution: it does not rest on a $p$-value, and it is
+checkable by re-issuing the probes we release.}
 
 \begin{enumerate}
-\item \textbf{A power calibration does not transfer between apparatuses}, even holding model, corpus and
-  metric fixed: inherited from the preceding chapter, ours did not mis-estimate a magnitude, it inverted
-  which of two levers binds (\S\ref{sec:results}) --- a claim about how experiments of this kind should be
-  sized, and the finding we did not go looking for.
-\item \textbf{Eight mechanisms by which a serving endpoint removes a model from an evaluation before
-  it produces a score} --- six reachable by a pre-flight probe, two that fire only in a conversational
-  state a probe does not construct --- each with the endpoint's verbatim message
-  (\S\ref{sec:census}). The split is the operational finding: a harness certified healthy before
-  collection can still lose a cell after the money is spent. Existing taxonomies classify
-  \emph{faults}, things that stop happening once repaired; these are refusals by a healthy endpoint
-  behaving as configured, so they persist for a whole study~\citep{failureatlas}. For the one any
-  single-call pre-flight reports healthy we give the constructed probe that catches it first.
-\item \textbf{Two properties of the apparatus usually assumed rather than measured}: temperature zero is
-  not determinism, and the same nominal model is not equally stable on two clouds --- which makes score
-  stability a property of the serving stack rather than of a decoding parameter (\S\ref{sec:results}).
+\item \textbf{Eight mechanisms by which a serving endpoint removes a model from an evaluation before it
+  produces a score, or destroys its measurements from inside one}, each with the endpoint's message
+  (\S\ref{sec:census}). They fall into four operational classes --- lifecycle and access policy,
+  capability and API-contract constraint, catalogue and quota inconsistency, integration and adapter
+  incompatibility --- and they sit at three levels of detection difficulty, which is the operational
+  finding: four are returned to an ordinary single-request capability check, three need a deliberately
+  constructed conversational state, and one appears only when the model itself emits the output that
+  triggers it. For the three that a single-request check does not reach we give the constructed probe that
+  does, and for the last we give the trajectories in which it fired.
+\item \textbf{Temperature zero is not determinism}, measured across the corpus: one model returns
+  identical runs on 91--100\% of binaries and another on 20--24\% (\S\ref{sec:results}). That output
+  distributions can differ between services at fixed model identity is already
+  established~\citep{gao2025equality}; in one of eight comparisons here the difference reaches the
+  \emph{stability of a downstream agentic score}, which is the extension this study contributes on that
+  axis.
 \item \textbf{A pre-registered $4\times2\times2$ design} --- four models, two named managed clouds, two
   transports, 45 held-out binaries, 8 runs each --- with the analysis script frozen by hash
-  \emph{together with} the hypotheses before any data existed, one documented exception covering two of
-  the ten tests (\S\ref{sec:method}), and the confirmatory outcome reported with the power that produced
-  it: no test survives Holm, and the three reaching nominal significance are the three least powered.
-  We report the minimum detectable effect per contrast, because the observed standard deviations span a
-  factor of 23.7 and no single band describes them.
+  \emph{together with} the hypotheses before collection began; two of the ten tests were implemented
+  under a timestamped amendment after it had (\S\ref{sec:method}). No test passes its Holm threshold.
+  We report per contrast the effect its own observed dispersion would have let it resolve, because those
+  dispersions span a factor of 23.7 and no single band describes them.
+\item \textbf{A variance calibration that inverts on its own data.} This design was sized expecting
+  run-to-run noise to dominate; measured here, the lever that binds is the number of tasks --- 0.5\% noise
+  and a floor of 668 binaries on the contrast with the largest observed dispersion
+  (\S\ref{sec:rq6}). Whether such
+  calibrations transfer between apparatuses is a question this raises and does not settle, and the stronger
+  reading is a proposition rather than a result (\S\ref{sec:proposizioni}).
 \item \textbf{An artifact} carrying every raw row including the invalidated batches, the per-turn session
   traces, the frozen documents with their hashes, and the amendment log (\S\ref{sec:artifact}).
 \end{enumerate}
 
-\subsection{What this paper does not claim}
+\subsection{The boundary of the claim}
 
-Not that one transport is better: we measure that the choice moves the number, not which choice is
-right. Not semantic equivalence: pass-rate is a lower bound with a floor we measure. Not that the
-eight mechanisms are exhaustive --- each is an existence proof with its own denominator, never a
-rate. And not that the effect sizes travel: they belong to one task family, four models and two
-clouds. What we do claim is narrower and harder to escape: an evaluation that does not report its transport is
-not reproducible from its method section, whatever the task.
+Three boundaries fix what follows. The transport contrast measures that the choice moves the number, not
+which choice is right. The eight mechanisms are existence proofs, each with its own denominator rather than
+a rate, and the class is open by construction. And the effect sizes belong to the scope
+\S\ref{sec:threats} bounds.
+
+\textbf{The transferable output of this study is the checklist of Table~\ref{tab:checklist} and the
+variance-decomposition method, not the coefficients.} Two of the four models are open-weight, so the task,
+the corpus and the harness can be re-run on infrastructure a reader controls --- though not this design:
+every cell here was served by one of the two commercial clouds, and a self-hosted re-run would be a
+different apparatus, which is precisely the property under study. The propositions of
+\S\ref{sec:proposizioni} are hypotheses this study instantiates, not claims it establishes. The narrower
+claim made here is that an evaluation which does not report its transport is not reproducible from its
+method section, whatever the task.

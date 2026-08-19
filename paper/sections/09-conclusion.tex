@@ -1,33 +1,42 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-Four models, two managed clouds and two tool transports were run against a pre-registration and an
-analysis script frozen together before any row existed, save two tests documented in
-\S\ref{sec:method}. The confirmatory result comes from the independent re-collection on workspaces
-isolated per cell --- 5{,}809 measured trials --- designated the primary basis in writing before it
-produced a row; the original batch of 5{,}805 sits beside it as a replication, and the two agree on all
-four criteria frozen in advance. None of the ten pre-registered tests survives Holm correction, and the
-three contrasts reaching nominal significance are the three least powered in the study --- reported
-together with the achieved power, since power determines what a $p$-value can mean.
+\textbf{A serving endpoint decides which models an evaluation can measure, and it decides before any score
+exists.} Six mechanisms remove a model-platform pair outright and two destroy measurements from inside a
+run that has already been paid for, each documented with the endpoint's own words and the configuration
+that produced it. Eight of the 21 pairs attempted here never produced a score.
 
-The design was mis-sized, and the reason is itself the finding: the calibration inherited from the
-preceding chapter did not misjudge a magnitude, it inverted which lever binds. Where that chapter found
-84\% run-to-run noise and a floor of thirteen binaries, the same nominal contrast gives 0.5\% and 668. A
-calibration is a claim about an apparatus, and it does not travel.
+\textbf{They are not equally easy to find, and that gradient is what a practitioner needs.} Four answer an
+ordinary single-request capability check. Three are invisible to any check that sends one call per turn and
+require a conversational state assembled by hand. One appears only while the model is generating. A
+pre-flight built from single requests therefore does not cover the class, and a harness certified healthy
+can still lose a cell after the money is spent --- which is why the last two fields of
+Table~\ref{tab:checklist} ask for the models an endpoint refused and the message it refused them with.
+Where each mechanism is filed in an existing taxonomy changes none of this: what the census establishes is
+that several such mechanisms exist, that they act at different points of the evaluation lifecycle, that a
+removed pair leaves no row to correct, and that they demand different detection.
 
-What does not depend on a $p$-value is the census: six pre-collection mechanisms remove a model from an
-evaluation, each with the endpoint's own words, plus two conversational-state failures that appeared only
-while collecting. The split is the practical finding --- a pre-flight probe reaches the first six and
-\emph{cannot} reach the last two, so a harness certified healthy can still lose a cell after the money is
-spent, and existing taxonomies of serving failures begin one step later.
+A property of the apparatus usually assumed turned out to be measurable and to vary: temperature zero is
+not determinism, with one model returning identical runs on 91--100\% of binaries and another on 20--24\%.
+That output distributions can differ between services at one model identity is already
+established~\citep{gao2025equality}; in one comparison of eight the difference here reaches the stability
+of the score itself, 24.4\% of tasks against 66.7\% --- an existence result, not a claim about clouds in
+general.
 
-Two properties of the apparatus usually assumed turned out to be measurable and to vary. Temperature
-zero is not determinism: one model returns identical runs on 91--100\% of binaries and another on
-20--24\%. And in the one comparison of eight where the sampling bands separate, the same nominal model
-returns identical scores on 24.4\% of tasks at one endpoint and 66.7\% at the other, which makes score
-stability a property of the serving stack rather than of a decoding parameter.
+The pre-registered family answers the magnitude question at the resolution the design reached. Four models,
+two managed clouds and two tool transports were run against hypotheses and an analysis script frozen
+together before any data existed, with two of the ten tests implemented under a timestamped amendment
+(\S\ref{sec:method}). No test passes its Holm threshold, and two sensitivity series computed afterwards
+agree. What the family adds is the resolution itself: across eight contrasts of one design, the effect each
+could separate spans a factor of 23.7, so what an experiment of this kind can resolve is a property of the
+cell and not of the study. On the two contrasts with the largest between-task dispersion the lever that binds is
+the number of tasks rather than the number of runs --- 0.5\% run-to-run noise and a floor of 668 binaries
+--- so a budget sized on a borrowed calibration goes to the axis that does not bind. That is a statement
+about what a design can resolve, and it is separate from the family's outcome on effect sizes.
 
-The transport moves a number, and that is a bias: bounded, correctable, already visible in a public leaderboard. The endpoint deletes a row, and that is a selection: the model it refused has no line
-to correct. Evaluations report the first inconsistently and the second not at all. Declaring the
-transport, the endpoint, and the models each endpoint refused costs three lines in a method section, and
-without them a published agentic number does not identify the system it describes.
+\textbf{The transport moves a number, which is a bias. The endpoint deletes a row, which is a selection.}
+The first is bounded, correctable, and already visible in a public leaderboard; the second is not, because
+the model it refused has no line to correct. Existing reporting guidance does not make all of the apparatus
+fields examined here equally explicit. Declaring the transport, the endpoint, and the models each endpoint
+refused costs three lines in a method section, and without them a published agentic number does not
+identify the system it describes.

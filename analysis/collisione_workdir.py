@@ -87,7 +87,7 @@ def main():
     # la raccolta confermativa e' avvenuta e a cui il numero del paper si riferisce. Dopo la
     # successione 08 lo stesso albero ospita anche cartelle-tag per cella, e sommarle darebbe
     # un'esposizione inflazionata che sembra una misura nuova: 362 invece di 360 gia' oggi,
-    # con due soli smoke. Trovato da `onus:harness-critic` prima della raccolta.
+    # con due soli smoke. Trovato da `<revisione-avversariale-dell-apparato>` prima della raccolta.
     radice_work = os.path.join(RADICE, "results", "workv3")
     voci = os.listdir(radice_work) if os.path.isdir(radice_work) else []
     piatte = [v for v in voci if re.match(r"^prog\d+.*_r\d+$", v)]

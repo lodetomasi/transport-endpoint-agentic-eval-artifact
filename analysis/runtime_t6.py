@@ -35,6 +35,28 @@ RADICE_DATI = os.environ.get("C2_RESULTS", "results/riraccolta")
 PATTERN = os.environ.get("C2_PATTERN", "c2r_*.csv")
 
 
+def turni_usati(modello, infra, trasporto="native"):
+    """I turni DAVVERO consumati, dalle traiettorie — una riga per turno.
+
+    La colonna `n_turns` dei CSV vale 12 su ogni riga: `run_minipilot` ci scrive `args.turns`,
+    cioe' il budget CONFIGURATO. Riportarla come mediana osservata stampa una costante di
+    configurazione e fa sembrare identiche due celle che consumano turni diversi. Chiave della
+    mappa: il binario e l'indice di run, cosi' il confronto e' appaiato come il resto."""
+    import json
+    base = os.path.join(RADICE, "results", "trajectories")
+    pref = "c2r_" if "riraccolta" in RADICE_DATI else "c2_"
+    cella = f"{pref}{modello}_{infra}_{trasporto}"
+    fuori = []
+    for d in sorted(glob.glob(os.path.join(base, cella + "*"))):
+        if pref == "c2_" and os.path.basename(d).startswith("c2r_"):
+            continue
+        for f in sorted(glob.glob(os.path.join(d, "*.jsonl"))):
+            n = sum(1 for l in open(f, errors="ignore") if l.strip())
+            if n:
+                fuori.append(n)
+    return fuori
+
+
 def righe(modello, infra, trasporto="native"):
     fuori = []
     for f in sorted(glob.glob(os.path.join(RADICE, RADICE_DATI, PATTERN))):
@@ -50,7 +72,7 @@ def righe(modello, infra, trasporto="native"):
                         "out": int(r["out_tokens"]),
                         "inp": int(r["in_tokens"]),
                         "chars": int(r["candidate_chars"]),
-                        "turni": int(r["n_turns"]),
+                        "turni_configurati": int(r["n_turns"]),
                     })
                 except (ValueError, KeyError, TypeError):
                     continue
@@ -78,7 +100,7 @@ def confronta(modello):
                              ("out", "token emessi", "{:.0f}"),
                              ("inp", "token in ingresso", "{:.0f}"),
                              ("chars", "caratteri del candidato", "{:.0f}"),
-                             ("turni", "turni", "{:.1f}")):
+                             ):
         ra, rb = riassunto(a, chiave), riassunto(b, chiave)
         rap = rb["mediana"] / ra["mediana"] if ra["mediana"] else float("nan")
         fuori[chiave] = rap
@@ -86,6 +108,22 @@ def confronta(modello):
               f"{fmt.format(ra['mediana']) + ' [' + fmt.format(ra['q1']) + '-' + fmt.format(ra['q3']) + ']':>22}"
               f"{fmt.format(rb['mediana']) + ' [' + fmt.format(rb['q1']) + '-' + fmt.format(rb['q3']) + ']':>22}"
               f"{rap:>10.2f}")
+    # I TURNI USATI, dalle traiettorie e non dalla colonna costante. Va prima del throughput
+    # perche' e' la quantita' che spiega parte del divario sui token in ingresso: una
+    # traiettoria piu' lunga accumula piu' storia, e il totale per run cresce senza che
+    # nessuno "mandi di piu'" a parita' di turno.
+    ta, tb = turni_usati(modello, "databricks"), turni_usati(modello, "bedrock")
+    if ta and tb:
+        ma, mb = st.median(ta), st.median(tb)
+        qa, qb = sorted(ta), sorted(tb)
+        fuori["turni_usati"] = mb / ma if ma else float("nan")
+        print(f"    {'turni usati':<26}"
+              f"{f'{ma:.1f} [{qa[len(qa)//4]:.1f}-{qa[3*len(qa)//4]:.1f}]':>22}"
+              f"{f'{mb:.1f} [{qb[len(qb)//4]:.1f}-{qb[3*len(qb)//4]:.1f}]':>22}"
+              f"{mb/ma:>10.2f}")
+        for eti, v in (("al budget, databricks", ta), ("al budget, bedrock", tb)):
+            print(f"    {eti:<26}{100.0*sum(1 for t in v if t >= 13)/len(v):>21.2f}%")
+
     # throughput: token in uscita per secondo, calcolato per run e poi mediano
     tpa = st.median([d["out"] / d["elapsed"] for d in a if d["elapsed"] > 0])
     tpb = st.median([d["out"] / d["elapsed"] for d in b if d["elapsed"] > 0])
@@ -109,7 +147,7 @@ if __name__ == "__main__":
 
     t6 = esiti.get("llama-3.3-70b")
     if not t6:
-        raise SystemExit("  T6 non calcolabile su questi dati (exit 2)")
+        raise SystemExit("  T6 non calcolabile su questi dati")
 
     print("\n  COSA DICE SU T6")
     diverge = [(k, v) for k, v in t6.items() if abs(v - 1.0) > 0.25]
@@ -132,7 +170,14 @@ if __name__ == "__main__":
     print(f"    ogni run ha latenza positiva: {'ok' if ok[-1] else 'FALLITO'}")
     ok.append(all(d["out"] >= 0 for d in a))
     print(f"    nessun conteggio di token negativo: {'ok' if ok[-1] else 'FALLITO'}")
-    ok.append(1 <= st.median([d["turni"] for d in a]) <= 13)
-    print(f"    i turni stanno nel budget dichiarato (1-13): {'ok' if ok[-1] else 'FALLITO'}")
+    tu = turni_usati("llama-3.3-70b", "databricks")
+    ok.append(bool(tu) and 1 <= st.median(tu) <= 13)
+    print(f"    i turni usati stanno nel budget dichiarato (1-13): {'ok' if ok[-1] else 'FALLITO'}")
+    # Controllo NEGATIVO: la colonna del CSV DEVE essere costante. Se un giorno smettesse di
+    # esserlo, questo script starebbe leggendo un'altra cosa e la riga sui turni andrebbe rifatta.
+    conf = {d["turni_configurati"] for d in righe("llama-3.3-70b", "databricks")}
+    ok.append(len(conf) == 1)
+    print(f"    la colonna n_turns e' una costante di configurazione ({conf}): "
+          f"{'ok' if ok[-1] else 'FALLITO'}")
     if not all(ok):
-        raise SystemExit("  i dati di runtime non rispettano le loro proprieta' (exit 2)")
+        raise SystemExit("  i dati di runtime non rispettano le loro proprieta'")

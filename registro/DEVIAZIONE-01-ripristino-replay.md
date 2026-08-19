@@ -13,7 +13,7 @@ fisso a `c2x_replay_materiale_{modello}_{infra}.json`. Rigiocando la ri-raccolta
 la covariata «materiale acquisito», lo script ha quindi sovrascritto gli otto file del braccio
 confermativo con i dati di un braccio diverso, in silenzio.
 
-È il difetto che `CLAUDE.md` documenta già — *cartelle distinte non bastano: il tag viene dal
+È il difetto che `<istruzioni-di-progetto>` documenta già — *cartelle distinte non bastano: il tag viene dal
 NOME* — ripetuto sull'output invece che sull'input. La correzione precedente aveva parametrizzato
 la lettura, e la lettura era l'unico posto in cui il difetto era stato cercato.
 

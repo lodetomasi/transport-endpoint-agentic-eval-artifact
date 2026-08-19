@@ -119,7 +119,7 @@ def p_misto_dal_congelato():
         if c and c[0] in ("T9", "T10"):
             fuori[c[0]] = float(c[-1])
     if set(fuori) != {"T9", "T10"}:
-        raise SystemExit("  T9/T10 non letti dallo script congelato: non li invento (exit 2)")
+        raise SystemExit("  T9/T10 non letti dallo script congelato: non li invento")
     return fuori
 
 

@@ -1,0 +1,31 @@
+claim/table	source script	regenerated value	manuscript value	match
+Table 6 — p congelato di T6	python3 analysis/analyze_c2.py --results results/riraccolta	0.0155	0.0155	MATCH
+Table 6 — p congelato di T3	python3 analysis/analyze_c2.py --results results/riraccolta	0.0181	0.0181	MATCH
+Table 6 — delta di T3	python3 analysis/analyze_c2.py --results results/riraccolta	-9.83	-9.83	MATCH
+Table 6 — delta di T6	python3 analysis/analyze_c2.py --results results/riraccolta	-7.94	-7.94	MATCH
+Table 6 — delta di T10, dallo script congelato	python3 analysis/analyze_c2.py --results results/riraccolta	-4.16	-4.16	MATCH
+Table 6 — soglia di Holm al rango 1	python3 analysis/analyze_c2.py --results results/riraccolta	0.0050	0.0050	MATCH
+Table 6 — la colonna MDE non deve tornare	-	n/d (controllo negativo)	& MDE	MATCH
+Varianza — SD massima, che porta l'eterogeneita'	python3 analysis/tabella_principale.py --varianza	0.2774	0.2774	MATCH
+Varianza — SD minima	python3 analysis/tabella_principale.py --varianza	0.0117	0.0117	MATCH
+Censimento — coppie tentate	python3 analysis/denominatore_roster.py	21	21	MATCH
+Censimento — coppie rimosse	python3 analysis/denominatore_roster.py	8	8 of 21	MATCH
+Censimento — cause distinte	python3 analysis/denominatore_roster.py	7	7 distinct causes	MATCH
+Censimento — modelli sondati	python3 analysis/denominatore_roster.py	11	11 distinct models	MATCH
+Turni — traiettorie al budget, ri-raccolta	python3 analysis/saturazione_turni.py --braccio riraccolta	68	68	MATCH
+Turni — quota al budget	python3 analysis/saturazione_turni.py --braccio riraccolta	1.16	1.16	MATCH
+Turni — cella gpt-oss/databricks/native	python3 analysis/saturazione_turni.py --braccio riraccolta	10.02	10.0	MATCH
+T6 — turni usati, mediane	python3 analysis/runtime_t6.py	6.0	6.0	MATCH
+T6 — token in ingresso, databricks	python3 analysis/runtime_t6.py	20562	20{,}562	MATCH
+T6 — token in ingresso, bedrock	python3 analysis/runtime_t6.py	8853	8{,}853	MATCH
+T6 — token al primo turno	python3 analysis/contesto_t6.py	1263	1{,}263	MATCH
+Ri-raccolta — misurazioni valide	python3 analysis/numeri_paper.py	5809	5{,}809	MATCH
+Varianza — quota di rumore di T3	python3 analysis/numeri_paper.py	0.0051	0.5	MATCH
+Varianza — K_inf di T3	python3 analysis/numeri_paper.py	667	668	MATCH
+Ri-raccolta — segni concordi	python3 analysis/tabella_riraccolta.py	6	six of eight	MATCH
+Ri-raccolta — copertura IC95	python3 analysis/tabella_riraccolta.py	7	seven of eight	MATCH
+Banda ±3pp — contrasti che NON la risolvono	python3 revisione/conta_soglie.py	6	on six of the eight contrasts the interval is too wide	MATCH
+MDE del disegno 4,87pp — contrasti che lo superano	python3 revisione/conta_soglie.py	5	on five it is wider than the 4.87pp	MATCH
+CONTROLLO NEGATIVO — la vecchia potenza di T6 non deve comparire	-	n/d (controllo negativo)	30.9	MATCH
+CONTROLLO NEGATIVO — la vecchia potenza di T3 non deve comparire	-	n/d (controllo negativo)	21.0\%	MATCH
+CONTROLLO NEGATIVO — il controllo stesso deve saper fallire	-	n/d (controllo negativo)	5{,}809	MATCH

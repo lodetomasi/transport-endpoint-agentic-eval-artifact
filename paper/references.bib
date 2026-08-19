@@ -157,6 +157,20 @@
 }
 
 % Verificata per fetch il 2026-08-15: autori e numeri dall'abstract arXiv.
+% Verificata per DOPPIO fetch il 2026-08-19 (abstract + HTML v1). Le due letture della tabella
+% FC-contro-Prompt danno NUMERI DIVERSI per Claude-4-Sonnet (57,81->18,33 contro 62,28->35,55),
+% quindi nessuna cifra entra nel paper: si cita il reperto QUALITATIVO su cui concordano — il
+% prompt-based degrada gravemente un modello Claude, attribuito a mismatch di template col
+% training, con allucinazione oltre il 70%. E' il vicino piu' stretto sulla gamba trasporto,
+% stessa famiglia di modelli e stessa direzione di T3/T4, trovato dal seggio novita'.
+@misc{mcpverse2025,
+  author       = {Lei, Fei and Yang, Yibo and Sun, Wenxiu and Lin, Dahua},
+  title        = {{MCPVerse}: An Expansive, Real-World Benchmark for Agentic Tool Use},
+  year         = {2025},
+  eprint       = {2508.16260},
+  archivePrefix= {arXiv}
+}
+
 @misc{bitterlesson2026,
   author       = {Patel, Ishan and Sen, Sahil and Lumer, Elias and Subbiah, Vamse Kumar},
   title        = {The Bitter Lesson of Tool Calling},
@@ -350,7 +364,8 @@
 
 @inproceedings{angermeir2026reproducibility,
   author = {Angermeir, Florian and Amougou, Maximilian and Kreitz, Mark and Bauer, Andreas and
-            Linhuber, Matthias and Fucci, Davide},
+            Linhuber, Matthias and Fucci, Davide and {Moy\'on C.}, Fabiola and Mendez, Daniel and
+            Gorschek, Tony},
   title  = {Reflections on the Reproducibility of Commercial {LLM} Performance in Empirical
             Software Engineering Studies},
   booktitle = {Proc. 48th Int. Conf. on Software Engineering (ICSE)},
@@ -404,4 +419,23 @@
                both recompute from the snapshot of its cells included in this paper's
                replication package, with their per-turn logs},
   year      = {2026},
+}
+
+@inproceedings{gao2025equality,
+  author    = {Gao, Irena and Liang, Percy and Guestrin, Carlos},
+  title     = {Model Equality Testing: Which Model Is This {API} Serving?},
+  booktitle = {Proc. 13th Int. Conf. on Learning Representations (ICLR)},
+  year      = {2025},
+  eprint    = {2410.20247},
+  archivePrefix = {arXiv},
+%  [nota di verifica, non stampata] Abstract fetchato il 2026-08-19 da arxiv.org/abs/2410.20247,
+%  nota di venue «ICLR 2025 Camera-Ready». Verbatim dall'abstract:
+%    "Llama models are popularly accessed via Amazon Bedrock and Azure AI Studio"
+%    "a test built on a simple string kernel achieves a median of 77.4% power against a range of
+%     distortions, using an average of just 10 samples per prompt"
+%    "we apply this test to commercial inference APIs from Summer 2024 for four Llama models,
+%     finding that 11 out of 31 endpoints serve different distributions than reference weights
+%     released by Meta"
+%  Il fetch conferma inoltre l'ASSENZA di tool calling, compiti agentici multi-turno e confronti
+%  fra trasporti: e' cio' che lascia scoperto l'incrocio che questo capitolo esegue.
 }
