@@ -1,0 +1,5 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog30_escape_unescape,1,0.6000,3,5,True,False,2253,12,0.006858,6193,7977,databricks-gpt-oss-120b,databricks,35.4,[],2026-08-16T17:23:44,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,1,1.0000,5,5,True,False,1360,12,0.003336,3952,3645,databricks-gpt-oss-120b,databricks,19.4,[],2026-08-16T17:24:03,gpt-oss-120b,databricks,text
+prog32_prime_factorization,1,1.0000,5,5,True,False,1097,12,0.003593,3495,4116,databricks-gpt-oss-120b,databricks,19.9,[],2026-08-16T17:24:23,gpt-oss-120b,databricks,text
+prog39_horner,1,0.4000,2,5,True,False,1526,12,0.004831,4433,5602,databricks-gpt-oss-120b,databricks,25.7,[],2026-08-16T17:24:49,gpt-oss-120b,databricks,text

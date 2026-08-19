@@ -1,0 +1,7 @@
+{"program": "prog49_bst", "tests": [
+  {"id": 1, "args": ["in", "5", "3", "8", "1", "4"], "stdin": "", "expected_stdout": "1 3 4 5 8\n"},
+  {"id": 2, "args": ["pre", "7"], "stdin": "", "expected_stdout": "7\n"},
+  {"id": 3, "args": ["in"], "stdin": "", "expected_stdout": "EMPTY\n"},
+  {"id": 4, "args": ["post", "8", "3", "10", "1", "6", "14", "4", "7", "13", "8", "3", "6"], "stdin": "", "expected_stdout": "1 4 7 6 3 13 14 10 8\n"},
+  {"id": 5, "args": ["bad", "1", "2", "3"], "stdin": "", "expected_stdout": "INVALID_MODE\n"}
+]}

@@ -1,0 +1,3 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog19_palindrome_checker,1,0.0000,0,5,True,False,1340,12,0.000527,1024,476,databricks-gpt-oss-120b,databricks,22.9,[],2026-08-14T07:29:09,gpt-oss-120b,databricks,text
+prog27_soundex,1,0.6000,3,5,True,False,1729,12,0.005015,12839,3756,databricks-gpt-oss-120b,databricks,68.1,[],2026-08-14T07:30:17,gpt-oss-120b,databricks,text

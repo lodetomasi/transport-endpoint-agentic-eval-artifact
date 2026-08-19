@@ -1,0 +1,80 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,1.0000,5,5,True,False,486,12,0.005398,9168,6704,openai.gpt-oss-120b-1:0,bedrock,38.9,[],2026-08-14T18:42:25,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,2,1.0000,5,5,True,False,497,12,0.001971,6188,1738,openai.gpt-oss-120b-1:0,bedrock,32.4,[],2026-08-14T18:42:57,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,3,0.8000,4,5,True,False,508,12,0.003855,3436,5566,openai.gpt-oss-120b-1:0,bedrock,40.0,[],2026-08-14T18:43:37,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,4,1.0000,5,5,True,False,485,12,0.001077,3436,936,openai.gpt-oss-120b-1:0,bedrock,7.5,[],2026-08-14T18:43:45,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,5,1.0000,5,5,True,False,497,12,0.002001,6201,1785,openai.gpt-oss-120b-1:0,bedrock,11.2,[],2026-08-14T18:43:56,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,6,1.0000,5,5,True,False,509,12,0.001628,3436,1855,openai.gpt-oss-120b-1:0,bedrock,8.2,[],2026-08-14T18:44:04,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,7,0.8000,4,5,True,False,606,12,0.001377,3436,1436,openai.gpt-oss-120b-1:0,bedrock,14.4,[],2026-08-14T18:44:18,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,8,1.0000,5,5,True,False,603,12,0.001806,3436,2151,openai.gpt-oss-120b-1:0,bedrock,22.7,[],2026-08-14T18:44:41,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,1,0.0000,0,5,False,False,1288,12,0.002887,6468,3194,openai.gpt-oss-120b-1:0,bedrock,23.6,"/w/candidate.c:16:5: error: use of undeclared identifier 'bool'
+   16 |     bool space_pending = false;
+      |     ^
+/w/candidate.c:29:13: error: use of undeclared identifier 'space_pending'
+   29 |             space_pending = true;
+      |             ^
+/w/candidate.c:29:29: error: use of undeclar",2026-08-14T18:45:05,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,2,1.0000,5,5,True,False,1801,12,0.007003,20600,6521,openai.gpt-oss-120b-1:0,bedrock,100.9,[],2026-08-14T18:46:46,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,3,1.0000,5,5,True,False,1019,12,0.004260,9830,4642,openai.gpt-oss-120b-1:0,bedrock,61.8,[],2026-08-14T18:47:47,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,4,1.0000,5,5,True,False,1559,12,0.015936,38005,17058,openai.gpt-oss-120b-1:0,bedrock,116.3,[],2026-08-14T18:49:44,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,5,1.0000,5,5,True,False,2366,12,0.005220,15043,4940,openai.gpt-oss-120b-1:0,bedrock,93.6,[],2026-08-14T18:51:17,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,6,1.0000,5,5,True,False,1379,12,0.008081,22963,7727,openai.gpt-oss-120b-1:0,bedrock,89.9,[],2026-08-14T18:52:47,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,7,1.0000,5,5,True,False,1510,12,0.005817,19626,4788,openai.gpt-oss-120b-1:0,bedrock,31.3,[],2026-08-14T18:53:19,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,8,1.0000,5,5,True,False,1534,12,0.008357,24044,7918,openai.gpt-oss-120b-1:0,bedrock,145.5,[],2026-08-14T18:55:44,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,1,1.0000,5,5,True,False,758,12,0.003408,8030,3672,openai.gpt-oss-120b-1:0,bedrock,42.3,[],2026-08-14T18:56:26,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,2,0.8000,4,5,True,False,843,12,0.002873,9062,2523,openai.gpt-oss-120b-1:0,bedrock,24.0,[],2026-08-14T18:56:50,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,3,1.0000,5,5,True,False,1051,12,0.001945,4540,2107,openai.gpt-oss-120b-1:0,bedrock,10.2,[],2026-08-14T18:57:01,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,4,1.0000,5,5,True,False,1068,12,0.003238,8969,3154,openai.gpt-oss-120b-1:0,bedrock,23.2,[],2026-08-14T18:57:24,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,5,0.8000,4,5,True,False,728,12,0.002694,9062,2224,openai.gpt-oss-120b-1:0,bedrock,38.3,[],2026-08-14T18:58:02,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,6,1.0000,5,5,True,False,1171,12,0.003881,9062,4203,openai.gpt-oss-120b-1:0,bedrock,21.7,[],2026-08-14T18:58:24,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,7,1.0000,5,5,True,False,1243,12,0.001919,4540,2063,openai.gpt-oss-120b-1:0,bedrock,19.0,[],2026-08-14T18:58:43,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,8,1.0000,5,5,True,False,871,12,0.003435,8801,3524,openai.gpt-oss-120b-1:0,bedrock,31.0,[],2026-08-14T18:59:14,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,1,1.0000,5,5,True,False,1210,12,0.003059,8578,2954,openai.gpt-oss-120b-1:0,bedrock,30.7,[],2026-08-14T18:59:44,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,2,1.0000,5,5,True,False,761,12,0.007515,15529,8643,openai.gpt-oss-120b-1:0,bedrock,79.6,[],2026-08-14T19:01:04,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,3,1.0000,5,5,True,False,914,12,0.009845,23609,10506,openai.gpt-oss-120b-1:0,bedrock,74.3,[],2026-08-14T19:02:18,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,4,1.0000,5,5,True,False,861,12,0.003110,8161,3143,openai.gpt-oss-120b-1:0,bedrock,20.6,[],2026-08-14T19:02:39,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,5,1.0000,5,5,True,False,1119,12,0.002969,4315,3869,openai.gpt-oss-120b-1:0,bedrock,27.5,[],2026-08-14T19:03:06,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,6,1.0000,5,5,True,False,875,12,0.003155,8320,3178,openai.gpt-oss-120b-1:0,bedrock,13.3,[],2026-08-14T19:03:20,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,7,1.0000,5,5,True,False,845,12,0.003557,8210,3876,openai.gpt-oss-120b-1:0,bedrock,28.4,[],2026-08-14T19:03:48,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,8,1.0000,5,5,True,False,898,12,0.003163,8493,3148,openai.gpt-oss-120b-1:0,bedrock,22.7,[],2026-08-14T19:04:11,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,1,1.0000,5,5,True,False,1261,12,0.002230,4329,2634,openai.gpt-oss-120b-1:0,bedrock,48.5,[],2026-08-14T19:04:59,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,2,1.0000,5,5,True,False,984,12,0.002440,4329,2984,openai.gpt-oss-120b-1:0,bedrock,19.9,[],2026-08-14T19:05:19,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,3,1.0000,5,5,True,False,1079,12,0.003695,8760,3969,openai.gpt-oss-120b-1:0,bedrock,23.3,[],2026-08-14T19:05:42,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,4,1.0000,5,5,True,False,963,12,0.002191,4329,2570,openai.gpt-oss-120b-1:0,bedrock,31.7,[],2026-08-14T19:06:14,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,5,1.0000,5,5,True,False,1261,12,0.002232,4329,2637,openai.gpt-oss-120b-1:0,bedrock,40.6,[],2026-08-14T19:06:55,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,6,1.0000,5,5,True,False,1102,12,0.002251,4329,2670,openai.gpt-oss-120b-1:0,bedrock,14.8,[],2026-08-14T19:07:10,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,7,1.0000,5,5,True,False,1261,12,0.002234,4329,2641,openai.gpt-oss-120b-1:0,bedrock,39.9,[],2026-08-14T19:07:49,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,8,1.0000,5,5,True,False,1082,12,0.002084,4329,2391,openai.gpt-oss-120b-1:0,bedrock,13.4,[],2026-08-14T19:08:03,gpt-oss-120b,bedrock,native
+prog21_date_validator,1,1.0000,5,5,True,False,1198,12,0.004327,9713,4784,openai.gpt-oss-120b-1:0,bedrock,110.4,[],2026-08-14T19:09:53,gpt-oss-120b,bedrock,native
+prog21_date_validator,2,1.0000,5,5,True,False,2337,12,0.015571,32016,17948,openai.gpt-oss-120b-1:0,bedrock,130.0,[],2026-08-14T19:12:03,gpt-oss-120b,bedrock,native
+prog21_date_validator,3,1.0000,5,5,True,False,1337,12,0.005529,4866,7999,openai.gpt-oss-120b-1:0,bedrock,52.7,[],2026-08-14T19:12:56,gpt-oss-120b,bedrock,native
+prog21_date_validator,4,1.0000,5,5,True,False,1728,12,0.011983,36120,10942,openai.gpt-oss-120b-1:0,bedrock,65.9,[],2026-08-14T19:14:02,gpt-oss-120b,bedrock,native
+prog21_date_validator,5,0.6000,3,5,True,False,1265,12,0.004470,9569,5058,openai.gpt-oss-120b-1:0,bedrock,145.7,[],2026-08-14T19:16:28,gpt-oss-120b,bedrock,native
+prog21_date_validator,6,1.0000,5,5,True,False,1014,12,0.006371,9557,8229,openai.gpt-oss-120b-1:0,bedrock,52.2,[],2026-08-14T19:17:20,gpt-oss-120b,bedrock,native
+prog21_date_validator,7,0.0000,0,5,False,True,0,12,0.005691,4866,8269,openai.gpt-oss-120b-1:0,bedrock,42.0,nessun candidato prodotto,2026-08-14T19:18:02,gpt-oss-120b,bedrock,native
+prog21_date_validator,8,0.0000,0,5,False,True,0,12,0.005693,4866,8272,openai.gpt-oss-120b-1:0,bedrock,32.9,nessun candidato prodotto,2026-08-14T19:18:35,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,1,0.8000,4,5,True,False,2078,12,0.007544,22564,6933,openai.gpt-oss-120b-1:0,bedrock,42.2,[],2026-08-14T19:19:17,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,2,0.8000,4,5,True,False,1504,12,0.006507,10905,8119,openai.gpt-oss-120b-1:0,bedrock,47.9,[],2026-08-14T19:20:05,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,3,0.0000,0,5,False,True,0,12,0.006183,14491,6682,openai.gpt-oss-120b-1:0,bedrock,49.5,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.10.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most rece",2026-08-14T19:20:54,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,4,0.8000,4,5,True,False,1235,12,0.006127,19056,5448,openai.gpt-oss-120b-1:0,bedrock,216.6,[],2026-08-14T19:24:31,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,5,0.8000,4,5,True,False,1600,12,0.017784,40560,19500,openai.gpt-oss-120b-1:0,bedrock,179.3,[],2026-08-14T19:27:30,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,6,0.8000,4,5,True,False,1374,12,0.009015,19019,10271,openai.gpt-oss-120b-1:0,bedrock,60.9,[],2026-08-14T19:28:31,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,7,0.8000,4,5,True,False,1979,12,0.009263,22376,9845,openai.gpt-oss-120b-1:0,bedrock,69.9,[],2026-08-14T19:29:41,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,8,0.8000,4,5,True,False,1376,12,0.014437,43949,13075,openai.gpt-oss-120b-1:0,bedrock,143.3,[],2026-08-14T19:32:04,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,1,0.8000,4,5,True,False,1422,12,0.003058,8035,3088,openai.gpt-oss-120b-1:0,bedrock,53.0,[],2026-08-14T19:32:57,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,2,1.0000,5,5,True,False,801,12,0.002773,7965,2631,openai.gpt-oss-120b-1:0,bedrock,23.1,[],2026-08-14T19:33:20,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,3,1.0000,5,5,True,False,1718,12,0.003470,4126,4752,openai.gpt-oss-120b-1:0,bedrock,17.4,[],2026-08-14T19:33:38,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,4,0.8000,4,5,True,False,1422,12,0.003075,8035,3117,openai.gpt-oss-120b-1:0,bedrock,48.2,[],2026-08-14T19:34:26,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,5,0.8000,4,5,True,False,1025,12,0.003012,8035,3011,openai.gpt-oss-120b-1:0,bedrock,47.8,[],2026-08-14T19:35:14,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,6,0.8000,4,5,True,False,1422,12,0.003058,8035,3088,openai.gpt-oss-120b-1:0,bedrock,48.8,[],2026-08-14T19:36:03,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,7,1.0000,5,5,True,False,1077,12,0.002479,7198,2332,openai.gpt-oss-120b-1:0,bedrock,20.7,[],2026-08-14T19:36:23,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,8,0.8000,4,5,True,False,854,12,0.003509,7874,3880,openai.gpt-oss-120b-1:0,bedrock,28.6,[],2026-08-14T19:36:52,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,1,0.8000,4,5,True,False,1978,12,0.007537,29984,5065,openai.gpt-oss-120b-1:0,bedrock,30.9,[],2026-08-14T19:37:23,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,2,0.8000,4,5,True,False,3986,12,0.008463,27983,7109,openai.gpt-oss-120b-1:0,bedrock,59.2,[],2026-08-14T19:38:22,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,3,0.8000,4,5,True,False,2042,12,0.007977,33999,4795,openai.gpt-oss-120b-1:0,bedrock,36.0,[],2026-08-14T19:38:58,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,4,0.8000,4,5,True,False,3626,12,0.007960,28820,6061,openai.gpt-oss-120b-1:0,bedrock,43.4,[],2026-08-14T19:39:41,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,5,0.8000,4,5,True,False,3207,12,0.011078,49506,6087,openai.gpt-oss-120b-1:0,bedrock,43.7,[],2026-08-14T19:40:25,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,6,0.8000,4,5,True,False,2118,12,0.005161,19951,3614,openai.gpt-oss-120b-1:0,bedrock,28.9,[],2026-08-14T19:40:54,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,7,0.8000,4,5,True,False,3375,12,0.021214,89338,13022,openai.gpt-oss-120b-1:0,bedrock,62.7,[],2026-08-14T19:41:57,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,8,0.8000,4,5,True,False,1747,12,0.009374,45418,4269,openai.gpt-oss-120b-1:0,bedrock,72.0,[],2026-08-14T19:43:09,gpt-oss-120b,bedrock,native

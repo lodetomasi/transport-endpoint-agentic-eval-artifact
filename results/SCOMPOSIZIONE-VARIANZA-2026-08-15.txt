@@ -1,0 +1,39 @@
+Scomposizione della varianza della differenza appaiata — C2, 16 celle chiuse
+
+       modello                SD oss  SD rumore  % rumore  SD resid.  K a 3pp  K con run inf.
+  T1   gpt-oss-120b           0.1950     0.1475     57.2%     0.1276      332             142
+  T2   llama-3.3-70b          0.1374     0.0799     33.8%     0.1118      165             109
+  T3   claude-haiku-4-5       0.2844     0.0098      0.1%     0.2842      705             705
+  T4   claude-sonnet-4-5      0.1232     0.0712     33.4%     0.1005      132              88
+  T5   gpt-oss-120b           0.1339     0.1406    110.3%     0.0000      156               0  <- rumore > SD osservata
+  T6   llama-3.3-70b          0.2481     0.0756      9.3%     0.2363      537             487
+  T7   claude-haiku-4-5       0.0037     0.0037    100.0%     0.0000        0               0  <- rumore > SD osservata
+  T8   claude-sonnet-4-5      0.0630     0.0748    141.0%     0.0000       35               0  <- rumore > SD osservata
+
+  I tre contrasti marcati (T5, T7, T8) hanno rumore stimato MAGGIORE
+  della SD osservata, cioe' varianza residua negativa. Non e' un errore di conto:
+  significa che la differenza fra le due condizioni e' MENO variabile di quanto
+  il rumore indipendente predirebbe. Due letture, entrambe da dichiarare:
+    - le run delle due condizioni non sono indipendenti come il modello assume
+      (stesso binario, stesso stack, errori correlati), oppure
+    - e' rumore di stima sulle varianze, con 45 binari e 8 run.
+  In entrambi i casi la lettura utile e' la stessa: su quei contrasti NON c'e'
+  eterogeneita' vera fra binari da rilevare, e la SD osservata e' tutta rumore
+  che piu' run ridurrebbero. E' l'opposto di T3 e T6.
+
+  Le due leve, per i tre contrasti con p nominale sotto 0,05:
+    T1: piu RUN per binario: il 57% della varianza e' rumore, e con run infinite K scenderebbe da 332 a 142
+    T3: NESSUNA leva praticabile: solo il 0% e' rumore, quindi anche con run infinite servirebbero K=705 binari
+    T6: NESSUNA leva praticabile: solo il 9% e' rumore, quindi anche con run infinite servirebbero K=487 binari
+
+  La calibrazione importata da C1 per haiku, e cosa dicono i dati di C2:
+    PREREGISTRAZIONE §7, da C1: «per haiku-4-5 l'84% e' rumore fra run e il
+    pavimento e' K=13».   Osservato in C2 sullo stesso contrasto: 0.1% rumore,
+    pavimento K=705.
+    La calibrazione non ha sbagliato solo la grandezza: ha invertito il MECCANISMO.
+
+  Controllo con risposta nota — lo stats-auditor, calcolando indipendentemente,
+  ha riportato SD osservate 0,1950 (T1), 0,2844 (T3), 0,2481 (T6):
+    T1: 0.1950 contro 0.1950  COINCIDE
+    T3: 0.2844 contro 0.2844  COINCIDE
+    T6: 0.2481 contro 0.2481  COINCIDE

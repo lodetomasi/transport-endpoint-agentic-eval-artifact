@@ -1,0 +1,7 @@
+{"program": "prog38_continued_fraction", "tests": [
+  {"id": 1, "args": ["649", "200"], "stdin": "", "expected_stdout": "[3; 4, 12, 4]\n"},
+  {"id": 2, "args": ["1", "1"], "stdin": "", "expected_stdout": "[1]\n"},
+  {"id": 3, "args": ["0", "5"], "stdin": "", "expected_stdout": "[0]\n"},
+  {"id": 4, "args": ["-649", "200"], "stdin": "", "expected_stdout": "[-4; 1, 3, 12, 4]\n"},
+  {"id": 5, "args": ["5", "0"], "stdin": "", "expected_stdout": "BAD_INPUT\n"}
+]}

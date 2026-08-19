@@ -1,0 +1,486 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,1.0000,5,5,True,False,487,12,0.006166,9239,346,databricks-meta-llama-3-3-70b-instruct,databricks,11.0,[],2026-08-16T06:29:18,llama-3.3-70b,databricks,native
+prog16_word_count_fsm,2,1.0000,5,5,True,False,487,12,0.006166,9239,346,databricks-meta-llama-3-3-70b-instruct,databricks,9.1,[],2026-08-16T06:29:27,llama-3.3-70b,databricks,native
+prog16_word_count_fsm,3,1.0000,5,5,True,False,492,12,0.010696,16659,389,databricks-meta-llama-3-3-70b-instruct,databricks,12.1,[],2026-08-16T06:29:39,llama-3.3-70b,databricks,native
+prog16_word_count_fsm,4,1.0000,5,5,True,False,469,12,0.008631,12933,484,databricks-meta-llama-3-3-70b-instruct,databricks,11.9,[],2026-08-16T06:29:51,llama-3.3-70b,databricks,native
+prog16_word_count_fsm,5,1.0000,5,5,True,False,492,12,0.016653,25343,804,databricks-meta-llama-3-3-70b-instruct,databricks,18.6,[],2026-08-16T06:30:09,llama-3.3-70b,databricks,native
+prog16_word_count_fsm,6,1.0000,5,5,True,False,469,12,0.008631,12933,484,databricks-meta-llama-3-3-70b-instruct,databricks,11.8,[],2026-08-16T06:30:21,llama-3.3-70b,databricks,native
+prog16_word_count_fsm,7,1.0000,5,5,True,False,469,12,0.008631,12933,484,databricks-meta-llama-3-3-70b-instruct,databricks,11.8,[],2026-08-16T06:30:33,llama-3.3-70b,databricks,native
+prog16_word_count_fsm,8,1.0000,5,5,True,False,492,12,0.016653,25343,804,databricks-meta-llama-3-3-70b-instruct,databricks,18.6,[],2026-08-16T06:30:52,llama-3.3-70b,databricks,native
+prog17_whitespace_trim,1,0.4000,2,5,True,False,588,12,0.017975,28160,599,databricks-meta-llama-3-3-70b-instruct,databricks,16.4,[],2026-08-16T06:31:08,llama-3.3-70b,databricks,native
+prog17_whitespace_trim,2,0.4000,2,5,True,False,639,12,0.007356,9865,798,databricks-meta-llama-3-3-70b-instruct,databricks,14.3,[],2026-08-16T06:31:22,llama-3.3-70b,databricks,native
+prog17_whitespace_trim,3,0.4000,2,5,True,False,524,12,0.012058,17925,724,databricks-meta-llama-3-3-70b-instruct,databricks,15.8,[],2026-08-16T06:31:38,llama-3.3-70b,databricks,native
+prog17_whitespace_trim,4,0.4000,2,5,True,False,639,12,0.007354,9865,797,databricks-meta-llama-3-3-70b-instruct,databricks,14.2,[],2026-08-16T06:31:52,llama-3.3-70b,databricks,native
+prog17_whitespace_trim,5,0.4000,2,5,True,False,639,12,0.007356,9865,798,databricks-meta-llama-3-3-70b-instruct,databricks,15.6,[],2026-08-16T06:32:08,llama-3.3-70b,databricks,native
+prog17_whitespace_trim,6,0.4000,2,5,True,False,639,12,0.007356,9865,798,databricks-meta-llama-3-3-70b-instruct,databricks,14.1,[],2026-08-16T06:32:22,llama-3.3-70b,databricks,native
+prog17_whitespace_trim,7,0.4000,2,5,True,False,794,12,0.007332,9865,785,databricks-meta-llama-3-3-70b-instruct,databricks,14.8,[],2026-08-16T06:32:37,llama-3.3-70b,databricks,native
+prog17_whitespace_trim,8,0.4000,2,5,True,False,639,12,0.007354,9865,797,databricks-meta-llama-3-3-70b-instruct,databricks,14.5,[],2026-08-16T06:32:51,llama-3.3-70b,databricks,native
+prog18_caesar_cipher,1,0.0000,0,5,True,False,530,12,0.019098,30842,329,databricks-meta-llama-3-3-70b-instruct,databricks,14.2,[],2026-08-16T06:33:06,llama-3.3-70b,databricks,native
+prog18_caesar_cipher,2,0.0000,0,5,False,False,510,12,0.019085,30842,322,databricks-meta-llama-3-3-70b-instruct,databricks,12.8,"/w/candidate.c:11:25: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     for (int i = 0; i < strlen(str); i++) {
+      |                         ^
+",2026-08-16T06:33:18,llama-3.3-70b,databricks,native
+prog18_caesar_cipher,3,0.0000,0,5,True,False,526,12,0.019092,30842,326,databricks-meta-llama-3-3-70b-instruct,databricks,13.1,[],2026-08-16T06:33:31,llama-3.3-70b,databricks,native
+prog18_caesar_cipher,4,0.0000,0,5,False,False,506,12,0.019083,30842,321,databricks-meta-llama-3-3-70b-instruct,databricks,12.4,"/w/candidate.c:11:25: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     for (int i = 0; i < strlen(str); i++) {
+      |                         ^
+",2026-08-16T06:33:44,llama-3.3-70b,databricks,native
+prog18_caesar_cipher,5,0.0000,0,5,False,False,506,12,0.019083,30842,321,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,"/w/candidate.c:11:25: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     for (int i = 0; i < strlen(str); i++) {
+      |                         ^
+",2026-08-16T06:33:56,llama-3.3-70b,databricks,native
+prog18_caesar_cipher,6,0.0000,0,5,True,False,530,12,0.019088,30828,328,databricks-meta-llama-3-3-70b-instruct,databricks,13.9,[],2026-08-16T06:34:10,llama-3.3-70b,databricks,native
+prog18_caesar_cipher,7,0.0000,0,5,True,False,526,12,0.019092,30842,326,databricks-meta-llama-3-3-70b-instruct,databricks,13.1,[],2026-08-16T06:34:23,llama-3.3-70b,databricks,native
+prog18_caesar_cipher,8,0.0000,0,5,True,False,526,12,0.019092,30842,326,databricks-meta-llama-3-3-70b-instruct,databricks,13.6,[],2026-08-16T06:34:37,llama-3.3-70b,databricks,native
+prog19_palindrome_checker,1,0.8000,4,5,True,False,498,12,0.012720,20162,346,databricks-meta-llama-3-3-70b-instruct,databricks,11.4,[],2026-08-16T06:34:48,llama-3.3-70b,databricks,native
+prog19_palindrome_checker,2,0.8000,4,5,True,False,461,12,0.013138,20162,578,databricks-meta-llama-3-3-70b-instruct,databricks,14.1,[],2026-08-16T06:35:03,llama-3.3-70b,databricks,native
+prog19_palindrome_checker,3,0.8000,4,5,True,False,462,12,0.013102,20162,558,databricks-meta-llama-3-3-70b-instruct,databricks,13.7,[],2026-08-16T06:35:16,llama-3.3-70b,databricks,native
+prog19_palindrome_checker,4,0.8000,4,5,True,False,461,12,0.013145,20162,582,databricks-meta-llama-3-3-70b-instruct,databricks,14.3,[],2026-08-16T06:35:31,llama-3.3-70b,databricks,native
+prog19_palindrome_checker,5,0.8000,4,5,True,False,461,12,0.013145,20162,582,databricks-meta-llama-3-3-70b-instruct,databricks,14.4,[],2026-08-16T06:35:45,llama-3.3-70b,databricks,native
+prog19_palindrome_checker,6,0.8000,4,5,True,False,461,12,0.013145,20162,582,databricks-meta-llama-3-3-70b-instruct,databricks,13.8,[],2026-08-16T06:35:59,llama-3.3-70b,databricks,native
+prog19_palindrome_checker,7,0.8000,4,5,True,False,492,12,0.012739,20152,360,databricks-meta-llama-3-3-70b-instruct,databricks,11.5,[],2026-08-16T06:36:10,llama-3.3-70b,databricks,native
+prog19_palindrome_checker,8,0.8000,4,5,True,False,461,12,0.013145,20162,582,databricks-meta-llama-3-3-70b-instruct,databricks,14.2,[],2026-08-16T06:36:24,llama-3.3-70b,databricks,native
+prog20_anagram_checker,1,1.0000,5,5,True,False,850,12,0.007401,10984,450,databricks-meta-llama-3-3-70b-instruct,databricks,10.4,[],2026-08-16T06:36:35,llama-3.3-70b,databricks,native
+prog20_anagram_checker,2,1.0000,5,5,True,False,850,12,0.013314,20180,670,databricks-meta-llama-3-3-70b-instruct,databricks,15.4,[],2026-08-16T06:36:50,llama-3.3-70b,databricks,native
+prog20_anagram_checker,3,1.0000,5,5,True,False,863,12,0.016326,25425,595,databricks-meta-llama-3-3-70b-instruct,databricks,15.5,[],2026-08-16T06:37:06,llama-3.3-70b,databricks,native
+prog20_anagram_checker,4,1.0000,5,5,True,False,887,12,0.013323,20180,675,databricks-meta-llama-3-3-70b-instruct,databricks,14.8,[],2026-08-16T06:37:21,llama-3.3-70b,databricks,native
+prog20_anagram_checker,5,1.0000,5,5,True,False,887,12,0.013323,20180,675,databricks-meta-llama-3-3-70b-instruct,databricks,14.9,[],2026-08-16T06:37:36,llama-3.3-70b,databricks,native
+prog20_anagram_checker,6,1.0000,5,5,True,False,882,12,0.013255,20180,637,databricks-meta-llama-3-3-70b-instruct,databricks,15.4,[],2026-08-16T06:37:51,llama-3.3-70b,databricks,native
+prog20_anagram_checker,7,1.0000,5,5,True,False,862,12,0.016350,25425,608,databricks-meta-llama-3-3-70b-instruct,databricks,15.6,[],2026-08-16T06:38:07,llama-3.3-70b,databricks,native
+prog20_anagram_checker,8,1.0000,5,5,True,False,832,12,0.013699,20188,881,databricks-meta-llama-3-3-70b-instruct,databricks,17.7,[],2026-08-16T06:38:24,llama-3.3-70b,databricks,native
+prog21_date_validator,1,0.6000,3,5,True,False,624,12,0.016037,25642,362,databricks-meta-llama-3-3-70b-instruct,databricks,13.1,[],2026-08-16T06:38:37,llama-3.3-70b,databricks,native
+prog21_date_validator,2,0.0000,0,5,False,False,418,12,0.014029,22613,256,databricks-meta-llama-3-3-70b-instruct,databricks,10.5,"/w/candidate.c:13:31: error: expected expression
+   13 |     if (/* validation logic */) {
+      |                               ^
+1 error generated.
+",2026-08-16T06:38:48,llama-3.3-70b,databricks,native
+prog21_date_validator,3,0.6000,3,5,True,False,624,12,0.014194,22616,347,databricks-meta-llama-3-3-70b-instruct,databricks,11.9,[],2026-08-16T06:39:00,llama-3.3-70b,databricks,native
+prog21_date_validator,4,0.0000,0,5,True,False,543,12,0.012878,20515,316,databricks-meta-llama-3-3-70b-instruct,databricks,10.1,[],2026-08-16T06:39:10,llama-3.3-70b,databricks,native
+prog21_date_validator,5,0.6000,3,5,True,False,598,12,0.014182,22616,340,databricks-meta-llama-3-3-70b-instruct,databricks,11.2,[],2026-08-16T06:39:21,llama-3.3-70b,databricks,native
+prog21_date_validator,6,0.6000,3,5,True,False,583,12,0.012900,20515,328,databricks-meta-llama-3-3-70b-instruct,databricks,10.0,[],2026-08-16T06:39:31,llama-3.3-70b,databricks,native
+prog21_date_validator,7,0.6000,3,5,True,False,556,12,0.012883,20515,319,databricks-meta-llama-3-3-70b-instruct,databricks,10.0,[],2026-08-16T06:39:41,llama-3.3-70b,databricks,native
+prog21_date_validator,8,0.6000,3,5,True,False,556,12,0.012883,20515,319,databricks-meta-llama-3-3-70b-instruct,databricks,10.0,[],2026-08-16T06:39:51,llama-3.3-70b,databricks,native
+prog22_snake_camel_convert,1,0.0000,0,5,False,False,1159,12,0.012426,19129,527,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,"/w/candidate.c:15:26: error: call to undeclared library function 'toupper' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |             str[i + 1] = toupper(str[i + 1]);
+      |                          ^
+/w/candidate.c:",2026-08-16T06:40:04,llama-3.3-70b,databricks,native
+prog22_snake_camel_convert,2,0.2000,1,5,True,False,416,12,0.015727,24951,420,databricks-meta-llama-3-3-70b-instruct,databricks,12.3,[],2026-08-16T06:40:16,llama-3.3-70b,databricks,native
+prog22_snake_camel_convert,3,0.0000,0,5,True,False,745,12,0.014934,23773,372,databricks-meta-llama-3-3-70b-instruct,databricks,11.6,[],2026-08-16T06:40:28,llama-3.3-70b,databricks,native
+prog22_snake_camel_convert,4,0.2000,1,5,True,False,362,12,0.014642,23773,210,databricks-meta-llama-3-3-70b-instruct,databricks,9.4,[],2026-08-16T06:40:37,llama-3.3-70b,databricks,native
+prog22_snake_camel_convert,5,0.2000,1,5,True,False,379,12,0.011861,19129,213,databricks-meta-llama-3-3-70b-instruct,databricks,8.7,[],2026-08-16T06:40:46,llama-3.3-70b,databricks,native
+prog22_snake_camel_convert,6,0.2000,1,5,True,False,379,12,0.011861,19129,213,databricks-meta-llama-3-3-70b-instruct,databricks,8.7,[],2026-08-16T06:40:55,llama-3.3-70b,databricks,native
+prog22_snake_camel_convert,7,0.2000,1,5,True,False,362,12,0.014642,23773,210,databricks-meta-llama-3-3-70b-instruct,databricks,9.8,[],2026-08-16T06:41:05,llama-3.3-70b,databricks,native
+prog22_snake_camel_convert,8,0.0000,0,5,False,False,1266,12,0.015269,23773,558,databricks-meta-llama-3-3-70b-instruct,databricks,13.6,"/w/candidate.c:14:26: error: call to undeclared library function 'toupper' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |             str[i + 1] = toupper(str[i + 1]);
+      |                          ^
+/w/candidate.c:",2026-08-16T06:41:18,llama-3.3-70b,databricks,native
+prog23_longest_common_prefix,1,0.4000,2,5,True,False,350,12,0.010932,17283,312,databricks-meta-llama-3-3-70b-instruct,databricks,10.2,[],2026-08-16T06:41:28,llama-3.3-70b,databricks,native
+prog23_longest_common_prefix,2,0.6000,3,5,True,False,458,12,0.015086,24038,368,databricks-meta-llama-3-3-70b-instruct,databricks,12.5,[],2026-08-16T06:41:41,llama-3.3-70b,databricks,native
+prog23_longest_common_prefix,3,0.6000,3,5,True,False,464,12,0.015082,24038,366,databricks-meta-llama-3-3-70b-instruct,databricks,12.4,[],2026-08-16T06:41:53,llama-3.3-70b,databricks,native
+prog23_longest_common_prefix,4,0.4000,2,5,True,False,431,12,0.015069,24038,359,databricks-meta-llama-3-3-70b-instruct,databricks,12.6,[],2026-08-16T06:42:06,llama-3.3-70b,databricks,native
+prog23_longest_common_prefix,5,0.4000,2,5,True,False,431,12,0.015057,24038,352,databricks-meta-llama-3-3-70b-instruct,databricks,12.1,[],2026-08-16T06:42:18,llama-3.3-70b,databricks,native
+prog23_longest_common_prefix,6,0.4000,2,5,True,False,431,12,0.015057,24038,352,databricks-meta-llama-3-3-70b-instruct,databricks,12.2,[],2026-08-16T06:42:30,llama-3.3-70b,databricks,native
+prog23_longest_common_prefix,7,0.4000,2,5,True,False,431,12,0.015069,24038,359,databricks-meta-llama-3-3-70b-instruct,databricks,12.4,[],2026-08-16T06:42:43,llama-3.3-70b,databricks,native
+prog23_longest_common_prefix,8,0.4000,2,5,True,False,439,12,0.018422,28722,660,databricks-meta-llama-3-3-70b-instruct,databricks,21.9,[],2026-08-16T06:43:05,llama-3.3-70b,databricks,native
+prog24_query_string_parser,1,0.0000,0,5,False,False,916,12,0.012396,19543,372,databricks-meta-llama-3-3-70b-instruct,databricks,10.7,"/w/candidate.c:13:9: error: call to undeclared function 'decode'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |         decode(main_line, strlen(main_line), main_key, main_val);
+      |         ^
+/w/candidate.c:19:6: error: conflicting type",2026-08-16T06:43:15,llama-3.3-70b,databricks,native
+prog24_query_string_parser,2,0.0000,0,5,True,False,487,12,0.011010,17654,232,databricks-meta-llama-3-3-70b-instruct,databricks,13.5,[],2026-08-16T06:43:29,llama-3.3-70b,databricks,native
+prog24_query_string_parser,3,0.0000,0,5,True,False,432,12,0.010974,17654,212,databricks-meta-llama-3-3-70b-instruct,databricks,9.9,[],2026-08-16T06:43:39,llama-3.3-70b,databricks,native
+prog24_query_string_parser,4,0.2000,1,5,True,False,356,12,0.012106,19556,207,databricks-meta-llama-3-3-70b-instruct,databricks,8.6,[],2026-08-16T06:43:47,llama-3.3-70b,databricks,native
+prog24_query_string_parser,5,0.0000,0,5,True,False,432,12,0.010974,17654,212,databricks-meta-llama-3-3-70b-instruct,databricks,8.5,[],2026-08-16T06:43:56,llama-3.3-70b,databricks,native
+prog24_query_string_parser,6,0.2000,1,5,True,False,356,12,0.012106,19556,207,databricks-meta-llama-3-3-70b-instruct,databricks,11.6,[],2026-08-16T06:44:08,llama-3.3-70b,databricks,native
+prog24_query_string_parser,7,0.0000,0,5,True,False,376,12,0.016554,26957,211,databricks-meta-llama-3-3-70b-instruct,databricks,10.6,[],2026-08-16T06:44:18,llama-3.3-70b,databricks,native
+prog24_query_string_parser,8,0.2000,1,5,True,False,548,12,0.012223,19556,272,databricks-meta-llama-3-3-70b-instruct,databricks,14.3,[],2026-08-16T06:44:32,llama-3.3-70b,databricks,native
+prog25_balanced_multitype,1,1.0000,5,5,True,False,951,12,0.016565,25747,620,databricks-meta-llama-3-3-70b-instruct,databricks,29.3,[],2026-08-16T06:45:02,llama-3.3-70b,databricks,native
+prog25_balanced_multitype,2,1.0000,5,5,True,False,925,12,0.007782,11371,533,databricks-meta-llama-3-3-70b-instruct,databricks,18.6,[],2026-08-16T06:45:20,llama-3.3-70b,databricks,native
+prog25_balanced_multitype,3,1.0000,5,5,True,False,902,12,0.016849,25810,757,databricks-meta-llama-3-3-70b-instruct,databricks,22.6,[],2026-08-16T06:45:43,llama-3.3-70b,databricks,native
+prog25_balanced_multitype,4,1.0000,5,5,True,False,898,12,0.011496,16126,1011,databricks-meta-llama-3-3-70b-instruct,databricks,18.0,[],2026-08-16T06:46:01,llama-3.3-70b,databricks,native
+prog25_balanced_multitype,5,1.0000,5,5,True,False,898,12,0.011326,16126,917,databricks-meta-llama-3-3-70b-instruct,databricks,16.8,[],2026-08-16T06:46:18,llama-3.3-70b,databricks,native
+prog25_balanced_multitype,6,1.0000,5,5,True,False,898,12,0.011496,16126,1011,databricks-meta-llama-3-3-70b-instruct,databricks,17.9,[],2026-08-16T06:46:35,llama-3.3-70b,databricks,native
+prog25_balanced_multitype,7,1.0000,5,5,True,False,944,12,0.014154,20929,887,databricks-meta-llama-3-3-70b-instruct,databricks,17.7,[],2026-08-16T06:46:53,llama-3.3-70b,databricks,native
+prog25_balanced_multitype,8,1.0000,5,5,True,False,898,12,0.011326,16126,917,databricks-meta-llama-3-3-70b-instruct,databricks,16.9,[],2026-08-16T06:47:10,llama-3.3-70b,databricks,native
+prog26_wildcard_match,1,0.4000,2,5,True,False,552,12,0.013555,20717,625,databricks-meta-llama-3-3-70b-instruct,databricks,14.5,[],2026-08-16T06:47:25,llama-3.3-70b,databricks,native
+prog26_wildcard_match,2,0.4000,2,5,True,False,462,12,0.013065,20709,355,databricks-meta-llama-3-3-70b-instruct,databricks,11.5,[],2026-08-16T06:47:36,llama-3.3-70b,databricks,native
+prog26_wildcard_match,3,0.4000,2,5,True,False,548,12,0.010196,15958,345,databricks-meta-llama-3-3-70b-instruct,databricks,10.5,[],2026-08-16T06:47:47,llama-3.3-70b,databricks,native
+prog26_wildcard_match,4,0.0000,0,5,True,False,215,12,0.010636,15926,600,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,[],2026-08-16T06:48:00,llama-3.3-70b,databricks,native
+prog26_wildcard_match,5,0.6000,3,5,True,False,556,12,0.013393,20669,551,databricks-meta-llama-3-3-70b-instruct,databricks,13.8,[],2026-08-16T06:48:13,llama-3.3-70b,databricks,native
+prog26_wildcard_match,6,0.4000,2,5,True,False,586,12,0.010299,15958,402,databricks-meta-llama-3-3-70b-instruct,databricks,11.5,[],2026-08-16T06:48:25,llama-3.3-70b,databricks,native
+prog26_wildcard_match,7,0.2000,1,5,True,False,772,12,0.012099,18577,529,databricks-meta-llama-3-3-70b-instruct,databricks,12.6,[],2026-08-16T06:48:37,llama-3.3-70b,databricks,native
+prog26_wildcard_match,8,0.4000,2,5,True,False,324,12,0.007278,11241,296,databricks-meta-llama-3-3-70b-instruct,databricks,9.8,[],2026-08-16T06:48:47,llama-3.3-70b,databricks,native
+prog27_soundex,1,0.0000,0,5,True,False,1218,12,0.015171,23791,498,databricks-meta-llama-3-3-70b-instruct,databricks,12.6,[],2026-08-16T06:49:00,llama-3.3-70b,databricks,native
+prog27_soundex,2,0.0000,0,5,True,False,1170,12,0.015143,23791,482,databricks-meta-llama-3-3-70b-instruct,databricks,13.6,[],2026-08-16T06:49:13,llama-3.3-70b,databricks,native
+prog27_soundex,3,0.0000,0,5,True,False,881,12,0.015069,23807,436,databricks-meta-llama-3-3-70b-instruct,databricks,12.6,[],2026-08-16T06:49:26,llama-3.3-70b,databricks,native
+prog27_soundex,4,0.0000,0,5,True,False,1141,12,0.015123,23791,471,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,[],2026-08-16T06:49:39,llama-3.3-70b,databricks,native
+prog27_soundex,5,0.0000,0,5,True,False,1170,12,0.015141,23791,481,databricks-meta-llama-3-3-70b-instruct,databricks,12.4,[],2026-08-16T06:49:51,llama-3.3-70b,databricks,native
+prog27_soundex,6,0.0000,0,5,True,False,1127,12,0.015117,23791,468,databricks-meta-llama-3-3-70b-instruct,databricks,12.4,[],2026-08-16T06:50:03,llama-3.3-70b,databricks,native
+prog27_soundex,7,0.0000,0,5,True,False,1208,12,0.015164,23791,494,databricks-meta-llama-3-3-70b-instruct,databricks,17.1,[],2026-08-16T06:50:20,llama-3.3-70b,databricks,native
+prog27_soundex,8,0.0000,0,5,True,False,1141,12,0.015123,23791,471,databricks-meta-llama-3-3-70b-instruct,databricks,13.4,[],2026-08-16T06:50:34,llama-3.3-70b,databricks,native
+prog28_levenshtein,1,0.2000,1,5,True,False,436,12,0.014724,23694,282,databricks-meta-llama-3-3-70b-instruct,databricks,16.2,[],2026-08-16T06:50:50,llama-3.3-70b,databricks,native
+prog28_levenshtein,2,0.2000,1,5,True,False,427,12,0.014748,23688,297,databricks-meta-llama-3-3-70b-instruct,databricks,15.6,[],2026-08-16T06:51:06,llama-3.3-70b,databricks,native
+prog28_levenshtein,3,0.4000,2,5,True,False,570,12,0.012237,19237,386,databricks-meta-llama-3-3-70b-instruct,databricks,19.4,[],2026-08-16T06:51:25,llama-3.3-70b,databricks,native
+prog28_levenshtein,4,0.2000,1,5,True,False,564,12,0.016347,25963,427,databricks-meta-llama-3-3-70b-instruct,databricks,15.0,[],2026-08-16T06:51:40,llama-3.3-70b,databricks,native
+prog28_levenshtein,5,0.2000,1,5,True,False,401,12,0.012123,19229,325,databricks-meta-llama-3-3-70b-instruct,databricks,10.9,[],2026-08-16T06:51:51,llama-3.3-70b,databricks,native
+prog28_levenshtein,6,0.4000,2,5,True,False,570,12,0.010768,17095,284,databricks-meta-llama-3-3-70b-instruct,databricks,9.8,[],2026-08-16T06:52:01,llama-3.3-70b,databricks,native
+prog28_levenshtein,7,0.2000,1,5,True,False,435,12,0.012168,19229,350,databricks-meta-llama-3-3-70b-instruct,databricks,11.3,[],2026-08-16T06:52:12,llama-3.3-70b,databricks,native
+prog28_levenshtein,8,0.2000,1,5,True,False,401,12,0.012016,19189,279,databricks-meta-llama-3-3-70b-instruct,databricks,10.5,[],2026-08-16T06:52:23,llama-3.3-70b,databricks,native
+prog29_roman_numeral_parser,1,0.0000,0,5,True,False,513,12,0.025507,41572,313,databricks-meta-llama-3-3-70b-instruct,databricks,13.6,[],2026-08-16T06:52:36,llama-3.3-70b,databricks,native
+prog29_roman_numeral_parser,2,0.4000,2,5,True,False,771,12,0.025698,41572,419,databricks-meta-llama-3-3-70b-instruct,databricks,14.7,[],2026-08-16T06:52:51,llama-3.3-70b,databricks,native
+prog29_roman_numeral_parser,3,0.0000,0,5,True,False,855,12,0.021665,34814,431,databricks-meta-llama-3-3-70b-instruct,databricks,13.7,[],2026-08-16T06:53:05,llama-3.3-70b,databricks,native
+prog29_roman_numeral_parser,4,0.2000,1,5,True,False,1101,12,0.017715,28009,505,databricks-meta-llama-3-3-70b-instruct,databricks,12.9,[],2026-08-16T06:53:18,llama-3.3-70b,databricks,native
+prog29_roman_numeral_parser,5,0.0000,0,5,True,False,513,12,0.021425,34814,298,databricks-meta-llama-3-3-70b-instruct,databricks,11.8,[],2026-08-16T06:53:29,llama-3.3-70b,databricks,native
+prog29_roman_numeral_parser,6,0.0000,0,5,True,False,493,12,0.025495,41572,306,databricks-meta-llama-3-3-70b-instruct,databricks,12.9,[],2026-08-16T06:53:42,llama-3.3-70b,databricks,native
+prog29_roman_numeral_parser,7,0.0000,0,5,True,False,795,12,0.021553,34742,393,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,[],2026-08-16T06:53:55,llama-3.3-70b,databricks,native
+prog29_roman_numeral_parser,8,0.0000,0,5,True,False,878,12,0.021659,34814,428,databricks-meta-llama-3-3-70b-instruct,databricks,13.4,[],2026-08-16T06:54:09,llama-3.3-70b,databricks,native
+prog30_escape_unescape,1,0.0000,0,5,False,False,1426,12,0.016159,25473,486,databricks-meta-llama-3-3-70b-instruct,databricks,12.5,"/w/candidate.c:18:22: warning: missing terminating ' character [-Winvalid-pp-token]
+   18 |             if (c == '\') {
+      |                      ^
+/w/candidate.c:18:22: error: expected expression
+/w/candidate.c:19:24: warning: missing terminating '""' character [-Winvalid-pp-token]
+   19 |       ",2026-08-16T06:54:21,llama-3.3-70b,databricks,native
+prog30_escape_unescape,2,0.0000,0,5,True,False,373,12,0.013019,21116,194,databricks-meta-llama-3-3-70b-instruct,databricks,8.6,[],2026-08-16T06:54:30,llama-3.3-70b,databricks,native
+prog30_escape_unescape,3,0.0000,0,5,True,False,383,12,0.017027,27637,247,databricks-meta-llama-3-3-70b-instruct,databricks,10.3,[],2026-08-16T06:54:40,llama-3.3-70b,databricks,native
+prog30_escape_unescape,4,0.0000,0,5,True,False,375,12,0.016952,27589,221,databricks-meta-llama-3-3-70b-instruct,databricks,10.3,[],2026-08-16T06:54:50,llama-3.3-70b,databricks,native
+prog30_escape_unescape,5,0.0000,0,5,False,False,1444,12,0.024223,38553,606,databricks-meta-llama-3-3-70b-instruct,databricks,16.0,"/w/candidate.c:19:24: warning: missing terminating '""' character [-Winvalid-pp-token]
+   19 |                 printf(""\\\"");
+      |                        ^
+/w/candidate.c:19:24: error: expected expression
+/w/candidate.c:28:7: error: expected expression
+   28 |     } else if (strcmp(mode, ""unescape",2026-08-16T06:55:06,llama-3.3-70b,databricks,native
+prog30_escape_unescape,6,0.2000,1,5,True,False,445,12,0.026804,43835,279,databricks-meta-llama-3-3-70b-instruct,databricks,15.0,[],2026-08-16T06:55:21,llama-3.3-70b,databricks,native
+prog30_escape_unescape,7,0.0000,0,5,True,False,440,12,0.026793,43835,273,databricks-meta-llama-3-3-70b-instruct,databricks,13.7,[],2026-08-16T06:55:35,llama-3.3-70b,databricks,native
+prog30_escape_unescape,8,0.2000,1,5,True,False,445,12,0.026804,43835,279,databricks-meta-llama-3-3-70b-instruct,databricks,14.1,[],2026-08-16T06:55:49,llama-3.3-70b,databricks,native
+prog31_gcd_lcm,1,0.6000,3,5,True,False,695,12,0.012358,19058,513,databricks-meta-llama-3-3-70b-instruct,databricks,13.8,[],2026-08-16T06:56:03,llama-3.3-70b,databricks,native
+prog31_gcd_lcm,2,0.6000,3,5,True,False,736,12,0.015357,23470,708,databricks-meta-llama-3-3-70b-instruct,databricks,17.0,[],2026-08-16T06:56:20,llama-3.3-70b,databricks,native
+prog31_gcd_lcm,3,0.4000,2,5,True,False,858,12,0.011164,16911,565,databricks-meta-llama-3-3-70b-instruct,databricks,12.9,[],2026-08-16T06:56:33,llama-3.3-70b,databricks,native
+prog31_gcd_lcm,4,0.4000,2,5,True,False,768,12,0.011160,16911,563,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,[],2026-08-16T06:56:46,llama-3.3-70b,databricks,native
+prog31_gcd_lcm,5,0.4000,2,5,True,False,768,12,0.011167,16911,567,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,[],2026-08-16T06:56:59,llama-3.3-70b,databricks,native
+prog31_gcd_lcm,6,0.8000,4,5,True,False,879,12,0.007806,10408,867,databricks-meta-llama-3-3-70b-instruct,databricks,15.4,[],2026-08-16T06:57:14,llama-3.3-70b,databricks,native
+prog31_gcd_lcm,7,0.8000,4,5,True,False,879,12,0.007806,10408,867,databricks-meta-llama-3-3-70b-instruct,databricks,15.6,[],2026-08-16T06:57:30,llama-3.3-70b,databricks,native
+prog31_gcd_lcm,8,0.4000,2,5,True,False,681,12,0.011088,16911,523,databricks-meta-llama-3-3-70b-instruct,databricks,12.5,[],2026-08-16T06:57:42,llama-3.3-70b,databricks,native
+prog32_prime_factorization,1,0.2000,1,5,True,False,717,12,0.013607,21385,431,databricks-meta-llama-3-3-70b-instruct,databricks,13.8,[],2026-08-16T06:57:56,llama-3.3-70b,databricks,native
+prog32_prime_factorization,2,0.2000,1,5,True,False,497,12,0.014073,21327,709,databricks-meta-llama-3-3-70b-instruct,databricks,26.7,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T06:58:23,llama-3.3-70b,databricks,native
+prog32_prime_factorization,3,0.2000,1,5,True,False,447,12,0.011139,17299,422,databricks-meta-llama-3-3-70b-instruct,databricks,15.2,[],2026-08-16T06:58:38,llama-3.3-70b,databricks,native
+prog32_prime_factorization,4,0.6000,3,5,True,False,695,12,0.013641,21327,469,databricks-meta-llama-3-3-70b-instruct,databricks,13.9,[],2026-08-16T06:58:52,llama-3.3-70b,databricks,native
+prog32_prime_factorization,5,0.2000,1,5,True,False,771,12,0.011056,17299,376,databricks-meta-llama-3-3-70b-instruct,databricks,18.7,[],2026-08-16T06:59:11,llama-3.3-70b,databricks,native
+prog32_prime_factorization,6,0.2000,1,5,True,False,473,12,0.013833,21327,576,databricks-meta-llama-3-3-70b-instruct,databricks,15.2,[],2026-08-16T06:59:26,llama-3.3-70b,databricks,native
+prog32_prime_factorization,7,0.2000,1,5,True,False,765,12,0.016626,25996,571,databricks-meta-llama-3-3-70b-instruct,databricks,22.8,[],2026-08-16T06:59:49,llama-3.3-70b,databricks,native
+prog32_prime_factorization,8,0.6000,3,5,True,False,815,12,0.013689,21327,496,databricks-meta-llama-3-3-70b-instruct,databricks,14.2,[],2026-08-16T07:00:03,llama-3.3-70b,databricks,native
+prog33_mod_pow,1,1.0000,5,5,True,False,724,12,0.009221,13628,580,databricks-meta-llama-3-3-70b-instruct,databricks,13.6,[],2026-08-16T07:00:16,llama-3.3-70b,databricks,native
+prog33_mod_pow,2,0.8000,4,5,True,False,826,12,0.013893,21766,463,databricks-meta-llama-3-3-70b-instruct,databricks,14.3,[],2026-08-16T07:00:31,llama-3.3-70b,databricks,native
+prog33_mod_pow,3,1.0000,5,5,True,False,730,12,0.009336,13628,644,databricks-meta-llama-3-3-70b-instruct,databricks,13.9,[],2026-08-16T07:00:45,llama-3.3-70b,databricks,native
+prog33_mod_pow,4,0.8000,4,5,True,False,813,12,0.011281,17674,376,databricks-meta-llama-3-3-70b-instruct,databricks,11.7,[],2026-08-16T07:00:56,llama-3.3-70b,databricks,native
+prog33_mod_pow,5,1.0000,5,5,True,False,724,12,0.009138,13628,534,databricks-meta-llama-3-3-70b-instruct,databricks,12.5,[],2026-08-16T07:01:09,llama-3.3-70b,databricks,native
+prog33_mod_pow,6,0.8000,4,5,True,False,722,12,0.012280,17674,931,databricks-meta-llama-3-3-70b-instruct,databricks,18.4,[],2026-08-16T07:01:27,llama-3.3-70b,databricks,native
+prog33_mod_pow,7,0.6000,3,5,True,False,765,12,0.012077,17674,818,databricks-meta-llama-3-3-70b-instruct,databricks,17.3,[],2026-08-16T07:01:45,llama-3.3-70b,databricks,native
+prog33_mod_pow,8,1.0000,5,5,True,False,737,12,0.012304,17674,944,databricks-meta-llama-3-3-70b-instruct,databricks,18.6,[],2026-08-16T07:02:03,llama-3.3-70b,databricks,native
+prog34_fibonacci_memo,1,0.8000,4,5,True,False,598,12,0.011366,17962,327,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,[],2026-08-16T07:02:16,llama-3.3-70b,databricks,native
+prog34_fibonacci_memo,2,0.8000,4,5,True,False,582,12,0.009199,14404,309,databricks-meta-llama-3-3-70b-instruct,databricks,10.3,[],2026-08-16T07:02:26,llama-3.3-70b,databricks,native
+prog34_fibonacci_memo,3,0.8000,4,5,True,False,598,12,0.007141,10954,316,databricks-meta-llama-3-3-70b-instruct,databricks,9.3,[],2026-08-16T07:02:35,llama-3.3-70b,databricks,native
+prog34_fibonacci_memo,4,1.0000,5,5,True,False,784,12,0.009816,15181,393,databricks-meta-llama-3-3-70b-instruct,databricks,11.7,[],2026-08-16T07:02:47,llama-3.3-70b,databricks,native
+prog34_fibonacci_memo,5,0.8000,4,5,True,False,523,12,0.009145,14404,279,databricks-meta-llama-3-3-70b-instruct,databricks,10.1,[],2026-08-16T07:02:57,llama-3.3-70b,databricks,native
+prog34_fibonacci_memo,6,0.8000,4,5,True,False,598,12,0.009215,14404,318,databricks-meta-llama-3-3-70b-instruct,databricks,10.5,[],2026-08-16T07:03:08,llama-3.3-70b,databricks,native
+prog34_fibonacci_memo,7,0.8000,4,5,True,False,598,12,0.007305,10954,407,databricks-meta-llama-3-3-70b-instruct,databricks,10.6,[],2026-08-16T07:03:18,llama-3.3-70b,databricks,native
+prog34_fibonacci_memo,8,0.8000,4,5,True,False,598,12,0.007141,10954,316,databricks-meta-llama-3-3-70b-instruct,databricks,9.8,[],2026-08-16T07:03:28,llama-3.3-70b,databricks,native
+prog35_perfect_numbers,1,0.8000,4,5,True,False,733,12,0.007662,9754,1005,databricks-meta-llama-3-3-70b-instruct,databricks,17.3,[],2026-08-16T07:03:45,llama-3.3-70b,databricks,native
+prog35_perfect_numbers,2,0.8000,4,5,True,False,749,12,0.012373,17768,951,databricks-meta-llama-3-3-70b-instruct,databricks,18.9,[],2026-08-16T07:04:04,llama-3.3-70b,databricks,native
+prog35_perfect_numbers,3,0.8000,4,5,True,False,714,12,0.014949,21882,1011,databricks-meta-llama-3-3-70b-instruct,databricks,20.1,[],2026-08-16T07:04:24,llama-3.3-70b,databricks,native
+prog35_perfect_numbers,4,0.8000,4,5,True,False,749,12,0.012373,17768,951,databricks-meta-llama-3-3-70b-instruct,databricks,18.1,[],2026-08-16T07:04:43,llama-3.3-70b,databricks,native
+prog35_perfect_numbers,5,0.8000,4,5,True,False,808,12,0.007590,9754,965,databricks-meta-llama-3-3-70b-instruct,databricks,17.4,[],2026-08-16T07:05:00,llama-3.3-70b,databricks,native
+prog35_perfect_numbers,6,0.8000,4,5,True,False,814,12,0.006774,9754,512,databricks-meta-llama-3-3-70b-instruct,databricks,11.3,[],2026-08-16T07:05:11,llama-3.3-70b,databricks,native
+prog35_perfect_numbers,7,1.0000,5,5,True,False,705,12,0.012090,17768,794,databricks-meta-llama-3-3-70b-instruct,databricks,16.1,[],2026-08-16T07:05:27,llama-3.3-70b,databricks,native
+prog35_perfect_numbers,8,0.8000,4,5,True,False,729,12,0.007690,9754,1021,databricks-meta-llama-3-3-70b-instruct,databricks,19.5,[],2026-08-16T07:05:47,llama-3.3-70b,databricks,native
+prog36_pascal_triangle,1,0.6000,3,5,True,False,719,12,0.017087,26708,590,databricks-meta-llama-3-3-70b-instruct,databricks,16.7,[],2026-08-16T07:06:04,llama-3.3-70b,databricks,native
+prog36_pascal_triangle,2,0.6000,3,5,True,False,750,12,0.010360,15941,442,databricks-meta-llama-3-3-70b-instruct,databricks,11.9,[],2026-08-16T07:06:15,llama-3.3-70b,databricks,native
+prog36_pascal_triangle,3,0.2000,1,5,True,False,623,12,0.011732,18164,463,databricks-meta-llama-3-3-70b-instruct,databricks,12.9,[],2026-08-16T07:06:28,llama-3.3-70b,databricks,native
+prog36_pascal_triangle,4,0.6000,3,5,True,False,750,12,0.010351,15941,437,databricks-meta-llama-3-3-70b-instruct,databricks,12.1,[],2026-08-16T07:06:40,llama-3.3-70b,databricks,native
+prog36_pascal_triangle,5,0.2000,1,5,True,False,623,12,0.012370,19308,436,databricks-meta-llama-3-3-70b-instruct,databricks,16.0,[],2026-08-16T07:06:56,llama-3.3-70b,databricks,native
+prog36_pascal_triangle,6,0.2000,1,5,True,False,395,12,0.011896,18132,565,databricks-meta-llama-3-3-70b-instruct,databricks,16.0,[],2026-08-16T07:07:12,llama-3.3-70b,databricks,native
+prog36_pascal_triangle,7,0.6000,3,5,True,False,750,12,0.010360,15941,442,databricks-meta-llama-3-3-70b-instruct,databricks,12.9,[],2026-08-16T07:07:25,llama-3.3-70b,databricks,native
+prog36_pascal_triangle,8,0.4000,2,5,True,False,480,12,0.014312,22356,499,databricks-meta-llama-3-3-70b-instruct,databricks,21.5,[],2026-08-16T07:07:47,llama-3.3-70b,databricks,native
+prog37_binomial_coefficient,1,0.4000,2,5,True,False,605,12,0.007714,11912,315,databricks-meta-llama-3-3-70b-instruct,databricks,27.4,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T07:08:14,llama-3.3-70b,databricks,native
+prog37_binomial_coefficient,2,0.6000,3,5,True,False,543,12,0.011350,17942,325,databricks-meta-llama-3-3-70b-instruct,databricks,22.3,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T07:08:36,llama-3.3-70b,databricks,native
+prog37_binomial_coefficient,3,0.6000,3,5,True,False,581,12,0.007684,11909,299,databricks-meta-llama-3-3-70b-instruct,databricks,20.4,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T07:08:57,llama-3.3-70b,databricks,native
+prog37_binomial_coefficient,4,0.4000,2,5,True,False,605,12,0.007705,11909,311,databricks-meta-llama-3-3-70b-instruct,databricks,20.2,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T07:09:17,llama-3.3-70b,databricks,native
+prog37_binomial_coefficient,5,0.4000,2,5,True,False,605,12,0.007714,11912,315,databricks-meta-llama-3-3-70b-instruct,databricks,20.1,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T07:09:37,llama-3.3-70b,databricks,native
+prog37_binomial_coefficient,6,0.6000,3,5,True,False,547,12,0.011341,17942,320,databricks-meta-llama-3-3-70b-instruct,databricks,22.1,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T07:09:59,llama-3.3-70b,databricks,native
+prog37_binomial_coefficient,7,0.4000,2,5,True,False,605,12,0.007714,11912,315,databricks-meta-llama-3-3-70b-instruct,databricks,20.6,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T07:10:20,llama-3.3-70b,databricks,native
+prog37_binomial_coefficient,8,0.6000,3,5,True,False,622,12,0.011401,17939,354,databricks-meta-llama-3-3-70b-instruct,databricks,22.5,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T07:10:42,llama-3.3-70b,databricks,native
+prog38_continued_fraction,1,0.2000,1,5,True,False,475,12,0.012135,19279,315,databricks-meta-llama-3-3-70b-instruct,databricks,10.8,[],2026-08-16T07:10:53,llama-3.3-70b,databricks,native
+prog38_continued_fraction,2,0.0000,0,5,True,False,421,12,0.013361,21521,249,databricks-meta-llama-3-3-70b-instruct,databricks,10.5,[],2026-08-16T07:11:04,llama-3.3-70b,databricks,native
+prog38_continued_fraction,3,0.2000,1,5,True,False,475,12,0.012217,19279,361,databricks-meta-llama-3-3-70b-instruct,databricks,11.0,[],2026-08-16T07:11:15,llama-3.3-70b,databricks,native
+prog38_continued_fraction,4,0.0000,0,5,True,False,492,12,0.019560,31679,307,databricks-meta-llama-3-3-70b-instruct,databricks,13.1,[],2026-08-16T07:11:28,llama-3.3-70b,databricks,native
+prog38_continued_fraction,5,0.2000,1,5,True,False,485,12,0.012151,19247,335,databricks-meta-llama-3-3-70b-instruct,databricks,10.4,[],2026-08-16T07:11:38,llama-3.3-70b,databricks,native
+prog38_continued_fraction,6,0.0000,0,5,False,False,455,12,0.019772,31702,417,databricks-meta-llama-3-3-70b-instruct,databricks,14.8,"/w/candidate.c:8:17: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     long num1 = strtol(argv[1], NULL, 10);
+      |                 ^
+/w/ca",2026-08-16T07:11:53,llama-3.3-70b,databricks,native
+prog38_continued_fraction,7,0.2000,1,5,True,False,485,12,0.012175,19269,341,databricks-meta-llama-3-3-70b-instruct,databricks,11.1,[],2026-08-16T07:12:04,llama-3.3-70b,databricks,native
+prog38_continued_fraction,8,0.2000,1,5,True,False,475,12,0.019551,31679,302,databricks-meta-llama-3-3-70b-instruct,databricks,13.1,[],2026-08-16T07:12:17,llama-3.3-70b,databricks,native
+prog39_horner,1,0.2000,1,5,True,False,426,12,0.012956,20840,251,databricks-meta-llama-3-3-70b-instruct,databricks,10.7,[],2026-08-16T07:12:28,llama-3.3-70b,databricks,native
+prog39_horner,2,0.2000,1,5,True,False,426,12,0.012956,20840,251,databricks-meta-llama-3-3-70b-instruct,databricks,10.3,[],2026-08-16T07:12:38,llama-3.3-70b,databricks,native
+prog39_horner,3,0.2000,1,5,True,False,426,12,0.012956,20840,251,databricks-meta-llama-3-3-70b-instruct,databricks,10.3,[],2026-08-16T07:12:48,llama-3.3-70b,databricks,native
+prog39_horner,4,0.2000,1,5,True,False,426,12,0.012956,20840,251,databricks-meta-llama-3-3-70b-instruct,databricks,10.5,[],2026-08-16T07:12:59,llama-3.3-70b,databricks,native
+prog39_horner,5,0.2000,1,5,True,False,426,12,0.012956,20840,251,databricks-meta-llama-3-3-70b-instruct,databricks,10.2,[],2026-08-16T07:13:09,llama-3.3-70b,databricks,native
+prog39_horner,6,0.2000,1,5,True,False,659,12,0.013100,20840,331,databricks-meta-llama-3-3-70b-instruct,databricks,11.2,[],2026-08-16T07:13:20,llama-3.3-70b,databricks,native
+prog39_horner,7,0.2000,1,5,True,False,426,12,0.013097,20832,332,databricks-meta-llama-3-3-70b-instruct,databricks,11.0,[],2026-08-16T07:13:31,llama-3.3-70b,databricks,native
+prog39_horner,8,0.2000,1,5,True,False,426,12,0.012956,20840,251,databricks-meta-llama-3-3-70b-instruct,databricks,10.6,[],2026-08-16T07:13:42,llama-3.3-70b,databricks,native
+prog40_bisection_root,1,0.2000,1,5,True,False,562,12,0.010789,15135,949,databricks-meta-llama-3-3-70b-instruct,databricks,20.0,[],2026-08-16T07:14:02,llama-3.3-70b,databricks,native
+prog40_bisection_root,2,0.2000,1,5,True,False,462,12,0.008473,12993,376,databricks-meta-llama-3-3-70b-instruct,databricks,11.1,[],2026-08-16T07:14:13,llama-3.3-70b,databricks,native
+prog40_bisection_root,3,0.2000,1,5,True,False,474,12,0.010020,15127,524,databricks-meta-llama-3-3-70b-instruct,databricks,15.2,[],2026-08-16T07:14:28,llama-3.3-70b,databricks,native
+prog40_bisection_root,4,0.2000,1,5,True,False,474,12,0.008435,12993,355,databricks-meta-llama-3-3-70b-instruct,databricks,12.6,[],2026-08-16T07:14:41,llama-3.3-70b,databricks,native
+prog40_bisection_root,5,0.0000,0,5,True,False,494,12,0.010639,15127,868,databricks-meta-llama-3-3-70b-instruct,databricks,21.0,[],2026-08-16T07:15:02,llama-3.3-70b,databricks,native
+prog40_bisection_root,6,0.0000,0,5,True,False,779,12,0.008700,12993,502,databricks-meta-llama-3-3-70b-instruct,databricks,16.2,[],2026-08-16T07:15:18,llama-3.3-70b,databricks,native
+prog40_bisection_root,7,0.0000,0,5,True,False,468,12,0.008550,12993,419,databricks-meta-llama-3-3-70b-instruct,databricks,13.9,[],2026-08-16T07:15:32,llama-3.3-70b,databricks,native
+prog40_bisection_root,8,0.2000,1,5,True,False,546,12,0.006552,8448,824,databricks-meta-llama-3-3-70b-instruct,databricks,15.8,[],2026-08-16T07:15:47,llama-3.3-70b,databricks,native
+prog41_series_sum,1,0.0000,0,5,True,False,567,12,0.013110,20566,428,databricks-meta-llama-3-3-70b-instruct,databricks,13.7,[],2026-08-16T07:16:01,llama-3.3-70b,databricks,native
+prog41_series_sum,2,0.0000,0,5,True,False,525,12,0.010744,15836,690,databricks-meta-llama-3-3-70b-instruct,databricks,17.3,[],2026-08-16T07:16:19,llama-3.3-70b,databricks,native
+prog41_series_sum,3,0.0000,0,5,True,False,518,12,0.007609,11164,506,databricks-meta-llama-3-3-70b-instruct,databricks,12.1,[],2026-08-16T07:16:31,llama-3.3-70b,databricks,native
+prog41_series_sum,4,0.0000,0,5,True,False,579,12,0.007528,11148,466,databricks-meta-llama-3-3-70b-instruct,databricks,11.2,[],2026-08-16T07:16:42,llama-3.3-70b,databricks,native
+prog41_series_sum,5,0.0000,0,5,True,False,594,12,0.010987,15836,825,databricks-meta-llama-3-3-70b-instruct,databricks,19.8,[],2026-08-16T07:17:02,llama-3.3-70b,databricks,native
+prog41_series_sum,6,0.0000,0,5,True,False,625,12,0.011958,18423,502,databricks-meta-llama-3-3-70b-instruct,databricks,13.8,[],2026-08-16T07:17:15,llama-3.3-70b,databricks,native
+prog41_series_sum,7,0.0000,0,5,True,False,588,12,0.013626,20558,717,databricks-meta-llama-3-3-70b-instruct,databricks,18.3,[],2026-08-16T07:17:34,llama-3.3-70b,databricks,native
+prog41_series_sum,8,0.0000,0,5,True,False,576,12,0.013837,20566,832,databricks-meta-llama-3-3-70b-instruct,databricks,19.1,[],2026-08-16T07:17:53,llama-3.3-70b,databricks,native
+prog42_collatz,1,0.4000,2,5,True,False,693,12,0.010395,15821,501,databricks-meta-llama-3-3-70b-instruct,databricks,15.0,[],2026-08-16T07:18:08,llama-3.3-70b,databricks,native
+prog42_collatz,2,1.0000,5,5,True,False,719,12,0.009222,13675,565,databricks-meta-llama-3-3-70b-instruct,databricks,14.6,[],2026-08-16T07:18:22,llama-3.3-70b,databricks,native
+prog42_collatz,3,0.4000,2,5,True,False,694,12,0.010463,15830,536,databricks-meta-llama-3-3-70b-instruct,databricks,14.8,[],2026-08-16T07:18:37,llama-3.3-70b,databricks,native
+prog42_collatz,4,0.2000,1,5,True,False,509,12,0.010836,15791,756,databricks-meta-llama-3-3-70b-instruct,databricks,19.2,[],2026-08-16T07:18:56,llama-3.3-70b,databricks,native
+prog42_collatz,5,1.0000,5,5,True,False,677,12,0.009030,13675,458,databricks-meta-llama-3-3-70b-instruct,databricks,12.3,[],2026-08-16T07:19:09,llama-3.3-70b,databricks,native
+prog42_collatz,6,1.0000,5,5,True,False,677,12,0.009030,13675,458,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,[],2026-08-16T07:19:21,llama-3.3-70b,databricks,native
+prog42_collatz,7,0.8000,4,5,True,False,660,12,0.009024,13675,455,databricks-meta-llama-3-3-70b-instruct,databricks,12.4,[],2026-08-16T07:19:34,llama-3.3-70b,databricks,native
+prog42_collatz,8,0.8000,4,5,True,False,660,12,0.008866,13675,367,databricks-meta-llama-3-3-70b-instruct,databricks,10.8,[],2026-08-16T07:19:45,llama-3.3-70b,databricks,native
+prog43_catalan,1,0.0000,0,5,True,False,435,12,0.008247,13000,248,databricks-meta-llama-3-3-70b-instruct,databricks,9.8,[],2026-08-16T07:19:54,llama-3.3-70b,databricks,native
+prog43_catalan,2,0.2000,1,5,True,False,518,12,0.009402,14623,349,databricks-meta-llama-3-3-70b-instruct,databricks,11.2,[],2026-08-16T07:20:06,llama-3.3-70b,databricks,native
+prog43_catalan,3,0.0000,0,5,True,False,517,12,0.010585,16781,287,databricks-meta-llama-3-3-70b-instruct,databricks,11.2,[],2026-08-16T07:20:17,llama-3.3-70b,databricks,native
+prog43_catalan,4,0.2000,1,5,True,False,518,12,0.013919,22277,307,databricks-meta-llama-3-3-70b-instruct,databricks,11.8,[],2026-08-16T07:20:29,llama-3.3-70b,databricks,native
+prog43_catalan,5,0.0000,0,5,True,False,512,12,0.013054,20608,383,databricks-meta-llama-3-3-70b-instruct,databricks,13.5,[],2026-08-16T07:20:42,llama-3.3-70b,databricks,native
+prog43_catalan,6,0.0000,0,5,True,False,517,12,0.010585,16781,287,databricks-meta-llama-3-3-70b-instruct,databricks,10.7,[],2026-08-16T07:20:53,llama-3.3-70b,databricks,native
+prog43_catalan,7,0.0000,0,5,True,False,517,12,0.010584,16781,286,databricks-meta-llama-3-3-70b-instruct,databricks,10.9,[],2026-08-16T07:21:04,llama-3.3-70b,databricks,native
+prog43_catalan,8,0.0000,0,5,True,False,517,12,0.010585,16781,287,databricks-meta-llama-3-3-70b-instruct,databricks,12.1,[],2026-08-16T07:21:16,llama-3.3-70b,databricks,native
+prog44_miller_rabin,1,0.8000,4,5,True,False,670,12,0.017146,27424,384,databricks-meta-llama-3-3-70b-instruct,databricks,13.7,[],2026-08-16T07:21:30,llama-3.3-70b,databricks,native
+prog44_miller_rabin,2,1.0000,5,5,True,False,682,12,0.009624,14560,493,databricks-meta-llama-3-3-70b-instruct,databricks,12.5,[],2026-08-16T07:21:42,llama-3.3-70b,databricks,native
+prog44_miller_rabin,3,1.0000,5,5,True,False,682,12,0.019530,31442,369,databricks-meta-llama-3-3-70b-instruct,databricks,13.7,[],2026-08-16T07:21:56,llama-3.3-70b,databricks,native
+prog44_miller_rabin,4,1.0000,5,5,True,False,657,12,0.015857,25167,420,databricks-meta-llama-3-3-70b-instruct,databricks,13.2,[],2026-08-16T07:22:09,llama-3.3-70b,databricks,native
+prog44_miller_rabin,5,0.8000,4,5,True,False,560,12,0.016966,27424,284,databricks-meta-llama-3-3-70b-instruct,databricks,11.0,[],2026-08-16T07:22:20,llama-3.3-70b,databricks,native
+prog44_miller_rabin,6,0.0000,0,5,False,False,733,12,0.010137,14560,778,databricks-meta-llama-3-3-70b-instruct,databricks,19.3,"/usr/bin/ld: /tmp/candidate-8404f8.o: in function `is_prime':
+candidate.c:(.text+0x3d): undefined reference to `sqrt'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+",2026-08-16T07:22:39,llama-3.3-70b,databricks,native
+prog44_miller_rabin,7,1.0000,5,5,True,False,663,12,0.009519,14560,435,databricks-meta-llama-3-3-70b-instruct,databricks,11.6,[],2026-08-16T07:22:51,llama-3.3-70b,databricks,native
+prog44_miller_rabin,8,0.8000,4,5,True,False,733,12,0.017790,27424,742,databricks-meta-llama-3-3-70b-instruct,databricks,18.1,[],2026-08-16T07:23:09,llama-3.3-70b,databricks,native
+prog45_josephus,1,0.4000,2,5,True,False,422,12,0.006406,9576,367,databricks-meta-llama-3-3-70b-instruct,databricks,15.1,[],2026-08-16T07:23:24,llama-3.3-70b,databricks,native
+prog45_josephus,2,0.0000,0,5,True,False,394,12,0.011340,17375,508,databricks-meta-llama-3-3-70b-instruct,databricks,15.6,[],2026-08-16T07:23:40,llama-3.3-70b,databricks,native
+prog45_josephus,3,0.4000,2,5,True,False,584,12,0.009659,13446,884,databricks-meta-llama-3-3-70b-instruct,databricks,30.9,[],2026-08-16T07:24:11,llama-3.3-70b,databricks,native
+prog45_josephus,4,0.0000,0,5,True,False,530,12,0.012327,19185,453,databricks-meta-llama-3-3-70b-instruct,databricks,17.2,[],2026-08-16T07:24:28,llama-3.3-70b,databricks,native
+prog45_josephus,5,0.2000,1,5,True,False,670,12,0.012408,19185,498,databricks-meta-llama-3-3-70b-instruct,databricks,24.0,[],2026-08-16T07:24:52,llama-3.3-70b,databricks,native
+prog45_josephus,6,0.4000,2,5,True,False,318,12,0.011202,17364,435,databricks-meta-llama-3-3-70b-instruct,databricks,20.1,[],2026-08-16T07:25:12,llama-3.3-70b,databricks,native
+prog45_josephus,7,0.4000,2,5,True,False,376,12,0.011216,17373,440,databricks-meta-llama-3-3-70b-instruct,databricks,18.5,[],2026-08-16T07:25:30,llama-3.3-70b,databricks,native
+prog45_josephus,8,0.0000,0,5,True,False,753,12,0.028457,45594,611,databricks-meta-llama-3-3-70b-instruct,databricks,28.8,[],2026-08-16T07:25:59,llama-3.3-70b,databricks,native
+prog46_postfix_stack,1,0.2000,1,5,True,False,330,12,0.025082,40723,360,databricks-meta-llama-3-3-70b-instruct,databricks,18.2,[],2026-08-16T07:26:17,llama-3.3-70b,databricks,native
+prog46_postfix_stack,2,0.0000,0,5,True,False,917,12,0.024036,38563,499,databricks-meta-llama-3-3-70b-instruct,databricks,18.9,[],2026-08-16T07:26:36,llama-3.3-70b,databricks,native
+prog46_postfix_stack,3,0.0000,0,5,True,False,354,12,0.015803,25527,270,databricks-meta-llama-3-3-70b-instruct,databricks,10.8,[],2026-08-16T07:26:47,llama-3.3-70b,databricks,native
+prog46_postfix_stack,4,0.0000,0,5,True,False,836,12,0.024022,38563,491,databricks-meta-llama-3-3-70b-instruct,databricks,15.6,[],2026-08-16T07:27:03,llama-3.3-70b,databricks,native
+prog46_postfix_stack,5,0.0000,0,5,True,False,161,12,0.017255,27597,387,databricks-meta-llama-3-3-70b-instruct,databricks,13.4,[],2026-08-16T07:27:16,llama-3.3-70b,databricks,native
+prog46_postfix_stack,6,0.2000,1,5,True,False,330,12,0.017010,27588,254,databricks-meta-llama-3-3-70b-instruct,databricks,11.0,[],2026-08-16T07:27:27,llama-3.3-70b,databricks,native
+prog46_postfix_stack,7,0.2000,1,5,True,False,330,12,0.025160,40792,380,databricks-meta-llama-3-3-70b-instruct,databricks,14.8,[],2026-08-16T07:27:42,llama-3.3-70b,databricks,native
+prog46_postfix_stack,8,0.2000,1,5,True,False,332,12,0.021061,34165,312,databricks-meta-llama-3-3-70b-instruct,databricks,12.8,[],2026-08-16T07:27:55,llama-3.3-70b,databricks,native
+prog47_circular_queue,1,1.0000,5,5,True,False,1185,12,0.014064,21757,561,databricks-meta-llama-3-3-70b-instruct,databricks,15.2,[],2026-08-16T07:28:10,llama-3.3-70b,databricks,native
+prog47_circular_queue,2,0.8000,4,5,True,False,1203,12,0.017208,26849,610,databricks-meta-llama-3-3-70b-instruct,databricks,16.9,[],2026-08-16T07:28:27,llama-3.3-70b,databricks,native
+prog47_circular_queue,3,0.2000,1,5,True,False,492,12,0.013522,21756,260,databricks-meta-llama-3-3-70b-instruct,databricks,10.3,[],2026-08-16T07:28:37,llama-3.3-70b,databricks,native
+prog47_circular_queue,4,0.2000,1,5,True,False,492,12,0.013522,21756,260,databricks-meta-llama-3-3-70b-instruct,databricks,11.2,[],2026-08-16T07:28:48,llama-3.3-70b,databricks,native
+prog47_circular_queue,5,0.2000,1,5,True,False,505,12,0.013719,21781,361,databricks-meta-llama-3-3-70b-instruct,databricks,12.4,[],2026-08-16T07:29:01,llama-3.3-70b,databricks,native
+prog47_circular_queue,6,0.6000,3,5,True,False,1303,12,0.014431,21765,762,databricks-meta-llama-3-3-70b-instruct,databricks,17.8,[],2026-08-16T07:29:18,llama-3.3-70b,databricks,native
+prog47_circular_queue,7,0.2000,1,5,True,False,492,12,0.013534,21765,264,databricks-meta-llama-3-3-70b-instruct,databricks,10.6,[],2026-08-16T07:29:29,llama-3.3-70b,databricks,native
+prog47_circular_queue,8,0.0000,0,5,False,False,818,12,0.013808,21765,416,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,"/w/candidate.c:12:9: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     if (strcmp(command, ""ENQ"") == 0) {
+      |         ^
+/w/candidate.c:12:",2026-08-16T07:29:42,llama-3.3-70b,databricks,native
+prog48_sorted_linked_list,1,0.0000,0,5,True,False,688,12,0.010047,15491,418,databricks-meta-llama-3-3-70b-instruct,databricks,12.6,[],2026-08-16T07:29:54,llama-3.3-70b,databricks,native
+prog48_sorted_linked_list,2,0.0000,0,5,False,False,889,12,0.008098,12072,475,databricks-meta-llama-3-3-70b-instruct,databricks,11.8,"/w/candidate.c:25:35: error: use of undeclared identifier 'val'
+   25 |         printf(""%ld "", ((long *)(&val))[current]);
+      |                                   ^
+/w/candidate.c:26:29: error: use of undeclared identifier 'new_node'
+   26 |         current = ((int *)(&new_node))[current];
+      |",2026-08-16T07:30:06,llama-3.3-70b,databricks,native
+prog48_sorted_linked_list,3,0.2000,1,5,True,False,894,12,0.006034,8647,470,databricks-meta-llama-3-3-70b-instruct,databricks,10.5,[],2026-08-16T07:30:17,llama-3.3-70b,databricks,native
+prog48_sorted_linked_list,4,0.2000,1,5,True,False,957,12,0.009007,13343,556,databricks-meta-llama-3-3-70b-instruct,databricks,15.0,[],2026-08-16T07:30:32,llama-3.3-70b,databricks,native
+prog48_sorted_linked_list,5,0.2000,1,5,True,False,883,12,0.008349,12072,614,databricks-meta-llama-3-3-70b-instruct,databricks,13.9,[],2026-08-16T07:30:46,llama-3.3-70b,databricks,native
+prog48_sorted_linked_list,6,0.2000,1,5,True,False,937,12,0.008827,13311,467,databricks-meta-llama-3-3-70b-instruct,databricks,12.0,[],2026-08-16T07:30:58,llama-3.3-70b,databricks,native
+prog48_sorted_linked_list,7,0.2000,1,5,True,False,688,12,0.006175,8647,548,databricks-meta-llama-3-3-70b-instruct,databricks,12.2,[],2026-08-16T07:31:10,llama-3.3-70b,databricks,native
+prog48_sorted_linked_list,8,0.2000,1,5,True,False,311,12,0.007863,12072,344,databricks-meta-llama-3-3-70b-instruct,databricks,10.3,[],2026-08-16T07:31:20,llama-3.3-70b,databricks,native
+prog49_bst,1,0.0000,0,5,False,False,2382,12,0.019840,30798,756,databricks-meta-llama-3-3-70b-instruct,databricks,19.0,"/w/candidate.c:16:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   16 |         printf(""Memory error
+      |                ^
+/w/candidate.c:16:16: error: expected expression
+/w/candidate.c:17:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   17 | "");
+      ",2026-08-16T07:31:39,llama-3.3-70b,databricks,native
+prog49_bst,2,0.0000,0,5,False,False,2330,12,0.019799,30798,733,databricks-meta-llama-3-3-70b-instruct,databricks,18.1,"/w/candidate.c:16:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   16 |         printf(""Memory error
+      |                ^
+/w/candidate.c:16:16: error: expected expression
+/w/candidate.c:17:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   17 | "");
+      ",2026-08-16T07:31:57,llama-3.3-70b,databricks,native
+prog49_bst,3,0.0000,0,5,False,False,2236,12,0.019934,30798,808,databricks-meta-llama-3-3-70b-instruct,databricks,19.5,"/w/candidate.c:16:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   16 |         printf(""Memory error
+      |                ^
+/w/candidate.c:16:16: error: expected expression
+/w/candidate.c:17:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   17 | "");
+      ",2026-08-16T07:32:17,llama-3.3-70b,databricks,native
+prog49_bst,4,0.0000,0,5,False,False,2407,12,0.019833,30798,752,databricks-meta-llama-3-3-70b-instruct,databricks,18.1,"/w/candidate.c:16:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   16 |         printf(""Memory error
+      |                ^
+/w/candidate.c:16:16: error: expected expression
+/w/candidate.c:17:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   17 | "");
+      ",2026-08-16T07:32:35,llama-3.3-70b,databricks,native
+prog49_bst,5,0.0000,0,5,False,False,1906,12,0.018193,28230,697,databricks-meta-llama-3-3-70b-instruct,databricks,18.1,"/w/candidate.c:16:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   16 |         printf(""Memory error
+      |                ^
+/w/candidate.c:16:16: error: expected expression
+/w/candidate.c:17:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   17 | "");
+      ",2026-08-16T07:32:53,llama-3.3-70b,databricks,native
+prog49_bst,6,0.0000,0,5,False,False,2339,12,0.019968,30798,827,databricks-meta-llama-3-3-70b-instruct,databricks,18.7,"/w/candidate.c:16:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   16 |         printf(""Memory error
+      |                ^
+/w/candidate.c:16:16: error: expected expression
+/w/candidate.c:17:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   17 | "");
+      ",2026-08-16T07:33:12,llama-3.3-70b,databricks,native
+prog49_bst,7,0.0000,0,5,False,False,2088,12,0.019829,30798,750,databricks-meta-llama-3-3-70b-instruct,databricks,17.8,"/w/candidate.c:16:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   16 |         printf(""Memory error
+      |                ^
+/w/candidate.c:16:16: error: expected expression
+/w/candidate.c:17:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   17 | "");
+      ",2026-08-16T07:33:29,llama-3.3-70b,databricks,native
+prog49_bst,8,0.0000,0,5,False,False,2567,12,0.019881,30798,779,databricks-meta-llama-3-3-70b-instruct,databricks,18.5,"/w/candidate.c:16:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   16 |         printf(""Memory error
+      |                ^
+/w/candidate.c:16:16: error: expected expression
+/w/candidate.c:17:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   17 | "");
+      ",2026-08-16T07:33:48,llama-3.3-70b,databricks,native
+prog50_binary_heap,1,0.2000,1,5,True,False,595,12,0.016892,26158,665,databricks-meta-llama-3-3-70b-instruct,databricks,16.7,[],2026-08-16T07:34:05,llama-3.3-70b,databricks,native
+prog50_binary_heap,2,0.2000,1,5,True,False,567,12,0.012860,20044,463,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,[],2026-08-16T07:34:17,llama-3.3-70b,databricks,native
+prog50_binary_heap,3,0.2000,1,5,True,False,379,12,0.016080,26166,211,databricks-meta-llama-3-3-70b-instruct,databricks,10.4,[],2026-08-16T07:34:28,llama-3.3-70b,databricks,native
+prog50_binary_heap,4,0.2000,1,5,True,False,790,12,0.018882,30185,428,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,[],2026-08-16T07:34:41,llama-3.3-70b,databricks,native
+prog50_binary_heap,5,0.2000,1,5,True,False,561,12,0.013875,20044,1027,databricks-meta-llama-3-3-70b-instruct,databricks,20.5,[],2026-08-16T07:35:01,llama-3.3-70b,databricks,native
+prog50_binary_heap,6,0.0000,0,5,True,False,273,12,0.016550,26166,472,databricks-meta-llama-3-3-70b-instruct,databricks,14.0,[],2026-08-16T07:35:15,llama-3.3-70b,databricks,native
+prog50_binary_heap,7,0.2000,1,5,True,False,524,12,0.018216,29561,266,databricks-meta-llama-3-3-70b-instruct,databricks,10.9,[],2026-08-16T07:35:26,llama-3.3-70b,databricks,native
+prog50_binary_heap,8,0.2000,1,5,True,False,355,12,0.018111,29561,208,databricks-meta-llama-3-3-70b-instruct,databricks,10.5,[],2026-08-16T07:35:37,llama-3.3-70b,databricks,native
+prog51_union_find,1,0.0000,0,5,False,False,1010,12,0.009807,14877,489,databricks-meta-llama-3-3-70b-instruct,databricks,11.8,"/w/candidate.c:32:13: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   32 |         if (strcmp(argv[i], ""U"") == 0) {
+      |             ^
+/w/candidat",2026-08-16T07:35:48,llama-3.3-70b,databricks,native
+prog51_union_find,2,0.0000,0,5,True,False,353,12,0.017386,27971,335,databricks-meta-llama-3-3-70b-instruct,databricks,14.7,[],2026-08-16T07:36:03,llama-3.3-70b,databricks,native
+prog51_union_find,3,0.0000,0,5,False,False,1111,12,0.018201,27979,785,databricks-meta-llama-3-3-70b-instruct,databricks,17.7,"/w/candidate.c:8:18: error: call to undeclared function 'find'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     int root_x = find(x);
+      |                  ^
+/w/candidate.c:35:13: error: call to undeclared library function 'strcmp' wit",2026-08-16T07:36:21,llama-3.3-70b,databricks,native
+prog51_union_find,4,0.2000,1,5,True,False,911,12,0.018743,27979,1086,databricks-meta-llama-3-3-70b-instruct,databricks,22.0,[],2026-08-16T07:36:43,llama-3.3-70b,databricks,native
+prog51_union_find,5,0.0000,0,5,True,False,1162,12,0.018555,27979,982,databricks-meta-llama-3-3-70b-instruct,databricks,20.7,[],2026-08-16T07:37:03,llama-3.3-70b,databricks,native
+prog51_union_find,6,0.0000,0,5,False,False,1253,12,0.024677,39067,687,databricks-meta-llama-3-3-70b-instruct,databricks,17.5,"/w/candidate.c:39:13: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   39 |         if (strcmp(argv[i], ""UNION"") == 0) {
+      |             ^
+/w/cand",2026-08-16T07:37:21,llama-3.3-70b,databricks,native
+prog51_union_find,7,0.0000,0,5,False,False,988,12,0.017853,27982,591,databricks-meta-llama-3-3-70b-instruct,databricks,14.7,"/w/candidate.c:35:13: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   35 |         if (strcmp(op, ""UNION"") == 0) {
+      |             ^
+/w/candidate",2026-08-16T07:37:36,llama-3.3-70b,databricks,native
+prog51_union_find,8,0.0000,0,5,True,False,1198,12,0.019198,27979,1339,databricks-meta-llama-3-3-70b-instruct,databricks,25.6,[],2026-08-16T07:38:01,llama-3.3-70b,databricks,native
+prog52_bfs_grid,1,0.0000,0,5,True,False,2295,12,0.017133,25632,974,databricks-meta-llama-3-3-70b-instruct,databricks,20.4,[],2026-08-16T07:38:22,llama-3.3-70b,databricks,native
+prog52_bfs_grid,2,0.2000,1,5,True,False,1381,12,0.017891,25584,1411,databricks-meta-llama-3-3-70b-instruct,databricks,26.2,[],2026-08-16T07:38:48,llama-3.3-70b,databricks,native
+prog52_bfs_grid,3,0.0000,0,5,True,False,2354,12,0.013249,19607,825,databricks-meta-llama-3-3-70b-instruct,databricks,17.0,[],2026-08-16T07:39:05,llama-3.3-70b,databricks,native
+prog52_bfs_grid,4,0.0000,0,5,True,False,2284,12,0.017280,25632,1056,databricks-meta-llama-3-3-70b-instruct,databricks,21.6,[],2026-08-16T07:39:26,llama-3.3-70b,databricks,native
+prog52_bfs_grid,5,0.0000,0,5,True,False,2360,12,0.016838,25632,810,databricks-meta-llama-3-3-70b-instruct,databricks,18.6,[],2026-08-16T07:39:45,llama-3.3-70b,databricks,native
+prog52_bfs_grid,6,0.0000,0,5,True,False,1767,12,0.016852,25584,834,databricks-meta-llama-3-3-70b-instruct,databricks,17.5,[],2026-08-16T07:40:02,llama-3.3-70b,databricks,native
+prog52_bfs_grid,7,0.0000,0,5,False,False,841,12,0.017154,25632,986,databricks-meta-llama-3-3-70b-instruct,databricks,19.4,"/w/candidate.c:24:24: error: call to undeclared function 'calculate_distance'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |                 dist = calculate_distance(i, j);
+      |                        ^
+1 error generated.
+",2026-08-16T07:40:22,llama-3.3-70b,databricks,native
+prog52_bfs_grid,8,0.0000,0,5,True,False,146,12,0.019201,31620,127,databricks-meta-llama-3-3-70b-instruct,databricks,10.3,[],2026-08-16T07:40:32,llama-3.3-70b,databricks,native
+prog53_dfs_cycle,1,0.6000,3,5,True,False,873,12,0.012106,18779,466,databricks-meta-llama-3-3-70b-instruct,databricks,13.2,[],2026-08-16T07:40:45,llama-3.3-70b,databricks,native
+prog53_dfs_cycle,2,0.6000,3,5,True,False,996,12,0.018956,30147,482,databricks-meta-llama-3-3-70b-instruct,databricks,15.4,[],2026-08-16T07:41:01,llama-3.3-70b,databricks,native
+prog53_dfs_cycle,3,0.6000,3,5,True,False,885,12,0.012018,18779,417,databricks-meta-llama-3-3-70b-instruct,databricks,11.7,[],2026-08-16T07:41:12,llama-3.3-70b,databricks,native
+prog53_dfs_cycle,4,0.6000,3,5,True,False,1008,12,0.012085,18779,454,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,[],2026-08-16T07:41:25,llama-3.3-70b,databricks,native
+prog53_dfs_cycle,5,0.8000,4,5,True,False,999,12,0.012118,18795,467,databricks-meta-llama-3-3-70b-instruct,databricks,12.2,[],2026-08-16T07:41:38,llama-3.3-70b,databricks,native
+prog53_dfs_cycle,6,0.6000,3,5,True,False,877,12,0.012046,18795,427,databricks-meta-llama-3-3-70b-instruct,databricks,11.9,[],2026-08-16T07:41:49,llama-3.3-70b,databricks,native
+prog53_dfs_cycle,7,0.6000,3,5,True,False,873,12,0.012106,18779,466,databricks-meta-llama-3-3-70b-instruct,databricks,12.0,[],2026-08-16T07:42:01,llama-3.3-70b,databricks,native
+prog53_dfs_cycle,8,0.6000,3,5,True,False,1022,12,0.012138,18795,478,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,[],2026-08-16T07:42:14,llama-3.3-70b,databricks,native
+prog54_topo_sort,1,0.0000,0,5,True,False,101,12,0.021281,35057,137,databricks-meta-llama-3-3-70b-instruct,databricks,10.6,[],2026-08-16T07:42:25,llama-3.3-70b,databricks,native
+prog54_topo_sort,2,0.0000,0,5,True,False,158,12,0.021296,35057,145,databricks-meta-llama-3-3-70b-instruct,databricks,11.5,[],2026-08-16T07:42:36,llama-3.3-70b,databricks,native
+prog54_topo_sort,3,0.2000,1,5,True,False,113,12,0.021450,35041,236,databricks-meta-llama-3-3-70b-instruct,databricks,11.9,[],2026-08-16T07:42:48,llama-3.3-70b,databricks,native
+prog54_topo_sort,4,0.0000,0,5,True,False,403,12,0.025601,41888,260,databricks-meta-llama-3-3-70b-instruct,databricks,12.8,[],2026-08-16T07:43:01,llama-3.3-70b,databricks,native
+prog54_topo_sort,5,0.0000,0,5,True,False,158,12,0.021296,35057,145,databricks-meta-llama-3-3-70b-instruct,databricks,10.0,[],2026-08-16T07:43:11,llama-3.3-70b,databricks,native
+prog54_topo_sort,6,0.0000,0,5,True,False,158,12,0.025429,41888,164,databricks-meta-llama-3-3-70b-instruct,databricks,11.6,[],2026-08-16T07:43:23,llama-3.3-70b,databricks,native
+prog54_topo_sort,7,0.0000,0,5,True,False,158,12,0.021542,35057,282,databricks-meta-llama-3-3-70b-instruct,databricks,12.0,[],2026-08-16T07:43:35,llama-3.3-70b,databricks,native
+prog54_topo_sort,8,0.0000,0,5,True,False,327,12,0.013317,21612,194,databricks-meta-llama-3-3-70b-instruct,databricks,9.1,[],2026-08-16T07:43:44,llama-3.3-70b,databricks,native
+prog55_connected_components,1,0.0000,0,5,True,False,166,12,0.023956,38546,460,databricks-meta-llama-3-3-70b-instruct,databricks,15.6,[],2026-08-16T07:43:59,llama-3.3-70b,databricks,native
+prog55_connected_components,2,0.0000,0,5,True,False,147,12,0.023576,38546,249,databricks-meta-llama-3-3-70b-instruct,databricks,11.3,[],2026-08-16T07:44:11,llama-3.3-70b,databricks,native
+prog55_connected_components,3,0.0000,0,5,True,False,211,12,0.028315,46090,367,databricks-meta-llama-3-3-70b-instruct,databricks,15.1,[],2026-08-16T07:44:26,llama-3.3-70b,databricks,native
+prog55_connected_components,4,0.0000,0,5,True,False,411,12,0.019832,31081,657,databricks-meta-llama-3-3-70b-instruct,databricks,16.2,[],2026-08-16T07:44:42,llama-3.3-70b,databricks,native
+prog55_connected_components,5,0.0000,0,5,True,False,378,12,0.017961,28917,339,databricks-meta-llama-3-3-70b-instruct,databricks,11.6,[],2026-08-16T07:44:53,llama-3.3-70b,databricks,native
+prog55_connected_components,6,0.2000,1,5,True,False,335,12,0.028522,46036,500,databricks-meta-llama-3-3-70b-instruct,databricks,15.9,[],2026-08-16T07:45:09,llama-3.3-70b,databricks,native
+prog55_connected_components,7,0.0000,0,5,True,False,112,12,0.023657,38551,292,databricks-meta-llama-3-3-70b-instruct,databricks,12.3,[],2026-08-16T07:45:22,llama-3.3-70b,databricks,native
+prog55_connected_components,8,0.0000,0,5,True,False,161,12,0.010533,16432,374,databricks-meta-llama-3-3-70b-instruct,databricks,9.9,[],2026-08-16T07:45:32,llama-3.3-70b,databricks,native
+prog56_kruskal_mst,1,0.2000,1,5,True,False,364,12,0.021448,34984,254,databricks-meta-llama-3-3-70b-instruct,databricks,13.2,[],2026-08-16T07:45:45,llama-3.3-70b,databricks,native
+prog56_kruskal_mst,2,0.0000,0,5,True,False,527,12,0.022074,34984,602,databricks-meta-llama-3-3-70b-instruct,databricks,17.5,[],2026-08-16T07:46:02,llama-3.3-70b,databricks,native
+prog56_kruskal_mst,3,0.2000,1,5,True,False,428,12,0.021484,34984,274,databricks-meta-llama-3-3-70b-instruct,databricks,12.5,[],2026-08-16T07:46:15,llama-3.3-70b,databricks,native
+prog56_kruskal_mst,4,0.0000,0,5,True,False,372,12,0.018008,29307,235,databricks-meta-llama-3-3-70b-instruct,databricks,11.4,[],2026-08-16T07:46:26,llama-3.3-70b,databricks,native
+prog56_kruskal_mst,5,0.2000,1,5,True,False,347,12,0.021435,34984,247,databricks-meta-llama-3-3-70b-instruct,databricks,13.1,[],2026-08-16T07:46:39,llama-3.3-70b,databricks,native
+prog56_kruskal_mst,6,0.2000,1,5,True,False,363,12,0.021918,34984,515,databricks-meta-llama-3-3-70b-instruct,databricks,17.7,[],2026-08-16T07:46:57,llama-3.3-70b,databricks,native
+prog56_kruskal_mst,7,0.0000,0,5,True,False,209,12,0.014702,23696,269,databricks-meta-llama-3-3-70b-instruct,databricks,11.1,[],2026-08-16T07:47:08,llama-3.3-70b,databricks,native
+prog56_kruskal_mst,8,0.0000,0,5,False,False,219,12,0.014709,23696,273,databricks-meta-llama-3-3-70b-instruct,databricks,10.6,"/w/candidate.c:7:18: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     int weight = atoi(argv[1]);
+      |                  ^
+1 error generated.
+",2026-08-16T07:47:19,llama-3.3-70b,databricks,native
+prog57_elevator_fsm,1,0.8000,4,5,True,False,921,12,0.009096,13503,552,databricks-meta-llama-3-3-70b-instruct,databricks,13.7,[],2026-08-16T07:47:32,llama-3.3-70b,databricks,native
+prog57_elevator_fsm,2,0.4000,2,5,True,False,765,12,0.010323,15674,510,databricks-meta-llama-3-3-70b-instruct,databricks,13.5,[],2026-08-16T07:47:46,llama-3.3-70b,databricks,native
+prog57_elevator_fsm,3,0.8000,4,5,True,False,950,12,0.013185,20588,462,databricks-meta-llama-3-3-70b-instruct,databricks,15.2,[],2026-08-16T07:48:01,llama-3.3-70b,databricks,native
+prog57_elevator_fsm,4,0.8000,4,5,True,False,731,12,0.012784,19239,689,databricks-meta-llama-3-3-70b-instruct,databricks,16.8,[],2026-08-16T07:48:18,llama-3.3-70b,databricks,native
+prog57_elevator_fsm,5,0.2000,1,5,True,False,590,12,0.012216,19186,391,databricks-meta-llama-3-3-70b-instruct,databricks,13.9,[],2026-08-16T07:48:32,llama-3.3-70b,databricks,native
+prog57_elevator_fsm,6,0.8000,4,5,True,False,950,12,0.012376,19240,462,databricks-meta-llama-3-3-70b-instruct,databricks,14.1,[],2026-08-16T07:48:46,llama-3.3-70b,databricks,native
+prog57_elevator_fsm,7,0.4000,2,5,True,False,776,12,0.010238,15674,463,databricks-meta-llama-3-3-70b-instruct,databricks,13.3,[],2026-08-16T07:48:59,llama-3.3-70b,databricks,native
+prog57_elevator_fsm,8,0.0000,0,5,False,False,435,12,0.010369,15665,539,databricks-meta-llama-3-3-70b-instruct,databricks,14.4,"/w/candidate.c:5:29: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |     int destination_floor = atoi(argv[1]);
+      |                             ^
+1 error generated.
+",2026-08-16T07:49:14,llama-3.3-70b,databricks,native
+prog58_turing_increment,1,0.2000,1,5,True,False,838,12,0.016844,26590,494,databricks-meta-llama-3-3-70b-instruct,databricks,15.6,[],2026-08-16T07:49:29,llama-3.3-70b,databricks,native
+prog58_turing_increment,2,0.2000,1,5,True,False,837,12,0.012360,19277,441,databricks-meta-llama-3-3-70b-instruct,databricks,12.9,[],2026-08-16T07:49:42,llama-3.3-70b,databricks,native
+prog58_turing_increment,3,0.2000,1,5,True,False,1012,12,0.012436,19277,483,databricks-meta-llama-3-3-70b-instruct,databricks,12.7,[],2026-08-16T07:49:55,llama-3.3-70b,databricks,native
+prog58_turing_increment,4,0.2000,1,5,True,False,993,12,0.013705,21552,430,databricks-meta-llama-3-3-70b-instruct,databricks,12.9,[],2026-08-16T07:50:08,llama-3.3-70b,databricks,native
+prog58_turing_increment,5,0.0000,0,5,True,False,877,12,0.013881,21518,539,databricks-meta-llama-3-3-70b-instruct,databricks,14.8,[],2026-08-16T07:50:22,llama-3.3-70b,databricks,native
+prog58_turing_increment,6,0.2000,1,5,True,False,1082,12,0.020572,31766,840,databricks-meta-llama-3-3-70b-instruct,databricks,21.8,[],2026-08-16T07:50:44,llama-3.3-70b,databricks,native
+prog58_turing_increment,7,0.2000,1,5,True,False,672,12,0.013761,21470,488,databricks-meta-llama-3-3-70b-instruct,databricks,13.5,[],2026-08-16T07:50:58,llama-3.3-70b,databricks,native
+prog58_turing_increment,8,0.2000,1,5,True,False,1022,12,0.013727,21552,442,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,[],2026-08-16T07:51:11,llama-3.3-70b,databricks,native
+prog59_rule110,1,0.2000,1,5,True,False,927,12,0.021867,35155,430,databricks-meta-llama-3-3-70b-instruct,databricks,16.0,[],2026-08-16T07:51:27,llama-3.3-70b,databricks,native
+prog59_rule110,2,0.2000,1,5,True,False,930,12,0.021864,35155,428,databricks-meta-llama-3-3-70b-instruct,databricks,15.0,[],2026-08-16T07:51:42,llama-3.3-70b,databricks,native
+prog59_rule110,3,0.0000,0,5,True,False,921,12,0.017231,27380,446,databricks-meta-llama-3-3-70b-instruct,databricks,13.4,[],2026-08-16T07:51:55,llama-3.3-70b,databricks,native
+prog59_rule110,4,0.0000,0,5,False,False,1241,12,0.014683,22735,579,databricks-meta-llama-3-3-70b-instruct,databricks,14.3,"/w/candidate.c:28:27: error: use of undeclared identifier 'rule110'
+   28 |             printf(""%c"", (rule110[result] == 1) ? '1' : '0');
+      |                           ^
+/w/candidate.c:34:38: error: use of undeclared identifier 'left'; did you mean 'len'?
+   34 |             new_input[j] = (rule",2026-08-16T07:52:09,llama-3.3-70b,databricks,native
+prog59_rule110,5,0.2000,1,5,True,False,927,12,0.015012,23811,403,databricks-meta-llama-3-3-70b-instruct,databricks,12.4,[],2026-08-16T07:52:22,llama-3.3-70b,databricks,native
+prog59_rule110,6,0.2000,1,5,True,False,910,12,0.017190,27380,423,databricks-meta-llama-3-3-70b-instruct,databricks,13.9,[],2026-08-16T07:52:36,llama-3.3-70b,databricks,native
+prog59_rule110,7,0.0000,0,5,True,False,933,12,0.020420,32569,488,databricks-meta-llama-3-3-70b-instruct,databricks,15.1,[],2026-08-16T07:52:51,llama-3.3-70b,databricks,native
+prog59_rule110,8,0.4000,2,5,True,False,1053,12,0.015142,23811,475,databricks-meta-llama-3-3-70b-instruct,databricks,12.8,[],2026-08-16T07:53:04,llama-3.3-70b,databricks,native
+prog60_inventory_sim,1,0.0000,0,5,True,False,767,12,0.011396,17703,430,databricks-meta-llama-3-3-70b-instruct,databricks,11.6,[],2026-08-16T07:53:15,llama-3.3-70b,databricks,native
+prog60_inventory_sim,2,0.0000,0,5,True,False,929,12,0.012802,19936,467,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,[],2026-08-16T07:53:28,llama-3.3-70b,databricks,native
+prog60_inventory_sim,3,0.0000,0,5,True,False,951,12,0.011626,18117,420,databricks-meta-llama-3-3-70b-instruct,databricks,12.3,[],2026-08-16T07:53:41,llama-3.3-70b,databricks,native
+prog60_inventory_sim,4,0.0000,0,5,True,False,1013,12,0.007721,10828,680,databricks-meta-llama-3-3-70b-instruct,databricks,12.6,[],2026-08-16T07:53:53,llama-3.3-70b,databricks,native
+prog60_inventory_sim,5,0.0000,0,5,True,False,158,12,0.015794,24630,564,databricks-meta-llama-3-3-70b-instruct,databricks,15.0,[],2026-08-16T07:54:08,llama-3.3-70b,databricks,native
+prog60_inventory_sim,6,0.0000,0,5,False,False,1252,12,0.013046,20003,580,databricks-meta-llama-3-3-70b-instruct,databricks,14.0,"/w/candidate.c:14:9: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |     if (strcmp(operation, ""S"") == 0) {
+      |         ^
+/w/candidate.c:14:",2026-08-16T07:54:22,llama-3.3-70b,databricks,native
+prog60_inventory_sim,7,0.0000,0,5,True,False,1605,12,0.013290,19945,735,databricks-meta-llama-3-3-70b-instruct,databricks,16.1,[],2026-08-16T07:54:38,llama-3.3-70b,databricks,native
+prog60_inventory_sim,8,0.0000,0,5,True,False,884,12,0.012836,19929,488,databricks-meta-llama-3-3-70b-instruct,databricks,13.2,[],2026-08-16T07:54:51,llama-3.3-70b,databricks,native

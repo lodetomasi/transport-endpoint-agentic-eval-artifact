@@ -1,0 +1,18 @@
+Attrito differenziale su gpt-oss-120b — verifica richiesta dallo stats-auditor 2026-08-15
+Domanda: le righe escluse da e_misurazione sono scorrelate dall'esito, o e selezione
+mascherata da guasto? Se i binari colpiti fossero sistematicamente piu difficili, il
+filtro toglierebbe le run difficili e alzerebbe il pass-rate di quei binari.
+
+databricks/native: 18/392 righe scartate (4.6%), concentrate su 10/45 binari
+   pass-rate medio, binari con scarti 0.679 — senza scarti 0.696 — differenza -0.017
+databricks/text: 11/378 righe scartate (2.9%), concentrate su 9/45 binari
+   pass-rate medio, binari con scarti 0.498 — senza scarti 0.654 — differenza -0.156
+bedrock/native: 15/386 righe scartate (3.9%), concentrate su 9/45 binari
+   pass-rate medio, binari con scarti 0.772 — senza scarti 0.711 — differenza +0.061
+bedrock/text: 4/364 righe scartate (1.1%), concentrate su 4/45 binari
+   pass-rate medio, binari con scarti 0.762 — senza scarti 0.707 — differenza +0.055
+
+ESITO: nessuna direzione sistematica. Due celle negative (databricks/text la piu forte,
+-0,156 su 9 binari), due positive (bedrock, i binari colpiti sono piu FACILI). Un filtro
+che selezionasse per difficolta avrebbe segno coerente. Si dichiara come limitazione
+delimitata con questi quattro numeri, non come confondimento sistematico.

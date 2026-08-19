@@ -1,0 +1,269 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00105010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nvoid * memchr(void *__s,int __c,size_t __n)\n\n{\n  void *pvVar1;\n  \n  pvVar1 = (void *)(*(code *)PTR_memchr_00105030)();\n  return pvVar1;\n}\n\n", 
+   "signature": "void * memchr(void * __s, int __c, size_t __n)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "memchr", 
+   "entry_point": "00101060"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint bcmp(void *__s1,void *__s2,size_t __n)\n\n{\n  int iVar1;\n  \n  iVar1 = (*_DAT_00105038)();\n  return iVar1;\n}\n\n", 
+   "signature": "int bcmp(void * __s1, void * __s2, size_t __n)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "bcmp", 
+   "entry_point": "00101070"
+  }, 
+  {
+   "decompiled": "\nvoid processEntry entry(undefined8 param_1,undefined8 param_2)\n\n{\n  undefined1 auStack_8 [8];\n  \n  (*(code *)PTR___libc_start_main_00104fe0)\n            (FUN_00102410,param_2,&stack0x00000008,FUN_00102550,FUN_001025b0,param_1,auStack_8);\n  do {\n                    /* WARNING: Do nothing block with infinite loop */\n  } while( true );\n}\n\n", 
+   "signature": "undefined entry(void)", 
+   "is_thunk": false, 
+   "size": 43, 
+   "name": "entry", 
+   "entry_point": "00101090"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x001010d3) */\n/* WARNING: Removing unreachable block (ram,0x001010df) */\n\nvoid FUN_001010c0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010c0(void)", 
+   "is_thunk": false, 
+   "size": 34, 
+   "name": "FUN_001010c0", 
+   "entry_point": "001010c0"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x00101114) */\n/* WARNING: Removing unreachable block (ram,0x00101120) */\n\nvoid FUN_001010f0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010f0(void)", 
+   "is_thunk": false, 
+   "size": 51, 
+   "name": "FUN_001010f0", 
+   "entry_point": "001010f0"
+  }, 
+  {
+   "decompiled": "\nvoid * memmem(void *__haystack,size_t __haystacklen,void *__needle,size_t __needlelen)\n\n{\n  byte bVar1;\n  ushort uVar2;\n  uint uVar3;\n  uint *puVar4;\n  ushort uVar5;\n  int iVar6;\n  int iVar7;\n  uint uVar8;\n  long lVar9;\n  uint uVar11;\n  uint uVar12;\n  uint uVar13;\n  uint uVar14;\n  uint *puVar15;\n  ushort *puVar16;\n  uint *puVar17;\n  uint *extraout_RDX;\n  uint *puVar18;\n  uint uVar19;\n  uint *puVar20;\n  uint *puVar21;\n  uint *puVar22;\n  uint *in_R8;\n  uint *puVar23;\n  uint *puVar24;\n  uint *puVar25;\n  uint uVar26;\n  bool bVar27;\n  uint *local_8e8;\n  uint *local_8e0;\n  uint local_8d4;\n  uint local_8d0;\n  uint *local_8a0;\n  uint *local_860;\n  ulong local_858 [261];\n  uint *puVar10;\n  \n  uVar19 = 0x252a9496;\n  if (__needlelen == 4) {\n    uVar19 = 0x130a3993;\n  }\n  uVar11 = 0x47586833;\n  if (__needlelen == 3) {\n    uVar11 = 0xbf0fb6d;\n  }\n  uVar12 = 0x418a265e;\n  if (__needlelen == 2) {\n    uVar12 = 0x8fd60ee1;\n  }\n  lVar9 = __needlelen - 1;\n  uVar13 = 0x243cdcb5;\n  if (lVar9 == 0) {\n    uVar13 = 0xe5a7b5ad;\n  }\n  uVar26 = 0x3ebc8c36;\n  if (__needlelen == 0) {\n    uVar26 = 0x5c17431c;\n  }\n  puVar20 = (uint *)0x84c6ec23;\n  puVar17 = (uint *)__needle;\n  puVar21 = (uint *)__haystacklen;\n  puVar22 = (uint *)__haystack;\n  local_8e0 = (uint *)__haystack;\nLAB_00101260:\n  do {\n    puVar10 = puVar20;\n    puVar25 = (uint *)0x3062e3ec;\n    iVar6 = (int)puVar10;\n    puVar20 = puVar10;\n    if (iVar6 < 0x20da2017) {\n      if (iVar6 < -0x10d00fc7) {\n        if (iVar6 < -0x293fcfcf) {\n          puVar20 = (uint *)(ulong)uVar26;\n          if ((iVar6 != -0x7b3913dd) && (puVar20 = puVar10, iVar6 == -0x7029f11f)) {\n                    /* WARNING: Load size is inaccurate */\n            uVar5 = *__needle << 8 | *__needle >> 8;\n            puVar21 = (uint *)(ulong)(ushort)((ushort)*local_8e0 << 8 | (ushort)*local_8e0 >> 8);\n            puVar16 = (ushort *)((long)local_8e0 + 2);\n            puVar17 = (uint *)(__haystacklen + -2);\n            in_R8 = (uint *)0xe82dd29a;\n            do {\n              while( true ) {\n                while( true ) {\n                  while( true ) {\n                    while( true ) {\n                      iVar6 = (int)in_R8;\n                      if (-0x17d22d67 < iVar6) break;\n                      if (iVar6 < -0x39e8e569) {\n                        if (iVar6 == -0x6e58f133) {\n                          puVar22 = (uint *)(puVar16 + -1);\n                          in_R8 = (uint *)0xb268e5b3;\n                        }\n                        else if (iVar6 == -0x4d971a4d) {\n                          in_R8 = (uint *)0x4c918d52;\n                          local_8e8 = puVar22;\n                        }\n                      }\n                      else if (iVar6 == -0x39e8e569) {\n                        in_R8 = (uint *)0x51c9cfa2;\n                      }\n                      else if (iVar6 == -0x35caf1b5) {\n                        in_R8 = (uint *)0xb268e5b3;\n                        puVar22 = (uint *)0x0;\n                      }\n                      else if ((iVar6 == -0x25091ec7) &&\n                              (in_R8 = (uint *)0xc6171a97, (ushort)puVar21 == uVar5)) {\n                        in_R8 = (uint *)0x229b11d7;\n                      }\n                    }\n                    if (0x3062e3eb < iVar6) break;\n                    if (iVar6 == -0x17d22d66) {\n                      in_R8 = (uint *)0xdaf6e139;\n                      if (puVar17 == (uint *)0x0) {\n                        in_R8 = (uint *)0x3062e3ec;\n                      }\n                    }\n                    else if (iVar6 == 0x229b11d7) {\n                      local_8e8 = (uint *)(puVar16 + -1);\n                      in_R8 = (uint *)0x4c918d52;\n                    }\n                  }\n                  if (iVar6 != 0x3062e3ec) break;\n                  in_R8 = (uint *)0xca350e4b;\n                  if ((ushort)puVar21 == uVar5) {\n                    in_R8 = (uint *)0x91a70ecd;\n                  }\n                }\n                if (iVar6 != 0x51c9cfa2) break;\n                puVar17 = (uint *)((long)puVar17 + -1);\n                uVar2 = *puVar16;\n                puVar16 = (ushort *)((long)puVar16 + 1);\n                in_R8 = (uint *)0xe82dd29a;\n                puVar21 = (uint *)(ulong)((uint)(byte)uVar2 | (int)puVar21 << 8);\n              }\n            } while (iVar6 != 0x4c918d52);\n            puVar20 = (uint *)0x20da2017;\n          }\n        }\n        else if (iVar6 == -0x293fcfcf) {\nLAB_00101fd8:\n          local_8e8 = (uint *)0x0;\n          puVar20 = (uint *)0x20da2017;\n        }\n        else if (iVar6 == -0x1a584a53) {\nLAB_0010124a:\n          local_8e8 = local_8e0;\n          puVar20 = (uint *)0x20da2017;\n        }\n        goto LAB_00101260;\n      }\n      if (iVar6 < 0xbf0fb6d) {\n        if (iVar6 == -0x10d00fc7) {\n                    /* WARNING: Load size is inaccurate */\n          puVar21 = (uint *)(ulong)*__needle;\n          puVar22 = (uint *)__haystack;\n          local_8e0 = (uint *)memchr(__haystack,(uint)*__needle,__haystacklen);\n          puVar20 = (uint *)0x9a5fef5;\n          puVar17 = extraout_RDX;\n          if (local_8e0 == (uint *)0x0) {\n            puVar20 = (uint *)0xe5a7b5ad;\n          }\n        }\n        else if (iVar6 == 0x9a5fef5) {\n          puVar20 = (uint *)(ulong)uVar13;\n        }\n        goto LAB_00101260;\n      }\n      if (iVar6 == 0xbf0fb6d) {\n                    /* WARNING: Load size is inaccurate */\n        uVar14 = (uint)*(byte *)((long)__needle + 2) << 8 |\n                 (uint)*(byte *)((long)__needle + 1) << 0x10 | (uint)*__needle << 0x18;\n        uVar8 = (uint)*(byte *)((long)local_8e0 + 2) << 8 |\n                (uint)*(byte *)((long)local_8e0 + 1) << 0x10 | (uint)(byte)*local_8e0 << 0x18;\n        puVar17 = (uint *)((long)local_8e0 + 3);\n        puVar21 = (uint *)(__haystacklen + -3);\n        in_R8 = (uint *)0x2ae74c29;\n        do {\n          while( true ) {\n            while( true ) {\n              while( true ) {\n                while (iVar6 = (int)in_R8, 0x398818bc < iVar6) {\n                  if (iVar6 < 0x40373664) {\n                    if (iVar6 == 0x398818bd) {\n                      puVar22 = (uint *)((long)puVar17 + -3);\n                      in_R8 = (uint *)0x40373664;\n                    }\n                    else if ((iVar6 == 0x3a434506) && (in_R8 = (uint *)0x9c07a850, uVar8 == uVar14))\n                    {\n                      in_R8 = (uint *)0xcc9ded65;\n                    }\n                  }\n                  else if (iVar6 == 0x40373664) {\n                    in_R8 = (uint *)0x8938713c;\n                    local_8e8 = puVar22;\n                  }\n                  else if (iVar6 == 0x547471f9) {\n                    in_R8 = (uint *)0x40373664;\n                    puVar22 = (uint *)0x0;\n                  }\n                  else if (iVar6 == 0x6a83691b) {\n                    puVar21 = (uint *)((long)puVar21 + -1);\n                    uVar3 = *puVar17;\n                    puVar17 = (uint *)((long)puVar17 + 1);\n                    uVar8 = (uVar8 | (byte)uVar3) << 8;\n                    in_R8 = (uint *)0x2ae74c29;\n                  }\n                }\n                if (iVar6 < 0x2698ccc0) break;\n                if (iVar6 == 0x2698ccc0) {\n                  in_R8 = (uint *)0x547471f9;\n                  if (uVar8 == uVar14) {\n                    in_R8 = (uint *)0x398818bd;\n                  }\n                }\n                else if ((iVar6 == 0x2ae74c29) &&\n                        (in_R8 = (uint *)0x3a434506, puVar21 == (uint *)0x0)) {\n                  in_R8 = (uint *)0x2698ccc0;\n                }\n              }\n              if (iVar6 != -0x63f857b0) break;\n              in_R8 = (uint *)0x6a83691b;\n            }\n            if (iVar6 != -0x3362129b) break;\n            local_8e8 = (uint *)((long)puVar17 + -3);\n            in_R8 = (uint *)0x8938713c;\n          }\n        } while (iVar6 != -0x76c78ec4);\n      }\n      else {\n        if (iVar6 != 0x130a3993) goto LAB_00101260;\n                    /* WARNING: Load size is inaccurate */\n        uVar14 = *__needle;\n        uVar8 = uVar14 >> 0x18 | (uVar14 & 0xff0000) >> 8 | (uVar14 & 0xff00) << 8 | uVar14 << 0x18;\n        uVar14 = *local_8e0;\n        uVar14 = uVar14 >> 0x18 | (uVar14 & 0xff0000) >> 8 | (uVar14 & 0xff00) << 8 | uVar14 << 0x18\n        ;\n        puVar17 = local_8e0 + 1;\n        puVar21 = (uint *)(__haystacklen + -4);\n        in_R8 = (uint *)0x3d091eea;\n        do {\n          while( true ) {\n            while( true ) {\n              while( true ) {\n                while (iVar6 = (int)in_R8, 0x3809432c < iVar6) {\n                  if (iVar6 < 0x3dd477e5) {\n                    if (iVar6 == 0x3809432d) {\n                      puVar21 = (uint *)((long)puVar21 + -1);\n                      uVar3 = *puVar17;\n                      puVar17 = (uint *)((long)puVar17 + 1);\n                      uVar14 = uVar14 << 8 | (uint)(byte)uVar3;\n                      in_R8 = (uint *)0x3d091eea;\n                    }\n                    else if ((iVar6 == 0x3d091eea) &&\n                            (in_R8 = (uint *)0x47ad6ba2, puVar21 == (uint *)0x0)) {\n                      in_R8 = (uint *)0x97a2af5;\n                    }\n                  }\n                  else if (iVar6 == 0x3dd477e5) {\n                    in_R8 = (uint *)0xc882b201;\n                    local_8e8 = puVar22;\n                  }\n                  else if (iVar6 == 0x47ad6ba2) {\n                    in_R8 = (uint *)0xc4ccf37d;\n                    if (uVar14 == uVar8) {\n                      in_R8 = (uint *)0xaf472dcc;\n                    }\n                  }\n                  else if (iVar6 == 0x757120d0) {\n                    in_R8 = (uint *)0x3dd477e5;\n                    puVar22 = (uint *)0x0;\n                  }\n                }\n                if (-0x377d4e00 < iVar6) break;\n                if (iVar6 == -0x50b8d234) {\n                  local_8e8 = puVar17 + -1;\n                  in_R8 = (uint *)0xc882b201;\n                }\n                else if (iVar6 == -0x3b330c83) {\n                  in_R8 = (uint *)0x3809432d;\n                }\n              }\n              if (iVar6 != 0x97a2af5) break;\n              in_R8 = (uint *)0x757120d0;\n              if (uVar14 == uVar8) {\n                in_R8 = (uint *)0x2e1b2e5b;\n              }\n            }\n            if (iVar6 != 0x2e1b2e5b) break;\n            puVar22 = puVar17 + -1;\n            in_R8 = (uint *)0x3dd477e5;\n          }\n        } while (iVar6 != -0x377d4dff);\n      }\n      puVar20 = (uint *)0x20da2017;\n      goto LAB_00101260;\n    }\n    if (0x47586832 < iVar6) {\n      if (iVar6 < 0x5c17431c) {\n        puVar20 = (uint *)(ulong)uVar19;\n        if ((iVar6 != 0x47586833) && (puVar20 = puVar10, iVar6 == 0x5b641488)) goto LAB_00101fd8;\n      }\n      else {\n        if (iVar6 == 0x5c17431c) goto LAB_0010124a;\n        if (iVar6 == 0x6381ccac) {\n          puVar20 = (uint *)(ulong)uVar12;\n        }\n      }\n      goto LAB_00101260;\n    }\n    if (iVar6 < 0x3ebc8c36) {\n      if (iVar6 == 0x243cdcb5) {\n        __haystacklen = __haystacklen + ((long)__haystack - (long)local_8e0);\n        puVar20 = (uint *)0x6381ccac;\n        if (__haystacklen < __needlelen) {\n          puVar20 = (uint *)0xd6c03031;\n        }\n      }\n      else {\n        if (iVar6 == 0x252a9496) {\n          local_858[2] = 0;\n          local_858[3] = 0;\n          local_858[0] = 0;\n          local_858[1] = 0;\n          puVar22 = (uint *)0x0;\n          local_8d4 = (uint)puVar21;\n          puVar4 = puVar17;\n          puVar18 = (uint *)__haystacklen;\n          puVar20 = local_8e0;\n          puVar23 = local_8e0;\n          puVar24 = (uint *)0x229b11d7;\n          iVar6 = -0x35670431;\n          local_8d0 = local_8d4;\nLAB_001012f6:\n          puVar17 = puVar4;\n          puVar15 = puVar10;\n          puVar10 = puVar15;\n          puVar4 = puVar17;\n          if (iVar6 < 0x11218790) {\n            if (-0x4a4789b0 < iVar6) {\n              if (iVar6 < -0xfa9ef12) {\n                if (iVar6 < -0x2e4d6314) {\n                  if (iVar6 < -0x437f5e2d) {\n                    if (iVar6 == -0x4a4789af) {\nLAB_00101b1a:\n                      iVar6 = 0x7c7844a6;\n                    }\n                    else if ((iVar6 == -0x4930a9de) &&\n                            (iVar6 = 0x73238f3e,\n                            *(byte *)((long)__needle + (long)((long)puVar15 + (long)puVar20)) ==\n                            *(byte *)((long)__needle + (long)((long)puVar24 + (long)puVar20)))) {\n                      iVar6 = 0x72610d43;\n                    }\n                  }\n                  else if (iVar6 == -0x437f5e2d) {\n                    puVar20 = (uint *)((long)puVar20 + 1);\n                    iVar6 = -0xfa9ef12;\n                  }\n                  else if (iVar6 == -0x35670431) {\n                    bVar27 = puVar22 < __needlelen;\n                    iVar6 = -0x7ac7ebfe;\n                    iVar7 = 0x11218790;\n                    goto LAB_001012e4;\n                  }\n                }\n                else if (iVar6 < -0x2d2083f3) {\n                  if (iVar6 == -0x2e4d6314) {\n                    puVar20 = local_8a0;\n                    iVar6 = 0x343dcdc;\n                  }\n                  else if (iVar6 == -0x2df48950) {\n                    iVar6 = -0x6a1f963a;\n                  }\n                }\n                else if (iVar6 == -0x2d2083f3) {\n                  iVar6 = -0x7c8b7e8f;\n                  local_8e8 = puVar23;\n                }\n                else if ((iVar6 == -0x1ea53c9a) &&\n                        (iVar6 = -0x661cca2d,\n                        (byte *)((long)puVar21 + 1U) < (byte *)((long)puVar15 + 1U))) {\n                  iVar6 = 0x7adc4560;\n                }\n                goto LAB_001012f6;\n              }\n              if (iVar6 < 0x343dcdc) {\n                if (iVar6 < -0x1b899b6) {\n                  if (iVar6 != -0xfa9ef12) {\n                    if (iVar6 == -0xe4a294d) {\n                      iVar6 = -0x6e481405;\n                      if (puVar18 < puVar20) {\n                        iVar6 = 0x2d08056f;\n                      }\n                      local_8d4 = 0;\n                    }\n                    goto LAB_001012f6;\n                  }\n                }\n                else if (iVar6 != -0x1b899b6) {\n                  if (iVar6 == 0xd91edb) {\n                    puVar23 = (uint *)((long)puVar23 + ((long)puVar20 - (long)puVar21));\n                    goto LAB_0010197d;\n                  }\n                  goto LAB_001012f6;\n                }\n                iVar6 = 0x75d5b3ec;\n                goto LAB_001012f6;\n              }\n              if (iVar6 < 0xedde7b2) {\n                if (iVar6 == 0x343dcdc) {\n                  iVar6 = 0x20cd4926;\n                  if (puVar20 < __needlelen) {\n                    iVar6 = 0x63aaf643;\n                  }\n                  local_8d0 = 0;\n                  goto LAB_001012f6;\n                }\n                if (iVar6 != 0x409609d) goto LAB_001012f6;\n                puVar23 = (uint *)((long)puVar23 + __needlelen);\n              }\n              else {\n                if (iVar6 == 0xedde7b2) {\n                  bVar27 = (byte *)((long)puVar24 + (long)puVar20) < __needlelen;\n                  iVar6 = -0x1ea53c9a;\n                  iVar7 = -0x4930a9de;\n                  goto LAB_001012e4;\n                }\n                if (iVar6 == 0x1040229c) {\n                  puVar24 = (uint *)((long)puVar24 + (long)puVar20);\n                  puVar4 = (uint *)((long)puVar24 - (long)puVar15);\n                  puVar20 = (uint *)0x1;\n                  iVar6 = -0x4a4789af;\n                  goto LAB_001012f6;\n                }\n                if (iVar6 != 0x106a2e12) goto LAB_001012f6;\n                puVar23 = (uint *)((long)puVar23 + (long)puVar20);\n              }\nLAB_0010197d:\n              puVar18 = (uint *)0x0;\n              iVar6 = -0x530d7a42;\n              goto LAB_001012f6;\n            }\n            if (iVar6 < -0x6873e082) {\n              if (-0x6db82fdc < iVar6) {\n                if (iVar6 < -0x6ae03509) {\n                  if (iVar6 == -0x6db82fdb) {\n                    bVar27 = (byte *)((long)puVar24 + (long)puVar20) < __needlelen;\n                    iVar6 = 0x3a575e33;\n                    iVar7 = -0x57ef9451;\n                    goto LAB_001012e4;\n                  }\n                  if (iVar6 == -0x6c06f11d) {\n                    iVar6 = -0x2e4d6314;\n                    local_8a0 = puVar18;\n                  }\n                }\n                else if (iVar6 == -0x6ae03509) {\n                  local_8a0 = (uint *)((long)puVar21 + 1);\n                  iVar6 = -0x2e4d6314;\n                }\n                else if (iVar6 == -0x6a1f963a) {\n                  puVar20 = (uint *)((long)puVar20 + -1);\n                  iVar6 = -0xe4a294d;\n                }\n                goto LAB_001012f6;\n              }\n              if (-0x6fc21a33 < iVar6) {\n                if (iVar6 == -0x6fc21a32) {\n                  puVar4 = (uint *)((long)in_R8 + 1);\n                  iVar6 = 0x1bd78308;\n                }\n                else if ((iVar6 == -0x6e481405) && (iVar6 = 0x34f374be, (local_8d4 & 1) != 0)) {\n                  iVar6 = -0x2df48950;\n                }\n                goto LAB_001012f6;\n              }\n              if (iVar6 == -0x7ac7ebfe) {\n                puVar20 = (uint *)0x1;\n                puVar10 = (uint *)0xffffffffffffffff;\n                puVar4 = (uint *)0x1;\n                puVar24 = (uint *)0x0;\n                iVar6 = -0x6db82fdb;\n                goto LAB_001012f6;\n              }\n              if (iVar6 == -0x71ed1cd2) {\n                puVar20 = puVar18;\n                iVar6 = 0x106a2e12;\n                goto LAB_001012f6;\n              }\n              if (iVar6 != -0x7c8b7e8f) goto LAB_001012f6;\n              puVar20 = (uint *)0x20da2017;\n              goto LAB_00101260;\n            }\n            if (iVar6 < -0x57ef9451) {\n              if (iVar6 < -0x5ec9f1fe) {\n                if (iVar6 == -0x6873e082) {\n                  puVar24 = (uint *)((long)puVar24 + (long)puVar17);\n                  puVar20 = (uint *)0x1;\n                  iVar6 = -0x52bce5b3;\n                }\n                else if (iVar6 == -0x661cca2d) {\n                  puVar4 = local_860;\n                  iVar6 = 0x4a98e3bb;\n                }\n              }\n              else {\n                if (iVar6 == -0x5ec9f1fe) {\n                  bVar27 = puVar20 < puVar18;\n                  iVar6 = 0x106a2e12;\n                  iVar7 = -0x71ed1cd2;\n                  goto LAB_001012e4;\n                }\n                if (iVar6 == -0x5ccbd6d8) {\n                  puVar23 = (uint *)((long)puVar23 + (long)puVar17);\n                  puVar18 = puVar25;\n                  iVar6 = -0x530d7a42;\n                }\n              }\n              goto LAB_001012f6;\n            }\n            if (-0x52bce5b4 < iVar6) {\n              if (iVar6 == -0x52bce5b3) goto LAB_00101b1a;\n              if ((iVar6 == -0x4be437ed) &&\n                 (iVar6 = 0x4e8a1b10,\n                 *(byte *)((long)__needle + (long)((long)puVar24 + (long)puVar20)) <\n                 *(byte *)((long)__needle + (long)((long)puVar15 + (long)puVar20)))) {\n                iVar6 = 0x1040229c;\n              }\n              goto LAB_001012f6;\n            }\n            if (iVar6 == -0x57ef9451) {\n              iVar6 = -0x4be437ed;\n              if (*(byte *)((long)__needle + (long)((long)puVar15 + (long)puVar20)) ==\n                  *(byte *)((long)__needle + (long)((long)puVar24 + (long)puVar20))) {\n                iVar6 = 0x15440eb4;\n              }\n              goto LAB_001012f6;\n            }\n            if (iVar6 != -0x530d7a42) goto LAB_001012f6;\n            bVar27 = (ulong)((long)(__haystacklen + (long)local_8e0) - (long)puVar23) < __needlelen;\n            iVar6 = 0x743f0ea5;\n            iVar7 = 0x642dc6af;\n          }\n          else if (iVar6 < 0x429edb24) {\n            if (iVar6 < 0x2d0c7edd) {\n              if (iVar6 < 0x20cd4926) {\n                if (iVar6 < 0x15440eb4) {\n                  if (iVar6 == 0x11218790) {\n                    bVar1 = *(byte *)((long)__needle + (long)puVar22);\n                    local_858[bVar1 >> 6] = local_858[bVar1 >> 6] | 1L << (bVar1 & 0x3f);\n                    local_858[(ulong)bVar1 + 4] = (ulong)((long)puVar22 + 1);\n                    iVar6 = 0x5ae5e9bf;\n                  }\n                  else if (iVar6 == 0x127f3a1f) {\n                    puVar20 = (uint *)((long)puVar21 + 1);\n                    iVar6 = -0xe4a294d;\n                  }\n                }\n                else if (iVar6 == 0x15440eb4) {\n                  iVar6 = 0x633e999f;\n                  if (puVar20 == puVar17) {\n                    iVar6 = -0x6873e082;\n                  }\n                }\n                else if (iVar6 == 0x1bd78308) goto LAB_0010197d;\n              }\n              else if (iVar6 < 0x2746d97a) {\n                if (iVar6 == 0x20cd4926) {\n                  iVar6 = 0x3d5c8fc5;\n                  if ((local_8d0 & 1) != 0) {\n                    iVar6 = 0x2746d97a;\n                  }\n                }\n                else if (iVar6 == 0x217e68ab) {\n                  iVar6 = 0x4fe60f4b;\n                }\n              }\n              else if (iVar6 == 0x2746d97a) {\n                iVar6 = 0x429edb24;\n              }\n              else if (iVar6 == 0x2d08056f) {\n                local_8d4 = (uint)(*(byte *)((long)__needle + -1 + (long)puVar20) ==\n                                  ((byte *)((long)puVar23 + -1))[(long)puVar20]);\n                iVar6 = -0x6e481405;\n              }\n              goto LAB_001012f6;\n            }\n            if (iVar6 < 0x3a575e33) {\n              if (iVar6 < 0x37bfa884) {\n                if (iVar6 == 0x2d0c7edd) {\n                  puVar20 = (uint *)0x1;\n                  puVar10 = puVar24;\n                  puVar4 = (uint *)0x1;\n                  puVar24 = (uint *)((long)puVar24 + 1);\n                  iVar6 = -0x1b899b6;\n                }\n                else if ((iVar6 == 0x34f374be) && (iVar6 = -0x2d2083f3, puVar18 < puVar20)) {\n                  iVar6 = -0x5ccbd6d8;\n                }\n              }\n              else if (iVar6 == 0x37bfa884) {\n                puVar24 = (uint *)((long)puVar24 + (long)puVar20);\n                puVar20 = (uint *)0x1;\n                puVar4 = (uint *)((long)puVar24 - (long)puVar15);\n                iVar6 = -0x1b899b6;\n              }\n              else if (iVar6 == 0x395fa3d0) {\n                puVar24 = (uint *)((long)puVar24 + (long)puVar17);\n                puVar20 = (uint *)0x1;\n                iVar6 = -0xfa9ef12;\n              }\n              goto LAB_001012f6;\n            }\n            if (iVar6 < 0x3d5c8fc5) {\n              if (iVar6 == 0x3a575e33) {\n                puVar20 = (uint *)0x1;\n                puVar24 = (uint *)0x0;\n                puVar10 = (uint *)0xffffffffffffffff;\n                puVar4 = (uint *)0x1;\n                puVar21 = puVar15;\n                iVar6 = 0xedde7b2;\n                local_860 = puVar17;\n              }\n              else if (iVar6 == 0x3cdf514c) {\n                puVar25 = (uint *)(__needlelen - (long)puVar17);\n                iVar6 = 0x1bd78308;\n              }\n              goto LAB_001012f6;\n            }\n            if (iVar6 != 0x3d5c8fc5) {\n              if (iVar6 == 0x3f4fa840) {\n                iVar6 = 0x7390a611;\n                if ((uint *)(~(ulong)puVar21 + __needlelen) < puVar21) {\n                  iVar6 = 0x5cc21d45;\n                }\n                puVar25 = (uint *)0x0;\n              }\n              goto LAB_001012f6;\n            }\n            bVar27 = puVar20 < __needlelen;\n            iVar6 = 0x127f3a1f;\n            iVar7 = 0xd91edb;\n          }\n          else {\n            if (iVar6 < 0x63aaf643) {\n              if (iVar6 < 0x5ae5e9bf) {\n                if (iVar6 < 0x4e8a1b10) {\n                  if (iVar6 == 0x429edb24) {\n                    puVar20 = (uint *)((long)puVar20 + 1);\n                    iVar6 = 0x343dcdc;\n                  }\n                  else if (iVar6 == 0x4a98e3bb) {\n                    iVar7 = bcmp(__needle,(byte *)((long)__needle + (long)puVar17),\n                                 (size_t)((long)puVar21 + 1));\n                    iVar6 = 0x3f4fa840;\n                    if (iVar7 == 0) {\n                      iVar6 = 0x3cdf514c;\n                    }\n                  }\n                }\n                else if (iVar6 == 0x4e8a1b10) {\n                  puVar20 = (uint *)0x1;\n                  puVar10 = puVar24;\n                  puVar4 = (uint *)0x1;\n                  puVar24 = (uint *)((long)puVar24 + 1);\n                  iVar6 = -0x4a4789af;\n                }\n                else if ((iVar6 == 0x4fe60f4b) &&\n                        (iVar6 = -0x6c06f11d, puVar18 < (uint *)((long)puVar21 + 1U))) {\n                  iVar6 = -0x6ae03509;\n                }\n              }\n              else if (iVar6 < 0x5cc21d45) {\n                if (iVar6 == 0x5ae5e9bf) {\n                  puVar22 = (uint *)((long)puVar22 + 1);\n                  iVar6 = -0x35670431;\n                }\n                else if (iVar6 == 0x5bb516f7) {\n                  puVar20 = (uint *)(__needlelen -\n                                    local_858[(ulong)*(byte *)((long)puVar23 + lVar9) + 4]);\n                  iVar6 = -0x5ec9f1fe;\n                  if (puVar20 == (uint *)0x0) {\n                    iVar6 = 0x217e68ab;\n                  }\n                }\n              }\n              else if (iVar6 == 0x5cc21d45) {\n                in_R8 = puVar21;\n                iVar6 = -0x6fc21a32;\n              }\n              else if (iVar6 == 0x633e999f) {\n                puVar20 = (uint *)((long)puVar20 + 1);\n                iVar6 = -0x52bce5b3;\n              }\n              goto LAB_001012f6;\n            }\n            if (0x7390a610 < iVar6) {\n              if (iVar6 < 0x75d5b3ec) {\n                if (iVar6 == 0x7390a611) {\n                  in_R8 = (uint *)(~(ulong)puVar21 + __needlelen);\n                  iVar6 = -0x6fc21a32;\n                }\n                else if ((iVar6 == 0x743f0ea5) &&\n                        (iVar6 = 0x5bb516f7,\n                        (*(ulong *)((long)local_858 +\n                                   (ulong)(*(byte *)((long)puVar23 + lVar9) >> 3 & 0x18)) >>\n                         ((ulong)*(byte *)((long)puVar23 + lVar9) & 0x3f) & 1) == 0)) {\n                  iVar6 = 0x409609d;\n                }\n              }\n              else if (iVar6 == 0x75d5b3ec) {\n                iVar6 = 0xedde7b2;\n              }\n              else if (iVar6 == 0x7adc4560) {\n                puVar21 = puVar15;\n                iVar6 = 0x4a98e3bb;\n              }\n              else if (iVar6 == 0x7c7844a6) {\n                iVar6 = -0x6db82fdb;\n              }\n              goto LAB_001012f6;\n            }\n            if (iVar6 < 0x72610d43) {\n              if (iVar6 == 0x63aaf643) {\n                local_8d0 = (uint)(*(byte *)((long)__needle + (long)puVar20) ==\n                                  *(byte *)((long)puVar23 + (long)puVar20));\n                iVar6 = 0x20cd4926;\n              }\n              else if (iVar6 == 0x642dc6af) {\n                local_8e8 = (uint *)0x0;\n                iVar6 = -0x7c8b7e8f;\n              }\n              goto LAB_001012f6;\n            }\n            if (iVar6 == 0x72610d43) {\n              iVar6 = -0x437f5e2d;\n              if (puVar20 == puVar17) {\n                iVar6 = 0x395fa3d0;\n              }\n              goto LAB_001012f6;\n            }\n            if (iVar6 != 0x73238f3e) goto LAB_001012f6;\n            bVar27 = *(byte *)((long)__needle + (long)((long)puVar15 + (long)puVar20)) <\n                     *(byte *)((long)__needle + (long)((long)puVar24 + (long)puVar20));\n            iVar6 = 0x2d0c7edd;\n            iVar7 = 0x37bfa884;\n          }\nLAB_001012e4:\n          if (bVar27) {\n            iVar6 = iVar7;\n          }\n          goto LAB_001012f6;\n        }\n        if (iVar6 == 0x20da2017) {\n          return local_8e8;\n        }\n      }\n      goto LAB_00101260;\n    }\n    if (iVar6 == 0x3ebc8c36) {\n      puVar20 = (uint *)0xef2ff039;\n      if (__haystacklen < __needlelen) {\n        puVar20 = (uint *)0x5b641488;\n      }\n    }\n    else if (iVar6 == 0x418a265e) {\n      puVar20 = (uint *)(ulong)uVar11;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "void * memmem(void * __haystack, size_t __haystacklen, void * __needle, size_t __needlelen)", 
+   "is_thunk": false, 
+   "size": 4657, 
+   "name": "memmem", 
+   "entry_point": "00101180"
+  }, 
+  {
+   "decompiled": "\nundefined8 FUN_00102410(int param_1,long param_2)\n\n{\n  char *__s;\n  int iVar1;\n  size_t __haystacklen;\n  size_t __needlelen;\n  char *unaff_RBP;\n  void *unaff_R13;\n  int iVar2;\n  \n  iVar2 = -0x7a0f19e5;\n  if (param_1 < 3) {\n    iVar2 = 0x1e5e5111;\n  }\n  iVar1 = 0x772abf7e;\n  do {\n    while( true ) {\n      while (0x3a74de84 < iVar1) {\n        if (iVar1 < 0x62c48380) {\n          if (iVar1 == 0x3a74de85) {\n            puts(\"NOT_FOUND\");\n            iVar1 = -0x1472676a;\n          }\n          else if (iVar1 == 0x5026eac3) {\n            return 0;\n          }\n        }\n        else if (iVar1 == 0x62c48380) {\n          printf(\"%ld\\n\",(long)unaff_R13 - (long)unaff_RBP);\n          iVar1 = -0x1472676a;\n        }\n        else if (iVar1 == 0x772abf7e) {\n          iVar1 = iVar2;\n        }\n      }\n      if (iVar1 == -0x7a0f19e5) break;\n      if (iVar1 == -0x1472676a) {\n        iVar1 = 0x5026eac3;\n      }\n      else if (iVar1 == 0x1e5e5111) {\n        puts(\"USAGE\");\n        iVar1 = 0x5026eac3;\n      }\n    }\n    unaff_RBP = *(char **)(param_2 + 8);\n    __s = *(char **)(param_2 + 0x10);\n    __haystacklen = strlen(unaff_RBP);\n    __needlelen = strlen(__s);\n    unaff_R13 = memmem(unaff_RBP,__haystacklen,__s,__needlelen);\n    iVar1 = 0x62c48380;\n    if (unaff_R13 == (void *)0x0) {\n      iVar1 = 0x3a74de85;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00102410(void)", 
+   "is_thunk": false, 
+   "size": 280, 
+   "name": "FUN_00102410", 
+   "entry_point": "00102410"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00102550(undefined4 param_1,undefined8 param_2,undefined8 param_3)\n\n{\n  long lVar1;\n  \n  _DT_INIT();\n  lVar1 = 0;\n  do {\n    (*(code *)(&__DT_INIT_ARRAY)[lVar1])(param_1,param_2,param_3);\n    lVar1 = lVar1 + 1;\n  } while (lVar1 != 1);\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00102550(void)", 
+   "is_thunk": false, 
+   "size": 93, 
+   "name": "FUN_00102550", 
+   "entry_point": "00102550"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_001025b0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001025b0(void)", 
+   "is_thunk": false, 
+   "size": 1, 
+   "name": "FUN_001025b0", 
+   "entry_point": "001025b0"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nvoid * memchr(void *__s,int __c,size_t __n)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n  halt_baddata();\n}\n\n", 
+   "signature": "void * memchr(void * __s, int __c, size_t __n)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "memchr", 
+   "entry_point": "00106020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint bcmp(void *__s1,void *__s2,size_t __n)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n  halt_baddata();\n}\n\n", 
+   "signature": "int bcmp(void * __s1, void * __s2, size_t __n)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "bcmp", 
+   "entry_point": "00106038"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "r18_musl_memmem", 
+ "n_functions": 12, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "00100431", 
+   "value": "puts"
+  }, 
+  {
+   "address": "00100436", 
+   "value": "memchr"
+  }, 
+  {
+   "address": "0010043d", 
+   "value": "printf"
+  }, 
+  {
+   "address": "00100444", 
+   "value": "strlen"
+  }, 
+  {
+   "address": "0010044b", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "0010045a", 
+   "value": "memmem"
+  }, 
+  {
+   "address": "00100461", 
+   "value": "bcmp"
+  }, 
+  {
+   "address": "00100466", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "00100478", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100482", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "0010048e", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "001004aa", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "001004b9", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00103009", 
+   "value": "NOT_FOUND"
+  }, 
+  {
+   "address": "00103013", 
+   "value": "USAGE"
+  }, 
+  {
+   "address": "00103069", 
+   "value": "zR"
+  }, 
+  {
+   "address": "00103099", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::0000000d", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::00000019", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::0000001f", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::00000028", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000041", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::00000046", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::0000005c", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::0000006b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000073", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::0000007d", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000092", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000098", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::000000a2", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::000000b0", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000ba", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000c3", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::000000cd", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::000000d5", 
+   "value": ".data"
+  }
+ ]
+}

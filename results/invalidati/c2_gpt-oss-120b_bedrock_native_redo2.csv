@@ -1,0 +1,112 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog21_date_validator,1,1.0000,5,5,True,False,1312,12,0.005157,4866,7378,openai.gpt-oss-120b-1:0,bedrock,39.8,[],2026-08-14T15:50:50,gpt-oss-120b,bedrock,native
+prog21_date_validator,2,1.0000,5,5,True,False,1429,12,0.004162,8719,4757,openai.gpt-oss-120b-1:0,bedrock,31.2,[],2026-08-14T15:51:21,gpt-oss-120b,bedrock,native
+prog21_date_validator,3,1.0000,5,5,True,False,1154,12,0.005383,9709,6545,openai.gpt-oss-120b-1:0,bedrock,44.0,[],2026-08-14T15:52:05,gpt-oss-120b,bedrock,native
+prog21_date_validator,4,1.0000,5,5,True,False,1829,12,0.006829,15561,7491,openai.gpt-oss-120b-1:0,bedrock,53.9,[],2026-08-14T15:52:59,gpt-oss-120b,bedrock,native
+prog21_date_validator,5,1.0000,5,5,True,False,1249,12,0.009005,19672,10091,openai.gpt-oss-120b-1:0,bedrock,60.5,[],2026-08-14T15:54:00,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,1,0.8000,4,5,True,False,1447,12,0.022399,44841,26122,openai.gpt-oss-120b-1:0,bedrock,209.0,[],2026-08-14T15:57:28,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,2,0.8000,4,5,True,False,2534,12,0.015805,41120,16062,openai.gpt-oss-120b-1:0,bedrock,112.3,[],2026-08-14T15:59:21,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,3,0.6000,3,5,True,False,1408,12,0.005662,15644,5525,openai.gpt-oss-120b-1:0,bedrock,48.9,[],2026-08-14T16:00:10,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,4,0.8000,4,5,True,False,1650,12,0.005941,15018,6148,openai.gpt-oss-120b-1:0,bedrock,149.4,[],2026-08-14T16:02:39,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,5,0.8000,4,5,True,False,1898,12,0.007241,15344,8233,openai.gpt-oss-120b-1:0,bedrock,47.8,[],2026-08-14T16:03:27,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,1,0.8000,4,5,True,False,2483,12,0.016688,78370,8221,openai.gpt-oss-120b-1:0,bedrock,55.5,[],2026-08-14T16:04:22,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,2,0.0000,0,5,False,True,0,12,0.016967,80450,8166,openai.gpt-oss-120b-1:0,bedrock,60.7,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T16:05:23,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,3,0.8000,4,5,True,False,2120,12,0.008586,37407,4959,openai.gpt-oss-120b-1:0,bedrock,35.3,[],2026-08-14T16:05:58,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,4,0.0000,0,5,False,True,0,12,0.017210,81767,8241,openai.gpt-oss-120b-1:0,bedrock,63.7,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T16:07:02,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,5,0.8000,4,5,True,False,2304,12,0.007630,33645,4305,openai.gpt-oss-120b-1:0,bedrock,54.4,[],2026-08-14T16:07:56,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,1,1.0000,5,5,True,False,873,12,0.004770,12258,4885,openai.gpt-oss-120b-1:0,bedrock,34.4,[],2026-08-14T16:08:31,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,2,1.0000,5,5,True,False,1425,12,0.002712,4553,3382,openai.gpt-oss-120b-1:0,bedrock,25.6,[],2026-08-14T16:08:56,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,3,1.0000,5,5,True,False,1816,12,0.002488,4553,3009,openai.gpt-oss-120b-1:0,bedrock,11.6,[],2026-08-14T16:09:08,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,4,0.8000,4,5,True,False,1009,12,0.003161,8871,3050,openai.gpt-oss-120b-1:0,bedrock,18.7,[],2026-08-14T16:09:27,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,5,1.0000,5,5,True,False,939,12,0.002579,8830,2090,openai.gpt-oss-120b-1:0,bedrock,22.7,[],2026-08-14T16:09:49,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,1,1.0000,5,5,True,False,1469,12,0.004236,13687,3638,openai.gpt-oss-120b-1:0,bedrock,28.4,[],2026-08-14T16:10:18,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,2,1.0000,5,5,True,False,1191,12,0.004027,9038,4452,openai.gpt-oss-120b-1:0,bedrock,28.1,[],2026-08-14T16:10:46,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,3,0.0000,0,5,False,True,0,12,0.001088,4463,697,openai.gpt-oss-120b-1:0,bedrock,12.9,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.6.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T16:10:59,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,4,1.0000,5,5,True,False,1060,12,0.007921,15984,9206,openai.gpt-oss-120b-1:0,bedrock,66.4,[],2026-08-14T16:12:05,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,5,1.0000,5,5,True,False,1207,12,0.010084,37279,7487,openai.gpt-oss-120b-1:0,bedrock,42.7,[],2026-08-14T16:12:48,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,1,1.0000,5,5,True,False,4235,12,0.014925,69718,7445,openai.gpt-oss-120b-1:0,bedrock,71.2,[],2026-08-14T16:13:59,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,2,0.0000,0,5,False,False,1578,12,0.009900,54653,2837,openai.gpt-oss-120b-1:0,bedrock,40.9,"/w/candidate.c:59:1: error: extraneous closing brace ('}')
+   59 | }
+      | ^
+1 error generated.
+",2026-08-14T16:14:40,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,3,1.0000,5,5,True,False,1674,12,0.010613,47733,5755,openai.gpt-oss-120b-1:0,bedrock,65.2,[],2026-08-14T16:15:45,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,4,0.0000,0,5,False,True,0,12,0.017059,78250,8870,openai.gpt-oss-120b-1:0,bedrock,54.8,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T16:16:40,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,5,1.0000,5,5,True,False,2091,12,0.009748,40861,6031,openai.gpt-oss-120b-1:0,bedrock,55.8,[],2026-08-14T16:17:36,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,1,1.0000,5,5,True,False,1170,12,0.007359,10990,9517,openai.gpt-oss-120b-1:0,bedrock,64.9,[],2026-08-14T16:18:41,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,2,1.0000,5,5,True,False,938,12,0.006282,10678,7800,openai.gpt-oss-120b-1:0,bedrock,125.8,[],2026-08-14T16:20:46,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,3,1.0000,5,5,True,False,1455,12,0.006690,16126,7119,openai.gpt-oss-120b-1:0,bedrock,72.7,[],2026-08-14T16:21:59,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,4,1.0000,5,5,True,False,1432,12,0.002912,3992,3855,openai.gpt-oss-120b-1:0,bedrock,32.2,[],2026-08-14T16:22:31,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,5,1.0000,5,5,True,False,1350,12,0.005737,8031,7554,openai.gpt-oss-120b-1:0,bedrock,46.3,[],2026-08-14T16:23:18,gpt-oss-120b,bedrock,native
+prog39_horner,1,1.0000,5,5,True,False,1373,12,0.006843,11418,8551,openai.gpt-oss-120b-1:0,bedrock,46.9,[],2026-08-14T16:24:04,gpt-oss-120b,bedrock,native
+prog39_horner,2,0.0000,0,5,False,True,0,12,0.001505,4467,1391,openai.gpt-oss-120b-1:0,bedrock,26.0,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.6.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T16:24:30,gpt-oss-120b,bedrock,native
+prog39_horner,3,0.0000,0,5,False,True,0,12,0.001505,4467,1391,openai.gpt-oss-120b-1:0,bedrock,25.4,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.6.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T16:24:56,gpt-oss-120b,bedrock,native
+prog39_horner,4,0.0000,0,5,False,True,0,12,0.001504,4467,1390,openai.gpt-oss-120b-1:0,bedrock,29.7,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.6.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T16:25:26,gpt-oss-120b,bedrock,native
+prog39_horner,5,1.0000,5,5,True,False,1280,12,0.014757,39279,14775,openai.gpt-oss-120b-1:0,bedrock,116.6,[],2026-08-14T16:27:22,gpt-oss-120b,bedrock,native
+prog40_bisection_root,1,0.0000,0,5,False,True,0,12,0.011847,47629,7838,openai.gpt-oss-120b-1:0,bedrock,58.0,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T16:28:20,gpt-oss-120b,bedrock,native
+prog40_bisection_root,2,0.0000,0,5,False,True,0,12,0.009723,44074,5186,openai.gpt-oss-120b-1:0,bedrock,51.3,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T16:29:12,gpt-oss-120b,bedrock,native
+prog40_bisection_root,3,1.0000,5,5,True,False,1562,12,0.008388,28586,6834,openai.gpt-oss-120b-1:0,bedrock,59.6,[],2026-08-14T16:30:11,gpt-oss-120b,bedrock,native
+prog40_bisection_root,4,1.0000,5,5,True,False,851,12,0.005955,20095,4902,openai.gpt-oss-120b-1:0,bedrock,46.9,[],2026-08-14T16:30:58,gpt-oss-120b,bedrock,native
+prog40_bisection_root,5,1.0000,5,5,True,False,786,12,0.016856,46803,16392,openai.gpt-oss-120b-1:0,bedrock,129.0,[],2026-08-14T16:33:07,gpt-oss-120b,bedrock,native
+prog41_series_sum,1,0.6000,3,5,True,False,2711,12,0.007911,16635,9026,openai.gpt-oss-120b-1:0,bedrock,112.4,[],2026-08-14T16:35:00,gpt-oss-120b,bedrock,native
+prog41_series_sum,2,0.8000,4,5,True,False,1926,12,0.014185,33612,15238,openai.gpt-oss-120b-1:0,bedrock,88.8,[],2026-08-14T16:36:28,gpt-oss-120b,bedrock,native
+prog41_series_sum,3,1.0000,5,5,True,False,2353,12,0.009797,22739,10644,openai.gpt-oss-120b-1:0,bedrock,67.2,[],2026-08-14T16:37:36,gpt-oss-120b,bedrock,native
+prog41_series_sum,4,0.0000,0,5,True,False,866,12,0.010166,24575,10800,openai.gpt-oss-120b-1:0,bedrock,217.6,[],2026-08-14T16:41:13,gpt-oss-120b,bedrock,native
+prog41_series_sum,5,0.8000,4,5,True,False,2479,12,0.015224,35623,16467,openai.gpt-oss-120b-1:0,bedrock,100.0,[],2026-08-14T16:42:53,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,1,1.0000,5,5,True,False,2302,12,0.006342,20405,5468,openai.gpt-oss-120b-1:0,bedrock,38.5,[],2026-08-14T16:43:32,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,2,1.0000,5,5,True,False,2068,12,0.007510,18127,7985,openai.gpt-oss-120b-1:0,bedrock,53.6,[],2026-08-14T16:44:25,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,3,1.0000,5,5,True,False,1792,12,0.007360,20650,7104,openai.gpt-oss-120b-1:0,bedrock,30.0,[],2026-08-14T16:44:55,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,4,0.0000,0,5,False,True,0,12,0.025896,111293,15336,openai.gpt-oss-120b-1:0,bedrock,125.4,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T16:47:01,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,5,1.0000,5,5,True,False,1923,12,0.005202,12353,5582,openai.gpt-oss-120b-1:0,bedrock,23.3,[],2026-08-14T16:47:24,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,1,1.0000,5,5,True,False,1838,12,0.003930,6340,4965,openai.gpt-oss-120b-1:0,bedrock,14.5,[],2026-08-14T16:47:38,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,2,1.0000,5,5,True,False,2983,12,0.011183,27643,11728,openai.gpt-oss-120b-1:0,bedrock,51.9,[],2026-08-14T16:48:30,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,3,1.0000,5,5,True,False,1432,12,0.003684,6340,4555,openai.gpt-oss-120b-1:0,bedrock,29.8,[],2026-08-14T16:49:00,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,4,1.0000,5,5,True,False,1864,12,0.002351,6340,2334,openai.gpt-oss-120b-1:0,bedrock,9.8,[],2026-08-14T16:49:10,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,5,1.0000,5,5,True,False,1747,12,0.003204,6340,3755,openai.gpt-oss-120b-1:0,bedrock,136.5,[],2026-08-14T16:51:26,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,1,1.0000,5,5,True,False,1083,12,0.003441,9899,3261,openai.gpt-oss-120b-1:0,bedrock,14.8,[],2026-08-14T16:51:41,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,2,1.0000,5,5,True,False,1051,12,0.004065,9755,4336,openai.gpt-oss-120b-1:0,bedrock,34.3,[],2026-08-14T16:52:15,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,3,1.0000,5,5,True,False,2076,12,0.005857,12354,6673,openai.gpt-oss-120b-1:0,bedrock,49.0,[],2026-08-14T16:53:04,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,4,1.0000,5,5,True,False,1558,12,0.001440,3109,1622,openai.gpt-oss-120b-1:0,bedrock,9.6,[],2026-08-14T16:53:14,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,5,1.0000,5,5,True,False,2348,12,0.002848,6136,3212,openai.gpt-oss-120b-1:0,bedrock,23.2,[],2026-08-14T16:53:37,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,1,0.0000,0,5,False,True,0,12,0.016372,59188,12490,openai.gpt-oss-120b-1:0,bedrock,107.5,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T16:55:25,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,2,0.0000,0,5,False,True,0,12,0.012029,55549,6161,openai.gpt-oss-120b-1:0,bedrock,70.2,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T16:56:35,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,3,0.8000,4,5,True,False,1819,12,0.014284,51753,10868,openai.gpt-oss-120b-1:0,bedrock,111.3,[],2026-08-14T16:58:26,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,4,0.8000,4,5,True,False,1929,12,0.011542,42128,8704,openai.gpt-oss-120b-1:0,bedrock,91.3,[],2026-08-14T16:59:58,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,5,0.8000,4,5,True,False,2068,12,0.013864,51273,10288,openai.gpt-oss-120b-1:0,bedrock,103.5,[],2026-08-14T17:01:41,gpt-oss-120b,bedrock,native
+prog55_connected_components,1,0.2000,1,5,True,False,2661,12,0.012381,52269,7567,openai.gpt-oss-120b-1:0,bedrock,79.0,[],2026-08-14T17:03:00,gpt-oss-120b,bedrock,native
+prog55_connected_components,2,0.2000,1,5,True,False,2289,12,0.014503,62710,8494,openai.gpt-oss-120b-1:0,bedrock,70.6,[],2026-08-14T17:04:11,gpt-oss-120b,bedrock,native
+prog55_connected_components,3,0.2000,1,5,True,False,2081,12,0.003693,13282,2835,openai.gpt-oss-120b-1:0,bedrock,16.2,[],2026-08-14T17:04:27,gpt-oss-120b,bedrock,native
+prog55_connected_components,4,0.2000,1,5,True,False,2717,12,0.014347,64336,7827,openai.gpt-oss-120b-1:0,bedrock,63.8,[],2026-08-14T17:05:31,gpt-oss-120b,bedrock,native
+prog55_connected_components,5,0.2000,1,5,True,False,2523,12,0.014358,57505,9554,openai.gpt-oss-120b-1:0,bedrock,155.8,[],2026-08-14T17:08:07,gpt-oss-120b,bedrock,native
+prog58_turing_increment,1,0.2000,1,5,True,False,4906,12,0.022834,44174,27013,openai.gpt-oss-120b-1:0,bedrock,293.2,[],2026-08-14T17:13:00,gpt-oss-120b,bedrock,native
+prog58_turing_increment,2,0.2000,1,5,True,False,1739,12,0.007026,14062,8194,openai.gpt-oss-120b-1:0,bedrock,118.0,[],2026-08-14T17:14:58,gpt-oss-120b,bedrock,native
+prog58_turing_increment,3,0.2000,1,5,True,False,1811,12,0.003980,8247,4571,openai.gpt-oss-120b-1:0,bedrock,45.6,[],2026-08-14T17:15:43,gpt-oss-120b,bedrock,native
+prog58_turing_increment,4,0.2000,1,5,True,False,2100,12,0.011394,20903,13765,openai.gpt-oss-120b-1:0,bedrock,218.2,[],2026-08-14T17:19:21,gpt-oss-120b,bedrock,native
+prog58_turing_increment,5,0.0000,0,5,False,True,0,12,0.005669,4649,8286,openai.gpt-oss-120b-1:0,bedrock,182.3,nessun candidato prodotto,2026-08-14T17:22:24,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,1,0.0000,0,5,True,False,1946,12,0.005062,12808,5234,openai.gpt-oss-120b-1:0,bedrock,62.4,[],2026-08-14T17:23:26,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,2,0.0000,0,5,False,True,0,12,0.021126,62052,19697,openai.gpt-oss-120b-1:0,bedrock,226.3,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T17:27:13,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,3,0.0000,0,5,True,False,1880,12,0.016507,47400,15662,openai.gpt-oss-120b-1:0,bedrock,71.2,[],2026-08-14T17:28:24,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,4,0.0000,0,5,True,False,1863,12,0.008419,21072,8763,openai.gpt-oss-120b-1:0,bedrock,72.1,[],2026-08-14T17:29:36,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,5,0.0000,0,5,True,False,1390,12,0.010106,28228,9787,openai.gpt-oss-120b-1:0,bedrock,70.0,[],2026-08-14T17:30:46,gpt-oss-120b,bedrock,native

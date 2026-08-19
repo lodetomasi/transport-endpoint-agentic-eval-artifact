@@ -1,0 +1,7 @@
+{"program": "prog23_longest_common_prefix", "tests": [
+  {"id": 1, "args": ["flower", "flow", "flight"], "stdin": "", "expected_stdout": "fl\n"},
+  {"id": 2, "args": ["dog", "racecar", "car"], "stdin": "", "expected_stdout": "\n"},
+  {"id": 3, "args": ["single"], "stdin": "", "expected_stdout": "single\n"},
+  {"id": 4, "args": [], "stdin": "", "expected_stdout": "EMPTY\n"},
+  {"id": 5, "args": ["abc1", "abc2", "abc3", "abc4", "abc5", "abc6", "abc7", "abc8", "abc9", "abc10", "abc11", "abc12", "abc13", "abc14", "abc15", "abc16", "abc17", "abc18", "abc19", "abc20", "abc21", "abc22", "abc23", "abc24", "abc25", "abc26", "abc27", "abc28", "abc29", "abc30", "abc31", "abc32", "abc33", "abc34", "abc35", "abc36", "abc37", "abc38", "abc39", "abc40", "abc41", "abc42", "abc43", "abc44", "abc45", "abc46", "abc47", "abc48", "abc49", "abc50", "abc51", "abc52", "abc53", "abc54", "abc55", "abc56", "abc57", "abc58", "abc59", "abc60", "abc61", "abc62", "abc63", "abc64", "abc65"], "stdin": "", "expected_stdout": "TOO_MANY\n"}
+]}

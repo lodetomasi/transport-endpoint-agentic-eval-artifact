@@ -1,0 +1,26 @@
+Workdir condivisa: esposizione e sonda
+  righe con timestamp: 5873
+  directory distinte in results/workv3: 360 per 16 celle
+
+  FINESTRA (mediana della fase docker, 4 esecuzioni): 0.89 s
+
+  ESPOSIZIONI: coppie stesso (binario, run_id) da CELLE DIVERSE
+    entro   2 s:   30
+    entro   5 s:   74
+    entro  15 s:  130
+    entro  30 s:  161
+    entro  60 s:  255
+
+  SONDA: concordanza di pass_rate, righe vicine (<=5s) contro lontane,
+         A PARITA' DI COPPIA DI CELLE. Una collisione alzerebbe le vicine.
+    claude-sonnet-4-5/bedrock/text vs claude-sonnet-4-5/databricks/text
+      vicine 52/67 =  77.6%   lontane 260/303 =  85.8%
+
+    differenza: -8.2 punti  (una collisione la darebbe POSITIVA)
+
+  LIMITE DELLA SONDA, che si stampa col numero: 1 coppia/e di celle ha
+  abbastanza casi. Una sola coppia non regge un confronto appaiato generale, e il
+  segno si attenua o si inverte controllando per l'identita' del modello. La sonda
+  NON prova assenza: dice che la firma attesa non c'e' dove i dati permettono di
+  cercarla. E la questione resta indecidibile per costruzione, perche' workv3/
+  conserva solo l'ultimo scrittore per directory.

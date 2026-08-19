@@ -1,0 +1,122 @@
+\section{Threats to Validity}
+\label{sec:threats}
+
+Each threat is reported in the same four parts: what it is, how large it is, what we did about
+it, and what remains. The threats an artifact reviewer would find anyway are here too, with
+the same four parts and no different treatment.
+
+\subsection{Construct validity: what pass-rate measures}
+
+\textbf{Threat.} Pass-rate is a lower bound on semantic equivalence, and it has a floor: a
+candidate written without consulting the decompiled program can still pass some tests, so part
+of any score may be pattern-matching rather than reconstruction.
+
+\textbf{Quantification.} The floor is measurable inside the study rather than assumed, and
+\S\ref{sec:results} reports it: the runs that called no tool at all average 0.113 against 0.638 for those
+that called at least one.
+
+\textbf{Residual.} The floor exists and does not dominate, and both halves of that sentence carry a
+number. Pass-rate remains a lower bound and is reported as one throughout; no claim in this paper requires
+it to be more.
+
+\subsection{Construct validity: what a transport carries}
+
+\textbf{Threat.} The transport contrast is a change of \emph{format} and also a change in how much context
+reaches the model. \S\ref{sec:runtime} treats a factor of 2.3 in input tokens between two clouds as evidence
+that the two stacks differ; the same quantity differs between the two transports, on the axis this study
+exists to isolate.
+
+\textbf{Quantification.} Median input tokens per run, native over textual, across the eight cells where
+both arms exist: $2.89$ and $2.47$ on gpt-oss (Databricks, Bedrock), $2.34$ and $1.02$ on llama, $1.38$ and
+$1.37$ on haiku, and $0.75$ and $0.73$ on sonnet. The native arm receives more in six cells of eight and
+fewer in two, so the divergence has no fixed direction and its extreme, $2.89$ on T1, exceeds the $2.3$ the
+endpoint subsection reports. T1 is the cell where this matters most: gpt-oss issues exactly one call per
+turn, so it is the contrast with no batching confound to absorb the difference.
+
+\textbf{Diagnostic.} This is a component of the transport, not a leak into it. Under native calling the tool
+schemas travel in a \texttt{tools} field and results return in the provider's tool role; under the textual
+protocol both travel as ordinary messages. Two encodings of one conversation do not cost the same number of
+tokens, so no version of this contrast can hold the count fixed while changing the format --- the count is
+part of the format. The ablation arm of \S\ref{sec:rq5} separates batching from format; nothing here
+separates format from context volume.
+
+\textbf{Residual.} The transport effects of \S\ref{sec:results} are therefore effects of a transport as
+deployed rather than of a serialisation syntax holding all else equal, and a reader sizing their own study
+should read them that way --- the same lesson the ablation arm returns from the other side. A transport is
+not only a format a call travels in: it is a channel with its own budget, and it teaches.
+
+\subsection{Internal validity: a working directory shared across cells}
+
+\textbf{Threat.} Candidates were compiled in a directory keyed on the program and run index and nothing
+else, so sixteen cells shared 360 directories under concurrent collection and a run compiling another
+cell's candidate would be scored normally with no flag raised. The key omits the cell, so no contrast is
+structurally exempt.
+
+\textbf{Quantification.} Thirty pairs of rows from different cells share a program and run index within
+two seconds; across the full grid 843 of 5{,}805 measurements (14.5\%) have a row from another cell that
+close, and all sixteen cells are affected. The artifact gives the mechanism, the write-to-read window and
+the probe these data admit --- which reassures about nothing, its sign being the opposite of a
+collision's and vanishing once model identity is controlled for.
+
+The designation of the re-collection as primary basis is \emph{argued} rather than \emph{certified}, and
+the difference is a number. The re-collection ends at 5{,}880 \emph{rows}, of which 5{,}809 are
+measurements under the predicate of \S\ref{sec:method}; the criteria script's timestamp falls when 112 of
+those rows existed --- \textbf{1.9\%}, all from a \emph{single} cell of sixteen --- and no criterion of the
+four is computable from one model --- so their content could not have been informed by their outcome, which is checkable in the
+released rows. The files enter version control the next day, when 73.4\% of the rows existed, and a
+modification time can be rewritten. The pre-registration proper (\S\ref{sec:method}) carries the stronger
+form: committed 22 hours before the original collection's first row, and that precedence verifies.
+
+\textbf{Diagnostic and mitigation.} Because a probe that cannot settle the question is not a mitigation,
+the working directory now carries the cell and the experiment was collected again on workspaces isolated
+per cell. Two quantities separate there. \emph{Crowding} --- a row from another cell within two seconds
+--- is a property of sixteen concurrent cells and survives isolation: 843 measurements originally, 451
+after. \emph{Shared compilation paths} is the mechanism itself, and it does not: 30 originally,
+\emph{zero} under 451 concurrent measurements that would have exposed it. Removed by construction, not
+observed absent.
+
+\textbf{The four frozen criteria, and their outcome.} All four are met.
+\emph{Sign agreement}: six of eight paired contrasts keep their direction, against a threshold of six.
+\emph{Family outcome}: no test passes its Holm threshold in either batch, under both the frozen
+approximation and the exact Student series --- four series, one answer. \emph{Interval coverage}: seven
+of eight re-collected effects fall inside the original 95\% interval, the exception being T7, whose
+original interval is $[-0.2,+0.1]$ because that cell is almost noiseless --- a demanding target rather
+than a disagreement about the effect. \emph{Variance decomposition}: the noise share that inverted the
+power calibration reproduces, 0.1\%/$K_\infty=705$ originally against 0.5\%/668, with the second
+high-variance contrast at 9.3\%/487 against 9.1\%/380. The criterion asked for agreement within an order
+of magnitude and got it on the quantity that carries the finding.
+
+\input{tables/riraccolta}
+
+The effect sizes move by up to 3.1pp (T4, the smallest and least stable), and no conclusion of the
+chapter depends on one of them individually. What the re-collection establishes is narrower and more
+useful than agreement: the confirmatory result does not rest on an apparatus whose sharing behaviour
+cannot be audited.
+
+\textbf{Residual.} Whether a collision affected the original batch is not decidable from the released
+data --- the working directory is overwritten by design and is an audit trail of nothing --- so that
+batch is neither invalidated nor defended, and the criterion this programme applies, with the two
+batches it did invalidate, is in the artifact.
+
+\subsection{Conclusion validity: the guards, and their perimeter}
+
+\textbf{Threat and residual.} The analysis is protected by content hashes and an append-only convention,
+and neither guarantee is as wide as its name: the hash chain covers six files, three of them
+analysis scripts, and not the other thirty in that directory; and the append-only rule is enforced by a hook that stops known destructive commands
+but not an ordinary shell redirection, so the real guarantee there is the committed history a reader can
+check. We state the perimeters rather than let the names imply they coincide, and the artifact enumerates
+what each covers.
+
+\subsection{External validity: what the design does not settle}
+
+\textbf{Threat.} The design manipulates transport and infrastructure at a fixed \emph{nominal model
+identity}, and we use the weaker phrase deliberately: it does not verify that a nominally identical
+model is byte-identical across two providers, and neither provider exposes enough to settle it.
+
+\textbf{Quantification.} The divergence matters rather than being hypothetical: on the one axis where the
+Wilson bands separate, the same nominal model returns identical scores on 24.4\% of binaries at one cloud
+against 66.7\% at the other (\S\ref{sec:results}).
+
+\textbf{Residual.} We report the rates and decline to attribute them, because attributing them
+would require knowing what each provider serves. The scope of every effect size reported here
+is one task family, four models and two clouds, as the pre-registration bounds it.

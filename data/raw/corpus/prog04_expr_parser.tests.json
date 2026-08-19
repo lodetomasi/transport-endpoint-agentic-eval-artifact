@@ -1,0 +1,7 @@
+{"program": "prog04_expr_parser", "tests": [
+  {"id": 1, "args": [], "stdin": "3 + 4 * 2\n", "expected_stdout": "11\n"},
+  {"id": 2, "args": [], "stdin": "-5 + 3\n", "expected_stdout": "-2\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "PARSE_ERROR\n"},
+  {"id": 4, "args": [], "stdin": "((1+2)*(3+4))-5*(6-2)\n", "expected_stdout": "1\n"},
+  {"id": 5, "args": [], "stdin": "10 / 0\n", "expected_stdout": "DIV_ZERO\n"}
+]}

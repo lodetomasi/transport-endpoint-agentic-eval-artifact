@@ -1,0 +1,369 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00107010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nsize_t fread(void *__ptr,size_t __size,size_t __n,FILE *__stream)\n\n{\n  size_t sVar1;\n  \n  sVar1 = (*(code *)PTR_fread_00107020)();\n  return sVar1;\n}\n\n", 
+   "signature": "size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "fread", 
+   "entry_point": "00101040"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nvoid * memmove(void *__dest,void *__src,size_t __n)\n\n{\n  void *pvVar1;\n  \n  pvVar1 = (void *)(*_DAT_00107038)();\n  return pvVar1;\n}\n\n", 
+   "signature": "void * memmove(void * __dest, void * __src, size_t __n)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "memmove", 
+   "entry_point": "00101070"
+  }, 
+  {
+   "decompiled": "\nvoid processEntry entry(undefined8 param_1,undefined8 param_2)\n\n{\n  undefined1 auStack_8 [8];\n  \n  (*(code *)PTR___libc_start_main_00106fe0)\n            (FUN_00103300,param_2,&stack0x00000008,FUN_00104400,FUN_00104460,param_1,auStack_8);\n  do {\n                    /* WARNING: Do nothing block with infinite loop */\n  } while( true );\n}\n\n", 
+   "signature": "undefined entry(void)", 
+   "is_thunk": false, 
+   "size": 43, 
+   "name": "entry", 
+   "entry_point": "00101090"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x001010d3) */\n/* WARNING: Removing unreachable block (ram,0x001010df) */\n\nvoid FUN_001010c0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010c0(void)", 
+   "is_thunk": false, 
+   "size": 34, 
+   "name": "FUN_001010c0", 
+   "entry_point": "001010c0"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x00101114) */\n/* WARNING: Removing unreachable block (ram,0x00101120) */\n\nvoid FUN_001010f0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010f0(void)", 
+   "is_thunk": false, 
+   "size": 51, 
+   "name": "FUN_001010f0", 
+   "entry_point": "001010f0"
+  }, 
+  {
+   "decompiled": "\nuint FUN_00101180(byte *param_1,long param_2,undefined8 *param_3,long *param_4,undefined8 *param_5,\n                 long *param_6,undefined4 *param_7,undefined8 param_8,undefined8 *param_9,\n                 long param_10)\n\n{\n  byte bVar1;\n  int iVar2;\n  int iVar3;\n  int iVar4;\n  long lVar5;\n  uint uVar6;\n  byte *pbVar7;\n  uint unaff_EBP;\n  byte *unaff_R12;\n  byte *pbVar8;\n  byte *pbVar9;\n  uint local_70;\n  uint local_6c;\n  int local_68;\n  int local_64;\n  long *local_60;\n  long *local_58;\n  byte *local_50;\n  undefined8 local_48;\n  undefined8 *local_40;\n  undefined8 *local_38;\n  \n  pbVar8 = param_1 + param_2;\n  local_48 = *param_9;\n  *param_3 = 0;\n  *param_4 = 0;\n  *param_5 = 0;\n  *param_6 = 0;\n  *param_7 = 0xffffffff;\n  *param_9 = 0;\n  local_68 = 0x4070bf49;\n  if (param_10 == 0) {\n    local_68 = -0x4ada843c;\n  }\n  iVar4 = -0x6cba8f18;\n  pbVar9 = param_1;\n  local_60 = param_4;\n  local_58 = param_6;\n  local_40 = param_3;\n  local_38 = param_5;\n  do {\n    uVar6 = (int)pbVar9 - (int)param_1;\n    while( true ) {\n      do {\n        while (iVar3 = iVar4, iVar4 = iVar3, -0x69f8153 < iVar3) {\n          if (iVar3 < 0x3c9faa64) {\n            if (iVar3 == -0x69f8152) {\n              return unaff_EBP;\n            }\n            if (iVar3 == 0x2bc4d2) goto LAB_00101265;\n          }\n          else if (iVar3 == 0x3c9faa64) {\n            iVar4 = -0x69f8152;\n            unaff_EBP = uVar6;\n          }\n          else if (iVar3 == 0x4070bf49) {\n            lVar5 = FUN_00101b90(pbVar9,pbVar8,param_10,&local_70);\n            iVar4 = -0x4ada843c;\n            if (lVar5 == 0) {\n              iVar4 = -0x24e41d3b;\n            }\n          }\n        }\n        iVar4 = local_68;\n      } while (iVar3 == -0x6cba8f18);\n      if (iVar3 == -0x4ada843c) break;\n      iVar4 = iVar3;\n      if (iVar3 == -0x24e41d3b) {\nLAB_00101265:\n        iVar4 = -0x69f8152;\n        unaff_EBP = local_70;\n      }\n    }\n    iVar4 = -0x27559f9e;\n    if (pbVar9 == pbVar8) {\n      iVar4 = 0x75ae1fef;\n    }\n    pbVar7 = (byte *)(ulong)uVar6;\n    iVar3 = 0x77a167d8;\n    local_6c = unaff_EBP;\n    local_50 = param_1;\nLAB_00101310:\n    iVar2 = iVar3;\n    iVar3 = iVar2;\n    if (0x5a66bf5 < iVar2) {\n      if (iVar2 < 0x38d1a22f) {\n        if (iVar2 < 0x26a43327) {\n          if (iVar2 < 0x1b6e4c11) {\n            if (iVar2 == 0x5a66bf6) {\n              iVar3 = -0x1aab62d6;\n              if (*pbVar9 == 10) {\n                iVar3 = -0x2d880c40;\n              }\n            }\n            else if (iVar2 == 0x19704d62) {\n              *local_38 = pbVar7;\n              *local_58 = (long)pbVar9 - (long)pbVar7;\n              param_1 = (byte *)0x0;\n              iVar3 = 0x4285881;\n            }\n            else if (iVar2 == 0x1a2cf2c0) {\n              pbVar9 = pbVar9 + 1;\n              iVar3 = -0x28c0bc16;\n              if (pbVar9 == pbVar8) {\n                iVar3 = -0x3f953427;\n              }\n            }\n            goto LAB_00101310;\n          }\n          if (iVar2 < 0x25918a62) {\n            if (iVar2 == 0x1b6e4c11) {\nLAB_001019ba:\n              iVar3 = 0x516edb3f;\n            }\n            else if (iVar2 == 0x22e62523) {\n              local_70 = 0xffffffff;\n              goto LAB_0010172e;\n            }\n            goto LAB_00101310;\n          }\n          if (iVar2 == 0x25918a62) {\n            iVar3 = -0x47af462b;\n            goto LAB_00101310;\n          }\n          if (iVar2 != 0x25dba092) goto LAB_00101310;\n          lVar5 = *local_58;\n          iVar3 = -0x36fc3059;\n        }\n        else {\n          if (iVar2 < 0x2d708580) {\n            if (iVar2 < 0x28d9b294) {\n              if (iVar2 == 0x26a43327) {\n                pbVar9 = pbVar9 + 1;\n                iVar3 = 0x2d708580;\n                if (pbVar9 == pbVar8) {\n                  iVar3 = -0x32b21017;\n                }\n              }\n              else if (iVar2 == 0x26b4ab52) {\n                iVar3 = 0x19704d62;\n              }\n            }\n            else if (iVar2 == 0x28d9b294) {\n              iVar3 = -0x4e7a37d7;\n            }\n            else if (iVar2 == 0x2a0d97ce) {\n              pbVar9 = pbVar9 + 1;\n              iVar3 = 0x2f873f80;\n              if (pbVar9 == pbVar8) {\n                iVar3 = -0x27c6bbbc;\n              }\n            }\n            goto LAB_00101310;\n          }\n          if (iVar2 < 0x359a589a) {\n            if (iVar2 == 0x2d708580) {\n              bVar1 = *pbVar9;\n              pbVar9 = pbVar9 + 1;\n              iVar3 = -0x3ecbffbe;\n              if (bVar1 == 10) {\n                iVar3 = 0x25918a62;\n              }\n            }\n            else if (iVar2 == 0x2f873f80) {\n              iVar3 = -0x794deadc;\n            }\n            goto LAB_00101310;\n          }\n          if (iVar2 != 0x359a589a) {\n            if ((iVar2 == 0x35b6e77f) && (iVar3 = 0x1b6e4c11, *pbVar9 == 0x7f)) {\n              iVar3 = 0x22e62523;\n            }\n            goto LAB_00101310;\n          }\n          lVar5 = *local_60;\n          iVar3 = 0x25dba092;\n        }\n        if (lVar5 == 0) {\n          iVar3 = -0x78a19f29;\n        }\n        goto LAB_00101310;\n      }\n      if (iVar2 < 0x66e685d4) {\n        if (0x4c233582 < iVar2) {\n          if (iVar2 < 0x516edb3f) {\n            if (iVar2 == 0x4c233583) {\n              iVar3 = 0x28d9b294;\n            }\n            else if ((iVar2 == 0x4f88e88d) && (iVar3 = 0x35b6e77f, *pbVar9 < 0x20)) {\n              iVar3 = 0x22e62523;\n            }\n          }\n          else if (iVar2 == 0x516edb3f) {\n            iVar3 = 0x63a7c1e0;\n          }\n          else if (iVar2 == 0x63a7c1e0) {\n            pbVar9 = pbVar9 + 1;\n            iVar3 = -0x6fad51de;\n            if (pbVar9 == pbVar8) {\n              iVar3 = -0x3052b789;\n            }\n          }\n          goto LAB_00101310;\n        }\n        if (0x41434ebf < iVar2) {\n          if (iVar2 == 0x41434ec0) {\n            iVar3 = 0x4c233583;\n          }\n          else if (iVar2 == 0x43b9af74) goto LAB_00101726;\n          goto LAB_00101310;\n        }\n        if (iVar2 == 0x38d1a22f) {\n          iVar3 = 0x1a2cf2c0;\n          goto LAB_00101310;\n        }\n        if (iVar2 != 0x3ccd8ef4) goto LAB_00101310;\n      }\n      else {\n        if (iVar2 < 0x77a167d8) {\n          if (iVar2 < 0x75ae1fef) {\n            if (iVar2 == 0x66e685d4) {\n              if (0xffffffa0 < *pbVar9 - 0x7f) goto LAB_001019ba;\n              iVar3 = 0x4f88e88d;\n            }\n            else if (iVar2 == 0x6e2eaf6b) {\n              pbVar9 = pbVar9 + 1;\n              iVar3 = -0x2a189bd8;\n            }\n          }\n          else {\n            if (iVar2 == 0x75ae1fef) goto LAB_001012f6;\n            if ((iVar2 == 0x771b5bb3) && (iVar3 = 0x359a589a, *pbVar9 == 0x20)) {\n              iVar3 = 0x1a2cf2c0;\n            }\n          }\n          goto LAB_00101310;\n        }\n        if (iVar2 < 0x7b21fc87) {\n          iVar3 = iVar4;\n          if ((iVar2 != 0x77a167d8) && (iVar3 = iVar2, iVar2 == 0x77d892c5)) {\n            iVar3 = -0x13bd6bfc;\n          }\n          goto LAB_00101310;\n        }\n        if (iVar2 == 0x7b21fc87) {\n          pbVar9 = pbVar9 + 1;\n          iVar3 = -0x5c749ed1;\n          if (pbVar9 == pbVar8) {\n            iVar3 = -0x690cbd7b;\n          }\n          goto LAB_00101310;\n        }\n        if (iVar2 != 0x7d92fe64) goto LAB_00101310;\n      }\nLAB_001012fe:\n      unaff_R12 = (byte *)0x0;\n      iVar3 = -0x6e4bd93c;\n      goto LAB_00101310;\n    }\n    if (-0x47af462c < iVar2) {\n      if (iVar2 < -0x2a189bd8) {\n        if (iVar2 < -0x36fc3059) {\n          if (iVar2 == -0x47af462b) {\n            pbVar9 = (byte *)FUN_00103550(pbVar9,pbVar8,local_40,local_60,0x20,&local_70);\n            iVar3 = -0x62d6f243;\n            if (pbVar9 == (byte *)0x0) {\n              iVar3 = 0x7d92fe64;\n            }\n            goto LAB_00101310;\n          }\n          if (iVar2 != -0x3f953427) {\n            if (iVar2 == -0x3ecbffbe) goto LAB_0010181a;\n            goto LAB_00101310;\n          }\n        }\n        else {\n          if (-0x3052b78a < iVar2) {\n            if (iVar2 == -0x3052b789) {\nLAB_00101726:\n              local_70 = 0xfffffffe;\nLAB_0010172e:\n              param_1 = (byte *)0x1;\n              unaff_R12 = (byte *)0x0;\n              iVar3 = 0x4285881;\n            }\n            else if (iVar2 == -0x2d880c40) {\n              pbVar9 = pbVar9 + 1;\n              iVar3 = -0x1aab62d6;\n            }\n            goto LAB_00101310;\n          }\n          if (iVar2 == -0x36fc3059) {\n            pbVar9 = (byte *)FUN_00103790(pbVar9,pbVar8,param_7,&local_70);\n            iVar3 = -0x61ffe26c;\n            if (pbVar9 == (byte *)0x0) {\n              iVar3 = 0x3ccd8ef4;\n            }\n            goto LAB_00101310;\n          }\n          if (iVar2 != -0x32b21017) goto LAB_00101310;\n        }\n      }\n      else {\n        if (-0x25c54c6c < iVar2) {\n          if (iVar2 < -0x13bd6bfc) {\n            if (iVar2 == -0x25c54c6b) {\n              iVar3 = 0x38d1a22f;\n            }\n            else if (iVar2 == -0x1aab62d6) {\n              iVar3 = -0x47af462b;\n            }\n          }\n          else if (iVar2 == -0x13bd6bfc) {\n            unaff_R12 = (byte *)FUN_00102690(pbVar9,pbVar8,param_8,param_9,local_48,&local_70);\n            iVar3 = -0x6e4bd93c;\n          }\n          else if (iVar2 == 0x4285881) {\n            iVar3 = -0x67da5a2d;\n            local_64 = (int)param_1;\n          }\n          goto LAB_00101310;\n        }\n        if (iVar2 < -0x27c6bbbc) {\n          if (iVar2 == -0x2a189bd8) {\n            iVar3 = -0x13bd6bfc;\n          }\n          else if (iVar2 == -0x28c0bc16) {\n            iVar3 = 0x771b5bb3;\n          }\n          goto LAB_00101310;\n        }\n        if (iVar2 != -0x27c6bbbc) {\n          if ((iVar2 == -0x27559f9e) && (iVar3 = 0x5a66bf6, *pbVar9 == 0xd)) {\n            iVar3 = 0x26a43327;\n          }\n          goto LAB_00101310;\n        }\n      }\nLAB_001012f6:\n      local_70 = 0xfffffffe;\n      goto LAB_001012fe;\n    }\n    if (-0x62d6f244 < iVar2) {\n      if (iVar2 < -0x552a777b) {\n        if (iVar2 < -0x5c749ed1) {\n          if (iVar2 == -0x62d6f243) {\n            iVar3 = 0x2a0d97ce;\n          }\n          else if ((iVar2 == -0x61ffe26c) && (iVar3 = -0x4ae0d420, *pbVar9 == 0xd)) {\n            iVar3 = 0x7b21fc87;\n          }\n        }\n        else if (iVar2 == -0x5c749ed1) {\n          bVar1 = *pbVar9;\n          pbVar9 = pbVar9 + 1;\n          iVar3 = -0x552a777b;\n          if (bVar1 == 10) {\n            iVar3 = 0x77d892c5;\n          }\n        }\n        else if (iVar2 == -0x5942b16b) {\n          iVar3 = -0x75ef1d1a;\n        }\n      }\n      else if (iVar2 < -0x4e7a37d7) {\n        if ((iVar2 == -0x552a777b) || (iVar2 == -0x53361fe3)) {\nLAB_0010181a:\n          local_70 = 0xffffffff;\n          goto LAB_001012fe;\n        }\n      }\n      else if (iVar2 == -0x4e7a37d7) {\n        iVar3 = 0x66e685d4;\n        if (*pbVar9 == 0x20) {\n          iVar3 = 0x26b4ab52;\n        }\n      }\n      else if ((iVar2 == -0x4ae0d420) && (iVar3 = -0x53361fe3, *pbVar9 == 10)) {\n        iVar3 = 0x6e2eaf6b;\n      }\n      goto LAB_00101310;\n    }\n    if (iVar2 < -0x6fad51de) {\n      if (iVar2 < -0x78a19f29) {\n        if (iVar2 == -0x7cfa6b10) {\n          iVar3 = 0x41434ec0;\n          if (pbVar9 == pbVar8) {\n            iVar3 = 0x43b9af74;\n          }\n        }\n        else if ((iVar2 == -0x794deadc) && (iVar3 = -0x5942b16b, *pbVar9 == 0x20)) {\n          iVar3 = 0x2a0d97ce;\n        }\n      }\n      else {\n        if (iVar2 == -0x78a19f29) goto LAB_0010181a;\n        if (iVar2 == -0x75ef1d1a) {\n          pbVar7 = pbVar9;\n          iVar3 = -0x7cfa6b10;\n        }\n      }\n      goto LAB_00101310;\n    }\n    if (-0x690cbd7c < iVar2) {\n      if (iVar2 == -0x690cbd7b) goto LAB_001012f6;\n      if ((iVar2 == -0x67da5a2d) && (iVar3 = -0x25c54c6b, local_64 == 1)) {\n        iVar3 = -0x6e4bd93c;\n      }\n      goto LAB_00101310;\n    }\n    if (iVar2 == -0x6fad51de) {\n      iVar3 = 0x28d9b294;\n      goto LAB_00101310;\n    }\n    if (iVar2 != -0x6e4bd93c) goto LAB_00101310;\n    iVar4 = 0x3c9faa64;\n    pbVar9 = unaff_R12;\n    param_1 = local_50;\n    unaff_EBP = local_6c;\n    if (unaff_R12 == (byte *)0x0) {\n      iVar4 = 0x2bc4d2;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00101180(void)", 
+   "is_thunk": false, 
+   "size": 2523, 
+   "name": "FUN_00101180", 
+   "entry_point": "00101180"
+  }, 
+  {
+   "decompiled": "\nchar * FUN_00101b90(char *param_1,char *param_2,ulong param_3,undefined4 *param_4)\n\n{\n  char cVar1;\n  int iVar2;\n  char *pcVar3;\n  int iVar4;\n  int iVar5;\n  int iVar6;\n  char *unaff_R13;\n  \n  iVar5 = -0x752680ba;\n  if (param_3 < 3) {\n    iVar5 = 0x682782f2;\n  }\n  iVar6 = 0;\n  pcVar3 = (char *)0x682782f2;\n  iVar2 = 0x1eeadace;\nLAB_00101be0:\n  do {\n    while (iVar4 = iVar2, iVar2 = iVar4, 0x1eeadacd < iVar4) {\n      if (iVar4 < 0x5d8a873b) {\n        if (iVar4 < 0x36e671f8) {\n          iVar2 = iVar5;\n          if ((iVar4 != 0x1eeadace) && (iVar2 = iVar4, iVar4 == 0x35492e2e)) {\n            param_1 = param_1 + 1;\n            iVar2 = 0x36e671f8;\n            if (param_1 == param_2) {\n              iVar2 = 0x6f4cab13;\n            }\n          }\n        }\n        else if (iVar4 == 0x36e671f8) {\n          iVar2 = -0x393d5d65;\n          if (param_1 == param_2) {\n            iVar2 = -0x6cbd6942;\n          }\n        }\n        else if (iVar4 == 0x4ad0dd14) {\n          iVar6 = iVar6 + 1;\n          iVar2 = -0x5d042cc6;\n        }\n        else if (iVar4 == 0x4dbd2e54) {\n          iVar2 = 0x596f7f4;\n        }\n      }\n      else if (iVar4 < 0x6cd76074) {\n        if (iVar4 == 0x5d8a873b) {\n          param_1 = unaff_R13;\n          iVar2 = 0x596f7f4;\n        }\n        else if (iVar4 == 0x65b5a7fb) {\n          iVar6 = 0;\n          param_1 = param_1 + 1;\n          iVar2 = -0x248df5ff;\n        }\n        else if (iVar4 == 0x682782f2) {\n          unaff_R13 = param_1;\n          iVar2 = 0x5d8a873b;\n        }\n      }\n      else if (iVar4 == 0x6cd76074) {\n        iVar2 = -0x2108c025;\n        if (*param_1 == '\\r') {\n          iVar2 = 0x35492e2e;\n        }\n      }\n      else {\n        if (iVar4 == 0x6f4cab13) goto LAB_00101dbd;\n        if (iVar4 == 0x73f646ce) {\n          *param_4 = 0xffffffff;\nLAB_00101dc3:\n          pcVar3 = (char *)0x0;\n          iVar2 = -0x3adecc87;\n        }\n      }\n    }\n    if (iVar4 < -0x34dc8b77) {\n      if (iVar4 < -0x49de3ae8) {\n        if (iVar4 == -0x752680ba) {\n          unaff_R13 = param_1 + (param_3 - 3);\n          iVar2 = 0x5d8a873b;\n        }\n        else {\n          if (iVar4 == -0x6cbd6942) {\nLAB_00101dbd:\n            *param_4 = 0xfffffffe;\n            goto LAB_00101dc3;\n          }\n          if ((iVar4 == -0x5d042cc6) && (iVar2 = 0x4dbd2e54, iVar6 == 2)) {\n            iVar2 = -0x34dc8b77;\n          }\n        }\n      }\n      else {\n        if (iVar4 == -0x49de3ae8) goto LAB_00101dbd;\n        if (iVar4 == -0x393d5d65) {\n          cVar1 = *param_1;\n          param_1 = param_1 + 1;\n          iVar2 = 0x73f646ce;\n          if (cVar1 == '\\n') {\n            iVar2 = 0x4ad0dd14;\n          }\n        }\n        else if (iVar4 == -0x3adecc87) {\n          return pcVar3;\n        }\n      }\n      goto LAB_00101be0;\n    }\n    if (iVar4 < -0x2108c025) {\n      if (iVar4 == -0x34dc8b77) {\n        pcVar3 = param_1;\n        iVar2 = -0x3adecc87;\n      }\n      else if (iVar4 == -0x2ffdc041) {\n        iVar2 = 0x6cd76074;\n        if (param_1 == param_2) {\n          iVar2 = -0x49de3ae8;\n        }\n      }\n      else if (iVar4 == -0x248df5ff) {\n        iVar2 = -0x5d042cc6;\n      }\n    }\n    else if (iVar4 == -0x2108c025) {\n      iVar2 = 0x65b5a7fb;\n      if (*param_1 == '\\n') {\n        iVar2 = 0x11bc231b;\n      }\n    }\n    else if (iVar4 == 0x596f7f4) {\n      iVar2 = -0x2ffdc041;\n    }\n    else if (iVar4 == 0x11bc231b) {\n      iVar6 = iVar6 + 1;\n      param_1 = param_1 + 1;\n      iVar2 = -0x248df5ff;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00101b90(void)", 
+   "is_thunk": false, 
+   "size": 789, 
+   "name": "FUN_00101b90", 
+   "entry_point": "00101b90"
+  }, 
+  {
+   "decompiled": "\nint FUN_00101ec0(long param_1,long param_2,undefined4 *param_3,int *param_4,long *param_5,\n                long *param_6,undefined8 param_7,undefined8 *param_8,long param_9)\n\n{\n  char *pcVar1;\n  char cVar2;\n  int iVar3;\n  int iVar4;\n  long lVar5;\n  char *pcVar6;\n  int iVar7;\n  long lVar8;\n  char *pcVar9;\n  int local_68;\n  int local_64;\n  long *local_60;\n  int local_54;\n  int local_50;\n  int local_4c;\n  long local_48;\n  undefined4 *local_40;\n  undefined8 local_38;\n  \n  pcVar9 = (char *)(param_2 + param_1);\n  local_38 = *param_8;\n  *param_3 = 0xffffffff;\n  *param_4 = 0;\n  *param_5 = 0;\n  *param_6 = 0;\n  *param_8 = 0;\n  local_54 = -0x6c50828;\n  if (param_9 == 0) {\n    local_54 = 0x49f0b9bb;\n  }\n  iVar4 = -0x459eb1f8;\n  lVar8 = param_1;\n  local_60 = param_6;\n  local_40 = param_3;\n  do {\n    iVar7 = (int)param_1 - (int)lVar8;\nLAB_00101f40:\n    while( true ) {\n      while( true ) {\n        iVar3 = iVar4;\n        iVar4 = iVar3;\n        if (iVar3 < 0x53edae7) goto LAB_00101f70;\n        if (0x49f0b9ba < iVar3) break;\n        if (iVar3 == 0x53edae7) {\n          return local_64;\n        }\n        if (iVar3 == 0x3515a0fe) {\n          iVar4 = 0x53edae7;\n          local_64 = iVar7;\n        }\n      }\n      if (iVar3 == 0x49f0b9bb) break;\n      if (iVar3 == 0x4ac648b0) goto LAB_00101fbe;\n    }\n    local_48 = lVar8;\n    pcVar6 = (char *)FUN_00103790(param_1,pcVar9,local_40,&local_68);\n    local_50 = -0x49ad7304;\n    if (pcVar6 == (char *)0x0) {\n      local_50 = 0x30cd4f63;\n    }\n    iVar4 = 0x4489e354;\nLAB_00102040:\n    if (iVar4 < 0x1d6a7469) {\n      if (iVar4 < -0x43f460f2) {\n        if (-0x5bae557a < iVar4) {\n          if (iVar4 < -0x4e1509f1) {\n            if (iVar4 == -0x5bae5579) {\n              iVar4 = 0x56b437d0;\n              if (*pcVar6 == ' ') {\n                iVar4 = -0x7cd1ae0a;\n              }\n            }\n            else if ((iVar4 == -0x56f38b78) && (iVar4 = 0xedc78d3, *(char *)*param_5 == ' ')) {\n              iVar4 = 0x5791424;\n            }\n          }\n          else if (iVar4 == -0x4e1509f1) {\n            iVar4 = 0x21e75061;\n            if (*local_60 == 0) {\n              iVar4 = -0x14aaa8ff;\n            }\n          }\n          else if (iVar4 == -0x49ad7304) {\n            iVar4 = 0x2a0e6f39;\n            if (*pcVar6 == ' ') {\n              iVar4 = 0x6d2b0021;\n            }\n          }\n          else if ((iVar4 == -0x48cb4048) && (iVar4 = -0x43f460f2, local_4c == 1)) {\n            iVar4 = 0x6aaa4a41;\n          }\n          goto LAB_00102040;\n        }\n        if (iVar4 < -0x74b734dd) {\n          if (iVar4 == -0x7cd1ae0a) {\n            pcVar6 = pcVar6 + 1;\n            iVar4 = -0x17569d94;\n            if (pcVar6 == pcVar9) {\n              iVar4 = 0x371ea499;\n            }\n          }\n          else if (iVar4 == -0x763379a2) goto LAB_00102028;\n          goto LAB_00102040;\n        }\n        if (iVar4 == -0x74b734dd) {\n          iVar4 = 0x51c0b45d;\n          if ('9' < *pcVar6) {\n            iVar4 = -0x377fc5d7;\n          }\n          goto LAB_00102040;\n        }\n        if (iVar4 != -0x6e7710a1) goto LAB_00102040;\n      }\n      else {\n        if (-0x9eeb5ee < iVar4) {\n          if (iVar4 < 0x4a839a4) {\n            if (iVar4 == -0x9eeb5ed) {\n              *param_4 = *param_4 + *pcVar6 * 10 + -0x1e0;\n              pcVar1 = pcVar6 + 1;\n              pcVar6 = pcVar6 + 1;\n              iVar4 = -0x74b734dd;\n              if (*pcVar1 < '0') {\n                iVar4 = -0x377fc5d7;\n              }\n            }\n            else if (iVar4 == -0x639f3cc) {\n              *param_4 = *pcVar6 * 100 + -0x12c0;\n              pcVar1 = pcVar6 + 1;\n              pcVar6 = pcVar6 + 1;\n              iVar4 = 0x5b125829;\n              if (*pcVar1 < '0') {\n                iVar4 = 0x4531d705;\n              }\n            }\n          }\n          else if (iVar4 == 0x4a839a4) {\n            iVar4 = -0xf9e2adc;\n            if (*pcVar6 < '0') {\n              iVar4 = -0x6e7710a1;\n            }\n          }\n          else if (iVar4 == 0x5791424) {\n            *param_5 = *param_5 + 1;\n            *local_60 = *local_60 + -1;\n            iVar4 = -0x56f38b78;\n          }\n          else if (iVar4 == 0xedc78d3) {\n            iVar4 = 0x2cd3682b;\n          }\n          goto LAB_00102040;\n        }\n        if (-0x17569d95 < iVar4) {\n          if (iVar4 == -0x17569d94) {\n            iVar4 = -0x5bae5579;\n          }\n          else if (iVar4 == -0x14aaa8ff) {\n            iVar4 = 0x1d6a7469;\n          }\n          else if ((iVar4 == -0xf9e2adc) && (iVar4 = -0x639f3cc, '9' < *pcVar6)) {\n            iVar4 = -0x6e7710a1;\n          }\n          goto LAB_00102040;\n        }\n        if (iVar4 == -0x43f460f2) {\n          iVar4 = 0x2eeb08ae;\n          goto LAB_00102040;\n        }\n        if (iVar4 != -0x377fc5d7) goto LAB_00102040;\n      }\nLAB_0010226a:\n      pcVar6 = pcVar6 + 1;\n      local_68 = -1;\n      iVar7 = 1;\n      param_1 = 0;\n      iVar4 = 0x52708acd;\n      goto LAB_00102040;\n    }\n    if (iVar4 < 0x4531d705) {\n      if (iVar4 < 0x2eeb08ae) {\n        if (iVar4 < 0x2a0e6f39) {\n          if (iVar4 == 0x1d6a7469) {\n            param_1 = FUN_00102690(pcVar6,pcVar9,param_7,param_8,local_38,&local_68);\n            iVar4 = 0x6aaa4a41;\n          }\n          else if ((iVar4 == 0x21e75061) && (iVar4 = 0x50f38951, *(char *)*param_5 == ' ')) {\n            iVar4 = 0x7600e6dc;\n          }\n          goto LAB_00102040;\n        }\n        if (iVar4 != 0x2a0e6f39) {\n          if (iVar4 == 0x2cd3682b) {\n            iVar4 = 0x1d6a7469;\n          }\n          goto LAB_00102040;\n        }\nLAB_0010235a:\n        local_68 = -1;\n      }\n      else if (iVar4 < 0x371ea499) {\n        if (iVar4 == 0x2eeb08ae) {\n          pcVar6 = (char *)FUN_00103a80(pcVar6,pcVar9,param_5,local_60,&local_68);\n          iVar4 = -0x4e1509f1;\n          if (pcVar6 == (char *)0x0) {\n            iVar4 = 0x45c16d43;\n          }\n          goto LAB_00102040;\n        }\n        if (iVar4 != 0x30cd4f63) goto LAB_00102040;\n      }\n      else {\n        if (iVar4 != 0x371ea499) {\n          if (iVar4 == 0x3d5a87e5) {\n            iVar4 = 0x4a839a4;\n          }\n          else if (iVar4 == 0x4489e354) {\n            iVar4 = local_50;\n          }\n          goto LAB_00102040;\n        }\nLAB_00102028:\n        local_68 = -2;\n      }\nLAB_0010202f:\n      param_1 = 0;\n      iVar4 = 0x6aaa4a41;\n      goto LAB_00102040;\n    }\n    if (iVar4 < 0x56b437d0) {\n      if (iVar4 < 0x50f38951) {\n        if (iVar4 == 0x4531d705) goto LAB_0010226a;\n        if (iVar4 == 0x45c16d43) goto LAB_0010202f;\n      }\n      else {\n        if (iVar4 == 0x50f38951) goto LAB_0010235a;\n        if (iVar4 == 0x51c0b45d) {\n          cVar2 = *pcVar6;\n          pcVar6 = pcVar6 + 1;\n          *param_4 = (int)cVar2 + *param_4 + -0x30;\n          iVar7 = 0;\n          iVar4 = 0x52708acd;\n        }\n        else if (iVar4 == 0x52708acd) {\n          iVar4 = -0x48cb4048;\n          local_4c = iVar7;\n        }\n      }\n      goto LAB_00102040;\n    }\n    if (iVar4 < 0x6aaa4a41) {\n      if (iVar4 == 0x56b437d0) {\n        iVar4 = 0x3d5a87e5;\n        if ((long)pcVar9 - (long)pcVar6 < 4) {\n          iVar4 = -0x763379a2;\n        }\n      }\n      else if ((iVar4 == 0x5b125829) && (iVar4 = -0x9eeb5ed, '9' < *pcVar6)) {\n        iVar4 = 0x4531d705;\n      }\n      goto LAB_00102040;\n    }\n    if (iVar4 == 0x6d2b0021) {\n      iVar4 = -0x7cd1ae0a;\n      goto LAB_00102040;\n    }\n    if (iVar4 == 0x7600e6dc) {\n      iVar4 = 0x5791424;\n      goto LAB_00102040;\n    }\n    if (iVar4 != 0x6aaa4a41) goto LAB_00102040;\n    iVar4 = 0x3515a0fe;\n    lVar8 = local_48;\n    if (param_1 == 0) {\n      iVar4 = -0x1c5df86c;\n    }\n  } while( true );\nLAB_00101f70:\n  iVar4 = local_54;\n  if (iVar3 != -0x459eb1f8) {\n    if (iVar3 == -0x1c5df86c) {\nLAB_00101fbe:\n      local_64 = local_68;\n      iVar4 = 0x53edae7;\n    }\n    else {\n      iVar4 = iVar3;\n      if (iVar3 == -0x6c50828) {\n        lVar5 = FUN_00101b90(param_1,pcVar9,param_9,&local_68);\n        iVar4 = 0x49f0b9bb;\n        if (lVar5 == 0) {\n          iVar4 = 0x4ac648b0;\n        }\n      }\n    }\n  }\n  goto LAB_00101f40;\n}\n\n", 
+   "signature": "undefined FUN_00101ec0(void)", 
+   "is_thunk": false, 
+   "size": 1633, 
+   "name": "FUN_00101ec0", 
+   "entry_point": "00101ec0"
+  }, 
+  {
+   "decompiled": "\nint FUN_00102540(long param_1,long param_2,undefined8 param_3,undefined8 *param_4,long param_5)\n\n{\n  int iVar1;\n  int iVar2;\n  long lVar3;\n  long lVar4;\n  int iVar5;\n  int unaff_R14D;\n  int local_54;\n  undefined8 local_50;\n  undefined8 local_48;\n  undefined8 *local_40;\n  long local_38;\n  \n  local_50 = *param_4;\n  *param_4 = 0;\n  iVar5 = 0x5654e196;\n  if (param_5 == 0) {\n    iVar5 = -0x758c97e6;\n  }\n  iVar2 = -0x7f9a0d4d;\n  lVar4 = param_1;\n  local_48 = param_3;\n  local_40 = param_4;\n  local_38 = param_5;\n  do {\nLAB_001025a0:\n    do {\n      while (iVar1 = iVar2, iVar2 = iVar1, -0x574ee858 < iVar1) {\n        if (iVar1 < 0x36eb6ee0) {\n          if (iVar1 == -0x574ee857) {\nLAB_00102628:\n            iVar2 = 0x34cae95e;\n            unaff_R14D = local_54;\n          }\n          else if (iVar1 == 0x34cae95e) {\n            return unaff_R14D;\n          }\n        }\n        else {\n          if (iVar1 == 0x36eb6ee0) goto LAB_00102628;\n          if (iVar1 == 0x5654e196) {\n            lVar3 = FUN_00101b90(lVar4,param_2 + param_1,local_38,&local_54);\n            iVar2 = -0x758c97e6;\n            if (lVar3 == 0) {\n              iVar2 = 0x36eb6ee0;\n            }\n          }\n        }\n      }\n      iVar2 = iVar5;\n    } while (iVar1 == -0x7f9a0d4d);\n    if (iVar1 != -0x758c97e6) {\n      iVar2 = iVar1;\n      if (iVar1 == -0x72481308) {\n        iVar2 = 0x34cae95e;\n        unaff_R14D = (int)lVar4 - (int)param_1;\n      }\n      goto LAB_001025a0;\n    }\n    lVar4 = FUN_00102690(lVar4,param_2 + param_1,local_48,local_40,local_50,&local_54);\n    iVar2 = -0x72481308;\n    if (lVar4 == 0) {\n      iVar2 = -0x574ee857;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00102540(void)", 
+   "is_thunk": false, 
+   "size": 311, 
+   "name": "FUN_00102540", 
+   "entry_point": "00102540"
+  }, 
+  {
+   "decompiled": "\nchar * FUN_00102690(char *param_1,char *param_2,long param_3,long *param_4,long param_5,\n                   undefined4 *param_6)\n\n{\n  undefined8 *puVar1;\n  char cVar2;\n  long lVar3;\n  int iVar4;\n  char *unaff_RBP;\n  int unaff_R13D;\n  long unaff_R14;\n  bool bVar5;\n  char local_59;\n  long local_50;\n  int local_48;\n  int local_44;\n  long local_40;\n  long local_38;\n  \n  iVar4 = -0x541a45cb;\n  local_40 = param_5;\nLAB_001026d0:\n  do {\n    if (-0x7ecf0a3 < iVar4) {\n      if (iVar4 < 0x2e29812f) {\n        if (0x118b17d4 < iVar4) {\n          if (iVar4 < 0x259741a4) {\n            if (iVar4 == 0x118b17d5) {\n              param_1 = (char *)FUN_00103550(param_1,param_2,param_3 + *param_4 * 0x20,\n                                             param_3 + *param_4 * 0x20 + 8,0x3a,param_6);\n              iVar4 = 0x60b759b2;\n              if (param_1 == (char *)0x0) {\n                iVar4 = -0x5d04826;\n              }\n              goto LAB_001026d0;\n            }\n            if (iVar4 == 0x1e4ada4f) {\n              local_59 = *(char *)(unaff_R14 + -1);\n              bVar5 = local_59 == ' ';\n              iVar4 = 0x211dc141;\n            }\n            else {\n              if (iVar4 != 0x211dc141) goto LAB_001026d0;\n              bVar5 = local_59 == '\\t';\n              iVar4 = 0x2a0b9722;\n            }\n            if (bVar5) {\n              iVar4 = -0x631f7b2f;\n            }\n            goto LAB_001026d0;\n          }\n          if (iVar4 == 0x259741a4) {\n            iVar4 = 0x54f6164e;\n            if (param_1 == param_2) {\n              iVar4 = -0x2df3d94b;\n            }\n          }\n          else if (iVar4 == 0x28693c81) {\n            iVar4 = -0xc5fef32;\n          }\n          else if (iVar4 == 0x2a0b9722) {\n            unaff_R13D = 8;\n            iVar4 = 0x2e29812f;\n          }\n          goto LAB_001026d0;\n        }\n        if (-0x1b7d8 < iVar4) {\n          if (iVar4 == -0x1b7d7) {\n            iVar4 = -0x453bf0fa;\n          }\n          else if (iVar4 == 0x26425d9) {\n            unaff_R14 = unaff_R14 + -1;\n            iVar4 = 0x48af9712;\n          }\n          else if (iVar4 == 0x6397838) {\n            puVar1 = (undefined8 *)(param_3 + *param_4 * 0x20);\n            *puVar1 = 0;\n            puVar1[1] = 0;\n            iVar4 = -0x3d363958;\n          }\n          goto LAB_001026d0;\n        }\n        if (iVar4 == -0x7ecf0a2) {\n          iVar4 = 0x5108b102;\n          local_48 = unaff_R13D;\n          goto LAB_001026d0;\n        }\n        if (iVar4 == -0x75c9808) {\n          unaff_R13D = 1;\n          iVar4 = -0x7ecf0a2;\n          unaff_RBP = (char *)0x0;\n          goto LAB_001026d0;\n        }\n        if (iVar4 != -0x5d04826) goto LAB_001026d0;\n      }\n      else {\n        if (iVar4 < 0x518bc9ec) {\n          if (0x48af9711 < iVar4) {\n            if (iVar4 == 0x48af9712) {\n              bVar5 = unaff_R14 == local_50;\n              iVar4 = 0x1e4ada4f;\nLAB_00102c12:\n              if (bVar5) {\n                iVar4 = -0x1fd76526;\n              }\n            }\n            else {\n              if (iVar4 == 0x49da28aa) {\n                bVar5 = *param_1 == ' ';\n                iVar4 = -0x7a9e5443;\n                goto LAB_00102c27;\n              }\n              if ((iVar4 == 0x5108b102) && (iVar4 = 0x28693c81, local_48 == 1)) {\n                iVar4 = -0x99d7ff9;\n              }\n            }\n            goto LAB_001026d0;\n          }\n          if (iVar4 == 0x2e29812f) {\n            iVar4 = -0x14cc7a6a;\n            local_44 = unaff_R13D;\n            goto LAB_001026d0;\n          }\n          if (iVar4 == 0x3c23a125) {\n            bVar5 = *param_1 == '\\t';\n            iVar4 = 0x5ee929c3;\n            goto LAB_00102bac;\n          }\n          if (iVar4 != 0x408b0a7c) goto LAB_001026d0;\n        }\n        else {\n          if (0x5ee929c2 < iVar4) {\n            if (iVar4 == 0x5ee929c3) {\n              iVar4 = -0x7c21f880;\n            }\n            else if (iVar4 == 0x60b759b2) {\n              iVar4 = -0x45c00535;\n              if (*(long *)(param_3 + 8 + *param_4 * 0x20) == 0) {\n                iVar4 = 0x408b0a7c;\n              }\n            }\n            else if (iVar4 == 0x6a22c94d) {\n              unaff_R14 = local_50 + local_38;\n              iVar4 = 0x48af9712;\n            }\n            goto LAB_001026d0;\n          }\n          if (iVar4 != 0x518bc9ec) {\n            if (iVar4 == 0x54f6164e) {\n              bVar5 = *param_1 == ' ';\n              iVar4 = 0x3c23a125;\nLAB_00102bac:\n              if (bVar5) {\n                iVar4 = -0x421432da;\n              }\n            }\n            else if (iVar4 == 0x55e76d64) {\n              param_1 = param_1 + 1;\n              iVar4 = -0x750a2d85;\n              if (param_1 == param_2) {\n                iVar4 = -0x330ea347;\n              }\n            }\n            goto LAB_001026d0;\n          }\n        }\nLAB_00102913:\n        *param_6 = 0xffffffff;\n      }\nLAB_001026be:\n      iVar4 = -0x99d7ff9;\n      unaff_RBP = (char *)0x0;\n      goto LAB_001026d0;\n    }\n    if (iVar4 < -0x330ea347) {\n      if (iVar4 < -0x541a45cb) {\n        if (iVar4 < -0x631f7b2f) {\n          if (iVar4 == -0x7c21f880) {\n            iVar4 = -0x3d363958;\n          }\n          else if (iVar4 == -0x7a9e5443) {\n            bVar5 = *param_1 == '\\t';\n            iVar4 = 0x118b17d5;\nLAB_00102c27:\n            if (bVar5) {\n              iVar4 = 0x6397838;\n            }\n          }\n          else if (iVar4 == -0x750a2d85) {\n            cVar2 = *param_1;\n            param_1 = param_1 + 1;\n            iVar4 = -0x13889478;\n            if (cVar2 == '\\n') {\n              iVar4 = -0x1b7d7;\n            }\n          }\n        }\n        else if (iVar4 == -0x631f7b2f) {\n          unaff_R13D = 0;\n          iVar4 = 0x2e29812f;\n        }\n        else if (iVar4 == -0x615e151f) {\n          iVar4 = -0xda2bb5e;\n          if (*param_1 == '\\r') {\n            iVar4 = 0x55e76d64;\n          }\n        }\n        else if (iVar4 == -0x57bb0d49) {\n          iVar4 = 0x26425d9;\n        }\n      }\n      else if (iVar4 < -0x431cc818) {\n        if (iVar4 == -0x541a45cb) {\n          iVar4 = -0x615e151f;\n          if (param_1 == param_2) {\n            iVar4 = -0x23fa4038;\n          }\n        }\n        else if (iVar4 == -0x45c00535) {\nLAB_001029dc:\n          param_1 = param_1 + 1;\n          iVar4 = 0x259741a4;\n        }\n        else if (iVar4 == -0x453bf0fa) {\n          iVar4 = -0x99d7ff9;\n          unaff_RBP = param_1;\n        }\n      }\n      else if (iVar4 == -0x431cc818) {\n        param_1 = param_1 + 1;\n        iVar4 = -0x453bf0fa;\n      }\n      else if (iVar4 == -0x421432da) {\n        iVar4 = -0x1e674a4a;\n      }\n      else if (iVar4 == -0x3d363958) {\n        param_1 = (char *)FUN_00103a80(param_1,param_2,&local_50,&local_38,param_6);\n        iVar4 = 0x6a22c94d;\n        if (param_1 == (char *)0x0) {\n          iVar4 = -0x75c9808;\n        }\n      }\n      goto LAB_001026d0;\n    }\n    if (iVar4 < -0x17f97b8d) {\n      if (iVar4 < -0x23fa4038) {\n        if ((iVar4 != -0x330ea347) && (iVar4 != -0x2df3d94b)) {\n          if ((iVar4 == -0x2da1a6f1) && (iVar4 = 0x49da28aa, *param_4 == 0)) {\n            iVar4 = 0x118b17d5;\n          }\n          goto LAB_001026d0;\n        }\n      }\n      else if (iVar4 != -0x23fa4038) {\n        if (iVar4 == -0x1fd76526) {\n          lVar3 = *param_4;\n          *(long *)(param_3 + 0x10 + lVar3 * 0x20) = local_50;\n          *(long *)(param_3 + 0x18 + lVar3 * 0x20) = unaff_R14 - local_50;\n          unaff_R13D = 0;\n          iVar4 = -0x7ecf0a2;\n        }\n        else if (iVar4 == -0x1e674a4a) goto LAB_001029dc;\n        goto LAB_001026d0;\n      }\n      *param_6 = 0xfffffffe;\n      goto LAB_001026be;\n    }\n    if (iVar4 < -0xda2bb5e) {\n      if (iVar4 == -0x17f97b8d) {\n        iVar4 = -0x902df12;\n      }\n      else {\n        if (iVar4 == -0x14cc7a6a) {\n          bVar5 = local_44 == 8;\n          iVar4 = -0x57bb0d49;\n          goto LAB_00102c12;\n        }\n        if (iVar4 == -0x13889478) goto LAB_00102913;\n      }\n    }\n    else if (iVar4 < -0x99d7ff9) {\n      if (iVar4 == -0xda2bb5e) {\n        iVar4 = -0x17f97b8d;\n        if (*param_1 == '\\n') {\n          iVar4 = -0x431cc818;\n        }\n      }\n      else if (iVar4 == -0xc5fef32) {\n        *param_4 = *param_4 + 1;\n        iVar4 = -0x541a45cb;\n      }\n    }\n    else if (iVar4 == -0x902df12) {\n      iVar4 = -0x2da1a6f1;\n      if (*param_4 == local_40) {\n        iVar4 = 0x518bc9ec;\n      }\n    }\n    else if (iVar4 == -0x99d7ff9) {\n      return unaff_RBP;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00102690(void)", 
+   "is_thunk": false, 
+   "size": 1599, 
+   "name": "FUN_00102690", 
+   "entry_point": "00102690"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Type propagation algorithm not settling */\n\nulong FUN_00102ce0(ulong *param_1,long param_2,ulong *param_3)\n\n{\n  char *pcVar1;\n  char cVar2;\n  bool bVar3;\n  bool bVar4;\n  bool bVar5;\n  int iVar6;\n  undefined1 uVar7;\n  ulong uVar8;\n  ulong uVar9;\n  int iVar10;\n  int iVar11;\n  ulong uVar12;\n  ulong uVar13;\n  int iVar14;\n  ulong __n;\n  int iVar15;\n  int iVar16;\n  int iVar17;\n  int iVar18;\n  ulong uVar19;\n  int iVar20;\n  ulong local_60;\n  \n  uVar13 = *param_3;\n  param_1[2] = param_1[2] + uVar13;\n  local_60 = 0xfffffffffffffffe;\n  uVar8 = 0;\n  uVar12 = 0;\nLAB_00102d12:\n  while (cVar2 = *(char *)((long)param_1 + 10), uVar19 = uVar13, cVar2 < '\\x04') {\n    if ('\\x01' < cVar2) {\n      if (cVar2 == '\\x02') goto joined_r0x001030f8;\nLAB_0010311d:\n      __n = uVar13 - uVar8;\n      uVar19 = *param_1;\n      if (__n < uVar19) {\n        if (uVar12 != uVar8) {\n          memmove((void *)(param_2 + uVar12),(void *)(uVar8 + param_2),__n);\n        }\n        *param_1 = *param_1 - __n;\n        uVar9 = __n;\n        uVar8 = uVar13;\n      }\n      else {\n        if (uVar12 != uVar8) {\n          memmove((void *)(param_2 + uVar12),(void *)(param_2 + uVar8),uVar19);\n        }\n        uVar9 = *param_1;\n        uVar8 = uVar8 + uVar9;\n        *param_1 = 0;\n        *(undefined1 *)((long)param_1 + 10) = 4;\n      }\n      uVar12 = uVar12 + uVar9;\n      if (uVar19 <= __n) goto LAB_001031c5;\n      goto LAB_0010322e;\n    }\n    uVar19 = uVar8;\n    if (cVar2 != '\\x01') {\n      if (cVar2 != '\\0') goto LAB_001032c4;\n      do {\n        uVar8 = uVar19;\n        if (uVar8 == uVar13) {\nLAB_00102d8d:\n          bVar3 = false;\n          bVar4 = false;\n          bVar5 = false;\n        }\n        else {\n          cVar2 = *(char *)(param_2 + uVar8);\n          iVar10 = (int)cVar2;\n          iVar18 = 0x552b201f;\n          if (iVar10 < 0x67) {\n            iVar18 = -0x10997391;\n          }\n          iVar15 = 0x552b201f;\n          if (0x60 < iVar10) {\n            iVar15 = -0x786ab42e;\n          }\n          iVar16 = -0x3d9a99d4;\n          if (iVar10 < 0x47) {\n            iVar16 = 0x33b95b02;\n          }\n          iVar17 = -0x3d9a99d4;\n          if (0x40 < iVar10) {\n            iVar17 = 0x44f1ffa;\n          }\n          iVar14 = -0x4416ba49;\n          if (iVar10 < 0x3a) {\n            iVar14 = -0x741cd231;\n          }\n          iVar20 = -0x4416ba49;\n          if (0x2f < iVar10) {\n            iVar20 = 0x7948f813;\n          }\n          uVar19 = uVar8;\n          iVar6 = 0x2e371f7c;\n          do {\n            while( true ) {\n              do {\n                while( true ) {\n                  while (iVar11 = iVar6, 0x44f1ff9 < iVar11) {\n                    if (iVar11 < 0x33b95b02) {\n                      iVar6 = iVar16;\n                      if ((iVar11 != 0x44f1ffa) && (iVar6 = iVar11, iVar11 == 0x2e371f7c)) {\n                        iVar6 = iVar20;\n                      }\n                    }\n                    else if (iVar11 == 0x33b95b02) {\n                      uVar19 = (ulong)(iVar10 - 0x37);\n                      iVar6 = -0x37935c3e;\n                    }\n                    else if (iVar11 == 0x552b201f) {\n                      uVar19 = 0xffffffff;\n                      iVar6 = -0x37935c3e;\n                    }\n                    else {\n                      iVar6 = iVar11;\n                      if (iVar11 == 0x7948f813) {\n                        iVar6 = iVar14;\n                      }\n                    }\n                  }\n                  if (-0x3d9a99d5 < iVar11) break;\n                  iVar6 = iVar18;\n                  if (iVar11 != -0x786ab42e) {\n                    if (iVar11 == -0x741cd231) {\n                      uVar19 = (ulong)(iVar10 - 0x30);\n                      iVar6 = -0x37935c3e;\n                    }\n                    else {\n                      iVar6 = iVar11;\n                      if (iVar11 == -0x4416ba49) {\n                        iVar6 = iVar17;\n                      }\n                    }\n                  }\n                }\n                iVar6 = iVar15;\n              } while (iVar11 == -0x3d9a99d4);\n              if (iVar11 != -0x10997391) break;\n              uVar19 = (ulong)(iVar10 - 0x57);\n              iVar6 = -0x37935c3e;\n            }\n            iVar6 = iVar11;\n          } while (iVar11 != -0x37935c3e);\n          if ((int)uVar19 == -1) {\n            if (*(char *)((long)param_1 + 9) == '\\0') goto LAB_00102f66;\n            if (cVar2 < ' ') {\n              if (cVar2 < '\\r') {\n                if (1 < iVar10 - 9U) {\nLAB_00102f79:\n                  local_60 = 0xffffffffffffffff;\n                  goto LAB_00102d8d;\n                }\n              }\n              else if (cVar2 != '\\r') goto LAB_00102f79;\n            }\n            else if (cVar2 < ';') {\n              if (cVar2 != ' ') goto LAB_00102f79;\n            }\n            else if (cVar2 != ';') goto LAB_00102f79;\n            bVar4 = true;\n            bVar3 = false;\n            bVar5 = true;\n          }\n          else {\n            if (*(char *)((long)param_1 + 9) == '\\x10') {\nLAB_00102f66:\n              local_60 = 0xffffffffffffffff;\n              bVar3 = false;\n              bVar4 = false;\n            }\n            else {\n              *param_1 = (long)(int)uVar19 + *param_1 * 0x10;\n              *(char *)((long)param_1 + 9) = *(char *)((long)param_1 + 9) + '\\x01';\n              bVar3 = true;\n              bVar4 = true;\n            }\n            bVar5 = false;\n          }\n        }\n        uVar19 = uVar8 + 1;\n      } while (bVar3);\n      uVar19 = uVar8;\n      if (!bVar4) goto joined_r0x001032bd;\n      if (!bVar5) {\n        return local_60;\n      }\n      *(undefined2 *)((long)param_1 + 9) = 0x100;\n    }\n    do {\n      if (uVar8 == uVar13) goto joined_r0x001032bd;\n      pcVar1 = (char *)(param_2 + uVar8);\n      if (*pcVar1 == '\\n') {\n        local_60 = 0xffffffffffffffff;\n        uVar19 = uVar8;\n        goto joined_r0x001032bd;\n      }\n      uVar8 = uVar8 + 1;\n      uVar19 = uVar13;\n    } while (*pcVar1 != '\\r');\n    *(undefined1 *)((long)param_1 + 10) = 2;\njoined_r0x001030f8:\n    if (uVar8 == uVar13) goto LAB_0010322e;\n    if (*(char *)(param_2 + uVar8) != '\\n') goto LAB_00103227;\n    uVar8 = uVar8 + 1;\n    if (*param_1 != 0) {\n      *(undefined1 *)((long)param_1 + 10) = 3;\n      goto LAB_0010311d;\n    }\n    uVar7 = 6;\n    if ((char)param_1[1] == '\\0') goto LAB_001031ff;\nLAB_001031eb:\n    *(undefined1 *)((long)param_1 + 10) = uVar7;\n  }\n  if (cVar2 < '\\x06') {\n    if (cVar2 != '\\x05') {\nLAB_001031c5:\n      if (uVar8 == uVar13) goto LAB_0010322e;\n      if (*(char *)(param_2 + uVar8) != '\\r') goto LAB_00103227;\n      uVar8 = uVar8 + 1;\n      *(undefined1 *)((long)param_1 + 10) = 5;\n    }\n    if (uVar8 != uVar13) {\n      if (*(char *)(param_2 + uVar8) == '\\n') {\n        uVar8 = uVar8 + 1;\n        uVar7 = 0;\n        goto LAB_001031eb;\n      }\nLAB_00103227:\n      local_60 = 0xffffffffffffffff;\n    }\n  }\n  else if (cVar2 == '\\a') {\nLAB_001030af:\n    if (uVar8 != uVar13) {\n      while (uVar8 = uVar8 + 1, *(char *)(param_2 + -1 + uVar8) != '\\n') {\n        if (uVar8 == uVar13) goto joined_r0x001032bd;\n      }\n      *(undefined1 *)((long)param_1 + 10) = 6;\n      goto LAB_00102d12;\n    }\n  }\n  else {\n    if (cVar2 != '\\x06') {\nLAB_001032c4:\n                    /* WARNING: Subroutine does not return */\n      __assert_fail(\"!\\\"decoder is corrupt\\\"\",\"/work/corpus_real/r12_picohttpparser.c\",0x2d8,\n                    \"ssize_t phr_decode_chunked(struct phr_chunked_decoder *, char *, size_t *)\");\n    }\n    if (uVar8 != uVar13) {\n      while( true ) {\n        uVar8 = uVar8 + 1;\n        cVar2 = *(char *)(param_2 + -1 + uVar8);\n        if (cVar2 != '\\r') break;\n        if (uVar8 == uVar13) goto joined_r0x001032bd;\n      }\n      if (cVar2 != '\\n') {\n        *(undefined1 *)((long)param_1 + 10) = 7;\n        goto LAB_001030af;\n      }\nLAB_001031ff:\n      local_60 = uVar13 - uVar8;\n      uVar19 = uVar8;\njoined_r0x001032bd:\n      uVar8 = uVar19;\n      if (uVar12 != uVar8) {\nLAB_00103233:\n        memmove((void *)(param_2 + uVar12),(void *)(param_2 + uVar8),uVar13 - uVar8);\n      }\nLAB_00103254:\n      *param_3 = uVar12;\n      if (local_60 == 0xfffffffffffffffe) {\n        uVar13 = (uVar13 - uVar12) + param_1[3];\n        param_1[3] = uVar13;\n        local_60 = 0xfffffffffffffffe;\n        if (0x18fff < uVar13) {\n          local_60 = (ulong)(param_1[2] - uVar13 < param_1[2] >> 2) | 0xfffffffffffffffe;\n        }\n      }\n      return local_60;\n    }\n  }\nLAB_0010322e:\n  if (uVar12 != uVar8) goto LAB_00103233;\n  goto LAB_00103254;\n}\n\n", 
+   "signature": "undefined FUN_00102ce0(void)", 
+   "is_thunk": false, 
+   "size": 1467, 
+   "name": "FUN_00102ce0", 
+   "entry_point": "00102ce0"
+  }, 
+  {
+   "decompiled": "\nbool FUN_001032f0(long param_1)\n\n{\n  return *(char *)(param_1 + 10) == '\\x03';\n}\n\n", 
+   "signature": "undefined FUN_001032f0(void)", 
+   "is_thunk": false, 
+   "size": 10, 
+   "name": "FUN_001032f0", 
+   "entry_point": "001032f0"
+  }, 
+  {
+   "decompiled": "\nundefined8 FUN_00103300(void)\n\n{\n  int iVar1;\n  int iVar2;\n  size_t sVar3;\n  int iVar4;\n  char *__s;\n  int iVar5;\n  uint *puVar6;\n  uint local_474;\n  uint *local_470;\n  undefined8 local_468;\n  uint *local_460;\n  uint local_458 [2];\n  uint local_450 [2];\n  undefined8 local_448;\n  undefined8 local_440;\n  undefined8 local_438;\n  uint auStack_430 [2];\n  undefined8 uStack_428;\n  uint auStack_420 [252];\n  \n  sVar3 = fread(&DAT_00107060,1,0x1fff,*(FILE **)PTR_stdin_00106fd8);\n  (&DAT_00107060)[sVar3] = 0;\n  local_470 = (uint *)0x20;\n  puVar6 = &local_474;\n  iVar1 = FUN_00101180(&DAT_00107060,sVar3,&local_440,local_450,&local_448,local_458,puVar6,\n                       &local_438,&local_470,0);\n  local_460 = local_470;\n  local_468 = local_440;\n  iVar5 = 0x107ad7cf;\n  if (iVar1 == -1) {\n    iVar5 = -0x370a4341;\n  }\n  iVar4 = -0x17de807a;\n  if (iVar1 == -2) {\n    iVar4 = 0x46ec2194;\n  }\n  iVar1 = -0x3f1f6a02;\nLAB_001033e0:\n  do {\n    while (iVar2 = iVar1, iVar1 = iVar2, 0x107ad7ce < iVar2) {\n      if (iVar2 < 0x32fc1cf1) {\n        if (iVar2 == 0x107ad7cf) {\n          printf(\"METHOD:%.*s\\n\",(ulong)local_450[0],local_468);\n          printf(\"PATH:%.*s\\n\",(ulong)local_458[0],local_448);\n          printf(\"HTTP_MINOR:%d\\n\",(ulong)local_474);\n          puVar6 = (uint *)0x0;\n          iVar1 = 0x32fc1cf1;\n        }\n        else if (iVar2 == 0x287f1999) {\n          iVar1 = -0x666af732;\n        }\n      }\n      else if (iVar2 == 0x32fc1cf1) {\n        iVar1 = -0x17196e3d;\n        if (puVar6 < local_460) {\n          iVar1 = -0x73418e3b;\n        }\n      }\n      else if (iVar2 == 0x46ec2194) {\n        __s = \"PARSE_INCOMPLETE\";\nLAB_001033d4:\n        puts(__s);\n        iVar1 = -0x666af732;\n      }\n      else if (iVar2 == 0x6729aff2) {\n        puVar6 = (uint *)((long)puVar6 + 1);\n        iVar1 = 0x32fc1cf1;\n      }\n    }\n    if (iVar2 < -0x370a4341) {\n      if (iVar2 == -0x73418e3b) {\n        printf(\"%.*s: %.*s\\n\",(ulong)auStack_430[(long)puVar6 * 8],(&local_438)[(long)puVar6 * 4],\n               (ulong)auStack_420[(long)puVar6 * 8],(&uStack_428)[(long)puVar6 * 4]);\n        iVar1 = 0x6729aff2;\n      }\n      else {\n        iVar1 = iVar4;\n        if ((iVar2 != -0x3f1f6a02) && (iVar1 = iVar2, iVar2 == -0x666af732)) {\n          return 0;\n        }\n      }\n      goto LAB_001033e0;\n    }\n    if (iVar2 == -0x370a4341) {\n      __s = \"PARSE_ERROR\";\n      goto LAB_001033d4;\n    }\n    iVar1 = iVar5;\n    if ((iVar2 != -0x17de807a) && (iVar1 = iVar2, iVar2 == -0x17196e3d)) {\n      iVar1 = 0x287f1999;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00103300(void)", 
+   "is_thunk": false, 
+   "size": 573, 
+   "name": "FUN_00103300", 
+   "entry_point": "00103300"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00103550(byte *param_1,byte *param_2,undefined8 *param_3,long *param_4,byte param_5,\n                 undefined4 *param_6)\n\n{\n  int iVar1;\n  byte *pbVar2;\n  \n  iVar1 = -0x41f70283;\n  pbVar2 = param_1;\nLAB_001035a0:\n  do {\n    while (iVar1 < 0xac2b62a) {\n      if (iVar1 < -0x21a41428) {\n        if (iVar1 < -0x408bd2c8) {\n          if (iVar1 == -0x5c16bb8c) {\n            iVar1 = 0x2c837d3d;\n          }\n          else if (iVar1 == -0x41f70283) {\n            iVar1 = 0x22b6940;\n          }\n        }\n        else if (iVar1 == -0x408bd2c8) {\n          iVar1 = 0x79fecce2;\n        }\n        else if (iVar1 == -0x2699e7ff) {\n          *param_6 = 0xffffffff;\nLAB_00103594:\n          iVar1 = 0xac2b62a;\n        }\n      }\n      else if (iVar1 < 0x22b6940) {\n        if (iVar1 == -0x21a41428) {\n          iVar1 = -0x5c16bb8c;\n        }\n        else if (iVar1 == -0x1e344e3) {\n          iVar1 = 0x2c837d3d;\n        }\n      }\n      else if (iVar1 == 0x22b6940) {\n        iVar1 = -0x21a41428;\n        if (pbVar2 == param_2) {\n          iVar1 = 0x69e40b7e;\n        }\n      }\n      else if ((iVar1 == 0x2b5d5a4) && (iVar1 = -0x408bd2c8, (&DAT_001050f8)[*pbVar2] == '\\0')) {\n        iVar1 = -0x2699e7ff;\n      }\n    }\n    if (iVar1 < 0x2c837d3d) {\n      if (iVar1 < 0x1e41cda0) {\n        if (iVar1 == 0xee2c73e) {\n          iVar1 = 0x2b5d5a4;\n          if ((int)(char)*pbVar2 == (uint)param_5) {\n            iVar1 = 0x1e41cda0;\n          }\n        }\n        else if (iVar1 == 0xac2b62a) {\n          return;\n        }\n      }\n      else if (iVar1 == 0x1e41cda0) {\n        iVar1 = 0x54a2fd3e;\n      }\n      else if (iVar1 == 0x2986cd2d) goto LAB_0010358d;\n      goto LAB_001035a0;\n    }\n    if (iVar1 < 0x69e40b7e) {\n      if (iVar1 == 0x2c837d3d) {\n        iVar1 = 0xee2c73e;\n      }\n      else if (iVar1 == 0x54a2fd3e) {\n        *param_3 = param_1;\n        *param_4 = (long)pbVar2 - (long)param_1;\n        iVar1 = 0xac2b62a;\n      }\n    }\n    else {\n      if (iVar1 == 0x69e40b7e) {\nLAB_0010358d:\n        *param_6 = 0xfffffffe;\n        goto LAB_00103594;\n      }\n      if (iVar1 == 0x79fecce2) {\n        pbVar2 = pbVar2 + 1;\n        iVar1 = -0x1e344e3;\n        if (pbVar2 == param_2) {\n          iVar1 = 0x2986cd2d;\n        }\n      }\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00103550(void)", 
+   "is_thunk": false, 
+   "size": 548, 
+   "name": "FUN_00103550", 
+   "entry_point": "00103550"
+  }, 
+  {
+   "decompiled": "\nchar * FUN_00103790(char *param_1,long param_2,int *param_3,undefined4 *param_4)\n\n{\n  char cVar1;\n  char *pcVar2;\n  int iVar3;\n  int iVar4;\n  \n  pcVar2 = (char *)0x693b2f99;\n  iVar3 = 0x45a6772;\n  if (param_2 - (long)param_1 < 9) {\n    iVar3 = 0x693b2f99;\n  }\n  iVar4 = 0x6b8a943c;\nLAB_001037fe:\n  if (iVar4 < -0x2018c394) {\n    if (-0x57d715de < iVar4) {\n      if (iVar4 < -0x36d8b5b9) {\n        if (iVar4 == -0x57d715dd) {\n          iVar4 = -0x2018c394;\n          if (*param_1 < '0') {\n            iVar4 = -0x195d4f75;\n          }\n        }\n        else {\n          if (iVar4 == -0x4efd2193) goto LAB_001037f0;\n          if (iVar4 == -0x3d2ebcf7) {\n            cVar1 = *param_1;\n            param_1 = param_1 + 1;\n            iVar4 = -0x6fe6d205;\n            if (cVar1 == '/') {\n              iVar4 = 0x21cce8e1;\n            }\n          }\n        }\n      }\n      else if (iVar4 == -0x2eba7a32) {\n        cVar1 = *param_1;\n        param_1 = param_1 + 1;\n        iVar4 = 0x1bdbe883;\n        if (cVar1 == 'P') {\n          iVar4 = -0x3d2ebcf7;\n        }\n      }\n      else {\n        if (iVar4 == -0x2918a5c9) goto LAB_001037f0;\n        if (iVar4 == -0x36d8b5b9) {\n          return pcVar2;\n        }\n      }\n      goto LAB_001037fe;\n    }\n    if (iVar4 < -0x6fe6d205) {\n      if (iVar4 == -0x7be71ea6) {\n        cVar1 = *param_1;\n        param_1 = param_1 + 1;\n        iVar4 = -0x581054d9;\n        if (cVar1 == 'T') {\n          iVar4 = -0x2eba7a32;\n        }\n        goto LAB_001037fe;\n      }\n      if (iVar4 != -0x7933078d) goto LAB_001037fe;\n    }\n    else if (((iVar4 != -0x6fe6d205) && (iVar4 != -0x6777707d)) && (iVar4 != -0x581054d9))\n    goto LAB_001037fe;\n  }\n  else {\n    if (0x21cce8e0 < iVar4) {\n      if (iVar4 < 0x52bb9cf8) {\n        if (iVar4 == 0x21cce8e1) {\n          cVar1 = *param_1;\n          param_1 = param_1 + 1;\n          iVar4 = -0x4efd2193;\n          if (cVar1 == '1') {\n            iVar4 = 0x52bb9cf8;\n          }\n        }\n        else if (iVar4 == 0x3c72270b) {\n          cVar1 = *param_1;\n          param_1 = param_1 + 1;\n          iVar4 = -0x2918a5c9;\n          if (cVar1 == 'T') {\n            iVar4 = -0x7be71ea6;\n          }\n        }\n      }\n      else if (iVar4 == 0x52bb9cf8) {\n        cVar1 = *param_1;\n        param_1 = param_1 + 1;\n        iVar4 = -0x7933078d;\n        if (cVar1 == '.') {\n          iVar4 = -0x57d715dd;\n        }\n      }\n      else if (iVar4 == 0x693b2f99) {\n        *param_4 = 0xfffffffe;\nLAB_001037f6:\n        pcVar2 = (char *)0x0;\n        iVar4 = -0x36d8b5b9;\n      }\n      else if (iVar4 == 0x6b8a943c) {\n        iVar4 = iVar3;\n      }\n      goto LAB_001037fe;\n    }\n    if (iVar4 < -0xe537428) {\n      if (iVar4 == -0x2018c394) {\n        iVar4 = -0xe537428;\n        if ('9' < *param_1) {\n          iVar4 = -0x195d4f75;\n        }\n      }\n      else if (iVar4 == -0x195d4f75) {\n        param_1 = param_1 + 1;\n        goto LAB_001037f0;\n      }\n      goto LAB_001037fe;\n    }\n    if (iVar4 == -0xe537428) {\n      pcVar2 = param_1 + 1;\n      *param_3 = *param_1 + -0x30;\n      param_1 = pcVar2;\n      iVar4 = -0x36d8b5b9;\n      goto LAB_001037fe;\n    }\n    if (iVar4 == 0x45a6772) {\n      cVar1 = *param_1;\n      param_1 = param_1 + 1;\n      iVar4 = -0x6777707d;\n      if (cVar1 == 'H') {\n        iVar4 = 0x3c72270b;\n      }\n      goto LAB_001037fe;\n    }\n    if (iVar4 != 0x1bdbe883) goto LAB_001037fe;\n  }\nLAB_001037f0:\n  *param_4 = 0xffffffff;\n  goto LAB_001037f6;\n}\n\n", 
+   "signature": "undefined FUN_00103790(void)", 
+   "is_thunk": false, 
+   "size": 712, 
+   "name": "FUN_00103790", 
+   "entry_point": "00103790"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00103a80(byte *param_1,byte *param_2,undefined8 *param_3,long *param_4,undefined4 *param_5)\n\n{\n  byte bVar1;\n  int iVar2;\n  byte *pbVar3;\n  \n  iVar2 = 0x4a321e76;\n  pbVar3 = param_1;\nLAB_00103ad0:\n  while (0x13c09887 < iVar2) {\n    if (iVar2 < 0x4f154583) {\n      if (iVar2 < 0x3d1f4de9) {\n        if (iVar2 < 0x2b1642a8) {\n          if (iVar2 < 0x1f31f9b0) {\n            if (iVar2 == 0x13c09888) {\n              iVar2 = -0x2d912330;\n            }\n            else if (iVar2 == 0x14fe5355) {\n              iVar2 = 0x7bde69df;\n            }\n          }\n          else if (iVar2 == 0x1f31f9b0) {\n            iVar2 = -0xd544485;\n          }\n          else if (iVar2 == 0x23ab87a9) {\n            pbVar3 = pbVar3 + 1;\n            iVar2 = 0x4a321e76;\n          }\n        }\n        else if (iVar2 < 0x2d1a176f) {\n          if (iVar2 == 0x2b1642a8) {\n            iVar2 = 0x59552aa7;\n            if (*pbVar3 != 0xd) {\n              iVar2 = -0x3b523626;\n            }\n          }\n          else if (iVar2 == 0x2b8bb6e1) {\n            bVar1 = *pbVar3;\n            pbVar3 = pbVar3 + 1;\n            iVar2 = -0xfcc62db;\n            if (bVar1 == 10) {\n              iVar2 = -0x8b8bc2b;\n            }\n          }\n        }\n        else if (iVar2 == 0x2d1a176f) {\n          iVar2 = 0x2b1642a8;\n        }\n        else if (iVar2 == 0x2f430f83) {\n          if (*pbVar3 - 0x7f < 0xffffffa1) {\n            iVar2 = -0x1a348cb6;\n          }\n          else {\n            iVar2 = -0x1447a858;\n          }\n        }\n      }\n      else if (iVar2 < 0x477bc98b) {\n        if (iVar2 < 0x43075c79) {\n          if (iVar2 == 0x3d1f4de9) {\n            iVar2 = 0x4f154583;\n          }\n          else if (iVar2 == 0x41f10a33) {\n            iVar2 = -0x74faf596;\n          }\n        }\n        else if (iVar2 == 0x43075c79) {\n          *param_4 = (long)pbVar3 - (long)param_1;\n          pbVar3 = pbVar3 + 1;\n          iVar2 = 0x14fe5355;\n        }\n        else if (iVar2 == 0x46919119) {\n          iVar2 = 0x50434528;\n        }\n      }\n      else if (iVar2 < 0x4aaee7ed) {\n        if (iVar2 == 0x477bc98b) {\n          iVar2 = 0x7d8ac2db;\n        }\n        else if ((iVar2 == 0x4a321e76) && (iVar2 = 0x13c09888, (long)param_2 - (long)pbVar3 < 8)) {\n          iVar2 = 0x3d1f4de9;\n        }\n      }\n      else if (iVar2 == 0x4aaee7ed) {\n        if (*pbVar3 == 9) {\n          iVar2 = 0x7b83ef47;\n        }\n        else {\n          iVar2 = -0x1a354c68;\n        }\n      }\n      else if (iVar2 == 0x4b1ba610) {\n        pbVar3 = pbVar3 + 1;\n        iVar2 = 0x41f10a33;\n      }\n      else if (iVar2 == 0x4e86934e) {\n        iVar2 = -0x34169865;\n      }\n    }\n    else if (iVar2 < 0x7115159d) {\n      if (iVar2 < 0x5f500a3d) {\n        if (iVar2 < 0x57bbc394) {\n          if (iVar2 == 0x4f154583) {\n            iVar2 = -0x576746b3;\n            if (pbVar3 == param_2) {\n              iVar2 = 0x78c7672f;\n            }\n          }\n          else if (iVar2 == 0x50434528) {\n            pbVar3 = pbVar3 + 1;\n            iVar2 = 0x4f154583;\n          }\n        }\n        else if (iVar2 == 0x57bbc394) {\n          if (*pbVar3 - 0x7f < 0xffffffa1) {\n            iVar2 = 0x68e7f609;\n          }\n          else {\n            iVar2 = -0x3fdeba85;\n          }\n        }\n        else if (iVar2 == 0x59552aa7) {\n          pbVar3 = pbVar3 + 1;\n          iVar2 = 0x2b8bb6e1;\n          if (pbVar3 == param_2) {\n            iVar2 = 0x5f500a3d;\n          }\n        }\n      }\n      else if (iVar2 < 0x6215e02b) {\n        if (iVar2 == 0x5f500a3d) {\nLAB_00103fb1:\n          *param_5 = 0xfffffffe;\n          goto LAB_00103ac2;\n        }\n        if (iVar2 == 0x62106994) {\n          iVar2 = 0x6734f335;\n        }\n      }\n      else if (iVar2 == 0x6215e02b) {\n        iVar2 = -0xd544485;\n      }\n      else if (iVar2 == 0x6734f335) {\n        iVar2 = 0x57bbc394;\n      }\n      else if (iVar2 == 0x68e7f609) {\n        iVar2 = -0xd544485;\n      }\n    }\n    else if (iVar2 < 0x7980c4e2) {\n      if (iVar2 < 0x76f2ed08) {\n        if (iVar2 == 0x7115159d) {\n          pbVar3 = pbVar3 + 1;\n          iVar2 = 0x477bc98b;\n        }\n        else if (iVar2 == 0x7245d026) {\n          iVar2 = 0x4e86934e;\n        }\n        else if (iVar2 == 0x71882a84) {\n          return;\n        }\n      }\n      else if (iVar2 == 0x76f2ed08) {\n        iVar2 = -0xd544485;\n      }\n      else if (iVar2 == 0x78c7672f) goto LAB_00103fb1;\n    }\n    else if (iVar2 < 0x7bde69df) {\n      if (iVar2 == 0x7980c4e2) {\n        if (*pbVar3 - 0x7f < 0xffffffa1) {\n          iVar2 = 0x1f31f9b0;\n        }\n        else {\n          iVar2 = -0x23a58b6a;\n        }\n      }\n      else if (iVar2 == 0x7b83ef47) {\n        if (*pbVar3 == 0x7f) {\n          iVar2 = -0x1a354c68;\n        }\n        else {\n          iVar2 = -0x1f108dde;\n        }\n      }\n    }\n    else if (iVar2 == 0x7bde69df) {\n      *param_3 = param_1;\n      iVar2 = 0x71882a84;\n    }\n    else if (iVar2 == 0x7d8ac2db) {\n      iVar2 = 0x2f430f83;\n    }\n  }\n  if (iVar2 < -0x30ea35a0) {\n    if (iVar2 < -0x49d3ee8c) {\n      if (iVar2 < -0x5da6f154) {\n        if (iVar2 < -0x6c4fc397) {\n          if (iVar2 == -0x7522ab73) {\n            iVar2 = -0x30ea35a0;\n          }\n          else if (iVar2 == -0x74faf596) {\n            iVar2 = 0x7980c4e2;\n          }\n        }\n        else if (iVar2 == -0x6c4fc397) {\n          pbVar3 = pbVar3 + 1;\n          iVar2 = -0x7522ab73;\n        }\n        else if (iVar2 == -0x6b3c59e7) {\n          iVar2 = -0x5da6f154;\n        }\n      }\n      else if (iVar2 < -0x57491b33) {\n        if (iVar2 == -0x5da6f154) {\n          iVar2 = -0x57491b33;\n        }\n        else if (iVar2 == -0x576746b3) {\n          if (*pbVar3 - 0x7f < 0xffffffa1) {\n            iVar2 = -0x3bf53360;\n          }\n          else {\n            iVar2 = 0x46919119;\n          }\n        }\n      }\n      else if (iVar2 == -0x57491b33) {\n        if (*pbVar3 - 0x7f < 0xffffffa1) {\n          iVar2 = 0x76f2ed08;\n        }\n        else {\n          iVar2 = 0x4b1ba610;\n        }\n      }\n      else if (iVar2 == -0x4c64abcb) {\n        if (*pbVar3 - 0x7f < 0xffffffa1) {\n          iVar2 = -0x18acf35;\n        }\n        else {\n          iVar2 = -0x6c4fc397;\n        }\n      }\n      goto LAB_00103ad0;\n    }\n    if (iVar2 < -0x3bf53360) {\n      if (iVar2 < -0x448be50d) {\n        if (iVar2 == -0x49d3ee8c) {\n          iVar2 = -0x4c64abcb;\n        }\n        else if (iVar2 == -0x48ee3dd1) {\n          if (*pbVar3 == 0x7f) {\n            iVar2 = 0x2d1a176f;\n          }\n          else {\n            iVar2 = 0x23ab87a9;\n          }\n        }\n      }\n      else if (iVar2 == -0x448be50d) {\n        if (*pbVar3 - 0x7f < 0xffffffa1) {\n          iVar2 = -0x165aa858;\n        }\n        else {\n          iVar2 = 0x7115159d;\n        }\n      }\n      else if (iVar2 == -0x3fdeba85) {\n        pbVar3 = pbVar3 + 1;\n        iVar2 = -0x6b3c59e7;\n      }\n      goto LAB_00103ad0;\n    }\n    if (-0x3b523627 < iVar2) {\n      if (iVar2 == -0x3b523626) {\n        iVar2 = -0x3bdfab2f;\n        if (*pbVar3 == 10) {\n          iVar2 = 0x43075c79;\n        }\n      }\n      else if (iVar2 == -0x3add9a11) {\n        iVar2 = -0x49d3ee8c;\n      }\n      else if (iVar2 == -0x34169865) {\n        if (*pbVar3 - 0x7f < 0xffffffa1) {\n          iVar2 = 0x6215e02b;\n        }\n        else {\n          iVar2 = 0xbb40091;\n        }\n      }\n      goto LAB_00103ad0;\n    }\n    if (iVar2 == -0x3bf53360) {\n      iVar2 = 0x4aaee7ed;\n      if (0x1f < *pbVar3) {\n        iVar2 = 0x7b83ef47;\n      }\n      goto LAB_00103ad0;\n    }\n    if (iVar2 != -0x3bdfab2f) goto LAB_00103ad0;\n  }\n  else {\n    if (iVar2 < -0x1447a858) {\n      if (iVar2 < -0x23a58b6a) {\n        if (iVar2 < -0x2cff4257) {\n          if (iVar2 == -0x30ea35a0) {\n            iVar2 = 0x4a321e76;\n          }\n          else if (iVar2 == -0x2d912330) {\n            if (*pbVar3 - 0x7f < 0xffffffa1) {\n              iVar2 = -0x12c12712;\n            }\n            else {\n              iVar2 = -0x2cff4257;\n            }\n          }\n        }\n        else if (iVar2 == -0x2cff4257) {\n          pbVar3 = pbVar3 + 1;\n          iVar2 = 0x62106994;\n        }\n        else if (iVar2 == -0x23fa1b09) {\n          if (*pbVar3 == 9) {\n            iVar2 = -0x48ee3dd1;\n          }\n          else {\n            iVar2 = 0x2d1a176f;\n          }\n        }\n      }\n      else if (iVar2 < -0x1a354c68) {\n        if (iVar2 == -0x23a58b6a) {\n          pbVar3 = pbVar3 + 1;\n          iVar2 = 0x7245d026;\n        }\n        else if (iVar2 == -0x1f108dde) {\n          iVar2 = 0x46919119;\n        }\n      }\n      else if (iVar2 == -0x1a354c68) {\n        iVar2 = 0x2b1642a8;\n      }\n      else if (iVar2 == -0x1a348cb6) {\n        iVar2 = -0xd544485;\n      }\n      else if (iVar2 == -0x165aa858) {\n        iVar2 = -0xd544485;\n      }\n      goto LAB_00103ad0;\n    }\n    if (-0x8b8bc2c < iVar2) {\n      if (iVar2 < 0x333319c) {\n        if (iVar2 == -0x8b8bc2b) {\n          *param_4 = (long)(pbVar3 + (-2 - (long)param_1));\n          iVar2 = 0x7bde69df;\n        }\n        else if (iVar2 == -0x18acf35) {\n          iVar2 = -0xd544485;\n        }\n      }\n      else if (iVar2 == 0x333319c) {\n        iVar2 = 0x548642e;\n      }\n      else if (iVar2 == 0x548642e) {\n        iVar2 = -0x448be50d;\n      }\n      else if (iVar2 == 0xbb40091) {\n        pbVar3 = pbVar3 + 1;\n        iVar2 = 0x333319c;\n      }\n      goto LAB_00103ad0;\n    }\n    if (iVar2 < -0xfcc62db) {\n      if (iVar2 == -0x1447a858) {\n        pbVar3 = pbVar3 + 1;\n        iVar2 = -0x3add9a11;\n      }\n      else if (iVar2 == -0x12c12712) {\n        iVar2 = -0xd544485;\n      }\n      goto LAB_00103ad0;\n    }\n    if (iVar2 != -0xfcc62db) {\n      if ((iVar2 == -0xd544485) && (iVar2 = -0x23fa1b09, 0x1f < *pbVar3)) {\n        iVar2 = -0x48ee3dd1;\n      }\n      goto LAB_00103ad0;\n    }\n  }\n  *param_5 = 0xffffffff;\nLAB_00103ac2:\n  iVar2 = 0x71882a84;\n  goto LAB_00103ad0;\n}\n\n", 
+   "signature": "undefined FUN_00103a80(void)", 
+   "is_thunk": false, 
+   "size": 2408, 
+   "name": "FUN_00103a80", 
+   "entry_point": "00103a80"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00104400(undefined4 param_1,undefined8 param_2,undefined8 param_3)\n\n{\n  long lVar1;\n  \n  _DT_INIT();\n  lVar1 = 0;\n  do {\n    (*(code *)(&__DT_INIT_ARRAY)[lVar1])(param_1,param_2,param_3);\n    lVar1 = lVar1 + 1;\n  } while (lVar1 != 1);\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00104400(void)", 
+   "is_thunk": false, 
+   "size": 93, 
+   "name": "FUN_00104400", 
+   "entry_point": "00104400"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00104460(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00104460(void)", 
+   "is_thunk": false, 
+   "size": 1, 
+   "name": "FUN_00104460", 
+   "entry_point": "00104460"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nsize_t fread(void *__ptr,size_t __size,size_t __n,FILE *__stream)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n  halt_baddata();\n}\n\n", 
+   "signature": "size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "fread", 
+   "entry_point": "0010a010"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nvoid * memmove(void *__dest,void *__src,size_t __n)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n  halt_baddata();\n}\n\n", 
+   "signature": "void * memmove(void * __dest, void * __src, size_t __n)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "memmove", 
+   "entry_point": "0010a040"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "r12_picohttpparser", 
+ "n_functions": 21, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "00100431", 
+   "value": "puts"
+  }, 
+  {
+   "address": "00100436", 
+   "value": "stdin"
+  }, 
+  {
+   "address": "0010043c", 
+   "value": "__assert_fail"
+  }, 
+  {
+   "address": "0010044a", 
+   "value": "printf"
+  }, 
+  {
+   "address": "00100451", 
+   "value": "fread"
+  }, 
+  {
+   "address": "00100457", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "00100466", 
+   "value": "memmove"
+  }, 
+  {
+   "address": "0010046e", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "00100480", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "0010048a", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "00100496", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "001004b2", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "001004c1", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00105020", 
+   "value": "!\"decoder is corrupt\""
+  }, 
+  {
+   "address": "00105036", 
+   "value": "/work/corpus_real/r12_picohttpparser.c"
+  }, 
+  {
+   "address": "0010505d", 
+   "value": "ssize_t phr_decode_chunked(struct phr_chunked_decoder *, char *, size_t *)"
+  }, 
+  {
+   "address": "001050a8", 
+   "value": "METHOD:%.*s\n"
+  }, 
+  {
+   "address": "001050b5", 
+   "value": "PATH:%.*s\n"
+  }, 
+  {
+   "address": "001050c0", 
+   "value": "HTTP_MINOR:%d\n"
+  }, 
+  {
+   "address": "001050cf", 
+   "value": "%.*s: %.*s\n"
+  }, 
+  {
+   "address": "001050db", 
+   "value": "PARSE_ERROR"
+  }, 
+  {
+   "address": "001050e7", 
+   "value": "PARSE_INCOMPLETE"
+  }, 
+  {
+   "address": "00105291", 
+   "value": "zR"
+  }, 
+  {
+   "address": "001052c1", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::0000000d", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::00000019", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::0000001f", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::00000028", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000041", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::00000046", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::0000005c", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::0000006b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000073", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::0000007d", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000092", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000098", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::000000a2", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::000000b0", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000ba", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000c3", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::000000cd", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::000000d5", 
+   "value": ".data"
+  }
+ ]
+}

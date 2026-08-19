@@ -1,0 +1,39 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog21_date_validator,1,1.0000,5,5,True,False,1141,12,0.014163,22359,14082,databricks-gpt-oss-120b,databricks,79.9,[],2026-08-15T12:54:28,gpt-oss-120b,databricks,native
+prog21_date_validator,2,1.0000,5,5,True,False,1421,12,0.009846,15065,9909,databricks-gpt-oss-120b,databricks,119.4,[],2026-08-15T12:56:28,gpt-oss-120b,databricks,native
+prog21_date_validator,3,1.0000,5,5,True,False,1198,12,0.010252,9357,11900,databricks-gpt-oss-120b,databricks,472.3,[],2026-08-15T13:04:20,gpt-oss-120b,databricks,native
+prog32_prime_factorization,1,0.0000,0,5,False,False,1369,12,0.006254,6535,7053,databricks-gpt-oss-120b,databricks,163.9,"/w/candidate.c:62:1: error: extraneous closing brace ('}')
+   62 | }
+      | ^
+1 error generated.
+",2026-08-15T13:07:04,gpt-oss-120b,databricks,native
+prog32_prime_factorization,2,0.0000,0,5,False,True,0,12,0.006593,3539,8272,databricks-gpt-oss-120b,databricks,90.4,nessun candidato prodotto,2026-08-15T13:08:34,gpt-oss-120b,databricks,native
+prog32_prime_factorization,3,1.0000,5,5,True,False,1904,12,0.010394,11815,11483,databricks-gpt-oss-120b,databricks,248.8,[],2026-08-15T13:12:43,gpt-oss-120b,databricks,native
+prog35_perfect_numbers,1,0.8000,4,5,True,False,998,12,0.007576,6708,8845,databricks-gpt-oss-120b,databricks,152.9,[],2026-08-15T13:15:16,gpt-oss-120b,databricks,native
+prog35_perfect_numbers,2,1.0000,5,5,True,False,1210,12,0.006799,6868,7727,databricks-gpt-oss-120b,databricks,79.7,[],2026-08-15T13:16:36,gpt-oss-120b,databricks,native
+prog35_perfect_numbers,3,0.0000,0,5,False,True,0,12,0.006613,3663,8270,databricks-gpt-oss-120b,databricks,95.3,nessun candidato prodotto,2026-08-15T13:18:11,gpt-oss-120b,databricks,native
+prog36_pascal_triangle,1,1.0000,5,5,True,False,1317,12,0.007813,7290,9029,databricks-gpt-oss-120b,databricks,97.3,[],2026-08-15T13:19:48,gpt-oss-120b,databricks,native
+prog36_pascal_triangle,2,1.0000,5,5,True,False,907,12,0.009461,11373,10297,databricks-gpt-oss-120b,databricks,176.0,[],2026-08-15T13:22:44,gpt-oss-120b,databricks,native
+prog36_pascal_triangle,3,0.4000,2,5,True,False,1445,12,0.011354,14038,12260,databricks-gpt-oss-120b,databricks,201.7,[],2026-08-15T13:26:06,gpt-oss-120b,databricks,native
+prog39_horner,1,1.0000,5,5,True,False,1111,12,0.007846,8744,8711,databricks-gpt-oss-120b,databricks,148.3,[],2026-08-15T13:28:34,gpt-oss-120b,databricks,native
+prog39_horner,2,0.0000,0,5,False,True,0,12,0.021016,17654,24777,databricks-gpt-oss-120b,databricks,299.5,nessun candidato prodotto,2026-08-15T13:33:34,gpt-oss-120b,databricks,native
+prog39_horner,3,1.0000,5,5,True,False,1349,12,0.017759,16991,20418,databricks-gpt-oss-120b,databricks,456.4,[],2026-08-15T13:41:10,gpt-oss-120b,databricks,native
+prog43_catalan,1,0.2000,1,5,True,False,1180,12,0.007899,8215,8918,databricks-gpt-oss-120b,databricks,121.0,[],2026-08-15T13:43:11,gpt-oss-120b,databricks,native
+prog43_catalan,2,0.4000,2,5,True,False,1115,12,0.009021,8660,10365,databricks-gpt-oss-120b,databricks,202.8,[],2026-08-15T13:46:34,gpt-oss-120b,databricks,native
+prog43_catalan,3,0.8000,4,5,True,False,752,12,0.004982,6373,5327,databricks-gpt-oss-120b,databricks,66.6,[],2026-08-15T13:47:41,gpt-oss-120b,databricks,native
+prog46_postfix_stack,1,1.0000,5,5,True,False,1627,12,0.005431,11641,4633,databricks-gpt-oss-120b,databricks,62.6,[],2026-08-15T13:48:43,gpt-oss-120b,databricks,native
+prog46_postfix_stack,2,1.0000,5,5,True,False,2511,12,0.011642,17792,11722,databricks-gpt-oss-120b,databricks,123.8,[],2026-08-15T13:50:47,gpt-oss-120b,databricks,native
+prog46_postfix_stack,3,1.0000,5,5,True,False,2008,12,0.005014,11663,4048,databricks-gpt-oss-120b,databricks,32.2,[],2026-08-15T13:51:19,gpt-oss-120b,databricks,native
+prog47_circular_queue,1,0.8000,4,5,True,False,1636,12,0.008774,18819,7481,databricks-gpt-oss-120b,databricks,82.2,[],2026-08-15T13:52:41,gpt-oss-120b,databricks,native
+prog47_circular_queue,2,1.0000,5,5,True,False,1825,12,0.008950,20481,7311,databricks-gpt-oss-120b,databricks,99.4,[],2026-08-15T13:54:21,gpt-oss-120b,databricks,native
+prog47_circular_queue,3,1.0000,5,5,True,False,1915,12,0.004150,9226,3457,databricks-gpt-oss-120b,databricks,57.1,[],2026-08-15T13:55:18,gpt-oss-120b,databricks,native
+prog48_sorted_linked_list,1,0.2000,1,5,True,False,700,12,0.002499,3113,2692,databricks-gpt-oss-120b,databricks,26.0,[],2026-08-15T13:55:44,gpt-oss-120b,databricks,native
+prog48_sorted_linked_list,2,0.4000,2,5,True,False,1295,12,0.004702,5820,5076,databricks-gpt-oss-120b,databricks,66.4,[],2026-08-15T13:56:50,gpt-oss-120b,databricks,native
+prog48_sorted_linked_list,3,0.4000,2,5,True,False,1006,12,0.003043,5172,2934,databricks-gpt-oss-120b,databricks,36.8,[],2026-08-15T13:57:27,gpt-oss-120b,databricks,native
+prog58_turing_increment,1,0.0000,0,5,False,False,1411,12,0.009546,8998,11009,databricks-gpt-oss-120b,databricks,142.9,"/w/candidate.c:64:1: error: extraneous closing brace ('}')
+   64 | }
+      | ^
+1 error generated.
+",2026-08-15T13:59:50,gpt-oss-120b,databricks,native
+prog58_turing_increment,2,0.2000,1,5,True,False,2130,12,0.015940,26901,15414,databricks-gpt-oss-120b,databricks,221.6,[],2026-08-15T14:03:32,gpt-oss-120b,databricks,native
+prog58_turing_increment,3,0.0000,0,5,False,True,0,12,0.012288,11116,14288,databricks-gpt-oss-120b,databricks,188.6,nessun candidato prodotto,2026-08-15T14:06:40,gpt-oss-120b,databricks,native

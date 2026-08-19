@@ -1,0 +1,7 @@
+{"program": "prog05_rle", "tests": [
+  {"id": 1, "args": ["aaabbc"], "stdin": "", "expected_stdout": "3a2b1c\n"},
+  {"id": 2, "args": ["x"], "stdin": "", "expected_stdout": "1x\n"},
+  {"id": 3, "args": [""], "stdin": "", "expected_stdout": "EMPTY\n"},
+  {"id": 4, "args": ["aaaaaaaaaaaaaaaaaaaa"], "stdin": "", "expected_stdout": "20a\n"},
+  {"id": 5, "args": ["ab3c"], "stdin": "", "expected_stdout": "INVALID_CHAR\n"}
+]}

@@ -1,0 +1,29 @@
+validita' su 16 celle, 5873 righe
+
+  1. SCHEMA           PASS  colonne mancanti: nessuna, righe con tipi rotti: 0
+  2. CONTEGGIO        PASS  celle sotto 45 binari x 8 run: nessuna; righe scartate conservate come record: 68
+  3. PAVIMENTO        PASS  318 righe non compilate, di cui con pass_rate>0: 0
+  4. RIPRODUCIBILITA' a temperatura 0,0 — la risposta NON era nota:
+       cella                                           SD entro-binario  binari con 8 run identiche
+       claude-haiku-4-5/bedrock/native                           0.0015                         98%
+       claude-haiku-4-5/bedrock/text                             0.0038                         98%
+       claude-haiku-4-5/databricks/native                        0.0000                        100%
+       claude-haiku-4-5/databricks/text                          0.0038                         98%
+       claude-sonnet-4-5/bedrock/native                          0.0758                         60%
+       claude-sonnet-4-5/bedrock/text                            0.0740                         64%
+       claude-sonnet-4-5/databricks/native                       0.0755                         62%
+       claude-sonnet-4-5/databricks/text                         0.0646                         62%
+       gpt-oss-120b/bedrock/native                               0.2011                         20%
+       gpt-oss-120b/bedrock/text                                 0.1734                         24%
+       gpt-oss-120b/databricks/native                            0.2326                         13%
+       gpt-oss-120b/databricks/text                              0.2323                         16%
+       llama-3.3-70b/bedrock/native                              0.0558                         62%
+       llama-3.3-70b/bedrock/text                                0.0834                         40%
+       llama-3.3-70b/databricks/native                           0.1322                         16%
+       llama-3.3-70b/databricks/text                             0.0872                         40%
+
+       SD entro-binario media 0.0936; in media il 55% dei binari ha 8 run identiche.
+       Temperatura 0,0 NON produce run identiche su questi stack: la varianza
+       run-a-run e' reale e va dichiarata, non assunta a zero.
+
+  4/4 controlli superati

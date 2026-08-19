@@ -1,0 +1,3 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,1.0000,5,5,True,False,563,12,0.002663,9698,2014,openai.gpt-oss-120b-1:0,bedrock,35.1,[],2026-08-15T12:52:19,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,2,1.0000,5,5,True,False,538,12,0.001461,3424,1579,openai.gpt-oss-120b-1:0,bedrock,12.9,[],2026-08-15T12:52:32,gpt-oss-120b,bedrock,native

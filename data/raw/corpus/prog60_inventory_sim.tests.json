@@ -1,0 +1,7 @@
+{"program": "prog60_inventory_sim", "tests": [
+  {"id": 1, "args": ["S", "0", "5", "R", "1", "10"], "stdin": "", "expected_stdout": "SELL sku=0 qty=5 revenue+=50\nRESTOCK sku=1 qty=10\nFINAL stock=95,60,200,10,5 revenue=50\n"},
+  {"id": 2, "args": ["S", "4", "5"], "stdin": "", "expected_stdout": "SELL sku=4 qty=5 revenue+=500\nFINAL stock=100,50,200,10,0 revenue=500\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "FINAL stock=100,50,200,10,5 revenue=0\n"},
+  {"id": 4, "args": ["S", "0", "10", "R", "2", "50", "S", "1", "20", "R", "3", "5", "S", "2", "100", "R", "0", "5"], "stdin": "", "expected_stdout": "SELL sku=0 qty=10 revenue+=100\nRESTOCK sku=2 qty=50\nSELL sku=1 qty=20 revenue+=400\nRESTOCK sku=3 qty=5\nSELL sku=2 qty=100 revenue+=500\nRESTOCK sku=0 qty=5\nFINAL stock=95,30,150,15,5 revenue=1000\n"},
+  {"id": 5, "args": ["S", "3", "999"], "stdin": "", "expected_stdout": "INSUFFICIENT_STOCK sku=3\nFINAL stock=100,50,200,10,5 revenue=0\n"}
+]}

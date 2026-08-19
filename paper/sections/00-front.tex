@@ -1,0 +1,94 @@
+% La formula viene dal capitolo precedente del programma, che e' sotto revisione anonima: titolo e
+% sede non si nominano nemmeno qui, perche' i commenti viaggiano col sorgente e il sorgente E' il
+% deposito. Il commento che stava qui dichiarava questa regola e poi citava quel titolo per esteso
+% due righe sotto -- la stessa forma del documento di redazione che annullava la redazione che
+% dichiarava. Rimosso il 19/08. La struttura che si eredita e' descrivibile senza nominare nulla:
+% prima meta' parallela, due punti, poi cosa viene comprato e a spese di cosa. La serie si
+% riconosce a colpo d'occhio, e chi legge un capitolo solo non perde niente.
+%
+% Il titolo nomina MECCANISMI, non una magnitudine: nessun test supera la propria soglia di
+% Holm, e annunciare "il trasporto cambia le prestazioni" sarebbe marketing nei numeri invece
+% che nella formulazione.
+%
+% Il sottotitolo porta entrambe le gambe, e non sono in parallelo. Quanto del punteggio compra
+% l'interfaccia e' un BIAS, si delimita, e dopo BFCL non e' piu' una notizia. Quali modelli
+% l'endpoint toglie prima che tu misuri e' una SELEZIONE, non si delimita perche' il modello
+% assente non ha una riga da correggere, e li' cade il peso probatorio.
+% L'ordine delle due gambe segue quello dei contributi, che il 16/08 e' stato invertito: la
+% SELEZIONE viene prima del BIAS, perche' un bias si delimita e una selezione no. Il titolo
+% precedente prometteva per primo cio' che il paper ora dichiara secondo.
+% TITOLO — descrittivo, non a slogan. La formula del capitolo precedente
+% Free Parameter: …») e' da conferenza; i titoli EMSE dicono cosa e' stato fatto: «An evaluation
+% study of…», «Reflections on the Reproducibility of…», «Empirical benchmarking of…». Un editor
+% deve poterlo classificare al primo sguardo, e «pre-registered» in prima pagina e' un segnale
+% che quella sede legge. La serie con il capitolo precedente resta visibile dal contenuto e
+% dalla citazione, che e' dove serve.
+\title{Transport and Endpoint as Free Parameters in Agentic Evaluation:\\
+\large A Pre-Registered Study of Four Models Across Two Clouds}
+
+% EMSE fa revisione a CIECO SINGOLO (verificato sulle politiche del journal, 2026-08-15):
+% autore e affiliazione vanno dichiarati. Un blocco anonimo qui sarebbe un difetto per questa
+% destinazione, non una precauzione.
+%
+% Affiliazione verificata online il 2026-08-15: dottorato in ICT presso il DISIM, che ospita il
+% programma (phdict.disim.univaq.it), e la dicitura estesa del dipartimento e' quella usata
+% dalle pubblicazioni dell'ateneo.
+%
+% Autore unico, per decisione dell'autore. Il lavoro precedente (EASE 2025, «Simplicity by
+% Obfuscation») e' firmato De Tomasi, Di Sipio, Di Marco, Nguyen; questo capitolo no, e le
+% dichiarazioni finali sono al singolare di conseguenza.
+% Il dominio e' graduate.univaq.it, quello dei dottorandi, non student.univaq.it che Scholar
+% riporta: corretto dall'autore.
+\author{<autore>\\[0.4em]
+\normalsize Department of Information Engineering, Computer Science and Mathematics (DISIM)\\
+\normalsize University of L'Aquila, L'Aquila, Italy\\
+\normalsize \texttt{lorenzo.detomasi@graduate.univaq.it}}
+\date{}
+
+\maketitle
+
+\begin{abstract}
+An agentic evaluation reports a number for a model, but that number is produced by an apparatus --- a
+transport carrying tool calls, an endpoint serving them --- named in no table. We measure how much of it
+belongs to the apparatus: four models, two managed clouds (Databricks and Amazon Bedrock), two transports,
+45 held-out reverse-engineering tasks, 5,809 trials, analysis script frozen by hash with the hypotheses
+before any data existed (two of the ten tests were implemented a day later under a dated succession, when
+the data on disk could not inform either --- \S\ref{sec:method}).
+
+Three results, in the order a reader should weigh them: two exploratory, one confirmatory. First, the
+variance components of an agentic measurement are specific to the apparatus that produced them, and that
+breaks study sizing. Inheriting a calibration from an earlier chapter on the same corpus, model and
+metric, ours did not mis-estimate a magnitude --- it inverted which lever binds: 84\% run-to-run noise
+and a floor of thirteen tasks became 0.5\% (bootstrap interval $[0.0, 1.4]$ over 45 binaries) and a floor
+of 668. A designer who inherited it would not merely have been under-powered; they would have spent the
+budget on the axis that buys nothing.
+
+Second, an endpoint can remove a model from an evaluation entirely, and we document \emph{eight}
+mechanisms across eleven probed models, each with the endpoint's verbatim message. Six are reachable by a
+pre-flight probe --- protocol refusal, deprecation, absent quota, disuse, jurisdiction, parallel calls ---
+and two fire only in a conversational state a probe does not construct, so a harness certified healthy
+before collection can still lose a cell after the money is spent. This is a selection effect rather than
+a bias: the refused model has no row to correct. Removing one model from a four-model comparison moves
+the first-to-last spread by up to 47.6pp, against 9.83pp for the largest apparatus effect we measure.
+
+Third, the confirmatory family resolves no effect at the available precision --- none of the ten tests
+survives correction, and the three reaching nominal significance are the three least powered (21.0\%,
+30.9\%, 35.8\%). That is not a finding of no effect. We report the minimum detectable effect per contrast
+rather than one figure for the design, because the observed standard deviations span a factor of 23.7:
+resolving power is a property of the cell, not of the study.
+\end{abstract}
+
+% EMSE chiede da 4 a 6 keywords: erano sette. Tolta «reproducibility», che e' implicata da
+% pre-registration ed experimental validity insieme.
+\vspace{0.6em}
+\noindent
+\textbf{Keywords} agentic evaluation $\cdot$ tool calling $\cdot$ experimental validity $\cdot$
+pre-registration $\cdot$ serving infrastructure $\cdot$ selection effects
+
+% RICHIESTO DALLA LETTERA DI RITORNO (EMSE-D-26-00987): il numero di trial clinico va sulla
+% title page, e se non si applica va scritto che non si applica. La richiesta viene dal
+% flusso editoriale Springer condiviso con le riviste biomediche; qui non si applica, e
+% dichiararlo costa una riga mentre ometterlo e' costato una restituzione.
+\vspace{0.5em}
+\noindent
+\textbf{Clinical trial number:} not applicable.

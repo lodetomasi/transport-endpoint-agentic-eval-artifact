@@ -1,0 +1,6 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog21_date_validator,1,0.0000,0,5,False,False,1375,12,0.005557,4876,6499,databricks-gpt-oss-120b,databricks,32.5,"/w/candidate.c:56:1: error: extraneous closing brace ('}')
+   56 | }
+      | ^
+1 error generated.
+",2026-08-15T12:52:18,gpt-oss-120b,databricks,native

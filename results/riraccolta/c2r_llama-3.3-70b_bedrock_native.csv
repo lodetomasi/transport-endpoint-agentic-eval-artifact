@@ -1,0 +1,427 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,0.0000,0,5,False,False,0,12,0.005098,6835,245,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,nessun candidato prodotto,2026-08-16T12:40:37,llama-3.3-70b,bedrock,native
+prog16_word_count_fsm,2,0.0000,0,5,False,False,0,12,0.005098,6835,245,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,nessun candidato prodotto,2026-08-16T12:40:45,llama-3.3-70b,bedrock,native
+prog16_word_count_fsm,3,0.0000,0,5,False,False,0,12,0.005098,6835,245,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.2,nessun candidato prodotto,2026-08-16T12:40:53,llama-3.3-70b,bedrock,native
+prog16_word_count_fsm,4,0.0000,0,5,False,False,0,12,0.005099,6835,247,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.2,nessun candidato prodotto,2026-08-16T12:41:00,llama-3.3-70b,bedrock,native
+prog16_word_count_fsm,5,0.0000,0,5,False,False,0,12,0.005098,6835,245,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.9,nessun candidato prodotto,2026-08-16T12:41:07,llama-3.3-70b,bedrock,native
+prog16_word_count_fsm,6,0.0000,0,5,False,False,0,12,0.005099,6835,247,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.0,nessun candidato prodotto,2026-08-16T12:41:14,llama-3.3-70b,bedrock,native
+prog16_word_count_fsm,7,0.0000,0,5,False,False,0,12,0.005098,6835,245,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,nessun candidato prodotto,2026-08-16T12:41:22,llama-3.3-70b,bedrock,native
+prog16_word_count_fsm,8,0.0000,0,5,False,False,0,12,0.005099,6835,247,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,nessun candidato prodotto,2026-08-16T12:41:30,llama-3.3-70b,bedrock,native
+prog17_whitespace_trim,1,0.0000,0,5,False,False,0,12,0.005557,7461,257,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,nessun candidato prodotto,2026-08-16T12:41:37,llama-3.3-70b,bedrock,native
+prog17_whitespace_trim,2,0.0000,0,5,False,False,0,12,0.005558,7461,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,nessun candidato prodotto,2026-08-16T12:41:44,llama-3.3-70b,bedrock,native
+prog17_whitespace_trim,3,0.0000,0,5,False,False,0,12,0.005558,7461,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.1,nessun candidato prodotto,2026-08-16T12:41:52,llama-3.3-70b,bedrock,native
+prog17_whitespace_trim,4,0.0000,0,5,False,False,0,12,0.005557,7461,257,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.2,nessun candidato prodotto,2026-08-16T12:41:59,llama-3.3-70b,bedrock,native
+prog17_whitespace_trim,5,0.0000,0,5,False,False,0,12,0.005604,7461,322,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,nessun candidato prodotto,2026-08-16T12:42:06,llama-3.3-70b,bedrock,native
+prog17_whitespace_trim,6,0.0000,0,5,False,False,0,12,0.005558,7461,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.0,nessun candidato prodotto,2026-08-16T12:42:13,llama-3.3-70b,bedrock,native
+prog17_whitespace_trim,7,0.0000,0,5,False,False,0,12,0.005557,7461,257,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.0,nessun candidato prodotto,2026-08-16T12:42:20,llama-3.3-70b,bedrock,native
+prog17_whitespace_trim,8,0.0000,0,5,False,False,0,12,0.005604,7461,322,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.3,nessun candidato prodotto,2026-08-16T12:42:28,llama-3.3-70b,bedrock,native
+prog18_caesar_cipher,1,0.0000,0,5,True,False,539,12,0.006626,8924,279,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T12:42:35,llama-3.3-70b,bedrock,native
+prog18_caesar_cipher,2,0.0000,0,5,False,False,0,12,0.006625,8924,278,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.9,nessun candidato prodotto,2026-08-16T12:42:42,llama-3.3-70b,bedrock,native
+prog18_caesar_cipher,3,0.0000,0,5,True,False,554,12,0.006630,8924,285,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T12:42:50,llama-3.3-70b,bedrock,native
+prog18_caesar_cipher,4,0.0000,0,5,True,False,537,12,0.006624,8924,276,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.8,[],2026-08-16T12:42:58,llama-3.3-70b,bedrock,native
+prog18_caesar_cipher,5,0.0000,0,5,True,False,543,12,0.006624,8924,276,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T12:43:06,llama-3.3-70b,bedrock,native
+prog18_caesar_cipher,6,0.0000,0,5,True,False,531,12,0.006624,8924,276,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T12:43:14,llama-3.3-70b,bedrock,native
+prog18_caesar_cipher,7,0.0000,0,5,True,False,537,12,0.006624,8924,276,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T12:43:22,llama-3.3-70b,bedrock,native
+prog18_caesar_cipher,8,0.0000,0,5,True,False,546,12,0.006625,8924,277,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,[],2026-08-16T12:43:29,llama-3.3-70b,bedrock,native
+prog19_palindrome_checker,1,0.8000,4,5,True,False,494,12,0.006356,8574,254,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,[],2026-08-16T12:43:37,llama-3.3-70b,bedrock,native
+prog19_palindrome_checker,2,0.8000,4,5,True,False,494,12,0.006356,8574,254,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T12:43:45,llama-3.3-70b,bedrock,native
+prog19_palindrome_checker,3,0.8000,4,5,True,False,493,12,0.006356,8574,254,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T12:43:53,llama-3.3-70b,bedrock,native
+prog19_palindrome_checker,4,0.8000,4,5,True,False,494,12,0.006356,8574,254,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.0,[],2026-08-16T12:44:00,llama-3.3-70b,bedrock,native
+prog19_palindrome_checker,5,0.8000,4,5,True,False,494,12,0.006356,8574,254,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T12:44:08,llama-3.3-70b,bedrock,native
+prog19_palindrome_checker,6,0.8000,4,5,True,False,494,12,0.006356,8574,254,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,[],2026-08-16T12:44:16,llama-3.3-70b,bedrock,native
+prog19_palindrome_checker,7,0.8000,4,5,True,False,493,12,0.006356,8574,254,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T12:44:23,llama-3.3-70b,bedrock,native
+prog19_palindrome_checker,8,0.8000,4,5,True,False,493,12,0.006356,8574,254,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,[],2026-08-16T12:44:31,llama-3.3-70b,bedrock,native
+prog20_anagram_checker,1,1.0000,5,5,True,False,879,12,0.006470,8580,406,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T12:44:39,llama-3.3-70b,bedrock,native
+prog20_anagram_checker,2,0.8000,4,5,True,False,946,12,0.006489,8580,433,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.5,[],2026-08-16T12:44:48,llama-3.3-70b,bedrock,native
+prog20_anagram_checker,3,0.8000,4,5,True,False,903,12,0.006474,8580,412,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T12:44:56,llama-3.3-70b,bedrock,native
+prog20_anagram_checker,4,1.0000,5,5,True,False,879,12,0.006470,8580,406,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T12:45:04,llama-3.3-70b,bedrock,native
+prog20_anagram_checker,5,1.0000,5,5,True,False,879,12,0.006470,8580,406,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T12:45:13,llama-3.3-70b,bedrock,native
+prog20_anagram_checker,6,0.8000,4,5,True,False,948,12,0.006491,8580,435,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,[],2026-08-16T12:45:22,llama-3.3-70b,bedrock,native
+prog20_anagram_checker,7,0.8000,4,5,True,False,903,12,0.006474,8580,412,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,[],2026-08-16T12:45:31,llama-3.3-70b,bedrock,native
+prog20_anagram_checker,8,0.8000,4,5,True,False,905,12,0.006476,8580,414,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T12:45:39,llama-3.3-70b,bedrock,native
+prog21_date_validator,1,0.6000,3,5,True,False,599,12,0.007286,9806,314,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T12:45:47,llama-3.3-70b,bedrock,native
+prog21_date_validator,2,0.6000,3,5,True,False,599,12,0.007286,9806,314,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T12:45:55,llama-3.3-70b,bedrock,native
+prog21_date_validator,3,0.6000,3,5,True,False,560,12,0.007270,9806,291,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T12:46:02,llama-3.3-70b,bedrock,native
+prog21_date_validator,4,0.6000,3,5,True,False,560,12,0.007270,9806,291,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T12:46:10,llama-3.3-70b,bedrock,native
+prog21_date_validator,5,0.6000,3,5,True,False,558,12,0.007279,9806,304,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T12:46:19,llama-3.3-70b,bedrock,native
+prog21_date_validator,6,0.6000,3,5,True,False,560,12,0.007270,9806,291,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.4,[],2026-08-16T12:46:27,llama-3.3-70b,bedrock,native
+prog21_date_validator,7,0.6000,3,5,True,False,560,12,0.007270,9806,291,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.7,[],2026-08-16T12:46:36,llama-3.3-70b,bedrock,native
+prog21_date_validator,8,0.6000,3,5,True,False,621,12,0.007287,9806,315,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,[],2026-08-16T12:46:43,llama-3.3-70b,bedrock,native
+prog22_snake_camel_convert,1,0.2000,1,5,True,False,362,12,0.008032,10961,194,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T12:46:51,llama-3.3-70b,bedrock,native
+prog22_snake_camel_convert,2,0.2000,1,5,True,False,362,12,0.008032,10961,194,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T12:46:58,llama-3.3-70b,bedrock,native
+prog22_snake_camel_convert,3,0.2000,1,5,True,False,362,12,0.008032,10961,194,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T12:47:06,llama-3.3-70b,bedrock,native
+prog22_snake_camel_convert,4,0.2000,1,5,True,False,362,12,0.008032,10961,194,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.1,[],2026-08-16T12:47:13,llama-3.3-70b,bedrock,native
+prog22_snake_camel_convert,5,0.2000,1,5,True,False,362,12,0.008032,10961,194,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T12:47:21,llama-3.3-70b,bedrock,native
+prog22_snake_camel_convert,6,0.2000,1,5,True,False,362,12,0.008032,10961,194,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T12:47:28,llama-3.3-70b,bedrock,native
+prog22_snake_camel_convert,7,0.2000,1,5,True,False,362,12,0.008032,10961,194,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T12:47:36,llama-3.3-70b,bedrock,native
+prog22_snake_camel_convert,8,0.2000,1,5,True,False,362,12,0.008032,10961,194,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.2,[],2026-08-16T12:47:43,llama-3.3-70b,bedrock,native
+prog23_longest_common_prefix,1,0.2000,1,5,True,False,433,12,0.006068,8212,216,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,[],2026-08-16T12:47:51,llama-3.3-70b,bedrock,native
+prog23_longest_common_prefix,2,0.6000,3,5,True,False,464,12,0.013179,18000,304,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.6,[],2026-08-16T12:48:02,llama-3.3-70b,bedrock,native
+prog23_longest_common_prefix,3,0.6000,3,5,True,False,366,12,0.006062,8212,207,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T12:48:10,llama-3.3-70b,bedrock,native
+prog23_longest_common_prefix,4,0.6000,3,5,True,False,428,12,0.006078,8212,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T12:48:17,llama-3.3-70b,bedrock,native
+prog23_longest_common_prefix,5,0.0000,0,5,False,False,326,12,0.007996,10885,221,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.0,"/w/candidate.c:9:13: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |         if (strlen(argv[i]) > 0x400) {
+      |             ^
+/w/candidate.c:9:1",2026-08-16T12:48:26,llama-3.3-70b,bedrock,native
+prog23_longest_common_prefix,6,0.6000,3,5,True,False,428,12,0.006078,8212,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T12:48:34,llama-3.3-70b,bedrock,native
+prog23_longest_common_prefix,7,0.6000,3,5,True,False,428,12,0.006078,8212,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.3,[],2026-08-16T12:48:41,llama-3.3-70b,bedrock,native
+prog23_longest_common_prefix,8,0.6000,3,5,True,False,428,12,0.006078,8212,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T12:48:48,llama-3.3-70b,bedrock,native
+prog24_query_string_parser,1,0.0000,0,5,False,False,0,12,0.006157,8350,202,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.6,nessun candidato prodotto,2026-08-16T12:48:55,llama-3.3-70b,bedrock,native
+prog24_query_string_parser,2,0.0000,0,5,False,False,0,12,0.006136,8350,172,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.5,nessun candidato prodotto,2026-08-16T12:49:01,llama-3.3-70b,bedrock,native
+prog24_query_string_parser,3,0.0000,0,5,False,False,0,12,0.006136,8350,172,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.2,nessun candidato prodotto,2026-08-16T12:49:08,llama-3.3-70b,bedrock,native
+prog24_query_string_parser,4,0.0000,0,5,False,False,0,12,0.006136,8350,172,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.4,nessun candidato prodotto,2026-08-16T12:49:14,llama-3.3-70b,bedrock,native
+prog24_query_string_parser,5,0.0000,0,5,False,False,0,12,0.006136,8350,172,us.meta.llama3-3-70b-instruct-v1:0,bedrock,5.9,nessun candidato prodotto,2026-08-16T12:49:20,llama-3.3-70b,bedrock,native
+prog24_query_string_parser,6,0.0000,0,5,False,False,0,12,0.006136,8350,172,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.3,nessun candidato prodotto,2026-08-16T12:49:26,llama-3.3-70b,bedrock,native
+prog24_query_string_parser,7,0.0000,0,5,False,False,0,12,0.006136,8350,172,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.2,nessun candidato prodotto,2026-08-16T12:49:33,llama-3.3-70b,bedrock,native
+prog24_query_string_parser,8,0.0000,0,5,False,False,0,12,0.006136,8350,172,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.3,nessun candidato prodotto,2026-08-16T12:49:40,llama-3.3-70b,bedrock,native
+prog25_balanced_multitype,1,0.0000,0,5,False,False,0,12,0.006636,8967,250,us.meta.llama3-3-70b-instruct-v1:0,bedrock,14.8,nessun candidato prodotto,2026-08-16T12:49:54,llama-3.3-70b,bedrock,native
+prog25_balanced_multitype,2,0.0000,0,5,False,False,0,12,0.006636,8967,250,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.9,nessun candidato prodotto,2026-08-16T12:50:01,llama-3.3-70b,bedrock,native
+prog25_balanced_multitype,3,0.8000,4,5,True,False,606,12,0.006665,8967,290,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T12:50:10,llama-3.3-70b,bedrock,native
+prog25_balanced_multitype,4,0.8000,4,5,True,False,566,12,0.006652,8967,272,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T12:50:17,llama-3.3-70b,bedrock,native
+prog25_balanced_multitype,5,1.0000,5,5,True,False,911,12,0.006733,8967,385,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,[],2026-08-16T12:50:26,llama-3.3-70b,bedrock,native
+prog25_balanced_multitype,6,1.0000,5,5,True,False,908,12,0.006733,8967,384,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,[],2026-08-16T12:50:35,llama-3.3-70b,bedrock,native
+prog25_balanced_multitype,7,0.0000,0,5,False,False,0,12,0.006737,8967,390,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,nessun candidato prodotto,2026-08-16T12:50:43,llama-3.3-70b,bedrock,native
+prog25_balanced_multitype,8,0.8000,4,5,True,False,659,12,0.006674,8967,303,us.meta.llama3-3-70b-instruct-v1:0,bedrock,12.0,[],2026-08-16T12:50:55,llama-3.3-70b,bedrock,native
+prog26_wildcard_match,1,0.6000,3,5,True,False,556,12,0.006572,8853,275,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,[],2026-08-16T12:51:03,llama-3.3-70b,bedrock,native
+prog26_wildcard_match,2,0.4000,2,5,True,False,598,12,0.006582,8853,288,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T12:51:11,llama-3.3-70b,bedrock,native
+prog26_wildcard_match,3,0.6000,3,5,True,False,556,12,0.006572,8853,275,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T12:51:19,llama-3.3-70b,bedrock,native
+prog26_wildcard_match,4,0.6000,3,5,True,False,560,12,0.006575,8853,279,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T12:51:27,llama-3.3-70b,bedrock,native
+prog26_wildcard_match,5,0.6000,3,5,True,False,556,12,0.006572,8853,275,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.3,[],2026-08-16T12:51:34,llama-3.3-70b,bedrock,native
+prog26_wildcard_match,6,0.6000,3,5,True,False,556,12,0.006572,8853,275,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.8,[],2026-08-16T12:51:42,llama-3.3-70b,bedrock,native
+prog26_wildcard_match,7,0.6000,3,5,True,False,560,12,0.006575,8853,279,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,[],2026-08-16T12:51:51,llama-3.3-70b,bedrock,native
+prog26_wildcard_match,8,0.6000,3,5,True,False,556,12,0.006572,8853,275,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,[],2026-08-16T12:52:00,llama-3.3-70b,bedrock,native
+prog27_soundex,1,0.0000,0,5,False,False,0,12,0.014072,19066,479,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.4,nessun candidato prodotto,2026-08-16T12:52:10,llama-3.3-70b,bedrock,native
+prog27_soundex,2,0.0000,0,5,False,False,0,12,0.014072,19066,479,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.6,nessun candidato prodotto,2026-08-16T12:52:21,llama-3.3-70b,bedrock,native
+prog27_soundex,3,0.2000,1,5,True,False,1428,12,0.015380,20781,580,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.1,[],2026-08-16T12:52:32,llama-3.3-70b,bedrock,native
+prog27_soundex,4,0.0000,0,5,False,False,0,12,0.014073,19066,480,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.2,nessun candidato prodotto,2026-08-16T12:52:41,llama-3.3-70b,bedrock,native
+prog27_soundex,5,0.0000,0,5,False,False,0,12,0.014072,19066,479,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.6,nessun candidato prodotto,2026-08-16T12:52:51,llama-3.3-70b,bedrock,native
+prog27_soundex,6,0.0000,0,5,False,False,0,12,0.014072,19066,479,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.1,nessun candidato prodotto,2026-08-16T12:53:01,llama-3.3-70b,bedrock,native
+prog27_soundex,7,0.0000,0,5,False,False,0,12,0.014072,19066,479,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.8,nessun candidato prodotto,2026-08-16T12:53:11,llama-3.3-70b,bedrock,native
+prog27_soundex,8,0.0000,0,5,False,False,0,12,0.014074,19066,481,us.meta.llama3-3-70b-instruct-v1:0,bedrock,15.9,nessun candidato prodotto,2026-08-16T12:53:27,llama-3.3-70b,bedrock,native
+prog28_levenshtein,1,0.4000,2,5,True,False,570,12,0.006042,8109,282,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.7,[],2026-08-16T12:53:37,llama-3.3-70b,bedrock,native
+prog28_levenshtein,2,0.4000,2,5,True,False,570,12,0.006042,8109,282,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T12:53:45,llama-3.3-70b,bedrock,native
+prog28_levenshtein,3,0.4000,2,5,True,False,570,12,0.006042,8109,282,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T12:53:53,llama-3.3-70b,bedrock,native
+prog28_levenshtein,4,0.4000,2,5,True,False,570,12,0.006042,8109,282,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.8,[],2026-08-16T12:54:01,llama-3.3-70b,bedrock,native
+prog28_levenshtein,5,0.4000,2,5,True,False,570,12,0.006042,8109,282,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.8,[],2026-08-16T12:54:09,llama-3.3-70b,bedrock,native
+prog28_levenshtein,6,0.4000,2,5,True,False,567,12,0.006040,8109,280,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.8,[],2026-08-16T12:54:17,llama-3.3-70b,bedrock,native
+prog28_levenshtein,7,0.4000,2,5,True,False,570,12,0.006042,8109,282,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.4,[],2026-08-16T12:54:25,llama-3.3-70b,bedrock,native
+prog28_levenshtein,8,0.4000,2,5,True,False,570,12,0.006042,8109,282,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,[],2026-08-16T12:54:33,llama-3.3-70b,bedrock,native
+prog29_roman_numeral_parser,1,0.0000,0,5,True,False,618,12,0.024465,33610,369,us.meta.llama3-3-70b-instruct-v1:0,bedrock,13.6,[],2026-08-16T12:54:47,llama-3.3-70b,bedrock,native
+prog29_roman_numeral_parser,2,0.0000,0,5,True,False,766,12,0.024534,33610,465,us.meta.llama3-3-70b-instruct-v1:0,bedrock,13.8,[],2026-08-16T12:55:00,llama-3.3-70b,bedrock,native
+prog29_roman_numeral_parser,3,0.0000,0,5,True,False,766,12,0.024534,33610,465,us.meta.llama3-3-70b-instruct-v1:0,bedrock,14.0,[],2026-08-16T12:55:14,llama-3.3-70b,bedrock,native
+prog29_roman_numeral_parser,4,0.0000,0,5,True,False,935,12,0.013566,18359,483,us.meta.llama3-3-70b-instruct-v1:0,bedrock,63.1,"[""Command '['/tmp/cand', 'MCMXCIV']' timed out after 10 seconds"", ""Command '['/tmp/cand', 'iv']' timed out after 10 seconds"", ""Command '['/tmp/cand', 'IIII']' timed out after 10 seconds""]",2026-08-16T12:56:18,llama-3.3-70b,bedrock,native
+prog29_roman_numeral_parser,5,0.0000,0,5,True,False,728,12,0.017385,23748,398,us.meta.llama3-3-70b-instruct-v1:0,bedrock,12.7,[],2026-08-16T12:56:30,llama-3.3-70b,bedrock,native
+prog29_roman_numeral_parser,6,0.0000,0,5,True,False,766,12,0.024534,33610,465,us.meta.llama3-3-70b-instruct-v1:0,bedrock,13.5,[],2026-08-16T12:56:44,llama-3.3-70b,bedrock,native
+prog29_roman_numeral_parser,7,0.0000,0,5,True,False,628,12,0.024470,33610,376,us.meta.llama3-3-70b-instruct-v1:0,bedrock,14.9,[],2026-08-16T12:56:59,llama-3.3-70b,bedrock,native
+prog29_roman_numeral_parser,8,0.0000,0,5,True,False,766,12,0.024534,33610,465,us.meta.llama3-3-70b-instruct-v1:0,bedrock,13.6,[],2026-08-16T12:57:12,llama-3.3-70b,bedrock,native
+prog30_escape_unescape,1,0.0000,0,5,True,False,386,12,0.008998,12301,196,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,[],2026-08-16T12:57:20,llama-3.3-70b,bedrock,native
+prog30_escape_unescape,2,0.0000,0,5,True,False,385,12,0.008998,12301,196,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T12:57:28,llama-3.3-70b,bedrock,native
+prog30_escape_unescape,3,0.0000,0,5,True,False,385,12,0.008998,12301,196,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.1,[],2026-08-16T12:57:39,llama-3.3-70b,bedrock,native
+prog30_escape_unescape,4,0.0000,0,5,True,False,385,12,0.008998,12301,196,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T12:57:47,llama-3.3-70b,bedrock,native
+prog30_escape_unescape,5,0.0000,0,5,True,False,385,12,0.008998,12301,196,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T12:57:54,llama-3.3-70b,bedrock,native
+prog30_escape_unescape,6,0.0000,0,5,True,False,385,12,0.008998,12301,196,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.3,[],2026-08-16T12:58:01,llama-3.3-70b,bedrock,native
+prog30_escape_unescape,7,0.0000,0,5,True,False,385,12,0.008998,12301,196,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.2,[],2026-08-16T12:58:09,llama-3.3-70b,bedrock,native
+prog30_escape_unescape,8,0.0000,0,5,True,False,385,12,0.008998,12301,196,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T12:58:16,llama-3.3-70b,bedrock,native
+prog31_gcd_lcm,1,0.4000,2,5,True,False,878,12,0.006039,8004,383,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,[],2026-08-16T12:58:25,llama-3.3-70b,bedrock,native
+prog31_gcd_lcm,2,0.4000,2,5,True,False,802,12,0.006013,8004,348,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T12:58:33,llama-3.3-70b,bedrock,native
+prog31_gcd_lcm,3,0.4000,2,5,True,False,801,12,0.006018,8004,355,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T12:58:41,llama-3.3-70b,bedrock,native
+prog31_gcd_lcm,4,0.4000,2,5,True,False,882,12,0.006040,8004,385,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T12:58:49,llama-3.3-70b,bedrock,native
+prog31_gcd_lcm,5,0.4000,2,5,True,False,882,12,0.006040,8004,385,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.0,[],2026-08-16T12:58:58,llama-3.3-70b,bedrock,native
+prog31_gcd_lcm,6,0.4000,2,5,True,False,882,12,0.006040,8004,385,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T12:59:07,llama-3.3-70b,bedrock,native
+prog31_gcd_lcm,7,0.4000,2,5,True,False,882,12,0.006040,8004,385,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T12:59:15,llama-3.3-70b,bedrock,native
+prog31_gcd_lcm,8,0.4000,2,5,True,False,802,12,0.006013,8004,348,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.4,[],2026-08-16T12:59:24,llama-3.3-70b,bedrock,native
+prog32_prime_factorization,1,0.2000,1,5,True,False,519,12,0.005314,7114,267,us.meta.llama3-3-70b-instruct-v1:0,bedrock,18.5,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T12:59:42,llama-3.3-70b,bedrock,native
+prog32_prime_factorization,2,0.2000,1,5,True,False,506,12,0.005309,7114,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,18.0,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T13:00:00,llama-3.3-70b,bedrock,native
+prog32_prime_factorization,3,0.2000,1,5,True,False,506,12,0.005309,7114,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,19.0,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T13:00:19,llama-3.3-70b,bedrock,native
+prog32_prime_factorization,4,0.2000,1,5,True,False,506,12,0.005309,7114,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,18.9,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T13:00:38,llama-3.3-70b,bedrock,native
+prog32_prime_factorization,5,0.2000,1,5,True,False,506,12,0.005309,7114,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,17.9,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T13:00:56,llama-3.3-70b,bedrock,native
+prog32_prime_factorization,6,0.2000,1,5,True,False,519,12,0.005314,7114,267,us.meta.llama3-3-70b-instruct-v1:0,bedrock,19.0,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T13:01:15,llama-3.3-70b,bedrock,native
+prog32_prime_factorization,7,0.2000,1,5,True,False,506,12,0.005309,7114,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,18.1,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T13:01:33,llama-3.3-70b,bedrock,native
+prog32_prime_factorization,8,0.2000,1,5,True,False,508,12,0.005309,7114,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,18.1,"[""Command '['/tmp/cand', '999999937']' timed out after 10 seconds""]",2026-08-16T13:01:51,llama-3.3-70b,bedrock,native
+prog33_mod_pow,1,0.8000,4,5,True,False,946,12,0.005518,7260,404,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,[],2026-08-16T13:02:00,llama-3.3-70b,bedrock,native
+prog33_mod_pow,2,0.8000,4,5,True,False,946,12,0.005518,7260,404,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,[],2026-08-16T13:02:09,llama-3.3-70b,bedrock,native
+prog33_mod_pow,3,0.8000,4,5,True,False,833,12,0.005484,7260,357,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T13:02:17,llama-3.3-70b,bedrock,native
+prog33_mod_pow,4,0.8000,4,5,True,False,946,12,0.005518,7260,404,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,[],2026-08-16T13:02:26,llama-3.3-70b,bedrock,native
+prog33_mod_pow,5,0.8000,4,5,True,False,858,12,0.005494,7260,370,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.4,[],2026-08-16T13:02:36,llama-3.3-70b,bedrock,native
+prog33_mod_pow,6,0.8000,4,5,True,False,833,12,0.005484,7260,357,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.6,[],2026-08-16T13:02:45,llama-3.3-70b,bedrock,native
+prog33_mod_pow,7,0.8000,4,5,True,False,833,12,0.005484,7260,357,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.7,[],2026-08-16T13:02:54,llama-3.3-70b,bedrock,native
+prog33_mod_pow,8,0.8000,4,5,True,False,946,12,0.005518,7260,404,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:03:02,llama-3.3-70b,bedrock,native
+prog34_fibonacci_memo,1,0.8000,4,5,True,False,586,12,0.005925,7915,314,us.meta.llama3-3-70b-instruct-v1:0,bedrock,12.4,[],2026-08-16T13:03:14,llama-3.3-70b,bedrock,native
+prog34_fibonacci_memo,2,0.8000,4,5,True,False,608,12,0.005928,7915,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.4,[],2026-08-16T13:03:24,llama-3.3-70b,bedrock,native
+prog34_fibonacci_memo,3,0.8000,4,5,True,False,587,12,0.005924,7915,313,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.1,[],2026-08-16T13:03:34,llama-3.3-70b,bedrock,native
+prog34_fibonacci_memo,4,0.8000,4,5,True,False,587,12,0.005925,7915,314,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.6,[],2026-08-16T13:03:44,llama-3.3-70b,bedrock,native
+prog34_fibonacci_memo,5,0.8000,4,5,True,False,608,12,0.005928,7915,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.1,[],2026-08-16T13:03:55,llama-3.3-70b,bedrock,native
+prog34_fibonacci_memo,6,0.8000,4,5,True,False,576,12,0.005936,7936,308,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.9,[],2026-08-16T13:04:05,llama-3.3-70b,bedrock,native
+prog34_fibonacci_memo,7,0.8000,4,5,True,False,587,12,0.005924,7915,313,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.9,[],2026-08-16T13:04:15,llama-3.3-70b,bedrock,native
+prog34_fibonacci_memo,8,0.8000,4,5,True,False,608,12,0.005928,7915,318,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.9,[],2026-08-16T13:04:26,llama-3.3-70b,bedrock,native
+prog35_perfect_numbers,1,0.8000,4,5,True,False,724,12,0.005537,7350,340,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.9,[],2026-08-16T13:04:38,llama-3.3-70b,bedrock,native
+prog35_perfect_numbers,2,0.8000,4,5,True,False,724,12,0.005537,7350,340,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.0,[],2026-08-16T13:04:48,llama-3.3-70b,bedrock,native
+prog35_perfect_numbers,3,0.8000,4,5,True,False,724,12,0.005537,7350,340,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.4,[],2026-08-16T13:04:57,llama-3.3-70b,bedrock,native
+prog35_perfect_numbers,4,0.8000,4,5,True,False,724,12,0.005537,7350,340,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.5,[],2026-08-16T13:05:05,llama-3.3-70b,bedrock,native
+prog35_perfect_numbers,5,0.8000,4,5,True,False,724,12,0.005537,7350,340,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.7,[],2026-08-16T13:05:14,llama-3.3-70b,bedrock,native
+prog35_perfect_numbers,6,0.8000,4,5,True,False,724,12,0.005537,7350,340,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,[],2026-08-16T13:05:23,llama-3.3-70b,bedrock,native
+prog35_perfect_numbers,7,0.8000,4,5,True,False,724,12,0.005537,7350,340,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.0,[],2026-08-16T13:05:33,llama-3.3-70b,bedrock,native
+prog35_perfect_numbers,8,0.8000,4,5,True,False,724,12,0.005537,7350,340,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,[],2026-08-16T13:05:42,llama-3.3-70b,bedrock,native
+prog36_pascal_triangle,1,0.6000,3,5,True,False,720,12,0.005692,7559,346,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,[],2026-08-16T13:05:51,llama-3.3-70b,bedrock,native
+prog36_pascal_triangle,2,0.6000,3,5,True,False,743,12,0.005702,7559,360,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.9,[],2026-08-16T13:06:01,llama-3.3-70b,bedrock,native
+prog36_pascal_triangle,3,0.6000,3,5,True,False,743,12,0.005702,7559,360,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.5,[],2026-08-16T13:06:10,llama-3.3-70b,bedrock,native
+prog36_pascal_triangle,4,0.6000,3,5,True,False,743,12,0.005702,7559,360,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.0,[],2026-08-16T13:06:20,llama-3.3-70b,bedrock,native
+prog36_pascal_triangle,5,0.6000,3,5,True,False,720,12,0.005692,7559,346,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.7,[],2026-08-16T13:06:30,llama-3.3-70b,bedrock,native
+prog36_pascal_triangle,6,0.6000,3,5,True,False,720,12,0.005692,7559,346,us.meta.llama3-3-70b-instruct-v1:0,bedrock,14.3,[],2026-08-16T13:06:44,llama-3.3-70b,bedrock,native
+prog36_pascal_triangle,7,0.6000,3,5,True,False,743,12,0.005702,7559,360,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,[],2026-08-16T13:06:53,llama-3.3-70b,bedrock,native
+prog36_pascal_triangle,8,0.6000,3,5,True,False,743,12,0.005702,7559,360,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.5,[],2026-08-16T13:07:03,llama-3.3-70b,bedrock,native
+prog37_binomial_coefficient,1,0.0000,0,5,False,False,465,12,0.006435,8660,278,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.3,"/w/candidate.c:13:13: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     int n = strtol(argv[1], NULL, 10);
+      |             ^
+/w/candidate",2026-08-16T13:07:12,llama-3.3-70b,bedrock,native
+prog37_binomial_coefficient,2,0.0000,0,5,False,False,465,12,0.006435,8660,278,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.7,"/w/candidate.c:13:13: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     int n = strtol(argv[1], NULL, 10);
+      |             ^
+/w/candidate",2026-08-16T13:07:23,llama-3.3-70b,bedrock,native
+prog37_binomial_coefficient,3,0.6000,3,5,True,False,486,12,0.006440,8660,284,us.meta.llama3-3-70b-instruct-v1:0,bedrock,19.3,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T13:07:42,llama-3.3-70b,bedrock,native
+prog37_binomial_coefficient,4,0.6000,3,5,True,False,486,12,0.006439,8660,283,us.meta.llama3-3-70b-instruct-v1:0,bedrock,19.0,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T13:08:01,llama-3.3-70b,bedrock,native
+prog37_binomial_coefficient,5,0.0000,0,5,False,False,465,12,0.006435,8660,278,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.5,"/w/candidate.c:13:13: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     int n = strtol(argv[1], NULL, 10);
+      |             ^
+/w/candidate",2026-08-16T13:08:12,llama-3.3-70b,bedrock,native
+prog37_binomial_coefficient,6,0.6000,3,5,True,False,462,12,0.006433,8660,275,us.meta.llama3-3-70b-instruct-v1:0,bedrock,19.5,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T13:08:31,llama-3.3-70b,bedrock,native
+prog37_binomial_coefficient,7,0.6000,3,5,True,False,486,12,0.006440,8660,284,us.meta.llama3-3-70b-instruct-v1:0,bedrock,19.1,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T13:08:50,llama-3.3-70b,bedrock,native
+prog37_binomial_coefficient,8,0.6000,3,5,True,False,536,12,0.006457,8660,308,us.meta.llama3-3-70b-instruct-v1:0,bedrock,19.6,"[""Command '['/tmp/cand', '60', '30']' timed out after 10 seconds""]",2026-08-16T13:09:10,llama-3.3-70b,bedrock,native
+prog38_continued_fraction,1,0.0000,0,5,True,False,93,12,0.012860,17729,132,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.0,[],2026-08-16T13:09:20,llama-3.3-70b,bedrock,native
+prog38_continued_fraction,2,0.0000,0,5,False,False,0,12,0.006869,9212,328,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.1,nessun candidato prodotto,2026-08-16T13:09:30,llama-3.3-70b,bedrock,native
+prog38_continued_fraction,3,0.0000,0,5,True,False,102,12,0.015984,22047,153,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.6,[],2026-08-16T13:09:41,llama-3.3-70b,bedrock,native
+prog38_continued_fraction,4,0.0000,0,5,False,False,455,12,0.012966,17732,276,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.4,"/w/candidate.c:8:17: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     long num1 = strtol(argv[1], NULL, 10);
+      |                 ^
+/w/ca",2026-08-16T13:09:51,llama-3.3-70b,bedrock,native
+prog38_continued_fraction,5,0.0000,0,5,False,False,0,12,0.006858,9212,313,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.3,nessun candidato prodotto,2026-08-16T13:09:58,llama-3.3-70b,bedrock,native
+prog38_continued_fraction,6,0.0000,0,5,False,False,0,12,0.009926,13454,332,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,nessun candidato prodotto,2026-08-16T13:10:07,llama-3.3-70b,bedrock,native
+prog38_continued_fraction,7,0.0000,0,5,False,False,0,12,0.006869,9212,328,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,nessun candidato prodotto,2026-08-16T13:10:15,llama-3.3-70b,bedrock,native
+prog38_continued_fraction,8,0.0000,0,5,False,False,0,12,0.006869,9212,328,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,nessun candidato prodotto,2026-08-16T13:10:23,llama-3.3-70b,bedrock,native
+prog39_horner,1,0.0000,0,5,False,False,0,12,0.006570,8898,227,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,nessun candidato prodotto,2026-08-16T13:10:31,llama-3.3-70b,bedrock,native
+prog39_horner,2,0.0000,0,5,False,False,0,12,0.006570,8898,227,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,nessun candidato prodotto,2026-08-16T13:10:40,llama-3.3-70b,bedrock,native
+prog39_horner,3,0.0000,0,5,False,False,0,12,0.006570,8898,227,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.7,nessun candidato prodotto,2026-08-16T13:10:46,llama-3.3-70b,bedrock,native
+prog39_horner,4,0.0000,0,5,False,False,0,12,0.006570,8898,227,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.6,nessun candidato prodotto,2026-08-16T13:10:53,llama-3.3-70b,bedrock,native
+prog39_horner,5,0.0000,0,5,False,False,0,12,0.006566,8898,221,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.0,nessun candidato prodotto,2026-08-16T13:11:00,llama-3.3-70b,bedrock,native
+prog39_horner,6,0.0000,0,5,False,False,0,12,0.006570,8898,227,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,nessun candidato prodotto,2026-08-16T13:11:07,llama-3.3-70b,bedrock,native
+prog39_horner,7,0.0000,0,5,False,False,0,12,0.006566,8898,221,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.5,nessun candidato prodotto,2026-08-16T13:11:14,llama-3.3-70b,bedrock,native
+prog39_horner,8,0.0000,0,5,False,False,0,12,0.006570,8898,227,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.7,nessun candidato prodotto,2026-08-16T13:11:21,llama-3.3-70b,bedrock,native
+prog40_bisection_root,1,0.2000,1,5,True,False,489,12,0.004530,6044,247,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.5,[],2026-08-16T13:11:29,llama-3.3-70b,bedrock,native
+prog40_bisection_root,2,0.2000,1,5,True,False,463,12,0.004522,6044,237,us.meta.llama3-3-70b-instruct-v1:0,bedrock,13.1,[],2026-08-16T13:11:42,llama-3.3-70b,bedrock,native
+prog40_bisection_root,3,0.4000,2,5,True,False,475,12,0.004527,6044,243,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T13:11:50,llama-3.3-70b,bedrock,native
+prog40_bisection_root,4,0.4000,2,5,True,False,475,12,0.004527,6044,243,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T13:11:58,llama-3.3-70b,bedrock,native
+prog40_bisection_root,5,0.2000,1,5,True,False,482,12,0.004527,6044,243,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T13:12:05,llama-3.3-70b,bedrock,native
+prog40_bisection_root,6,0.4000,2,5,True,False,475,12,0.004527,6044,243,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.5,[],2026-08-16T13:12:12,llama-3.3-70b,bedrock,native
+prog40_bisection_root,7,0.2000,1,5,True,False,489,12,0.004530,6044,247,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.8,[],2026-08-16T13:12:20,llama-3.3-70b,bedrock,native
+prog40_bisection_root,8,0.2000,1,5,True,False,489,12,0.004530,6044,247,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T13:12:28,llama-3.3-70b,bedrock,native
+prog41_series_sum,1,0.0000,0,5,False,False,0,12,0.006537,8760,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,nessun candidato prodotto,2026-08-16T13:12:36,llama-3.3-70b,bedrock,native
+prog41_series_sum,2,0.0000,0,5,False,False,0,12,0.006537,8760,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,nessun candidato prodotto,2026-08-16T13:12:44,llama-3.3-70b,bedrock,native
+prog41_series_sum,3,0.0000,0,5,False,False,0,12,0.006537,8760,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,nessun candidato prodotto,2026-08-16T13:12:52,llama-3.3-70b,bedrock,native
+prog41_series_sum,4,0.0000,0,5,False,False,0,12,0.006537,8760,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,nessun candidato prodotto,2026-08-16T13:12:59,llama-3.3-70b,bedrock,native
+prog41_series_sum,5,0.0000,0,5,False,False,0,12,0.006540,8760,323,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,nessun candidato prodotto,2026-08-16T13:13:07,llama-3.3-70b,bedrock,native
+prog41_series_sum,6,0.0000,0,5,False,False,0,12,0.006537,8760,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.2,nessun candidato prodotto,2026-08-16T13:13:14,llama-3.3-70b,bedrock,native
+prog41_series_sum,7,0.0000,0,5,True,False,666,12,0.006537,8760,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T13:13:22,llama-3.3-70b,bedrock,native
+prog41_series_sum,8,0.0000,0,5,False,False,0,12,0.006537,8760,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.1,nessun candidato prodotto,2026-08-16T13:13:29,llama-3.3-70b,bedrock,native
+prog42_collatz,1,0.4000,2,5,True,False,783,12,0.004854,6385,357,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.7,[],2026-08-16T13:13:39,llama-3.3-70b,bedrock,native
+prog42_collatz,2,0.2000,1,5,True,False,856,12,0.004875,6385,386,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.7,[],2026-08-16T13:13:48,llama-3.3-70b,bedrock,native
+prog42_collatz,3,0.4000,2,5,True,False,917,12,0.004879,6385,392,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.9,[],2026-08-16T13:13:58,llama-3.3-70b,bedrock,native
+prog42_collatz,4,0.0000,0,5,False,False,0,12,0.004877,6385,388,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,nessun candidato prodotto,2026-08-16T13:14:06,llama-3.3-70b,bedrock,native
+prog42_collatz,5,0.2000,1,5,True,False,874,12,0.004875,6385,386,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.0,[],2026-08-16T13:14:15,llama-3.3-70b,bedrock,native
+prog42_collatz,6,0.2000,1,5,True,False,874,12,0.004875,6385,386,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T13:14:24,llama-3.3-70b,bedrock,native
+prog42_collatz,7,0.2000,1,5,True,False,874,12,0.004875,6385,386,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:14:32,llama-3.3-70b,bedrock,native
+prog42_collatz,8,0.0000,0,5,False,False,0,12,0.004877,6385,388,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.3,nessun candidato prodotto,2026-08-16T13:14:39,llama-3.3-70b,bedrock,native
+prog43_catalan,1,0.0000,0,5,False,False,0,12,0.005159,6872,293,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,nessun candidato prodotto,2026-08-16T13:14:47,llama-3.3-70b,bedrock,native
+prog43_catalan,2,0.0000,0,5,True,False,531,12,0.005142,6872,270,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:14:55,llama-3.3-70b,bedrock,native
+prog43_catalan,3,0.0000,0,5,False,False,0,12,0.005160,6872,295,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.9,nessun candidato prodotto,2026-08-16T13:15:02,llama-3.3-70b,bedrock,native
+prog43_catalan,4,0.0000,0,5,False,False,0,12,0.005153,6872,285,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.4,nessun candidato prodotto,2026-08-16T13:15:09,llama-3.3-70b,bedrock,native
+prog43_catalan,5,0.0000,0,5,False,False,0,12,0.005160,6872,295,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.2,nessun candidato prodotto,2026-08-16T13:15:16,llama-3.3-70b,bedrock,native
+prog43_catalan,6,0.0000,0,5,True,False,531,12,0.005142,6872,270,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.5,[],2026-08-16T13:15:24,llama-3.3-70b,bedrock,native
+prog43_catalan,7,0.0000,0,5,True,False,531,12,0.005142,6872,270,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T13:15:32,llama-3.3-70b,bedrock,native
+prog43_catalan,8,0.0000,0,5,True,False,513,12,0.005134,6872,259,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.4,[],2026-08-16T13:15:40,llama-3.3-70b,bedrock,native
+prog44_miller_rabin,1,0.6000,3,5,True,False,642,12,0.008985,12172,307,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,[],2026-08-16T13:15:48,llama-3.3-70b,bedrock,native
+prog44_miller_rabin,2,0.6000,3,5,True,False,648,12,0.008986,12172,309,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T13:15:57,llama-3.3-70b,bedrock,native
+prog44_miller_rabin,3,0.6000,3,5,True,False,648,12,0.008986,12172,309,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T13:16:05,llama-3.3-70b,bedrock,native
+prog44_miller_rabin,4,0.0000,0,5,False,False,0,12,0.008988,12172,311,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,nessun candidato prodotto,2026-08-16T13:16:13,llama-3.3-70b,bedrock,native
+prog44_miller_rabin,5,0.6000,3,5,True,False,648,12,0.008986,12172,309,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:16:21,llama-3.3-70b,bedrock,native
+prog44_miller_rabin,6,0.6000,3,5,True,False,648,12,0.008986,12172,308,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.8,[],2026-08-16T13:16:29,llama-3.3-70b,bedrock,native
+prog44_miller_rabin,7,0.6000,3,5,True,False,642,12,0.008985,12172,307,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.4,[],2026-08-16T13:16:37,llama-3.3-70b,bedrock,native
+prog44_miller_rabin,8,0.6000,3,5,True,False,648,12,0.008986,12172,309,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T13:16:46,llama-3.3-70b,bedrock,native
+prog45_josephus,1,0.4000,2,5,True,False,621,12,0.005382,7172,303,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:16:54,llama-3.3-70b,bedrock,native
+prog45_josephus,2,0.4000,2,5,True,False,621,12,0.005382,7172,303,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T13:17:02,llama-3.3-70b,bedrock,native
+prog45_josephus,3,0.4000,2,5,True,False,621,12,0.005382,7172,303,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:17:10,llama-3.3-70b,bedrock,native
+prog45_josephus,4,0.4000,2,5,True,False,579,12,0.005371,7172,288,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.8,[],2026-08-16T13:17:18,llama-3.3-70b,bedrock,native
+prog45_josephus,5,0.4000,2,5,True,False,601,12,0.005376,7172,294,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T13:17:26,llama-3.3-70b,bedrock,native
+prog45_josephus,6,0.4000,2,5,True,False,621,12,0.005382,7172,303,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T13:17:34,llama-3.3-70b,bedrock,native
+prog45_josephus,7,0.4000,2,5,True,False,621,12,0.005382,7172,303,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:17:42,llama-3.3-70b,bedrock,native
+prog45_josephus,8,0.4000,2,5,True,False,621,12,0.005382,7172,303,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.4,[],2026-08-16T13:17:52,llama-3.3-70b,bedrock,native
+prog46_postfix_stack,1,0.2000,1,5,True,False,329,12,0.008999,12312,186,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,[],2026-08-16T13:18:00,llama-3.3-70b,bedrock,native
+prog46_postfix_stack,2,0.0000,0,5,False,False,228,12,0.012792,17593,174,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.0,"/w/candidate.c:9:15: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     int num = strtol(str, NULL, 10);
+      |               ^
+/w/candidate.",2026-08-16T13:18:09,llama-3.3-70b,bedrock,native
+prog46_postfix_stack,3,0.0000,0,5,False,False,526,12,0.012871,17593,284,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.3,"/w/candidate.c:25:16: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |     long num = strtol(arg, NULL, 10);
+      |                ^
+/w/candida",2026-08-16T13:18:18,llama-3.3-70b,bedrock,native
+prog46_postfix_stack,4,0.0000,0,5,False,False,526,12,0.012871,17593,284,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.4,"/w/candidate.c:25:16: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |     long num = strtol(arg, NULL, 10);
+      |                ^
+/w/candida",2026-08-16T13:18:27,llama-3.3-70b,bedrock,native
+prog46_postfix_stack,5,0.2000,1,5,True,False,330,12,0.008999,12312,187,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,[],2026-08-16T13:18:35,llama-3.3-70b,bedrock,native
+prog46_postfix_stack,6,0.0000,0,5,False,False,605,12,0.012892,17593,312,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.5,"/w/candidate.c:12:19: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |         int num = strtol(arg + 1, NULL, 10);
+      |                   ^
+",2026-08-16T13:18:45,llama-3.3-70b,bedrock,native
+prog46_postfix_stack,7,0.2000,1,5,True,False,329,12,0.008999,12312,186,us.meta.llama3-3-70b-instruct-v1:0,bedrock,6.9,[],2026-08-16T13:18:52,llama-3.3-70b,bedrock,native
+prog46_postfix_stack,8,0.0000,0,5,False,False,534,12,0.012880,17593,296,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.2,"/w/candidate.c:25:16: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |     long num = strtol(arg, NULL, 10);
+      |                ^
+/w/candida",2026-08-16T13:19:01,llama-3.3-70b,bedrock,native
+prog47_circular_queue,1,0.2000,1,5,True,False,540,12,0.006947,9382,267,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.5,[],2026-08-16T13:19:10,llama-3.3-70b,bedrock,native
+prog47_circular_queue,2,0.2000,1,5,True,False,567,12,0.009328,12639,316,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.5,[],2026-08-16T13:19:19,llama-3.3-70b,bedrock,native
+prog47_circular_queue,3,0.2000,1,5,True,False,538,12,0.006946,9382,265,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.6,[],2026-08-16T13:19:27,llama-3.3-70b,bedrock,native
+prog47_circular_queue,4,0.2000,1,5,True,False,559,12,0.012502,17044,320,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.1,[],2026-08-16T13:19:38,llama-3.3-70b,bedrock,native
+prog47_circular_queue,5,0.0000,0,5,False,False,771,12,0.012547,17044,383,us.meta.llama3-3-70b-instruct-v1:0,bedrock,14.5,"/w/candidate.c:11:9: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     if (strcmp(command, ""ENQ"") == 0) {
+      |         ^
+/w/candidate.c:11:",2026-08-16T13:19:53,llama-3.3-70b,bedrock,native
+prog47_circular_queue,6,0.0000,0,5,False,False,606,12,0.009329,12639,318,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,"/w/candidate.c:9:44: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |                 printf(""ENQ %ld\n"", (long) strtol(argv[i] + 1, NULL, 10));",2026-08-16T13:20:02,llama-3.3-70b,bedrock,native
+prog47_circular_queue,7,0.2000,1,5,True,False,556,12,0.012502,17044,320,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.8,[],2026-08-16T13:20:13,llama-3.3-70b,bedrock,native
+prog47_circular_queue,8,0.2000,1,5,True,False,554,12,0.009321,12639,307,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.8,[],2026-08-16T13:20:22,llama-3.3-70b,bedrock,native
+prog48_sorted_linked_list,1,0.0000,0,5,True,False,689,12,0.004718,6243,310,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.3,[],2026-08-16T13:20:32,llama-3.3-70b,bedrock,native
+prog48_sorted_linked_list,2,0.0000,0,5,True,False,741,12,0.004725,6243,319,us.meta.llama3-3-70b-instruct-v1:0,bedrock,48.7,"[""Command '['/tmp/cand', '5', '3', '8', '1']' timed out after 10 seconds"", ""Command '['/tmp/cand', '4', '4', '4']' timed out after 10 seconds"", ""Command '['/tmp/cand', '15', '14', '13', '12', '11', '10', '9', '8', '7', '6', '5', '4', '3', '2', '""]",2026-08-16T13:21:20,llama-3.3-70b,bedrock,native
+prog48_sorted_linked_list,3,0.0000,0,5,True,False,689,12,0.004718,6243,310,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.2,[],2026-08-16T13:21:30,llama-3.3-70b,bedrock,native
+prog48_sorted_linked_list,4,0.0000,0,5,True,False,648,12,0.004710,6243,299,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.5,[],2026-08-16T13:21:38,llama-3.3-70b,bedrock,native
+prog48_sorted_linked_list,5,0.0000,0,5,True,False,689,12,0.004718,6243,310,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:21:46,llama-3.3-70b,bedrock,native
+prog48_sorted_linked_list,6,0.0000,0,5,True,False,1212,12,0.006072,7955,478,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.3,[],2026-08-16T13:21:57,llama-3.3-70b,bedrock,native
+prog48_sorted_linked_list,7,0.8000,4,5,True,False,752,12,0.004735,6243,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.3,[],2026-08-16T13:22:06,llama-3.3-70b,bedrock,native
+prog48_sorted_linked_list,8,0.0000,0,5,False,False,924,12,0.004360,5695,361,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.2,"/w/candidate.c:28:35: error: use of undeclared identifier 'val'
+   28 |         printf(""%ld "", ((long *)(&val))[current]);
+      |                                   ^
+/w/candidate.c:29:21: error: use of undeclared identifier 'new_node'
+   29 |         current = (&new_node)[current];
+      |         ",2026-08-16T13:22:15,llama-3.3-70b,bedrock,native
+prog49_bst,1,0.0000,0,5,True,False,4150,12,0.007967,10004,1061,us.meta.llama3-3-70b-instruct-v1:0,bedrock,14.6,[],2026-08-16T13:22:30,llama-3.3-70b,bedrock,native
+prog49_bst,2,0.0000,0,5,True,False,4126,12,0.007960,10004,1052,us.meta.llama3-3-70b-instruct-v1:0,bedrock,13.1,[],2026-08-16T13:22:43,llama-3.3-70b,bedrock,native
+prog49_bst,3,0.0000,0,5,True,False,2503,12,0.007767,10004,784,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.7,[],2026-08-16T13:22:54,llama-3.3-70b,bedrock,native
+prog49_bst,4,0.0000,0,5,True,False,2067,12,0.007707,10004,700,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.5,[],2026-08-16T13:23:04,llama-3.3-70b,bedrock,native
+prog49_bst,5,0.0000,0,5,True,False,4000,12,0.007944,10004,1030,us.meta.llama3-3-70b-instruct-v1:0,bedrock,12.3,[],2026-08-16T13:23:16,llama-3.3-70b,bedrock,native
+prog49_bst,6,0.0000,0,5,False,False,2308,12,0.023071,31220,823,us.meta.llama3-3-70b-instruct-v1:0,bedrock,18.7,"/w/candidate.c:18:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   18 |         printf(""Memory error
+      |                ^
+/w/candidate.c:18:16: error: expected expression
+/w/candidate.c:19:1: warning: missing terminating '""' character [-Winvalid-pp-token]
+   19 | "");
+      ",2026-08-16T13:23:35,llama-3.3-70b,bedrock,native
+prog49_bst,7,0.2000,1,5,True,False,2091,12,0.014471,19374,725,us.meta.llama3-3-70b-instruct-v1:0,bedrock,14.8,[],2026-08-16T13:23:50,llama-3.3-70b,bedrock,native
+prog49_bst,8,0.0000,0,5,True,False,2051,12,0.007705,10004,698,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.9,[],2026-08-16T13:24:01,llama-3.3-70b,bedrock,native
+prog50_binary_heap,1,0.2000,1,5,True,False,748,12,0.008583,11592,329,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,[],2026-08-16T13:24:10,llama-3.3-70b,bedrock,native
+prog50_binary_heap,2,0.2000,1,5,True,False,750,12,0.008585,11592,331,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,[],2026-08-16T13:24:19,llama-3.3-70b,bedrock,native
+prog50_binary_heap,3,0.2000,1,5,True,False,705,12,0.008568,11592,308,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.3,[],2026-08-16T13:24:28,llama-3.3-70b,bedrock,native
+prog50_binary_heap,4,0.2000,1,5,True,False,705,12,0.008568,11592,308,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.6,[],2026-08-16T13:24:38,llama-3.3-70b,bedrock,native
+prog50_binary_heap,5,0.2000,1,5,True,False,430,12,0.008504,11592,219,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.7,[],2026-08-16T13:24:47,llama-3.3-70b,bedrock,native
+prog50_binary_heap,6,0.2000,1,5,True,False,381,12,0.008491,11592,201,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:24:55,llama-3.3-70b,bedrock,native
+prog50_binary_heap,7,0.2000,1,5,True,False,430,12,0.008504,11592,219,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T13:25:03,llama-3.3-70b,bedrock,native
+prog50_binary_heap,8,0.2000,1,5,True,False,431,12,0.008503,11592,218,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T13:25:12,llama-3.3-70b,bedrock,native
+prog51_union_find,1,0.0000,0,5,False,False,0,12,0.009381,12473,556,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.9,nessun candidato prodotto,2026-08-16T13:25:22,llama-3.3-70b,bedrock,native
+prog51_union_find,2,0.0000,0,5,False,False,0,12,0.009381,12473,556,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.7,nessun candidato prodotto,2026-08-16T13:25:31,llama-3.3-70b,bedrock,native
+prog51_union_find,3,0.0000,0,5,False,False,0,12,0.009381,12473,556,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.0,nessun candidato prodotto,2026-08-16T13:25:42,llama-3.3-70b,bedrock,native
+prog51_union_find,4,0.0000,0,5,False,False,0,12,0.009381,12473,556,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.3,nessun candidato prodotto,2026-08-16T13:25:52,llama-3.3-70b,bedrock,native
+prog51_union_find,5,0.0000,0,5,False,False,0,12,0.009381,12473,556,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,nessun candidato prodotto,2026-08-16T13:26:00,llama-3.3-70b,bedrock,native
+prog51_union_find,6,0.0000,0,5,False,False,0,12,0.009385,12473,562,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,nessun candidato prodotto,2026-08-16T13:26:10,llama-3.3-70b,bedrock,native
+prog51_union_find,7,0.0000,0,5,True,False,1414,12,0.009375,12473,548,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.0,[],2026-08-16T13:26:21,llama-3.3-70b,bedrock,native
+prog51_union_find,8,0.0000,0,5,False,False,0,12,0.009381,12473,556,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.7,nessun candidato prodotto,2026-08-16T13:26:30,llama-3.3-70b,bedrock,native
+prog52_bfs_grid,1,0.0000,0,5,True,False,592,12,0.008352,11300,300,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,[],2026-08-16T13:26:39,llama-3.3-70b,bedrock,native
+prog52_bfs_grid,2,0.0000,0,5,True,False,592,12,0.008352,11300,300,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,[],2026-08-16T13:26:48,llama-3.3-70b,bedrock,native
+prog52_bfs_grid,3,0.0000,0,5,True,False,419,12,0.011737,16065,236,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.6,[],2026-08-16T13:26:57,llama-3.3-70b,bedrock,native
+prog52_bfs_grid,4,0.0000,0,5,True,False,592,12,0.008352,11300,300,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T13:27:05,llama-3.3-70b,bedrock,native
+prog52_bfs_grid,5,0.0000,0,5,True,False,419,12,0.011737,16065,236,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.0,[],2026-08-16T13:27:15,llama-3.3-70b,bedrock,native
+prog52_bfs_grid,6,0.0000,0,5,True,False,592,12,0.008352,11300,300,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T13:27:24,llama-3.3-70b,bedrock,native
+prog52_bfs_grid,7,0.0000,0,5,True,False,592,12,0.008351,11300,299,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.5,[],2026-08-16T13:27:32,llama-3.3-70b,bedrock,native
+prog52_bfs_grid,8,0.0000,0,5,False,False,1837,12,0.008802,11300,925,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.4,"/w/candidate.c:53:34: error: use of undeclared identifier 'main_dr'
+   53 |             int r_new = r_temp + main_dr[i];
+      |                                  ^
+/w/candidate.c:54:34: error: use of undeclared identifier 'main_dc'
+   54 |             int c_new = c_temp + main_dc[i];
+      |        ",2026-08-16T13:27:43,llama-3.3-70b,bedrock,native
+prog53_dfs_cycle,1,0.2000,1,5,True,False,1291,12,0.014632,19629,693,us.meta.llama3-3-70b-instruct-v1:0,bedrock,13.2,[],2026-08-16T13:27:57,llama-3.3-70b,bedrock,native
+prog53_dfs_cycle,2,0.0000,0,5,False,False,0,12,0.011426,15173,696,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.3,nessun candidato prodotto,2026-08-16T13:28:08,llama-3.3-70b,bedrock,native
+prog53_dfs_cycle,3,0.6000,3,5,True,False,875,12,0.007213,9606,412,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.1,[],2026-08-16T13:28:18,llama-3.3-70b,bedrock,native
+prog53_dfs_cycle,4,0.2000,1,5,True,False,1202,12,0.011418,15173,686,us.meta.llama3-3-70b-instruct-v1:0,bedrock,12.5,[],2026-08-16T13:28:31,llama-3.3-70b,bedrock,native
+prog53_dfs_cycle,5,0.0000,0,5,True,False,1457,12,0.007320,9606,560,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.8,[],2026-08-16T13:28:40,llama-3.3-70b,bedrock,native
+prog53_dfs_cycle,6,0.6000,3,5,True,False,863,12,0.007209,9606,406,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.3,[],2026-08-16T13:28:50,llama-3.3-70b,bedrock,native
+prog53_dfs_cycle,7,0.0000,0,5,True,False,1182,12,0.007269,9606,490,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.0,[],2026-08-16T13:29:00,llama-3.3-70b,bedrock,native
+prog53_dfs_cycle,8,0.0000,0,5,False,False,0,12,0.011409,15173,673,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.5,nessun candidato prodotto,2026-08-16T13:29:10,llama-3.3-70b,bedrock,native
+prog54_topo_sort,1,0.0000,0,5,True,False,72,12,0.017034,23519,140,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.1,[],2026-08-16T13:29:20,llama-3.3-70b,bedrock,native
+prog54_topo_sort,2,0.0000,0,5,True,False,425,12,0.017127,23519,268,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.3,[],2026-08-16T13:29:32,llama-3.3-70b,bedrock,native
+prog54_topo_sort,3,0.0000,0,5,True,False,440,12,0.009255,12625,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.8,[],2026-08-16T13:29:40,llama-3.3-70b,bedrock,native
+prog54_topo_sort,4,0.0000,0,5,True,False,440,12,0.009255,12625,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.9,[],2026-08-16T13:29:48,llama-3.3-70b,bedrock,native
+prog54_topo_sort,5,0.0000,0,5,True,False,440,12,0.009255,12625,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T13:29:57,llama-3.3-70b,bedrock,native
+prog54_topo_sort,6,0.0000,0,5,True,False,440,12,0.009255,12625,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T13:30:05,llama-3.3-70b,bedrock,native
+prog54_topo_sort,7,0.0000,0,5,True,False,440,12,0.009255,12625,229,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.4,[],2026-08-16T13:30:13,llama-3.3-70b,bedrock,native
+prog54_topo_sort,8,0.0000,0,5,True,False,425,12,0.009248,12625,219,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T13:30:21,llama-3.3-70b,bedrock,native
+prog55_connected_components,1,0.0000,0,5,True,False,116,12,0.014985,20691,122,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.3,[],2026-08-16T13:30:32,llama-3.3-70b,bedrock,native
+prog55_connected_components,2,0.0000,0,5,True,False,116,12,0.014985,20691,122,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.5,[],2026-08-16T13:30:42,llama-3.3-70b,bedrock,native
+prog55_connected_components,3,0.0000,0,5,True,False,96,12,0.024751,34228,148,us.meta.llama3-3-70b-instruct-v1:0,bedrock,13.0,[],2026-08-16T13:30:55,llama-3.3-70b,bedrock,native
+prog55_connected_components,4,0.0000,0,5,True,False,425,12,0.014702,20175,244,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.4,[],2026-08-16T13:31:05,llama-3.3-70b,bedrock,native
+prog55_connected_components,5,0.0000,0,5,True,False,116,12,0.014985,20691,122,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T13:31:13,llama-3.3-70b,bedrock,native
+prog55_connected_components,6,0.0000,0,5,True,False,116,12,0.014985,20691,122,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T13:31:21,llama-3.3-70b,bedrock,native
+prog55_connected_components,7,0.0000,0,5,True,False,96,12,0.024751,34228,148,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.9,[],2026-08-16T13:31:32,llama-3.3-70b,bedrock,native
+prog55_connected_components,8,0.0000,0,5,True,False,116,12,0.014985,20691,122,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.7,[],2026-08-16T13:31:40,llama-3.3-70b,bedrock,native
+prog56_kruskal_mst,1,0.0000,0,5,True,False,359,12,0.007561,10297,204,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,[],2026-08-16T13:31:48,llama-3.3-70b,bedrock,native
+prog56_kruskal_mst,2,0.0000,0,5,True,False,1951,12,0.007910,10297,689,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.7,[],2026-08-16T13:32:00,llama-3.3-70b,bedrock,native
+prog56_kruskal_mst,3,0.0000,0,5,True,False,602,12,0.007612,10297,275,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T13:32:08,llama-3.3-70b,bedrock,native
+prog56_kruskal_mst,4,0.0000,0,5,True,False,359,12,0.007561,10297,204,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T13:32:16,llama-3.3-70b,bedrock,native
+prog56_kruskal_mst,5,0.0000,0,5,True,False,359,12,0.007561,10297,204,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.0,[],2026-08-16T13:32:24,llama-3.3-70b,bedrock,native
+prog56_kruskal_mst,6,0.0000,0,5,True,False,267,12,0.007530,10297,162,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.1,[],2026-08-16T13:32:31,llama-3.3-70b,bedrock,native
+prog56_kruskal_mst,7,0.0000,0,5,False,False,1977,12,0.007935,10297,724,us.meta.llama3-3-70b-instruct-v1:0,bedrock,12.4,"/w/candidate.c:57:22: error: call to undeclared function 'find'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   57 |         int root_a = find(parent, edge_a[i]);
+      |                      ^
+1 error generated.
+",2026-08-16T13:32:44,llama-3.3-70b,bedrock,native
+prog56_kruskal_mst,8,0.0000,0,5,True,False,266,12,0.007530,10297,162,us.meta.llama3-3-70b-instruct-v1:0,bedrock,7.7,[],2026-08-16T13:32:51,llama-3.3-70b,bedrock,native
+prog57_elevator_fsm,1,0.8000,4,5,True,False,933,12,0.004776,6299,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T13:32:59,llama-3.3-70b,bedrock,native
+prog57_elevator_fsm,2,0.8000,4,5,True,False,933,12,0.004776,6299,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.1,[],2026-08-16T13:33:07,llama-3.3-70b,bedrock,native
+prog57_elevator_fsm,3,0.8000,4,5,True,False,933,12,0.004776,6299,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:33:16,llama-3.3-70b,bedrock,native
+prog57_elevator_fsm,4,0.8000,4,5,True,False,933,12,0.004776,6299,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.5,[],2026-08-16T13:33:24,llama-3.3-70b,bedrock,native
+prog57_elevator_fsm,5,0.8000,4,5,True,False,933,12,0.004776,6299,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.0,[],2026-08-16T13:33:33,llama-3.3-70b,bedrock,native
+prog57_elevator_fsm,6,0.8000,4,5,True,False,933,12,0.004776,6299,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,[],2026-08-16T13:33:42,llama-3.3-70b,bedrock,native
+prog57_elevator_fsm,7,0.8000,4,5,True,False,933,12,0.004776,6299,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.8,[],2026-08-16T13:33:52,llama-3.3-70b,bedrock,native
+prog57_elevator_fsm,8,0.8000,4,5,True,False,933,12,0.004776,6299,334,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,[],2026-08-16T13:34:01,llama-3.3-70b,bedrock,native
+prog58_turing_increment,1,0.0000,0,5,True,False,937,12,0.015096,20518,448,us.meta.llama3-3-70b-instruct-v1:0,bedrock,15.5,[],2026-08-16T13:34:16,llama-3.3-70b,bedrock,native
+prog58_turing_increment,2,0.0000,0,5,True,False,1164,12,0.006968,9227,451,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.2,[],2026-08-16T13:34:27,llama-3.3-70b,bedrock,native
+prog58_turing_increment,3,0.0000,0,5,True,False,910,12,0.012335,16707,425,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.9,[],2026-08-16T13:34:38,llama-3.3-70b,bedrock,native
+prog58_turing_increment,4,0.0000,0,5,False,False,0,12,0.006933,9227,402,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.3,nessun candidato prodotto,2026-08-16T13:34:48,llama-3.3-70b,bedrock,native
+prog58_turing_increment,5,0.0000,0,5,True,False,1058,12,0.006952,9227,429,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.0,[],2026-08-16T13:34:57,llama-3.3-70b,bedrock,native
+prog58_turing_increment,6,0.0000,0,5,True,False,1057,12,0.006952,9227,429,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.0,[],2026-08-16T13:35:06,llama-3.3-70b,bedrock,native
+prog58_turing_increment,7,0.0000,0,5,True,False,1057,12,0.006952,9227,429,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,[],2026-08-16T13:35:15,llama-3.3-70b,bedrock,native
+prog58_turing_increment,8,0.0000,0,5,True,False,917,12,0.009605,12938,402,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.8,[],2026-08-16T13:35:27,llama-3.3-70b,bedrock,native
+prog59_rule110,1,0.2000,1,5,True,False,1317,12,0.007865,10412,511,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.4,[],2026-08-16T13:35:37,llama-3.3-70b,bedrock,native
+prog59_rule110,2,0.0000,0,5,True,False,940,12,0.007786,10412,402,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.9,[],2026-08-16T13:35:47,llama-3.3-70b,bedrock,native
+prog59_rule110,3,0.0000,0,5,True,False,624,12,0.007702,10412,285,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.3,[],2026-08-16T13:35:55,llama-3.3-70b,bedrock,native
+prog59_rule110,4,0.2000,1,5,True,False,993,12,0.007794,10412,413,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.7,[],2026-08-16T13:36:04,llama-3.3-70b,bedrock,native
+prog59_rule110,5,0.0000,0,5,True,False,973,12,0.007788,10412,405,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.9,[],2026-08-16T13:36:13,llama-3.3-70b,bedrock,native
+prog59_rule110,6,0.0000,0,5,True,False,575,12,0.011181,15229,300,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.6,[],2026-08-16T13:36:22,llama-3.3-70b,bedrock,native
+prog59_rule110,7,0.0000,0,5,True,False,576,12,0.007700,10412,282,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.2,[],2026-08-16T13:36:31,llama-3.3-70b,bedrock,native
+prog59_rule110,8,0.0000,0,5,True,False,973,12,0.007788,10412,405,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.4,[],2026-08-16T13:36:40,llama-3.3-70b,bedrock,native
+prog60_inventory_sim,1,0.0000,0,5,False,False,1477,12,0.006495,8440,581,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.3,"/w/candidate.c:21:9: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |     if (strcmp(op, ""S"") == 0) {
+      |         ^
+/w/candidate.c:21:9: note",2026-08-16T13:36:51,llama-3.3-70b,bedrock,native
+prog60_inventory_sim,2,0.0000,0,5,False,False,1461,12,0.006493,8440,578,us.meta.llama3-3-70b-instruct-v1:0,bedrock,11.4,"/w/candidate.c:21:9: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |     if (strcmp(op, ""S"") == 0) {
+      |         ^
+/w/candidate.c:21:9: note",2026-08-16T13:37:03,llama-3.3-70b,bedrock,native
+prog60_inventory_sim,3,0.0000,0,5,False,False,0,12,0.006381,8440,422,us.meta.llama3-3-70b-instruct-v1:0,bedrock,8.4,nessun candidato prodotto,2026-08-16T13:37:11,llama-3.3-70b,bedrock,native
+prog60_inventory_sim,4,0.0000,0,5,False,False,1477,12,0.006495,8440,581,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.3,"/w/candidate.c:21:9: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |     if (strcmp(op, ""S"") == 0) {
+      |         ^
+/w/candidate.c:21:9: note",2026-08-16T13:37:21,llama-3.3-70b,bedrock,native
+prog60_inventory_sim,5,0.0000,0,5,False,False,0,12,0.006392,8440,438,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.1,nessun candidato prodotto,2026-08-16T13:37:31,llama-3.3-70b,bedrock,native
+prog60_inventory_sim,6,0.0000,0,5,False,False,0,12,0.006392,8440,438,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.2,nessun candidato prodotto,2026-08-16T13:37:40,llama-3.3-70b,bedrock,native
+prog60_inventory_sim,7,0.0000,0,5,False,False,1493,12,0.006498,8440,585,us.meta.llama3-3-70b-instruct-v1:0,bedrock,10.4,"/w/candidate.c:21:9: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |     if (strcmp(op, ""S"") == 0) {
+      |         ^
+/w/candidate.c:21:9: note",2026-08-16T13:37:50,llama-3.3-70b,bedrock,native
+prog60_inventory_sim,8,0.0000,0,5,False,False,0,12,0.006381,8440,422,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.2,nessun candidato prodotto,2026-08-16T13:37:59,llama-3.3-70b,bedrock,native

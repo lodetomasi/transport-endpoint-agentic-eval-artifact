@@ -1,0 +1,84 @@
+\section{Method}
+\label{sec:method}
+
+\subsection{The task}
+
+Each trial gives a model one stripped x86-64 binary, decompiled with a static analysis server, and asks
+it to reconstruct compilable C source. The candidate is compiled in a pinned container and executed
+against the unit tests of the original program, and the score is the fraction that pass.
+
+Pass-rate is a \emph{lower bound} on semantic equivalence and we report it as such throughout: a
+candidate correct but differing in an untested behaviour scores below one, and one wrong in an untested
+behaviour scores above its true worth. We use it because it is executable and adversarially hard to game,
+not because it is tight.
+
+\subsection{Pre-registration}
+
+The hypotheses, the test family, the falsifiers, and \emph{the analysis script} were frozen by
+content hash before a single row of data existed. Registered reports have been available in this
+field since 2020~\citep{ernst2023registered}; what we add is the second half of that freeze.
+
+Two of the ten tests are an exception we state here rather than let a reader find it in the artifact,
+because the exception is the more informative case. T9 (heterogeneity across models) and T10
+(transport $\times$ infrastructure interaction) were declared in the family at the freeze but emitted a
+non-computable $p$, and were implemented eleven hours later under a dated succession document written
+\emph{before} the change. Collection had begun, so the freeze does not cover them strictly, and their
+guarantee is a weaker but checkable property: neither could be informed by the data that existed ---
+three cells were on disk, all of a \emph{single} model, while T9 compares the transport effect
+\emph{between} models and T10 needs both transports on both infrastructures, one of which had not
+started. Both entered Holm at the $m=10$ fixed before any data existed, so the correction they face was
+not chosen after seeing them. Fixing the hypotheses while writing the analysis after seeing the data
+leaves intact every degree of freedom pre-registration exists to remove: which test, on which subset,
+with which exclusion. Every subsequent change to a frozen file is documented before the change and
+checked by a guard, and the register is in the artifact.
+
+\subsection{The two transports}
+
+The manipulated variable is how a tool call travels between the model and the harness. Both
+transports offer the same tools, the same schemas, and the same twelve turns.
+
+\textbf{Native.} The request carries a \texttt{tools} field. The model emits a structured
+tool-call object, which the runtime parses; results return in the role the provider's API
+defines for tool output.
+
+\textbf{Textual.} The request carries \emph{no} \texttt{tools} field. The system prompt
+defines a line protocol: the model ends its reply with a single line
+\texttt{TOOL\_CALL:}~followed by a JSON object naming the tool and its arguments. The
+harness parses that line and returns the result as an ordinary user message.
+
+Two consequences bound what the contrast means, and both belong before any number. First, the native
+transport admits more than one call per turn where the text protocol admits one by construction.
+
+\begin{table}[h]
+\caption{Batching under the native transport, per model. The text protocol is fixed at one
+call per turn by construction, so the confound is present only where this rate exceeds one.}
+\label{tab:batching-rate}
+\centering
+\small
+\begin{tabular}{lrrl}
+\toprule
+model & calls/turn & turns $>1$ & contrast affected \\
+\midrule
+haiku & 1.438 & 38\% & T3 \\
+sonnet & 1.333 & 33\% & T4 \\
+gpt-oss & 1.000 & 0\% & --- \\
+llama & 1.000 & 0\% & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The confound is structurally available to every model and binds only where the model uses it, which
+two of four do not at all. Second, \emph{a turn that produces prose without a tool call is not a
+failure}: it is a turn without a call and is recorded as such, since treating it as a terminal answer
+would end the trajectory at turn one and score the protocol rather than the model.
+
+\subsection{What counts as a measurement}
+
+One predicate decides whether a row is a measurement, and collector and analysis use the same one --- two
+definitions of validity, one per half of a pipeline, diverge silently. It has two clauses, and we state
+them here because every number in this paper is computed over the rows they admit: a row is a measurement
+unless the endpoint reported an infrastructure failure, or the harness itself raised. Rows the predicate
+rejects are kept in the released data with the reason attached --- they are the subject of
+\S\ref{sec:census}, not attrition --- and the artifact states the failure that motivated each clause.
+
+

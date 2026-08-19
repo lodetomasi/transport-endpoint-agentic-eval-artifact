@@ -1,0 +1,19 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog23_longest_common_prefix,1,0.0000,0,5,False,True,0,12,0.006708,4086,8296,databricks-gpt-oss-120b,databricks,103.1,nessun candidato prodotto,2026-08-15T14:08:28,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,2,0.6000,3,5,True,False,801,12,0.004210,7751,3910,databricks-gpt-oss-120b,databricks,26.7,[],2026-08-15T14:08:54,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,1,0.4000,2,5,True,False,2636,12,0.002555,6357,1960,databricks-gpt-oss-120b,databricks,15.8,[],2026-08-15T14:09:10,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,2,0.4000,2,5,True,False,4487,12,0.002509,6357,1895,databricks-gpt-oss-120b,databricks,24.0,[],2026-08-15T14:09:34,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,1,0.0000,0,5,True,False,384,12,0.000329,1018,203,databricks-gpt-oss-120b,databricks,4.3,[],2026-08-15T14:09:38,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,2,0.0000,0,5,True,False,955,12,0.000444,1018,362,databricks-gpt-oss-120b,databricks,11.1,[],2026-08-15T14:09:50,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,1,0.6000,3,5,True,False,1398,12,0.005549,3747,6771,databricks-gpt-oss-120b,databricks,80.8,[],2026-08-15T14:11:10,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,2,1.0000,5,5,True,False,1506,12,0.004794,3747,5722,databricks-gpt-oss-120b,databricks,57.2,[],2026-08-15T14:12:08,gpt-oss-120b,databricks,text
+prog39_horner,1,1.0000,5,5,True,False,1697,12,0.004445,4433,5065,databricks-gpt-oss-120b,databricks,47.5,[],2026-08-15T14:12:55,gpt-oss-120b,databricks,text
+prog39_horner,2,1.0000,5,5,True,False,1520,12,0.004841,4433,5615,databricks-gpt-oss-120b,databricks,65.1,[],2026-08-15T14:14:00,gpt-oss-120b,databricks,text
+prog43_catalan,1,0.8000,4,5,True,False,1157,12,0.003777,3351,4408,databricks-gpt-oss-120b,databricks,45.7,[],2026-08-15T14:14:46,gpt-oss-120b,databricks,text
+prog43_catalan,2,0.4000,2,5,True,False,1125,12,0.003485,3351,4003,databricks-gpt-oss-120b,databricks,48.9,[],2026-08-15T14:15:35,gpt-oss-120b,databricks,text
+prog52_bfs_grid,1,0.0000,0,5,True,False,3405,12,0.002831,5669,2515,databricks-gpt-oss-120b,databricks,56.4,[],2026-08-15T14:16:31,gpt-oss-120b,databricks,text
+prog52_bfs_grid,2,0.6000,3,5,True,False,2745,12,0.002558,5669,2135,databricks-gpt-oss-120b,databricks,64.3,[],2026-08-15T14:17:35,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,1,0.8000,4,5,True,False,2501,12,0.002019,4819,1599,databricks-gpt-oss-120b,databricks,45.8,[],2026-08-15T14:18:21,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,2,0.0000,0,5,True,False,2430,12,0.001849,4819,1363,databricks-gpt-oss-120b,databricks,19.5,[],2026-08-15T14:18:41,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,1,0.0000,0,5,True,False,449,12,0.000338,1042,209,databricks-gpt-oss-120b,databricks,5.2,[],2026-08-15T14:18:46,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,2,0.0000,0,5,True,False,1100,12,0.000463,1042,382,databricks-gpt-oss-120b,databricks,5.5,[],2026-08-15T14:18:51,gpt-oss-120b,databricks,text

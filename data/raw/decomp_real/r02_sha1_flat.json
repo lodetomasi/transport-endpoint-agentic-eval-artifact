@@ -1,0 +1,265 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00104010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint putchar(int __c)\n\n{\n  int iVar1;\n  \n  iVar1 = (*(code *)PTR_putchar_00104018)();\n  return iVar1;\n}\n\n", 
+   "signature": "int putchar(int __c)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "putchar", 
+   "entry_point": "00101030"
+  }, 
+  {
+   "decompiled": "\nvoid processEntry entry(undefined8 param_1,undefined8 param_2)\n\n{\n  undefined1 auStack_8 [8];\n  \n  (*(code *)PTR___libc_start_main_00103fe0)\n            (FUN_001019b0,param_2,&stack0x00000008,FUN_00101c20,FUN_00101c80,param_1,auStack_8);\n  do {\n                    /* WARNING: Do nothing block with infinite loop */\n  } while( true );\n}\n\n", 
+   "signature": "undefined entry(void)", 
+   "is_thunk": false, 
+   "size": 43, 
+   "name": "entry", 
+   "entry_point": "00101080"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x001010c3) */\n/* WARNING: Removing unreachable block (ram,0x001010cf) */\n\nvoid FUN_001010b0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010b0(void)", 
+   "is_thunk": false, 
+   "size": 34, 
+   "name": "FUN_001010b0", 
+   "entry_point": "001010b0"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x00101104) */\n/* WARNING: Removing unreachable block (ram,0x00101110) */\n\nvoid FUN_001010e0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010e0(void)", 
+   "is_thunk": false, 
+   "size": 51, 
+   "name": "FUN_001010e0", 
+   "entry_point": "001010e0"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00101170(long param_1,long param_2,uint param_3)\n\n{\n  int iVar1;\n  uint uVar2;\n  int iVar3;\n  ulong uVar4;\n  uint unaff_EBP;\n  uint uVar5;\n  uint unaff_R12D;\n  uint uVar6;\n  uint unaff_R13D;\n  uint unaff_R15D;\n  uint auStack_178 [82];\n  \n  uVar5 = 0;\n  iVar1 = 0x9c4b524;\n  uVar4 = 0;\nLAB_001011b6:\n  do {\n    if (iVar1 < 0x37d11a0) {\n      iVar3 = (int)uVar4;\n      if (iVar1 < -0x4a9d9dac) {\n        if (iVar1 < -0x5c7d2649) {\n          if (iVar1 == -0x7f606bf5) {\n            iVar1 = 0x397ae231;\n            if (uVar5 < 0x28) {\n              iVar1 = -0x36f18426;\n            }\n          }\n          else if (iVar1 == -0x7af28d2b) {\n            uVar5 = uVar5 + 1;\n            iVar1 = -0x655ac064;\n          }\n          else if ((iVar1 == -0x655ac064) && (iVar1 = 0x15f28ce4, uVar5 < 0x50)) {\n            iVar1 = 0x6e5b2226;\n          }\n          goto LAB_001011b6;\n        }\n        if (iVar1 == -0x5c7d2649) {\n          iVar1 = 0x52fc5bb5;\n          if (uVar5 < 0x3c) {\n            iVar1 = 0x50c38518;\n          }\n          goto LAB_001011b6;\n        }\n        if (iVar1 != -0x5c64a42a) {\n          if (iVar1 == -0x597f8f39) {\n            auStack_178[uVar5] =\n                 (uint)*(byte *)(param_2 + (ulong)(iVar3 + 3)) |\n                 (uint)*(byte *)(param_2 + (ulong)(iVar3 + 2)) << 8 |\n                 (uint)*(byte *)(param_2 + (ulong)(iVar3 + 1)) << 0x10 |\n                 (uint)*(byte *)(param_2 + uVar4) << 0x18;\n            iVar1 = -0x406aeda0;\n          }\n          goto LAB_001011b6;\n        }\n      }\n      else {\n        if (iVar1 < -0x406aeda0) {\n          if (iVar1 == -0x4a9d9dac) {\n            uVar5 = uVar5 + 1;\n            goto LAB_001011a2;\n          }\n          if (iVar1 == -0x49d385ea) {\n            uVar5 = uVar5 + 1;\n            iVar1 = 0xeaf6135;\n          }\n          else if (iVar1 == -0x415cf34c) {\n            iVar1 = -0x655ac064;\n          }\n          goto LAB_001011b6;\n        }\n        if (iVar1 == -0x406aeda0) {\n          uVar5 = uVar5 + 1;\n          uVar4 = (ulong)(iVar3 + 4);\n          iVar1 = 0x9c4b524;\n          goto LAB_001011b6;\n        }\n        if (iVar1 == -0x36f18426) {\n          iVar3 = param_3 + (unaff_R12D ^ unaff_R13D ^ unaff_EBP);\n          iVar1 = -0x6c433a5;\n          param_3 = unaff_R12D;\n          unaff_R12D = unaff_R13D;\n          unaff_R13D = unaff_EBP << 0x1e | unaff_EBP >> 2;\n          unaff_EBP = unaff_R15D;\n          unaff_R15D = iVar3 + (unaff_R15D << 5 | unaff_R15D >> 0x1b) + *(int *)(param_1 + 0x68) +\n                       auStack_178[uVar5];\n          goto LAB_001011b6;\n        }\n        if (iVar1 != -0x6c433a5) goto LAB_001011b6;\n        uVar5 = uVar5 + 1;\n      }\n      iVar1 = -0x7f606bf5;\n      goto LAB_001011b6;\n    }\n    if (0x397ae230 < iVar1) {\n      if (0x52fc5bb4 < iVar1) {\n        if (iVar1 == 0x52fc5bb5) {\nLAB_001011a2:\n          iVar1 = 0x58a9d098;\n        }\n        else if (iVar1 == 0x58a9d098) {\n          iVar1 = 0xc2363d5;\n          if (uVar5 < 0x50) {\n            iVar1 = 0x37d11a0;\n          }\n        }\n        else if (iVar1 == 0x6e5b2226) {\n          uVar2 = auStack_178[uVar5 - 8] ^ auStack_178[uVar5 - 3] ^ auStack_178[uVar5 - 0xe] ^\n                  auStack_178[uVar5 - 0x10];\n          auStack_178[uVar5] = uVar2 << 1 | (uint)((int)uVar2 < 0);\n          iVar1 = -0x7af28d2b;\n        }\n        goto LAB_001011b6;\n      }\n      if (iVar1 != 0x397ae231) {\n        if (iVar1 != 0x3da66a72) {\n          if (iVar1 == 0x50c38518) {\n            uVar2 = (unaff_R12D ^ unaff_R13D) & unaff_EBP;\n            uVar6 = unaff_R12D & unaff_R13D;\n            iVar3 = param_3 + (unaff_R15D << 5 | unaff_R15D >> 0x1b);\n            iVar1 = 0x3da66a72;\n            param_3 = unaff_R12D;\n            unaff_R12D = unaff_R13D;\n            unaff_R13D = unaff_EBP << 0x1e | unaff_EBP >> 2;\n            unaff_EBP = unaff_R15D;\n            unaff_R15D = iVar3 + (uVar6 ^ uVar2) + *(int *)(param_1 + 0x6c) + auStack_178[uVar5];\n          }\n          goto LAB_001011b6;\n        }\n        uVar5 = uVar5 + 1;\n      }\n      iVar1 = -0x5c7d2649;\n      goto LAB_001011b6;\n    }\n    if (iVar1 < 0xd2fae15) {\n      if (iVar1 == 0x37d11a0) {\n        iVar3 = param_3 + (unaff_R12D ^ unaff_R13D ^ unaff_EBP);\n        iVar1 = -0x4a9d9dac;\n        param_3 = unaff_R12D;\n        unaff_R12D = unaff_R13D;\n        unaff_R13D = unaff_EBP << 0x1e | unaff_EBP >> 2;\n        unaff_EBP = unaff_R15D;\n        unaff_R15D = iVar3 + (unaff_R15D << 5 | unaff_R15D >> 0x1b) + *(int *)(param_1 + 0x70) +\n                     auStack_178[uVar5];\n      }\n      else if (iVar1 == 0x9c4b524) {\n        iVar1 = -0x415cf34c;\n        if (uVar5 < 0x10) {\n          iVar1 = -0x597f8f39;\n        }\n      }\n      else if (iVar1 == 0xc2363d5) {\n        *(int *)(param_1 + 0x50) = *(int *)(param_1 + 0x50) + unaff_R15D;\n        *(int *)(param_1 + 0x54) = *(int *)(param_1 + 0x54) + unaff_EBP;\n        *(int *)(param_1 + 0x58) = *(int *)(param_1 + 0x58) + unaff_R13D;\n        *(int *)(param_1 + 0x5c) = *(int *)(param_1 + 0x5c) + unaff_R12D;\n        *(int *)(param_1 + 0x60) = *(int *)(param_1 + 0x60) + param_3;\n        return;\n      }\n    }\n    else if (iVar1 == 0xd2fae15) {\n      uVar2 = (unaff_R13D ^ unaff_R12D) & unaff_EBP ^ unaff_R12D;\n      iVar3 = param_3 + (unaff_R15D << 5 | unaff_R15D >> 0x1b);\n      iVar1 = -0x49d385ea;\n      param_3 = unaff_R12D;\n      unaff_R12D = unaff_R13D;\n      unaff_R13D = unaff_EBP << 0x1e | unaff_EBP >> 2;\n      unaff_EBP = unaff_R15D;\n      unaff_R15D = iVar3 + uVar2 + *(int *)(param_1 + 100) + auStack_178[uVar5];\n    }\n    else if (iVar1 == 0xeaf6135) {\n      iVar1 = -0x5c64a42a;\n      if (uVar5 < 0x14) {\n        iVar1 = 0xd2fae15;\n      }\n    }\n    else if (iVar1 == 0x15f28ce4) {\n      iVar1 = 0xeaf6135;\n      uVar5 = 0;\n      param_3 = *(uint *)(param_1 + 0x60);\n      unaff_R12D = *(uint *)(param_1 + 0x5c);\n      unaff_R13D = *(uint *)(param_1 + 0x58);\n      unaff_EBP = *(uint *)(param_1 + 0x54);\n      unaff_R15D = *(uint *)(param_1 + 0x50);\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00101170(void)", 
+   "is_thunk": false, 
+   "size": 1059, 
+   "name": "FUN_00101170", 
+   "entry_point": "00101170"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n\nvoid FUN_001015c0(long param_1)\n\n{\n  undefined8 uVar1;\n  \n  *(undefined4 *)(param_1 + 0x40) = 0;\n  *(undefined8 *)(param_1 + 0x48) = 0;\n  uVar1 = _UNK_00102018;\n  *(undefined8 *)(param_1 + 0x50) = _DAT_00102010;\n  *(undefined8 *)(param_1 + 0x58) = uVar1;\n  uVar1 = _UNK_00102028;\n  *(undefined8 *)(param_1 + 0x60) = _DAT_00102020;\n  *(undefined8 *)(param_1 + 0x68) = uVar1;\n  *(undefined4 *)(param_1 + 0x70) = 0xca62c1d6;\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001015c0(void)", 
+   "is_thunk": false, 
+   "size": 45, 
+   "name": "FUN_001015c0", 
+   "entry_point": "001015c0"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_001015f0(long param_1,long param_2,ulong param_3)\n\n{\n  int iVar1;\n  int iVar2;\n  ulong uVar3;\n  int iVar4;\n  \n  uVar3 = 0;\n  do {\n    iVar4 = -0x515f3c45;\n    if (uVar3 < param_3) {\n      iVar4 = -0x289b1d7c;\n    }\n    iVar2 = -0x34a0120e;\n    while( true ) {\n      while (-0x289b1d7d < iVar2) {\n        if (iVar2 == 0x7e1312bd) {\n          iVar2 = -0x38b10994;\n        }\n        else if (iVar2 == 0x43a59106) {\n          FUN_00101170(param_1,param_1);\n          *(long *)(param_1 + 0x48) = *(long *)(param_1 + 0x48) + 0x200;\n          *(undefined4 *)(param_1 + 0x40) = 0;\n          iVar2 = 0x7e1312bd;\n        }\n        else if (iVar2 == -0x289b1d7c) {\n          *(undefined1 *)(param_1 + (ulong)*(uint *)(param_1 + 0x40)) =\n               *(undefined1 *)(param_2 + uVar3);\n          iVar1 = *(int *)(param_1 + 0x40) + 1;\n          *(int *)(param_1 + 0x40) = iVar1;\n          iVar2 = 0x7e1312bd;\n          if (iVar1 == 0x40) {\n            iVar2 = 0x43a59106;\n          }\n        }\n      }\n      if (iVar2 == -0x515f3c45) {\n        return;\n      }\n      if (iVar2 == -0x38b10994) break;\n      if (iVar2 == -0x34a0120e) {\n        iVar2 = iVar4;\n      }\n    }\n    uVar3 = uVar3 + 1;\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_001015f0(void)", 
+   "is_thunk": false, 
+   "size": 218, 
+   "name": "FUN_001015f0", 
+   "entry_point": "001015f0"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_001016e0(undefined8 *param_1,long param_2)\n\n{\n  int iVar1;\n  int iVar2;\n  ulong uVar3;\n  long lVar4;\n  byte bVar5;\n  int iVar6;\n  uint uVar7;\n  \n  uVar7 = *(uint *)(param_1 + 8);\n  iVar6 = 0x5833a423;\n  if (uVar7 < 0x38) {\n    iVar6 = -0x20f78e3e;\n  }\n  iVar1 = 0x29611d37;\n  do {\n    while( true ) {\n      while( true ) {\n        while( true ) {\n          while (iVar2 = iVar1, iVar1 = iVar2, iVar2 < 0x29611d37) {\n            if (iVar2 < -0x4d2a232b) {\n              if (iVar2 == -0x7c7b5fb1) {\n                uVar3 = (ulong)uVar7;\n                uVar7 = uVar7 + 1;\n                *(undefined1 *)((long)param_1 + uVar3) = 0;\n                iVar1 = -0x4d2a232b;\n              }\n              else if (iVar2 == -0x77916667) {\n                iVar1 = 0x53658dae;\n              }\n              else if (iVar2 == -0x64f4e4ee) {\n                FUN_00101170(param_1,param_1);\n                param_1[4] = 0;\n                param_1[5] = 0;\n                param_1[2] = 0;\n                param_1[3] = 0;\n                *param_1 = 0;\n                param_1[1] = 0;\n                param_1[6] = 0;\n                iVar1 = 0x53658dae;\n              }\n            }\n            else if (iVar2 < 0x589f3f1) {\n              if (iVar2 == -0x4d2a232b) {\n                iVar1 = -0x64f4e4ee;\n                if (uVar7 < 0x40) {\n                  iVar1 = -0x7c7b5fb1;\n                }\n              }\n              else if (iVar2 == -0x20f78e3e) {\n                uVar3 = (ulong)uVar7;\n                uVar7 = uVar7 + 1;\n                *(undefined1 *)((long)param_1 + uVar3) = 0x80;\n                iVar1 = 0x770a4cd4;\n              }\n            }\n            else if (iVar2 == 0x589f3f1) {\n              iVar1 = 0x4d7e41f3;\n              if (uVar7 < 4) {\n                iVar1 = 0x48fb0670;\n              }\n            }\n            else if (iVar2 == 0x8accd31) {\n              uVar7 = uVar7 + 1;\n              iVar1 = 0x589f3f1;\n            }\n          }\n          if (iVar2 < 0x5833a423) break;\n          if (iVar2 == 0x5833a423) {\n            uVar3 = (ulong)uVar7;\n            uVar7 = uVar7 + 1;\n            *(undefined1 *)((long)param_1 + uVar3) = 0x80;\n            iVar1 = -0x4d2a232b;\n          }\n          else if (iVar2 == 0x6de733f2) {\n            uVar3 = (ulong)uVar7;\n            uVar7 = uVar7 + 1;\n            *(undefined1 *)((long)param_1 + uVar3) = 0;\n            iVar1 = 0x770a4cd4;\n          }\n          else if ((iVar2 == 0x770a4cd4) && (iVar1 = -0x77916667, uVar7 < 0x38)) {\n            iVar1 = 0x6de733f2;\n          }\n        }\n        if (0x4d7e41f2 < iVar2) break;\n        iVar1 = iVar6;\n        if ((iVar2 != 0x29611d37) && (iVar1 = iVar2, iVar2 == 0x48fb0670)) {\n          bVar5 = (char)uVar7 * -8 + 0x18;\n          *(char *)(param_2 + (ulong)uVar7) = (char)(*(uint *)(param_1 + 10) >> (bVar5 & 0x1f));\n          *(char *)(param_2 + (ulong)(uVar7 + 4)) =\n               (char)(*(uint *)((long)param_1 + 0x54) >> (bVar5 & 0x1f));\n          *(char *)(param_2 + (ulong)(uVar7 + 8)) =\n               (char)(*(uint *)(param_1 + 0xb) >> (bVar5 & 0x1f));\n          *(char *)(param_2 + (ulong)(uVar7 + 0xc)) =\n               (char)(*(uint *)((long)param_1 + 0x5c) >> (bVar5 & 0x1f));\n          *(char *)(param_2 + (ulong)(uVar7 + 0x10)) =\n               (char)(*(uint *)(param_1 + 0xc) >> (bVar5 & 0x1f));\n          iVar1 = 0x8accd31;\n        }\n      }\n      if (iVar2 != 0x53658dae) break;\n      lVar4 = (ulong)(uint)(*(int *)(param_1 + 8) << 3) + param_1[9];\n      param_1[9] = lVar4;\n      *(char *)((long)param_1 + 0x3f) = (char)lVar4;\n      *(char *)((long)param_1 + 0x3e) = (char)((ulong)lVar4 >> 8);\n      *(char *)((long)param_1 + 0x3d) = (char)((ulong)lVar4 >> 0x10);\n      *(char *)((long)param_1 + 0x3c) = (char)((ulong)lVar4 >> 0x18);\n      *(char *)((long)param_1 + 0x3b) = (char)((ulong)lVar4 >> 0x20);\n      *(char *)((long)param_1 + 0x3a) = (char)((ulong)lVar4 >> 0x28);\n      *(char *)((long)param_1 + 0x39) = (char)((ulong)lVar4 >> 0x30);\n      *(char *)(param_1 + 7) = (char)((ulong)lVar4 >> 0x38);\n      FUN_00101170(param_1,param_1);\n      uVar7 = 0;\n      iVar1 = 0x589f3f1;\n    }\n  } while (iVar2 != 0x4d7e41f3);\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001016e0(void)", 
+   "is_thunk": false, 
+   "size": 693, 
+   "name": "FUN_001016e0", 
+   "entry_point": "001016e0"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n\nundefined8 FUN_001019b0(int param_1,long param_2)\n\n{\n  char *__s;\n  int iVar1;\n  size_t sVar2;\n  ulong uVar3;\n  int unaff_EBP;\n  int iVar4;\n  int iVar5;\n  byte local_c8 [32];\n  char local_a8 [64];\n  uint local_68;\n  long local_60;\n  undefined8 local_58;\n  undefined8 uStack_50;\n  undefined8 local_48;\n  undefined8 uStack_40;\n  undefined4 local_38;\n  \n  iVar4 = -0x681a3b60;\n  if (param_1 < 2) {\n    iVar4 = 0x412f09cc;\n  }\n  iVar5 = 0x34f02295;\nLAB_00101a00:\n  while( true ) {\n    while( true ) {\n      while (iVar1 = iVar5, iVar5 = iVar1, 0x34f02294 < iVar1) {\n        if (iVar1 < 0x4c225d19) {\n          iVar5 = iVar4;\n          if ((iVar1 != 0x34f02295) && (iVar5 = iVar1, iVar1 == 0x412f09cc)) {\n            puts(\"USAGE\");\n            iVar5 = -0x514cd615;\n          }\n        }\n        else if (iVar1 == 0x4c225d19) {\n          printf(\"%02x\",(ulong)local_c8[unaff_EBP]);\n          iVar5 = -0x5c65089c;\n        }\n        else if (iVar1 == 0x5c4f2f2a) {\n          putchar(10);\n          iVar5 = -0x514cd615;\n        }\n      }\n      if (iVar1 < -0x514cd615) break;\n      if (iVar1 == -0x2b588616) {\n        iVar5 = -0xe13baa3;\n        if (unaff_EBP < 0x14) {\n          iVar5 = 0x4c225d19;\n        }\n      }\n      else if (iVar1 == -0xe13baa3) {\n        iVar5 = 0x5c4f2f2a;\n      }\n      else if (iVar1 == -0x514cd615) {\n        return 0;\n      }\n    }\n    if (iVar1 == -0x681a3b60) break;\n    if (iVar1 == -0x5c65089c) {\n      unaff_EBP = unaff_EBP + 1;\n      iVar5 = -0x2b588616;\n    }\n  }\n  local_68 = 0;\n  local_60 = 0;\n  local_58 = _DAT_00102010;\n  uStack_50 = _UNK_00102018;\n  local_48 = _DAT_00102020;\n  uStack_40 = _UNK_00102028;\n  local_38 = 0xca62c1d6;\n  __s = *(char **)(param_2 + 8);\n  sVar2 = strlen(__s);\n  uVar3 = 0;\n  do {\n    iVar5 = -0x515f3c45;\n    if (uVar3 < sVar2) {\n      iVar5 = -0x289b1d7c;\n    }\n    iVar1 = -0x34a0120e;\n    while( true ) {\n      while (-0x289b1d7d < iVar1) {\n        if (iVar1 == 0x7e1312bd) {\n          iVar1 = -0x38b10994;\n        }\n        else if (iVar1 == 0x43a59106) {\n          FUN_00101170(local_a8,local_a8);\n          local_60 = local_60 + 0x200;\n          local_68 = 0;\n          iVar1 = 0x7e1312bd;\n        }\n        else if (iVar1 == -0x289b1d7c) {\n          local_a8[local_68] = __s[uVar3];\n          local_68 = local_68 + 1;\n          iVar1 = 0x7e1312bd;\n          if (local_68 == 0x40) {\n            iVar1 = 0x43a59106;\n          }\n        }\n      }\n      if (iVar1 == -0x515f3c45) {\n        FUN_001016e0(local_a8,local_c8);\n        unaff_EBP = 0;\n        iVar5 = -0x2b588616;\n        goto LAB_00101a00;\n      }\n      if (iVar1 == -0x38b10994) break;\n      if (iVar1 == -0x34a0120e) {\n        iVar1 = iVar5;\n      }\n    }\n    uVar3 = uVar3 + 1;\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_001019b0(void)", 
+   "is_thunk": false, 
+   "size": 594, 
+   "name": "FUN_001019b0", 
+   "entry_point": "001019b0"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00101c20(undefined4 param_1,undefined8 param_2,undefined8 param_3)\n\n{\n  long lVar1;\n  \n  _DT_INIT();\n  lVar1 = 0;\n  do {\n    (*(code *)(&__DT_INIT_ARRAY)[lVar1])(param_1,param_2,param_3);\n    lVar1 = lVar1 + 1;\n  } while (lVar1 != 1);\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101c20(void)", 
+   "is_thunk": false, 
+   "size": 93, 
+   "name": "FUN_00101c20", 
+   "entry_point": "00101c20"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00101c80(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101c80(void)", 
+   "is_thunk": false, 
+   "size": 1, 
+   "name": "FUN_00101c80", 
+   "entry_point": "00101c80"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint putchar(int __c)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n  halt_baddata();\n}\n\n", 
+   "signature": "int putchar(int __c)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "putchar", 
+   "entry_point": "00105000"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "r02_sha1", 
+ "n_functions": 13, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "00100401", 
+   "value": "puts"
+  }, 
+  {
+   "address": "00100406", 
+   "value": "putchar"
+  }, 
+  {
+   "address": "0010040e", 
+   "value": "printf"
+  }, 
+  {
+   "address": "00100415", 
+   "value": "strlen"
+  }, 
+  {
+   "address": "0010041c", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "0010042b", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "0010043d", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100447", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "00100453", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "0010046f", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "0010047e", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00102035", 
+   "value": "USAGE"
+  }, 
+  {
+   "address": "001020a1", 
+   "value": "zR"
+  }, 
+  {
+   "address": "001020d1", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::0000000d", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::00000019", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::0000001f", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::00000028", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000041", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::00000046", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::0000005c", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::0000006b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000073", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::0000007d", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000092", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000098", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::000000a2", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::000000b0", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000ba", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000c3", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::000000cd", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::000000d5", 
+   "value": ".data"
+  }
+ ]
+}

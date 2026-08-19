@@ -1,0 +1,193 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp
+prog40_bisection_root,1,1.0000,5,5,True,False,791,12,0.026146,19301,1369,databricks-claude-haiku-4-5,databricks,24.4,[],2026-08-12T23:31:02
+prog40_bisection_root,2,1.0000,5,5,True,False,780,12,0.021867,13177,1738,databricks-claude-haiku-4-5,databricks,22.2,[],2026-08-12T23:31:24
+prog40_bisection_root,3,0.0000,0,5,False,False,785,12,0.007151,441,1342,databricks-claude-haiku-4-5,databricks,8.4,"/w/candidate.c:36:9: error: call to undeclared function 'atof'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |     a = atof(argv[1]);
+      |         ^
+1 error generated.
+",2026-08-12T23:31:33
+prog40_bisection_root,4,1.0000,5,5,True,False,807,12,0.028556,21431,1425,databricks-claude-haiku-4-5,databricks,26.0,[],2026-08-12T23:31:59
+prog40_bisection_root,5,1.0000,5,5,True,False,780,12,0.029954,21719,1647,databricks-claude-haiku-4-5,databricks,25.7,[],2026-08-12T23:32:24
+prog40_bisection_root,6,1.0000,5,5,True,False,822,12,0.037063,24168,2579,databricks-claude-haiku-4-5,databricks,28.2,[],2026-08-12T23:32:53
+prog40_bisection_root,7,1.0000,5,5,True,False,857,12,0.174821,86281,17708,databricks-claude-haiku-4-5,databricks,70.9,[],2026-08-12T23:34:04
+prog40_bisection_root,8,1.0000,5,5,True,False,791,12,0.034201,25651,1710,databricks-claude-haiku-4-5,databricks,26.9,[],2026-08-12T23:34:30
+prog41_series_sum,1,0.0000,0,5,True,False,836,12,0.017810,11470,1268,databricks-claude-haiku-4-5,databricks,16.7,[],2026-08-12T23:34:47
+prog41_series_sum,2,0.4000,2,5,True,False,937,12,0.039017,27657,2272,databricks-claude-haiku-4-5,databricks,25.3,[],2026-08-12T23:35:12
+prog41_series_sum,3,0.6000,3,5,True,False,1263,12,0.045501,33516,2397,databricks-claude-haiku-4-5,databricks,28.8,[],2026-08-12T23:35:41
+prog41_series_sum,4,0.0000,0,5,False,False,345,12,0.306790,99415,41475,databricks-claude-haiku-4-5,databricks,132.6,harness_error: IndexError: list index out of range,2026-08-12T23:37:54
+prog41_series_sum,5,0.0000,0,5,False,True,0,12,0.002715,1195,304,databricks-claude-haiku-4-5,databricks,8.2,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-12T23:38:02
+prog41_series_sum,6,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.4,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-12T23:38:05
+prog41_series_sum,7,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.4,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-12T23:38:07
+prog41_series_sum,8,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.5,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-12T23:38:09
+prog42_collatz,1,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.4,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-12T23:38:12
+prog42_collatz,2,1.0000,5,5,True,False,1389,12,0.018674,9979,1739,databricks-claude-haiku-4-5,databricks,18.7,[],2026-08-12T23:38:31
+prog42_collatz,3,0.4000,2,5,True,False,1267,12,0.031711,18456,2651,databricks-claude-haiku-4-5,databricks,26.1,[],2026-08-12T23:38:57
+prog42_collatz,4,0.4000,2,5,True,False,1195,12,0.018941,8631,2062,databricks-claude-haiku-4-5,databricks,19.3,[],2026-08-12T23:39:16
+prog42_collatz,5,0.8000,4,5,True,False,1357,12,0.033782,20782,2600,databricks-claude-haiku-4-5,databricks,25.8,[],2026-08-12T23:39:42
+prog42_collatz,6,1.0000,5,5,True,False,1291,12,0.018359,11634,1345,databricks-claude-haiku-4-5,databricks,15.4,[],2026-08-12T23:39:57
+prog42_collatz,7,0.4000,2,5,True,False,1214,12,0.025896,12076,2764,databricks-claude-haiku-4-5,databricks,23.6,[],2026-08-12T23:40:21
+prog42_collatz,8,0.4000,2,5,True,False,1220,12,0.028305,18175,2026,databricks-claude-haiku-4-5,databricks,22.7,[],2026-08-12T23:40:43
+prog43_catalan,1,0.8000,4,5,True,False,944,12,0.020279,13669,1322,databricks-claude-haiku-4-5,databricks,23.7,[],2026-08-12T23:41:07
+prog43_catalan,2,0.8000,4,5,True,False,1062,12,0.038589,30779,1562,databricks-claude-haiku-4-5,databricks,24.5,[],2026-08-12T23:41:32
+prog43_catalan,3,0.8000,4,5,True,False,997,12,0.020432,13757,1335,databricks-claude-haiku-4-5,databricks,17.5,[],2026-08-12T23:41:49
+prog43_catalan,4,0.8000,4,5,True,False,940,12,0.021801,14051,1550,databricks-claude-haiku-4-5,databricks,18.0,[],2026-08-12T23:42:07
+prog43_catalan,5,0.8000,4,5,True,False,821,12,0.024887,18222,1333,databricks-claude-haiku-4-5,databricks,19.4,[],2026-08-12T23:42:27
+prog43_catalan,6,0.8000,4,5,True,False,834,12,0.031539,23609,1586,databricks-claude-haiku-4-5,databricks,22.4,[],2026-08-12T23:42:49
+prog43_catalan,7,1.0000,5,5,True,False,1032,12,0.040518,30313,2041,databricks-claude-haiku-4-5,databricks,26.9,[],2026-08-12T23:43:16
+prog43_catalan,8,0.6000,3,5,True,False,957,12,0.014872,9347,1105,databricks-claude-haiku-4-5,databricks,15.2,[],2026-08-12T23:43:31
+prog44_miller_rabin,1,0.8000,4,5,True,False,1715,12,0.047728,37753,1995,databricks-claude-haiku-4-5,databricks,34.9,"[""Command '['/tmp/cand', '1']' timed out after 10 seconds""]",2026-08-12T23:44:06
+prog44_miller_rabin,2,0.8000,4,5,True,False,1643,12,0.050892,41552,1868,databricks-claude-haiku-4-5,databricks,24.3,[],2026-08-12T23:44:30
+prog44_miller_rabin,3,1.0000,5,5,True,False,1705,12,0.045262,32132,2626,databricks-claude-haiku-4-5,databricks,23.8,[],2026-08-12T23:44:54
+prog44_miller_rabin,4,1.0000,5,5,True,False,1799,12,0.040460,31620,1768,databricks-claude-haiku-4-5,databricks,20.9,[],2026-08-12T23:45:15
+prog44_miller_rabin,5,1.0000,5,5,True,False,1766,12,0.046267,33337,2586,databricks-claude-haiku-4-5,databricks,24.3,[],2026-08-12T23:45:39
+prog44_miller_rabin,6,0.8000,4,5,True,False,1503,12,0.023127,16317,1362,databricks-claude-haiku-4-5,databricks,15.3,[],2026-08-12T23:45:55
+prog44_miller_rabin,7,0.8000,4,5,True,False,1885,12,0.060335,46550,2757,databricks-claude-haiku-4-5,databricks,38.4,"[""Command '['/tmp/cand', '1']' timed out after 10 seconds""]",2026-08-12T23:46:33
+prog44_miller_rabin,8,1.0000,5,5,True,False,1729,12,0.045548,35588,1992,databricks-claude-haiku-4-5,databricks,22.9,[],2026-08-12T23:46:56
+prog45_josephus,1,0.8000,4,5,True,False,825,12,0.033272,25257,1603,databricks-claude-haiku-4-5,databricks,23.6,[],2026-08-12T23:47:20
+prog45_josephus,2,0.8000,4,5,True,False,824,12,0.034989,27634,1471,databricks-claude-haiku-4-5,databricks,22.8,[],2026-08-12T23:47:42
+prog45_josephus,3,0.8000,4,5,True,False,785,12,0.024829,16244,1717,databricks-claude-haiku-4-5,databricks,21.8,[],2026-08-12T23:48:04
+prog45_josephus,4,0.8000,4,5,True,False,785,12,0.118837,71592,9449,databricks-claude-haiku-4-5,databricks,51.5,[],2026-08-12T23:48:56
+prog45_josephus,5,0.8000,4,5,True,False,803,12,0.020766,14646,1224,databricks-claude-haiku-4-5,databricks,17.2,[],2026-08-12T23:49:13
+prog45_josephus,6,0.8000,4,5,True,False,937,12,0.030852,22802,1610,databricks-claude-haiku-4-5,databricks,22.8,[],2026-08-12T23:49:36
+prog45_josephus,7,0.8000,4,5,True,False,790,12,0.037686,31351,1267,databricks-claude-haiku-4-5,databricks,23.6,[],2026-08-12T23:49:59
+prog45_josephus,8,0.8000,4,5,True,False,829,12,0.030935,22800,1627,databricks-claude-haiku-4-5,databricks,23.5,[],2026-08-12T23:50:23
+prog46_postfix_stack,1,1.0000,5,5,True,False,1852,12,0.044910,37235,1535,databricks-claude-haiku-4-5,databricks,23.2,[],2026-08-12T23:50:46
+prog46_postfix_stack,2,1.0000,5,5,True,False,2008,12,0.164187,76192,17599,databricks-claude-haiku-4-5,databricks,65.9,[],2026-08-12T23:51:52
+prog46_postfix_stack,3,0.8000,4,5,True,False,1991,12,0.028153,15938,2443,databricks-claude-haiku-4-5,databricks,19.7,[],2026-08-12T23:52:12
+prog46_postfix_stack,4,0.0000,0,5,True,False,906,12,0.005046,441,921,databricks-claude-haiku-4-5,databricks,6.6,[],2026-08-12T23:52:18
+prog46_postfix_stack,5,1.0000,5,5,True,False,1997,12,0.061286,52101,1837,databricks-claude-haiku-4-5,databricks,25.6,[],2026-08-12T23:52:44
+prog46_postfix_stack,6,1.0000,5,5,True,False,2072,12,0.061078,51638,1888,databricks-claude-haiku-4-5,databricks,25.8,[],2026-08-12T23:53:10
+prog46_postfix_stack,7,0.8000,4,5,True,False,1753,12,0.025865,19255,1322,databricks-claude-haiku-4-5,databricks,17.9,[],2026-08-12T23:53:28
+prog46_postfix_stack,8,1.0000,5,5,True,False,1919,12,0.036695,29870,1365,databricks-claude-haiku-4-5,databricks,18.1,[],2026-08-12T23:53:46
+prog47_circular_queue,1,0.6000,3,5,True,False,1843,12,0.037586,28971,1723,databricks-claude-haiku-4-5,databricks,21.6,[],2026-08-12T23:54:07
+prog47_circular_queue,2,1.0000,5,5,True,False,1389,12,0.033069,25329,1548,databricks-claude-haiku-4-5,databricks,21.0,[],2026-08-12T23:54:28
+prog47_circular_queue,3,1.0000,5,5,True,False,1542,12,0.030470,23400,1414,databricks-claude-haiku-4-5,databricks,17.5,[],2026-08-12T23:54:46
+prog47_circular_queue,4,0.8000,4,5,True,False,1832,12,0.041514,33334,1636,databricks-claude-haiku-4-5,databricks,23.5,[],2026-08-12T23:55:09
+prog47_circular_queue,5,1.0000,5,5,True,False,1492,12,0.051676,40371,2261,databricks-claude-haiku-4-5,databricks,27.2,[],2026-08-12T23:55:37
+prog47_circular_queue,6,0.8000,4,5,True,False,1887,12,0.031006,23371,1527,databricks-claude-haiku-4-5,databricks,17.6,[],2026-08-12T23:55:54
+prog47_circular_queue,7,1.0000,5,5,True,False,1846,12,0.020184,13139,1409,databricks-claude-haiku-4-5,databricks,16.2,[],2026-08-12T23:56:10
+prog47_circular_queue,8,0.0000,0,5,True,False,1631,12,0.013709,2029,2336,databricks-claude-haiku-4-5,databricks,14.5,[],2026-08-12T23:56:25
+prog48_sorted_linked_list,1,1.0000,5,5,True,False,1313,12,0.030365,22185,1636,databricks-claude-haiku-4-5,databricks,22.9,[],2026-08-12T23:56:48
+prog48_sorted_linked_list,2,1.0000,5,5,True,False,1264,12,0.027651,20321,1466,databricks-claude-haiku-4-5,databricks,21.2,[],2026-08-12T23:57:09
+prog48_sorted_linked_list,3,1.0000,5,5,True,False,1307,12,0.027663,20538,1425,databricks-claude-haiku-4-5,databricks,21.5,[],2026-08-12T23:57:31
+prog48_sorted_linked_list,4,1.0000,5,5,True,False,1548,12,0.031510,23020,1698,databricks-claude-haiku-4-5,databricks,27.2,[],2026-08-12T23:57:58
+prog48_sorted_linked_list,5,0.0000,0,5,True,False,2108,12,0.006802,442,1272,databricks-claude-haiku-4-5,databricks,7.6,[],2026-08-12T23:58:05
+prog48_sorted_linked_list,6,1.0000,5,5,True,False,1397,12,0.030309,22629,1536,databricks-claude-haiku-4-5,databricks,24.2,[],2026-08-12T23:58:30
+prog48_sorted_linked_list,7,1.0000,5,5,True,False,1365,12,0.220464,93774,25338,databricks-claude-haiku-4-5,databricks,93.1,[],2026-08-13T00:00:03
+prog48_sorted_linked_list,8,0.8000,4,5,True,False,1308,12,0.026913,20293,1324,databricks-claude-haiku-4-5,databricks,41.3,[],2026-08-13T00:00:44
+prog49_bst,1,0.8000,4,5,True,False,2283,12,0.319328,187933,26279,databricks-claude-haiku-4-5,databricks,130.0,[],2026-08-13T00:02:54
+prog49_bst,2,0.8000,4,5,True,False,2719,12,0.045907,34987,2184,databricks-claude-haiku-4-5,databricks,30.5,[],2026-08-13T00:03:24
+prog49_bst,3,0.2000,1,5,True,False,2953,12,0.049967,38862,2221,databricks-claude-haiku-4-5,databricks,30.2,[],2026-08-13T00:03:55
+prog49_bst,4,0.8000,4,5,True,False,2573,12,0.059372,47532,2368,databricks-claude-haiku-4-5,databricks,34.1,[],2026-08-13T00:04:29
+prog49_bst,5,0.0000,0,5,True,False,2848,12,0.008594,439,1631,databricks-claude-haiku-4-5,databricks,9.8,[],2026-08-13T00:04:39
+prog49_bst,6,0.4000,2,5,True,False,2515,12,0.058263,38818,3889,databricks-claude-haiku-4-5,databricks,34.0,[],2026-08-13T00:05:13
+prog49_bst,7,0.8000,4,5,True,False,2656,12,0.049000,38645,2071,databricks-claude-haiku-4-5,databricks,29.2,[],2026-08-13T00:05:42
+prog49_bst,8,0.0000,0,5,True,False,1713,12,0.008214,439,1555,databricks-claude-haiku-4-5,databricks,9.1,[],2026-08-13T00:05:51
+prog50_binary_heap,1,1.0000,5,5,True,False,2315,12,0.032920,24720,1640,databricks-claude-haiku-4-5,databricks,25.9,[],2026-08-13T00:06:17
+prog50_binary_heap,2,1.0000,5,5,True,False,2167,12,0.030517,22797,1544,databricks-claude-haiku-4-5,databricks,21.8,[],2026-08-13T00:06:39
+prog50_binary_heap,3,1.0000,5,5,True,False,2391,12,0.044807,34702,2021,databricks-claude-haiku-4-5,databricks,24.5,[],2026-08-13T00:07:03
+prog50_binary_heap,4,0.8000,4,5,True,False,2280,12,0.058594,48419,2035,databricks-claude-haiku-4-5,databricks,30.9,[],2026-08-13T00:07:34
+prog50_binary_heap,5,1.0000,5,5,True,False,2107,12,0.028978,21408,1514,databricks-claude-haiku-4-5,databricks,17.6,[],2026-08-13T00:07:52
+prog50_binary_heap,6,1.0000,5,5,True,False,2272,12,0.051402,43092,1662,databricks-claude-haiku-4-5,databricks,24.5,[],2026-08-13T00:08:16
+prog50_binary_heap,7,0.8000,4,5,True,False,2478,12,0.044821,34391,2086,databricks-claude-haiku-4-5,databricks,25.8,[],2026-08-13T00:08:42
+prog50_binary_heap,8,1.0000,5,5,True,False,2274,12,0.023310,15755,1511,databricks-claude-haiku-4-5,databricks,17.3,[],2026-08-13T00:08:59
+prog51_union_find,1,0.0000,0,5,True,False,1478,12,0.006745,440,1261,databricks-claude-haiku-4-5,databricks,8.9,[],2026-08-13T00:09:08
+prog51_union_find,2,0.2000,1,5,True,False,2312,12,0.046582,37627,1791,databricks-claude-haiku-4-5,databricks,28.1,[],2026-08-13T00:09:36
+prog51_union_find,3,1.0000,5,5,True,False,2724,12,0.035176,25821,1871,databricks-claude-haiku-4-5,databricks,22.6,[],2026-08-13T00:09:59
+prog51_union_find,4,0.0000,0,5,True,False,2905,12,0.096582,47677,9781,databricks-claude-haiku-4-5,databricks,44.8,[],2026-08-13T00:10:44
+prog51_union_find,5,0.4000,2,5,True,False,2376,12,0.045186,35071,2023,databricks-claude-haiku-4-5,databricks,31.1,[],2026-08-13T00:11:15
+prog51_union_find,6,0.0000,0,5,True,False,2430,12,0.029583,19883,1940,databricks-claude-haiku-4-5,databricks,21.6,[],2026-08-13T00:11:36
+prog51_union_find,7,0.0000,0,5,True,False,1023,12,0.177713,52188,25105,databricks-claude-haiku-4-5,databricks,86.7,[],2026-08-13T00:13:03
+prog51_union_find,8,0.8000,4,5,True,False,3016,12,0.039130,24425,2941,databricks-claude-haiku-4-5,databricks,24.6,[],2026-08-13T00:13:28
+prog52_bfs_grid,1,0.8000,4,5,True,False,2341,12,0.030835,16980,2771,databricks-claude-haiku-4-5,databricks,22.6,[],2026-08-13T00:13:50
+prog52_bfs_grid,2,0.6000,3,5,True,False,2225,12,0.041149,31294,1971,databricks-claude-haiku-4-5,databricks,24.5,[],2026-08-13T00:14:15
+prog52_bfs_grid,3,0.0000,0,5,True,False,1590,12,0.007316,441,1375,databricks-claude-haiku-4-5,databricks,8.9,[],2026-08-13T00:14:24
+prog52_bfs_grid,4,0.0000,0,5,True,False,2004,12,0.007201,441,1352,databricks-claude-haiku-4-5,databricks,58.5,"[""Command '['/tmp/cand', '0', '0', '4', '4']' timed out after 10 seconds"", ""Command '['/tmp/cand', '0', '0', '0', '0']' timed out after 10 seconds"", ""Command '['/tmp/cand', '0', '0']' timed out after 10 seconds""]",2026-08-13T00:15:22
+prog52_bfs_grid,5,0.6000,3,5,True,False,2316,12,0.029850,21065,1757,databricks-claude-haiku-4-5,databricks,18.6,[],2026-08-13T00:15:41
+prog52_bfs_grid,6,0.6000,3,5,True,False,2237,12,0.035009,21329,2736,databricks-claude-haiku-4-5,databricks,22.3,[],2026-08-13T00:16:03
+prog52_bfs_grid,7,0.6000,3,5,True,False,2116,12,0.026039,12159,2776,databricks-claude-haiku-4-5,databricks,20.9,[],2026-08-13T00:16:24
+prog52_bfs_grid,8,0.6000,3,5,True,False,2670,12,0.027996,15151,2569,databricks-claude-haiku-4-5,databricks,20.9,[],2026-08-13T00:16:45
+prog53_dfs_cycle,1,0.8000,4,5,True,False,1845,12,0.060163,49308,2171,databricks-claude-haiku-4-5,databricks,29.3,[],2026-08-13T00:17:14
+prog53_dfs_cycle,2,1.0000,5,5,True,False,1356,12,0.029968,22133,1567,databricks-claude-haiku-4-5,databricks,21.2,[],2026-08-13T00:17:35
+prog53_dfs_cycle,3,1.0000,5,5,True,False,1712,12,0.036171,27906,1653,databricks-claude-haiku-4-5,databricks,22.9,[],2026-08-13T00:17:58
+prog53_dfs_cycle,4,0.2000,1,5,True,False,1609,12,0.102950,55075,9575,databricks-claude-haiku-4-5,databricks,47.5,[],2026-08-13T00:18:46
+prog53_dfs_cycle,5,0.0000,0,5,True,False,1100,12,0.005376,441,987,databricks-claude-haiku-4-5,databricks,6.6,[],2026-08-13T00:18:52
+prog53_dfs_cycle,6,0.8000,4,5,True,False,1385,12,0.057062,45297,2353,databricks-claude-haiku-4-5,databricks,29.7,[],2026-08-13T00:19:22
+prog53_dfs_cycle,7,1.0000,5,5,True,False,1338,12,0.032227,22167,2012,databricks-claude-haiku-4-5,databricks,21.8,[],2026-08-13T00:19:44
+prog53_dfs_cycle,8,0.8000,4,5,True,False,1512,12,0.061989,51784,2041,databricks-claude-haiku-4-5,databricks,28.4,[],2026-08-13T00:20:12
+prog54_topo_sort,1,0.4000,2,5,True,False,1799,12,0.063234,46939,3259,databricks-claude-haiku-4-5,databricks,27.6,[],2026-08-13T00:20:40
+prog54_topo_sort,2,0.0000,0,5,True,False,2145,12,0.046007,37497,1702,databricks-claude-haiku-4-5,databricks,23.6,[],2026-08-13T00:21:03
+prog54_topo_sort,3,0.6000,3,5,True,False,1979,12,0.032382,24912,1494,databricks-claude-haiku-4-5,databricks,18.4,[],2026-08-13T00:21:22
+prog54_topo_sort,4,0.4000,2,5,True,False,1938,12,0.049095,40725,1674,databricks-claude-haiku-4-5,databricks,23.5,[],2026-08-13T00:21:45
+prog54_topo_sort,5,0.6000,3,5,True,False,2176,12,0.050969,38219,2550,databricks-claude-haiku-4-5,databricks,26.6,[],2026-08-13T00:22:12
+prog54_topo_sort,6,0.0000,0,5,True,False,2285,12,0.064534,47234,3460,databricks-claude-haiku-4-5,databricks,30.0,[],2026-08-13T00:22:42
+prog54_topo_sort,7,0.6000,3,5,True,False,2199,12,0.051212,42432,1756,databricks-claude-haiku-4-5,databricks,23.4,[],2026-08-13T00:23:05
+prog54_topo_sort,8,0.4000,2,5,True,False,2022,12,0.071436,53841,3519,databricks-claude-haiku-4-5,databricks,34.5,[],2026-08-13T00:23:40
+prog55_connected_components,1,0.2000,1,5,True,False,1780,12,0.054560,40925,2727,databricks-claude-haiku-4-5,databricks,27.4,[],2026-08-13T00:24:07
+prog55_connected_components,2,0.2000,1,5,True,False,1727,12,0.052137,44357,1556,databricks-claude-haiku-4-5,databricks,23.5,[],2026-08-13T00:24:31
+prog55_connected_components,3,0.2000,1,5,True,False,1762,12,0.349902,174037,35173,databricks-claude-haiku-4-5,databricks,127.5,[],2026-08-13T00:26:38
+prog55_connected_components,4,0.0000,0,5,False,True,0,12,0.000900,440,92,databricks-claude-haiku-4-5,databricks,4.9,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:26:43
+prog55_connected_components,5,0.0000,0,5,False,True,0,12,0.001485,440,209,databricks-claude-haiku-4-5,databricks,6.3,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:26:49
+prog55_connected_components,6,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.5,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:26:52
+prog55_connected_components,7,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.4,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:26:54
+prog55_connected_components,8,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.4,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:26:57
+prog56_kruskal_mst,1,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.4,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:26:59
+prog56_kruskal_mst,2,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.4,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:01
+prog56_kruskal_mst,3,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.5,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:04
+prog56_kruskal_mst,4,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.4,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:06
+prog56_kruskal_mst,5,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.3,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:09
+prog56_kruskal_mst,6,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.5,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:11
+prog56_kruskal_mst,7,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.5,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:14
+prog56_kruskal_mst,8,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.5,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:16
+prog57_elevator_fsm,1,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.3,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:19
+prog57_elevator_fsm,2,0.0000,0,5,False,True,0,12,0.000000,0,0,databricks-claude-haiku-4-5,databricks,2.5,"RateLimitError: Error code: 429 - {'error_code': 'REQUEST_LIMIT_EXCEEDED', 'message': 'REQUEST_LIMIT_EXCEEDED: Exceeded workspace output tokens per minute rate limit for databricks-claude-haiku-4-5. Work with your Databricks account team to request a higher FMAPI rate limit tier.'}
+Traceback (most r",2026-08-13T00:27:21
+prog57_elevator_fsm,3,0.8000,4,5,True,False,1110,12,0.016714,8799,1583,databricks-claude-haiku-4-5,databricks,19.8,[],2026-08-13T00:27:41
+prog57_elevator_fsm,4,1.0000,5,5,True,False,1178,12,0.043166,30306,2572,databricks-claude-haiku-4-5,databricks,34.8,[],2026-08-13T00:28:16
+prog57_elevator_fsm,5,0.8000,4,5,True,False,1210,12,0.016151,10121,1206,databricks-claude-haiku-4-5,databricks,17.4,[],2026-08-13T00:28:33
+prog57_elevator_fsm,6,0.8000,4,5,True,False,976,12,0.027437,18287,1830,databricks-claude-haiku-4-5,databricks,23.3,[],2026-08-13T00:28:56
+prog57_elevator_fsm,7,0.0000,0,5,True,False,1243,12,0.117305,71255,9210,databricks-claude-haiku-4-5,databricks,45.4,[],2026-08-13T00:29:42
+prog57_elevator_fsm,8,0.8000,4,5,True,False,977,12,0.015434,10069,1073,databricks-claude-haiku-4-5,databricks,15.3,[],2026-08-13T00:29:57
+prog58_turing_increment,1,0.4000,2,5,True,False,1154,12,0.039734,30244,1898,databricks-claude-haiku-4-5,databricks,22.4,[],2026-08-13T00:30:19
+prog58_turing_increment,2,0.4000,2,5,True,False,1199,12,0.313539,184424,25823,databricks-claude-haiku-4-5,databricks,98.8,[],2026-08-13T00:31:58
+prog58_turing_increment,3,0.4000,2,5,True,False,1233,12,0.045033,32128,2581,databricks-claude-haiku-4-5,databricks,26.1,[],2026-08-13T00:32:24
+prog58_turing_increment,4,0.2000,1,5,True,False,1627,12,0.024682,12752,2386,databricks-claude-haiku-4-5,databricks,19.4,[],2026-08-13T00:32:44
+prog58_turing_increment,5,0.4000,2,5,True,False,1739,12,0.036084,23824,2452,databricks-claude-haiku-4-5,databricks,23.5,[],2026-08-13T00:33:07
+prog58_turing_increment,6,0.4000,2,5,True,False,1283,12,0.034850,23675,2235,databricks-claude-haiku-4-5,databricks,21.9,[],2026-08-13T00:33:29
+prog58_turing_increment,7,0.2000,1,5,True,False,1401,12,0.045233,33383,2370,databricks-claude-haiku-4-5,databricks,26.2,[],2026-08-13T00:33:55
+prog58_turing_increment,8,0.4000,2,5,True,False,1252,12,0.039691,27946,2349,databricks-claude-haiku-4-5,databricks,22.1,[],2026-08-13T00:34:17
+prog59_rule110,1,1.0000,5,5,True,False,2109,12,0.044837,33002,2367,databricks-claude-haiku-4-5,databricks,24.3,[],2026-08-13T00:34:42
+prog59_rule110,2,0.0000,0,5,True,False,1291,12,0.006854,439,1283,databricks-claude-haiku-4-5,databricks,8.7,"[""'utf-8' codec can't decode byte 0xab in position 4: invalid start byte""]",2026-08-13T00:34:50
+prog59_rule110,3,0.4000,2,5,True,False,2181,12,0.032701,23511,1838,databricks-claude-haiku-4-5,databricks,455.9,[],2026-08-13T00:42:26
+prog59_rule110,4,0.4000,2,5,True,False,1559,12,0.043408,30678,2546,databricks-claude-haiku-4-5,databricks,27.8,[],2026-08-13T00:42:54
+prog59_rule110,5,0.4000,2,5,True,False,2218,12,0.048420,35130,2658,databricks-claude-haiku-4-5,databricks,28.6,"[""'utf-8' codec can't decode byte 0xb0 in position 12: invalid start byte"", ""'utf-8' codec can't decode byte 0xb0 in position 116: invalid start byte""]",2026-08-13T00:43:23
+prog59_rule110,6,0.8000,4,5,True,False,1802,12,0.050882,35332,3110,databricks-claude-haiku-4-5,databricks,29.7,[],2026-08-13T00:43:52
+prog59_rule110,7,0.6000,3,5,True,False,1574,12,0.051187,40907,2056,databricks-claude-haiku-4-5,databricks,26.8,[],2026-08-13T00:44:19
+prog59_rule110,8,1.0000,5,5,True,False,1700,12,0.045651,36821,1766,databricks-claude-haiku-4-5,databricks,23.9,[],2026-08-13T00:44:43
+prog60_inventory_sim,1,0.0000,0,5,True,False,2141,12,0.033293,24198,1819,databricks-claude-haiku-4-5,databricks,23.9,[],2026-08-13T00:45:07
+prog60_inventory_sim,2,0.0000,0,5,True,False,1851,12,0.032862,17492,3074,databricks-claude-haiku-4-5,databricks,23.9,[],2026-08-13T00:45:31
+prog60_inventory_sim,3,0.0000,0,5,True,False,1419,12,0.006660,440,1244,databricks-claude-haiku-4-5,databricks,7.5,[],2026-08-13T00:45:39
+prog60_inventory_sim,4,0.0000,0,5,True,False,847,12,0.005245,440,961,databricks-claude-haiku-4-5,databricks,7.0,[],2026-08-13T00:45:46
+prog60_inventory_sim,5,0.0000,0,5,True,False,1869,12,0.030874,22224,1730,databricks-claude-haiku-4-5,databricks,22.9,[],2026-08-13T00:46:08
+prog60_inventory_sim,6,0.0000,0,5,True,False,2751,12,0.043658,29723,2787,databricks-claude-haiku-4-5,databricks,27.2,[],2026-08-13T00:46:36
+prog60_inventory_sim,7,0.0000,0,5,True,False,1211,12,0.008445,440,1601,databricks-claude-haiku-4-5,databricks,8.7,[],2026-08-13T00:46:44
+prog60_inventory_sim,8,0.0000,0,5,True,False,1958,12,0.036596,29221,1475,databricks-claude-haiku-4-5,databricks,23.0,[],2026-08-13T00:47:07

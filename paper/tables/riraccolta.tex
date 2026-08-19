@@ -1,0 +1,25 @@
+% Generata da analysis/tabella_riraccolta.py — non modificare a mano.
+\begin{table}[t]
+\centering
+\caption{The same eight contrasts measured twice: the original collection, and an independent re-collection on workspaces isolated per cell. Differences in percentage points; the last column states whether the re-collected effect falls inside the original 95\% interval. The criteria and their thresholds were written before the comparison could be computed; their timing is stated precisely in \S\ref{sec:threats}, where it is weaker than the pre-registration's.}
+\label{tab:riraccolta}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llrrc@{}}
+\toprule
+ & model & orig. & re-coll. & in CI \\
+\midrule
+T1 & gpt-oss-120b & $-6.4$ & $-6.6$ & yes \\
+T2 & llama-3.3-70b & $+3.5$ & $+2.2$ & yes \\
+T3 & claude-haiku-4-5 & $-10.4$ & $-9.8$ & yes \\
+T4 & claude-sonnet-4-5 & $+2.1$ & $-1.0$ & yes \\
+T5 & gpt-oss-120b & $+3.4$ & $+3.3$ & yes \\
+T6 & llama-3.3-70b & $-8.9$ & $-7.9$ & yes \\
+T7 & claude-haiku-4-5 & $-0.1$ & $+0.2$ & no \\
+T8 & claude-sonnet-4-5 & $-0.7$ & $-0.9$ & yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% criterio 1, segni concordi: 6/8 (soglia 6) -> invariato
+% criterio 3, copertura IC95: 7/8 (soglia 6) -> invariato

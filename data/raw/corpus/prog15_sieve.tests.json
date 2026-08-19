@@ -1,0 +1,7 @@
+{"program": "prog15_sieve", "tests": [
+  {"id": 1, "args": ["100"], "stdin": "", "expected_stdout": "2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97\n"},
+  {"id": 2, "args": ["2"], "stdin": "", "expected_stdout": "2\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "NO_INPUT\n"},
+  {"id": 4, "args": ["1"], "stdin": "", "expected_stdout": "NONE\n"},
+  {"id": 5, "args": ["abc"], "stdin": "", "expected_stdout": "BAD_INPUT\n"}
+]}

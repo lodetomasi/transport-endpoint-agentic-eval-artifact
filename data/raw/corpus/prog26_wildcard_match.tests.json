@@ -1,0 +1,7 @@
+{"program": "prog26_wildcard_match", "tests": [
+  {"id": 1, "args": ["*.txt", "report.txt"], "stdin": "", "expected_stdout": "MATCH\n"},
+  {"id": 2, "args": ["a?c", "abc"], "stdin": "", "expected_stdout": "MATCH\n"},
+  {"id": 3, "args": ["a?c", "ac"], "stdin": "", "expected_stdout": "NO_MATCH\n"},
+  {"id": 4, "args": ["*a*b*c*", "xxaxxbxxc"], "stdin": "", "expected_stdout": "MATCH\n"},
+  {"id": 5, "args": ["abc", "abd"], "stdin": "", "expected_stdout": "NO_MATCH\n"}
+]}

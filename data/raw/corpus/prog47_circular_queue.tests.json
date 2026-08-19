@@ -1,0 +1,7 @@
+{"program": "prog47_circular_queue", "tests": [
+  {"id": 1, "args": ["E1", "E2", "D", "F", "D"], "stdin": "", "expected_stdout": "ENQ 1\nENQ 2\nDEQ 1\nFRONT 2\nDEQ 2\n"},
+  {"id": 2, "args": ["E1", "E2", "E3", "E4", "E5", "D", "D", "D", "D", "D"], "stdin": "", "expected_stdout": "ENQ 1\nENQ 2\nENQ 3\nENQ 4\nENQ 5\nDEQ 1\nDEQ 2\nDEQ 3\nDEQ 4\nDEQ 5\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "NOOP\n"},
+  {"id": 4, "args": ["E1", "E2", "E3", "E4", "E5", "E6", "E7"], "stdin": "", "expected_stdout": "ENQ 1\nENQ 2\nENQ 3\nENQ 4\nENQ 5\nFULL\nFULL\n"},
+  {"id": 5, "args": ["D", "F"], "stdin": "", "expected_stdout": "EMPTY\nEMPTY\n"}
+]}

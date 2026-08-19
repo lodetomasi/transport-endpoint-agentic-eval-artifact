@@ -1,0 +1,2 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog34_fibonacci_memo,1,0.8000,4,5,True,False,618,12,0.005932,7915,324,us.meta.llama3-3-70b-instruct-v1:0,bedrock,17.0,[],2026-08-15T13:27:38,llama-3.3-70b,bedrock,native

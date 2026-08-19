@@ -1,0 +1,7 @@
+{"program": "prog58_turing_increment", "tests": [
+  {"id": 1, "args": ["101"], "stdin": "", "expected_stdout": "result=110 steps=6\n"},
+  {"id": 2, "args": ["0"], "stdin": "", "expected_stdout": "result=1 steps=3\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "INVALID_INPUT\n"},
+  {"id": 4, "args": ["0111111111"], "stdin": "", "expected_stdout": "result=1000000000 steps=21\n"},
+  {"id": 5, "args": ["111"], "stdin": "", "expected_stdout": "OVERFLOW\n"}
+]}

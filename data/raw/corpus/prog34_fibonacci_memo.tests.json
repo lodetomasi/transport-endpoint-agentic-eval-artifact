@@ -1,0 +1,7 @@
+{"program": "prog34_fibonacci_memo", "tests": [
+  {"id": 1, "args": ["10"], "stdin": "", "expected_stdout": "55\n"},
+  {"id": 2, "args": ["0"], "stdin": "", "expected_stdout": "0\n"},
+  {"id": 3, "args": ["1"], "stdin": "", "expected_stdout": "1\n"},
+  {"id": 4, "args": ["90"], "stdin": "", "expected_stdout": "2880067194370816120\n"},
+  {"id": 5, "args": ["-3"], "stdin": "", "expected_stdout": "NEGATIVE\n"}
+]}

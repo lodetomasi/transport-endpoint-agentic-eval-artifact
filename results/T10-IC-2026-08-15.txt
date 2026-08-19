@@ -1,0 +1,19 @@
+T10 — intervallo di confidenza per la stima aggregata dell'interazione
+Lo script congelato stampa il delta ma non l'IC (stats-auditor, 2026-08-15, punto 5).
+Qui si calcola SENZA toccare lo script: stessa convenzione di segno, che e
+delta_databricks - delta_bedrock con delta = testo - nativo.
+
+  gpt-oss-120b         K= 45   -5.22pp  IC95 [-11.63,  +1.19]
+  llama-3.3-70b        K= 45  -10.56pp  IC95 [-18.11,  -3.00]
+  claude-haiku-4-5     K= 45   -0.06pp  IC95 [ -0.16,  +0.05]
+  claude-sonnet-4-5    K= 45   +0.44pp  IC95 [ -1.61,  +2.50]
+
+  aggregata (media delle 4 stime, come lo script): -3.85pp
+    IC95 col MODELLO come unita (n=4):   [-12.05, +4.35]   t(3)=3,182
+    IC95 col BINARIO come unita (n=180): [-6.44, -1.26]   ignora il clustering per modello
+
+  controllo con risposta nota: l'analisi congelata stampa -3.85pp -> COINCIDE
+
+  Si riporta il primo: con quattro modelli il modello e l'unita di replicazione, e
+  l'IC sul binario tratta 180 coppie come indipendenti quando sono 4 gruppi da 45.
+  Nessuno dei due cambia l'esito di Holm: il p pre-registrato resta quello del misto.

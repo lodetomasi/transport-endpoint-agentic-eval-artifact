@@ -1,0 +1,4 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog31_gcd_lcm,1,0.6000,3,5,True,False,841,12,0.005853,7439,772,databricks-meta-llama-3-3-70b-instruct,databricks,16.1,[],2026-08-15T14:19:44,llama-3.3-70b,databricks,text
+prog35_perfect_numbers,1,0.8000,4,5,True,False,629,12,0.005278,6795,667,databricks-meta-llama-3-3-70b-instruct,databricks,13.7,[],2026-08-15T14:19:58,llama-3.3-70b,databricks,text
+prog37_binomial_coefficient,1,0.6000,3,5,True,False,879,12,0.006524,8485,796,databricks-meta-llama-3-3-70b-instruct,databricks,16.9,[],2026-08-15T14:20:15,llama-3.3-70b,databricks,text

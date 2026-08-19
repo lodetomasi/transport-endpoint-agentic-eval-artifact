@@ -1,0 +1,47 @@
+Bande di incertezza sulle proporzioni riportate — Wilson 95%
+
+STABILITA' DEL PUNTEGGIO: binari le cui otto run danno lo stesso valore
+  cella                                                      quota                IC95
+  claude-haiku-4-5/databricks/native             45/45     100.0%       [92.1, 100.0]
+  claude-haiku-4-5/bedrock/native                44/45      97.8%        [88.4, 99.6]
+  claude-haiku-4-5/bedrock/text                  44/45      97.8%        [88.4, 99.6]
+  claude-haiku-4-5/databricks/text               44/45      97.8%        [88.4, 99.6]
+  claude-sonnet-4-5/bedrock/text                 29/45      64.4%        [49.8, 76.8]
+  claude-sonnet-4-5/databricks/native            28/45      62.2%        [47.6, 74.9]
+  claude-sonnet-4-5/databricks/text              28/45      62.2%        [47.6, 74.9]
+  llama-3.3-70b/bedrock/native                   28/45      62.2%        [47.6, 74.9]
+  claude-sonnet-4-5/bedrock/native               27/45      60.0%        [45.5, 73.0]
+  llama-3.3-70b/bedrock/text                     18/45      40.0%        [27.0, 54.5]
+  llama-3.3-70b/databricks/text                  18/45      40.0%        [27.0, 54.5]
+  gpt-oss-120b/bedrock/text                      11/45      24.4%        [14.2, 38.7]
+  gpt-oss-120b/bedrock/native                     9/45      20.0%        [10.9, 33.8]
+  gpt-oss-120b/databricks/text                    7/45      15.6%         [7.7, 28.8]
+  llama-3.3-70b/databricks/native                 7/45      15.6%         [7.7, 28.8]
+  gpt-oss-120b/databricks/native                  6/45      13.3%         [6.3, 26.2]
+
+  Il punto che le bande rendono visibile: su 45 binari, 45/45 non e' «certezza»
+  ma [92.1, 100.0]. Due celle che differiscono di un binario non sono
+  distinguibili, e il paper non deve leggerle come se lo fossero.
+
+  CONFRONTO FRA I DUE CLOUD, a modello e trasporto fissi. La claim «lo stesso
+  modello nominale non e' ugualmente stabile su cloud diversi» va sostenuta dove le
+  bande NON si sovrappongono, e detta con quell'esempio.
+  modello / trasporto                        cloud A           cloud B   bande
+  claude-haiku-4-5 / native          100.0% [92,100]    97.8% [88,100]   si sovrappongono
+  claude-haiku-4-5 / text             97.8% [88,100]    97.8% [88,100]   si sovrappongono
+  claude-sonnet-4-5 / native           62.2% [48,75]     60.0% [45,73]   si sovrappongono
+  claude-sonnet-4-5 / text             62.2% [48,75]     64.4% [50,77]   si sovrappongono
+  llama-3.3-70b / native                15.6% [8,29]     62.2% [48,75]   SEPARATE
+  llama-3.3-70b / text                 40.0% [27,55]     40.0% [27,55]   si sovrappongono
+  gpt-oss-120b / native                 13.3% [6,26]     20.0% [11,34]   si sovrappongono
+  gpt-oss-120b / text                   15.6% [8,29]     24.4% [14,39]   si sovrappongono
+
+  Confronti con bande separate: 1 su 8 — llama-3.3-70b/native
+  Sugli altri la differenza osservata e' compatibile con il campionamento a K=45,
+  e il paper non deve usarli come esempio della claim.
+
+PAVIMENTO DELLA METRICA: pass-rate medio, con intervallo sulla media
+  senza alcuna tool call     n=58    0.1103  IC95 [0.0639, 0.1568]
+  con almeno una             n=5747  0.6358  IC95 [0.6261, 0.6455]
+  differenza                        +0.5254  IC95 [+0.4780, +0.5728]
+  -> l'intervallo esclude ampiamente lo zero: il pavimento esiste e non domina

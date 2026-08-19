@@ -1,0 +1,7 @@
+{"program": "prog37_binomial_coefficient", "tests": [
+  {"id": 1, "args": ["10", "3"], "stdin": "", "expected_stdout": "120\n"},
+  {"id": 2, "args": ["5", "0"], "stdin": "", "expected_stdout": "1\n"},
+  {"id": 3, "args": ["5", "5"], "stdin": "", "expected_stdout": "1\n"},
+  {"id": 4, "args": ["60", "30"], "stdin": "", "expected_stdout": "118264581564861424\n"},
+  {"id": 5, "args": ["5", "7"], "stdin": "", "expected_stdout": "0\n"}
+]}

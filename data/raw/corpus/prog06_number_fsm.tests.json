@@ -1,0 +1,7 @@
+{"program": "prog06_number_fsm", "tests": [
+  {"id": 1, "args": ["123"], "stdin": "", "expected_stdout": "VALID\n"},
+  {"id": 2, "args": ["-3.14e-10"], "stdin": "", "expected_stdout": "VALID\n"},
+  {"id": 3, "args": [""], "stdin": "", "expected_stdout": "INVALID\n"},
+  {"id": 4, "args": ["+123456789.987654321E+308"], "stdin": "", "expected_stdout": "VALID\n"},
+  {"id": 5, "args": ["1.2.3"], "stdin": "", "expected_stdout": "INVALID\n"}
+]}

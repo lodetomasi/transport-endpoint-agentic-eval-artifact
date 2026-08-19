@@ -1,0 +1,7 @@
+{"program": "prog41_series_sum", "tests": [
+  {"id": 1, "args": ["1", "1000"], "stdin": "", "expected_stdout": "1.643935\n"},
+  {"id": 2, "args": ["2", "1"], "stdin": "", "expected_stdout": "1.000000\n"},
+  {"id": 3, "args": ["3", "0"], "stdin": "", "expected_stdout": "1.000000\n"},
+  {"id": 4, "args": ["1", "100000"], "stdin": "", "expected_stdout": "1.644924\n"},
+  {"id": 5, "args": ["9", "5"], "stdin": "", "expected_stdout": "BAD_MODE\n"}
+]}

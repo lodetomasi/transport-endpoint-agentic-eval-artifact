@@ -1,0 +1,4 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,1.0000,5,5,True,False,605,12,0.032541,7282,713,databricks-claude-sonnet-4-5,databricks,20.8,[],2026-08-15T12:52:04,claude-sonnet-4-5,databricks,text
+prog16_word_count_fsm,2,1.0000,5,5,True,False,603,12,0.031023,7246,619,databricks-claude-sonnet-4-5,databricks,19.5,[],2026-08-15T12:52:24,claude-sonnet-4-5,databricks,text
+prog16_word_count_fsm,3,1.0000,5,5,True,False,557,12,0.032859,7298,731,databricks-claude-sonnet-4-5,databricks,20.7,[],2026-08-15T12:52:44,claude-sonnet-4-5,databricks,text

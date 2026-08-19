@@ -1,0 +1,128 @@
+{
+  "_meta": {
+    "purpose": "Per-model token pricing used by llm_client.estimate_cost_usd(). Kept out of code per the no-hardcoded-constants rule.",
+    "databricks_usd_per_dbu": 0.084,
+    "databricks_usd_per_dbu_source": "VERIFICATO 2026-08-10 contro system.billing.list_prices JOIN system.billing.usage sul workspace reale: 177,337 DBU su databricks-gpt-oss-120b -> 14,8963 USD, cioe' 0,08401 USD/DBU. Il valore precedente (0,07, dalla pagina commerciale Databricks) era piu' basso del prezzo Azure effettivo. Verifica di calibrazione complessiva: stima basata sui token 16,59 USD contro 16,20 USD fatturati = scarto 2,4%.",
+    "databricks_dbu_table_source": "https://www.databricks.com/product/pricing/foundation-model-serving (fetched 2026-08-09), section 'DBU rates', pay-per-token column. Cross-checked: the fetched rates for GPT OSS 20B (1.000 / 4.286 DBU per Mtok in/out) and Llama 4 Maverick (7.143 / 21.429 DBU per Mtok in/out) match exactly the values given in the task instructions, so the same table is used for Qwen 3.5 122B and GPT OSS 120B.",
+    "note_on_usd": "For provider=databricks, USD/Mtok = dbu_per_mtok * databricks_usd_per_dbu, computed at load time (single source of truth, no duplicated/rounded USD figures stored here). For provider=bedrock, USD/Mtok is stored directly because Bedrock does not bill in DBU."
+  },
+  "databricks:databricks-gpt-oss-120b": {
+    "kind": "dbu",
+    "input_dbu_per_mtok": 2.143,
+    "output_dbu_per_mtok": 8.571,
+    "is_estimate": false,
+    "source": "databricks.com/product/pricing/foundation-model-serving, table row 'GPT OSS 120B' (fetched 2026-08-09)."
+  },
+  "databricks:databricks-claude-haiku-4-5": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 1.0,
+    "output_usd_per_mtok": 5.0,
+    "is_estimate": true,
+    "source": "ESTIMATE. Claude Haiku 4.5 does NOT appear in the Databricks pay-per-token DBU table at databricks.com/product/pricing/foundation-model-serving (fetched 2026-08-09) -- Anthropic models are served on Databricks as pass-through 'external model' endpoints, typically billed at the underlying vendor's list price rather than a DBU multiple. Figure used here ($1/$5 per Mtok in/out) is Anthropic's published direct-API price for Claude Haiku 4.5 (anthropic.com/pricing, fetched 2026-08-09). This has NOT been confirmed against an actual Databricks invoice line for this endpoint -- treat as a conservative placeholder only."
+  },
+  "bedrock:us.anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 1.0,
+    "output_usd_per_mtok": 5.0,
+    "is_estimate": true,
+    "source": "ESTIMATE. Figure is Anthropic's published direct-API price for Claude Haiku 4.5 (anthropic.com/pricing, fetched 2026-08-09: $1/MTok input, $5/MTok output). This model did NOT appear under any name in the AWS Price List API snapshot for Bedrock, us-east-1, offer version 20260804165549 (fetched 2026-08-09) -- so Bedrock-specific pricing for this exact model/date could not be confirmed. Historically AWS has billed Claude models on Bedrock at parity with Anthropic's direct API, but that parity is ASSUMED here, not verified for this model. Re-check against an actual invoice before using this number for anything beyond order-of-magnitude budget tracking. Model id note (confirmed empirically 2026-08-09, account <profilo-bedrock> / <account>, region us-east-1): the bare model id 'anthropic.claude-haiku-4-5-20251001-v1:0' is REJECTED by Converse with 'on-demand throughput isn't supported ... retry with an inference profile' -- the 'us.' cross-region-inference-profile prefix is required for this account/model."
+  },
+  "databricks:databricks-gpt-oss-20b": {
+    "kind": "dbu",
+    "input_dbu_per_mtok": 1.0,
+    "output_dbu_per_mtok": 4.286,
+    "is_estimate": false,
+    "source": "databricks.com/product/pricing/foundation-model-serving, sezione 'DBU rates', colonna pay-per-token (rifetch 2026-08-12 per lo Studio 03). Verifica incrociata sul medesimo fetch: le tariffe di GPT OSS 120B (2.143/8.571), Llama 4 Maverick (7.143/21.429) e Qwen 3.5 122B (3.143/31.429) coincidono esattamente con le voci gia' presenti in questo file dal 2026-08-09, quindi la lettura e' consistente con quella originale. Riga 'GPT OSS 20B'. Questa tariffa era gia' citata testualmente nella nota _meta di questo file dal 2026-08-09 come verifica incrociata, ma la voce non era mai stata creata: il modello non era eseguibile."
+  },
+  "databricks:databricks-meta-llama-3-3-70b-instruct": {
+    "kind": "dbu",
+    "input_dbu_per_mtok": 7.143,
+    "output_dbu_per_mtok": 21.429,
+    "is_estimate": false,
+    "source": "databricks.com/product/pricing/foundation-model-serving, sezione 'DBU rates', colonna pay-per-token (rifetch 2026-08-12 per lo Studio 03). Verifica incrociata sul medesimo fetch: le tariffe di GPT OSS 120B (2.143/8.571), Llama 4 Maverick (7.143/21.429) e Qwen 3.5 122B (3.143/31.429) coincidono esattamente con le voci gia' presenti in questo file dal 2026-08-09, quindi la lettura e' consistente con quella originale. Riga 'Llama 3.3 70B'."
+  },
+  "databricks:databricks-meta-llama-3-1-8b-instruct": {
+    "kind": "dbu",
+    "input_dbu_per_mtok": 2.143,
+    "output_dbu_per_mtok": 6.429,
+    "is_estimate": false,
+    "source": "databricks.com/product/pricing/foundation-model-serving, sezione 'DBU rates', colonna pay-per-token, riga 'Llama 3.1 8B' (fetch 2026-08-12). Verifica incrociata sul medesimo fetch: Llama 3.3 70B (7.143/21.429), Gemma 3 12B (2.143/7.143) e GPT OSS 20B (1.000/4.286) coincidono esattamente con le voci gia' in questo file, quindi la lettura e' consistente con quelle precedenti. Aggiunto per il braccio esplorativo di previsione dello Studio 03: il meccanismo predice che un modello piccolo recuperi poco e quindi resti molto sotto il proprio baseline non troncato. La guardia dell'harness ha RIFIUTATO di eseguirlo finche' questa tariffa non era dichiarata."
+  },
+  "databricks:databricks-claude-sonnet-4-5": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 3.0,
+    "output_usd_per_mtok": 15.0,
+    "is_estimate": true,
+    "source": "STIMA. Claude Sonnet 4.5 NON compare nella tabella DBU pay-per-token di databricks.com/product/pricing/foundation-model-serving (rifetch 2026-08-12: la tabella elenca Meta, Google, Alibaba e altri, nessun Claude). I modelli Anthropic su Databricks sono serviti come pass-through e fatturati tipicamente al listino del fornitore. Cifra usata: listino Anthropic $3/$15 per Mtok in/out, cioe' esattamente 3x Haiku 4.5 ($1/$5), la stessa convenzione della voce Haiku gia' presente in questo file. NON confermata contro una riga di fattura Databricks per questo endpoint: da riconciliare contro system.billing.usage come fatto per gpt-oss-120b (scarto 2,4%). Dichiarata prima di eseguire, per ADDENDUM-ESPLORATIVO-01-SECONDO-ANTHROPIC.md (tetto proprio 40 EUR)."
+  },
+  "azure:gpt-5.1": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 1.25,
+    "output_usd_per_mtok": 10.0,
+    "is_estimate": false,
+    "source": "Azure Retail Prices API, prices.azure.com/api/retail/prices, api-version 2023-01-01-preview, filtro serviceName eq 'Foundry Models' and armRegionName eq 'westeurope' (fetch 2026-08-13). Voci verbatim: 'GPT 5.1 inp Gl 1M Tokens' = 1.25 USD/1M e 'GPT 5.1 opt Gl 1M Tokens' = 10.0 USD/1M, dove Gl = GlobalStandard, il SKU del deployment creato. Verifica incrociata sullo stesso fetch: 'GPT 5.1 cd inp Gl' (input in cache) = 0.125, cioe' un decimo dell'input pieno, e la variante Dz (DataZone) e' del 10% superiore su tutte le voci -- rapporti coerenti fra loro e con la struttura del listino. Il servizio NON si chiama 'Cognitive Services' nell'API: quel filtro restituisce zero voci anche per modelli che esistono di sicuro, ed e' il modo in cui una tariffa mancante si travestirebbe da modello assente. Da riconciliare contro la fattura come gia' fatto per gpt-oss-120b (scarto 2,4%)."
+  },
+  "azure:llama-3.3-70b-instruct": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 0.71,
+    "output_usd_per_mtok": 0.71,
+    "is_estimate": false,
+    "source": "Azure Retail Prices API, prices.azure.com/api/retail/prices, api-version 2023-01-01-preview, serviceName eq 'Foundry Models' and armRegionName eq 'westeurope' (fetch 2026-08-13). Voci verbatim 'Llama 3.3 70B Inp glbl Tokens' e 'Llama 3.3 70B Outp glbl Tokens', entrambe 0.00071 USD/1K = 0.71 USD/1M; 'glbl' e' GlobalStandard, il SKU del deployment. Input e output allo stesso prezzo, che e' insolito rispetto agli altri modelli del listino ma coerente fra le tre varianti (regnl 0.000937, Dzone 0.000781): tutte e tre hanno Inp = Outp, quindi non e' una lettura sbagliata di una riga."
+  },
+  "azure:llama-4-maverick-17b-128e-instruct-fp8": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 0.25,
+    "output_usd_per_mtok": 1.0,
+    "is_estimate": false,
+    "source": "Azure Retail Prices API, prices.azure.com/api/retail/prices, api-version 2023-01-01-preview, serviceName eq 'Foundry Models' and armRegionName eq 'westeurope' (fetch 2026-08-13). Voci verbatim 'Llama 4 Maverick 17B Inp glbl Tokens' 0.00025 USD/1K e 'Llama 4 Maverick 17B Outp glbl Tokens' 0.001 USD/1K. ATTENZIONE, non e' il gemello del modello Databricks: Azure serve la variante FP8, Databricks no. Quantizzazione diversa significa pesi diversi, quindi questa cella e' un confondimento dichiarato o va esclusa dall'insieme di sovrapposizione -- non e' 'lo stesso modello su due infrastrutture'."
+  },
+  "azure:gpt-oss-120b": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 0.165,
+    "output_usd_per_mtok": 0.66,
+    "is_estimate": true,
+    "source": "Azure Retail Prices API, prices.azure.com/api/retail/prices, api-version 2023-01-01-preview, serviceName eq 'Foundry Models' and armRegionName eq 'westeurope' (fetch 2026-08-13). STIMA, e la ragione va letta. Il listino pubblica per questo modello SOLO i meter DataZone -- 'FW GPT OSS 120B Inp DZ Tokens' 0.000165 USD/1K e 'FW GPT OSS 120B Outp DZ Tokens' 0.00066 USD/1K -- mentre il deployment creato e' GlobalStandard, il cui meter non compare in questo fetch. Per Llama 3.3 e Maverick, dove entrambe le varianti esistono, la Global costa circa il 9-10% MENO della DataZone, quindi questa cifra e' un tetto superiore e non un valore esatto. Riconciliare contro la fattura prima di usarla in qualunque claim sul costo, come gia' fatto per databricks-gpt-oss-120b (scarto 2,4%)."
+  },
+  "bedrock:openai.gpt-oss-120b-1:0": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 0.15,
+    "output_usd_per_mtok": 0.6,
+    "is_estimate": false,
+    "source": "AWS Price List API, listino pubblico Bedrock us-east-1 (pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json, fetch 2026-08-13). Meter on-demand PURO, cioe' usagetype 'USE1-gpt-oss-120b-input-tokens' e '...-output-tokens'. Disambiguato dalle varianti -batch (meta' prezzo), -flex e -priority, che sono modalita' di servizio diverse: prendere il numero sbagliato e' un errore di 2x che nessun controllo a valle segnalerebbe."
+  },
+  "bedrock:openai.gpt-oss-20b-1:0": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 0.07,
+    "output_usd_per_mtok": 0.3,
+    "is_estimate": false,
+    "source": "AWS Price List API, listino pubblico Bedrock us-east-1 (pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json, fetch 2026-08-13). Meter on-demand PURO, cioe' usagetype 'USE1-gpt-oss-20b-input-tokens' e '...-output-tokens'. Disambiguato dalle varianti -batch (meta' prezzo), -flex e -priority, che sono modalita' di servizio diverse: prendere il numero sbagliato e' un errore di 2x che nessun controllo a valle segnalerebbe."
+  },
+  "bedrock:us.meta.llama3-3-70b-instruct-v1:0": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 0.72,
+    "output_usd_per_mtok": 0.72,
+    "is_estimate": false,
+    "source": "AWS Price List API, listino pubblico Bedrock us-east-1 (pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json, fetch 2026-08-13). Meter on-demand PURO, cioe' usagetype 'USE1-Llama3-3-70B-input-tokens' e '...-output-tokens'. Input e output allo stesso prezzo, confermato anche dalla variante batch (0.36 entrambi). Disambiguato dalle varianti -batch (meta' prezzo), -flex e -priority, che sono modalita' di servizio diverse: prendere il numero sbagliato e' un errore di 2x che nessun controllo a valle segnalerebbe."
+  },
+  "bedrock:us.meta.llama3-1-8b-instruct-v1:0": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 0.22,
+    "output_usd_per_mtok": 0.22,
+    "is_estimate": false,
+    "source": "AWS Price List API, listino pubblico Bedrock us-east-1 (pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json, fetch 2026-08-13). Meter on-demand PURO, cioe' usagetype 'USE1-Llama3-1-8B-input-tokens' e '...-output-tokens'. Disambiguato dalle varianti -batch (meta' prezzo), -flex e -priority, che sono modalita' di servizio diverse: prendere il numero sbagliato e' un errore di 2x che nessun controllo a valle segnalerebbe."
+  },
+  "bedrock:us.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 3.0,
+    "output_usd_per_mtok": 15.0,
+    "is_estimate": false,
+    "source": "AWS Marketplace, pagina 'Claude Sonnet 4.5 (Amazon Bedrock Edition)', tabella prezzi (fetch 2026-08-13). Riga 'Input Tokens' on-demand e 'Response Tokens' on-demand. NON compare nel Price List API: quel listino si ferma a Claude 3 (contiene solo Claude 2.0, 2.1, 3 Haiku, 3 Sonnet, Instant), quindi l'assenza e' una lacuna di pubblicazione e non una grafia sbagliata -- verificato enumerando i modelli Anthropic presenti. Coincide con il listino diretto Anthropic, cioe' e' parita', ma qui e' letta da una fonte AWS e non assunta."
+  },
+  "bedrock:us.anthropic.claude-opus-4-5-20251101-v1:0": {
+    "kind": "usd_direct",
+    "input_usd_per_mtok": 5.0,
+    "output_usd_per_mtok": 25.0,
+    "is_estimate": false,
+    "source": "AWS Marketplace, pagina 'Claude Opus 4.5 (Amazon Bedrock Edition)', tabella prezzi (fetch 2026-08-13). Riga 'Input Tokens' on-demand e 'Response Tokens' on-demand. Confermato indipendentemente dal post AWS 'Claude Opus 4.5 now in Amazon Bedrock' (24 nov 2025): '$5 per million input tokens', '$25 per million output tokens'. Due fonti AWS concordi."
+  }
+}

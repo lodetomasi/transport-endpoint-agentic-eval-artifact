@@ -1,0 +1,2 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog47_circular_queue,1,1.0000,5,5,True,False,1813,12,0.016661,10896,1153,databricks-claude-haiku-4-5,databricks,15.4,[],2026-08-16T17:26:12,claude-haiku-4-5,databricks,text

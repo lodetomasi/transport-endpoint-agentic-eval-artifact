@@ -1,0 +1,6 @@
+prog21_date_validator
+prog23_longest_common_prefix
+prog32_prime_factorization
+prog36_pascal_triangle
+prog39_horner
+prog41_series_sum

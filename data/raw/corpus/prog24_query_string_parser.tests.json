@@ -1,0 +1,7 @@
+{"program": "prog24_query_string_parser", "tests": [
+  {"id": 1, "args": [], "stdin": "name=John&age=30&city=New+York", "expected_stdout": "name=John\nage=30\ncity=New York\n"},
+  {"id": 2, "args": [], "stdin": "", "expected_stdout": "NO_INPUT\n"},
+  {"id": 3, "args": [], "stdin": "key1=val1&&key2=", "expected_stdout": "key1=val1\nkey2=\n"},
+  {"id": 4, "args": [], "stdin": "q=hello%20world&tag=%zz", "expected_stdout": "q=hello world\ntag=%zz\n"},
+  {"id": 5, "args": [], "stdin": "flag", "expected_stdout": "flag=\n"}
+]}

@@ -1,0 +1,2 @@
+prog22_snake_camel_convert
+prog36_pascal_triangle

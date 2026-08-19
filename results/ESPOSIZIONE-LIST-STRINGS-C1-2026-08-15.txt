@@ -1,0 +1,18 @@
+C1, haiku-4-5: run che chiamano DAVVERO list_strings, per braccio
+Selezione: prime 8 run valide per binario, catena dei suffissi — la stessa
+della pipeline confermativa di C1.
+
+  nativo     360/360  run  (100.0%)   binari 45
+  testuale   312/360  run  ( 86.7%)   binari 45
+
+  differenza fra i bracci: +13.3 punti percentuali
+
+  CONFRONTO con il conto sbagliato del 2026-08-15, che usava un grep sull'intero
+  file e quindi pescava tools_offered: dava 362/362 e 546/546, cioe' 100% su
+  entrambi i bracci — e con denominatori che non sono quelli della pipeline.
+
+  ESITO: l'esposizione NON e' simmetrica. Il braccio nativo incontra il canale
+  13.3pp piu' spesso del testuale. E' meno dei 31pp che hanno invalidato il
+  primo lotto di C2 (73% contro 42%), ma non e' zero: la frase «l'esposizione era
+  simmetrica fra i due bracci» e' falsa e non si puo' usare per escludere che
+  l'apparato contribuisca alla divergenza fra C1 e C2.

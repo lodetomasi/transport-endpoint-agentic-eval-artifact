@@ -1,0 +1,7 @@
+{"program": "prog43_catalan", "tests": [
+  {"id": 1, "args": ["5"], "stdin": "", "expected_stdout": "42\n"},
+  {"id": 2, "args": ["0"], "stdin": "", "expected_stdout": "1\n"},
+  {"id": 3, "args": ["1"], "stdin": "", "expected_stdout": "1\n"},
+  {"id": 4, "args": ["30"], "stdin": "", "expected_stdout": "3814986502092304\n"},
+  {"id": 5, "args": ["-2"], "stdin": "", "expected_stdout": "BAD_INPUT\n"}
+]}

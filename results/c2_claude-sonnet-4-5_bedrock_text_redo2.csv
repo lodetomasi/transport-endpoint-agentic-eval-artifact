@@ -1,0 +1,2 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog22_snake_camel_convert,1,0.8000,4,5,True,False,1481,12,0.089649,25023,972,us.anthropic.claude-sonnet-4-5-20250929-v1:0,bedrock,27.5,[],2026-08-15T15:56:03,claude-sonnet-4-5,bedrock,text

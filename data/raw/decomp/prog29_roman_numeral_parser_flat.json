@@ -1,0 +1,373 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00104010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint strncmp(char *__s1,char *__s2,size_t __n)\n\n{\n  int iVar1;\n  \n  iVar1 = (*(code *)PTR_strncmp_00104018)();\n  return iVar1;\n}\n\n", 
+   "signature": "int strncmp(char * __s1, char * __s2, size_t __n)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "strncmp", 
+   "entry_point": "00101030"
+  }, 
+  {
+   "decompiled": "\nundefined8 main(int param_1,long param_2,undefined8 param_3,undefined8 param_4,ulong param_5)\n\n{\n  byte bVar1;\n  char *__s;\n  int iVar2;\n  int iVar3;\n  int iVar4;\n  int iVar5;\n  size_t __n;\n  int iVar6;\n  int iVar7;\n  int iVar8;\n  uint unaff_EBP;\n  uint uVar9;\n  int iVar10;\n  int iVar11;\n  int iVar12;\n  int iVar13;\n  int iVar14;\n  long lVar15;\n  int unaff_R14D;\n  ulong uVar16;\n  int iVar17;\n  char local_b1;\n  ulong local_b0;\n  ulong local_a8;\n  ulong local_a0;\n  ulong local_98;\n  int local_80;\n  int local_7c;\n  int local_78;\n  int local_74;\n  size_t local_70;\n  char local_58 [40];\n  \n  iVar6 = -0xd03ace8;\n  if (param_1 < 2) {\n    iVar6 = 0x1e7b42cc;\n  }\n  iVar5 = 0x2072d36;\n  iVar2 = iVar6;\nLAB_00101200:\n  do {\n    while( true ) {\n      while (iVar5 < 0x131ceaa8) {\n        if (iVar5 < -0x2cb3a962) {\n          if (iVar5 < -0x4c398e35) {\n            if (iVar5 < -0x60858f4a) {\n              if (iVar5 == -0x7be73acf) {\n                iVar5 = -0x3cde56e1;\n              }\n              else if (iVar5 == -0x7923281a) {\n                iVar5 = 0x3430951;\n              }\n              else if ((iVar5 == -0x76031e0f) && (iVar5 = 0x7f2148bc, (int)unaff_EBP < 1)) {\n                iVar5 = 0x588833ba;\n              }\n            }\n            else if (iVar5 == -0x58ad56cb) {\n              unaff_R14D = 0;\n              iVar5 = 0x1af93964;\n            }\n            else if (iVar5 == -0x52e13de0) {\n              iVar5 = 0x560175f8;\n              local_74 = unaff_R14D;\n            }\n            else if (iVar5 == -0x60858f4a) {\n              return 0;\n            }\n          }\n          else if (iVar5 < -0x46d05a7e) {\n            if (iVar5 == -0x4c398e35) {\n              unaff_R14D = 0;\n              iVar5 = 0x5f6531d8;\n            }\n            else if (iVar5 == -0x4a5fbf35) {\n              iVar2 = 0;\n              iVar5 = 0x35e2fcd3;\n              local_b0 = 0;\n            }\n            else if (iVar5 == -0x499540ce) {\n              unaff_EBP = unaff_EBP + (&DAT_00103d28)[local_b0 * 4];\n              local_a8 = local_a8 + local_70;\n              iVar2 = 1;\n              unaff_R14D = 7;\n              iVar5 = 0x1af93964;\n            }\n          }\n          else if (iVar5 == -0x46d05a7e) {\n            iVar5 = 0x2b1ca809;\n          }\n          else if (iVar5 == -0x3fdc99d2) {\n            iVar5 = 0x3430951;\n            if (local_80 == 0) {\n              iVar5 = -0x7be73acf;\n            }\n          }\n          else if ((iVar5 == -0x3cde56e1) && (iVar5 = -0x76031e0f, local_a8 < local_a0)) {\n            iVar5 = -0x4a5fbf35;\n          }\n        }\n        else if (iVar5 < -0xd03ace8) {\n          if (iVar5 < -0x1c59ce69) {\n            if (iVar5 == -0x2cb3a962) {\n              iVar5 = -0x20199cb;\n            }\n            else if (iVar5 == -0x1ff10c97) {\n              bVar1 = *(byte *)(*(long *)(param_2 + 8) + local_98);\n              iVar5 = -0x2fd72fb7;\n              if ((char)bVar1 < '{') {\n                iVar5 = -0x27b4c549;\n              }\n              iVar4 = -0x2fd72fb7;\n              if ('`' < (char)bVar1) {\n                iVar4 = 0x390142aa;\n              }\n              iVar7 = 0x4791ffde;\n              while( true ) {\n                while (iVar10 = iVar7, iVar10 < 0x390142aa) {\n                  if (iVar10 == -0x2fd72fb7) {\n                    param_5 = (ulong)bVar1;\n                    iVar7 = 0x4810e132;\n                  }\n                  else {\n                    iVar7 = iVar10;\n                    if (iVar10 == -0x27b4c549) {\n                      param_5 = (ulong)(bVar1 - 0x20);\n                      iVar7 = 0x4810e132;\n                    }\n                  }\n                }\n                if (iVar10 == 0x4810e132) break;\n                iVar7 = iVar4;\n                if ((iVar10 != 0x4791ffde) && (iVar7 = iVar10, iVar10 == 0x390142aa)) {\n                  iVar7 = iVar5;\n                }\n              }\n              local_b1 = (char)param_5;\n              iVar5 = 0x69314e4f;\n              if ((int)local_b1 - 0x43U < 2) {\n                iVar5 = -0x20dea33;\n              }\n              iVar4 = 0x69314e4f;\n              if (local_b1 == 'I') {\n                iVar4 = -0x20dea33;\n              }\n              iVar7 = -0x3372470e;\n              if (local_b1 < 'I') {\n                iVar7 = 0x4e1a1fad;\n              }\n              iVar10 = 0x69314e4f;\n              if (local_b1 < 'N') {\n                iVar10 = -0x20dea33;\n              }\n              iVar11 = 0x69314e4f;\n              if (local_b1 == 'X') {\n                iVar11 = -0x20dea33;\n              }\n              param_5 = 0xf63bd420;\n              if (local_b1 < 'X') {\n                param_5 = 0xa15d9661;\n              }\n              iVar12 = 0x69314e4f;\n              if (local_b1 == 'V') {\n                iVar12 = -0x20dea33;\n              }\n              iVar13 = 0x7b8edf40;\n              if (local_b1 < 'V') {\n                iVar13 = -0x7b9de96d;\n              }\n              iVar8 = -0x332a9cae;\n              iVar14 = -0x739e689;\n              if (local_b1 < 'L') {\n                iVar14 = -0x332a9cae;\n              }\n              iVar3 = -0x6ee21b45;\n              do {\n                while( true ) {\n                  do {\n                    while( true ) {\n                      while (iVar17 = iVar3, iVar17 < -0x739e689) {\n                        if (iVar17 < -0x3372470e) {\n                          iVar3 = iVar10;\n                          if (((iVar17 != -0x7b9de96d) && (iVar3 = iVar14, iVar17 != -0x6ee21b45))\n                             && (iVar3 = iVar17, iVar17 == -0x5ea2699f)) {\n                            iVar3 = iVar12;\n                          }\n                        }\n                        else {\n                          iVar3 = iVar4;\n                          if (((iVar17 != -0x3372470e) && (iVar3 = iVar7, iVar17 != -0x332a9cae)) &&\n                             (iVar3 = iVar17, iVar17 == -0x9c42be0)) {\n                            iVar3 = iVar11;\n                          }\n                        }\n                      }\n                      if (iVar17 < 0x4e1a1fad) break;\n                      iVar3 = iVar5;\n                      if (iVar17 != 0x4e1a1fad) {\n                        if (iVar17 == 0x69314e4f) {\n                          iVar8 = 0;\n                          iVar3 = 0xdba37c9;\n                        }\n                        else {\n                          iVar3 = iVar17;\n                          if (iVar17 == 0x7b8edf40) {\n                            iVar3 = (int)param_5;\n                          }\n                        }\n                      }\n                    }\n                    iVar3 = iVar13;\n                  } while (iVar17 == -0x739e689);\n                  if (iVar17 != -0x20dea33) break;\n                  iVar8 = 1;\n                  iVar3 = 0xdba37c9;\n                }\n                iVar3 = iVar17;\n              } while (iVar17 != 0xdba37c9);\n              iVar5 = 0x44a22c8d;\n              if (iVar8 == 0) {\n                iVar5 = 0x71f6af80;\n              }\n            }\n            else if (iVar5 == -0x1d48dcb6) {\n              puts(\"INVALID\");\n              unaff_R14D = 1;\n              iVar5 = 0x59f7d1f7;\n            }\n          }\n          else if (iVar5 == -0x1c59ce69) {\n            iVar5 = 0x6994e408;\n            if (local_98 < local_a0) {\n              iVar5 = -0x1ff10c97;\n            }\n          }\n          else if (iVar5 == -0x1a95c43a) {\n            puts(\"INVALID\");\n            unaff_R14D = 1;\n            iVar5 = 0x5f6531d8;\n          }\n          else if (iVar5 == -0xf4c3f90) {\n            main_upper[local_a0] = 0;\n            unaff_EBP = 0;\n            local_a8 = 0;\n            iVar5 = -0x3cde56e1;\n          }\n        }\n        else if (iVar5 < 0x3430951) {\n          if (iVar5 == -0xd03ace8) {\n            iVar5 = 0x211054d8;\n            if (**(char **)(param_2 + 8) == '\\0') {\n              iVar5 = 0x1e7b42cc;\n            }\n          }\n          else if (iVar5 == -0x20199cb) {\n            local_b0 = local_b0 + 1;\n            iVar5 = 0x35e2fcd3;\n          }\n          else if (iVar5 == 0x2072d36) {\n            iVar5 = iVar6;\n          }\n        }\n        else if (iVar5 == 0x3430951) {\n          iVar5 = 0x59f7d1f7;\n        }\n        else if (iVar5 == 0x9c35c9c) {\n          local_70 = strlen((&SYMS)[local_b0 * 2]);\n          iVar5 = 0x7f098674;\n          if (local_a0 < local_70 + local_a8) {\n            iVar5 = -0x58ad56cb;\n          }\n        }\n        else if ((iVar5 == 0x120372a9) && (iVar5 = -0x4c398e35, iVar2 == 0)) {\n          iVar5 = -0x1a95c43a;\n        }\n      }\n      if (iVar5 < 0x443384c8) break;\n      if (iVar5 < 0x60502afe) {\n        if (iVar5 < 0x588833ba) {\n          if (iVar5 == 0x443384c8) {\n            iVar5 = -0x4900bb95;\n            uVar16 = 0;\n            lVar15 = 0;\n            uVar9 = unaff_EBP;\n            do {\n              while( true ) {\n                while( true ) {\n                  while (-0x15c42bde < iVar5) {\n                    if (iVar5 < 0xf5bf454) {\n                      if (iVar5 == -0x15c42bdd) {\n                        iVar5 = 0xbe096c9;\n                        if ((int)uVar9 < (int)(&DAT_00103d28)[uVar16 * 4]) {\n                          iVar5 = -0x301f55a3;\n                        }\n                      }\n                      else if (iVar5 == 0xbe096c9) {\n                        __s = (&SYMS)[uVar16 * 2];\n                        __n = strlen(__s);\n                        memcpy(local_58 + lVar15,__s,__n);\n                        lVar15 = lVar15 + __n;\n                        uVar9 = uVar9 - (&DAT_00103d28)[uVar16 * 4];\n                        iVar5 = -0x15c42bdd;\n                      }\n                    }\n                    else if (iVar5 == 0xf5bf454) {\n                      iVar5 = -0x15c42bdd;\n                    }\n                    else if (iVar5 == 0x5eec3659) {\n                      uVar16 = uVar16 + 1;\n                      iVar5 = -0x4900bb95;\n                    }\n                  }\n                  if (-0x3c0ba8a9 < iVar5) break;\n                  if (iVar5 == -0x56366cf0) {\n                    iVar5 = -0x3c0ba8a8;\n                  }\n                  else if ((iVar5 == -0x4900bb95) && (iVar5 = -0x56366cf0, uVar16 < 0xd)) {\n                    iVar5 = 0xf5bf454;\n                  }\n                }\n                if (iVar5 != -0x301f55a3) break;\n                iVar5 = 0x5eec3659;\n              }\n            } while (iVar5 != -0x3c0ba8a8);\n            local_58[lVar15] = '\\0';\n            iVar4 = strcmp(local_58,main_upper);\n            iVar5 = 0x60502afe;\n            if (iVar4 == 0) {\n              iVar5 = 0x35cbaf32;\n            }\n          }\n          else if (iVar5 == 0x44a22c8d) {\n            main_upper[local_98] = local_b1;\n            unaff_R14D = 0;\n            iVar5 = -0x52e13de0;\n          }\n          else if ((iVar5 == 0x560175f8) && (iVar5 = 0x1e61fa1c, local_74 == 0)) {\n            iVar5 = -0x46d05a7e;\n          }\n        }\n        else if (iVar5 == 0x588833ba) {\n          puts(\"INVALID\");\n          unaff_R14D = 1;\n          iVar5 = 0x3430951;\n        }\n        else if (iVar5 == 0x59f7d1f7) {\n          iVar5 = -0x60858f4a;\n        }\n        else if (iVar5 == 0x5f6531d8) {\n          iVar5 = -0x3fdc99d2;\n          local_80 = unaff_R14D;\n        }\n      }\n      else if (iVar5 < 0x724405ca) {\n        if (iVar5 == 0x60502afe) {\n          puts(\"INVALID\");\nLAB_001011e6:\n          unaff_R14D = 1;\n          iVar5 = -0x7923281a;\n        }\n        else if (iVar5 == 0x6994e408) {\n          unaff_R14D = 2;\n          iVar5 = 0x1e61fa1c;\n        }\n        else if (iVar5 == 0x71f6af80) {\n          puts(\"INVALID\");\n          unaff_R14D = 1;\n          iVar5 = -0x52e13de0;\n        }\n      }\n      else if (iVar5 == 0x724405ca) {\n        iVar5 = -0x1c59ce69;\n        local_98 = 0;\n      }\n      else if (iVar5 == 0x7f098674) {\n        iVar4 = strncmp(main_upper + local_a8,(&SYMS)[local_b0 * 2],local_70);\n        iVar5 = -0x58ad56cb;\n        if (iVar4 == 0) {\n          iVar5 = -0x499540ce;\n        }\n      }\n      else if ((iVar5 == 0x7f2148bc) && (iVar5 = 0x443384c8, 3999 < (int)unaff_EBP)) {\n        iVar5 = 0x588833ba;\n      }\n    }\n    if (iVar5 < 0x1e7b42cc) {\n      if (iVar5 < 0x145f9701) {\n        if (iVar5 == 0x131ceaa8) {\n          unaff_R14D = 7;\n          iVar5 = 0x22132a4b;\n        }\n        else if ((iVar5 == 0x13bb1ce0) && (iVar5 = 0x22132a4b, local_7c == 0)) {\n          iVar5 = -0x2cb3a962;\n        }\n      }\n      else if (iVar5 == 0x145f9701) {\n        iVar5 = 0x59f7d1f7;\n        if (local_78 == 2) {\n          iVar5 = -0xf4c3f90;\n        }\n      }\n      else if (iVar5 == 0x1af93964) {\n        iVar5 = 0x13bb1ce0;\n        local_7c = unaff_R14D;\n      }\n      else if (iVar5 == 0x1e61fa1c) {\n        iVar5 = 0x145f9701;\n        local_78 = unaff_R14D;\n      }\n      goto LAB_00101200;\n    }\n    if (iVar5 < 0x2b1ca809) {\n      if (iVar5 == 0x1e7b42cc) {\n        puts(\"INVALID\");\n        iVar5 = -0x60858f4a;\n      }\n      else if (iVar5 == 0x211054d8) {\n        local_a0 = strlen(*(char **)(param_2 + 8));\n        iVar5 = 0x724405ca;\n        if (0x3f < local_a0) {\n          iVar5 = -0x1d48dcb6;\n        }\n      }\n      else if (iVar5 == 0x22132a4b) {\n        iVar5 = 0x120372a9;\n      }\n    }\n    else if (iVar5 == 0x2b1ca809) {\n      local_98 = local_98 + 1;\n      iVar5 = -0x1c59ce69;\n    }\n    else {\n      if (iVar5 == 0x35cbaf32) {\n        printf(\"%d\\n\",(ulong)unaff_EBP);\n        goto LAB_001011e6;\n      }\n      if ((iVar5 == 0x35e2fcd3) && (iVar5 = 0x131ceaa8, local_b0 < 0xd)) {\n        iVar5 = 0x9c35c9c;\n      }\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined main(void)", 
+   "is_thunk": false, 
+   "size": 2617, 
+   "name": "main", 
+   "entry_point": "00101190"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint strncmp(char *__s1,char *__s2,size_t __n)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n                    /* strncmp@GLIBC_2.2.5 */\n  halt_baddata();\n}\n\n", 
+   "signature": "int strncmp(char * __s1, char * __s2, size_t __n)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "strncmp", 
+   "entry_point": "00105000"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "prog29_roman_numeral_parser", 
+ "n_functions": 4, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "00100431", 
+   "value": "strncmp"
+  }, 
+  {
+   "address": "00100439", 
+   "value": "puts"
+  }, 
+  {
+   "address": "0010043e", 
+   "value": "printf"
+  }, 
+  {
+   "address": "00100445", 
+   "value": "strlen"
+  }, 
+  {
+   "address": "0010044c", 
+   "value": "memcpy"
+  }, 
+  {
+   "address": "00100453", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "00100462", 
+   "value": "strcmp"
+  }, 
+  {
+   "address": "00100469", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "0010047b", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100485", 
+   "value": "GLIBC_2.14"
+  }, 
+  {
+   "address": "00100490", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "0010049c", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "001004b8", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "001004c7", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "0010201c", 
+   "value": "INVALID"
+  }, 
+  {
+   "address": "00102069", 
+   "value": "zR"
+  }, 
+  {
+   "address": "00102099", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".comment::00000000", 
+   "value": "GCC: (Debian 10.2.1-6) 10.2.1 20210110"
+  }, 
+  {
+   "address": ".comment::00000027", 
+   "value": "clang version 16.0.0 (https://github.com/rust-lang/llvm-project 2b9c52f66815bb8d6ea74a4b26df3410602be9b0)"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".symtab"
+  }, 
+  {
+   "address": ".shstrtab::00000009", 
+   "value": ".strtab"
+  }, 
+  {
+   "address": ".shstrtab::00000011", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::0000001b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000023", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000043", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004b", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::00000058", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::00000067", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::00000071", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000007b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000081", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::00000090", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000096", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::0000009e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::000000ac", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000b6", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::000000c2", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::000000ce", 
+   "value": ".data.rel.ro"
+  }, 
+  {
+   "address": ".shstrtab::000000db", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000e4", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::000000ed", 
+   "value": ".data"
+  }, 
+  {
+   "address": ".shstrtab::000000f3", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::000000f8", 
+   "value": ".comment"
+  }, 
+  {
+   "address": ".strtab::00000001", 
+   "value": "crtstuff.c"
+  }, 
+  {
+   "address": ".strtab::0000000c", 
+   "value": "deregister_tm_clones"
+  }, 
+  {
+   "address": ".strtab::00000021", 
+   "value": "__do_global_dtors_aux"
+  }, 
+  {
+   "address": ".strtab::00000037", 
+   "value": "completed.0"
+  }, 
+  {
+   "address": ".strtab::00000043", 
+   "value": "__do_global_dtors_aux_fini_array_entry"
+  }, 
+  {
+   "address": ".strtab::0000006a", 
+   "value": "frame_dummy"
+  }, 
+  {
+   "address": ".strtab::00000076", 
+   "value": "__frame_dummy_init_array_entry"
+  }, 
+  {
+   "address": ".strtab::00000095", 
+   "value": "prog29_roman_numeral_parser.c"
+  }, 
+  {
+   "address": ".strtab::000000b3", 
+   "value": "SYMS"
+  }, 
+  {
+   "address": ".strtab::000000b8", 
+   "value": "main.upper"
+  }, 
+  {
+   "address": ".strtab::000000c3", 
+   "value": "__FRAME_END__"
+  }, 
+  {
+   "address": ".strtab::000000d1", 
+   "value": "__init_array_end"
+  }, 
+  {
+   "address": ".strtab::000000e2", 
+   "value": "_DYNAMIC"
+  }, 
+  {
+   "address": ".strtab::000000eb", 
+   "value": "__init_array_start"
+  }, 
+  {
+   "address": ".strtab::000000fe", 
+   "value": "__GNU_EH_FRAME_HDR"
+  }, 
+  {
+   "address": ".strtab::00000111", 
+   "value": "_GLOBAL_OFFSET_TABLE_"
+  }, 
+  {
+   "address": ".strtab::00000127", 
+   "value": "__libc_csu_fini"
+  }, 
+  {
+   "address": ".strtab::00000137", 
+   "value": "strncmp@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::0000014b", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000167", 
+   "value": "puts@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000178", 
+   "value": "_edata"
+  }, 
+  {
+   "address": ".strtab::0000017f", 
+   "value": "strlen@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000192", 
+   "value": "printf@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001a5", 
+   "value": "__libc_start_main@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001c3", 
+   "value": "__data_start"
+  }, 
+  {
+   "address": ".strtab::000001d0", 
+   "value": "strcmp@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001e3", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": ".strtab::000001f2", 
+   "value": "__dso_handle"
+  }, 
+  {
+   "address": ".strtab::000001ff", 
+   "value": "memcpy@GLIBC_2.14"
+  }, 
+  {
+   "address": ".strtab::00000211", 
+   "value": "_IO_stdin_used"
+  }, 
+  {
+   "address": ".strtab::00000220", 
+   "value": "__libc_csu_init"
+  }, 
+  {
+   "address": ".strtab::00000230", 
+   "value": "__bss_start"
+  }, 
+  {
+   "address": ".strtab::0000023c", 
+   "value": "main"
+  }, 
+  {
+   "address": ".strtab::00000241", 
+   "value": "__TMC_END__"
+  }, 
+  {
+   "address": ".strtab::0000024d", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000267", 
+   "value": "__cxa_finalize@GLIBC_2.2.5"
+  }
+ ]
+}

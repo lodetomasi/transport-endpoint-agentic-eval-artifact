@@ -1,0 +1,3 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog18_caesar_cipher,1,1.0000,5,5,True,False,1670,12,0.044202,9814,984,databricks-claude-sonnet-4-5,databricks,21.6,[],2026-08-16T01:25:39,claude-sonnet-4-5,databricks,native
+prog23_longest_common_prefix,1,0.4000,2,5,True,False,1253,12,0.061338,14831,1123,databricks-claude-sonnet-4-5,databricks,25.6,[],2026-08-16T01:26:04,claude-sonnet-4-5,databricks,native

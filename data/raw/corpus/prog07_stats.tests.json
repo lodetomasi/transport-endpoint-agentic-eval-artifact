@@ -1,0 +1,7 @@
+{"program": "prog07_stats", "tests": [
+  {"id": 1, "args": ["1", "2", "3", "4", "5"], "stdin": "", "expected_stdout": "mean=3.0000 median=3.0000 variance=2.0000\n"},
+  {"id": 2, "args": ["10"], "stdin": "", "expected_stdout": "mean=10.0000 median=10.0000 variance=0.0000\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "NO_DATA\n"},
+  {"id": 4, "args": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"], "stdin": "", "expected_stdout": "mean=10.5000 median=10.5000 variance=33.2500\n"},
+  {"id": 5, "args": ["-5", "-5", "10", "10", "0"], "stdin": "", "expected_stdout": "mean=2.0000 median=0.0000 variance=46.0000\n"}
+]}

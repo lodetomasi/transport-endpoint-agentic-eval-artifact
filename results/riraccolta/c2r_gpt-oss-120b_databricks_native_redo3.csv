@@ -1,0 +1,2 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog58_turing_increment,1,0.2000,1,5,True,False,1526,12,0.039757,91233,32410,databricks-gpt-oss-120b,databricks,162.1,[],2026-08-16T17:31:15,gpt-oss-120b,databricks,native

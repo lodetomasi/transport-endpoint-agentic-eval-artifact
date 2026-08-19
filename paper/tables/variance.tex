@@ -1,0 +1,21 @@
+% Generata da analysis/tabella_principale.py --varianza su results/riraccolta.
+\begin{table}[t]
+\caption{Variance decomposition. $K_\infty$ is the number of binaries needed to resolve 3pp with unlimited runs per binary. $\dagger$: the estimated noise exceeds the observed variance, so the variance model does not fit that cell and its decomposition is not reported --- the bootstrap clamps the residual to zero in 86\% and 69\% of replications respectively.}
+\label{tab:variance}
+\centering
+\small
+\begin{tabular}{llrrr}
+\toprule
+& axis & SD & \% noise & $K_\infty$ \\
+\midrule
+T3 & transport & 0.2774 & 0.5\% & 668 \\
+T6 & endpoint & 0.2189 & 9.1\% & 380 \\
+T4 & transport & 0.1409 & 20.6\% & 137 \\
+T1 & transport & 0.2002 & 46.1\% & 189 \\
+T2 & transport & 0.0916 & 61.0\% & 28 \\
+T5 & endpoint & 0.1292 & 93.1\% & 10 \\
+T7 & endpoint & 0.0117 & \multicolumn{2}{c}{not decomposable$^\dagger$} \\
+T8 & endpoint & 0.0585 & \multicolumn{2}{c}{not decomposable$^\dagger$} \\
+\bottomrule
+\end{tabular}
+\end{table}

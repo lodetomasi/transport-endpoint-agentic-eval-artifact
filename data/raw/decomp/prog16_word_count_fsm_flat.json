@@ -1,0 +1,333 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00104010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint getc(FILE *__stream)\n\n{\n  int iVar1;\n  \n  iVar1 = (*_DAT_00104020)();\n  return iVar1;\n}\n\n", 
+   "signature": "int getc(FILE * __stream)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "getc", 
+   "entry_point": "00101040"
+  }, 
+  {
+   "decompiled": "\nundefined8 main(void)\n\n{\n  int iVar1;\n  int in_EAX;\n  int iVar2;\n  int iVar3;\n  long lVar4;\n  int unaff_EBP;\n  int iVar5;\n  int iVar6;\n  int iVar7;\n  int iVar8;\n  int iVar9;\n  int iVar10;\n  int unaff_R13D;\n  long lVar11;\n  long lVar12;\n  \n  lVar4 = 0;\n  iVar2 = -0x4aa288e2;\n  lVar11 = 0;\n  iVar10 = 0;\n  lVar12 = 0;\n  do {\n    while( true ) {\n      while( true ) {\n        while( true ) {\n          while (iVar2 < 0x25b04496) {\n            if (iVar2 < -0x4aa288e2) {\n              if (iVar2 == -0x64a1f937) {\n                iVar2 = 0x46ef3107;\n              }\n              else if (iVar2 == -0x4e5fd820) {\n                iVar2 = 0x14dc5099;\n                iVar10 = 0;\n              }\n              else if (iVar2 == -0x4ca34207) {\n                lVar4 = lVar4 + 1;\n                iVar10 = 1;\n                iVar2 = -0x64a1f937;\n              }\n            }\n            else if (iVar2 < 0xa2e3b17) {\n              if (iVar2 == -0x4aa288e2) {\n                in_EAX = getc(*(FILE **)PTR_stdin_00103fd8);\n                iVar2 = 0x43498c9e;\n                if (in_EAX == -1) {\n                  iVar2 = 0x77e9a86f;\n                }\n              }\n              else if ((iVar2 == -0x1f37469f) && (iVar2 = 0x46ef3107, unaff_R13D == 0)) {\n                iVar2 = 0x25b04496;\n              }\n            }\n            else if (iVar2 == 0xa2e3b17) {\n              iVar2 = 0x3429d8e3;\n              if (unaff_R13D < 1) {\n                iVar2 = -0x1f37469f;\n              }\n            }\n            else if (iVar2 == 0x14dc5099) {\n              iVar2 = 0x46ef3107;\n            }\n          }\n          if (0x43498c9d < iVar2) break;\n          if (iVar2 < 0x3086a065) {\n            if (iVar2 == 0x25b04496) {\n              iVar2 = -0x64a1f937;\n              if (unaff_EBP == 2) {\n                iVar2 = -0x4ca34207;\n              }\n            }\n            else if (iVar2 == 0x2bbb7e83) {\n              iVar2 = 0xa2e3b17;\n              unaff_R13D = iVar10;\n            }\n          }\n          else if (iVar2 == 0x3086a065) {\n            iVar2 = -0x4e5fd820;\n            if (unaff_EBP == 2) {\n              iVar2 = 0x14dc5099;\n            }\n          }\n          else if ((iVar2 == 0x3429d8e3) && (iVar2 = 0x46ef3107, unaff_R13D == 1)) {\n            iVar2 = 0x3086a065;\n          }\n        }\n        if (0x50ae5d2a < iVar2) break;\n        if (iVar2 == 0x43498c9e) {\n          iVar2 = 0xb68327e;\n          if (in_EAX == 9) {\n            iVar2 = -0x5576425;\n          }\n          iVar3 = -0x3b92c36e;\n          if (in_EAX < 10) {\n            iVar3 = -0x437db34d;\n          }\n          iVar5 = 0xb68327e;\n          if (in_EAX < 0xe) {\n            iVar5 = -0x5576425;\n          }\n          iVar6 = 0xb68327e;\n          if (in_EAX == 0x20) {\n            iVar6 = -0x5576425;\n          }\n          iVar7 = 0x7f85bb86;\n          if (in_EAX < 0x20) {\n            iVar7 = 0x79d3c19d;\n          }\n          iVar8 = -0x4777ebe6;\n          if (in_EAX < 0xb) {\n            iVar8 = 0x9ad3b98;\n          }\n          iVar1 = -0x44865c30;\n          do {\n            while( true ) {\n              do {\n                while( true ) {\n                  while (iVar9 = iVar1, -0x5576426 < iVar9) {\n                    if (iVar9 < 0xb68327e) {\n                      if (iVar9 == -0x5576425) {\n                        unaff_EBP = 1;\n                        iVar1 = -0x2e27886c;\n                      }\n                      else {\n                        iVar1 = iVar9;\n                        if (iVar9 == 0x9ad3b98) {\n                          iVar1 = iVar3;\n                        }\n                      }\n                    }\n                    else if (iVar9 == 0xb68327e) {\n                      unaff_EBP = 2;\n                      iVar1 = -0x2e27886c;\n                    }\n                    else {\n                      iVar1 = iVar5;\n                      if ((iVar9 != 0x79d3c19d) && (iVar1 = iVar9, iVar9 == 0x7f85bb86)) {\n                        iVar1 = iVar6;\n                      }\n                    }\n                  }\n                  if (-0x437db34e < iVar9) break;\n                  iVar1 = iVar7;\n                  if ((iVar9 != -0x4777ebe6) && (iVar1 = iVar9, iVar9 == -0x44865c30)) {\n                    iVar1 = iVar8;\n                  }\n                }\n                iVar1 = iVar2;\n              } while (iVar9 == -0x437db34d);\n              if (iVar9 != -0x3b92c36e) break;\n              unaff_EBP = 0;\n              iVar1 = -0x2e27886c;\n            }\n            iVar1 = iVar9;\n          } while (iVar9 != -0x2e27886c);\n          lVar12 = lVar12 + 1;\n          iVar2 = 0x2bbb7e83;\n          if (unaff_EBP == 0) {\n            iVar2 = 0x50ae5d2b;\n          }\n        }\n        else if (iVar2 == 0x46ef3107) {\n          iVar2 = -0x4aa288e2;\n        }\n      }\n      if (iVar2 != 0x50ae5d2b) break;\n      lVar11 = lVar11 + 1;\n      iVar2 = 0x2bbb7e83;\n    }\n  } while (iVar2 != 0x77e9a86f);\n  printf(\"LINES=%ld WORDS=%ld CHARS=%ld\\n\",lVar11,lVar4,lVar12);\n  return 0;\n}\n\n", 
+   "signature": "undefined main(void)", 
+   "is_thunk": false, 
+   "size": 877, 
+   "name": "main", 
+   "entry_point": "00101150"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint getc(FILE *__stream)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n                    /* getc@GLIBC_2.2.5 */\n  halt_baddata();\n}\n\n", 
+   "signature": "int getc(FILE * __stream)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "getc", 
+   "entry_point": "00105030"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "prog16_word_count_fsm", 
+ "n_functions": 4, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "001003e9", 
+   "value": "getc"
+  }, 
+  {
+   "address": "001003ee", 
+   "value": "stdin"
+  }, 
+  {
+   "address": "001003f4", 
+   "value": "printf"
+  }, 
+  {
+   "address": "001003fb", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "0010040a", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "0010041c", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100426", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "00100432", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "0010044e", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "0010045d", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00102004", 
+   "value": "LINES=%ld WORDS=%ld CHARS=%ld\n"
+  }, 
+  {
+   "address": "00102069", 
+   "value": "zR"
+  }, 
+  {
+   "address": "00102099", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".comment::00000000", 
+   "value": "GCC: (Debian 10.2.1-6) 10.2.1 20210110"
+  }, 
+  {
+   "address": ".comment::00000027", 
+   "value": "clang version 16.0.0 (https://github.com/rust-lang/llvm-project 2b9c52f66815bb8d6ea74a4b26df3410602be9b0)"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".symtab"
+  }, 
+  {
+   "address": ".shstrtab::00000009", 
+   "value": ".strtab"
+  }, 
+  {
+   "address": ".shstrtab::00000011", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::0000001b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000023", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000043", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004b", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::00000058", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::00000067", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::00000071", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000007b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000081", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::00000090", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000096", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::0000009e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::000000ac", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000b6", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::000000c2", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::000000ce", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000d7", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::000000e0", 
+   "value": ".data"
+  }, 
+  {
+   "address": ".shstrtab::000000e6", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::000000eb", 
+   "value": ".comment"
+  }, 
+  {
+   "address": ".strtab::00000001", 
+   "value": "crtstuff.c"
+  }, 
+  {
+   "address": ".strtab::0000000c", 
+   "value": "deregister_tm_clones"
+  }, 
+  {
+   "address": ".strtab::00000021", 
+   "value": "__do_global_dtors_aux"
+  }, 
+  {
+   "address": ".strtab::00000037", 
+   "value": "completed.0"
+  }, 
+  {
+   "address": ".strtab::00000043", 
+   "value": "__do_global_dtors_aux_fini_array_entry"
+  }, 
+  {
+   "address": ".strtab::0000006a", 
+   "value": "frame_dummy"
+  }, 
+  {
+   "address": ".strtab::00000076", 
+   "value": "__frame_dummy_init_array_entry"
+  }, 
+  {
+   "address": ".strtab::00000095", 
+   "value": "prog16_word_count_fsm.c"
+  }, 
+  {
+   "address": ".strtab::000000ad", 
+   "value": "__FRAME_END__"
+  }, 
+  {
+   "address": ".strtab::000000bb", 
+   "value": "__init_array_end"
+  }, 
+  {
+   "address": ".strtab::000000cc", 
+   "value": "_DYNAMIC"
+  }, 
+  {
+   "address": ".strtab::000000d5", 
+   "value": "__init_array_start"
+  }, 
+  {
+   "address": ".strtab::000000e8", 
+   "value": "__GNU_EH_FRAME_HDR"
+  }, 
+  {
+   "address": ".strtab::000000fb", 
+   "value": "_GLOBAL_OFFSET_TABLE_"
+  }, 
+  {
+   "address": ".strtab::00000111", 
+   "value": "__libc_csu_fini"
+  }, 
+  {
+   "address": ".strtab::00000121", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::0000013d", 
+   "value": "stdin@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::0000014f", 
+   "value": "_edata"
+  }, 
+  {
+   "address": ".strtab::00000156", 
+   "value": "printf@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000169", 
+   "value": "__libc_start_main@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000187", 
+   "value": "__data_start"
+  }, 
+  {
+   "address": ".strtab::00000194", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": ".strtab::000001a3", 
+   "value": "__dso_handle"
+  }, 
+  {
+   "address": ".strtab::000001b0", 
+   "value": "_IO_stdin_used"
+  }, 
+  {
+   "address": ".strtab::000001bf", 
+   "value": "__libc_csu_init"
+  }, 
+  {
+   "address": ".strtab::000001cf", 
+   "value": "__bss_start"
+  }, 
+  {
+   "address": ".strtab::000001db", 
+   "value": "main"
+  }, 
+  {
+   "address": ".strtab::000001e0", 
+   "value": "__TMC_END__"
+  }, 
+  {
+   "address": ".strtab::000001ec", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000206", 
+   "value": "__cxa_finalize@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000221", 
+   "value": "getc@GLIBC_2.2.5"
+  }
+ ]
+}

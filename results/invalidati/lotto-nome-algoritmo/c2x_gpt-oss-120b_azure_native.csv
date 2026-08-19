@@ -1,0 +1,239 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,1.0000,5,5,True,False,747,12,0.002706,6671,2432,gpt-oss-120b,azure,11.9,[],2026-08-14T17:38:51,gpt-oss-120b,azure,native
+prog16_word_count_fsm,2,1.0000,5,5,True,False,502,12,0.001288,3613,1048,gpt-oss-120b,azure,5.2,[],2026-08-14T17:38:57,gpt-oss-120b,azure,native
+prog16_word_count_fsm,3,1.0000,5,5,True,False,509,12,0.001105,3613,771,gpt-oss-120b,azure,5.0,[],2026-08-14T17:39:02,gpt-oss-120b,azure,native
+prog16_word_count_fsm,4,0.8000,4,5,True,False,630,12,0.001566,3613,1469,gpt-oss-120b,azure,5.9,[],2026-08-14T17:39:07,gpt-oss-120b,azure,native
+prog16_word_count_fsm,5,1.0000,5,5,True,False,507,12,0.002020,6336,1477,gpt-oss-120b,azure,6.3,[],2026-08-14T17:39:14,gpt-oss-120b,azure,native
+prog16_word_count_fsm,6,1.0000,5,5,True,False,584,12,0.002943,6510,2832,gpt-oss-120b,azure,8.7,[],2026-08-14T17:39:22,gpt-oss-120b,azure,native
+prog16_word_count_fsm,7,1.0000,5,5,True,False,510,12,0.002306,6158,1955,gpt-oss-120b,azure,7.3,[],2026-08-14T17:39:30,gpt-oss-120b,azure,native
+prog16_word_count_fsm,8,1.0000,5,5,True,False,538,12,0.001230,3613,960,gpt-oss-120b,azure,5.4,[],2026-08-14T17:39:35,gpt-oss-120b,azure,native
+prog17_whitespace_trim,1,1.0000,5,5,True,False,1705,12,0.009160,19723,8948,gpt-oss-120b,azure,40.3,[],2026-08-14T17:40:15,gpt-oss-120b,azure,native
+prog17_whitespace_trim,2,1.0000,5,5,True,False,1509,12,0.002487,3967,2776,gpt-oss-120b,azure,8.2,[],2026-08-14T17:40:24,gpt-oss-120b,azure,native
+prog17_whitespace_trim,3,1.0000,5,5,True,False,1510,12,0.002716,3967,3124,gpt-oss-120b,azure,8.6,[],2026-08-14T17:40:32,gpt-oss-120b,azure,native
+prog17_whitespace_trim,4,1.0000,5,5,True,False,1680,12,0.005854,7654,6956,gpt-oss-120b,azure,22.7,[],2026-08-14T17:40:55,gpt-oss-120b,azure,native
+prog17_whitespace_trim,5,1.0000,5,5,True,False,1042,12,0.002973,3967,3513,gpt-oss-120b,azure,9.0,[],2026-08-14T17:41:04,gpt-oss-120b,azure,native
+prog17_whitespace_trim,6,1.0000,5,5,True,False,1317,12,0.004511,7542,4949,gpt-oss-120b,azure,18.5,[],2026-08-14T17:41:22,gpt-oss-120b,azure,native
+prog17_whitespace_trim,7,1.0000,5,5,True,False,1579,12,0.007531,16978,7166,gpt-oss-120b,azure,31.5,[],2026-08-14T17:41:54,gpt-oss-120b,azure,native
+prog17_whitespace_trim,8,1.0000,5,5,True,False,1575,12,0.004831,7652,5407,gpt-oss-120b,azure,19.8,[],2026-08-14T17:42:14,gpt-oss-120b,azure,native
+prog18_caesar_cipher,1,1.0000,5,5,True,False,2884,12,0.005533,13461,5018,gpt-oss-120b,azure,30.2,[],2026-08-14T17:42:44,gpt-oss-120b,azure,native
+prog18_caesar_cipher,2,1.0000,5,5,True,False,1237,12,0.002456,4802,2520,gpt-oss-120b,azure,15.1,[],2026-08-14T17:42:59,gpt-oss-120b,azure,native
+prog18_caesar_cipher,3,0.8000,4,5,True,False,776,12,0.002324,4802,2320,gpt-oss-120b,azure,14.9,[],2026-08-14T17:43:14,gpt-oss-120b,azure,native
+prog18_caesar_cipher,4,1.0000,5,5,True,False,1356,12,0.002859,4802,3132,gpt-oss-120b,azure,17.0,[],2026-08-14T17:43:31,gpt-oss-120b,azure,native
+prog18_caesar_cipher,5,1.0000,5,5,True,False,1528,12,0.002468,4802,2539,gpt-oss-120b,azure,15.4,[],2026-08-14T17:43:46,gpt-oss-120b,azure,native
+prog18_caesar_cipher,6,1.0000,5,5,True,False,1203,12,0.003672,9289,3242,gpt-oss-120b,azure,19.7,[],2026-08-14T17:44:06,gpt-oss-120b,azure,native
+prog18_caesar_cipher,7,1.0000,5,5,True,False,1222,12,0.005277,14108,4468,gpt-oss-120b,azure,24.6,[],2026-08-14T17:44:30,gpt-oss-120b,azure,native
+prog18_caesar_cipher,8,0.8000,4,5,True,False,1139,12,0.003676,9181,3274,gpt-oss-120b,azure,19.4,[],2026-08-14T17:44:50,gpt-oss-120b,azure,native
+prog19_palindrome_checker,1,1.0000,5,5,True,False,812,12,0.002964,4588,3344,gpt-oss-120b,azure,18.5,[],2026-08-14T17:45:08,gpt-oss-120b,azure,native
+prog19_palindrome_checker,2,1.0000,5,5,True,False,805,12,0.002466,4588,2589,gpt-oss-120b,azure,14.6,[],2026-08-14T17:45:23,gpt-oss-120b,azure,native
+prog19_palindrome_checker,3,1.0000,5,5,True,False,2064,12,0.007463,16348,7221,gpt-oss-120b,azure,38.5,[],2026-08-14T17:46:01,gpt-oss-120b,azure,native
+prog19_palindrome_checker,4,1.0000,5,5,True,False,1038,12,0.004454,12593,3600,gpt-oss-120b,azure,20.4,[],2026-08-14T17:46:22,gpt-oss-120b,azure,native
+prog19_palindrome_checker,5,1.0000,5,5,True,False,1720,12,0.004005,8954,3829,gpt-oss-120b,azure,21.2,[],2026-08-14T17:46:43,gpt-oss-120b,azure,native
+prog19_palindrome_checker,6,1.0000,5,5,True,False,1960,12,0.013015,24957,13480,gpt-oss-120b,azure,68.6,[],2026-08-14T17:47:52,gpt-oss-120b,azure,native
+prog19_palindrome_checker,7,1.0000,5,5,True,False,1087,12,0.007123,18255,6229,gpt-oss-120b,azure,34.0,[],2026-08-14T17:48:26,gpt-oss-120b,azure,native
+prog19_palindrome_checker,8,1.0000,5,5,True,False,861,12,0.003808,8133,3737,gpt-oss-120b,azure,21.3,[],2026-08-14T17:48:47,gpt-oss-120b,azure,native
+prog20_anagram_checker,1,1.0000,5,5,True,False,1157,12,0.003717,8960,3392,gpt-oss-120b,azure,19.2,[],2026-08-14T17:49:06,gpt-oss-120b,azure,native
+prog20_anagram_checker,2,1.0000,5,5,True,False,2337,12,0.007762,22312,6183,gpt-oss-120b,azure,36.5,[],2026-08-14T17:49:42,gpt-oss-120b,azure,native
+prog20_anagram_checker,3,1.0000,5,5,True,False,863,12,0.003924,13009,2693,gpt-oss-120b,azure,16.2,[],2026-08-14T17:49:59,gpt-oss-120b,azure,native
+prog20_anagram_checker,4,1.0000,5,5,True,False,1841,12,0.007224,13683,7525,gpt-oss-120b,azure,41.3,[],2026-08-14T17:50:40,gpt-oss-120b,azure,native
+prog20_anagram_checker,5,1.0000,5,5,True,False,1354,12,0.002779,4593,3063,gpt-oss-120b,azure,18.3,[],2026-08-14T17:50:58,gpt-oss-120b,azure,native
+prog20_anagram_checker,6,1.0000,5,5,True,False,1358,12,0.003910,8861,3709,gpt-oss-120b,azure,22.1,[],2026-08-14T17:51:20,gpt-oss-120b,azure,native
+prog20_anagram_checker,7,1.0000,5,5,True,False,2453,12,0.005646,13963,5064,gpt-oss-120b,azure,28.7,[],2026-08-14T17:51:49,gpt-oss-120b,azure,native
+prog20_anagram_checker,8,1.0000,5,5,True,False,1069,12,0.001844,4593,1646,gpt-oss-120b,azure,10.1,[],2026-08-14T17:51:59,gpt-oss-120b,azure,native
+prog21_date_validator,1,1.0000,5,5,True,False,1846,12,0.007528,14512,7778,gpt-oss-120b,azure,40.0,[],2026-08-14T17:52:39,gpt-oss-120b,azure,native
+prog21_date_validator,2,0.6000,3,5,True,False,1480,12,0.007351,10273,8570,gpt-oss-120b,azure,47.1,[],2026-08-14T17:53:26,gpt-oss-120b,azure,native
+prog21_date_validator,3,1.0000,5,5,True,False,1491,12,0.003383,5178,3832,gpt-oss-120b,azure,22.0,[],2026-08-14T17:53:48,gpt-oss-120b,azure,native
+prog21_date_validator,4,0.6000,3,5,True,False,1643,12,0.007813,10439,9228,gpt-oss-120b,azure,48.7,[],2026-08-14T17:54:37,gpt-oss-120b,azure,native
+prog21_date_validator,5,1.0000,5,5,True,False,1713,12,0.005080,10469,5080,gpt-oss-120b,azure,28.0,[],2026-08-14T17:55:05,gpt-oss-120b,azure,native
+prog21_date_validator,6,1.0000,5,5,True,False,1184,12,0.005181,10215,5297,gpt-oss-120b,azure,28.9,[],2026-08-14T17:55:34,gpt-oss-120b,azure,native
+prog21_date_validator,7,1.0000,5,5,True,False,1415,12,0.008247,10368,9903,gpt-oss-120b,azure,51.8,[],2026-08-14T17:56:26,gpt-oss-120b,azure,native
+prog21_date_validator,8,1.0000,5,5,True,False,2029,12,0.008768,19565,8394,gpt-oss-120b,azure,45.9,[],2026-08-14T17:57:12,gpt-oss-120b,azure,native
+prog22_snake_camel_convert,1,0.8000,4,5,True,False,1623,12,0.003795,5874,4281,gpt-oss-120b,azure,22.8,[],2026-08-14T17:57:34,gpt-oss-120b,azure,native
+prog22_snake_camel_convert,2,0.8000,4,5,True,False,1898,12,0.005255,11612,5059,gpt-oss-120b,azure,30.4,[],2026-08-14T17:58:05,gpt-oss-120b,azure,native
+prog22_snake_camel_convert,3,0.8000,4,5,True,False,1632,12,0.004749,13648,3783,gpt-oss-120b,azure,22.5,[],2026-08-14T17:58:27,gpt-oss-120b,azure,native
+prog22_snake_camel_convert,4,0.8000,4,5,True,False,2414,12,0.012294,29042,11367,gpt-oss-120b,azure,59.2,[],2026-08-14T17:59:27,gpt-oss-120b,azure,native
+prog22_snake_camel_convert,5,0.8000,4,5,True,False,1286,12,0.003898,5874,4438,gpt-oss-120b,azure,25.2,[],2026-08-14T17:59:52,gpt-oss-120b,azure,native
+prog22_snake_camel_convert,6,0.8000,4,5,True,False,1456,12,0.003338,5874,3589,gpt-oss-120b,azure,19.2,[],2026-08-14T18:00:11,gpt-oss-120b,azure,native
+prog22_snake_camel_convert,7,0.8000,4,5,True,False,1463,12,0.003227,5874,3421,gpt-oss-120b,azure,19.9,[],2026-08-14T18:00:31,gpt-oss-120b,azure,native
+prog22_snake_camel_convert,8,0.8000,4,5,True,False,1537,12,0.004485,11725,3864,gpt-oss-120b,azure,22.4,[],2026-08-14T18:00:53,gpt-oss-120b,azure,native
+prog23_longest_common_prefix,1,1.0000,5,5,True,False,1225,12,0.003670,8429,3454,gpt-oss-120b,azure,13.1,[],2026-08-14T18:01:06,gpt-oss-120b,azure,native
+prog23_longest_common_prefix,2,1.0000,5,5,True,False,1068,12,0.004374,8247,4566,gpt-oss-120b,azure,15.9,[],2026-08-14T18:01:22,gpt-oss-120b,azure,native
+prog23_longest_common_prefix,3,1.0000,5,5,True,False,1173,12,0.004042,8079,4104,gpt-oss-120b,azure,17.9,[],2026-08-14T18:01:40,gpt-oss-120b,azure,native
+prog23_longest_common_prefix,4,0.8000,4,5,True,False,2492,12,0.006227,12978,6190,gpt-oss-120b,azure,27.7,[],2026-08-14T18:02:08,gpt-oss-120b,azure,native
+prog23_longest_common_prefix,5,1.0000,5,5,True,False,1268,12,0.005180,11371,5005,gpt-oss-120b,azure,19.8,[],2026-08-14T18:02:28,gpt-oss-120b,azure,native
+prog23_longest_common_prefix,6,1.0000,5,5,True,False,1264,12,0.002894,8438,2276,gpt-oss-120b,azure,9.8,[],2026-08-14T18:02:37,gpt-oss-120b,azure,native
+prog23_longest_common_prefix,7,1.0000,5,5,True,False,1229,12,0.001929,4371,1830,gpt-oss-120b,azure,5.9,[],2026-08-14T18:02:43,gpt-oss-120b,azure,native
+prog23_longest_common_prefix,8,1.0000,5,5,True,False,1120,12,0.004070,8085,4145,gpt-oss-120b,azure,16.1,[],2026-08-14T18:03:00,gpt-oss-120b,azure,native
+prog24_query_string_parser,1,0.8000,4,5,True,False,2896,12,0.006475,21568,4418,gpt-oss-120b,azure,24.6,[],2026-08-14T18:03:24,gpt-oss-120b,azure,native
+prog24_query_string_parser,2,0.8000,4,5,True,False,1691,12,0.019687,94140,6294,gpt-oss-120b,azure,41.2,[],2026-08-14T18:04:05,gpt-oss-120b,azure,native
+prog24_query_string_parser,3,0.8000,4,5,True,False,3089,12,0.010532,37357,6619,gpt-oss-120b,azure,42.8,[],2026-08-14T18:04:48,gpt-oss-120b,azure,native
+prog24_query_string_parser,4,0.8000,4,5,True,False,3960,12,0.009493,33873,5915,gpt-oss-120b,azure,37.8,[],2026-08-14T18:05:26,gpt-oss-120b,azure,native
+prog24_query_string_parser,5,0.8000,4,5,True,False,2837,12,0.005938,21259,3682,gpt-oss-120b,azure,24.4,[],2026-08-14T18:05:50,gpt-oss-120b,azure,native
+prog24_query_string_parser,6,0.0000,0,5,False,False,1465,12,0.004414,21126,1407,gpt-oss-120b,azure,14.8,"/w/candidate.c:11:35: error: call to undeclared library function 'isxdigit' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |         } else if (*src == '%' && isxdigit((unsigned char)src[1]) && isxdigit((unsigned char)sr",2026-08-14T18:06:05,gpt-oss-120b,azure,native
+prog24_query_string_parser,7,0.0000,0,5,False,False,1446,12,0.005536,21094,3114,gpt-oss-120b,azure,22.3,"/w/candidate.c:16:28: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |             *dst++ = (char)strtol(hex, NULL, 16);
+      |                ",2026-08-14T18:06:27,gpt-oss-120b,azure,native
+prog24_query_string_parser,8,0.8000,4,5,True,False,3120,12,0.005991,21312,3750,gpt-oss-120b,azure,24.1,[],2026-08-14T18:06:52,gpt-oss-120b,azure,native
+prog25_balanced_multitype,1,1.0000,5,5,True,False,1688,12,0.003556,9417,3033,gpt-oss-120b,azure,21.5,[],2026-08-14T18:07:13,gpt-oss-120b,azure,native
+prog25_balanced_multitype,2,1.0000,5,5,True,False,1847,12,0.003590,9522,3059,gpt-oss-120b,azure,20.9,[],2026-08-14T18:07:34,gpt-oss-120b,azure,native
+prog25_balanced_multitype,3,1.0000,5,5,True,False,1089,12,0.005019,15132,3822,gpt-oss-120b,azure,25.6,[],2026-08-14T18:07:59,gpt-oss-120b,azure,native
+prog25_balanced_multitype,4,0.0000,0,5,False,False,1058,12,0.002019,4837,1850,gpt-oss-120b,azure,13.0,"/w/candidate.c:6:27: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     char *stack = (char *)malloc(len + 1);
+      |                           ^
+/w/cand",2026-08-14T18:08:12,gpt-oss-120b,azure,native
+prog25_balanced_multitype,5,1.0000,5,5,True,False,1631,12,0.003174,9451,2446,gpt-oss-120b,azure,17.7,[],2026-08-14T18:08:30,gpt-oss-120b,azure,native
+prog25_balanced_multitype,6,1.0000,5,5,True,False,1608,12,0.003325,9184,2742,gpt-oss-120b,azure,18.3,[],2026-08-14T18:08:48,gpt-oss-120b,azure,native
+prog25_balanced_multitype,7,1.0000,5,5,True,False,1600,12,0.003006,9225,2248,gpt-oss-120b,azure,14.9,[],2026-08-14T18:09:03,gpt-oss-120b,azure,native
+prog25_balanced_multitype,8,1.0000,5,5,True,False,1928,12,0.003384,9547,2741,gpt-oss-120b,azure,18.6,[],2026-08-14T18:09:22,gpt-oss-120b,azure,native
+prog26_wildcard_match,1,1.0000,5,5,True,False,1903,12,0.004612,4720,5808,gpt-oss-120b,azure,31.2,[],2026-08-14T18:09:53,gpt-oss-120b,azure,native
+prog26_wildcard_match,2,1.0000,5,5,True,False,2019,12,0.007786,22686,6126,gpt-oss-120b,azure,34.3,[],2026-08-14T18:10:27,gpt-oss-120b,azure,native
+prog26_wildcard_match,3,1.0000,5,5,True,False,1450,12,0.003894,9165,3608,gpt-oss-120b,azure,25.0,[],2026-08-14T18:10:52,gpt-oss-120b,azure,native
+prog26_wildcard_match,4,1.0000,5,5,True,False,1799,12,0.005868,14627,5234,gpt-oss-120b,azure,34.5,[],2026-08-14T18:11:27,gpt-oss-120b,azure,native
+prog26_wildcard_match,5,1.0000,5,5,True,False,2006,12,0.007023,15493,6768,gpt-oss-120b,azure,37.7,[],2026-08-14T18:12:05,gpt-oss-120b,azure,native
+prog26_wildcard_match,6,1.0000,5,5,True,False,1614,12,0.004201,9253,4052,gpt-oss-120b,azure,24.0,[],2026-08-14T18:12:29,gpt-oss-120b,azure,native
+prog26_wildcard_match,7,1.0000,5,5,True,False,1551,12,0.003357,9133,2803,gpt-oss-120b,azure,17.0,[],2026-08-14T18:12:46,gpt-oss-120b,azure,native
+prog26_wildcard_match,8,0.0000,0,5,False,False,1836,12,0.002498,4720,2605,gpt-oss-120b,azure,15.1,"/w/candidate.c:14:24: error: call to undeclared library function 'calloc' with type 'void *(unsigned long, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |     bool *dp = (bool *)calloc((p_len + 1) * (t_len + 1), sizeof(bool))",2026-08-14T18:13:01,gpt-oss-120b,azure,native
+prog27_soundex,1,0.6000,3,5,True,False,2132,12,0.013948,54517,7504,gpt-oss-120b,azure,41.5,[],2026-08-14T18:13:42,gpt-oss-120b,azure,native
+prog27_soundex,2,0.6000,3,5,True,False,3219,12,0.016456,56674,10765,gpt-oss-120b,azure,61.0,[],2026-08-14T18:14:43,gpt-oss-120b,azure,native
+prog27_soundex,3,0.0000,0,5,True,False,2475,12,0.014314,55087,7916,gpt-oss-120b,azure,46.7,[],2026-08-14T18:15:30,gpt-oss-120b,azure,native
+prog27_soundex,4,0.6000,3,5,True,False,1961,12,0.007258,22731,5314,gpt-oss-120b,azure,30.8,[],2026-08-14T18:16:01,gpt-oss-120b,azure,native
+prog27_soundex,5,0.6000,3,5,True,False,2134,12,0.009268,32577,5898,gpt-oss-120b,azure,32.0,[],2026-08-14T18:16:33,gpt-oss-120b,azure,native
+prog27_soundex,6,0.8000,4,5,True,False,2471,12,0.008034,33117,3893,gpt-oss-120b,azure,25.8,[],2026-08-14T18:16:59,gpt-oss-120b,azure,native
+prog27_soundex,7,0.6000,3,5,True,False,1521,12,0.014671,55838,8270,gpt-oss-120b,azure,49.1,[],2026-08-14T18:17:48,gpt-oss-120b,azure,native
+prog27_soundex,8,0.8000,4,5,True,False,3045,12,0.015342,55520,9365,gpt-oss-120b,azure,52.5,[],2026-08-14T18:18:40,gpt-oss-120b,azure,native
+prog28_levenshtein,1,1.0000,5,5,True,False,995,12,0.004562,8310,4835,gpt-oss-120b,azure,17.0,[],2026-08-14T18:18:57,gpt-oss-120b,azure,native
+prog28_levenshtein,2,1.0000,5,5,True,False,1490,12,0.004401,13631,3261,gpt-oss-120b,azure,16.3,[],2026-08-14T18:19:14,gpt-oss-120b,azure,native
+prog28_levenshtein,3,1.0000,5,5,True,False,1596,12,0.003115,8481,2599,gpt-oss-120b,azure,11.3,[],2026-08-14T18:19:25,gpt-oss-120b,azure,native
+prog28_levenshtein,4,1.0000,5,5,True,False,988,12,0.004503,12756,3634,gpt-oss-120b,azure,15.8,[],2026-08-14T18:19:41,gpt-oss-120b,azure,native
+prog28_levenshtein,5,1.0000,5,5,True,False,1141,12,0.002209,4330,2264,gpt-oss-120b,azure,6.6,[],2026-08-14T18:19:47,gpt-oss-120b,azure,native
+prog28_levenshtein,6,1.0000,5,5,True,False,1028,12,0.003107,8448,2595,gpt-oss-120b,azure,10.8,[],2026-08-14T18:19:58,gpt-oss-120b,azure,native
+prog28_levenshtein,7,1.0000,5,5,True,False,2095,12,0.003991,12176,3003,gpt-oss-120b,azure,13.8,[],2026-08-14T18:20:12,gpt-oss-120b,azure,native
+prog28_levenshtein,8,1.0000,5,5,True,False,1217,12,0.003360,11436,2232,gpt-oss-120b,azure,10.9,[],2026-08-14T18:20:23,gpt-oss-120b,azure,native
+prog29_roman_numeral_parser,1,1.0000,5,5,True,False,3131,12,0.009214,34944,5225,gpt-oss-120b,azure,31.6,[],2026-08-14T18:20:54,gpt-oss-120b,azure,native
+prog29_roman_numeral_parser,2,1.0000,5,5,True,False,3397,12,0.013317,58021,5672,gpt-oss-120b,azure,35.2,[],2026-08-14T18:21:29,gpt-oss-120b,azure,native
+prog29_roman_numeral_parser,3,0.8000,4,5,True,False,3122,12,0.011742,45190,6494,gpt-oss-120b,azure,36.3,[],2026-08-14T18:22:06,gpt-oss-120b,azure,native
+prog29_roman_numeral_parser,4,0.8000,4,5,True,False,2062,12,0.015350,75025,4502,gpt-oss-120b,azure,35.4,[],2026-08-14T18:22:41,gpt-oss-120b,azure,native
+prog29_roman_numeral_parser,5,1.0000,5,5,True,False,4080,12,0.015832,66629,7330,gpt-oss-120b,azure,65.2,[],2026-08-14T18:23:46,gpt-oss-120b,azure,native
+prog29_roman_numeral_parser,6,0.2000,1,5,True,False,3704,12,0.007787,28017,4794,gpt-oss-120b,azure,37.1,[],2026-08-14T18:24:23,gpt-oss-120b,azure,native
+prog29_roman_numeral_parser,7,1.0000,5,5,True,False,2727,12,0.016491,77595,5588,gpt-oss-120b,azure,57.7,[],2026-08-14T18:25:21,gpt-oss-120b,azure,native
+prog29_roman_numeral_parser,8,0.8000,4,5,True,False,2915,12,0.007860,28191,4862,gpt-oss-120b,azure,37.2,[],2026-08-14T18:25:58,gpt-oss-120b,azure,native
+prog30_escape_unescape,1,0.6000,3,5,True,False,2287,12,0.015034,44786,11582,gpt-oss-120b,azure,64.3,[],2026-08-14T18:27:02,gpt-oss-120b,azure,native
+prog30_escape_unescape,2,0.6000,3,5,True,False,2480,12,0.007181,13252,7568,gpt-oss-120b,azure,39.0,[],2026-08-14T18:27:41,gpt-oss-120b,azure,native
+prog30_escape_unescape,3,1.0000,5,5,True,False,3634,12,0.009046,13406,10354,gpt-oss-120b,azure,53.1,[],2026-08-14T18:28:35,gpt-oss-120b,azure,native
+prog30_escape_unescape,4,0.6000,3,5,True,False,2036,12,0.007787,19051,7035,gpt-oss-120b,azure,39.2,[],2026-08-14T18:29:14,gpt-oss-120b,azure,native
+prog30_escape_unescape,5,0.6000,3,5,True,False,3524,12,0.010408,20478,10650,gpt-oss-120b,azure,54.7,[],2026-08-14T18:30:08,gpt-oss-120b,azure,native
+prog30_escape_unescape,6,0.6000,3,5,True,False,2753,12,0.008216,19018,7694,gpt-oss-120b,azure,42.3,[],2026-08-14T18:30:51,gpt-oss-120b,azure,native
+prog30_escape_unescape,7,0.6000,3,5,True,False,3184,12,0.009187,30879,6200,gpt-oss-120b,azure,38.1,[],2026-08-14T18:31:29,gpt-oss-120b,azure,native
+prog30_escape_unescape,8,0.0000,0,5,False,False,2204,12,0.004480,12297,3713,gpt-oss-120b,azure,21.0,"/w/candidate.c:77:1: error: extraneous closing brace ('}')
+   77 | }
+      | ^
+1 error generated.
+",2026-08-14T18:31:50,gpt-oss-120b,azure,native
+prog31_gcd_lcm,1,0.0000,0,5,False,True,0,12,0.006167,4219,8289,gpt-oss-120b,azure,20.6,nessun candidato prodotto,2026-08-14T18:32:10,gpt-oss-120b,azure,native
+prog31_gcd_lcm,2,1.0000,5,5,True,False,1327,12,0.003363,4219,4041,gpt-oss-120b,azure,12.9,[],2026-08-14T18:32:23,gpt-oss-120b,azure,native
+prog31_gcd_lcm,3,0.0000,0,5,False,True,0,12,0.012879,11661,16598,gpt-oss-120b,azure,60.1,nessun candidato prodotto,2026-08-14T18:33:23,gpt-oss-120b,azure,native
+prog31_gcd_lcm,4,1.0000,5,5,True,False,1024,12,0.004821,4219,6250,gpt-oss-120b,azure,15.4,[],2026-08-14T18:33:39,gpt-oss-120b,azure,native
+prog31_gcd_lcm,5,1.0000,5,5,True,False,1221,12,0.008109,12427,9179,gpt-oss-120b,azure,31.4,[],2026-08-14T18:34:10,gpt-oss-120b,azure,native
+prog31_gcd_lcm,6,1.0000,5,5,True,False,1417,12,0.007027,8232,8589,gpt-oss-120b,azure,29.8,[],2026-08-14T18:34:40,gpt-oss-120b,azure,native
+prog31_gcd_lcm,7,1.0000,5,5,True,False,979,12,0.008851,8613,11258,gpt-oss-120b,azure,42.1,[],2026-08-14T18:35:22,gpt-oss-120b,azure,native
+prog31_gcd_lcm,8,1.0000,5,5,True,False,3030,12,0.008620,8421,10956,gpt-oss-120b,azure,41.4,[],2026-08-14T18:36:04,gpt-oss-120b,azure,native
+prog32_prime_factorization,1,1.0000,5,5,True,False,1297,12,0.006028,7115,7354,gpt-oss-120b,azure,24.2,[],2026-08-14T18:36:28,gpt-oss-120b,azure,native
+prog32_prime_factorization,2,1.0000,5,5,True,False,928,12,0.002958,3708,3555,gpt-oss-120b,azure,10.6,[],2026-08-14T18:36:38,gpt-oss-120b,azure,native
+prog32_prime_factorization,3,1.0000,5,5,True,False,1466,12,0.006878,9523,8040,gpt-oss-120b,azure,20.1,[],2026-08-14T18:36:58,gpt-oss-120b,azure,native
+prog32_prime_factorization,4,1.0000,5,5,True,False,1606,12,0.004563,6954,5175,gpt-oss-120b,azure,17.2,[],2026-08-14T18:37:16,gpt-oss-120b,azure,native
+prog32_prime_factorization,5,1.0000,5,5,True,False,961,12,0.002704,3708,3170,gpt-oss-120b,azure,8.2,[],2026-08-14T18:37:24,gpt-oss-120b,azure,native
+prog32_prime_factorization,6,0.0000,0,5,False,False,1000,12,0.004159,3708,5374,gpt-oss-120b,azure,14.0,"/w/candidate.c:49:1: error: extraneous closing brace ('}')
+   49 | }
+      | ^
+1 error generated.
+",2026-08-14T18:37:38,gpt-oss-120b,azure,native
+prog32_prime_factorization,7,1.0000,5,5,True,False,995,12,0.006963,10741,7865,gpt-oss-120b,azure,302.7,[],2026-08-14T18:42:41,gpt-oss-120b,azure,native
+prog32_prime_factorization,8,1.0000,5,5,True,False,1243,12,0.004567,6958,5180,gpt-oss-120b,azure,18.3,[],2026-08-14T18:42:59,gpt-oss-120b,azure,native
+prog33_mod_pow,1,1.0000,5,5,True,False,1148,12,0.005290,7202,6215,gpt-oss-120b,azure,21.4,[],2026-08-14T18:43:20,gpt-oss-120b,azure,native
+prog33_mod_pow,2,1.0000,5,5,True,False,1313,12,0.005886,7494,7045,gpt-oss-120b,azure,23.9,[],2026-08-14T18:43:44,gpt-oss-120b,azure,native
+prog33_mod_pow,3,1.0000,5,5,True,False,1183,12,0.005684,7260,6797,gpt-oss-120b,azure,22.9,[],2026-08-14T18:44:07,gpt-oss-120b,azure,native
+prog33_mod_pow,4,1.0000,5,5,True,False,1255,12,0.003615,3793,4529,gpt-oss-120b,azure,10.3,[],2026-08-14T18:44:17,gpt-oss-120b,azure,native
+prog33_mod_pow,5,1.0000,5,5,True,False,1320,12,0.003319,6646,3368,gpt-oss-120b,azure,10.5,[],2026-08-14T18:44:28,gpt-oss-120b,azure,native
+prog33_mod_pow,6,1.0000,5,5,True,False,1493,12,0.003531,3793,4402,gpt-oss-120b,azure,12.1,[],2026-08-14T18:44:40,gpt-oss-120b,azure,native
+prog33_mod_pow,7,1.0000,5,5,True,False,1652,12,0.004595,7318,5132,gpt-oss-120b,azure,17.1,[],2026-08-14T18:44:57,gpt-oss-120b,azure,native
+prog33_mod_pow,8,1.0000,5,5,True,False,1546,12,0.003358,3793,4139,gpt-oss-120b,azure,10.5,[],2026-08-14T18:45:08,gpt-oss-120b,azure,native
+prog34_fibonacci_memo,1,0.0000,0,5,True,False,1380,12,0.007931,7244,10206,gpt-oss-120b,azure,24.5,[],2026-08-14T18:45:32,gpt-oss-120b,azure,native
+prog34_fibonacci_memo,2,1.0000,5,5,True,False,1573,12,0.006542,13459,6547,gpt-oss-120b,azure,19.2,[],2026-08-14T18:45:51,gpt-oss-120b,azure,native
+prog34_fibonacci_memo,3,0.0000,0,5,False,False,112,12,0.011850,17596,13556,gpt-oss-120b,azure,34.9,"/w/candidate.c:1:1: error: expected identifier or '('
+    1 | <|start|>assistant<|channel|>analysis to=functions.decompile_function <|constrain|>json<|message|>fib""}<|call|>
+      | ^
+/w/candidate.c:1:102: warning: missing terminating '""' character [-Winvalid-pp-token]
+    1 | <|start|>assistant<|ch",2026-08-14T18:46:26,gpt-oss-120b,azure,native
+prog34_fibonacci_memo,4,1.0000,5,5,True,False,2051,12,0.009584,15106,10745,gpt-oss-120b,azure,27.7,[],2026-08-14T18:46:54,gpt-oss-120b,azure,native
+prog34_fibonacci_memo,5,0.0000,0,5,False,False,112,12,0.016647,17596,20823,gpt-oss-120b,azure,48.7,"/w/candidate.c:1:1: error: expected identifier or '('
+    1 | <|start|>assistant<|channel|>analysis to=functions.decompile_function <|constrain|>json<|message|>fib""}<|call|>
+      | ^
+/w/candidate.c:1:102: warning: missing terminating '""' character [-Winvalid-pp-token]
+    1 | <|start|>assistant<|ch",2026-08-14T18:47:43,gpt-oss-120b,azure,native
+prog34_fibonacci_memo,6,0.0000,0,5,False,False,112,12,0.017827,18533,22377,gpt-oss-120b,azure,49.5,"/w/candidate.c:1:1: error: expected identifier or '('
+    1 | <|start|>assistant<|channel|>analysis to=functions.decompile_function <|constrain|>json<|message|>fib""}<|call|>
+      | ^
+/w/candidate.c:1:102: warning: missing terminating '""' character [-Winvalid-pp-token]
+    1 | <|start|>assistant<|ch",2026-08-14T18:48:32,gpt-oss-120b,azure,native
+prog34_fibonacci_memo,7,1.0000,5,5,True,False,2066,12,0.007266,13459,7644,gpt-oss-120b,azure,20.2,[],2026-08-14T18:48:52,gpt-oss-120b,azure,native
+prog34_fibonacci_memo,8,0.0000,0,5,False,False,112,12,0.008097,17596,7869,gpt-oss-120b,azure,22.9,"/w/candidate.c:1:1: error: expected identifier or '('
+    1 | <|start|>assistant<|channel|>analysis to=functions.decompile_function <|constrain|>json<|message|>fib""}<|call|>
+      | ^
+/w/candidate.c:1:102: warning: missing terminating '""' character [-Winvalid-pp-token]
+    1 | <|start|>assistant<|ch",2026-08-14T18:49:15,gpt-oss-120b,azure,native
+prog35_perfect_numbers,1,1.0000,5,5,True,False,2451,12,0.009440,10634,11644,gpt-oss-120b,azure,29.9,[],2026-08-14T18:49:45,gpt-oss-120b,azure,native
+prog35_perfect_numbers,2,0.8000,4,5,True,False,1194,12,0.005868,7467,7024,gpt-oss-120b,azure,22.6,[],2026-08-14T18:50:08,gpt-oss-120b,azure,native
+prog35_perfect_numbers,3,1.0000,5,5,True,False,1636,12,0.007521,7443,9535,gpt-oss-120b,azure,33.4,[],2026-08-14T18:50:41,gpt-oss-120b,azure,native
+prog35_perfect_numbers,4,1.0000,5,5,True,False,1312,12,0.009619,10253,12011,gpt-oss-120b,azure,31.6,[],2026-08-14T18:51:13,gpt-oss-120b,azure,native
+prog35_perfect_numbers,5,0.8000,4,5,True,False,1034,12,0.003774,3858,4753,gpt-oss-120b,azure,13.4,[],2026-08-14T18:51:26,gpt-oss-120b,azure,native
+prog35_perfect_numbers,6,1.0000,5,5,True,False,812,12,0.005230,3858,6960,gpt-oss-120b,azure,20.4,[],2026-08-14T18:51:47,gpt-oss-120b,azure,native
+prog35_perfect_numbers,7,0.8000,4,5,True,False,993,12,0.008544,11253,10132,gpt-oss-120b,azure,35.9,[],2026-08-14T18:52:23,gpt-oss-120b,azure,native
+prog35_perfect_numbers,8,0.0000,0,5,False,False,1244,12,0.008923,7553,11632,gpt-oss-120b,azure,41.1,"/usr/bin/ld: /tmp/candidate-bf0726.o: in function `sum_proper_divisors':
+candidate.c:(.text+0x1b3): undefined reference to `sqrt'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+",2026-08-14T18:53:04,gpt-oss-120b,azure,native
+prog36_pascal_triangle,1,1.0000,5,5,True,False,1674,12,0.005979,7739,7125,gpt-oss-120b,azure,24.9,[],2026-08-14T18:53:29,gpt-oss-120b,azure,native
+prog36_pascal_triangle,2,0.2000,1,5,True,False,755,12,0.002709,3995,3106,gpt-oss-120b,azure,9.5,[],2026-08-14T18:53:38,gpt-oss-120b,azure,native
+prog36_pascal_triangle,3,0.0000,0,5,False,False,1473,12,0.004664,11780,4122,gpt-oss-120b,azure,17.5,harness_error: IndexError: list index out of range,2026-08-14T18:53:56,gpt-oss-120b,azure,native
+prog36_pascal_triangle,4,1.0000,5,5,True,False,1576,12,0.005893,7550,7042,gpt-oss-120b,azure,27.0,[],2026-08-14T18:54:23,gpt-oss-120b,azure,native
+prog36_pascal_triangle,5,1.0000,5,5,True,False,1388,12,0.005322,7527,6182,gpt-oss-120b,azure,22.0,[],2026-08-14T18:54:45,gpt-oss-120b,azure,native
+prog36_pascal_triangle,6,0.4000,2,5,True,False,1067,12,0.003409,3995,4167,gpt-oss-120b,azure,13.2,[],2026-08-14T18:54:58,gpt-oss-120b,azure,native
+prog36_pascal_triangle,7,1.0000,5,5,True,False,1390,12,0.008985,12023,10608,gpt-oss-120b,azure,484.2,[],2026-08-14T19:03:02,gpt-oss-120b,azure,native
+prog36_pascal_triangle,8,0.4000,2,5,True,False,1132,12,0.004116,3995,5237,gpt-oss-120b,azure,23.5,[],2026-08-14T19:03:26,gpt-oss-120b,azure,native
+prog37_binomial_coefficient,1,0.0000,0,5,False,False,109,12,0.018965,21753,23296,gpt-oss-120b,azure,63.1,"/w/candidate.c:1:1: error: expected identifier or '('
+    1 | <|start|>assistant<|channel|>analysis to=functions.decompile_function <|constrain|>json<|message|>""}<|call|>
+      | ^
+/w/candidate.c:1:99: warning: missing terminating '""' character [-Winvalid-pp-token]
+    1 | <|start|>assistant<|channe",2026-08-14T19:04:29,gpt-oss-120b,azure,native
+prog37_binomial_coefficient,2,1.0000,5,5,True,False,919,12,0.017903,18394,22527,gpt-oss-120b,azure,51.1,[],2026-08-14T19:05:20,gpt-oss-120b,azure,native
+prog37_binomial_coefficient,3,0.8000,4,5,True,False,1161,12,0.016925,22083,20123,gpt-oss-120b,azure,46.5,[],2026-08-14T19:06:06,gpt-oss-120b,azure,native
+prog37_binomial_coefficient,4,0.0000,0,5,False,False,109,12,0.019170,20811,23843,gpt-oss-120b,azure,412.7,"/w/candidate.c:1:1: error: expected identifier or '('
+    1 | <|start|>assistant<|channel|>analysis to=functions.decompile_function <|constrain|>json<|message|>""}<|call|>
+      | ^
+/w/candidate.c:1:99: warning: missing terminating '""' character [-Winvalid-pp-token]
+    1 | <|start|>assistant<|channe",2026-08-14T19:12:59,gpt-oss-120b,azure,native
+prog37_binomial_coefficient,5,1.0000,5,5,True,False,916,12,0.013981,28743,13997,gpt-oss-120b,azure,38.1,[],2026-08-14T19:13:37,gpt-oss-120b,azure,native
+prog37_binomial_coefficient,6,0.0000,0,5,False,False,109,12,0.018595,20811,22971,gpt-oss-120b,azure,60.8,"/w/candidate.c:1:1: error: expected identifier or '('
+    1 | <|start|>assistant<|channel|>analysis to=functions.decompile_function <|constrain|>json<|message|>""}<|call|>
+      | ^
+/w/candidate.c:1:99: warning: missing terminating '""' character [-Winvalid-pp-token]
+    1 | <|start|>assistant<|channe",2026-08-14T19:14:38,gpt-oss-120b,azure,native
+prog37_binomial_coefficient,7,1.0000,5,5,True,False,1922,12,0.016998,21419,20400,gpt-oss-120b,azure,54.2,[],2026-08-14T19:15:32,gpt-oss-120b,azure,native
+prog37_binomial_coefficient,8,0.0000,0,5,False,True,0,12,0.018658,8073,26252,gpt-oss-120b,azure,62.6,nessun candidato prodotto,2026-08-14T19:16:35,gpt-oss-120b,azure,native
+prog38_continued_fraction,1,0.0000,0,5,True,False,2738,12,0.010642,29547,8738,gpt-oss-120b,azure,48.0,[],2026-08-14T19:17:23,gpt-oss-120b,azure,native
+prog38_continued_fraction,2,0.6000,3,5,True,False,1393,12,0.010918,23815,10588,gpt-oss-120b,azure,60.8,[],2026-08-14T19:18:24,gpt-oss-120b,azure,native
+prog38_continued_fraction,3,0.6000,3,5,True,False,2029,12,0.002969,4936,3264,gpt-oss-120b,azure,19.6,[],2026-08-14T19:18:43,gpt-oss-120b,azure,native
+prog38_continued_fraction,4,0.6000,3,5,True,False,2116,12,0.006742,10047,7703,gpt-oss-120b,azure,40.1,[],2026-08-14T19:19:23,gpt-oss-120b,azure,native
+prog38_continued_fraction,5,0.8000,4,5,True,False,2858,12,0.020205,38753,20925,gpt-oss-120b,azure,110.3,[],2026-08-14T19:21:13,gpt-oss-120b,azure,native
+prog38_continued_fraction,6,0.0000,0,5,False,True,0,12,0.006273,4936,8271,gpt-oss-120b,azure,47.2,nessun candidato prodotto,2026-08-14T19:22:01,gpt-oss-120b,azure,native
+prog38_continued_fraction,7,0.8000,4,5,True,False,1659,12,0.002979,4936,3280,gpt-oss-120b,azure,20.2,[],2026-08-14T19:22:21,gpt-oss-120b,azure,native
+prog38_continued_fraction,8,0.8000,4,5,True,False,2091,12,0.004413,8829,4479,gpt-oss-120b,azure,26.9,[],2026-08-14T19:22:48,gpt-oss-120b,azure,native
+prog39_horner,1,1.0000,5,5,True,False,1493,12,0.013441,19083,15594,gpt-oss-120b,azure,80.4,[],2026-08-14T19:24:08,gpt-oss-120b,azure,native
+prog39_horner,2,0.0000,0,5,False,False,1716,12,0.009036,8950,11454,gpt-oss-120b,azure,68.5,"/w/candidate.c:67:1: error: extraneous closing brace ('}')
+   67 | }
+      | ^
+1 error generated.
+",2026-08-14T19:25:17,gpt-oss-120b,azure,native
+prog39_horner,3,1.0000,5,5,True,False,1444,12,0.004141,4754,5085,gpt-oss-120b,azure,449.7,[],2026-08-14T19:32:46,gpt-oss-120b,azure,native
+prog39_horner,4,1.0000,5,5,True,False,1176,12,0.005599,9278,6164,gpt-oss-120b,azure,582.6,[],2026-08-14T19:42:29,gpt-oss-120b,azure,native

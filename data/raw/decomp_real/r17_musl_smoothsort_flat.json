@@ -1,0 +1,273 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00105010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint putchar(int __c)\n\n{\n  int iVar1;\n  \n  iVar1 = (*(code *)PTR_putchar_00105018)();\n  return iVar1;\n}\n\n", 
+   "signature": "int putchar(int __c)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "putchar", 
+   "entry_point": "00101030"
+  }, 
+  {
+   "decompiled": "\nvoid processEntry entry(undefined8 param_1,undefined8 param_2)\n\n{\n  undefined1 auStack_8 [8];\n  \n  (*(code *)PTR___libc_start_main_00104fe0)\n            (FUN_00102090,param_2,&stack0x00000008,FUN_001023f0,FUN_00102450,param_1,auStack_8);\n  do {\n                    /* WARNING: Do nothing block with infinite loop */\n  } while( true );\n}\n\n", 
+   "signature": "undefined entry(void)", 
+   "is_thunk": false, 
+   "size": 43, 
+   "name": "entry", 
+   "entry_point": "00101090"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x001010d3) */\n/* WARNING: Removing unreachable block (ram,0x001010df) */\n\nvoid FUN_001010c0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010c0(void)", 
+   "is_thunk": false, 
+   "size": 34, 
+   "name": "FUN_001010c0", 
+   "entry_point": "001010c0"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x00101114) */\n/* WARNING: Removing unreachable block (ram,0x00101120) */\n\nvoid FUN_001010f0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010f0(void)", 
+   "is_thunk": false, 
+   "size": 51, 
+   "name": "FUN_001010f0", 
+   "entry_point": "001010f0"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Type propagation algorithm not settling */\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n\nvoid FUN_00101180(ulong param_1,long param_2,long param_3,undefined8 param_4,undefined8 param_5)\n\n{\n  uint uVar1;\n  byte bVar2;\n  int iVar3;\n  uint uVar4;\n  int iVar5;\n  ulong *puVar6;\n  int iVar7;\n  ulong uVar8;\n  uint uVar9;\n  ulong uVar10;\n  uint uVar11;\n  int iVar12;\n  ulong uVar13;\n  long lVar14;\n  undefined8 local_378;\n  undefined8 uStack_370;\n  undefined8 local_360;\n  undefined8 local_358;\n  long local_350;\n  long local_348;\n  ulong local_340 [3];\n  ulong local_328 [95];\n  \n  uVar10 = param_2 * param_3;\n  local_378 = CONCAT44(_UNK_00103014,_DAT_00103010);\n  uStack_370 = CONCAT44(_UNK_0010301c,_UNK_00103018);\n  if (uVar10 != 0) {\n    local_348 = -param_3;\n    local_340[2] = param_3;\n    local_340[1] = param_3;\n    puVar6 = local_340 + 3;\n    do {\n      uVar8 = puVar6[-2] + param_3 + puVar6[-1];\n      *puVar6 = uVar8;\n      puVar6 = puVar6 + 1;\n    } while (uVar8 < uVar10);\n    uVar10 = uVar10 + param_1 + local_348;\n    uVar9 = 1;\n    local_360 = param_4;\n    local_358 = param_5;\n    local_350 = param_3;\n    if (param_1 < uVar10) {\n      uVar9 = 1;\n      do {\n        uVar13 = uStack_370;\n        uVar8 = local_378;\n        if ((~(uint)local_378 & 3) == 0) {\n          FUN_00101910(param_1,param_3,local_360,local_358,uVar9,local_340 + 1);\n          iVar3 = 2;\n          iVar5 = 0x2dae56dc;\n          do {\n            bVar2 = (byte)iVar3;\n            uStack_370 = uVar13;\n            while( true ) {\n              while (-0xa015e53 < iVar5) {\n                if (iVar5 == -0xa015e52) {\n                  uVar9 = uVar9 + 2;\n                  goto LAB_0010122c;\n                }\n                if (iVar5 == 0x2dae56dc) goto LAB_001012e3;\n                if (iVar5 == 0x3ef4d723) {\n                  iVar5 = -0xa015e52;\n                }\n              }\n              if (iVar5 == -0x5863e323) break;\n              if (iVar5 == -0x57c6b609) {\n                uVar8 = uVar8 >> (bVar2 & 0x3f) | uStack_370 << (0x40 - bVar2 & 0x3f);\n                uStack_370 = uStack_370 >> (bVar2 & 0x3f);\n                iVar5 = -0xa015e52;\n              }\n              else if (iVar5 == -0x13650bf1) {\nLAB_001012e3:\n                iVar5 = -0x57c6b609;\n              }\n            }\n            iVar3 = iVar3 + -0x40;\n            iVar5 = -0x13650bf1;\n            if (iVar3 == 0) {\n              iVar5 = 0x3ef4d723;\n            }\n            uVar13 = 0;\n            uVar8 = uStack_370;\n          } while( true );\n        }\n        if (local_340[(int)uVar9] < uVar10 - param_1) {\n          FUN_00101910(param_1,param_3,local_360,local_358,uVar9,local_340 + 1);\n        }\n        else {\n          FUN_00101b70(param_1,param_3,local_360,local_358,&local_378,uVar9,0,local_340 + 1);\n        }\n        if (uVar9 != 1) {\n          uVar9 = uVar9 - 1;\n          iVar3 = 0x1cdc3e79;\n          if (0x3f < uVar9) {\n            iVar3 = 0x5dda6a13;\n          }\n          iVar5 = 0x41fbe84b;\n          do {\n            bVar2 = (byte)uVar9;\n            do {\n              do {\n                while (iVar7 = iVar5, iVar7 < 0x41fbe84b) {\n                  if (iVar7 == -0x37aef8bc) {\n                    iVar5 = 0x5303b6ba;\n                  }\n                  else if (iVar7 == -0x2fe4b822) {\n                    iVar5 = 0x1cdc3e79;\n                  }\n                  else {\n                    iVar5 = iVar7;\n                    if (iVar7 == 0x1cdc3e79) {\n                      uVar13 = uVar13 << (bVar2 & 0x3f) | uVar8 >> (0x40 - bVar2 & 0x3f);\n                      uVar8 = uVar8 << (bVar2 & 0x3f);\n                      iVar5 = 0x5303b6ba;\n                    }\n                  }\n                }\n                iVar5 = iVar3;\n              } while (iVar7 == 0x41fbe84b);\n              if (iVar7 == 0x5303b6ba) {\n                uVar9 = 1;\n                uStack_370 = uVar13;\n                goto LAB_0010122c;\n              }\n              iVar5 = iVar7;\n            } while (iVar7 != 0x5dda6a13);\n            uVar9 = uVar9 - 0x40;\n            iVar5 = -0x2fe4b822;\n            if (uVar9 == 0) {\n              iVar5 = -0x37aef8bc;\n            }\n            uVar13 = uVar8;\n            uVar8 = 0;\n          } while( true );\n        }\n        iVar3 = 0x41fbe84b;\n        while (iVar3 != 0x5303b6ba) {\n          if (iVar3 == 0x41fbe84b) {\n            iVar3 = 0x1cdc3e79;\n          }\n          else if (iVar3 == 0x1cdc3e79) {\n            uVar13 = uVar13 << 1 | uVar8 >> 0x3f;\n            uVar8 = uVar8 * 2;\n            iVar3 = 0x5303b6ba;\n          }\n        }\n        uVar9 = 0;\n        uStack_370 = uVar13;\nLAB_0010122c:\n        local_378 = uVar8 | 1;\n        param_1 = param_1 + param_3;\n      } while (param_1 < uVar10);\n    }\n    FUN_00101b70(param_1,param_3,local_360,local_358,&local_378,uVar9,0,local_340 + 1);\n    local_340[0] = param_1;\n    lVar14 = local_348;\n    if (((uVar9 != 1) || (local_378 != 1)) || (uStack_370 != 0)) {\n      do {\n        if (1 < (int)uVar9) {\n          iVar3 = 0x41fbe84b;\n          while( true ) {\n            while (iVar3 == 0x1cdc3e79) {\n              uStack_370 = uStack_370 << 2 | local_378 >> 0x3e;\n              local_378 = local_378 << 2;\n              iVar3 = 0x5303b6ba;\n            }\n            if (iVar3 == 0x5303b6ba) break;\n            if (iVar3 == 0x41fbe84b) {\n              iVar3 = 0x1cdc3e79;\n            }\n          }\n          iVar5 = 1;\n          iVar3 = 0x2dae56dc;\n          uVar10 = local_378 ^ 7;\n          do {\n            bVar2 = (byte)iVar5;\n            uVar8 = uStack_370;\n            while( true ) {\n              while (-0xa015e53 < iVar3) {\n                if (iVar3 == -0xa015e52) {\n                  uVar4 = uVar9 - 2;\n                  lVar14 = local_340[0] + lVar14;\n                  local_378 = uVar10;\n                  uStack_370 = uVar8;\n                  FUN_00101b70(lVar14 - local_340[(ulong)uVar4 + 1],local_350,local_360,local_358,\n                               &local_378,uVar9 - 1,1,local_340 + 1);\n                  iVar3 = 0x41fbe84b;\n                  while (iVar3 != 0x5303b6ba) {\n                    if (iVar3 == 0x41fbe84b) {\n                      iVar3 = 0x1cdc3e79;\n                    }\n                    else if (iVar3 == 0x1cdc3e79) {\n                      uVar8 = uVar8 << 1 | uVar10 >> 0x3f;\n                      uVar10 = uVar10 * 2;\n                      iVar3 = 0x5303b6ba;\n                    }\n                  }\n                  uVar10 = uVar10 | 1;\n                  local_378 = uVar10;\n                  uStack_370 = uVar8;\n                  FUN_00101b70(lVar14,local_350,local_360,local_358,&local_378,(ulong)uVar4,1,\n                               local_340 + 1);\n                  lVar14 = local_348;\n                  uVar9 = uVar4;\n                  goto LAB_001018db;\n                }\n                if (iVar3 == 0x2dae56dc) goto LAB_001017a3;\n                if (iVar3 == 0x3ef4d723) {\n                  iVar3 = -0xa015e52;\n                }\n              }\n              if (iVar3 == -0x5863e323) break;\n              if (iVar3 == -0x57c6b609) {\n                uVar10 = uVar10 >> (bVar2 & 0x3f) | uVar8 << (0x40 - bVar2 & 0x3f);\n                uVar8 = uVar8 >> (bVar2 & 0x3f);\n                iVar3 = -0xa015e52;\n              }\n              else if (iVar3 == -0x13650bf1) {\nLAB_001017a3:\n                iVar3 = -0x57c6b609;\n              }\n            }\n            iVar5 = iVar5 + -0x40;\n            iVar3 = -0x13650bf1;\n            if (iVar5 == 0) {\n              iVar3 = 0x3ef4d723;\n            }\n            uStack_370 = 0;\n            uVar10 = uVar8;\n          } while( true );\n        }\n        uVar4 = 0;\n        for (uVar10 = local_378 - 1; (uVar10 & 1) == 0; uVar10 = uVar10 >> 1 | 0x8000000000000000) {\n          uVar4 = uVar4 + 1;\n        }\n        iVar3 = 0x4be03a57;\n        if (local_378 == 1) {\n          iVar3 = -0x1d885e21;\n        }\n        uVar1 = 0;\n        for (uVar10 = uStack_370; (uVar10 & 1) == 0; uVar10 = uVar10 >> 1 | 0x8000000000000000) {\n          uVar1 = uVar1 + 1;\n        }\n        iVar5 = 0x38437259;\n        if (uStack_370 == 0) {\n          iVar5 = 0x19b6ec5c;\n        }\n        iVar7 = 0x2d5b50aa;\n        uVar11 = 0x19b6ec5c;\n        while( true ) {\n          while( true ) {\n            while (iVar12 = iVar7, iVar12 < 0x38437259) {\n              iVar7 = iVar5;\n              if (iVar12 != -0x1d885e21) {\n                if (iVar12 == 0x19b6ec5c) {\n                  uVar11 = 0;\n                  iVar7 = 0x5a669fb7;\n                }\n                else {\n                  iVar7 = iVar12;\n                  if (iVar12 == 0x2d5b50aa) {\n                    iVar7 = iVar3;\n                  }\n                }\n              }\n            }\n            if (iVar12 != 0x38437259) break;\n            iVar7 = 0x5a669fb7;\n            uVar11 = uVar1 | 0x40;\n          }\n          if (iVar12 == 0x5a669fb7) break;\n          iVar7 = iVar12;\n          if (iVar12 == 0x4be03a57) {\n            iVar7 = 0x5a669fb7;\n            uVar11 = uVar4;\n          }\n        }\n        iVar3 = -0x57c6b609;\n        if (0x3f < uVar11) {\n          iVar3 = -0x5863e323;\n        }\n        iVar5 = 0x2dae56dc;\n        uVar10 = local_378;\n        uVar4 = uVar11;\nLAB_00101667:\n        bVar2 = (byte)uVar4;\n        uVar8 = uStack_370;\nLAB_00101680:\n        iVar7 = iVar5;\n        if (iVar7 < -0xa015e52) {\n          if (iVar7 != -0x5863e323) {\n            if (iVar7 == -0x57c6b609) {\n              uVar10 = uVar10 >> (bVar2 & 0x3f) | uVar8 << (0x40 - bVar2 & 0x3f);\n              uVar8 = uVar8 >> (bVar2 & 0x3f);\n              iVar5 = -0xa015e52;\n            }\n            else {\n              iVar5 = iVar7;\n              if (iVar7 == -0x13650bf1) {\n                iVar5 = -0x57c6b609;\n              }\n            }\n            goto LAB_00101680;\n          }\n          uVar4 = uVar4 - 0x40;\n          iVar5 = -0x13650bf1;\n          if (uVar4 == 0) {\n            iVar5 = 0x3ef4d723;\n          }\n          uStack_370 = 0;\n          uVar10 = uVar8;\n          goto LAB_00101667;\n        }\n        if (iVar7 != -0xa015e52) {\n          iVar5 = iVar3;\n          if ((iVar7 != 0x2dae56dc) && (iVar5 = iVar7, iVar7 == 0x3ef4d723)) {\n            iVar5 = -0xa015e52;\n          }\n          goto LAB_00101680;\n        }\n        uVar9 = uVar9 + uVar11;\nLAB_001018db:\n        local_340[0] = local_340[0] + lVar14;\n        uStack_370 = uVar8;\n        local_378 = uVar10;\n        if (((uVar9 == 1) && (uVar10 == 1)) && (uVar8 == 0)) {\n          return;\n        }\n      } while( true );\n    }\n  }\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101180(void)", 
+   "is_thunk": false, 
+   "size": 1756, 
+   "name": "FUN_00101180", 
+   "entry_point": "00101180"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00101910(void *param_1,ulong param_2,code *param_3,undefined8 param_4,int param_5,\n                 long param_6)\n\n{\n  ulong uVar1;\n  void *__dest;\n  int iVar2;\n  int iVar3;\n  size_t __n;\n  ulong uVar4;\n  void *unaff_R13;\n  void *unaff_R14;\n  uint uVar5;\n  ulong uVar6;\n  void *local_538 [128];\n  undefined1 local_138 [264];\n  \n  local_538[0] = param_1;\n  iVar3 = 0x6b751a03;\n  uVar5 = 1;\n  do {\n    while( true ) {\n      while( true ) {\n        while( true ) {\n          while (iVar3 < 0x330a2001) {\n            if (iVar3 < -0x4afbebab) {\n              if (iVar3 == -0x71801392) {\n                iVar3 = 0x330a2001;\n              }\n              else if (iVar3 == -0x6c1345ca) {\n                unaff_R14 = (void *)((long)param_1 - param_2);\n                unaff_R13 = (void *)((long)unaff_R14 -\n                                    *(long *)(param_6 + -0x10 + (long)param_5 * 8));\n                iVar2 = (*param_3)(local_538[0],unaff_R13,param_4);\n                iVar3 = 0x5c596ca2;\n                if (-1 < iVar2) {\n                  iVar3 = 0x2ffe3551;\n                }\n              }\n            }\n            else if (iVar3 == -0x4afbebab) {\n              local_538[uVar5 & 0x7f] = unaff_R13;\n              param_5 = param_5 + -1;\n              iVar3 = 0x6b64ef6f;\n              param_1 = unaff_R13;\n              uVar5 = uVar5 + 1;\n            }\n            else if (iVar3 == 0x2ffe3551) {\n              iVar2 = (*param_3)(local_538[0],unaff_R14,param_4);\n              iVar3 = 0x5c596ca2;\n              if (-1 < iVar2) {\n                iVar3 = -0x71801392;\n              }\n            }\n          }\n          if (iVar3 < 0x6b64ef6f) break;\n          if (iVar3 == 0x6b64ef6f) {\n            iVar3 = 0x6b751a03;\n          }\n          else if ((iVar3 == 0x6b751a03) && (iVar3 = 0x330a2001, 1 < param_5)) {\n            iVar3 = -0x6c1345ca;\n          }\n        }\n        if (iVar3 != 0x37252bda) break;\n        local_538[uVar5 & 0x7f] = unaff_R14;\n        param_5 = param_5 + -2;\n        iVar3 = 0x6b64ef6f;\n        param_1 = unaff_R14;\n        uVar5 = uVar5 + 1;\n      }\n      if (iVar3 != 0x5c596ca2) break;\n      iVar2 = (*param_3)(unaff_R13,unaff_R14,param_4);\n      iVar3 = 0x37252bda;\n      if (-1 < iVar2) {\n        iVar3 = -0x4afbebab;\n      }\n    }\n  } while (iVar3 != 0x330a2001);\n  if (1 < (uVar5 & 0x7f)) {\n    uVar6 = (ulong)(uVar5 & 0x7f);\n    local_538[uVar6] = local_138;\n    if (param_2 != 0) {\n      do {\n        __n = 0x100;\n        if (param_2 < 0x100) {\n          __n = param_2;\n        }\n        memcpy(local_538[uVar6],local_538[0],__n);\n        uVar4 = 0;\n        do {\n          uVar1 = uVar4 + 1;\n          __dest = local_538[uVar4];\n          memcpy(__dest,local_538[uVar4 + 1],__n);\n          local_538[uVar4] = (void *)((long)__dest + __n);\n          uVar4 = uVar1;\n        } while (uVar6 != uVar1);\n        param_2 = param_2 - __n;\n      } while (param_2 != 0);\n    }\n  }\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101910(void)", 
+   "is_thunk": false, 
+   "size": 571, 
+   "name": "FUN_00101910", 
+   "entry_point": "00101910"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00101b70(void *param_1,ulong param_2,code *param_3,undefined8 param_4,ulong *param_5,\n                 int param_6,int param_7,long param_8)\n\n{\n  ulong uVar1;\n  void *__dest;\n  uint uVar2;\n  byte bVar3;\n  int iVar4;\n  int iVar5;\n  uint uVar6;\n  int iVar7;\n  ulong uVar8;\n  uint uVar9;\n  ulong uVar10;\n  uint uVar11;\n  int iVar12;\n  ulong uVar13;\n  ulong uVar14;\n  ulong uVar15;\n  size_t __n;\n  byte local_58d;\n  int local_58c;\n  void *local_588;\n  void *local_580;\n  long local_548;\n  void *local_538 [128];\n  undefined1 local_138 [264];\n  \n  local_58c = param_7;\n  uVar13 = *param_5;\n  local_538[0] = param_1;\n  uVar9 = 1;\n  iVar5 = 0x6fb7ed;\n  uVar15 = param_5[1];\n  local_588 = param_1;\nLAB_00101c00:\n  do {\n    if (0x3e304746 < iVar5) {\n      if (iVar5 < 0x5c8ba673) {\n        if (iVar5 == 0x3e304747) {\n          iVar5 = 0x411cd20b;\n          if (local_58c == 0) {\n            iVar5 = 0x1137ffe6;\n          }\n        }\n        else {\n          if (iVar5 == 0x411cd20b) {\n            uVar6 = 0;\n            for (uVar14 = uVar13 - 1; (uVar14 & 1) == 0; uVar14 = uVar14 >> 1 | 0x8000000000000000)\n            {\n              uVar6 = uVar6 + 1;\n            }\n            iVar5 = 0x4be03a57;\n            if (uVar13 == 1) {\n              iVar5 = -0x1d885e21;\n            }\n            local_538[uVar9 & 0x7f] = local_580;\n            uVar2 = 0;\n            for (uVar14 = uVar15; (uVar14 & 1) == 0; uVar14 = uVar14 >> 1 | 0x8000000000000000) {\n              uVar2 = uVar2 + 1;\n            }\n            iVar4 = 0x38437259;\n            if (uVar15 == 0) {\n              iVar4 = 0x19b6ec5c;\n            }\n            uVar11 = 0x19b6ec5c;\n            iVar7 = 0x2d5b50aa;\n            while( true ) {\n              while( true ) {\n                while (iVar12 = iVar7, iVar12 < 0x38437259) {\n                  iVar7 = iVar4;\n                  if (iVar12 != -0x1d885e21) {\n                    if (iVar12 == 0x19b6ec5c) {\n                      uVar11 = 0;\n                      iVar7 = 0x5a669fb7;\n                    }\n                    else {\n                      iVar7 = iVar12;\n                      if (iVar12 == 0x2d5b50aa) {\n                        iVar7 = iVar5;\n                      }\n                    }\n                  }\n                }\n                if (iVar12 != 0x38437259) break;\n                uVar11 = uVar2 | 0x40;\n                iVar7 = 0x5a669fb7;\n              }\n              if (iVar12 == 0x5a669fb7) break;\n              iVar7 = iVar12;\n              if (iVar12 == 0x4be03a57) {\n                uVar11 = uVar6;\n                iVar7 = 0x5a669fb7;\n              }\n            }\n            iVar5 = -0x57c6b609;\n            if (0x3f < uVar11) {\n              iVar5 = -0x5863e323;\n            }\n            iVar4 = 0x2dae56dc;\n            uVar6 = uVar11;\n            do {\n              bVar3 = (byte)uVar6;\n              uVar14 = uVar15;\n              while( true ) {\n                while (iVar7 = iVar4, -0xa015e53 < iVar7) {\n                  if (iVar7 == -0xa015e52) {\n                    uVar9 = uVar9 + 1;\n                    param_6 = param_6 + uVar11;\n                    local_58c = 0;\n                    iVar5 = 0x6fb7ed;\n                    local_588 = local_580;\n                    uVar15 = uVar14;\n                    goto LAB_00101c00;\n                  }\n                  iVar4 = iVar5;\n                  if ((iVar7 != 0x2dae56dc) && (iVar4 = iVar7, iVar7 == 0x3ef4d723)) {\n                    iVar4 = -0xa015e52;\n                  }\n                }\n                if (iVar7 == -0x5863e323) break;\n                if (iVar7 == -0x57c6b609) {\n                  uVar13 = uVar13 >> (bVar3 & 0x3f) | uVar14 << (0x40 - bVar3 & 0x3f);\n                  uVar14 = uVar14 >> (bVar3 & 0x3f);\n                  iVar4 = -0xa015e52;\n                }\n                else {\n                  iVar4 = iVar7;\n                  if (iVar7 == -0x13650bf1) {\n                    iVar4 = -0x57c6b609;\n                  }\n                }\n              }\n              uVar6 = uVar6 - 0x40;\n              iVar4 = -0x13650bf1;\n              if (uVar6 == 0) {\n                iVar4 = 0x3ef4d723;\n              }\n              uVar15 = 0;\n              uVar13 = uVar14;\n            } while( true );\n          }\n          if (iVar5 == 0x4f78c5a8) {\n            iVar5 = -0x65c78c3a;\n          }\n        }\n      }\n      else if (iVar5 < 0x6ba3ced4) {\n        if (iVar5 == 0x5c8ba673) {\n          iVar5 = 0x411cd20b;\n        }\n        else if ((iVar5 == 0x6952fafc) && (iVar5 = -0x65c78c3a, (local_58d & 1) != 0)) {\n          iVar5 = 0x6ba3ced4;\n        }\n      }\n      else if (iVar5 == 0x6ba3ced4) {\n        local_580 = (void *)((long)local_588 - *(long *)(param_8 + (long)param_6 * 8));\n        iVar4 = (*param_3)(local_580,local_538[0],param_4);\n        iVar5 = 0x3e304747;\n        if (iVar4 < 1) {\n          iVar5 = -0x400e1d98;\n        }\n      }\n      else if (iVar5 == 0x7d1df8cb) {\n        iVar4 = (*param_3)(local_548,local_580,param_4);\n        iVar5 = 0x5c8ba673;\nLAB_00101bf2:\n        if (-1 < iVar4) {\n          iVar5 = 0x4f78c5a8;\n        }\n      }\n      goto LAB_00101c00;\n    }\n    if (iVar5 < -0x2bc5a047) {\n      if (iVar5 < -0x65c78c3a) {\n        if (iVar5 == -0x7e953b7d) {\n          local_58d = uVar15 != 0;\n          iVar5 = 0x6952fafc;\n        }\n        else if (iVar5 == -0x73ef6d62) {\n          local_548 = ((long)local_588 - param_2) - *(long *)(param_8 + -0x10 + (long)param_6 * 8);\n          iVar4 = (*param_3)((long)local_588 - param_2,local_580,param_4);\n          iVar5 = 0x7d1df8cb;\n          goto LAB_00101bf2;\n        }\n      }\n      else if (iVar5 == -0x65c78c3a) {\n        iVar5 = -0x2bc5a047;\n        if (local_58c == 0) {\n          iVar5 = 0x3111c525;\n        }\n      }\n      else if (iVar5 == -0x400e1d98) {\n        iVar5 = -0x65c78c3a;\n      }\n    }\n    else if (iVar5 < 0x1137ffe6) {\n      if (iVar5 == 0x6fb7ed) {\n        iVar5 = 0x6952fafc;\n        if (uVar13 == 1) {\n          iVar5 = -0x7e953b7d;\n        }\n        local_58d = 1;\n      }\n      else if (iVar5 == -0x2bc5a047) {\n        return;\n      }\n    }\n    else if (iVar5 == 0x1137ffe6) {\n      iVar5 = 0x411cd20b;\n      if (1 < param_6) {\n        iVar5 = -0x73ef6d62;\n      }\n    }\n    else if (iVar5 == 0x3111c525) {\n      if (1 < (uVar9 & 0x7f)) {\n        uVar8 = (ulong)(uVar9 & 0x7f);\n        local_538[uVar8] = local_138;\n        uVar14 = param_2;\n        if (param_2 != 0) {\n          do {\n            __n = 0x100;\n            if (uVar14 < 0x100) {\n              __n = uVar14;\n            }\n            memcpy(local_538[uVar8],local_538[0],__n);\n            uVar10 = 0;\n            do {\n              uVar1 = uVar10 + 1;\n              __dest = local_538[uVar10];\n              memcpy(__dest,local_538[uVar10 + 1],__n);\n              local_538[uVar10] = (void *)((long)__dest + __n);\n              uVar10 = uVar1;\n            } while (uVar8 != uVar1);\n            uVar14 = uVar14 - __n;\n          } while (uVar14 != 0);\n        }\n      }\n      FUN_00101910(local_588,param_2,param_3,param_4,param_6,param_8);\n      iVar5 = -0x2bc5a047;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00101b70(void)", 
+   "is_thunk": false, 
+   "size": 1265, 
+   "name": "FUN_00101b70", 
+   "entry_point": "00101b70"
+  }, 
+  {
+   "decompiled": "\nundefined8 FUN_00102090(int param_1,long param_2)\n\n{\n  int iVar1;\n  int iVar2;\n  long lVar3;\n  int iVar4;\n  int unaff_R12D;\n  int iVar5;\n  int unaff_R15D;\n  long local_838 [257];\n  \n  iVar4 = param_1 + -1;\n  iVar5 = -0x117813be;\n  if (param_1 < 2) {\n    iVar5 = 0x663f23da;\n  }\n  iVar1 = 0x74d8863;\n  do {\n    while( true ) {\n      while( true ) {\n        while( true ) {\n          while( true ) {\n            while (iVar2 = iVar1, iVar1 = iVar2, iVar2 < 0x74d8863) {\n              if (iVar2 < -0x48d6ea1c) {\n                if (iVar2 < -0x6574b96f) {\n                  if (iVar2 == -0x7bece55b) {\n                    lVar3 = strtol(*(char **)(param_2 + 8 + (long)unaff_R15D * 8),(char **)0x0,10);\n                    local_838[unaff_R15D] = lVar3;\n                    iVar1 = 0x329d01fa;\n                  }\n                  else if (iVar2 == -0x6d433564) {\n                    iVar1 = 0x48acdb47;\n                  }\n                }\n                else if (iVar2 == -0x6574b96f) {\n                  putchar(0x20);\n                  iVar1 = 0x47362d85;\n                }\n                else if (iVar2 == -0x4bfec477) {\n                  iVar4 = 0x100;\n                  iVar1 = 0x48a670c;\n                }\n              }\n              else if (iVar2 < -0x268bc271) {\n                if (iVar2 == -0x48d6ea1c) {\n                  iVar1 = 0x47362d85;\n                  if (0 < unaff_R12D) {\n                    iVar1 = -0x6574b96f;\n                  }\n                }\n                else if (iVar2 == -0x36f5e098) {\n                  unaff_R12D = 0;\n                  FUN_00101180(local_838,(long)iVar4,8,FUN_00102350,0);\n                  iVar1 = 0x9bd8069;\n                }\n              }\n              else if (iVar2 == -0x268bc271) {\n                iVar1 = 0x604c8b48;\n                if (unaff_R15D < iVar4) {\n                  iVar1 = -0x7bece55b;\n                }\n              }\n              else if (iVar2 == -0x117813be) {\n                iVar1 = 0x48a670c;\n                if (0x100 < iVar4) {\n                  iVar1 = -0x4bfec477;\n                }\n              }\n              else if (iVar2 == 0x48a670c) {\n                unaff_R15D = 0;\n                iVar1 = -0x268bc271;\n              }\n            }\n            if (0x48acdb46 < iVar2) break;\n            if (iVar2 < 0x329d01fa) {\n              iVar1 = iVar5;\n              if (((iVar2 != 0x74d8863) && (iVar1 = iVar2, iVar2 == 0x9bd8069)) &&\n                 (iVar1 = -0x6d433564, unaff_R12D < iVar4)) {\n                iVar1 = -0x48d6ea1c;\n              }\n            }\n            else if (iVar2 == 0x329d01fa) {\n              unaff_R15D = unaff_R15D + 1;\n              iVar1 = -0x268bc271;\n            }\n            else if (iVar2 == 0x47362d85) {\n              printf(\"%ld\");\n              iVar1 = 0x62ab0c0c;\n            }\n          }\n          if (iVar2 < 0x62ab0c0c) break;\n          if (iVar2 == 0x62ab0c0c) {\n            unaff_R12D = unaff_R12D + 1;\n            iVar1 = 0x9bd8069;\n          }\n          else if (iVar2 == 0x663f23da) {\n            puts(\"EMPTY\");\n            iVar1 = 0x5f68a95c;\n          }\n        }\n        if (iVar2 != 0x48acdb47) break;\n        putchar(10);\n        iVar1 = 0x5f68a95c;\n      }\n      if (iVar2 != 0x604c8b48) break;\n      iVar1 = -0x36f5e098;\n    }\n  } while (iVar2 != 0x5f68a95c);\n  return 0;\n}\n\n", 
+   "signature": "undefined FUN_00102090(void)", 
+   "is_thunk": false, 
+   "size": 685, 
+   "name": "FUN_00102090", 
+   "entry_point": "00102090"
+  }, 
+  {
+   "decompiled": "\nundefined8 FUN_00102350(long *param_1,long *param_2)\n\n{\n  int iVar1;\n  undefined8 uVar2;\n  int iVar3;\n  int iVar4;\n  int iVar5;\n  \n  iVar3 = -0x769e11bc;\n  if (*param_2 < *param_1) {\n    iVar3 = 0x6e7a6d40;\n  }\n  uVar2 = 0xab3122f4;\n  iVar4 = -0x9b95b9c;\n  if (*param_1 < *param_2) {\n    iVar4 = -0x54cedd0c;\n  }\n  iVar1 = -0x79132789;\n  while( true ) {\n    do {\n      while (iVar5 = iVar1, iVar5 < -0x9b95b9c) {\n        iVar1 = iVar4;\n        if (iVar5 != -0x79132789) {\n          if (iVar5 == -0x769e11bc) {\n            uVar2 = 0;\n            iVar1 = 0x664e69dc;\n          }\n          else {\n            iVar1 = iVar5;\n            if (iVar5 == -0x54cedd0c) {\n              uVar2 = 0xffffffff;\n              iVar1 = 0x664e69dc;\n            }\n          }\n        }\n      }\n      iVar1 = iVar3;\n    } while (iVar5 == -0x9b95b9c);\n    if (iVar5 == 0x664e69dc) break;\n    iVar1 = iVar5;\n    if (iVar5 == 0x6e7a6d40) {\n      uVar2 = 1;\n      iVar1 = 0x664e69dc;\n    }\n  }\n  return uVar2;\n}\n\n", 
+   "signature": "undefined FUN_00102350(void)", 
+   "is_thunk": false, 
+   "size": 146, 
+   "name": "FUN_00102350", 
+   "entry_point": "00102350"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_001023f0(undefined4 param_1,undefined8 param_2,undefined8 param_3)\n\n{\n  long lVar1;\n  \n  _DT_INIT();\n  lVar1 = 0;\n  do {\n    (*(code *)(&__DT_INIT_ARRAY)[lVar1])(param_1,param_2,param_3);\n    lVar1 = lVar1 + 1;\n  } while (lVar1 != 1);\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001023f0(void)", 
+   "is_thunk": false, 
+   "size": 93, 
+   "name": "FUN_001023f0", 
+   "entry_point": "001023f0"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00102450(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00102450(void)", 
+   "is_thunk": false, 
+   "size": 1, 
+   "name": "FUN_00102450", 
+   "entry_point": "00102450"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint putchar(int __c)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n  halt_baddata();\n}\n\n", 
+   "signature": "int putchar(int __c)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "putchar", 
+   "entry_point": "00106000"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "r17_musl_smoothsort", 
+ "n_functions": 13, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "00100419", 
+   "value": "puts"
+  }, 
+  {
+   "address": "0010041e", 
+   "value": "putchar"
+  }, 
+  {
+   "address": "00100426", 
+   "value": "printf"
+  }, 
+  {
+   "address": "0010042d", 
+   "value": "strtol"
+  }, 
+  {
+   "address": "00100434", 
+   "value": "memcpy"
+  }, 
+  {
+   "address": "0010043b", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "0010044a", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "0010045c", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100466", 
+   "value": "GLIBC_2.14"
+  }, 
+  {
+   "address": "00100471", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "0010047d", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "00100499", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "001004a8", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00103024", 
+   "value": "EMPTY"
+  }, 
+  {
+   "address": "00103091", 
+   "value": "zR"
+  }, 
+  {
+   "address": "001030c1", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::0000000d", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::00000019", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::0000001f", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::00000028", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000041", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::00000046", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::0000005c", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::0000006b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000073", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::0000007d", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000092", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000098", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::000000a2", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::000000b0", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000ba", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000c3", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::000000cd", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::000000d5", 
+   "value": ".data"
+  }
+ ]
+}

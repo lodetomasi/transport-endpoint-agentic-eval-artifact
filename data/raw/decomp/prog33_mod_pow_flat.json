@@ -1,0 +1,353 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00104010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nlonglong strtoll(char *__nptr,char **__endptr,int __base)\n\n{\n  longlong lVar1;\n  \n  lVar1 = (*_DAT_00104028)();\n  return lVar1;\n}\n\n", 
+   "signature": "longlong strtoll(char * __nptr, char * * __endptr, int __base)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "strtoll", 
+   "entry_point": "00101050"
+  }, 
+  {
+   "decompiled": "\nundefined8 main(int param_1,long param_2)\n\n{\n  undefined1 auVar1 [16];\n  int iVar2;\n  int iVar3;\n  long unaff_RBP;\n  char *__s;\n  longlong unaff_R12;\n  int iVar4;\n  ulong unaff_R14;\n  longlong unaff_R15;\n  bool bVar5;\n  char *local_48;\n  char *local_40;\n  char *local_38;\n  \n  iVar4 = 0x232d7c1f;\n  if (param_1 < 4) {\n    iVar4 = -0x365583f2;\n  }\n  iVar3 = -0x6b846791;\nLAB_001011a0:\n  do {\n    while (iVar2 = iVar3, iVar3 = iVar2, iVar2 < 0x232d7c1f) {\n      if (iVar2 < -0x3ff2a698) {\n        if (iVar2 < -0x6b846791) {\n          if (iVar2 == -0x7f6c3579) {\n            __s = \"NEGATIVE_EXPONENT\";\n            goto LAB_00101191;\n          }\n          if (iVar2 == -0x7924b690) {\n            bVar5 = local_40 == *(char **)(param_2 + 0x10);\n            iVar3 = -0x3ff2a698;\nLAB_0010149f:\n            if (bVar5) {\n              iVar3 = 0x2dfce19c;\n            }\n          }\n          else if ((iVar2 == -0x717293fa) && (iVar3 = 0x35560d00, 0 < (long)unaff_R14)) {\n            iVar3 = -0x397ab9ee;\n          }\n        }\n        else {\n          iVar3 = iVar4;\n          if (iVar2 != -0x6b846791) {\n            if (iVar2 == -0x605171ac) {\n              unaff_RBP = SUB168((ZEXT816(0) << 0x40 | ZEXT816(1)) % SEXT816(unaff_R12),0);\n              iVar3 = -0x717293fa;\n            }\n            else {\n              iVar3 = iVar2;\n              if (iVar2 == -0x548e7b75) {\n                auVar1._8_8_ = 0;\n                auVar1._0_8_ = unaff_R15 * unaff_R15;\n                unaff_R15 = SUB168(auVar1 % SEXT816(unaff_R12),0);\n                unaff_R14 = (long)unaff_R14 / 2;\n                iVar3 = -0x717293fa;\n              }\n            }\n          }\n        }\n      }\n      else if (iVar2 < -0x1ad5d66a) {\n        if (iVar2 == -0x3ff2a698) {\n          iVar3 = 0x2dfce19c;\n          if (*local_40 == '\\0') {\n            iVar3 = 0x3ae48cb8;\n          }\n        }\n        else if (iVar2 == -0x397ab9ee) {\n          iVar3 = -0x548e7b75;\n          if ((unaff_R14 & 0x8000000000000001) == 1) {\n            iVar3 = 0x4f6c6f99;\n          }\n        }\n        else if (iVar2 == -0x365583f2) {\n          puts(\"NO_INPUT\");\n          iVar3 = 0x2cc9b734;\n        }\n      }\n      else if (iVar2 == -0x1ad5d66a) {\n        iVar3 = 0x72ac23b0;\n        if ((long)unaff_R14 < 0) {\n          iVar3 = -0x7f6c3579;\n        }\n      }\n      else if (iVar2 == 0x8518ba) {\n        iVar3 = 0x2cc9b734;\n      }\n      else if ((iVar2 == 0x1599b337) && (iVar3 = 0x2dfce19c, *local_48 == '\\0')) {\n        iVar3 = 0x4949e20a;\n      }\n    }\n    if (0x3ae48cb7 < iVar2) {\n      if (iVar2 < 0x4e3c8a31) {\n        if (iVar2 == 0x3ae48cb8) {\n          bVar5 = local_48 == *(char **)(param_2 + 0x18);\n          iVar3 = 0x1599b337;\n          goto LAB_0010149f;\n        }\n        if (iVar2 == 0x4559a0cf) {\n          iVar3 = -0x1ad5d66a;\n          if (1000000000 < unaff_R12) {\n            iVar3 = 0x2e3aa8ec;\n          }\n        }\n        else if ((iVar2 == 0x4949e20a) && (iVar3 = 0x4559a0cf, unaff_R12 < 1)) {\n          iVar3 = 0x2ec12bc7;\n        }\n      }\n      else if (iVar2 == 0x4e3c8a31) {\n        iVar3 = 0x2dfce19c;\n        if (*local_38 == '\\0') {\n          iVar3 = -0x7924b690;\n        }\n      }\n      else if (iVar2 == 0x4f6c6f99) {\n        unaff_RBP = (unaff_RBP * unaff_R15) % unaff_R12;\n        iVar3 = -0x548e7b75;\n      }\n      else if (iVar2 == 0x72ac23b0) {\n        unaff_R15 = unaff_R15 % unaff_R12;\n        iVar3 = -0x605171ac;\n        if (unaff_R15 < 0) {\n          iVar3 = 0x2860c6fc;\n        }\n      }\n      goto LAB_001011a0;\n    }\n    if (0x2e3aa8eb < iVar2) {\n      if (iVar2 == 0x2e3aa8ec) {\n        __s = \"OUT_OF_RANGE\";\n      }\n      else {\n        if (iVar2 != 0x2ec12bc7) {\n          if (iVar2 == 0x35560d00) {\n            printf(\"result=%lld\\n\",unaff_RBP);\n            iVar3 = 0x8518ba;\n          }\n          goto LAB_001011a0;\n        }\n        __s = \"BAD_MODULUS\";\n      }\nLAB_00101191:\n      puts(__s);\n      iVar3 = 0x8518ba;\n      goto LAB_001011a0;\n    }\n    if (iVar2 < 0x2cc9b734) {\n      if (iVar2 == 0x232d7c1f) {\n        local_38 = (char *)0x0;\n        local_40 = (char *)0x0;\n        local_48 = (char *)0x0;\n        unaff_R15 = strtoll(*(char **)(param_2 + 8),&local_38,10);\n        unaff_R14 = strtoll(*(char **)(param_2 + 0x10),&local_40,10);\n        unaff_R12 = strtoll(*(char **)(param_2 + 0x18),&local_48,10);\n        bVar5 = local_38 == *(char **)(param_2 + 8);\n        iVar3 = 0x4e3c8a31;\n        goto LAB_0010149f;\n      }\n      if (iVar2 == 0x2860c6fc) {\n        unaff_R15 = unaff_R15 + unaff_R12;\n        iVar3 = -0x605171ac;\n      }\n    }\n    else {\n      if (iVar2 == 0x2dfce19c) {\n        __s = \"BAD_INPUT\";\n        goto LAB_00101191;\n      }\n      if (iVar2 == 0x2cc9b734) {\n        return 0;\n      }\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined main(void)", 
+   "is_thunk": false, 
+   "size": 1068, 
+   "name": "main", 
+   "entry_point": "00101160"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nlonglong strtoll(char *__nptr,char **__endptr,int __base)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n                    /* strtoll@GLIBC_2.2.5 */\n  halt_baddata();\n}\n\n", 
+   "signature": "longlong strtoll(char * __nptr, char * * __endptr, int __base)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "strtoll", 
+   "entry_point": "00105020"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "prog33_mod_pow", 
+ "n_functions": 4, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "001003e9", 
+   "value": "puts"
+  }, 
+  {
+   "address": "001003ee", 
+   "value": "strtoll"
+  }, 
+  {
+   "address": "001003f6", 
+   "value": "printf"
+  }, 
+  {
+   "address": "001003fd", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "0010040c", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "0010041e", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100428", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "00100434", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "00100450", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "0010045f", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00102004", 
+   "value": "result=%lld\n"
+  }, 
+  {
+   "address": "00102011", 
+   "value": "NEGATIVE_EXPONENT"
+  }, 
+  {
+   "address": "00102023", 
+   "value": "OUT_OF_RANGE"
+  }, 
+  {
+   "address": "00102030", 
+   "value": "BAD_MODULUS"
+  }, 
+  {
+   "address": "0010203c", 
+   "value": "BAD_INPUT"
+  }, 
+  {
+   "address": "00102046", 
+   "value": "NO_INPUT"
+  }, 
+  {
+   "address": "00102099", 
+   "value": "zR"
+  }, 
+  {
+   "address": "001020c9", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".comment::00000000", 
+   "value": "GCC: (Debian 10.2.1-6) 10.2.1 20210110"
+  }, 
+  {
+   "address": ".comment::00000027", 
+   "value": "clang version 16.0.0 (https://github.com/rust-lang/llvm-project 2b9c52f66815bb8d6ea74a4b26df3410602be9b0)"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".symtab"
+  }, 
+  {
+   "address": ".shstrtab::00000009", 
+   "value": ".strtab"
+  }, 
+  {
+   "address": ".shstrtab::00000011", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::0000001b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000023", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000043", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004b", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::00000058", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::00000067", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::00000071", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000007b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000081", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::00000090", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000096", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::0000009e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::000000ac", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000b6", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::000000c2", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::000000ce", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000d7", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::000000e0", 
+   "value": ".data"
+  }, 
+  {
+   "address": ".shstrtab::000000e6", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::000000eb", 
+   "value": ".comment"
+  }, 
+  {
+   "address": ".strtab::00000001", 
+   "value": "crtstuff.c"
+  }, 
+  {
+   "address": ".strtab::0000000c", 
+   "value": "deregister_tm_clones"
+  }, 
+  {
+   "address": ".strtab::00000021", 
+   "value": "__do_global_dtors_aux"
+  }, 
+  {
+   "address": ".strtab::00000037", 
+   "value": "completed.0"
+  }, 
+  {
+   "address": ".strtab::00000043", 
+   "value": "__do_global_dtors_aux_fini_array_entry"
+  }, 
+  {
+   "address": ".strtab::0000006a", 
+   "value": "frame_dummy"
+  }, 
+  {
+   "address": ".strtab::00000076", 
+   "value": "__frame_dummy_init_array_entry"
+  }, 
+  {
+   "address": ".strtab::00000095", 
+   "value": "prog33_mod_pow.c"
+  }, 
+  {
+   "address": ".strtab::000000a6", 
+   "value": "__FRAME_END__"
+  }, 
+  {
+   "address": ".strtab::000000b4", 
+   "value": "__init_array_end"
+  }, 
+  {
+   "address": ".strtab::000000c5", 
+   "value": "_DYNAMIC"
+  }, 
+  {
+   "address": ".strtab::000000ce", 
+   "value": "__init_array_start"
+  }, 
+  {
+   "address": ".strtab::000000e1", 
+   "value": "__GNU_EH_FRAME_HDR"
+  }, 
+  {
+   "address": ".strtab::000000f4", 
+   "value": "_GLOBAL_OFFSET_TABLE_"
+  }, 
+  {
+   "address": ".strtab::0000010a", 
+   "value": "__libc_csu_fini"
+  }, 
+  {
+   "address": ".strtab::0000011a", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000136", 
+   "value": "puts@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000147", 
+   "value": "_edata"
+  }, 
+  {
+   "address": ".strtab::0000014e", 
+   "value": "printf@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000161", 
+   "value": "__libc_start_main@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::0000017f", 
+   "value": "__data_start"
+  }, 
+  {
+   "address": ".strtab::0000018c", 
+   "value": "strtoll@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001a0", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": ".strtab::000001af", 
+   "value": "__dso_handle"
+  }, 
+  {
+   "address": ".strtab::000001bc", 
+   "value": "_IO_stdin_used"
+  }, 
+  {
+   "address": ".strtab::000001cb", 
+   "value": "__libc_csu_init"
+  }, 
+  {
+   "address": ".strtab::000001db", 
+   "value": "__bss_start"
+  }, 
+  {
+   "address": ".strtab::000001e7", 
+   "value": "main"
+  }, 
+  {
+   "address": ".strtab::000001ec", 
+   "value": "__TMC_END__"
+  }, 
+  {
+   "address": ".strtab::000001f8", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000212", 
+   "value": "__cxa_finalize@GLIBC_2.2.5"
+  }
+ ]
+}

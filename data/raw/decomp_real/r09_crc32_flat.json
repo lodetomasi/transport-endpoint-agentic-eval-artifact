@@ -1,0 +1,229 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00104010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\nvoid processEntry entry(undefined8 param_1,undefined8 param_2)\n\n{\n  undefined1 auStack_8 [8];\n  \n  (*(code *)PTR___libc_start_main_00103fe0)\n            (FUN_00101290,param_2,&stack0x00000008,FUN_00101430,FUN_00101490,param_1,auStack_8);\n  do {\n                    /* WARNING: Do nothing block with infinite loop */\n  } while( true );\n}\n\n", 
+   "signature": "undefined entry(void)", 
+   "is_thunk": false, 
+   "size": 43, 
+   "name": "entry", 
+   "entry_point": "00101070"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x001010b3) */\n/* WARNING: Removing unreachable block (ram,0x001010bf) */\n\nvoid FUN_001010a0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010a0(void)", 
+   "is_thunk": false, 
+   "size": 34, 
+   "name": "FUN_001010a0", 
+   "entry_point": "001010a0"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Removing unreachable block (ram,0x001010f4) */\n/* WARNING: Removing unreachable block (ram,0x00101100) */\n\nvoid FUN_001010d0(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_001010d0(void)", 
+   "is_thunk": false, 
+   "size": 51, 
+   "name": "FUN_001010d0", 
+   "entry_point": "001010d0"
+  }, 
+  {
+   "decompiled": "\nuint FUN_00101160(byte *param_1,ulong param_2)\n\n{\n  byte bVar1;\n  int iVar2;\n  uint uVar3;\n  ulong in_R9;\n  int iVar4;\n  int iVar5;\n  int iVar6;\n  \n  iVar2 = -0x31fc0995;\n  if (param_1 == (byte *)0x0) {\n    iVar2 = 0x2e37819a;\n  }\n  uVar3 = 0xffffffff;\n  iVar4 = -0x6174e973;\nLAB_00101188:\n  do {\n    iVar6 = -0x3208e029;\n    if (in_R9 < param_2) {\n      iVar6 = -0x1984893a;\n    }\n    while( true ) {\n      while( true ) {\n        while (iVar5 = iVar4, iVar4 = iVar5, iVar5 < -0x31fc0995) {\n          iVar4 = iVar2;\n          if (iVar5 != -0x6174e973) {\n            if (iVar5 == -0x3bcb6a58) {\n              in_R9 = in_R9 + 1;\n              iVar4 = 0x720564d3;\n              goto LAB_00101188;\n            }\n            iVar4 = iVar5;\n            if (iVar5 == -0x3208e029) {\n              iVar4 = 0x2e37819a;\n            }\n          }\n        }\n        if (iVar5 < 0x2e37819a) break;\n        if (iVar5 == 0x2e37819a) {\n          return ~uVar3;\n        }\n        if (iVar5 == 0x720564d3) {\n          iVar4 = iVar6;\n        }\n      }\n      if (iVar5 == -0x31fc0995) break;\n      if (iVar5 == -0x1984893a) {\n        bVar1 = *param_1;\n        param_1 = param_1 + 1;\n        uVar3 = uVar3 >> 8 ^ *(uint *)(&DAT_00102010 + (ulong)(byte)((byte)uVar3 ^ bVar1) * 4);\n        iVar4 = -0x3bcb6a58;\n      }\n    }\n    iVar4 = 0x720564d3;\n    in_R9 = 0;\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00101160(void)", 
+   "is_thunk": false, 
+   "size": 232, 
+   "name": "FUN_00101160", 
+   "entry_point": "00101160"
+  }, 
+  {
+   "decompiled": "\nuint FUN_00101270(uint param_1,uint param_2)\n\n{\n  return param_1 >> 8 ^ *(uint *)(&DAT_00102010 + (ulong)((param_2 ^ param_1) & 0xff) * 4);\n}\n\n", 
+   "signature": "undefined FUN_00101270(void)", 
+   "is_thunk": false, 
+   "size": 22, 
+   "name": "FUN_00101270", 
+   "entry_point": "00101270"
+  }, 
+  {
+   "decompiled": "\nundefined8 FUN_00101290(int param_1,long param_2)\n\n{\n  byte bVar1;\n  size_t sVar2;\n  int iVar3;\n  ulong uVar4;\n  int iVar5;\n  int iVar6;\n  int iVar7;\n  int iVar8;\n  uint uVar9;\n  byte *__s;\n  \n  iVar5 = 0x5b2b4143;\n  if (param_1 < 2) {\n    iVar5 = -0x7f20da71;\n  }\n  iVar3 = 0x1a25e32a;\nLAB_001012d0:\n  do {\n    while (iVar6 = iVar3, iVar6 < 0x1a25e32a) {\n      if (iVar6 == -0x7f20da71) {\n        puts(\"USAGE\");\n        iVar3 = -0x552789fc;\n      }\n      else {\n        iVar3 = iVar6;\n        if (iVar6 == -0x552789fc) {\n          return 0;\n        }\n      }\n    }\n    iVar3 = iVar5;\n  } while ((iVar6 == 0x1a25e32a) || (iVar3 = iVar6, iVar6 != 0x5b2b4143));\n  __s = *(byte **)(param_2 + 8);\n  sVar2 = strlen((char *)__s);\n  uVar4 = 0x2e37819a;\n  iVar3 = -0x31fc0995;\n  if (__s == (byte *)0x0) {\n    iVar3 = 0x2e37819a;\n  }\n  uVar9 = 0xffffffff;\n  iVar6 = -0x6174e973;\nLAB_00101328:\n  do {\n    iVar8 = -0x3208e029;\n    if (uVar4 < sVar2) {\n      iVar8 = -0x1984893a;\n    }\n    while( true ) {\n      while( true ) {\n        while (iVar7 = iVar6, iVar6 = iVar7, iVar7 < -0x31fc0995) {\n          iVar6 = iVar3;\n          if (iVar7 != -0x6174e973) {\n            if (iVar7 == -0x3bcb6a58) {\n              uVar4 = uVar4 + 1;\n              iVar6 = 0x720564d3;\n              goto LAB_00101328;\n            }\n            iVar6 = iVar7;\n            if (iVar7 == -0x3208e029) {\n              iVar6 = 0x2e37819a;\n            }\n          }\n        }\n        if (iVar7 < 0x2e37819a) break;\n        if (iVar7 == 0x2e37819a) {\n          printf(\"%u\\n\",(ulong)~uVar9);\n          iVar3 = -0x552789fc;\n          goto LAB_001012d0;\n        }\n        if (iVar7 == 0x720564d3) {\n          iVar6 = iVar8;\n        }\n      }\n      if (iVar7 == -0x31fc0995) break;\n      if (iVar7 == -0x1984893a) {\n        bVar1 = *__s;\n        __s = __s + 1;\n        uVar9 = uVar9 >> 8 ^ *(uint *)(&DAT_00102010 + (ulong)(byte)((byte)uVar9 ^ bVar1) * 4);\n        iVar6 = -0x3bcb6a58;\n      }\n    }\n    iVar6 = 0x720564d3;\n    uVar4 = 0;\n  } while( true );\n}\n\n", 
+   "signature": "undefined FUN_00101290(void)", 
+   "is_thunk": false, 
+   "size": 394, 
+   "name": "FUN_00101290", 
+   "entry_point": "00101290"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00101430(undefined4 param_1,undefined8 param_2,undefined8 param_3)\n\n{\n  long lVar1;\n  \n  _DT_INIT();\n  lVar1 = 0;\n  do {\n    (*(code *)(&__DT_INIT_ARRAY)[lVar1])(param_1,param_2,param_3);\n    lVar1 = lVar1 + 1;\n  } while (lVar1 != 1);\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101430(void)", 
+   "is_thunk": false, 
+   "size": 93, 
+   "name": "FUN_00101430", 
+   "entry_point": "00101430"
+  }, 
+  {
+   "decompiled": "\nvoid FUN_00101490(void)\n\n{\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101490(void)", 
+   "is_thunk": false, 
+   "size": 1, 
+   "name": "FUN_00101490", 
+   "entry_point": "00101490"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "r09_crc32", 
+ "n_functions": 9, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "001003e9", 
+   "value": "puts"
+  }, 
+  {
+   "address": "001003ee", 
+   "value": "printf"
+  }, 
+  {
+   "address": "001003f5", 
+   "value": "strlen"
+  }, 
+  {
+   "address": "001003fc", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "0010040b", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "0010041d", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100427", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "00100433", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "0010044f", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "0010045e", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00102414", 
+   "value": "USAGE"
+  }, 
+  {
+   "address": "00102471", 
+   "value": "zR"
+  }, 
+  {
+   "address": "001024a1", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::0000000d", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::00000019", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::0000001f", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::00000028", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000041", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::00000046", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::0000005c", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::0000006b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000073", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::0000007d", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000092", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000098", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::000000a2", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::000000b0", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000ba", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000c3", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::000000cd", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::000000d5", 
+   "value": ".data"
+  }
+ ]
+}

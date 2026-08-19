@@ -1,0 +1,29 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog35_perfect_numbers,1,0.8000,4,5,True,False,1031,12,0.006643,6721,7547,databricks-gpt-oss-120b,databricks,59.1,[],2026-08-14T07:32:41,gpt-oss-120b,databricks,native
+prog35_perfect_numbers,2,1.0000,5,5,True,False,790,12,0.005945,6842,6547,databricks-gpt-oss-120b,databricks,48.8,[],2026-08-14T07:33:29,gpt-oss-120b,databricks,native
+prog35_perfect_numbers,3,0.8000,4,5,True,False,744,12,0.006027,3672,7453,databricks-gpt-oss-120b,databricks,50.8,[],2026-08-14T07:34:20,gpt-oss-120b,databricks,native
+prog35_perfect_numbers,4,0.8000,4,5,True,False,1242,12,0.003114,6950,2588,databricks-gpt-oss-120b,databricks,23.6,[],2026-08-14T07:34:44,gpt-oss-120b,databricks,native
+prog38_continued_fraction,1,0.4000,2,5,True,False,1365,12,0.004256,4661,4746,databricks-gpt-oss-120b,databricks,29.0,[],2026-08-14T07:35:13,gpt-oss-120b,databricks,native
+prog38_continued_fraction,2,0.8000,4,5,True,False,1690,12,0.007528,9309,8128,databricks-gpt-oss-120b,databricks,59.1,[],2026-08-14T07:36:12,gpt-oss-120b,databricks,native
+prog38_continued_fraction,3,1.0000,5,5,True,False,1848,12,0.008505,9566,9421,databricks-gpt-oss-120b,databricks,139.1,[],2026-08-14T07:38:31,gpt-oss-120b,databricks,native
+prog38_continued_fraction,4,0.0000,0,5,True,False,1788,12,0.004394,4661,4938,databricks-gpt-oss-120b,databricks,55.1,[],2026-08-14T07:39:26,gpt-oss-120b,databricks,native
+prog39_horner,1,0.0000,0,5,False,True,0,12,0.009894,7909,11765,databricks-gpt-oss-120b,databricks,139.7,nessun candidato prodotto,2026-08-14T07:41:46,gpt-oss-120b,databricks,native
+prog39_horner,2,1.0000,5,5,True,False,1431,12,0.012862,13723,14433,databricks-gpt-oss-120b,databricks,107.4,[],2026-08-14T07:43:33,gpt-oss-120b,databricks,native
+prog39_horner,3,1.0000,5,5,True,False,1673,12,0.014013,13815,16010,databricks-gpt-oss-120b,databricks,78.1,[],2026-08-14T07:44:51,gpt-oss-120b,databricks,native
+prog39_horner,4,0.8000,4,5,True,False,1272,12,0.011400,13077,12564,databricks-gpt-oss-120b,databricks,69.6,[],2026-08-14T07:46:01,gpt-oss-120b,databricks,native
+prog41_series_sum,1,0.6000,3,5,True,False,1308,12,0.012306,12667,13925,databricks-gpt-oss-120b,databricks,62.9,[],2026-08-14T07:47:04,gpt-oss-120b,databricks,native
+prog41_series_sum,2,1.0000,5,5,True,False,1426,12,0.009869,12379,10612,databricks-gpt-oss-120b,databricks,50.9,[],2026-08-14T07:47:55,gpt-oss-120b,databricks,native
+prog41_series_sum,3,0.0000,0,5,False,False,1267,12,0.007476,15375,6540,databricks-gpt-oss-120b,databricks,35.4,"/w/candidate.c:50:1: error: extraneous closing brace ('}')
+   50 | }
+      | ^
+1 error generated.
+",2026-08-14T07:48:30,gpt-oss-120b,databricks,native
+prog41_series_sum,4,0.8000,4,5,True,False,1511,12,0.015597,32951,13425,databricks-gpt-oss-120b,databricks,75.4,[],2026-08-14T07:49:46,gpt-oss-120b,databricks,native
+prog43_catalan,1,0.8000,4,5,True,False,1311,12,0.008913,12712,9202,databricks-gpt-oss-120b,databricks,45.1,[],2026-08-14T07:50:31,gpt-oss-120b,databricks,native
+prog43_catalan,2,0.2000,1,5,True,False,853,12,0.003417,5774,3302,databricks-gpt-oss-120b,databricks,18.7,[],2026-08-14T07:50:49,gpt-oss-120b,databricks,native
+prog43_catalan,3,0.8000,4,5,True,False,804,12,0.003557,3404,4089,databricks-gpt-oss-120b,databricks,19.3,[],2026-08-14T07:51:09,gpt-oss-120b,databricks,native
+prog43_catalan,4,0.4000,2,5,True,False,1485,12,0.006003,6692,6665,databricks-gpt-oss-120b,databricks,33.8,[],2026-08-14T07:51:42,gpt-oss-120b,databricks,native
+prog45_josephus,1,0.8000,4,5,True,False,671,12,0.002543,3613,2629,databricks-gpt-oss-120b,databricks,15.5,[],2026-08-14T07:51:58,gpt-oss-120b,databricks,native
+prog45_josephus,2,1.0000,5,5,True,False,983,12,0.006037,6166,6843,databricks-gpt-oss-120b,databricks,52.0,[],2026-08-14T07:52:50,gpt-oss-120b,databricks,native
+prog45_josephus,3,1.0000,5,5,True,False,807,12,0.005600,3613,6875,databricks-gpt-oss-120b,databricks,32.1,[],2026-08-14T07:53:22,gpt-oss-120b,databricks,native
+prog45_josephus,4,1.0000,5,5,True,False,834,12,0.003929,3613,4554,databricks-gpt-oss-120b,databricks,24.0,[],2026-08-14T07:53:46,gpt-oss-120b,databricks,native

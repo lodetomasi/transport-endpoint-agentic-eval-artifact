@@ -1,0 +1,7 @@
+{"program": "prog12_csv_tokenizer", "tests": [
+  {"id": 1, "args": [], "stdin": "a,b,c\n", "expected_stdout": "0:a\n1:b\n2:c\n"},
+  {"id": 2, "args": [], "stdin": "\"hello, world\",42\n", "expected_stdout": "0:hello, world\n1:42\n"},
+  {"id": 3, "args": [], "stdin": "\n", "expected_stdout": "0:\n"},
+  {"id": 4, "args": [], "stdin": "one,two,three,four,five,six,seven,eight\n", "expected_stdout": "0:one\n1:two\n2:three\n3:four\n4:five\n5:six\n6:seven\n7:eight\n"},
+  {"id": 5, "args": [], "stdin": "a,\"say \"\"hi\"\"\",c\n", "expected_stdout": "0:a\n1:say \"hi\"\n2:c\n"}
+]}

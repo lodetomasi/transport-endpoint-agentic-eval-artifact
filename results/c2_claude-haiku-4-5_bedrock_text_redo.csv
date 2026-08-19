@@ -1,0 +1,2 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog25_balanced_multitype,1,1.0000,5,5,True,False,1170,12,0.019813,12028,1557,us.anthropic.claude-haiku-4-5-20251001-v1:0,bedrock,15.8,[],2026-08-15T13:29:23,claude-haiku-4-5,bedrock,text

@@ -1,0 +1,105 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{A null confirmatory result that is not a null finding}
+
+Ten pre-registered tests, none surviving correction --- and the reason is measurable rather than
+mysterious. The design was sized on a standard deviation borrowed from the preceding
+chapter~\citep{companion2026baseline}, and that borrowing is where the study earns its keep: the
+quantity borrowed turns out not to be a property of the model, so no care at design time would have
+produced a different number of binaries. Where the pre-registration recorded 84\% run-to-run noise and
+a floor of thirteen binaries, the same nominal contrast here gives 0.5\% and 668. Not an underestimate
+--- an inversion, and the lever the previous chapter said would work is the one that buys nothing here.
+
+This is the finding we did not go looking for, and \S\ref{sec:rq6} places it against the literature on
+borrowed effect sizes. The consequence for a designer belongs here: inheriting that calibration would
+not merely have left them under-powered, it would have sent their budget to the axis that buys
+nothing. The rival account for the decomposition --- that
+the granularity of the metric produces the spread on its own --- is bounded in
+\S\ref{sec:granularita} by the two conditions it would and would not have to explain, with the
+figures for each.
+
+\subsection{Why the census carries the weight}
+
+The confirmatory arm and the census differ in what it takes to overturn them. Every number in
+\S\ref{sec:results} is a point estimate with an interval that a larger study could move; nothing in
+\S\ref{sec:census} is an estimate, since an endpoint either returned that message or it did not and the
+artifact carries the request that produced it. A referee who disbelieves the census can re-run the probe;
+one who disbelieves the contrasts has to re-run 5{,}809 trials.
+
+
+\subsection{When to discard a batch, and when not to}
+
+Two batches were invalidated and re-collected rather than patched, and the rule separating them from the
+one we kept is reusable. \textbf{Discard when the contaminating channel is systematic and asymmetric
+between the compared arms; report and bound it otherwise.}
+
+The larger invalidation --- 2{,}390 measurements --- meets that test exactly: the algorithm's name reached
+the model through three separate channels and the two arms encountered one at different rates, so left in
+place it would have turned part of the transport effect into a measure of how often each transport stumbled
+onto the answer. No downstream analysis separates a contaminant that correlates with the
+manipulated variable.
+
+The shared working directory (\S\ref{sec:threats}) fails the same test in the other direction:
+non-directional noise, some thirty times in the original batch's 5{,}805 measurements, with no asymmetry
+between arms.
+Discarding it would have been a gesture rather than a correction, so we bounded it, probed it, and
+re-collected on isolated workspaces. Two practices made the rule applicable rather than rhetorical:
+channels were enumerated per channel and not per intention --- the third was found because we listed every
+place the model could read --- and both batches remain in the artifact with their recomputation.
+
+\subsection{What an evaluation should report}
+
+What follows amends an existing checklist rather than proposing a new one: the community guidelines already
+require the harness to be described once it goes beyond bare API calls~\citep{baltes2026guidelines}, and each
+field below either sharpens that requirement or extends it to one they do not name. Each costs a line in a
+method section, and Table~\ref{tab:checklist} states them as fields because a recommendation phrased as prose
+is one a reader agrees with and does not apply. The first carries the argument of \S\ref{sec:runtime}: a
+model name does not identify a measurable system, the same nominal model on two clouds being two apparatuses
+that differ in score stability as well as in score.
+
+\begin{table}[t]
+\centering
+\caption{What an agentic evaluation should declare. The first four sharpen requirements that
+already exist~\citep{baltes2026guidelines}; the last two have no counterpart in current
+checklists.}
+\label{tab:checklist}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{0.26\linewidth}p{0.66\linewidth}@{}}
+\toprule
+field & what it means \\
+\midrule
+transport & how a tool call is encoded: native function calling, a textual protocol, typed
+  code stubs --- and whether more than one call per turn is admitted \\
+endpoint & which service served the weights, not only the model name \\
+model and version & the identifier the endpoint accepts, including any regional prefix \\
+configuration & temperature, token limits, turn budget, seed where honoured \\
+\textbf{models excluded} & which models were considered and not measured \\
+\textbf{reason for each} & the endpoint's own message, verbatim, or the policy that applied \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Five propositions that should outlive this task}
+\label{sec:proposizioni}
+
+The effect sizes here belong to one task family, four models and two clouds, and we claim nothing beyond
+that. What we offer beyond it are five propositions about how experiments of this kind behave, each
+instantiated by this study rather than proved in general.
+
+\begin{enumerate}
+  \item The transport belongs beside temperature in a method section.
+  \item An endpoint can produce missing experimental units, whose cost \S\ref{sec:bound} bounds.
+  \item Variance components can be apparatus-specific, so an inherited calibration must be recomputed on
+        one's own data as soon as the first cell exists.
+  \item A pre-flight must exercise realistic conversational states: two of our eight mechanisms fire only
+        in a state a single-call probe never reaches.
+  \item Metric granularity limits what a variance decomposition can say. We report the floor and ceiling
+        shares beside ours, and did not size the tests per task.
+\end{enumerate}
+
+\noindent
+The artifact carries each with its argument.
+
+

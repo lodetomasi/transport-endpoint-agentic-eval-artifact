@@ -1,0 +1,7 @@
+{"program": "prog22_snake_camel_convert", "tests": [
+  {"id": 1, "args": ["to_camel", "hello_world_example"], "stdin": "", "expected_stdout": "helloWorldExample\n"},
+  {"id": 2, "args": ["to_snake", "helloWorldExample"], "stdin": "", "expected_stdout": "hello_world_example\n"},
+  {"id": 3, "args": ["to_camel", "_leading_underscore"], "stdin": "", "expected_stdout": "leadingUnderscore\n"},
+  {"id": 4, "args": ["to_snake", "AlreadyPascalCase"], "stdin": "", "expected_stdout": "already_pascal_case\n"},
+  {"id": 5, "args": ["bogus_mode", "text"], "stdin": "", "expected_stdout": "INVALID_MODE\n"}
+]}

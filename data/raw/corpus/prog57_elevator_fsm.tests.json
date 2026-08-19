@@ -1,0 +1,7 @@
+{"program": "prog57_elevator_fsm", "tests": [
+  {"id": 1, "args": ["3"], "stdin": "", "expected_stdout": "MOVE_UP 0->1\nMOVE_UP 1->2\nMOVE_UP 2->3\nARRIVE 3\nDOORS_OPEN\nDOORS_CLOSE\nFINAL_FLOOR=3\n"},
+  {"id": 2, "args": ["0"], "stdin": "", "expected_stdout": "ARRIVE 0\nDOORS_OPEN\nDOORS_CLOSE\nFINAL_FLOOR=0\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "FINAL_FLOOR=0\n"},
+  {"id": 4, "args": ["9", "0", "5"], "stdin": "", "expected_stdout": "MOVE_UP 0->1\nMOVE_UP 1->2\nMOVE_UP 2->3\nMOVE_UP 3->4\nMOVE_UP 4->5\nMOVE_UP 5->6\nMOVE_UP 6->7\nMOVE_UP 7->8\nMOVE_UP 8->9\nARRIVE 9\nDOORS_OPEN\nDOORS_CLOSE\nMOVE_DOWN 9->8\nMOVE_DOWN 8->7\nMOVE_DOWN 7->6\nMOVE_DOWN 6->5\nMOVE_DOWN 5->4\nMOVE_DOWN 4->3\nMOVE_DOWN 3->2\nMOVE_DOWN 2->1\nMOVE_DOWN 1->0\nARRIVE 0\nDOORS_OPEN\nDOORS_CLOSE\nMOVE_UP 0->1\nMOVE_UP 1->2\nMOVE_UP 2->3\nMOVE_UP 3->4\nMOVE_UP 4->5\nARRIVE 5\nDOORS_OPEN\nDOORS_CLOSE\nFINAL_FLOOR=5\n"},
+  {"id": 5, "args": ["3", "20"], "stdin": "", "expected_stdout": "MOVE_UP 0->1\nMOVE_UP 1->2\nMOVE_UP 2->3\nARRIVE 3\nDOORS_OPEN\nDOORS_CLOSE\nINVALID_FLOOR\nFINAL_FLOOR=3\n"}
+]}

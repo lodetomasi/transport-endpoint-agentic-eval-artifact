@@ -1,0 +1,1 @@
+{"turn": 1, "tools_offered": ["list_functions", "decompile_function", "list_strings", "submit_candidate"], "tool_calls": [], "n_tool_results": 0, "response_chars": 2764, "stop_reason": "end_turn", "infra_failure": false, "usage": {"input_tokens": 436, "output_tokens": 933}, "cost_usd": 0.005101}

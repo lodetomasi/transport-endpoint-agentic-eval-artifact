@@ -1,0 +1,430 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog19_palindrome_checker,1,1.0000,5,5,True,False,951,12,0.004785,11951,4988,openai.gpt-oss-120b-1:0,bedrock,47.8,[],2026-08-14T07:54:34,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,2,1.0000,5,5,True,False,848,12,0.005314,13426,5500,openai.gpt-oss-120b-1:0,bedrock,27.1,[],2026-08-14T07:55:01,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,3,1.0000,5,5,True,False,1074,12,0.002147,4315,2499,openai.gpt-oss-120b-1:0,bedrock,12.3,[],2026-08-14T07:55:13,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,4,1.0000,5,5,True,False,983,12,0.012279,37951,10977,openai.gpt-oss-120b-1:0,bedrock,102.2,[],2026-08-14T07:56:56,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,5,1.0000,5,5,True,False,1569,12,0.012887,37297,12154,openai.gpt-oss-120b-1:0,bedrock,129.5,[],2026-08-14T07:59:05,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,6,1.0000,5,5,True,False,953,12,0.004533,13805,4104,openai.gpt-oss-120b-1:0,bedrock,43.0,[],2026-08-14T07:59:48,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,7,1.0000,5,5,True,False,1070,12,0.005802,13891,6198,openai.gpt-oss-120b-1:0,bedrock,39.5,[],2026-08-14T08:00:28,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,8,1.0000,5,5,True,False,720,12,0.005762,16111,5575,openai.gpt-oss-120b-1:0,bedrock,76.3,[],2026-08-14T08:01:44,gpt-oss-120b,bedrock,native
+prog21_date_validator,1,0.6000,3,5,True,False,1209,12,0.007187,14741,8293,openai.gpt-oss-120b-1:0,bedrock,44.8,[],2026-08-14T08:02:29,gpt-oss-120b,bedrock,native
+prog21_date_validator,2,1.0000,5,5,True,False,1251,12,0.003402,4866,4454,openai.gpt-oss-120b-1:0,bedrock,27.0,[],2026-08-14T08:02:56,gpt-oss-120b,bedrock,native
+prog21_date_validator,3,1.0000,5,5,True,False,1776,12,0.019071,30880,24065,openai.gpt-oss-120b-1:0,bedrock,334.3,[],2026-08-14T08:08:30,gpt-oss-120b,bedrock,native
+prog21_date_validator,4,1.0000,5,5,True,False,1885,12,0.004777,9581,5567,openai.gpt-oss-120b-1:0,bedrock,93.5,[],2026-08-14T08:10:03,gpt-oss-120b,bedrock,native
+prog21_date_validator,5,1.0000,5,5,True,False,1119,12,0.017427,25332,22712,openai.gpt-oss-120b-1:0,bedrock,326.7,[],2026-08-14T08:15:30,gpt-oss-120b,bedrock,native
+prog21_date_validator,6,1.0000,5,5,True,False,1229,12,0.008016,20238,8300,openai.gpt-oss-120b-1:0,bedrock,55.0,[],2026-08-14T08:16:25,gpt-oss-120b,bedrock,native
+prog21_date_validator,7,1.0000,5,5,True,False,1968,12,0.005961,9602,7534,openai.gpt-oss-120b-1:0,bedrock,49.4,[],2026-08-14T08:17:14,gpt-oss-120b,bedrock,native
+prog21_date_validator,8,0.0000,0,5,False,True,0,12,0.005691,4866,8269,openai.gpt-oss-120b-1:0,bedrock,91.7,nessun candidato prodotto,2026-08-14T08:18:46,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,1,0.8000,4,5,True,False,1384,12,0.004237,9978,4567,openai.gpt-oss-120b-1:0,bedrock,23.9,[],2026-08-14T08:19:10,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,2,0.8000,4,5,True,False,1339,12,0.011660,36473,10315,openai.gpt-oss-120b-1:0,bedrock,59.8,[],2026-08-14T08:20:10,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,3,0.0000,0,5,False,True,0,12,0.013338,25227,15924,openai.gpt-oss-120b-1:0,bedrock,92.9,nessun candidato prodotto,2026-08-14T08:21:43,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,4,0.6000,3,5,True,False,1362,12,0.010696,29868,10359,openai.gpt-oss-120b-1:0,bedrock,71.7,[],2026-08-14T08:22:54,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,5,0.8000,4,5,True,False,1331,12,0.006678,20388,6033,openai.gpt-oss-120b-1:0,bedrock,26.0,[],2026-08-14T08:23:20,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,6,0.6000,3,5,True,False,1415,12,0.007456,26868,5709,openai.gpt-oss-120b-1:0,bedrock,43.5,[],2026-08-14T08:24:04,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,7,0.8000,4,5,True,False,1545,12,0.005499,20067,4148,openai.gpt-oss-120b-1:0,bedrock,64.7,[],2026-08-14T08:25:09,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,8,0.8000,4,5,True,False,1764,12,0.004681,10805,5100,openai.gpt-oss-120b-1:0,bedrock,24.4,[],2026-08-14T08:25:33,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,1,1.0000,5,5,True,False,1136,12,0.003978,10327,4049,openai.gpt-oss-120b-1:0,bedrock,49.0,[],2026-08-14T08:26:22,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,2,0.8000,4,5,True,False,2155,12,0.003022,8109,3010,openai.gpt-oss-120b-1:0,bedrock,17.1,[],2026-08-14T08:26:39,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,3,1.0000,5,5,True,False,1222,12,0.004628,12232,4655,openai.gpt-oss-120b-1:0,bedrock,17.6,[],2026-08-14T08:26:57,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,4,0.8000,4,5,True,False,1422,12,0.003934,12327,3475,openai.gpt-oss-120b-1:0,bedrock,57.1,[],2026-08-14T08:27:54,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,5,1.0000,5,5,True,False,807,12,0.003545,12996,2659,openai.gpt-oss-120b-1:0,bedrock,19.3,[],2026-08-14T08:28:13,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,6,0.6000,3,5,True,False,1283,12,0.002516,4126,3162,openai.gpt-oss-120b-1:0,bedrock,23.7,[],2026-08-14T08:28:37,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,7,1.0000,5,5,True,False,845,12,0.004760,12980,4688,openai.gpt-oss-120b-1:0,bedrock,40.8,[],2026-08-14T08:29:18,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,8,0.8000,4,5,True,False,760,12,0.004097,12060,3814,openai.gpt-oss-120b-1:0,bedrock,28.0,[],2026-08-14T08:29:46,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,1,0.8000,4,5,True,False,1864,12,0.009311,34338,6934,openai.gpt-oss-120b-1:0,bedrock,59.1,[],2026-08-14T08:30:45,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,2,0.4000,2,5,True,False,3150,12,0.007461,30767,4743,openai.gpt-oss-120b-1:0,bedrock,55.6,[],2026-08-14T08:31:40,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,3,0.8000,4,5,True,False,3590,12,0.011420,46656,7369,openai.gpt-oss-120b-1:0,bedrock,33.5,[],2026-08-14T08:32:14,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,4,1.0000,5,5,True,False,3108,12,0.009879,37218,7161,openai.gpt-oss-120b-1:0,bedrock,56.4,[],2026-08-14T08:33:10,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,5,0.8000,4,5,True,False,3576,12,0.007746,32433,4801,openai.gpt-oss-120b-1:0,bedrock,48.7,[],2026-08-14T08:33:59,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,6,0.8000,4,5,True,False,3346,12,0.008070,33798,5000,openai.gpt-oss-120b-1:0,bedrock,71.5,[],2026-08-14T08:35:10,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,7,0.0000,0,5,False,True,0,12,0.011959,55156,6142,openai.gpt-oss-120b-1:0,bedrock,51.4,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T08:36:02,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,8,0.8000,4,5,True,False,3559,12,0.007105,28142,4807,openai.gpt-oss-120b-1:0,bedrock,28.3,[],2026-08-14T08:36:30,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,1,1.0000,5,5,True,False,1046,12,0.003418,8909,3469,openai.gpt-oss-120b-1:0,bedrock,17.8,[],2026-08-14T08:36:48,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,2,0.0000,0,5,False,False,1344,12,0.003286,4553,4338,openai.gpt-oss-120b-1:0,bedrock,25.6,"/w/candidate.c:44:1: error: extraneous closing brace ('}')
+   44 | }
+      | ^
+1 error generated.
+",2026-08-14T08:37:14,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,3,0.0000,0,5,False,True,0,12,0.002369,4553,2810,openai.gpt-oss-120b-1:0,bedrock,21.9,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.6.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T08:37:35,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,4,1.0000,5,5,True,False,1063,12,0.003381,8690,3462,openai.gpt-oss-120b-1:0,bedrock,23.7,[],2026-08-14T08:37:59,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,5,1.0000,5,5,True,False,1664,12,0.004227,13393,3697,openai.gpt-oss-120b-1:0,bedrock,32.1,[],2026-08-14T08:38:31,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,6,0.8000,4,5,True,False,983,12,0.005827,19250,4900,openai.gpt-oss-120b-1:0,bedrock,58.1,[],2026-08-14T08:39:29,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,7,0.0000,0,5,False,False,1725,12,0.004903,4553,7033,openai.gpt-oss-120b-1:0,bedrock,35.0,"/w/candidate.c:53:1: error: extraneous closing brace ('}')
+   53 | }
+      | ^
+1 error generated.
+",2026-08-14T08:40:04,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,8,1.0000,5,5,True,False,1749,12,0.002342,4553,2765,openai.gpt-oss-120b-1:0,bedrock,10.7,[],2026-08-14T08:40:15,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,1,1.0000,5,5,True,False,1305,12,0.005682,11386,6624,openai.gpt-oss-120b-1:0,bedrock,21.3,[],2026-08-14T08:40:36,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,2,1.0000,5,5,True,False,1204,12,0.005022,8935,6136,openai.gpt-oss-120b-1:0,bedrock,39.0,[],2026-08-14T08:41:15,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,3,1.0000,5,5,True,False,1129,12,0.003438,4463,4615,openai.gpt-oss-120b-1:0,bedrock,13.5,[],2026-08-14T08:41:29,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,4,1.0000,5,5,True,False,2530,12,0.006471,14357,7196,openai.gpt-oss-120b-1:0,bedrock,38.0,[],2026-08-14T08:42:07,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,5,1.0000,5,5,True,False,2718,12,0.003720,8800,4000,openai.gpt-oss-120b-1:0,bedrock,24.2,[],2026-08-14T08:42:31,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,6,1.0000,5,5,True,False,1382,12,0.004770,8843,5740,openai.gpt-oss-120b-1:0,bedrock,40.7,[],2026-08-14T08:43:12,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,7,0.0000,0,5,False,False,1349,12,0.004790,9216,5679,openai.gpt-oss-120b-1:0,bedrock,17.9,harness_error: IndexError: list index out of range,2026-08-14T08:43:30,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,8,1.0000,5,5,True,False,1224,12,0.002945,4463,3792,openai.gpt-oss-120b-1:0,bedrock,63.9,[],2026-08-14T08:44:34,gpt-oss-120b,bedrock,native
+prog27_soundex,1,0.6000,3,5,True,False,1065,12,0.009256,37409,6075,openai.gpt-oss-120b-1:0,bedrock,107.5,[],2026-08-14T08:46:21,gpt-oss-120b,bedrock,native
+prog27_soundex,2,0.0000,0,5,False,False,1407,12,0.004946,12836,5034,openai.gpt-oss-120b-1:0,bedrock,41.3,"/w/candidate.c:50:1: error: extraneous closing brace ('}')
+   50 | }
+      | ^
+1 error generated.
+",2026-08-14T08:47:02,gpt-oss-120b,bedrock,native
+prog27_soundex,3,0.6000,3,5,True,False,2631,12,0.017591,74804,10618,openai.gpt-oss-120b-1:0,bedrock,178.4,[],2026-08-14T08:50:01,gpt-oss-120b,bedrock,native
+prog27_soundex,4,0.6000,3,5,True,False,1558,12,0.006611,20965,5777,openai.gpt-oss-120b-1:0,bedrock,22.7,[],2026-08-14T08:50:23,gpt-oss-120b,bedrock,native
+prog27_soundex,5,0.6000,3,5,True,False,1261,12,0.008566,30346,6690,openai.gpt-oss-120b-1:0,bedrock,67.3,[],2026-08-14T08:51:31,gpt-oss-120b,bedrock,native
+prog27_soundex,6,0.6000,3,5,True,False,2152,12,0.011229,41365,8373,openai.gpt-oss-120b-1:0,bedrock,58.8,[],2026-08-14T08:52:29,gpt-oss-120b,bedrock,native
+prog27_soundex,7,0.6000,3,5,True,False,1402,12,0.011406,45684,7589,openai.gpt-oss-120b-1:0,bedrock,43.8,[],2026-08-14T08:53:13,gpt-oss-120b,bedrock,native
+prog27_soundex,8,0.6000,3,5,True,False,1563,12,0.004753,12836,4712,openai.gpt-oss-120b-1:0,bedrock,53.1,[],2026-08-14T08:54:06,gpt-oss-120b,bedrock,native
+prog28_levenshtein,1,1.0000,5,5,True,False,1092,12,0.002485,4097,3118,openai.gpt-oss-120b-1:0,bedrock,25.0,[],2026-08-14T08:54:31,gpt-oss-120b,bedrock,native
+prog28_levenshtein,2,1.0000,5,5,True,False,919,12,0.001431,4097,1361,openai.gpt-oss-120b-1:0,bedrock,9.6,[],2026-08-14T08:54:41,gpt-oss-120b,bedrock,native
+prog28_levenshtein,3,1.0000,5,5,True,False,997,12,0.003576,10284,3389,openai.gpt-oss-120b-1:0,bedrock,19.0,[],2026-08-14T08:55:00,gpt-oss-120b,bedrock,native
+prog28_levenshtein,4,1.0000,5,5,True,False,1055,12,0.001717,4097,1837,openai.gpt-oss-120b-1:0,bedrock,8.4,[],2026-08-14T08:55:08,gpt-oss-120b,bedrock,native
+prog28_levenshtein,5,1.0000,5,5,True,False,1125,12,0.001623,4097,1680,openai.gpt-oss-120b-1:0,bedrock,9.4,[],2026-08-14T08:55:18,gpt-oss-120b,bedrock,native
+prog28_levenshtein,6,1.0000,5,5,True,False,1191,12,0.006409,16682,6511,openai.gpt-oss-120b-1:0,bedrock,28.4,[],2026-08-14T08:55:46,gpt-oss-120b,bedrock,native
+prog28_levenshtein,7,1.0000,5,5,True,False,907,12,0.001573,4097,1597,openai.gpt-oss-120b-1:0,bedrock,31.0,[],2026-08-14T08:56:17,gpt-oss-120b,bedrock,native
+prog28_levenshtein,8,1.0000,5,5,True,False,906,12,0.001558,4097,1573,openai.gpt-oss-120b-1:0,bedrock,14.3,[],2026-08-14T08:56:31,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,1,0.0000,0,5,False,True,0,12,0.018536,84943,9657,openai.gpt-oss-120b-1:0,bedrock,102.4,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T08:58:14,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,2,0.6000,3,5,True,False,2772,12,0.013704,64577,6696,openai.gpt-oss-120b-1:0,bedrock,61.3,[],2026-08-14T08:59:15,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,3,0.0000,0,5,False,True,0,12,0.012550,79180,1122,openai.gpt-oss-120b-1:0,bedrock,27.6,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T08:59:43,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,4,1.0000,5,5,True,False,2209,12,0.012859,64180,5386,openai.gpt-oss-120b-1:0,bedrock,36.8,[],2026-08-14T09:00:19,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,5,1.0000,5,5,True,False,3163,12,0.017391,81855,8522,openai.gpt-oss-120b-1:0,bedrock,84.3,[],2026-08-14T09:01:44,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,6,0.8000,4,5,True,False,1769,12,0.013115,64697,5684,openai.gpt-oss-120b-1:0,bedrock,81.4,[],2026-08-14T09:03:05,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,7,1.0000,5,5,True,False,3095,12,0.015852,67721,9490,openai.gpt-oss-120b-1:0,bedrock,64.8,[],2026-08-14T09:04:10,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,8,1.0000,5,5,True,False,2635,12,0.006258,31360,2590,openai.gpt-oss-120b-1:0,bedrock,31.3,[],2026-08-14T09:04:41,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,1,1.0000,5,5,True,False,3296,12,0.003529,6230,4324,openai.gpt-oss-120b-1:0,bedrock,18.3,[],2026-08-14T09:04:59,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,2,0.6000,3,5,True,False,2529,12,0.003983,6230,5081,openai.gpt-oss-120b-1:0,bedrock,32.0,[],2026-08-14T09:05:31,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,3,0.8000,4,5,True,False,2242,12,0.008111,23971,7526,openai.gpt-oss-120b-1:0,bedrock,144.7,[],2026-08-14T09:07:56,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,4,1.0000,5,5,True,False,2492,12,0.004616,12702,4518,openai.gpt-oss-120b-1:0,bedrock,40.2,[],2026-08-14T09:08:36,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,5,0.6000,3,5,True,False,2780,12,0.014268,49264,11464,openai.gpt-oss-120b-1:0,bedrock,97.2,[],2026-08-14T09:10:14,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,6,0.6000,3,5,True,False,2147,12,0.008215,24870,7475,openai.gpt-oss-120b-1:0,bedrock,170.1,[],2026-08-14T09:13:04,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,7,0.6000,3,5,True,False,2439,12,0.007597,17792,8214,openai.gpt-oss-120b-1:0,bedrock,63.6,[],2026-08-14T09:14:07,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,8,0.6000,3,5,True,False,3234,12,0.016553,45728,16156,openai.gpt-oss-120b-1:0,bedrock,110.8,[],2026-08-14T09:15:58,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,1,1.0000,5,5,True,False,1403,12,0.006468,7992,8782,openai.gpt-oss-120b-1:0,bedrock,30.2,[],2026-08-14T09:16:28,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,2,1.0000,5,5,True,False,1430,12,0.007711,10990,10105,openai.gpt-oss-120b-1:0,bedrock,47.8,[],2026-08-14T09:17:16,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,3,1.0000,5,5,True,False,1702,12,0.005655,8363,7335,openai.gpt-oss-120b-1:0,bedrock,104.5,[],2026-08-14T09:19:01,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,4,1.0000,5,5,True,False,1317,12,0.004953,8069,6237,openai.gpt-oss-120b-1:0,bedrock,78.8,[],2026-08-14T09:20:19,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,5,0.0000,0,5,False,True,0,12,0.005570,3992,8285,openai.gpt-oss-120b-1:0,bedrock,26.4,nessun candidato prodotto,2026-08-14T09:20:46,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,6,1.0000,5,5,True,False,1818,12,0.006870,10021,8944,openai.gpt-oss-120b-1:0,bedrock,125.2,[],2026-08-14T09:22:51,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,7,1.0000,5,5,True,False,1141,12,0.010081,28304,9726,openai.gpt-oss-120b-1:0,bedrock,80.9,[],2026-08-14T09:24:12,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,8,1.0000,5,5,True,False,1384,12,0.003112,3992,4188,openai.gpt-oss-120b-1:0,bedrock,29.2,[],2026-08-14T09:24:41,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,1,1.0000,5,5,True,False,1363,12,0.006983,13231,8330,openai.gpt-oss-120b-1:0,bedrock,68.6,[],2026-08-14T09:25:50,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,2,1.0000,5,5,True,False,937,12,0.002651,3532,3536,openai.gpt-oss-120b-1:0,bedrock,19.9,[],2026-08-14T09:26:10,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,3,1.0000,5,5,True,False,928,12,0.002373,3532,3072,openai.gpt-oss-120b-1:0,bedrock,15.7,[],2026-08-14T09:26:25,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,4,0.0000,0,5,False,False,1024,12,0.002414,3532,3140,openai.gpt-oss-120b-1:0,bedrock,60.5,"/w/candidate.c:47:1: error: extraneous closing brace ('}')
+   47 | }
+      | ^
+1 error generated.
+",2026-08-14T09:27:26,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,5,1.0000,5,5,True,False,1001,12,0.002761,3532,3719,openai.gpt-oss-120b-1:0,bedrock,22.0,[],2026-08-14T09:27:48,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,6,1.0000,5,5,True,False,966,12,0.002851,3532,3869,openai.gpt-oss-120b-1:0,bedrock,38.6,[],2026-08-14T09:28:26,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,7,0.0000,0,5,False,False,1024,12,0.002407,3532,3128,openai.gpt-oss-120b-1:0,bedrock,40.9,"/w/candidate.c:47:1: error: extraneous closing brace ('}')
+   47 | }
+      | ^
+1 error generated.
+",2026-08-14T09:29:07,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,8,0.0000,0,5,False,False,1024,12,0.005346,6015,7406,openai.gpt-oss-120b-1:0,bedrock,44.6,"/w/candidate.c:53:1: error: extraneous closing brace ('}')
+   53 | }
+      | ^
+1 error generated.
+",2026-08-14T09:29:52,gpt-oss-120b,bedrock,native
+prog33_mod_pow,1,0.0000,0,5,True,False,1010,12,0.001591,3606,1750,openai.gpt-oss-120b-1:0,bedrock,25.0,[],2026-08-14T09:30:17,gpt-oss-120b,bedrock,native
+prog33_mod_pow,2,1.0000,5,5,True,False,1180,12,0.006250,12233,7358,openai.gpt-oss-120b-1:0,bedrock,111.3,[],2026-08-14T09:32:08,gpt-oss-120b,bedrock,native
+prog33_mod_pow,3,1.0000,5,5,True,False,2144,12,0.005627,12295,6304,openai.gpt-oss-120b-1:0,bedrock,33.3,[],2026-08-14T09:32:41,gpt-oss-120b,bedrock,native
+prog33_mod_pow,4,0.0000,0,5,True,False,1084,12,0.001554,3606,1689,openai.gpt-oss-120b-1:0,bedrock,18.4,[],2026-08-14T09:33:00,gpt-oss-120b,bedrock,native
+prog33_mod_pow,5,1.0000,5,5,True,False,1215,12,0.003051,3606,4184,openai.gpt-oss-120b-1:0,bedrock,17.7,[],2026-08-14T09:33:18,gpt-oss-120b,bedrock,native
+prog33_mod_pow,6,1.0000,5,5,True,False,1132,12,0.002206,3606,2775,openai.gpt-oss-120b-1:0,bedrock,16.4,[],2026-08-14T09:33:34,gpt-oss-120b,bedrock,native
+prog33_mod_pow,7,0.0000,0,5,True,False,1010,12,0.001591,3606,1750,openai.gpt-oss-120b-1:0,bedrock,33.4,[],2026-08-14T09:34:07,gpt-oss-120b,bedrock,native
+prog33_mod_pow,8,1.0000,5,5,True,False,1613,12,0.002634,3606,3489,openai.gpt-oss-120b-1:0,bedrock,25.2,[],2026-08-14T09:34:33,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,1,1.0000,5,5,True,False,1181,12,0.010216,16625,12871,openai.gpt-oss-120b-1:0,bedrock,105.7,[],2026-08-14T09:36:18,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,2,1.0000,5,5,True,False,858,12,0.005513,13248,5876,openai.gpt-oss-120b-1:0,bedrock,50.2,[],2026-08-14T09:37:08,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,3,1.0000,5,5,True,False,898,12,0.004364,7772,5330,openai.gpt-oss-120b-1:0,bedrock,33.6,[],2026-08-14T09:37:42,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,4,1.0000,5,5,True,False,894,12,0.003189,6749,3628,openai.gpt-oss-120b-1:0,bedrock,62.1,[],2026-08-14T09:38:44,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,5,1.0000,5,5,True,False,894,12,0.004440,6749,5713,openai.gpt-oss-120b-1:0,bedrock,93.1,[],2026-08-14T09:40:17,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,6,1.0000,5,5,True,False,833,12,0.006692,14394,7555,openai.gpt-oss-120b-1:0,bedrock,78.2,[],2026-08-14T09:41:35,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,7,1.0000,5,5,True,False,1012,12,0.005886,9581,7414,openai.gpt-oss-120b-1:0,bedrock,69.3,[],2026-08-14T09:42:45,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,8,1.0000,5,5,True,False,762,12,0.004797,10875,5277,openai.gpt-oss-120b-1:0,bedrock,37.3,[],2026-08-14T09:43:22,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,1,0.0000,0,5,False,False,1086,12,0.004865,6292,6536,openai.gpt-oss-120b-1:0,bedrock,49.9,"/w/candidate.c:49:1: error: extraneous closing brace ('}')
+   49 | }
+      | ^
+1 error generated.
+",2026-08-14T09:44:12,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,2,1.0000,5,5,True,False,810,12,0.003496,6317,4247,openai.gpt-oss-120b-1:0,bedrock,17.9,[],2026-08-14T09:44:30,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,3,0.0000,0,5,False,False,901,12,0.003699,6316,4586,openai.gpt-oss-120b-1:0,bedrock,90.6,"/w/candidate.c:40:1: error: extraneous closing brace ('}')
+   40 | }
+      | ^
+1 error generated.
+",2026-08-14T09:46:00,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,4,1.0000,5,5,True,False,2506,12,0.005954,14843,6213,openai.gpt-oss-120b-1:0,bedrock,32.1,[],2026-08-14T09:46:33,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,5,0.0000,0,5,False,False,822,12,0.003906,3656,5596,openai.gpt-oss-120b-1:0,bedrock,47.6,"/w/candidate.c:38:1: error: extraneous closing brace ('}')
+   38 | }
+      | ^
+1 error generated.
+",2026-08-14T09:47:20,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,6,0.8000,4,5,True,False,756,12,0.007411,11581,9457,openai.gpt-oss-120b-1:0,bedrock,81.3,[],2026-08-14T09:48:41,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,7,1.0000,5,5,True,False,1570,12,0.005926,15038,6117,openai.gpt-oss-120b-1:0,bedrock,105.7,[],2026-08-14T09:50:27,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,8,1.0000,5,5,True,False,838,12,0.005811,11671,6767,openai.gpt-oss-120b-1:0,bedrock,131.9,[],2026-08-14T09:52:39,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,1,1.0000,5,5,True,False,920,12,0.004665,11989,4777,openai.gpt-oss-120b-1:0,bedrock,62.7,[],2026-08-14T09:53:42,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,2,1.0000,5,5,True,False,1034,12,0.002275,3784,2845,openai.gpt-oss-120b-1:0,bedrock,26.7,[],2026-08-14T09:54:08,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,3,0.6000,3,5,True,False,749,12,0.004589,11338,4814,openai.gpt-oss-120b-1:0,bedrock,41.5,[],2026-08-14T09:54:50,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,4,1.0000,5,5,True,False,1411,12,0.008577,19656,9381,openai.gpt-oss-120b-1:0,bedrock,83.8,[],2026-08-14T09:56:14,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,5,1.0000,5,5,True,False,943,12,0.004228,11113,4269,openai.gpt-oss-120b-1:0,bedrock,39.5,[],2026-08-14T09:56:53,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,6,1.0000,5,5,True,False,938,12,0.005020,7142,6582,openai.gpt-oss-120b-1:0,bedrock,38.7,[],2026-08-14T09:57:32,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,7,1.0000,5,5,True,False,923,12,0.004989,12058,5301,openai.gpt-oss-120b-1:0,bedrock,95.8,[],2026-08-14T09:59:08,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,8,1.0000,5,5,True,False,1618,12,0.004999,11284,5511,openai.gpt-oss-120b-1:0,bedrock,24.3,[],2026-08-14T09:59:32,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,1,1.0000,5,5,True,False,981,12,0.003544,5196,4608,openai.gpt-oss-120b-1:0,bedrock,33.0,[],2026-08-14T10:00:05,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,2,1.0000,5,5,True,False,3916,12,0.005944,13689,6484,openai.gpt-oss-120b-1:0,bedrock,72.8,[],2026-08-14T10:01:18,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,3,1.0000,5,5,True,False,826,12,0.004156,12921,3697,openai.gpt-oss-120b-1:0,bedrock,19.9,[],2026-08-14T10:01:38,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,4,1.0000,5,5,True,False,921,12,0.003820,12840,3157,openai.gpt-oss-120b-1:0,bedrock,30.2,[],2026-08-14T10:02:08,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,5,1.0000,5,5,True,False,1248,12,0.004516,8771,5334,openai.gpt-oss-120b-1:0,bedrock,30.4,[],2026-08-14T10:02:38,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,6,1.0000,5,5,True,False,1038,12,0.003662,8791,3906,openai.gpt-oss-120b-1:0,bedrock,27.0,[],2026-08-14T10:03:05,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,7,1.0000,5,5,True,False,1386,12,0.006019,13689,6610,openai.gpt-oss-120b-1:0,bedrock,131.5,[],2026-08-14T10:05:17,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,8,1.0000,5,5,True,False,1511,12,0.005758,10311,7019,openai.gpt-oss-120b-1:0,bedrock,39.3,[],2026-08-14T10:05:56,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,1,0.8000,4,5,True,False,1464,12,0.003532,4645,4726,openai.gpt-oss-120b-1:0,bedrock,48.5,[],2026-08-14T10:06:45,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,2,0.0000,0,5,False,False,995,12,0.005853,9657,7340,openai.gpt-oss-120b-1:0,bedrock,29.7,"/w/candidate.c:49:16: warning: missing terminating '""' character [-Winvalid-pp-token]
+   49 |         printf(""[%
+      |                ^
+/w/candidate.c:49:16: error: expected expression
+/w/candidate.c:49:19: error: expected '}'
+   49 |         printf(""[%
+      |                   ^
+/w/candidate.c:4",2026-08-14T10:07:14,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,3,0.6000,3,5,True,False,2494,12,0.010469,23895,11474,openai.gpt-oss-120b-1:0,bedrock,33.5,[],2026-08-14T10:07:48,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,4,0.8000,4,5,True,False,1470,12,0.004159,4645,5771,openai.gpt-oss-120b-1:0,bedrock,29.7,[],2026-08-14T10:08:18,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,5,0.8000,4,5,True,False,2103,12,0.014145,50809,10872,openai.gpt-oss-120b-1:0,bedrock,95.8,[],2026-08-14T10:09:53,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,6,0.6000,3,5,True,False,2046,12,0.007341,21928,6753,openai.gpt-oss-120b-1:0,bedrock,97.5,[],2026-08-14T10:11:31,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,7,0.6000,3,5,True,False,1209,12,0.004530,8236,5491,openai.gpt-oss-120b-1:0,bedrock,88.1,[],2026-08-14T10:12:59,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,8,0.6000,3,5,True,False,992,12,0.004978,9262,5981,openai.gpt-oss-120b-1:0,bedrock,25.7,[],2026-08-14T10:13:25,gpt-oss-120b,bedrock,native
+prog39_horner,1,0.0000,0,5,False,True,0,12,0.006349,8924,8350,openai.gpt-oss-120b-1:0,bedrock,54.7,nessun candidato prodotto,2026-08-14T10:14:19,gpt-oss-120b,bedrock,native
+prog39_horner,2,1.0000,5,5,True,False,1535,12,0.007545,17010,8322,openai.gpt-oss-120b-1:0,bedrock,40.6,[],2026-08-14T10:15:00,gpt-oss-120b,bedrock,native
+prog39_horner,3,1.0000,5,5,True,False,1291,12,0.009966,38050,7098,openai.gpt-oss-120b-1:0,bedrock,125.8,[],2026-08-14T10:17:06,gpt-oss-120b,bedrock,native
+prog39_horner,4,1.0000,5,5,True,False,864,12,0.007483,18161,7932,openai.gpt-oss-120b-1:0,bedrock,94.8,[],2026-08-14T10:18:40,gpt-oss-120b,bedrock,native
+prog39_horner,5,0.8000,4,5,True,False,1344,12,0.008111,23768,7576,openai.gpt-oss-120b-1:0,bedrock,46.7,[],2026-08-14T10:19:27,gpt-oss-120b,bedrock,native
+prog39_horner,6,1.0000,5,5,True,False,1207,12,0.004876,9053,5864,openai.gpt-oss-120b-1:0,bedrock,22.4,[],2026-08-14T10:19:50,gpt-oss-120b,bedrock,native
+prog39_horner,7,0.8000,4,5,True,False,956,12,0.006336,12415,7457,openai.gpt-oss-120b-1:0,bedrock,106.9,[],2026-08-14T10:21:36,gpt-oss-120b,bedrock,native
+prog39_horner,8,0.0000,0,5,False,True,0,12,0.001505,4467,1391,openai.gpt-oss-120b-1:0,bedrock,27.1,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.6.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T10:22:04,gpt-oss-120b,bedrock,native
+prog40_bisection_root,1,0.0000,0,5,False,True,0,12,0.011386,44880,7756,openai.gpt-oss-120b-1:0,bedrock,65.8,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T10:23:09,gpt-oss-120b,bedrock,native
+prog40_bisection_root,2,1.0000,5,5,True,False,804,12,0.002717,5943,3043,openai.gpt-oss-120b-1:0,bedrock,15.1,[],2026-08-14T10:23:24,gpt-oss-120b,bedrock,native
+prog40_bisection_root,3,1.0000,5,5,True,False,807,12,0.015325,55186,11746,openai.gpt-oss-120b-1:0,bedrock,111.8,[],2026-08-14T10:25:16,gpt-oss-120b,bedrock,native
+prog40_bisection_root,4,0.0000,0,5,False,True,0,12,0.013286,50148,9607,openai.gpt-oss-120b-1:0,bedrock,122.9,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T10:27:19,gpt-oss-120b,bedrock,native
+prog40_bisection_root,5,0.0000,0,5,False,True,0,12,0.012967,46507,9985,openai.gpt-oss-120b-1:0,bedrock,156.3,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T10:29:55,gpt-oss-120b,bedrock,native
+prog40_bisection_root,6,0.0000,0,5,False,True,0,12,0.009360,46284,4029,openai.gpt-oss-120b-1:0,bedrock,45.0,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T10:30:41,gpt-oss-120b,bedrock,native
+prog40_bisection_root,7,0.0000,0,5,False,True,0,12,0.012073,55177,6328,openai.gpt-oss-120b-1:0,bedrock,87.4,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T10:32:08,gpt-oss-120b,bedrock,native
+prog40_bisection_root,8,1.0000,5,5,True,False,859,12,0.006659,21232,5790,openai.gpt-oss-120b-1:0,bedrock,33.7,[],2026-08-14T10:32:42,gpt-oss-120b,bedrock,native
+prog41_series_sum,1,0.0000,0,5,False,True,0,12,0.020485,67708,17214,openai.gpt-oss-120b-1:0,bedrock,133.9,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T10:34:56,gpt-oss-120b,bedrock,native
+prog41_series_sum,2,1.0000,5,5,True,False,1781,12,0.007423,16741,8186,openai.gpt-oss-120b-1:0,bedrock,111.7,[],2026-08-14T10:36:47,gpt-oss-120b,bedrock,native
+prog41_series_sum,3,0.0000,0,5,False,True,0,12,0.020835,68756,17536,openai.gpt-oss-120b-1:0,bedrock,128.8,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T10:38:56,gpt-oss-120b,bedrock,native
+prog41_series_sum,4,0.0000,0,5,False,True,0,12,0.002616,7990,2362,openai.gpt-oss-120b-1:0,bedrock,20.3,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.8.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T10:39:16,gpt-oss-120b,bedrock,native
+prog41_series_sum,5,0.0000,0,5,False,False,1027,12,0.006511,8758,8662,openai.gpt-oss-120b-1:0,bedrock,57.8,"/w/candidate.c:45:1: error: extraneous closing brace ('}')
+   45 | }
+      | ^
+1 error generated.
+",2026-08-14T10:40:14,gpt-oss-120b,bedrock,native
+prog41_series_sum,6,0.8000,4,5,True,False,982,12,0.011188,27920,11666,openai.gpt-oss-120b-1:0,bedrock,76.4,[],2026-08-14T10:41:31,gpt-oss-120b,bedrock,native
+prog41_series_sum,7,0.8000,4,5,True,False,1837,12,0.009800,21766,10891,openai.gpt-oss-120b-1:0,bedrock,44.5,[],2026-08-14T10:42:15,gpt-oss-120b,bedrock,native
+prog41_series_sum,8,0.8000,4,5,True,False,1889,12,0.009414,19793,10742,openai.gpt-oss-120b-1:0,bedrock,60.9,[],2026-08-14T10:43:16,gpt-oss-120b,bedrock,native
+prog42_collatz,1,1.0000,5,5,True,False,1021,12,0.002283,3143,3020,openai.gpt-oss-120b-1:0,bedrock,10.3,[],2026-08-14T10:43:26,gpt-oss-120b,bedrock,native
+prog42_collatz,2,1.0000,5,5,True,False,746,12,0.005618,14540,5729,openai.gpt-oss-120b-1:0,bedrock,27.8,[],2026-08-14T10:43:54,gpt-oss-120b,bedrock,native
+prog42_collatz,3,1.0000,5,5,True,False,917,12,0.004171,10207,4400,openai.gpt-oss-120b-1:0,bedrock,24.9,[],2026-08-14T10:44:19,gpt-oss-120b,bedrock,native
+prog42_collatz,4,1.0000,5,5,True,False,963,12,0.002235,3143,2939,openai.gpt-oss-120b-1:0,bedrock,38.8,[],2026-08-14T10:44:58,gpt-oss-120b,bedrock,native
+prog42_collatz,5,1.0000,5,5,True,False,991,12,0.001919,3143,2413,openai.gpt-oss-120b-1:0,bedrock,10.1,[],2026-08-14T10:45:08,gpt-oss-120b,bedrock,native
+prog42_collatz,6,1.0000,5,5,True,False,1124,12,0.002853,3143,3969,openai.gpt-oss-120b-1:0,bedrock,64.0,[],2026-08-14T10:46:12,gpt-oss-120b,bedrock,native
+prog42_collatz,7,1.0000,5,5,True,False,1069,12,0.001617,3143,1909,openai.gpt-oss-120b-1:0,bedrock,15.7,[],2026-08-14T10:46:27,gpt-oss-120b,bedrock,native
+prog42_collatz,8,1.0000,5,5,True,False,1008,12,0.004241,10147,4531,openai.gpt-oss-120b-1:0,bedrock,40.0,[],2026-08-14T10:47:07,gpt-oss-120b,bedrock,native
+prog43_catalan,1,0.0000,0,5,False,False,723,12,0.003380,5751,4196,openai.gpt-oss-120b-1:0,bedrock,46.4,"/w/candidate.c:32:1: error: extraneous closing brace ('}')
+   32 | }
+      | ^
+1 error generated.
+",2026-08-14T10:47:54,gpt-oss-120b,bedrock,native
+prog43_catalan,2,0.4000,2,5,True,False,1516,12,0.002957,3388,4082,openai.gpt-oss-120b-1:0,bedrock,16.6,[],2026-08-14T10:48:10,gpt-oss-120b,bedrock,native
+prog43_catalan,3,0.6000,3,5,True,False,689,12,0.003533,6633,4230,openai.gpt-oss-120b-1:0,bedrock,32.2,[],2026-08-14T10:48:43,gpt-oss-120b,bedrock,native
+prog43_catalan,4,0.4000,2,5,True,False,852,12,0.002599,3388,3485,openai.gpt-oss-120b-1:0,bedrock,20.0,[],2026-08-14T10:49:03,gpt-oss-120b,bedrock,native
+prog43_catalan,5,1.0000,5,5,True,False,1457,12,0.003995,6668,4991,openai.gpt-oss-120b-1:0,bedrock,16.6,[],2026-08-14T10:49:19,gpt-oss-120b,bedrock,native
+prog43_catalan,6,0.4000,2,5,True,False,735,12,0.002651,3388,3571,openai.gpt-oss-120b-1:0,bedrock,59.4,[],2026-08-14T10:50:18,gpt-oss-120b,bedrock,native
+prog43_catalan,7,0.4000,2,5,True,False,1083,12,0.003080,3388,4286,openai.gpt-oss-120b-1:0,bedrock,12.9,[],2026-08-14T10:50:31,gpt-oss-120b,bedrock,native
+prog43_catalan,8,1.0000,5,5,True,False,1102,12,0.003805,5751,4904,openai.gpt-oss-120b-1:0,bedrock,32.6,[],2026-08-14T10:51:04,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,1,1.0000,5,5,True,False,2486,12,0.013465,51241,9632,openai.gpt-oss-120b-1:0,bedrock,62.1,[],2026-08-14T10:52:06,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,2,1.0000,5,5,True,False,2116,12,0.002573,6212,2735,openai.gpt-oss-120b-1:0,bedrock,13.5,[],2026-08-14T10:52:20,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,3,1.0000,5,5,True,False,2549,12,0.009953,29643,9177,openai.gpt-oss-120b-1:0,bedrock,75.5,[],2026-08-14T10:53:35,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,4,1.0000,5,5,True,False,2324,12,0.004524,13009,4288,openai.gpt-oss-120b-1:0,bedrock,27.6,[],2026-08-14T10:54:03,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,5,1.0000,5,5,True,False,2703,12,0.008874,33201,6489,openai.gpt-oss-120b-1:0,bedrock,35.9,[],2026-08-14T10:54:39,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,6,1.0000,5,5,True,False,2282,12,0.008135,25367,7217,openai.gpt-oss-120b-1:0,bedrock,49.8,[],2026-08-14T10:55:28,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,7,0.0000,0,5,False,True,0,12,0.025779,104409,16863,openai.gpt-oss-120b-1:0,bedrock,106.7,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T10:57:15,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,8,1.0000,5,5,True,False,2082,12,0.011981,45532,8585,openai.gpt-oss-120b-1:0,bedrock,56.4,[],2026-08-14T10:58:11,gpt-oss-120b,bedrock,native
+prog45_josephus,1,0.8000,4,5,True,False,722,12,0.002289,3597,2916,openai.gpt-oss-120b-1:0,bedrock,31.6,[],2026-08-14T10:58:43,gpt-oss-120b,bedrock,native
+prog45_josephus,2,0.8000,4,5,True,False,777,12,0.004881,6975,6391,openai.gpt-oss-120b-1:0,bedrock,65.2,[],2026-08-14T10:59:48,gpt-oss-120b,bedrock,native
+prog45_josephus,3,1.0000,5,5,True,False,747,12,0.003628,3597,5147,openai.gpt-oss-120b-1:0,bedrock,30.2,[],2026-08-14T11:00:18,gpt-oss-120b,bedrock,native
+prog45_josephus,4,0.8000,4,5,True,False,670,12,0.002218,3597,2798,openai.gpt-oss-120b-1:0,bedrock,71.2,[],2026-08-14T11:01:30,gpt-oss-120b,bedrock,native
+prog45_josephus,5,1.0000,5,5,True,False,749,12,0.002445,3597,3176,openai.gpt-oss-120b-1:0,bedrock,135.0,[],2026-08-14T11:03:45,gpt-oss-120b,bedrock,native
+prog45_josephus,6,0.8000,4,5,True,False,638,12,0.001837,3597,2163,openai.gpt-oss-120b-1:0,bedrock,18.7,[],2026-08-14T11:04:03,gpt-oss-120b,bedrock,native
+prog45_josephus,7,0.8000,4,5,True,False,638,12,0.003049,7163,3291,openai.gpt-oss-120b-1:0,bedrock,18.4,[],2026-08-14T11:04:22,gpt-oss-120b,bedrock,native
+prog45_josephus,8,0.8000,4,5,True,False,1046,12,0.005745,11246,6763,openai.gpt-oss-120b-1:0,bedrock,37.6,[],2026-08-14T11:04:59,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,1,0.0000,0,5,False,False,1381,12,0.010204,31396,9158,openai.gpt-oss-120b-1:0,bedrock,70.2,harness_error: IndexError: list index out of range,2026-08-14T11:06:10,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,2,1.0000,5,5,True,False,1288,12,0.004956,19339,3426,openai.gpt-oss-120b-1:0,bedrock,87.9,[],2026-08-14T11:07:37,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,3,1.0000,5,5,True,False,1986,12,0.004204,17996,2508,openai.gpt-oss-120b-1:0,bedrock,85.0,[],2026-08-14T11:09:02,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,4,1.0000,5,5,True,False,1864,12,0.004577,6340,6044,openai.gpt-oss-120b-1:0,bedrock,38.3,[],2026-08-14T11:09:41,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,5,1.0000,5,5,True,False,1734,12,0.014609,61327,9017,openai.gpt-oss-120b-1:0,bedrock,49.2,[],2026-08-14T11:10:30,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,6,1.0000,5,5,True,False,1416,12,0.004861,12621,4947,openai.gpt-oss-120b-1:0,bedrock,32.4,[],2026-08-14T11:11:02,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,7,1.0000,5,5,True,False,2234,12,0.005713,18985,4775,openai.gpt-oss-120b-1:0,bedrock,20.5,[],2026-08-14T11:11:23,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,8,1.0000,5,5,True,False,1416,12,0.007164,19591,7043,openai.gpt-oss-120b-1:0,bedrock,117.3,[],2026-08-14T11:13:20,gpt-oss-120b,bedrock,native
+prog47_circular_queue,1,0.4000,2,5,True,False,2224,12,0.002934,8501,2764,openai.gpt-oss-120b-1:0,bedrock,51.5,[],2026-08-14T11:14:12,gpt-oss-120b,bedrock,native
+prog47_circular_queue,2,1.0000,5,5,True,False,1523,12,0.018570,80091,10927,openai.gpt-oss-120b-1:0,bedrock,133.3,[],2026-08-14T11:16:25,gpt-oss-120b,bedrock,native
+prog47_circular_queue,3,1.0000,5,5,True,False,1737,12,0.007909,23222,7376,openai.gpt-oss-120b-1:0,bedrock,72.6,[],2026-08-14T11:17:38,gpt-oss-120b,bedrock,native
+prog47_circular_queue,4,1.0000,5,5,True,False,1522,12,0.004616,14602,4043,openai.gpt-oss-120b-1:0,bedrock,37.3,[],2026-08-14T11:18:15,gpt-oss-120b,bedrock,native
+prog47_circular_queue,5,1.0000,5,5,True,False,1856,12,0.006108,21911,4703,openai.gpt-oss-120b-1:0,bedrock,50.9,[],2026-08-14T11:19:06,gpt-oss-120b,bedrock,native
+prog47_circular_queue,6,1.0000,5,5,True,False,1796,12,0.008565,30319,6696,openai.gpt-oss-120b-1:0,bedrock,102.1,[],2026-08-14T11:20:48,gpt-oss-120b,bedrock,native
+prog47_circular_queue,7,1.0000,5,5,True,False,1949,12,0.011563,40579,9127,openai.gpt-oss-120b-1:0,bedrock,104.3,[],2026-08-14T11:22:32,gpt-oss-120b,bedrock,native
+prog47_circular_queue,8,1.0000,5,5,True,False,1924,12,0.013159,49696,9508,openai.gpt-oss-120b-1:0,bedrock,102.7,[],2026-08-14T11:24:15,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,1,1.0000,5,5,True,False,2146,12,0.002894,6123,3293,openai.gpt-oss-120b-1:0,bedrock,27.6,[],2026-08-14T11:24:43,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,2,1.0000,5,5,True,False,1072,12,0.001770,5165,1658,openai.gpt-oss-120b-1:0,bedrock,24.8,[],2026-08-14T11:25:07,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,3,1.0000,5,5,True,False,1451,12,0.004031,11456,3855,openai.gpt-oss-120b-1:0,bedrock,77.4,[],2026-08-14T11:26:25,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,4,1.0000,5,5,True,False,2543,12,0.005279,12727,5617,openai.gpt-oss-120b-1:0,bedrock,22.5,[],2026-08-14T11:26:47,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,5,1.0000,5,5,True,False,1528,12,0.001988,3109,2536,openai.gpt-oss-120b-1:0,bedrock,21.6,[],2026-08-14T11:27:09,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,6,1.0000,5,5,True,False,980,12,0.002590,5993,2818,openai.gpt-oss-120b-1:0,bedrock,21.1,[],2026-08-14T11:27:30,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,7,0.0000,0,5,False,True,0,12,0.012678,52304,8054,openai.gpt-oss-120b-1:0,bedrock,80.3,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T11:28:50,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,8,1.0000,5,5,True,False,1132,12,0.002082,5165,2179,openai.gpt-oss-120b-1:0,bedrock,29.7,[],2026-08-14T11:29:20,gpt-oss-120b,bedrock,native
+prog49_bst,1,0.8000,4,5,True,False,2653,12,0.013921,49292,10879,openai.gpt-oss-120b-1:0,bedrock,236.8,[],2026-08-14T11:33:17,gpt-oss-120b,bedrock,native
+prog49_bst,2,0.8000,4,5,True,False,2626,12,0.007493,20707,7311,openai.gpt-oss-120b-1:0,bedrock,44.9,[],2026-08-14T11:34:02,gpt-oss-120b,bedrock,native
+prog49_bst,3,0.8000,4,5,True,False,2330,12,0.005828,20314,4634,openai.gpt-oss-120b-1:0,bedrock,62.5,[],2026-08-14T11:35:04,gpt-oss-120b,bedrock,native
+prog49_bst,4,1.0000,5,5,True,False,2320,12,0.007707,25356,6506,openai.gpt-oss-120b-1:0,bedrock,53.0,[],2026-08-14T11:35:57,gpt-oss-120b,bedrock,native
+prog49_bst,5,0.8000,4,5,True,False,1879,12,0.007745,26672,6241,openai.gpt-oss-120b-1:0,bedrock,64.0,[],2026-08-14T11:37:01,gpt-oss-120b,bedrock,native
+prog49_bst,6,1.0000,5,5,True,False,4211,12,0.011477,40257,9064,openai.gpt-oss-120b-1:0,bedrock,38.6,[],2026-08-14T11:37:40,gpt-oss-120b,bedrock,native
+prog49_bst,7,0.8000,4,5,True,False,2310,12,0.008359,26658,7268,openai.gpt-oss-120b-1:0,bedrock,113.2,[],2026-08-14T11:39:33,gpt-oss-120b,bedrock,native
+prog49_bst,8,0.8000,4,5,True,False,5851,12,0.007531,21174,7258,openai.gpt-oss-120b-1:0,bedrock,72.8,[],2026-08-14T11:40:46,gpt-oss-120b,bedrock,native
+prog50_binary_heap,1,0.8000,4,5,True,False,3021,12,0.009530,37065,6617,openai.gpt-oss-120b-1:0,bedrock,125.7,[],2026-08-14T11:42:51,gpt-oss-120b,bedrock,native
+prog50_binary_heap,2,1.0000,5,5,True,False,2812,12,0.009905,32476,8390,openai.gpt-oss-120b-1:0,bedrock,62.3,[],2026-08-14T11:43:54,gpt-oss-120b,bedrock,native
+prog50_binary_heap,3,1.0000,5,5,True,False,1650,12,0.003736,11737,3292,openai.gpt-oss-120b-1:0,bedrock,28.5,[],2026-08-14T11:44:22,gpt-oss-120b,bedrock,native
+prog50_binary_heap,4,0.2000,1,5,True,False,1780,12,0.008751,32641,6424,openai.gpt-oss-120b-1:0,bedrock,139.7,[],2026-08-14T11:46:42,gpt-oss-120b,bedrock,native
+prog50_binary_heap,5,0.4000,2,5,True,False,2514,12,0.011341,42325,8321,openai.gpt-oss-120b-1:0,bedrock,68.2,[],2026-08-14T11:47:50,gpt-oss-120b,bedrock,native
+prog50_binary_heap,6,1.0000,5,5,True,False,3413,12,0.016517,62856,11814,openai.gpt-oss-120b-1:0,bedrock,155.5,[],2026-08-14T11:50:26,gpt-oss-120b,bedrock,native
+prog50_binary_heap,7,0.8000,4,5,True,False,1851,12,0.003666,11737,3175,openai.gpt-oss-120b-1:0,bedrock,17.8,[],2026-08-14T11:50:43,gpt-oss-120b,bedrock,native
+prog50_binary_heap,8,0.2000,1,5,True,False,1396,12,0.007795,31606,5090,openai.gpt-oss-120b-1:0,bedrock,27.3,[],2026-08-14T11:51:11,gpt-oss-120b,bedrock,native
+prog51_union_find,1,1.0000,5,5,True,False,2674,12,0.006811,11691,8429,openai.gpt-oss-120b-1:0,bedrock,40.7,[],2026-08-14T11:51:51,gpt-oss-120b,bedrock,native
+prog51_union_find,2,1.0000,5,5,True,False,2013,12,0.008097,31214,5691,openai.gpt-oss-120b-1:0,bedrock,113.5,[],2026-08-14T11:53:45,gpt-oss-120b,bedrock,native
+prog51_union_find,3,0.2000,1,5,True,False,1973,12,0.007553,25512,6211,openai.gpt-oss-120b-1:0,bedrock,49.1,[],2026-08-14T11:54:34,gpt-oss-120b,bedrock,native
+prog51_union_find,4,0.2000,1,5,True,False,2203,12,0.005148,13089,5307,openai.gpt-oss-120b-1:0,bedrock,37.4,[],2026-08-14T11:55:11,gpt-oss-120b,bedrock,native
+prog51_union_find,5,0.2000,1,5,True,False,2171,12,0.004077,11692,3872,openai.gpt-oss-120b-1:0,bedrock,40.5,[],2026-08-14T11:55:52,gpt-oss-120b,bedrock,native
+prog51_union_find,6,0.2000,1,5,True,False,2863,12,0.007134,25697,5465,openai.gpt-oss-120b-1:0,bedrock,45.1,[],2026-08-14T11:56:37,gpt-oss-120b,bedrock,native
+prog51_union_find,7,1.0000,5,5,True,False,2542,12,0.003753,11691,3333,openai.gpt-oss-120b-1:0,bedrock,25.0,[],2026-08-14T11:57:02,gpt-oss-120b,bedrock,native
+prog51_union_find,8,1.0000,5,5,True,False,2325,12,0.004621,6361,6111,openai.gpt-oss-120b-1:0,bedrock,35.8,[],2026-08-14T11:57:38,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,1,0.8000,4,5,True,False,1827,12,0.006359,24599,4449,openai.gpt-oss-120b-1:0,bedrock,87.9,[],2026-08-14T11:59:06,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,2,0.8000,4,5,True,False,2572,12,0.009331,33554,7164,openai.gpt-oss-120b-1:0,bedrock,72.7,[],2026-08-14T12:00:18,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,3,0.0000,0,5,False,True,0,12,0.014510,56935,9950,openai.gpt-oss-120b-1:0,bedrock,91.2,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T12:01:50,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,4,0.0000,0,5,False,True,0,12,0.015497,66546,9192,openai.gpt-oss-120b-1:0,bedrock,169.8,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T12:04:39,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,5,0.0000,0,5,False,True,0,12,0.013063,59172,6979,openai.gpt-oss-120b-1:0,bedrock,141.7,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T12:07:01,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,6,0.4000,2,5,True,False,4315,12,0.011012,39374,8510,openai.gpt-oss-120b-1:0,bedrock,68.6,[],2026-08-14T12:08:10,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,7,0.0000,0,5,False,True,0,12,0.013682,56891,8580,openai.gpt-oss-120b-1:0,bedrock,60.7,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T12:09:10,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,8,0.2000,1,5,True,False,2195,12,0.012880,45938,9983,openai.gpt-oss-120b-1:0,bedrock,64.1,[],2026-08-14T12:10:14,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,1,1.0000,5,5,True,False,2747,12,0.008959,31516,7053,openai.gpt-oss-120b-1:0,bedrock,51.9,[],2026-08-14T12:11:06,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,2,1.0000,5,5,True,False,3171,12,0.008097,29110,6217,openai.gpt-oss-120b-1:0,bedrock,84.5,[],2026-08-14T12:12:31,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,3,0.8000,4,5,True,False,1796,12,0.006344,23255,4760,openai.gpt-oss-120b-1:0,bedrock,35.9,[],2026-08-14T12:13:07,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,4,1.0000,5,5,True,False,2081,12,0.003958,9883,4126,openai.gpt-oss-120b-1:0,bedrock,28.4,[],2026-08-14T12:13:35,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,5,1.0000,5,5,True,False,1196,12,0.007023,22983,5960,openai.gpt-oss-120b-1:0,bedrock,38.6,[],2026-08-14T12:14:14,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,6,0.0000,0,5,True,False,1935,12,0.007890,28627,5993,openai.gpt-oss-120b-1:0,bedrock,45.4,[],2026-08-14T12:14:59,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,7,1.0000,5,5,True,False,2342,12,0.006805,23234,5533,openai.gpt-oss-120b-1:0,bedrock,38.9,[],2026-08-14T12:15:38,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,8,1.0000,5,5,True,False,3425,12,0.007342,23846,6275,openai.gpt-oss-120b-1:0,bedrock,62.9,[],2026-08-14T12:16:41,gpt-oss-120b,bedrock,native
+prog54_topo_sort,1,0.0000,0,5,True,False,1674,12,0.011393,41962,8498,openai.gpt-oss-120b-1:0,bedrock,96.4,[],2026-08-14T12:18:17,gpt-oss-120b,bedrock,native
+prog54_topo_sort,2,0.0000,0,5,False,False,2140,12,0.005085,17257,4160,openai.gpt-oss-120b-1:0,bedrock,28.7,"/w/candidate.c:83:1: error: extraneous closing brace ('}')
+   83 | }
+      | ^
+1 error generated.
+",2026-08-14T12:18:46,gpt-oss-120b,bedrock,native
+prog54_topo_sort,3,0.0000,0,5,True,False,1671,12,0.006102,26323,3590,openai.gpt-oss-120b-1:0,bedrock,37.0,[],2026-08-14T12:19:23,gpt-oss-120b,bedrock,native
+prog54_topo_sort,4,0.0000,0,5,True,False,3481,12,0.011316,46071,7343,openai.gpt-oss-120b-1:0,bedrock,39.5,[],2026-08-14T12:20:03,gpt-oss-120b,bedrock,native
+prog54_topo_sort,5,0.0000,0,5,True,False,1374,12,0.010336,35944,8241,openai.gpt-oss-120b-1:0,bedrock,58.7,[],2026-08-14T12:21:01,gpt-oss-120b,bedrock,native
+prog54_topo_sort,6,0.0000,0,5,True,False,3545,12,0.009467,26754,9090,openai.gpt-oss-120b-1:0,bedrock,101.9,[],2026-08-14T12:22:43,gpt-oss-120b,bedrock,native
+prog54_topo_sort,7,0.0000,0,5,True,False,1973,12,0.005736,17257,5245,openai.gpt-oss-120b-1:0,bedrock,73.4,[],2026-08-14T12:23:56,gpt-oss-120b,bedrock,native
+prog54_topo_sort,8,0.2000,1,5,True,False,1870,12,0.010660,36899,8542,openai.gpt-oss-120b-1:0,bedrock,114.0,[],2026-08-14T12:25:50,gpt-oss-120b,bedrock,native
+prog55_connected_components,1,0.4000,2,5,True,False,2651,12,0.010130,41080,6614,openai.gpt-oss-120b-1:0,bedrock,60.1,[],2026-08-14T12:26:51,gpt-oss-120b,bedrock,native
+prog55_connected_components,2,0.2000,1,5,True,False,1532,12,0.009362,38887,5882,openai.gpt-oss-120b-1:0,bedrock,39.8,[],2026-08-14T12:27:30,gpt-oss-120b,bedrock,native
+prog55_connected_components,3,0.2000,1,5,True,False,2563,12,0.014224,61533,8323,openai.gpt-oss-120b-1:0,bedrock,68.0,[],2026-08-14T12:28:38,gpt-oss-120b,bedrock,native
+prog55_connected_components,4,0.0000,0,5,False,False,3237,12,0.010080,45065,5534,openai.gpt-oss-120b-1:0,bedrock,37.0,harness_error: IndexError: list index out of range,2026-08-14T12:29:15,gpt-oss-120b,bedrock,native
+prog55_connected_components,5,0.2000,1,5,True,False,2824,12,0.012786,53745,7874,openai.gpt-oss-120b-1:0,bedrock,42.7,[],2026-08-14T12:29:58,gpt-oss-120b,bedrock,native
+prog55_connected_components,6,0.2000,1,5,True,False,2586,12,0.009848,38704,6737,openai.gpt-oss-120b-1:0,bedrock,59.1,[],2026-08-14T12:30:57,gpt-oss-120b,bedrock,native
+prog55_connected_components,7,0.2000,1,5,True,False,2712,12,0.014258,54468,10146,openai.gpt-oss-120b-1:0,bedrock,85.2,[],2026-08-14T12:32:22,gpt-oss-120b,bedrock,native
+prog55_connected_components,8,0.2000,1,5,True,False,2635,12,0.011225,42939,7973,openai.gpt-oss-120b-1:0,bedrock,32.2,[],2026-08-14T12:32:55,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,1,0.4000,2,5,True,False,3307,12,0.008930,25104,8607,openai.gpt-oss-120b-1:0,bedrock,48.1,[],2026-08-14T12:33:43,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,2,0.4000,2,5,True,False,2098,12,0.006947,22701,5903,openai.gpt-oss-120b-1:0,bedrock,27.6,[],2026-08-14T12:34:10,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,3,0.4000,2,5,True,False,2854,12,0.007350,22712,6572,openai.gpt-oss-120b-1:0,bedrock,168.0,[],2026-08-14T12:36:58,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,4,0.0000,0,5,False,False,1913,12,0.006964,30665,3941,openai.gpt-oss-120b-1:0,bedrock,90.3,"/w/candidate.c:77:1: error: extraneous closing brace ('}')
+   77 | }
+      | ^
+1 error generated.
+",2026-08-14T12:38:28,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,5,0.4000,2,5,True,False,2457,12,0.007796,26055,6480,openai.gpt-oss-120b-1:0,bedrock,76.1,[],2026-08-14T12:39:45,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,6,0.6000,3,5,True,False,1771,12,0.012028,40944,9811,openai.gpt-oss-120b-1:0,bedrock,63.7,[],2026-08-14T12:40:48,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,7,0.4000,2,5,True,False,3009,12,0.017520,53457,15836,openai.gpt-oss-120b-1:0,bedrock,276.8,[],2026-08-14T12:45:25,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,8,0.4000,2,5,True,False,2000,12,0.016709,58101,13323,openai.gpt-oss-120b-1:0,bedrock,137.5,[],2026-08-14T12:47:43,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,1,1.0000,5,5,True,False,954,12,0.002661,3097,3661,openai.gpt-oss-120b-1:0,bedrock,17.1,[],2026-08-14T12:48:00,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,2,1.0000,5,5,True,False,859,12,0.005788,11104,6871,openai.gpt-oss-120b-1:0,bedrock,118.0,[],2026-08-14T12:49:58,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,3,1.0000,5,5,True,False,1120,12,0.003292,8378,3392,openai.gpt-oss-120b-1:0,bedrock,25.5,[],2026-08-14T12:50:23,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,4,1.0000,5,5,True,False,1040,12,0.004030,5672,5299,openai.gpt-oss-120b-1:0,bedrock,16.4,[],2026-08-14T12:50:40,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,5,0.8000,4,5,True,False,1110,12,0.002644,3097,3633,openai.gpt-oss-120b-1:0,bedrock,16.6,[],2026-08-14T12:50:56,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,6,1.0000,5,5,True,False,859,12,0.005820,11258,6885,openai.gpt-oss-120b-1:0,bedrock,99.7,[],2026-08-14T12:52:36,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,7,1.0000,5,5,True,False,1194,12,0.002500,3097,3393,openai.gpt-oss-120b-1:0,bedrock,21.4,[],2026-08-14T12:52:57,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,8,0.8000,4,5,True,False,809,12,0.005366,8092,6921,openai.gpt-oss-120b-1:0,bedrock,23.2,[],2026-08-14T12:53:21,gpt-oss-120b,bedrock,native
+prog58_turing_increment,1,0.0000,0,5,False,True,0,12,0.005662,4649,8275,openai.gpt-oss-120b-1:0,bedrock,30.3,nessun candidato prodotto,2026-08-14T12:53:51,gpt-oss-120b,bedrock,native
+prog58_turing_increment,2,0.0000,0,5,False,True,0,12,0.030880,55963,37476,openai.gpt-oss-120b-1:0,bedrock,264.7,nessun candidato prodotto,2026-08-14T12:58:16,gpt-oss-120b,bedrock,native
+prog58_turing_increment,3,0.2000,1,5,True,False,1047,12,0.006555,9252,8612,openai.gpt-oss-120b-1:0,bedrock,46.6,[],2026-08-14T12:59:02,gpt-oss-120b,bedrock,native
+prog58_turing_increment,4,0.2000,1,5,True,False,2010,12,0.011755,22136,14057,openai.gpt-oss-120b-1:0,bedrock,119.1,[],2026-08-14T13:01:01,gpt-oss-120b,bedrock,native
+prog58_turing_increment,5,0.0000,0,5,False,True,0,12,0.005670,4649,8288,openai.gpt-oss-120b-1:0,bedrock,60.2,nessun candidato prodotto,2026-08-14T13:02:01,gpt-oss-120b,bedrock,native
+prog58_turing_increment,6,0.2000,1,5,True,False,1379,12,0.004871,13958,4629,openai.gpt-oss-120b-1:0,bedrock,174.0,[],2026-08-14T13:04:56,gpt-oss-120b,bedrock,native
+prog58_turing_increment,7,0.2000,1,5,True,False,1426,12,0.004932,4649,7057,openai.gpt-oss-120b-1:0,bedrock,45.5,[],2026-08-14T13:05:41,gpt-oss-120b,bedrock,native
+prog58_turing_increment,8,0.2000,1,5,True,False,2797,12,0.016492,32917,19258,openai.gpt-oss-120b-1:0,bedrock,251.2,[],2026-08-14T13:09:52,gpt-oss-120b,bedrock,native
+prog59_rule110,1,0.0000,0,5,True,False,1267,12,0.009125,30073,7690,openai.gpt-oss-120b-1:0,bedrock,40.8,[],2026-08-14T13:10:33,gpt-oss-120b,bedrock,native
+prog59_rule110,2,1.0000,5,5,True,False,2529,12,0.003152,9517,2874,openai.gpt-oss-120b-1:0,bedrock,115.1,[],2026-08-14T13:12:28,gpt-oss-120b,bedrock,native
+prog59_rule110,3,0.2000,1,5,True,False,2596,12,0.007372,21975,6793,openai.gpt-oss-120b-1:0,bedrock,73.8,[],2026-08-14T13:13:42,gpt-oss-120b,bedrock,native
+prog59_rule110,4,1.0000,5,5,True,False,3346,12,0.015863,57783,11992,openai.gpt-oss-120b-1:0,bedrock,48.8,[],2026-08-14T13:14:31,gpt-oss-120b,bedrock,native
+prog59_rule110,5,1.0000,5,5,True,False,3653,12,0.013794,46062,11474,openai.gpt-oss-120b-1:0,bedrock,137.6,[],2026-08-14T13:16:48,gpt-oss-120b,bedrock,native
+prog59_rule110,6,0.0000,0,5,True,False,2457,12,0.003807,9517,3965,openai.gpt-oss-120b-1:0,bedrock,14.4,[],2026-08-14T13:17:03,gpt-oss-120b,bedrock,native
+prog59_rule110,7,0.2000,1,5,True,False,2725,12,0.010495,41509,7114,openai.gpt-oss-120b-1:0,bedrock,52.6,[],2026-08-14T13:17:55,gpt-oss-120b,bedrock,native
+prog59_rule110,8,0.2000,1,5,True,False,2624,12,0.007560,22146,7063,openai.gpt-oss-120b-1:0,bedrock,150.5,[],2026-08-14T13:20:26,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,1,0.0000,0,5,False,True,0,12,0.020676,44431,23353,openai.gpt-oss-120b-1:0,bedrock,133.9,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T13:22:40,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,2,0.0000,0,5,False,True,0,12,0.008958,21848,9468,openai.gpt-oss-120b-1:0,bedrock,95.2,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.16.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most rece",2026-08-14T13:24:15,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,3,0.0000,0,5,False,True,0,12,0.016941,44867,17018,openai.gpt-oss-120b-1:0,bedrock,115.5,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T13:26:10,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,4,0.0000,0,5,True,False,3367,12,0.004652,12818,4549,openai.gpt-oss-120b-1:0,bedrock,56.6,[],2026-08-14T13:27:07,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,5,0.0000,0,5,True,False,2080,12,0.017124,38325,18959,openai.gpt-oss-120b-1:0,bedrock,144.5,[],2026-08-14T13:29:32,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,6,0.0000,0,5,False,True,0,12,0.016178,44633,15805,openai.gpt-oss-120b-1:0,bedrock,220.6,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: The toolConfig field must be defined when using toolUse and toolResult content blocks.
+Traceback (most recent call last):
+  File ""<home>/c2-tool-transport/src/harness/agent_loop.py"", line 311, ",2026-08-14T13:33:12,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,7,0.0000,0,5,True,False,1829,12,0.011955,33803,11475,openai.gpt-oss-120b-1:0,bedrock,80.8,[],2026-08-14T13:34:33,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,8,0.0000,0,5,True,False,1557,12,0.014278,39309,13970,openai.gpt-oss-120b-1:0,bedrock,58.0,[],2026-08-14T13:35:31,gpt-oss-120b,bedrock,native

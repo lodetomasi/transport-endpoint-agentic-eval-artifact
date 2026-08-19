@@ -1,0 +1,809 @@
+[
+ {
+  "binario": "prog16_word_count_fsm",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog17_whitespace_trim",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 6
+  }
+ },
+ {
+  "binario": "prog18_caesar_cipher",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog19_palindrome_checker",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog20_anagram_checker",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog21_date_validator",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 5
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 6
+  }
+ },
+ {
+  "binario": "prog22_snake_camel_convert",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog23_longest_common_prefix",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog24_query_string_parser",
+  "native": {
+   "funzioni": [
+    "main",
+    "decode"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "decode"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog25_balanced_multitype",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog26_wildcard_match",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog27_soundex",
+  "native": {
+   "funzioni": [
+    "main",
+    "soundex_digit"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "soundex_digit"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog28_levenshtein",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog29_roman_numeral_parser",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 5
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog30_escape_unescape",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog31_gcd_lcm",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog32_prime_factorization",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog33_mod_pow",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog34_fibonacci_memo",
+  "native": {
+   "funzioni": [
+    "main",
+    "fib"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "fib"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog35_perfect_numbers",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog36_pascal_triangle",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog37_binomial_coefficient",
+  "native": {
+   "funzioni": [
+    "main",
+    "binom"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "binom"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog38_continued_fraction",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog39_horner",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog40_bisection_root",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 6
+  }
+ },
+ {
+  "binario": "prog41_series_sum",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 6
+  }
+ },
+ {
+  "binario": "prog42_collatz",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog43_catalan",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog44_miller_rabin",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 6
+  }
+ },
+ {
+  "binario": "prog45_josephus",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog46_postfix_stack",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog47_circular_queue",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog48_sorted_linked_list",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog49_bst",
+  "native": {
+   "funzioni": [
+    "main",
+    "inorder",
+    "preorder",
+    "postorder"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "inorder",
+    "preorder",
+    "postorder"
+   ],
+   "stringhe": true,
+   "turni": 7
+  }
+ },
+ {
+  "binario": "prog50_binary_heap",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog51_union_find",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog52_bfs_grid",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 6
+  }
+ },
+ {
+  "binario": "prog53_dfs_cycle",
+  "native": {
+   "funzioni": [
+    "main",
+    "dfs"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "dfs"
+   ],
+   "stringhe": true,
+   "turni": 6
+  }
+ },
+ {
+  "binario": "prog54_topo_sort",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog55_connected_components",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog56_kruskal_mst",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog57_elevator_fsm",
+  "native": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 3
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 4
+  }
+ },
+ {
+  "binario": "prog58_turing_increment",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog59_rule110",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main"
+   ],
+   "stringhe": true,
+   "turni": 5
+  }
+ },
+ {
+  "binario": "prog60_inventory_sim",
+  "native": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 4
+  },
+  "text": {
+   "funzioni": [
+    "main",
+    "FUN_00101020"
+   ],
+   "stringhe": true,
+   "turni": 6
+  }
+ }
+]

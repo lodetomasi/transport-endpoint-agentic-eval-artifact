@@ -1,0 +1,3 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog42_collatz,1,1.0000,5,5,True,False,1361,12,0.014139,8389,1150,databricks-claude-haiku-4-5,databricks,16.1,[],2026-08-15T22:52:19,claude-haiku-4-5,databricks,native
+prog60_inventory_sim,1,0.0000,0,5,True,False,1810,12,0.021618,15263,1271,databricks-claude-haiku-4-5,databricks,17.1,[],2026-08-15T22:52:36,claude-haiku-4-5,databricks,native

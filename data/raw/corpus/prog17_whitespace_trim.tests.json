@@ -1,0 +1,7 @@
+{"program": "prog17_whitespace_trim", "tests": [
+  {"id": 1, "args": ["  hello   world  "], "stdin": "", "expected_stdout": "hello world\n"},
+  {"id": 2, "args": ["single"], "stdin": "", "expected_stdout": "single\n"},
+  {"id": 3, "args": ["   "], "stdin": "", "expected_stdout": "EMPTY\n"},
+  {"id": 4, "args": ["\tline1\nline2\t"], "stdin": "", "expected_stdout": "line1 line2\n"},
+  {"id": 5, "args": [], "stdin": "", "expected_stdout": "EMPTY\n"}
+]}

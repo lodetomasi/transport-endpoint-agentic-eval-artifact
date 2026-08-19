@@ -1,0 +1,7 @@
+{"program": "prog44_miller_rabin", "tests": [
+  {"id": 1, "args": ["91"], "stdin": "", "expected_stdout": "NOT_PRIME\n"},
+  {"id": 2, "args": ["2"], "stdin": "", "expected_stdout": "PRIME\n"},
+  {"id": 3, "args": ["1"], "stdin": "", "expected_stdout": "NOT_PRIME\n"},
+  {"id": 4, "args": ["999999937"], "stdin": "", "expected_stdout": "PRIME\n"},
+  {"id": 5, "args": ["4000000000"], "stdin": "", "expected_stdout": "OUT_OF_RANGE\n"}
+]}

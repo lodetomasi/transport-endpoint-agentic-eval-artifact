@@ -1,0 +1,20 @@
+MDE per contrasto, con la SD osservata — contro il bound unico della card
+
+  id   contrasto                  SD oss   MDE reale
+  T1   gpt-oss / trasporto        0.1950       8.14pp   sopra il bound
+  T2   llama / trasporto          0.1374       5.74pp   sopra il bound
+  T3   haiku / trasporto          0.2844      11.88pp   sopra il bound
+  T4   sonnet / trasporto         0.1232       5.15pp   sopra il bound
+  T5   gpt-oss / infrastr.        0.1339       5.59pp   sopra il bound
+  T6   llama / infrastr.          0.2481      10.36pp   sopra il bound
+  T7   haiku / infrastr.          0.0037       0.15pp
+  T8   sonnet / infrastr.         0.0630       2.63pp
+
+  bound unico dichiarato nella card: 4.87pp
+  contrasti il cui MDE reale lo supera: 6 su 8 (T1, T2, T3, T4, T5, T6)
+  intervallo reale degli MDE: da 0.15pp a 11.88pp
+
+  CONSEGUENZA. La frase «una banda di circa +/-4,9pp» non descrive questi dati:
+  descrive il disegno pre-registrato. La formulazione che i dati sostengono e'
+  per contrasto — «fuori dalla banda che la varianza di quel contrasto consente,
+  e quella banda va da 0,15pp a 11,9pp» — che e' piu' debole e piu' vera.

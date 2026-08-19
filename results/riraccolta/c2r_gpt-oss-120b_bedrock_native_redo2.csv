@@ -1,0 +1,3 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog39_horner,1,0.0000,0,5,False,True,0,12,0.006344,8478,8454,openai.gpt-oss-120b-1:0,bedrock,93.8,nessun candidato prodotto,2026-08-16T23:53:29,gpt-oss-120b,bedrock,native
+prog39_horner,2,0.0000,0,5,False,True,0,12,0.016327,15772,23269,openai.gpt-oss-120b-1:0,bedrock,138.3,nessun candidato prodotto,2026-08-16T23:55:47,gpt-oss-120b,bedrock,native

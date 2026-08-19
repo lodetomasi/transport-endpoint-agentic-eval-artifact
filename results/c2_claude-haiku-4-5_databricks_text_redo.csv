@@ -1,0 +1,4 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog23_longest_common_prefix,1,0.4000,2,5,True,False,896,12,0.023680,13790,1978,databricks-claude-haiku-4-5,databricks,19.5,[],2026-08-15T14:21:08,claude-haiku-4-5,databricks,text
+prog36_pascal_triangle,1,0.6000,3,5,True,False,1025,12,0.014396,5811,1717,databricks-claude-haiku-4-5,databricks,15.4,[],2026-08-15T14:21:23,claude-haiku-4-5,databricks,text
+prog57_elevator_fsm,1,0.4000,2,5,True,False,845,12,0.012491,6696,1159,databricks-claude-haiku-4-5,databricks,14.7,[],2026-08-15T14:21:38,claude-haiku-4-5,databricks,text

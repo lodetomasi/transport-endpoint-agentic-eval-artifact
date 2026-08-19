@@ -1,0 +1,7 @@
+{"program": "prog08_base_convert", "tests": [
+  {"id": 1, "args": ["255", "10", "16"], "stdin": "", "expected_stdout": "FF\n"},
+  {"id": 2, "args": ["0", "10", "2"], "stdin": "", "expected_stdout": "0\n"},
+  {"id": 3, "args": ["255", "10"], "stdin": "", "expected_stdout": "INVALID\n"},
+  {"id": 4, "args": ["1111111111111111", "2", "16"], "stdin": "", "expected_stdout": "FFFF\n"},
+  {"id": 5, "args": ["-FF", "16", "10"], "stdin": "", "expected_stdout": "-255\n"}
+]}

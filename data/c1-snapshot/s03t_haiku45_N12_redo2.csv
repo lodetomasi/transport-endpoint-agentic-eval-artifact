@@ -1,0 +1,23 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp
+prog32_prime_factorization,1,1.0000,5,5,True,False,1216,12,0.032741,24436,1661,databricks-claude-haiku-4-5,databricks,24.3,[],2026-08-13T01:19:17
+prog32_prime_factorization,2,0.8000,4,5,True,False,1109,12,0.015146,9721,1085,databricks-claude-haiku-4-5,databricks,14.2,[],2026-08-13T01:19:31
+prog32_prime_factorization,3,1.0000,5,5,True,False,1157,12,0.019038,11138,1580,databricks-claude-haiku-4-5,databricks,17.6,[],2026-08-13T01:19:49
+prog32_prime_factorization,4,0.8000,4,5,True,False,975,12,0.036102,24607,2299,databricks-claude-haiku-4-5,databricks,25.7,[],2026-08-13T01:20:15
+prog32_prime_factorization,5,1.0000,5,5,True,False,1121,12,0.031337,24047,1458,databricks-claude-haiku-4-5,databricks,22.9,[],2026-08-13T01:20:38
+prog32_prime_factorization,6,1.0000,5,5,True,False,1235,12,0.041540,32050,1898,databricks-claude-haiku-4-5,databricks,26.3,[],2026-08-13T01:21:04
+prog33_mod_pow,1,1.0000,5,5,True,False,1586,12,0.021734,13619,1623,databricks-claude-haiku-4-5,databricks,18.2,[],2026-08-13T01:21:22
+prog33_mod_pow,2,1.0000,5,5,True,False,1749,12,0.018857,11462,1479,databricks-claude-haiku-4-5,databricks,18.0,[],2026-08-13T01:21:40
+prog33_mod_pow,3,1.0000,5,5,True,False,1380,12,0.024057,9907,2830,databricks-claude-haiku-4-5,databricks,21.6,[],2026-08-13T01:22:02
+prog33_mod_pow,4,1.0000,5,5,True,False,1485,12,0.015894,9584,1262,databricks-claude-haiku-4-5,databricks,15.3,[],2026-08-13T01:22:17
+prog33_mod_pow,5,1.0000,5,5,True,False,1492,12,0.017288,10968,1264,databricks-claude-haiku-4-5,databricks,17.5,[],2026-08-13T01:22:34
+prog33_mod_pow,6,0.0000,0,5,True,False,867,12,0.014100,8590,1102,databricks-claude-haiku-4-5,databricks,19.6,[],2026-08-13T01:22:54
+prog34_fibonacci_memo,1,1.0000,5,5,True,False,871,12,0.019137,12977,1232,databricks-claude-haiku-4-5,databricks,18.5,[],2026-08-13T01:23:13
+prog34_fibonacci_memo,2,1.0000,5,5,True,False,870,12,0.017467,11252,1243,databricks-claude-haiku-4-5,databricks,18.5,[],2026-08-13T01:23:31
+prog34_fibonacci_memo,3,1.0000,5,5,True,False,855,12,0.042978,29873,2621,databricks-claude-haiku-4-5,databricks,27.9,[],2026-08-13T01:23:59
+prog34_fibonacci_memo,4,1.0000,5,5,True,False,864,12,0.027293,19623,1534,databricks-claude-haiku-4-5,databricks,21.3,[],2026-08-13T01:24:20
+prog34_fibonacci_memo,5,0.0000,0,5,False,False,645,12,0.006385,440,1189,databricks-claude-haiku-4-5,databricks,7.1,"/w/candidate.c:28:13: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |         n = atoi(argv[1]);
+      |             ^
+1 error generated.
+",2026-08-13T01:24:27
+prog34_fibonacci_memo,6,1.0000,5,5,True,False,839,12,0.016912,11182,1146,databricks-claude-haiku-4-5,databricks,16.1,[],2026-08-13T01:24:44

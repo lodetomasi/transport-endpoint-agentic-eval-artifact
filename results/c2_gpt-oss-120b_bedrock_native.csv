@@ -1,0 +1,418 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,1.0000,5,5,True,False,902,12,0.002762,9544,2217,openai.gpt-oss-120b-1:0,bedrock,32.2,[],2026-08-14T20:02:24,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,2,0.8000,4,5,True,False,824,12,0.005351,19820,3964,openai.gpt-oss-120b-1:0,bedrock,43.8,[],2026-08-14T20:03:08,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,3,1.0000,5,5,True,False,638,12,0.001062,3424,914,openai.gpt-oss-120b-1:0,bedrock,10.5,[],2026-08-14T20:03:19,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,4,1.0000,5,5,True,False,902,12,0.002770,9544,2230,openai.gpt-oss-120b-1:0,bedrock,37.9,[],2026-08-14T20:03:57,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,5,1.0000,5,5,True,False,542,12,0.001272,3424,1264,openai.gpt-oss-120b-1:0,bedrock,10.6,[],2026-08-14T20:04:07,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,6,1.0000,5,5,True,False,548,12,0.001079,3424,943,openai.gpt-oss-120b-1:0,bedrock,9.7,[],2026-08-14T20:04:17,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,7,0.0000,0,5,False,False,519,12,0.001026,3424,854,openai.gpt-oss-120b-1:0,bedrock,8.8,harness_error: IndexError: list index out of range,2026-08-14T20:04:26,gpt-oss-120b,bedrock,native
+prog16_word_count_fsm,8,0.8000,4,5,True,False,718,12,0.002173,3424,2765,openai.gpt-oss-120b-1:0,bedrock,20.5,[],2026-08-14T20:04:46,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,1,1.0000,5,5,True,False,934,12,0.006701,19311,6341,openai.gpt-oss-120b-1:0,bedrock,77.3,[],2026-08-14T20:06:04,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,2,1.0000,5,5,True,False,1041,12,0.019438,63480,16527,openai.gpt-oss-120b-1:0,bedrock,109.2,[],2026-08-14T20:07:53,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,3,0.0000,0,5,False,False,1162,12,0.003115,3739,4257,openai.gpt-oss-120b-1:0,bedrock,17.0,"/w/candidate.c:41:1: error: extraneous closing brace ('}')
+   41 | }
+      | ^
+1 error generated.
+",2026-08-14T20:08:10,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,4,1.0000,5,5,True,False,979,12,0.007892,19763,8212,openai.gpt-oss-120b-1:0,bedrock,33.7,[],2026-08-14T20:08:44,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,5,1.0000,5,5,True,False,1330,12,0.003559,6456,4317,openai.gpt-oss-120b-1:0,bedrock,28.4,[],2026-08-14T20:09:12,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,6,1.0000,5,5,True,False,831,12,0.007283,15100,8363,openai.gpt-oss-120b-1:0,bedrock,51.1,[],2026-08-14T20:10:03,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,7,1.0000,5,5,True,False,746,12,0.005049,12154,5376,openai.gpt-oss-120b-1:0,bedrock,37.2,[],2026-08-14T20:10:40,gpt-oss-120b,bedrock,native
+prog17_whitespace_trim,8,1.0000,5,5,True,False,1656,12,0.011015,21224,13052,openai.gpt-oss-120b-1:0,bedrock,72.1,[],2026-08-14T20:11:52,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,1,0.8000,4,5,True,False,787,12,0.002679,8018,2461,openai.gpt-oss-120b-1:0,bedrock,24.0,[],2026-08-14T20:12:16,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,2,0.8000,4,5,True,False,727,12,0.002253,4531,2623,openai.gpt-oss-120b-1:0,bedrock,40.1,[],2026-08-14T20:12:56,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,3,0.8000,4,5,True,False,727,12,0.002255,4531,2626,openai.gpt-oss-120b-1:0,bedrock,44.4,[],2026-08-14T20:13:41,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,4,0.8000,4,5,True,False,727,12,0.002253,4531,2623,openai.gpt-oss-120b-1:0,bedrock,40.6,[],2026-08-14T20:14:22,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,5,1.0000,5,5,True,False,1693,12,0.003280,8018,3463,openai.gpt-oss-120b-1:0,bedrock,55.8,[],2026-08-14T20:15:17,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,6,1.0000,5,5,True,False,1250,12,0.006741,23205,5433,openai.gpt-oss-120b-1:0,bedrock,34.6,[],2026-08-14T20:15:52,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,7,1.0000,5,5,True,False,751,12,0.005964,18457,5325,openai.gpt-oss-120b-1:0,bedrock,29.3,[],2026-08-14T20:16:21,gpt-oss-120b,bedrock,native
+prog18_caesar_cipher,8,1.0000,5,5,True,False,817,12,0.005173,16879,4402,openai.gpt-oss-120b-1:0,bedrock,40.2,[],2026-08-14T20:17:01,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,1,1.0000,5,5,True,False,1219,12,0.004371,4306,6208,openai.gpt-oss-120b-1:0,bedrock,39.2,[],2026-08-14T20:17:41,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,2,1.0000,5,5,True,False,1044,12,0.002213,4306,2611,openai.gpt-oss-120b-1:0,bedrock,40.6,[],2026-08-14T20:18:21,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,3,1.0000,5,5,True,False,926,12,0.005951,11643,7007,openai.gpt-oss-120b-1:0,bedrock,35.8,[],2026-08-14T20:18:57,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,4,1.0000,5,5,True,False,778,12,0.005188,8379,6552,openai.gpt-oss-120b-1:0,bedrock,41.0,[],2026-08-14T20:19:38,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,5,1.0000,5,5,True,False,831,12,0.004727,8335,5794,openai.gpt-oss-120b-1:0,bedrock,36.8,[],2026-08-14T20:20:15,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,6,1.0000,5,5,True,False,996,12,0.004814,8500,5898,openai.gpt-oss-120b-1:0,bedrock,23.0,[],2026-08-14T20:20:38,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,7,1.0000,5,5,True,False,993,12,0.006990,16215,7597,openai.gpt-oss-120b-1:0,bedrock,32.4,[],2026-08-14T20:21:10,gpt-oss-120b,bedrock,native
+prog19_palindrome_checker,8,0.0000,0,5,False,False,991,12,0.003422,7596,3805,openai.gpt-oss-120b-1:0,bedrock,21.6,"/w/candidate.c:41:1: error: extraneous closing brace ('}')
+   41 | }
+      | ^
+1 error generated.
+",2026-08-14T20:21:32,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,1,0.0000,0,5,False,False,971,12,0.002401,4320,2922,openai.gpt-oss-120b-1:0,bedrock,29.6,"/w/candidate.c:40:1: error: extraneous closing brace ('}')
+   40 | }
+      | ^
+1 error generated.
+",2026-08-14T20:22:02,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,2,1.0000,5,5,True,False,1013,12,0.003662,8647,3941,openai.gpt-oss-120b-1:0,bedrock,31.7,[],2026-08-14T20:22:33,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,3,1.0000,5,5,True,False,1365,12,0.002168,4320,2533,openai.gpt-oss-120b-1:0,bedrock,33.6,[],2026-08-14T20:23:07,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,4,1.0000,5,5,True,False,1044,12,0.004078,12820,3592,openai.gpt-oss-120b-1:0,bedrock,49.6,[],2026-08-14T20:23:57,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,5,1.0000,5,5,True,False,974,12,0.004125,12905,3648,openai.gpt-oss-120b-1:0,bedrock,50.9,[],2026-08-14T20:24:47,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,6,1.0000,5,5,True,False,1750,12,0.006637,16005,7060,openai.gpt-oss-120b-1:0,bedrock,50.4,[],2026-08-14T20:25:38,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,7,1.0000,5,5,True,False,1340,12,0.002180,4320,2553,openai.gpt-oss-120b-1:0,bedrock,20.4,[],2026-08-14T20:25:58,gpt-oss-120b,bedrock,native
+prog20_anagram_checker,8,1.0000,5,5,True,False,1020,12,0.004138,12907,3670,openai.gpt-oss-120b-1:0,bedrock,46.3,[],2026-08-14T20:26:45,gpt-oss-120b,bedrock,native
+prog21_date_validator,1,0.0000,0,5,False,True,0,12,0.005690,4860,8269,openai.gpt-oss-120b-1:0,bedrock,25.0,nessun candidato prodotto,2026-08-14T20:27:10,gpt-oss-120b,bedrock,native
+prog21_date_validator,2,1.0000,5,5,True,False,1917,12,0.017703,29698,22081,openai.gpt-oss-120b-1:0,bedrock,117.4,[],2026-08-14T20:29:07,gpt-oss-120b,bedrock,native
+prog21_date_validator,3,1.0000,5,5,True,False,1859,12,0.005330,9459,6518,openai.gpt-oss-120b-1:0,bedrock,44.8,[],2026-08-14T20:29:52,gpt-oss-120b,bedrock,native
+prog21_date_validator,4,0.0000,0,5,False,True,0,12,0.005690,4860,8269,openai.gpt-oss-120b-1:0,bedrock,44.2,nessun candidato prodotto,2026-08-14T20:30:36,gpt-oss-120b,bedrock,native
+prog21_date_validator,5,0.6000,3,5,True,False,1054,12,0.004039,9737,4298,openai.gpt-oss-120b-1:0,bedrock,69.5,[],2026-08-14T20:31:45,gpt-oss-120b,bedrock,native
+prog21_date_validator,6,0.0000,0,5,False,True,0,12,0.005690,4860,8269,openai.gpt-oss-120b-1:0,bedrock,24.0,nessun candidato prodotto,2026-08-14T20:32:09,gpt-oss-120b,bedrock,native
+prog21_date_validator,7,1.0000,5,5,True,False,1998,12,0.005301,15905,4858,openai.gpt-oss-120b-1:0,bedrock,43.5,[],2026-08-14T20:32:53,gpt-oss-120b,bedrock,native
+prog21_date_validator,8,0.8000,4,5,True,False,1288,12,0.005118,9948,6043,openai.gpt-oss-120b-1:0,bedrock,40.2,[],2026-08-14T20:33:33,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,1,0.8000,4,5,True,False,1491,12,0.003333,5489,4182,openai.gpt-oss-120b-1:0,bedrock,27.1,[],2026-08-14T20:34:00,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,2,0.8000,4,5,True,False,1825,12,0.015140,30817,17529,openai.gpt-oss-120b-1:0,bedrock,111.9,[],2026-08-14T20:35:52,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,3,0.8000,4,5,True,False,1535,12,0.004823,10691,5366,openai.gpt-oss-120b-1:0,bedrock,74.6,[],2026-08-14T20:37:07,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,4,0.8000,4,5,True,False,2337,12,0.017643,52767,16213,openai.gpt-oss-120b-1:0,bedrock,180.7,[],2026-08-14T20:40:07,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,5,0.8000,4,5,True,False,1563,12,0.004611,10517,5056,openai.gpt-oss-120b-1:0,bedrock,97.5,[],2026-08-14T20:41:45,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,6,0.8000,4,5,True,False,1468,12,0.004605,10891,4952,openai.gpt-oss-120b-1:0,bedrock,23.1,[],2026-08-14T20:42:08,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,7,0.8000,4,5,True,False,1733,12,0.004678,5489,6424,openai.gpt-oss-120b-1:0,bedrock,80.7,[],2026-08-14T20:43:29,gpt-oss-120b,bedrock,native
+prog22_snake_camel_convert,8,0.8000,4,5,True,False,1570,12,0.003232,5489,4015,openai.gpt-oss-120b-1:0,bedrock,29.5,[],2026-08-14T20:43:58,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,1,0.6000,3,5,True,False,1208,12,0.005746,11422,6721,openai.gpt-oss-120b-1:0,bedrock,67.5,[],2026-08-14T20:45:06,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,2,0.6000,3,5,True,False,728,12,0.004797,7863,6029,openai.gpt-oss-120b-1:0,bedrock,32.4,[],2026-08-14T20:45:38,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,3,0.0000,0,5,False,True,0,12,0.008877,10333,12212,openai.gpt-oss-120b-1:0,bedrock,239.2,nessun candidato prodotto,2026-08-14T20:49:37,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,4,0.4000,2,5,True,False,658,12,0.008078,18854,8750,openai.gpt-oss-120b-1:0,bedrock,54.9,[],2026-08-14T20:50:32,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,5,0.0000,0,5,False,False,860,12,0.005211,4114,7656,openai.gpt-oss-120b-1:0,bedrock,42.4,"/w/candidate.c:29:1: error: extraneous closing brace ('}')
+   29 | }
+      | ^
+1 error generated.
+",2026-08-14T20:51:15,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,6,0.0000,0,5,False,True,0,12,0.010785,14560,14335,openai.gpt-oss-120b-1:0,bedrock,117.0,nessun candidato prodotto,2026-08-14T20:53:12,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,7,0.4000,2,5,True,False,1050,12,0.002910,7182,3055,openai.gpt-oss-120b-1:0,bedrock,40.7,[],2026-08-14T20:53:52,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,8,0.0000,0,5,False,False,0,12,0.010128,14552,13242,openai.gpt-oss-120b-1:0,bedrock,55.7,nessun candidato prodotto,2026-08-14T20:54:48,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,1,0.0000,0,5,False,False,2382,12,0.018373,82756,9933,openai.gpt-oss-120b-1:0,bedrock,75.4,"/w/candidate.c:72:27: error: invalid operands to binary expression ('size_t' (aka 'unsigned long') and 'const char *')
+   72 |             val_len = end - (eq + 1);
+      |                       ~~~ ^ ~~~~~~~~
+1 error generated.
+",2026-08-14T20:56:03,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,2,0.8000,4,5,True,False,1967,12,0.009227,33662,6962,openai.gpt-oss-120b-1:0,bedrock,52.9,[],2026-08-14T20:56:56,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,3,0.8000,4,5,True,False,3349,12,0.007385,27852,5346,openai.gpt-oss-120b-1:0,bedrock,76.9,[],2026-08-14T20:58:13,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,4,0.8000,4,5,True,False,3360,12,0.006220,21532,4984,openai.gpt-oss-120b-1:0,bedrock,48.1,[],2026-08-14T20:59:01,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,5,0.4000,2,5,True,False,1907,12,0.008214,39738,3755,openai.gpt-oss-120b-1:0,bedrock,33.1,[],2026-08-14T20:59:34,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,6,0.8000,4,5,True,False,3166,12,0.010654,45853,6294,openai.gpt-oss-120b-1:0,bedrock,38.2,[],2026-08-14T21:00:13,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,7,0.8000,4,5,True,False,3305,12,0.013196,56211,7940,openai.gpt-oss-120b-1:0,bedrock,100.4,[],2026-08-14T21:01:53,gpt-oss-120b,bedrock,native
+prog24_query_string_parser,8,0.6000,3,5,True,False,1961,12,0.006607,21584,5615,openai.gpt-oss-120b-1:0,bedrock,51.6,[],2026-08-14T21:02:45,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,1,0.0000,0,5,False,True,0,12,0.004280,12147,4097,openai.gpt-oss-120b-1:0,bedrock,42.9,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.10.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most rece",2026-08-14T21:03:27,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,2,1.0000,5,5,True,False,999,12,0.002468,8694,1939,openai.gpt-oss-120b-1:0,bedrock,18.9,[],2026-08-14T21:03:46,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,3,1.0000,5,5,True,False,917,12,0.003804,12147,3304,openai.gpt-oss-120b-1:0,bedrock,50.7,[],2026-08-14T21:04:37,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,4,1.0000,5,5,True,False,1348,12,0.001956,4538,2125,openai.gpt-oss-120b-1:0,bedrock,11.3,[],2026-08-14T21:04:48,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,5,0.8000,4,5,True,False,1144,12,0.006013,12537,6887,openai.gpt-oss-120b-1:0,bedrock,42.5,[],2026-08-14T21:05:31,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,6,0.0000,0,5,False,False,1460,12,0.007948,21572,7853,openai.gpt-oss-120b-1:0,bedrock,53.1,"/w/candidate.c:15:27: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |     char *stack = (char *)malloc(len + 1);
+      |                           ^
+/w/can",2026-08-14T21:06:24,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,7,1.0000,5,5,True,False,1261,12,0.002772,4538,3485,openai.gpt-oss-120b-1:0,bedrock,16.8,[],2026-08-14T21:06:41,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,8,0.8000,4,5,True,False,1612,12,0.006606,15776,7066,openai.gpt-oss-120b-1:0,bedrock,59.7,[],2026-08-14T21:07:40,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,1,0.8000,4,5,True,False,1088,12,0.004707,10684,5174,openai.gpt-oss-120b-1:0,bedrock,28.1,[],2026-08-14T21:08:08,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,2,1.0000,5,5,True,False,1798,12,0.004574,8706,5447,openai.gpt-oss-120b-1:0,bedrock,70.9,[],2026-08-14T21:09:19,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,3,1.0000,5,5,True,False,2226,12,0.007527,21347,7208,openai.gpt-oss-120b-1:0,bedrock,47.1,[],2026-08-14T21:10:07,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,4,1.0000,5,5,True,False,1055,12,0.003678,8806,3929,openai.gpt-oss-120b-1:0,bedrock,24.5,[],2026-08-14T21:10:31,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,5,1.0000,5,5,True,False,2161,12,0.003706,8910,3949,openai.gpt-oss-120b-1:0,bedrock,26.4,[],2026-08-14T21:10:57,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,6,1.0000,5,5,True,False,1168,12,0.003638,8839,3854,openai.gpt-oss-120b-1:0,bedrock,21.3,[],2026-08-14T21:11:19,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,7,1.0000,5,5,True,False,1798,12,0.004178,8706,4786,openai.gpt-oss-120b-1:0,bedrock,63.0,[],2026-08-14T21:12:22,gpt-oss-120b,bedrock,native
+prog26_wildcard_match,8,1.0000,5,5,True,False,1143,12,0.003391,8908,3425,openai.gpt-oss-120b-1:0,bedrock,16.1,[],2026-08-14T21:12:38,gpt-oss-120b,bedrock,native
+prog27_soundex,1,0.6000,3,5,True,False,1477,12,0.005097,12828,5288,openai.gpt-oss-120b-1:0,bedrock,33.9,[],2026-08-14T21:13:12,gpt-oss-120b,bedrock,native
+prog27_soundex,2,0.6000,3,5,True,False,1239,12,0.006676,20893,5903,openai.gpt-oss-120b-1:0,bedrock,42.5,[],2026-08-14T21:13:54,gpt-oss-120b,bedrock,native
+prog27_soundex,3,0.6000,3,5,True,False,1287,12,0.008942,30645,7242,openai.gpt-oss-120b-1:0,bedrock,51.6,[],2026-08-14T21:14:46,gpt-oss-120b,bedrock,native
+prog27_soundex,4,0.6000,3,5,True,False,1128,12,0.005542,21012,3983,openai.gpt-oss-120b-1:0,bedrock,30.4,[],2026-08-14T21:15:16,gpt-oss-120b,bedrock,native
+prog27_soundex,5,0.6000,3,5,True,False,1120,12,0.010826,36899,8818,openai.gpt-oss-120b-1:0,bedrock,126.8,[],2026-08-14T21:17:23,gpt-oss-120b,bedrock,native
+prog27_soundex,6,0.0000,0,5,False,False,1475,12,0.005426,12828,5836,openai.gpt-oss-120b-1:0,bedrock,111.8,"/w/candidate.c:57:1: error: extraneous closing brace ('}')
+   57 | }
+      | ^
+1 error generated.
+",2026-08-14T21:19:15,gpt-oss-120b,bedrock,native
+prog27_soundex,7,0.0000,0,5,True,False,1743,12,0.006091,12828,6944,openai.gpt-oss-120b-1:0,bedrock,54.7,[],2026-08-14T21:20:09,gpt-oss-120b,bedrock,native
+prog27_soundex,8,0.6000,3,5,True,False,1192,12,0.013767,54286,9373,openai.gpt-oss-120b-1:0,bedrock,163.4,[],2026-08-14T21:22:53,gpt-oss-120b,bedrock,native
+prog28_levenshtein,1,1.0000,5,5,True,False,897,12,0.001877,7144,1342,openai.gpt-oss-120b-1:0,bedrock,10.2,[],2026-08-14T21:23:03,gpt-oss-120b,bedrock,native
+prog28_levenshtein,2,1.0000,5,5,True,False,958,12,0.002210,7144,1898,openai.gpt-oss-120b-1:0,bedrock,29.2,[],2026-08-14T21:23:32,gpt-oss-120b,bedrock,native
+prog28_levenshtein,3,1.0000,5,5,True,False,1021,12,0.002165,7144,1822,openai.gpt-oss-120b-1:0,bedrock,24.4,[],2026-08-14T21:23:57,gpt-oss-120b,bedrock,native
+prog28_levenshtein,4,1.0000,5,5,True,False,941,12,0.001910,7144,1398,openai.gpt-oss-120b-1:0,bedrock,15.2,[],2026-08-14T21:24:12,gpt-oss-120b,bedrock,native
+prog28_levenshtein,5,1.0000,5,5,True,False,958,12,0.002201,7144,1882,openai.gpt-oss-120b-1:0,bedrock,28.7,[],2026-08-14T21:24:40,gpt-oss-120b,bedrock,native
+prog28_levenshtein,6,1.0000,5,5,True,False,958,12,0.002209,7144,1895,openai.gpt-oss-120b-1:0,bedrock,31.9,[],2026-08-14T21:25:12,gpt-oss-120b,bedrock,native
+prog28_levenshtein,7,1.0000,5,5,True,False,958,12,0.002197,7144,1875,openai.gpt-oss-120b-1:0,bedrock,29.2,[],2026-08-14T21:25:42,gpt-oss-120b,bedrock,native
+prog28_levenshtein,8,1.0000,5,5,True,False,958,12,0.002210,7144,1898,openai.gpt-oss-120b-1:0,bedrock,29.6,[],2026-08-14T21:26:11,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,1,0.4000,2,5,True,False,2655,12,0.015569,74838,7239,openai.gpt-oss-120b-1:0,bedrock,63.1,[],2026-08-14T21:27:14,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,2,0.2000,1,5,True,False,2864,12,0.013381,73257,3987,openai.gpt-oss-120b-1:0,bedrock,72.7,[],2026-08-14T21:28:27,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,3,1.0000,5,5,True,False,3689,12,0.012287,59763,5537,openai.gpt-oss-120b-1:0,bedrock,48.7,[],2026-08-14T21:29:16,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,4,0.0000,0,5,False,False,0,12,0.011458,50408,6495,openai.gpt-oss-120b-1:0,bedrock,41.2,nessun candidato prodotto,2026-08-14T21:29:57,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,5,1.0000,5,5,True,False,2057,12,0.013074,65788,5343,openai.gpt-oss-120b-1:0,bedrock,59.9,[],2026-08-14T21:30:57,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,6,1.0000,5,5,True,False,1746,12,0.010895,50846,5447,openai.gpt-oss-120b-1:0,bedrock,41.7,[],2026-08-14T21:31:38,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,7,1.0000,5,5,True,False,2155,12,0.015301,75031,6744,openai.gpt-oss-120b-1:0,bedrock,98.2,[],2026-08-14T21:33:17,gpt-oss-120b,bedrock,native
+prog29_roman_numeral_parser,8,1.0000,5,5,True,False,2989,12,0.011821,53912,6224,openai.gpt-oss-120b-1:0,bedrock,54.5,[],2026-08-14T21:34:11,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,1,1.0000,5,5,True,False,2592,12,0.013781,33176,14674,openai.gpt-oss-120b-1:0,bedrock,120.7,[],2026-08-14T21:36:12,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,2,0.6000,3,5,True,False,2198,12,0.011506,24290,13104,openai.gpt-oss-120b-1:0,bedrock,91.8,[],2026-08-14T21:37:44,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,3,1.0000,5,5,True,False,2895,12,0.007610,26315,6105,openai.gpt-oss-120b-1:0,bedrock,64.8,[],2026-08-14T21:38:49,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,4,0.6000,3,5,True,False,3012,12,0.012433,42467,10105,openai.gpt-oss-120b-1:0,bedrock,134.9,[],2026-08-14T21:41:03,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,5,0.6000,3,5,True,False,2540,12,0.005342,11422,6048,openai.gpt-oss-120b-1:0,bedrock,35.3,[],2026-08-14T21:41:39,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,6,1.0000,5,5,True,False,2155,12,0.008345,22520,8278,openai.gpt-oss-120b-1:0,bedrock,92.0,[],2026-08-14T21:43:11,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,7,1.0000,5,5,True,False,3082,12,0.010046,35299,7919,openai.gpt-oss-120b-1:0,bedrock,52.5,[],2026-08-14T21:44:03,gpt-oss-120b,bedrock,native
+prog30_escape_unescape,8,1.0000,5,5,True,False,5097,12,0.015803,52597,13189,openai.gpt-oss-120b-1:0,bedrock,165.7,[],2026-08-14T21:46:49,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,1,0.0000,0,5,False,False,1779,12,0.003161,3980,4274,openai.gpt-oss-120b-1:0,bedrock,58.2,"/w/candidate.c:32:27: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   32 |     if (end1 != argv[1] + strlen(argv[1]) || end2 != argv[2] + strlen(argv[2])",2026-08-14T21:47:47,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,2,1.0000,5,5,True,False,1024,12,0.007326,12003,9209,openai.gpt-oss-120b-1:0,bedrock,45.3,[],2026-08-14T21:48:32,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,3,1.0000,5,5,True,False,1283,12,0.004928,3980,7218,openai.gpt-oss-120b-1:0,bedrock,45.0,[],2026-08-14T21:49:17,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,4,1.0000,5,5,True,False,1669,12,0.007855,19308,8265,openai.gpt-oss-120b-1:0,bedrock,61.0,[],2026-08-14T21:50:18,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,5,1.0000,5,5,True,False,1016,12,0.006799,12258,8267,openai.gpt-oss-120b-1:0,bedrock,35.4,[],2026-08-14T21:50:54,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,6,0.8000,4,5,True,False,1084,12,0.003223,3980,4376,openai.gpt-oss-120b-1:0,bedrock,24.6,[],2026-08-14T21:51:18,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,7,1.0000,5,5,True,False,982,12,0.004561,8054,5588,openai.gpt-oss-120b-1:0,bedrock,35.1,[],2026-08-14T21:51:54,gpt-oss-120b,bedrock,native
+prog31_gcd_lcm,8,0.8000,4,5,True,False,1247,12,0.003200,3980,4339,openai.gpt-oss-120b-1:0,bedrock,89.5,[],2026-08-14T21:53:23,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,1,1.0000,5,5,True,False,1109,12,0.003948,3523,5700,openai.gpt-oss-120b-1:0,bedrock,27.1,[],2026-08-14T21:53:50,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,2,1.0000,5,5,True,False,894,12,0.002789,3523,3768,openai.gpt-oss-120b-1:0,bedrock,17.5,[],2026-08-14T21:54:07,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,3,0.0000,0,5,False,False,1025,12,0.005538,11548,6343,openai.gpt-oss-120b-1:0,bedrock,51.7,harness_error: IndexError: list index out of range,2026-08-14T21:54:59,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,4,1.0000,5,5,True,False,1505,12,0.004075,10021,4287,openai.gpt-oss-120b-1:0,bedrock,93.8,[],2026-08-14T21:56:33,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,5,1.0000,5,5,True,False,1467,12,0.005106,10550,5873,openai.gpt-oss-120b-1:0,bedrock,40.3,[],2026-08-14T21:57:13,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,6,1.0000,5,5,True,False,1729,12,0.007256,10540,9458,openai.gpt-oss-120b-1:0,bedrock,64.0,[],2026-08-14T21:58:17,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,7,1.0000,5,5,True,False,1542,12,0.004291,10108,4624,openai.gpt-oss-120b-1:0,bedrock,37.7,[],2026-08-14T21:58:55,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,8,1.0000,5,5,True,False,934,12,0.002745,3523,3694,openai.gpt-oss-120b-1:0,bedrock,11.6,[],2026-08-14T21:59:07,gpt-oss-120b,bedrock,native
+prog33_mod_pow,1,1.0000,5,5,True,False,2273,12,0.004423,10758,4683,openai.gpt-oss-120b-1:0,bedrock,28.2,[],2026-08-14T21:59:35,gpt-oss-120b,bedrock,native
+prog33_mod_pow,2,1.0000,5,5,True,False,1132,12,0.002316,3600,2960,openai.gpt-oss-120b-1:0,bedrock,17.1,[],2026-08-14T21:59:52,gpt-oss-120b,bedrock,native
+prog33_mod_pow,3,1.0000,5,5,True,False,2792,12,0.010598,31395,9814,openai.gpt-oss-120b-1:0,bedrock,95.5,[],2026-08-14T22:01:27,gpt-oss-120b,bedrock,native
+prog33_mod_pow,4,1.0000,5,5,True,False,2490,12,0.004857,10815,5391,openai.gpt-oss-120b-1:0,bedrock,35.1,[],2026-08-14T22:02:03,gpt-oss-120b,bedrock,native
+prog33_mod_pow,5,1.0000,5,5,True,False,1373,12,0.002548,3600,3346,openai.gpt-oss-120b-1:0,bedrock,19.0,[],2026-08-14T22:02:22,gpt-oss-120b,bedrock,native
+prog33_mod_pow,6,1.0000,5,5,True,False,2889,12,0.014239,36414,14629,openai.gpt-oss-120b-1:0,bedrock,100.3,[],2026-08-14T22:04:02,gpt-oss-120b,bedrock,native
+prog33_mod_pow,7,0.0000,0,5,False,False,1368,12,0.002360,3600,3033,openai.gpt-oss-120b-1:0,bedrock,14.9,"/w/candidate.c:58:1: error: extraneous closing brace ('}')
+   58 | }
+      | ^
+1 error generated.
+",2026-08-14T22:04:17,gpt-oss-120b,bedrock,native
+prog33_mod_pow,8,1.0000,5,5,True,False,1278,12,0.002354,3600,3023,openai.gpt-oss-120b-1:0,bedrock,11.9,[],2026-08-14T22:04:29,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,1,1.0000,5,5,True,False,1325,12,0.004324,7493,5334,openai.gpt-oss-120b-1:0,bedrock,55.8,[],2026-08-14T22:05:24,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,2,1.0000,5,5,True,False,1342,12,0.005081,7679,6549,openai.gpt-oss-120b-1:0,bedrock,76.8,[],2026-08-14T22:06:41,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,3,1.0000,5,5,True,False,1468,12,0.005575,10830,6584,openai.gpt-oss-120b-1:0,bedrock,40.2,[],2026-08-14T22:07:21,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,4,1.0000,5,5,True,False,1764,12,0.005507,11271,6360,openai.gpt-oss-120b-1:0,bedrock,39.3,[],2026-08-14T22:08:01,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,5,1.0000,5,5,True,False,1617,12,0.005203,10854,5958,openai.gpt-oss-120b-1:0,bedrock,25.6,[],2026-08-14T22:08:26,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,6,1.0000,5,5,True,False,1325,12,0.003024,7493,3167,openai.gpt-oss-120b-1:0,bedrock,47.3,[],2026-08-14T22:09:14,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,7,1.0000,5,5,True,False,1325,12,0.003020,7493,3160,openai.gpt-oss-120b-1:0,bedrock,49.2,[],2026-08-14T22:10:03,gpt-oss-120b,bedrock,native
+prog34_fibonacci_memo,8,1.0000,5,5,True,False,1325,12,0.004582,7493,5764,openai.gpt-oss-120b-1:0,bedrock,54.7,[],2026-08-14T22:10:58,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,1,1.0000,5,5,True,False,810,12,0.003350,3647,4672,openai.gpt-oss-120b-1:0,bedrock,55.6,[],2026-08-14T22:11:53,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,2,1.0000,5,5,True,False,1108,12,0.003396,10616,3006,openai.gpt-oss-120b-1:0,bedrock,77.7,[],2026-08-14T22:13:11,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,3,0.8000,4,5,True,False,752,12,0.003086,3647,4232,openai.gpt-oss-120b-1:0,bedrock,12.6,[],2026-08-14T22:13:24,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,4,1.0000,5,5,True,False,1041,12,0.005429,7084,7277,openai.gpt-oss-120b-1:0,bedrock,42.4,[],2026-08-14T22:14:06,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,5,1.0000,5,5,True,False,1102,12,0.005668,10214,6893,openai.gpt-oss-120b-1:0,bedrock,91.0,[],2026-08-14T22:15:37,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,6,1.0000,5,5,True,False,810,12,0.003348,3647,4669,openai.gpt-oss-120b-1:0,bedrock,63.8,[],2026-08-14T22:16:41,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,7,1.0000,5,5,True,False,810,12,0.002803,3647,3760,openai.gpt-oss-120b-1:0,bedrock,17.6,[],2026-08-14T22:16:58,gpt-oss-120b,bedrock,native
+prog35_perfect_numbers,8,1.0000,5,5,True,False,810,12,0.003350,3647,4672,openai.gpt-oss-120b-1:0,bedrock,63.0,[],2026-08-14T22:18:01,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,1,0.4000,2,5,True,False,2170,12,0.005040,11671,5483,openai.gpt-oss-120b-1:0,bedrock,71.5,[],2026-08-14T22:19:13,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,2,0.0000,0,5,False,False,924,12,0.005165,3775,7665,openai.gpt-oss-120b-1:0,bedrock,39.2,"/w/candidate.c:41:1: error: extraneous closing brace ('}')
+   41 | }
+      | ^
+1 error generated.
+",2026-08-14T22:19:52,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,3,0.4000,2,5,True,False,1835,12,0.005339,11419,6043,openai.gpt-oss-120b-1:0,bedrock,43.4,[],2026-08-14T22:20:35,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,4,0.4000,2,5,True,False,651,12,0.004053,3775,5812,openai.gpt-oss-120b-1:0,bedrock,50.1,[],2026-08-14T22:21:25,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,5,1.0000,5,5,True,False,849,12,0.003959,9274,4279,openai.gpt-oss-120b-1:0,bedrock,22.5,[],2026-08-14T22:21:48,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,6,0.4000,2,5,True,False,2170,12,0.005042,11671,5485,openai.gpt-oss-120b-1:0,bedrock,193.2,[],2026-08-14T22:25:01,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,7,0.4000,2,5,True,False,2170,12,0.005040,11671,5483,openai.gpt-oss-120b-1:0,bedrock,69.9,[],2026-08-14T22:26:11,gpt-oss-120b,bedrock,native
+prog36_pascal_triangle,8,0.4000,2,5,True,False,2170,12,0.005040,11671,5483,openai.gpt-oss-120b-1:0,bedrock,70.3,[],2026-08-14T22:27:21,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,1,1.0000,5,5,True,False,855,12,0.002457,5180,2800,openai.gpt-oss-120b-1:0,bedrock,14.5,[],2026-08-14T22:27:36,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,2,1.0000,5,5,True,False,902,12,0.005110,5180,7222,openai.gpt-oss-120b-1:0,bedrock,41.7,[],2026-08-14T22:28:18,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,3,1.0000,5,5,True,False,1006,12,0.005544,13398,5890,openai.gpt-oss-120b-1:0,bedrock,40.0,[],2026-08-14T22:28:58,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,4,1.0000,5,5,True,False,1285,12,0.002401,5180,2706,openai.gpt-oss-120b-1:0,bedrock,76.9,[],2026-08-14T22:30:14,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,5,1.0000,5,5,True,False,2079,12,0.003169,8362,3192,openai.gpt-oss-120b-1:0,bedrock,25.4,[],2026-08-14T22:30:40,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,6,0.0000,0,5,False,True,0,12,0.005805,5180,8380,openai.gpt-oss-120b-1:0,bedrock,32.7,nessun candidato prodotto,2026-08-14T22:31:13,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,7,1.0000,5,5,True,False,1262,12,0.006249,8859,8200,openai.gpt-oss-120b-1:0,bedrock,48.0,[],2026-08-14T22:32:01,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,8,1.0000,5,5,True,False,920,12,0.002659,6953,2694,openai.gpt-oss-120b-1:0,bedrock,35.8,[],2026-08-14T22:32:36,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,1,0.6000,3,5,True,False,1438,12,0.005880,11843,6840,openai.gpt-oss-120b-1:0,bedrock,43.9,[],2026-08-14T22:33:20,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,2,0.8000,4,5,True,False,2054,12,0.005618,9202,7063,openai.gpt-oss-120b-1:0,bedrock,34.7,[],2026-08-14T22:33:55,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,3,0.8000,4,5,True,False,1199,12,0.015137,30799,17529,openai.gpt-oss-120b-1:0,bedrock,115.6,[],2026-08-14T22:35:50,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,4,0.6000,3,5,True,False,1492,12,0.005119,12826,5326,openai.gpt-oss-120b-1:0,bedrock,120.9,[],2026-08-14T22:37:51,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,5,1.0000,5,5,True,False,2351,12,0.010171,29671,9534,openai.gpt-oss-120b-1:0,bedrock,73.6,[],2026-08-14T22:39:05,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,6,0.8000,4,5,True,False,2014,12,0.006553,13504,7546,openai.gpt-oss-120b-1:0,bedrock,48.7,[],2026-08-14T22:39:54,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,7,0.2000,1,5,True,False,1428,12,0.006362,18688,5931,openai.gpt-oss-120b-1:0,bedrock,51.2,[],2026-08-14T22:40:45,gpt-oss-120b,bedrock,native
+prog38_continued_fraction,8,0.8000,4,5,True,False,1598,12,0.003675,4633,4966,openai.gpt-oss-120b-1:0,bedrock,15.4,[],2026-08-14T22:41:00,gpt-oss-120b,bedrock,native
+prog39_horner,1,1.0000,5,5,True,False,2715,12,0.016709,42422,17243,openai.gpt-oss-120b-1:0,bedrock,91.0,[],2026-08-14T22:42:31,gpt-oss-120b,bedrock,native
+prog39_horner,2,1.0000,5,5,True,False,1720,12,0.005760,8806,7398,openai.gpt-oss-120b-1:0,bedrock,42.8,[],2026-08-14T22:43:14,gpt-oss-120b,bedrock,native
+prog39_horner,3,0.0000,0,5,False,True,0,12,0.002636,7904,2418,openai.gpt-oss-120b-1:0,bedrock,13.6,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.8.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T22:43:28,gpt-oss-120b,bedrock,native
+prog39_horner,4,0.0000,0,5,False,True,0,12,0.002678,7904,2488,openai.gpt-oss-120b-1:0,bedrock,19.5,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.8.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most recen",2026-08-14T22:43:47,gpt-oss-120b,bedrock,native
+prog39_horner,5,0.0000,0,5,False,False,0,12,0.006273,8478,8336,openai.gpt-oss-120b-1:0,bedrock,23.1,nessun candidato prodotto,2026-08-14T22:44:10,gpt-oss-120b,bedrock,native
+prog39_horner,6,1.0000,5,5,True,False,1078,12,0.009082,17072,10869,openai.gpt-oss-120b-1:0,bedrock,57.1,[],2026-08-14T22:45:07,gpt-oss-120b,bedrock,native
+prog39_horner,7,1.0000,5,5,True,False,1226,12,0.003865,4461,5327,openai.gpt-oss-120b-1:0,bedrock,22.1,[],2026-08-14T22:45:30,gpt-oss-120b,bedrock,native
+prog39_horner,8,1.0000,5,5,True,False,1226,12,0.013551,33456,14221,openai.gpt-oss-120b-1:0,bedrock,72.1,[],2026-08-14T22:46:42,gpt-oss-120b,bedrock,native
+prog40_bisection_root,1,0.0000,0,5,False,False,547,12,0.004871,5173,6825,openai.gpt-oss-120b-1:0,bedrock,58.6,"/usr/bin/ld: /tmp/candidate-3910a9.o: in function `main':
+candidate.c:(.text+0xd4): undefined reference to `sqrt'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+",2026-08-14T22:47:40,gpt-oss-120b,bedrock,native
+prog40_bisection_root,2,1.0000,5,5,True,False,2222,12,0.008768,21204,9312,openai.gpt-oss-120b-1:0,bedrock,53.5,[],2026-08-14T22:48:34,gpt-oss-120b,bedrock,native
+prog40_bisection_root,3,1.0000,5,5,True,False,806,12,0.008393,14412,10386,openai.gpt-oss-120b-1:0,bedrock,58.4,[],2026-08-14T22:49:32,gpt-oss-120b,bedrock,native
+prog40_bisection_root,4,1.0000,5,5,True,False,809,12,0.008214,25449,7328,openai.gpt-oss-120b-1:0,bedrock,90.2,[],2026-08-14T22:51:02,gpt-oss-120b,bedrock,native
+prog40_bisection_root,5,0.8000,4,5,True,False,1500,12,0.006148,13795,6798,openai.gpt-oss-120b-1:0,bedrock,47.2,[],2026-08-14T22:51:49,gpt-oss-120b,bedrock,native
+prog40_bisection_root,6,1.0000,5,5,True,False,1729,12,0.007659,17694,8341,openai.gpt-oss-120b-1:0,bedrock,61.0,[],2026-08-14T22:52:50,gpt-oss-120b,bedrock,native
+prog40_bisection_root,7,1.0000,5,5,True,False,818,12,0.007759,21002,7682,openai.gpt-oss-120b-1:0,bedrock,93.0,[],2026-08-14T22:54:23,gpt-oss-120b,bedrock,native
+prog40_bisection_root,8,0.4000,2,5,True,False,1583,12,0.010331,44624,6062,openai.gpt-oss-120b-1:0,bedrock,57.7,[],2026-08-14T22:55:21,gpt-oss-120b,bedrock,native
+prog41_series_sum,1,1.0000,5,5,True,False,1773,12,0.016240,40508,16939,openai.gpt-oss-120b-1:0,bedrock,127.1,[],2026-08-14T22:57:28,gpt-oss-120b,bedrock,native
+prog41_series_sum,2,0.8000,4,5,True,False,885,12,0.011234,25182,12428,openai.gpt-oss-120b-1:0,bedrock,83.2,[],2026-08-14T22:58:52,gpt-oss-120b,bedrock,native
+prog41_series_sum,3,0.2000,1,5,True,False,1765,12,0.021679,60937,20897,openai.gpt-oss-120b-1:0,bedrock,153.1,[],2026-08-14T23:01:25,gpt-oss-120b,bedrock,native
+prog41_series_sum,4,1.0000,5,5,True,False,1350,12,0.021622,28828,28830,openai.gpt-oss-120b-1:0,bedrock,143.1,[],2026-08-14T23:03:48,gpt-oss-120b,bedrock,native
+prog41_series_sum,5,0.8000,4,5,True,False,1069,12,0.018825,44994,20126,openai.gpt-oss-120b-1:0,bedrock,159.0,[],2026-08-14T23:06:27,gpt-oss-120b,bedrock,native
+prog41_series_sum,6,0.0000,0,5,True,False,1105,12,0.019619,59436,17840,openai.gpt-oss-120b-1:0,bedrock,216.5,[],2026-08-14T23:10:03,gpt-oss-120b,bedrock,native
+prog41_series_sum,7,1.0000,5,5,True,False,2852,12,0.004993,8626,6166,openai.gpt-oss-120b-1:0,bedrock,62.5,[],2026-08-14T23:11:06,gpt-oss-120b,bedrock,native
+prog41_series_sum,8,0.8000,4,5,True,False,1294,12,0.013488,29362,15140,openai.gpt-oss-120b-1:0,bedrock,199.0,[],2026-08-14T23:14:25,gpt-oss-120b,bedrock,native
+prog42_collatz,1,1.0000,5,5,True,False,939,12,0.003635,9084,3788,openai.gpt-oss-120b-1:0,bedrock,53.0,[],2026-08-14T23:15:18,gpt-oss-120b,bedrock,native
+prog42_collatz,2,0.0000,0,5,False,False,1214,12,0.001460,3137,1649,openai.gpt-oss-120b-1:0,bedrock,11.8,"/w/candidate.c:9:16: error: expected identifier or '('
+    9 |     const long MAX_INPUT = 1000000000L; // 1e9
+      |                ^
+/usr/include/linux/limits.h:11:26: note: expanded from macro 'MAX_INPUT'
+   11 | #define MAX_INPUT        255    /* size of the type-ahead buffer */
+      |         ",2026-08-14T23:15:30,gpt-oss-120b,bedrock,native
+prog42_collatz,3,1.0000,5,5,True,False,939,12,0.003633,9079,3785,openai.gpt-oss-120b-1:0,bedrock,45.8,[],2026-08-14T23:16:15,gpt-oss-120b,bedrock,native
+prog42_collatz,4,1.0000,5,5,True,False,1104,12,0.004300,6374,5573,openai.gpt-oss-120b-1:0,bedrock,26.9,[],2026-08-14T23:16:42,gpt-oss-120b,bedrock,native
+prog42_collatz,5,1.0000,5,5,True,False,928,12,0.002435,3137,3274,openai.gpt-oss-120b-1:0,bedrock,14.8,[],2026-08-14T23:16:57,gpt-oss-120b,bedrock,native
+prog42_collatz,6,1.0000,5,5,True,False,1104,12,0.002512,3137,3402,openai.gpt-oss-120b-1:0,bedrock,40.1,[],2026-08-14T23:17:37,gpt-oss-120b,bedrock,native
+prog42_collatz,7,1.0000,5,5,True,False,1047,12,0.004910,9854,5720,openai.gpt-oss-120b-1:0,bedrock,36.1,[],2026-08-14T23:18:13,gpt-oss-120b,bedrock,native
+prog42_collatz,8,1.0000,5,5,True,False,1021,12,0.003790,9582,3922,openai.gpt-oss-120b-1:0,bedrock,31.1,[],2026-08-14T23:18:44,gpt-oss-120b,bedrock,native
+prog43_catalan,1,1.0000,5,5,True,False,1566,12,0.006482,8851,8591,openai.gpt-oss-120b-1:0,bedrock,41.9,[],2026-08-14T23:19:26,gpt-oss-120b,bedrock,native
+prog43_catalan,2,0.4000,2,5,True,False,1046,12,0.005189,6635,6990,openai.gpt-oss-120b-1:0,bedrock,22.1,[],2026-08-14T23:19:48,gpt-oss-120b,bedrock,native
+prog43_catalan,3,0.4000,2,5,True,False,1343,12,0.007542,13458,9205,openai.gpt-oss-120b-1:0,bedrock,57.4,[],2026-08-14T23:20:46,gpt-oss-120b,bedrock,native
+prog43_catalan,4,0.2000,1,5,True,False,828,12,0.006107,12603,7027,openai.gpt-oss-120b-1:0,bedrock,102.5,[],2026-08-14T23:22:28,gpt-oss-120b,bedrock,native
+prog43_catalan,5,0.2000,1,5,True,False,1672,12,0.008292,12742,10635,openai.gpt-oss-120b-1:0,bedrock,58.2,[],2026-08-14T23:23:26,gpt-oss-120b,bedrock,native
+prog43_catalan,6,0.4000,2,5,True,False,944,12,0.005238,6793,7032,openai.gpt-oss-120b-1:0,bedrock,37.3,[],2026-08-14T23:24:04,gpt-oss-120b,bedrock,native
+prog43_catalan,7,0.6000,3,5,True,False,710,12,0.002904,3379,3995,openai.gpt-oss-120b-1:0,bedrock,12.3,[],2026-08-14T23:24:16,gpt-oss-120b,bedrock,native
+prog43_catalan,8,0.8000,4,5,True,False,683,12,0.002209,3379,2837,openai.gpt-oss-120b-1:0,bedrock,11.1,[],2026-08-14T23:24:27,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,1,1.0000,5,5,True,False,2474,12,0.011494,40406,9056,openai.gpt-oss-120b-1:0,bedrock,123.3,[],2026-08-14T23:26:30,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,2,1.0000,5,5,True,False,1962,12,0.002573,6200,2739,openai.gpt-oss-120b-1:0,bedrock,73.8,[],2026-08-14T23:27:44,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,3,1.0000,5,5,True,False,2036,12,0.025927,105908,16734,openai.gpt-oss-120b-1:0,bedrock,84.3,[],2026-08-14T23:29:08,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,4,1.0000,5,5,True,False,3006,12,0.009072,25760,8680,openai.gpt-oss-120b-1:0,bedrock,52.5,[],2026-08-14T23:30:01,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,5,1.0000,5,5,True,False,1744,12,0.006391,12510,7525,openai.gpt-oss-120b-1:0,bedrock,51.8,[],2026-08-14T23:30:53,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,6,1.0000,5,5,True,False,2411,12,0.020889,85046,13554,openai.gpt-oss-120b-1:0,bedrock,83.0,[],2026-08-14T23:32:16,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,7,1.0000,5,5,True,False,1696,12,0.003536,6200,4343,openai.gpt-oss-120b-1:0,bedrock,15.9,[],2026-08-14T23:32:32,gpt-oss-120b,bedrock,native
+prog44_miller_rabin,8,1.0000,5,5,True,False,1841,12,0.008577,28151,7258,openai.gpt-oss-120b-1:0,bedrock,40.4,[],2026-08-14T23:33:12,gpt-oss-120b,bedrock,native
+prog45_josephus,1,1.0000,5,5,True,False,809,12,0.003321,3585,4639,openai.gpt-oss-120b-1:0,bedrock,52.1,[],2026-08-14T23:34:04,gpt-oss-120b,bedrock,native
+prog45_josephus,2,0.8000,4,5,True,False,1318,12,0.008385,10773,11281,openai.gpt-oss-120b-1:0,bedrock,90.1,[],2026-08-14T23:35:34,gpt-oss-120b,bedrock,native
+prog45_josephus,3,0.8000,4,5,True,False,1080,12,0.002424,3585,3143,openai.gpt-oss-120b-1:0,bedrock,16.2,[],2026-08-14T23:35:50,gpt-oss-120b,bedrock,native
+prog45_josephus,4,0.0000,0,5,False,True,0,12,0.005499,3585,8269,openai.gpt-oss-120b-1:0,bedrock,25.4,nessun candidato prodotto,2026-08-14T23:36:16,gpt-oss-120b,bedrock,native
+prog45_josephus,5,0.8000,4,5,True,False,1023,12,0.007381,11264,9486,openai.gpt-oss-120b-1:0,bedrock,47.7,[],2026-08-14T23:37:04,gpt-oss-120b,bedrock,native
+prog45_josephus,6,0.8000,4,5,True,False,1810,12,0.005424,10414,6436,openai.gpt-oss-120b-1:0,bedrock,70.6,[],2026-08-14T23:38:14,gpt-oss-120b,bedrock,native
+prog45_josephus,7,1.0000,5,5,True,False,842,12,0.006495,10530,8192,openai.gpt-oss-120b-1:0,bedrock,107.9,[],2026-08-14T23:40:02,gpt-oss-120b,bedrock,native
+prog45_josephus,8,0.0000,0,5,False,True,0,12,0.005499,3585,8269,openai.gpt-oss-120b-1:0,bedrock,47.5,nessun candidato prodotto,2026-08-14T23:40:50,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,1,1.0000,5,5,True,False,1885,12,0.012038,37767,10622,openai.gpt-oss-120b-1:0,bedrock,157.8,[],2026-08-14T23:43:27,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,2,1.0000,5,5,True,False,1746,12,0.007715,17036,8599,openai.gpt-oss-120b-1:0,bedrock,64.7,[],2026-08-14T23:44:32,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,3,0.6000,3,5,True,False,1673,12,0.005521,6331,7619,openai.gpt-oss-120b-1:0,bedrock,25.9,[],2026-08-14T23:44:58,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,4,1.0000,5,5,True,False,2131,12,0.004436,12646,4231,openai.gpt-oss-120b-1:0,bedrock,17.7,[],2026-08-14T23:45:16,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,5,1.0000,5,5,True,False,1575,12,0.003734,6331,4640,openai.gpt-oss-120b-1:0,bedrock,30.9,[],2026-08-14T23:45:46,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,6,1.0000,5,5,True,False,1239,12,0.014149,49990,11084,openai.gpt-oss-120b-1:0,bedrock,117.5,[],2026-08-14T23:47:44,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,7,1.0000,5,5,True,False,2213,12,0.004163,6331,5356,openai.gpt-oss-120b-1:0,bedrock,45.4,[],2026-08-14T23:48:29,gpt-oss-120b,bedrock,native
+prog46_postfix_stack,8,1.0000,5,5,True,False,1875,12,0.003245,6331,3826,openai.gpt-oss-120b-1:0,bedrock,26.2,[],2026-08-14T23:48:56,gpt-oss-120b,bedrock,native
+prog47_circular_queue,1,1.0000,5,5,True,False,2705,12,0.007928,22305,7637,openai.gpt-oss-120b-1:0,bedrock,54.3,[],2026-08-14T23:49:50,gpt-oss-120b,bedrock,native
+prog47_circular_queue,2,0.8000,4,5,True,False,1876,12,0.005607,18257,4780,openai.gpt-oss-120b-1:0,bedrock,34.2,[],2026-08-14T23:50:24,gpt-oss-120b,bedrock,native
+prog47_circular_queue,3,1.0000,5,5,True,False,1463,12,0.005328,17947,4394,openai.gpt-oss-120b-1:0,bedrock,33.7,[],2026-08-14T23:50:58,gpt-oss-120b,bedrock,native
+prog47_circular_queue,4,1.0000,5,5,True,False,1636,12,0.013694,65464,6458,openai.gpt-oss-120b-1:0,bedrock,56.9,[],2026-08-14T23:51:55,gpt-oss-120b,bedrock,native
+prog47_circular_queue,5,1.0000,5,5,True,False,1519,12,0.004625,9361,5368,openai.gpt-oss-120b-1:0,bedrock,32.8,[],2026-08-14T23:52:27,gpt-oss-120b,bedrock,native
+prog47_circular_queue,6,0.6000,3,5,True,False,1719,12,0.007330,28099,5192,openai.gpt-oss-120b-1:0,bedrock,98.9,[],2026-08-14T23:54:06,gpt-oss-120b,bedrock,native
+prog47_circular_queue,7,1.0000,5,5,True,False,1542,12,0.003263,9420,3083,openai.gpt-oss-120b-1:0,bedrock,15.3,[],2026-08-14T23:54:21,gpt-oss-120b,bedrock,native
+prog47_circular_queue,8,0.8000,4,5,True,False,1903,12,0.004697,14446,4217,openai.gpt-oss-120b-1:0,bedrock,32.2,[],2026-08-14T23:54:54,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,1,0.4000,2,5,True,False,745,12,0.002992,8793,2789,openai.gpt-oss-120b-1:0,bedrock,18.7,[],2026-08-14T23:55:12,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,2,1.0000,5,5,True,False,713,12,0.003268,8547,3310,openai.gpt-oss-120b-1:0,bedrock,26.4,[],2026-08-14T23:55:39,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,3,0.4000,2,5,True,False,816,12,0.002178,3097,2856,openai.gpt-oss-120b-1:0,bedrock,15.7,[],2026-08-14T23:55:55,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,4,0.4000,2,5,True,False,1260,12,0.007344,19548,7353,openai.gpt-oss-120b-1:0,bedrock,60.9,[],2026-08-14T23:56:55,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,5,0.4000,2,5,True,False,874,12,0.003051,5149,3797,openai.gpt-oss-120b-1:0,bedrock,26.8,[],2026-08-14T23:57:22,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,6,0.4000,2,5,True,False,975,12,0.002922,6220,3315,openai.gpt-oss-120b-1:0,bedrock,15.3,[],2026-08-14T23:57:38,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,7,1.0000,5,5,True,False,1061,12,0.002223,3097,2931,openai.gpt-oss-120b-1:0,bedrock,10.1,[],2026-08-14T23:57:48,gpt-oss-120b,bedrock,native
+prog48_sorted_linked_list,8,0.4000,2,5,True,False,868,12,0.003218,5149,4076,openai.gpt-oss-120b-1:0,bedrock,23.1,[],2026-08-14T23:58:11,gpt-oss-120b,bedrock,native
+prog49_bst,1,0.8000,4,5,True,False,3461,12,0.007899,22303,7590,openai.gpt-oss-120b-1:0,bedrock,61.2,[],2026-08-14T23:59:12,gpt-oss-120b,bedrock,native
+prog49_bst,2,0.8000,4,5,True,False,2776,12,0.009093,25789,8707,openai.gpt-oss-120b-1:0,bedrock,63.2,[],2026-08-15T00:00:15,gpt-oss-120b,bedrock,native
+prog49_bst,3,0.6000,3,5,True,False,2760,12,0.007964,26874,6555,openai.gpt-oss-120b-1:0,bedrock,58.4,"[""Command '['/tmp/cand', 'in', '5', '3', '8', '1', '4']' timed out after 10 seconds"", ""Command '['/tmp/cand', 'post', '8', '3', '10', '1', '6', '14', '4', '7', '13', '8', '3', '6']' timed""]",2026-08-15T00:01:13,gpt-oss-120b,bedrock,native
+prog49_bst,4,1.0000,5,5,True,False,2346,12,0.008360,26960,7193,openai.gpt-oss-120b-1:0,bedrock,85.1,[],2026-08-15T00:02:39,gpt-oss-120b,bedrock,native
+prog49_bst,5,0.6000,3,5,True,False,2759,12,0.006222,19914,5391,openai.gpt-oss-120b-1:0,bedrock,28.6,[],2026-08-15T00:03:07,gpt-oss-120b,bedrock,native
+prog49_bst,6,0.6000,3,5,True,False,1947,12,0.005874,14391,6192,openai.gpt-oss-120b-1:0,bedrock,68.6,[],2026-08-15T00:04:16,gpt-oss-120b,bedrock,native
+prog49_bst,7,0.2000,1,5,True,False,2890,12,0.004704,14391,4243,openai.gpt-oss-120b-1:0,bedrock,34.3,[],2026-08-15T00:04:50,gpt-oss-120b,bedrock,native
+prog49_bst,8,0.6000,3,5,True,False,2686,12,0.006907,20124,6481,openai.gpt-oss-120b-1:0,bedrock,36.4,[],2026-08-15T00:05:27,gpt-oss-120b,bedrock,native
+prog50_binary_heap,1,1.0000,5,5,True,False,2097,12,0.005808,21601,4279,openai.gpt-oss-120b-1:0,bedrock,34.6,[],2026-08-15T00:06:01,gpt-oss-120b,bedrock,native
+prog50_binary_heap,2,1.0000,5,5,True,False,2131,12,0.007712,26031,6346,openai.gpt-oss-120b-1:0,bedrock,58.0,[],2026-08-15T00:06:59,gpt-oss-120b,bedrock,native
+prog50_binary_heap,3,1.0000,5,5,True,False,2732,12,0.011076,40187,8413,openai.gpt-oss-120b-1:0,bedrock,71.2,[],2026-08-15T00:08:10,gpt-oss-120b,bedrock,native
+prog50_binary_heap,4,0.8000,4,5,True,False,1979,12,0.013132,49244,9575,openai.gpt-oss-120b-1:0,bedrock,70.8,[],2026-08-15T00:09:21,gpt-oss-120b,bedrock,native
+prog50_binary_heap,5,1.0000,5,5,True,False,1605,12,0.015718,54210,12645,openai.gpt-oss-120b-1:0,bedrock,114.8,[],2026-08-15T00:11:16,gpt-oss-120b,bedrock,native
+prog50_binary_heap,6,1.0000,5,5,True,False,2119,12,0.004241,11270,4251,openai.gpt-oss-120b-1:0,bedrock,24.2,[],2026-08-15T00:11:40,gpt-oss-120b,bedrock,native
+prog50_binary_heap,7,0.8000,4,5,True,False,2599,12,0.004602,15579,3776,openai.gpt-oss-120b-1:0,bedrock,29.6,[],2026-08-15T00:12:10,gpt-oss-120b,bedrock,native
+prog50_binary_heap,8,0.8000,4,5,True,False,1771,12,0.004350,16139,3215,openai.gpt-oss-120b-1:0,bedrock,14.4,[],2026-08-15T00:12:24,gpt-oss-120b,bedrock,native
+prog51_union_find,1,0.0000,0,5,True,False,2371,12,0.008717,27947,7541,openai.gpt-oss-120b-1:0,bedrock,57.6,[],2026-08-15T00:13:22,gpt-oss-120b,bedrock,native
+prog51_union_find,2,1.0000,5,5,True,False,2423,12,0.011706,39457,9645,openai.gpt-oss-120b-1:0,bedrock,129.0,[],2026-08-15T00:15:31,gpt-oss-120b,bedrock,native
+prog51_union_find,3,1.0000,5,5,True,False,2468,12,0.003516,6355,4271,openai.gpt-oss-120b-1:0,bedrock,24.5,[],2026-08-15T00:15:55,gpt-oss-120b,bedrock,native
+prog51_union_find,4,0.0000,0,5,True,False,2282,12,0.021883,70841,18762,openai.gpt-oss-120b-1:0,bedrock,198.8,[],2026-08-15T00:19:14,gpt-oss-120b,bedrock,native
+prog51_union_find,5,0.0000,0,5,True,False,2334,12,0.015112,79023,5431,openai.gpt-oss-120b-1:0,bedrock,57.3,[],2026-08-15T00:20:11,gpt-oss-120b,bedrock,native
+prog51_union_find,6,1.0000,5,5,True,False,2325,12,0.015665,83580,5214,openai.gpt-oss-120b-1:0,bedrock,55.3,[],2026-08-15T00:21:07,gpt-oss-120b,bedrock,native
+prog51_union_find,7,1.0000,5,5,True,False,2243,12,0.007705,21184,7546,openai.gpt-oss-120b-1:0,bedrock,42.1,[],2026-08-15T00:21:49,gpt-oss-120b,bedrock,native
+prog51_union_find,8,0.6000,3,5,True,False,2667,12,0.011981,34605,11317,openai.gpt-oss-120b-1:0,bedrock,67.9,[],2026-08-15T00:22:57,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,1,0.6000,3,5,True,False,4467,12,0.010742,34291,9330,openai.gpt-oss-120b-1:0,bedrock,66.0,[],2026-08-15T00:24:03,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,2,0.8000,4,5,True,False,2065,12,0.015614,63204,10223,openai.gpt-oss-120b-1:0,bedrock,157.5,[],2026-08-15T00:26:40,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,3,0.4000,2,5,True,False,2233,12,0.015196,61421,9971,openai.gpt-oss-120b-1:0,bedrock,95.9,[],2026-08-15T00:28:16,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,4,0.4000,2,5,True,False,2094,12,0.014288,62798,8114,openai.gpt-oss-120b-1:0,bedrock,64.3,[],2026-08-15T00:29:20,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,5,0.4000,2,5,True,False,2228,12,0.013826,63034,7285,openai.gpt-oss-120b-1:0,bedrock,83.0,[],2026-08-15T00:30:43,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,6,0.4000,2,5,True,False,2242,12,0.014553,59152,9467,openai.gpt-oss-120b-1:0,bedrock,71.7,[],2026-08-15T00:31:55,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,7,0.8000,4,5,True,False,2229,12,0.013857,47136,11311,openai.gpt-oss-120b-1:0,bedrock,77.1,[],2026-08-15T00:33:12,gpt-oss-120b,bedrock,native
+prog52_bfs_grid,8,0.2000,1,5,True,False,2989,12,0.012852,51630,8512,openai.gpt-oss-120b-1:0,bedrock,87.5,[],2026-08-15T00:34:40,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,1,1.0000,5,5,True,False,1269,12,0.009374,29324,8292,openai.gpt-oss-120b-1:0,bedrock,150.2,[],2026-08-15T00:37:10,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,2,1.0000,5,5,True,False,1621,12,0.004120,14827,3160,openai.gpt-oss-120b-1:0,bedrock,24.9,[],2026-08-15T00:37:35,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,3,0.0000,0,5,True,False,1794,12,0.005674,23781,3512,openai.gpt-oss-120b-1:0,bedrock,29.9,[],2026-08-15T00:38:05,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,4,0.0000,0,5,False,False,3321,12,0.006655,19254,6278,openai.gpt-oss-120b-1:0,bedrock,30.1,"/w/candidate.c:49:26: error: use of undeclared identifier 'INT_MAX'
+   49 |     if (val < 0 || val > INT_MAX) return 0;         // out of range for int
+      |                          ^
+1 error generated.
+",2026-08-15T00:38:35,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,5,1.0000,5,5,True,False,1433,12,0.010902,41566,7779,openai.gpt-oss-120b-1:0,bedrock,59.4,[],2026-08-15T00:39:34,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,6,0.0000,0,5,False,False,1504,12,0.004344,9871,4772,openai.gpt-oss-120b-1:0,bedrock,32.4,"/w/candidate.c:63:1: error: extraneous closing brace ('}')
+   63 | }
+      | ^
+1 error generated.
+",2026-08-15T00:40:07,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,7,1.0000,5,5,True,False,1384,12,0.010844,40406,7971,openai.gpt-oss-120b-1:0,bedrock,51.8,[],2026-08-15T00:40:58,gpt-oss-120b,bedrock,native
+prog53_dfs_cycle,8,1.0000,5,5,True,False,1933,12,0.004524,13721,4110,openai.gpt-oss-120b-1:0,bedrock,37.1,[],2026-08-15T00:41:35,gpt-oss-120b,bedrock,native
+prog54_topo_sort,1,0.6000,3,5,True,False,1658,12,0.007871,24893,6895,openai.gpt-oss-120b-1:0,bedrock,99.3,[],2026-08-15T00:43:15,gpt-oss-120b,bedrock,native
+prog54_topo_sort,2,0.6000,3,5,True,False,1294,12,0.013601,60732,7486,openai.gpt-oss-120b-1:0,bedrock,189.9,[],2026-08-15T00:46:25,gpt-oss-120b,bedrock,native
+prog54_topo_sort,3,1.0000,5,5,True,False,3041,12,0.005502,12813,5966,openai.gpt-oss-120b-1:0,bedrock,37.8,[],2026-08-15T00:47:02,gpt-oss-120b,bedrock,native
+prog54_topo_sort,4,0.0000,0,5,True,False,2076,12,0.003567,11818,2990,openai.gpt-oss-120b-1:0,bedrock,12.6,[],2026-08-15T00:47:15,gpt-oss-120b,bedrock,native
+prog54_topo_sort,5,0.4000,2,5,True,False,2189,12,0.009454,32849,7545,openai.gpt-oss-120b-1:0,bedrock,42.9,[],2026-08-15T00:47:58,gpt-oss-120b,bedrock,native
+prog54_topo_sort,6,0.0000,0,5,True,False,1421,12,0.013427,53458,9014,openai.gpt-oss-120b-1:0,bedrock,132.9,[],2026-08-15T00:50:11,gpt-oss-120b,bedrock,native
+prog54_topo_sort,7,0.0000,0,5,True,False,4128,12,0.026189,112620,15494,openai.gpt-oss-120b-1:0,bedrock,96.8,[],2026-08-15T00:51:48,gpt-oss-120b,bedrock,native
+prog54_topo_sort,8,0.2000,1,5,True,False,2294,12,0.007092,18351,7233,openai.gpt-oss-120b-1:0,bedrock,57.1,[],2026-08-15T00:52:45,gpt-oss-120b,bedrock,native
+prog55_connected_components,1,0.2000,1,5,True,False,3213,12,0.013239,58383,7470,openai.gpt-oss-120b-1:0,bedrock,60.5,[],2026-08-15T00:53:45,gpt-oss-120b,bedrock,native
+prog55_connected_components,2,0.2000,1,5,True,False,1617,12,0.016267,68579,9967,openai.gpt-oss-120b-1:0,bedrock,88.1,[],2026-08-15T00:55:13,gpt-oss-120b,bedrock,native
+prog55_connected_components,3,0.2000,1,5,True,False,1013,12,0.013843,58873,8353,openai.gpt-oss-120b-1:0,bedrock,66.7,[],2026-08-15T00:56:20,gpt-oss-120b,bedrock,native
+prog55_connected_components,4,0.2000,1,5,True,False,4224,12,0.020206,80187,13630,openai.gpt-oss-120b-1:0,bedrock,133.4,[],2026-08-15T00:58:33,gpt-oss-120b,bedrock,native
+prog55_connected_components,5,0.2000,1,5,True,False,1867,12,0.013042,59230,6929,openai.gpt-oss-120b-1:0,bedrock,43.4,[],2026-08-15T00:59:17,gpt-oss-120b,bedrock,native
+prog55_connected_components,6,0.2000,1,5,True,False,2154,12,0.010590,40974,7407,openai.gpt-oss-120b-1:0,bedrock,53.4,[],2026-08-15T01:00:10,gpt-oss-120b,bedrock,native
+prog55_connected_components,7,0.2000,1,5,True,False,1826,12,0.012419,41536,10314,openai.gpt-oss-120b-1:0,bedrock,67.5,[],2026-08-15T01:01:18,gpt-oss-120b,bedrock,native
+prog55_connected_components,8,0.2000,1,5,True,False,1167,12,0.013071,77713,2357,openai.gpt-oss-120b-1:0,bedrock,50.2,[],2026-08-15T01:02:08,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,1,0.4000,2,5,True,False,3368,12,0.008455,24816,7888,openai.gpt-oss-120b-1:0,bedrock,28.6,[],2026-08-15T01:02:36,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,2,0.2000,1,5,True,False,2093,12,0.016082,51020,14048,openai.gpt-oss-120b-1:0,bedrock,92.2,[],2026-08-15T01:04:09,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,3,0.6000,3,5,True,False,1760,12,0.023687,61499,24104,openai.gpt-oss-120b-1:0,bedrock,245.4,[],2026-08-15T01:08:14,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,4,0.4000,2,5,True,False,2142,12,0.019554,62507,16963,openai.gpt-oss-120b-1:0,bedrock,117.1,[],2026-08-15T01:10:11,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,5,0.4000,2,5,True,False,2499,12,0.015650,48496,13960,openai.gpt-oss-120b-1:0,bedrock,90.7,[],2026-08-15T01:11:42,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,6,0.4000,2,5,True,False,2350,12,0.015684,44255,15076,openai.gpt-oss-120b-1:0,bedrock,108.1,[],2026-08-15T01:13:30,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,7,0.6000,3,5,True,False,4396,12,0.021823,72896,18148,openai.gpt-oss-120b-1:0,bedrock,132.7,[],2026-08-15T01:15:42,gpt-oss-120b,bedrock,native
+prog56_kruskal_mst,8,0.0000,0,5,False,False,5506,12,0.026290,72463,25701,openai.gpt-oss-120b-1:0,bedrock,303.2,"/w/candidate.c:127:37: error: initializing 'struct (unnamed struct at /w/candidate.c:127:13)' with an expression of incompatible type 'struct (unnamed struct at /w/candidate.c:98:5)'
+  127 |             struct {int idx,a,b,w;} tmp = usable[j - 1];
+      |                                     ^     ~~",2026-08-15T01:20:46,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,1,1.0000,5,5,True,False,1123,12,0.008446,16716,9898,openai.gpt-oss-120b-1:0,bedrock,103.6,[],2026-08-15T01:22:29,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,2,1.0000,5,5,True,False,1107,12,0.007041,11436,8876,openai.gpt-oss-120b-1:0,bedrock,54.3,[],2026-08-15T01:23:24,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,3,1.0000,5,5,True,False,801,12,0.005505,7269,7357,openai.gpt-oss-120b-1:0,bedrock,74.3,[],2026-08-15T01:24:38,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,4,1.0000,5,5,True,False,1227,12,0.003120,5570,3808,openai.gpt-oss-120b-1:0,bedrock,16.8,[],2026-08-15T01:24:55,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,5,1.0000,5,5,True,False,1015,12,0.004079,5577,5404,openai.gpt-oss-120b-1:0,bedrock,42.4,[],2026-08-15T01:25:37,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,6,1.0000,5,5,True,False,865,12,0.007375,13182,8997,openai.gpt-oss-120b-1:0,bedrock,129.4,[],2026-08-15T01:27:46,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,7,1.0000,5,5,True,False,924,12,0.003763,8449,4160,openai.gpt-oss-120b-1:0,bedrock,28.2,[],2026-08-15T01:28:15,gpt-oss-120b,bedrock,native
+prog57_elevator_fsm,8,0.6000,3,5,True,False,995,12,0.004092,5175,5527,openai.gpt-oss-120b-1:0,bedrock,23.1,[],2026-08-15T01:28:38,gpt-oss-120b,bedrock,native
+prog58_turing_increment,1,0.2000,1,5,True,False,2160,12,0.004692,9112,5542,openai.gpt-oss-120b-1:0,bedrock,91.0,[],2026-08-15T01:30:09,gpt-oss-120b,bedrock,native
+prog58_turing_increment,2,0.2000,1,5,True,False,1427,12,0.011458,20264,14030,openai.gpt-oss-120b-1:0,bedrock,188.9,[],2026-08-15T01:33:18,gpt-oss-120b,bedrock,native
+prog58_turing_increment,3,0.2000,1,5,True,False,922,12,0.012077,22652,14466,openai.gpt-oss-120b-1:0,bedrock,143.0,[],2026-08-15T01:35:41,gpt-oss-120b,bedrock,native
+prog58_turing_increment,4,0.2000,1,5,True,False,1403,12,0.016855,45728,16660,openai.gpt-oss-120b-1:0,bedrock,194.7,[],2026-08-15T01:38:55,gpt-oss-120b,bedrock,native
+prog58_turing_increment,5,0.2000,1,5,True,False,1824,12,0.005438,9122,6783,openai.gpt-oss-120b-1:0,bedrock,21.3,[],2026-08-15T01:39:17,gpt-oss-120b,bedrock,native
+prog58_turing_increment,6,0.2000,1,5,True,False,1777,12,0.008364,17575,9546,openai.gpt-oss-120b-1:0,bedrock,66.5,[],2026-08-15T01:40:23,gpt-oss-120b,bedrock,native
+prog58_turing_increment,7,0.0000,0,5,False,True,0,12,0.005668,4640,8287,openai.gpt-oss-120b-1:0,bedrock,51.4,nessun candidato prodotto,2026-08-15T01:41:14,gpt-oss-120b,bedrock,native
+prog58_turing_increment,8,0.2000,1,5,True,False,940,12,0.017361,55856,14971,openai.gpt-oss-120b-1:0,bedrock,142.1,[],2026-08-15T01:43:37,gpt-oss-120b,bedrock,native
+prog59_rule110,1,0.8000,4,5,True,False,2848,12,0.010795,43418,7137,openai.gpt-oss-120b-1:0,bedrock,105.9,[],2026-08-15T01:45:23,gpt-oss-120b,bedrock,native
+prog59_rule110,2,0.2000,1,5,True,False,2905,12,0.010553,30583,9943,openai.gpt-oss-120b-1:0,bedrock,49.8,[],2026-08-15T01:46:12,gpt-oss-120b,bedrock,native
+prog59_rule110,3,1.0000,5,5,True,False,1613,12,0.007682,29840,5343,openai.gpt-oss-120b-1:0,bedrock,39.4,[],2026-08-15T01:46:52,gpt-oss-120b,bedrock,native
+prog59_rule110,4,0.2000,1,5,True,False,1875,12,0.011826,35701,10784,openai.gpt-oss-120b-1:0,bedrock,52.5,[],2026-08-15T01:47:44,gpt-oss-120b,bedrock,native
+prog59_rule110,5,0.2000,1,5,True,False,2136,12,0.016066,67034,10018,openai.gpt-oss-120b-1:0,bedrock,54.7,[],2026-08-15T01:48:39,gpt-oss-120b,bedrock,native
+prog59_rule110,6,1.0000,5,5,True,False,2741,12,0.012091,49098,7877,openai.gpt-oss-120b-1:0,bedrock,68.9,[],2026-08-15T01:49:48,gpt-oss-120b,bedrock,native
+prog59_rule110,7,0.2000,1,5,True,False,1809,12,0.010480,56385,3371,openai.gpt-oss-120b-1:0,bedrock,80.1,[],2026-08-15T01:51:08,gpt-oss-120b,bedrock,native
+prog59_rule110,8,0.2000,1,5,True,False,1705,12,0.006918,21480,6160,openai.gpt-oss-120b-1:0,bedrock,44.5,[],2026-08-15T01:51:53,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,1,0.0000,0,5,True,False,1667,12,0.009234,15630,11483,openai.gpt-oss-120b-1:0,bedrock,91.2,[],2026-08-15T01:53:24,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,2,0.0000,0,5,True,False,1715,12,0.007055,17867,7292,openai.gpt-oss-120b-1:0,bedrock,43.7,[],2026-08-15T01:54:07,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,3,0.0000,0,5,True,False,1535,12,0.006823,13164,8080,openai.gpt-oss-120b-1:0,bedrock,35.3,[],2026-08-15T01:54:43,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,4,0.0000,0,5,True,False,2069,12,0.008902,20673,9668,openai.gpt-oss-120b-1:0,bedrock,56.7,[],2026-08-15T01:55:39,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,5,0.0000,0,5,True,False,2105,12,0.007695,20229,7767,openai.gpt-oss-120b-1:0,bedrock,65.4,[],2026-08-15T01:56:45,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,6,0.0000,0,5,True,False,1624,12,0.005615,12916,6130,openai.gpt-oss-120b-1:0,bedrock,63.4,[],2026-08-15T01:57:48,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,7,0.0000,0,5,True,False,2250,12,0.012338,27307,13737,openai.gpt-oss-120b-1:0,bedrock,253.6,[],2026-08-15T02:02:02,gpt-oss-120b,bedrock,native
+prog60_inventory_sim,8,0.0000,0,5,True,False,3849,12,0.009312,28230,8463,openai.gpt-oss-120b-1:0,bedrock,78.7,[],2026-08-15T02:03:21,gpt-oss-120b,bedrock,native

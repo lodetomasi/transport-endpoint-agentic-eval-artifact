@@ -1,0 +1,7 @@
+{"program": "prog28_levenshtein", "tests": [
+  {"id": 1, "args": ["kitten", "sitting"], "stdin": "", "expected_stdout": "3\n"},
+  {"id": 2, "args": ["abc", "abc"], "stdin": "", "expected_stdout": "0\n"},
+  {"id": 3, "args": ["", "abc"], "stdin": "", "expected_stdout": "3\n"},
+  {"id": 4, "args": ["flaw", "lawn"], "stdin": "", "expected_stdout": "2\n"},
+  {"id": 5, "args": ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "b"], "stdin": "", "expected_stdout": "TOO_LONG\n"}
+]}

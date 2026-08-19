@@ -1,0 +1,7 @@
+{"program": "prog33_mod_pow", "tests": [
+  {"id": 1, "args": ["4", "13", "497"], "stdin": "", "expected_stdout": "result=445\n"},
+  {"id": 2, "args": ["2", "10", "1000"], "stdin": "", "expected_stdout": "result=24\n"},
+  {"id": 3, "args": ["-3", "4", "5"], "stdin": "", "expected_stdout": "result=1\n"},
+  {"id": 4, "args": ["7", "0", "13"], "stdin": "", "expected_stdout": "result=1\n"},
+  {"id": 5, "args": ["5", "3", "-2"], "stdin": "", "expected_stdout": "BAD_MODULUS\n"}
+]}

@@ -1,0 +1,25 @@
+p-value: approssimazione congelata contro t di Student esatta
+
+  id      K        t   p congelato   p Student   differenza
+  T1     45   -2.198        0.0289      0.0333      +0.0044
+  T2     45    1.709        0.0893      0.0945      +0.0052
+  T3     45   -2.463        0.0143      0.0177      +0.0034
+  T4     45    1.150        0.2529      0.2564      +0.0035
+  T5     45    1.725        0.0862      0.0915      +0.0052
+  T6     45   -2.403        0.0169      0.0205      +0.0037
+  T7     45   -1.000        0.3201      0.3228      +0.0027
+  T8     45   -0.769        0.4443      0.4459      +0.0015
+
+  L'approssimazione sottostima il p in 8 casi su 8 — sempre nella direzione che fa sembrare l'effetto piu' significativo.
+
+  Holm m=10 sui p congelati: 0 test superano la soglia — nessuno
+
+  Holm m=10 sui p Student: 0 test superano la soglia — nessuno
+
+  CONTROLLO con risposta nota: l'analisi congelata stampa p=0,0143 per T3.
+    p congelato ricalcolato qui: 0.0143 -> COINCIDE
+
+  CONCLUSIONE. La differenza e' sistematica e va dichiarata, ma NON cambia
+  nessuna conclusione: a m=10 fisso nessun test supera la propria soglia di Holm
+  con nessuna delle due serie. Lo script congelato resta congelato; il paper
+  riporta i p esatti accanto, con la successione che dichiara la differenza.

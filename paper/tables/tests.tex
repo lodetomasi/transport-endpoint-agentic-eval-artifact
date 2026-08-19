@@ -1,0 +1,24 @@
+% Generata da analysis/tabella_principale.py su results/riraccolta — non modificare a mano.
+\begin{table}[t]
+\caption{The ten pre-registered tests, on the re-collection (isolated workspaces). $\delta$ is the paired difference per binary, over 45 binaries of 8 runs each. \textbf{Sign convention}: for transport contrasts $\delta = \text{textual} - \text{native}$, so a negative value means the textual protocol scores lower; for endpoint contrasts $\delta = \text{Bedrock} - \text{Databricks}$. MDE is the effect this contrast could have resolved at 80\% power given its own observed standard deviation, in percentage points --- the column exists because it varies by a factor of 23.7 across contrasts of one design. Power is computed against the pre-registered MDE of 4.87pp using the \emph{observed} standard deviation and the non-central $t$ --- the distribution the test actually uses. A normal approximation would report 0.0--1.9 points higher, which in a paper reporting its own under-powering would err in the flattering direction. $^\ddagger$The $p$ column is the \emph{exact} Student series, not the approximation the frozen script emits: the approximation understates $p$ in eight cases of eight --- for T6, 0.0155 against 0.0191 --- always in the direction that makes an effect look more significant. Both series are in the artifact, the distribution-free series is in Appendix~\ref{sec:appendice-permutazione}, and no test passes its Holm threshold under any of the three. $^{\P}$T5 is the one contrast whose $p$ rests on $K{=}44$ while its $\delta$ and interval rest on $K{=}45$: one binary returned seven valid runs of eight on one endpoint, the frozen script averages it and the exact-$p$ script requires a full complement. We print both rather than harmonise them, because harmonising would mean choosing a rule after seeing what it does to a pre-registered number.}
+\label{tab:tests}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{llrrrrr}
+\toprule
+& contrast & $\delta$ & 95\% CI & $p$$^\ddagger$ & power & MDE \\
+\midrule
+T6 & llama,\, endp. & $-7.94$ & $[-14.5,-1.4]$ & 0.0191 & 30.9\% & 9.14 \\
+T3 & haiku,\, transp. & $-9.83$ & $[-18.2,-1.5]$ & 0.0218 & 21.0\% & 11.59 \\
+T1 & gpt-oss,\, transp. & $-6.56$ & $[-12.6,-0.5]$ & 0.0334 & 35.8\% & 8.36 \\
+T9 & heterogeneity & --- & --- & 0.1011 & --- & --- \\
+T2 & llama,\, transp. & $+2.22$ & $[-0.5,+5.0]$ & 0.1107 & 93.7\% & 3.82 \\
+T5$^{\P}$ & gpt-oss,\, endp. & $+3.26$ & $[-0.6,+7.1]$ & 0.1159 & 69.6\% & 5.40 \\
+T7 & haiku,\, endp. & $+0.22$ & $[-0.1,+0.6]$ & 0.2095 & 100.0\% & 0.49 \\
+T8 & sonnet,\, endp. & $-0.94$ & $[-2.7,+0.8]$ & 0.2844 & 100.0\% & 2.44 \\
+T10 & interaction & $-4.12$ & $[-10.6,+2.3]^{\S}$ & 0.3448 & --- & --- \\
+T4 & sonnet,\, transp. & $-1.00$ & $[-5.2,+3.2]$ & 0.6363 & 62.1\% & 5.88 \\
+\bottomrule
+\end{tabular}
+\end{table}

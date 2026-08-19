@@ -1,0 +1,32 @@
+Due stimatori del rumore, e perche' il confronto C1->C2 non e' 'lo stesso conto'
+Richiesto dal terzo passaggio dello stats-auditor, 2026-08-15.
+
+`analysis/potenza.py` (congelato) stima il rumore entro-binario come MEDIA DELLE SD,
+poi elevata al quadrato. `analysis/scomposizione_varianza.py` (nuovo, per C2) usa la
+MEDIA DELLE VARIANZE. Non sono la stessa quantita': per la disuguaglianza di Jensen
+(media di x)^2 <= media di x^2, e la distanza cresce proprio quando alcuni binari sono
+deterministici e altri no — cioe' il caso di questi dati.
+
+Perche' importa: la pre-registrazione §7 dichiara «per haiku-4-5 l'84% e' rumore fra run
+e il pavimento e' K=13», numero prodotto dalla prima convenzione. Confrontarlo con lo
+0,1% di C2, prodotto dalla seconda, mescola due effetti. Qui si rifa' il conto su C1 con
+ENTRAMBE, cosi' che il confronto sia fra quantita' omogenee.
+
+C1 — haiku-4-5, nativo contro testuale, K=45 binari, 9.6 run per cella
+  SD(diff) osservata                       0.0945
+  (a) media delle SD      quota rumore   84.2%   pavimento K = 13
+  (b) media delle varianze quota rumore  130.7%   pavimento K = 0
+
+  controllo con risposta nota: potenza.py stampa 84% e K=13 -> la (a) COINCIDE
+
+C2 — stesso modello, stesso contrasto nominale (SCOMPOSIZIONE-VARIANZA-2026-08-15.txt)
+  (b) media delle varianze quota rumore    0,1%   pavimento K = 705
+
+ESITO. Con lo stimatore COERENTE — la (b) su entrambi i capitoli — l'inversione non
+sparisce: si accentua. C1 dava 130,7% di rumore, cioe' varianza residua nulla e K=0;
+C2 da' 0,1% e K=705. Il capitolo precedente diceva che per haiku bastavano piu' run;
+questi dati dicono che le run non servono a niente e che servirebbero 705 binari.
+
+La frase da usare e' quindi: «la calibrazione importata da C1 ha invertito il
+meccanismo», e il confronto va fatto con lo stimatore (b) su entrambi, non fra
+l'84% congelato e lo 0,1% nuovo — che sarebbe un confronto fra due conti diversi.

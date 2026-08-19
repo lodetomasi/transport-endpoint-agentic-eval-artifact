@@ -1,0 +1,335 @@
+\section{Analysis and Interpretation}
+\label{sec:results}
+
+The census establishes that an endpoint can remove a model before a score exists. This section asks
+how far the surviving numbers move, and answers with the resolving power attached.
+
+All numbers here come from the re-collection: an independent execution of the full
+$4\times2\times2$ design on workspaces isolated per cell, comprising 5{,}809 valid measurements.
+That this batch, rather than the original one, would carry the primary analysis was fixed in
+writing before it produced a row (\S\ref{sec:threats}); the original collection is reported
+alongside it as a replication, and the two agree on every criterion declared in advance.
+
+% L'ORDINE DELLE SOTTOSEZIONI E' DELIBERATO. La decomposizione della varianza e l'inversione
+% della calibrazione vengono prima della famiglia confermatoria: sono il risultato che regge, e
+% mettere dieci test che non superano la correzione davanti a essi faceva arrivare il lettore alla
+% parte debole per prima.
+\subsection{Which lever binds is a property of the cell}
+\label{sec:varianza}
+
+The variance of a paired difference decomposes into within-binary noise, which shrinks with more runs
+per binary, and heterogeneity between binaries, which shrinks only with more binaries. The two are not
+interchangeable, and Table~\ref{tab:variance} shows the choice is not a property of the axis.
+
+\input{tables/variance}
+
+For T3 and T6 more runs buy nothing: 668 and 380 binaries against the 45 collected.
+
+\textbf{These are estimates on 45 units, so we report their intervals.} Bootstrapping the binaries ---
+the unit the contrast is paired on, 5{,}000 replications at a declared seed --- gives T3's noise share
+as 0.5\% $[0.0, 1.4]$ and $K_\infty$ as 668 $[265, 1136]$, and T6's as 9.1\% $[4.1, 21.6]$ and 380
+$[126, 744]$. The interval on $K_\infty$ is wide and its lower end is still six times the 45 binaries
+collected, which is the operational point: the conclusion that more runs buy nothing does not depend on
+the point estimate. Neither interval reaches the 50\% that would make the noise share
+indistinguishable from half.
+
+\textbf{Where the estimator is misspecified, we say so rather than offer two readings.} The rows marked
+$\dagger$ have estimated noise exceeding the observed variance --- not a finding about those cells but a
+variance model that does not fit them, since the decomposition assumes the two conditions' runs are
+independent given the binary and clamps the residual at zero when that fails. The bootstrap makes the
+failure countable: the residual is clamped in \textbf{86\%} of replications on T7, 69\% on T8 and 43\%
+on T5, so for those contrasts the lower bound of $K_\infty$ is zero by construction rather than by
+evidence, and we report no decomposition for T7 and T8. On T1, T3 and T6 --- the contrasts that carry
+the finding --- clamping occurs in at most 1\% of replications.
+
+\subsubsection*{What the metric's granularity does and does not explain}
+\label{sec:granularita}
+
+A decomposition of variance is only as trustworthy as the measurement it decomposes, and ours is coarse:
+pass-rate over five unit tests gives a run \emph{six} values, 53\% of the 5{,}809 rows sit at an extreme and
+33\% of the 720 binary-by-cell means land exactly on 0 or 1. A floor- and ceiling-heavy measurement is on its
+own sufficient for a large between-binary spread, so it is a rival account of Table~\ref{tab:variance} and
+not only of the inversion that follows.
+
+\textbf{Two conditions bound the account, and both are stated so that a reader can check them.} It would
+have to explain why the same metric on the same corpus yields 0.5\% noise here and 84\% in the collection
+this design inherited its sizing from --- granularity is a property of the metric, and a property the two
+share cannot by itself produce a difference between them. The second condition is narrower than the first and we state it as such: resampling binaries bounds the
+sampling variance of the estimate, not a measurement bias, so the interval $[0.0, 1.4]$ on T3 does not by
+itself exclude a floor-and-ceiling pattern uniform across the corpus --- such a pattern would reproduce in
+every resample. The first condition carries the argument on its own, and neither is closed by these data
+alone.
+
+The operational consequence is in \S\ref{sec:proposizioni}: a design resting on a variance
+decomposition should size the number of tests per task the way it sizes the number of tasks, and
+report the share of runs at floor and ceiling beside the decomposition. We did the second and not
+the first.
+
+What T3 and T6 share is not the axis but the pairing of largest observed standard deviation with
+smallest nominal $p$: where the effect looks largest it also varies most between binaries, which is
+a weaker claim than a large average effect.
+
+\subsection{RQ6 \emph{(exploratory, arose during execution)}: the power calibration
+inherited from the previous chapter inverted}
+\label{sec:rq6}
+
+The pre-registration states, from the previous chapter's data, that for haiku ``84\% is
+run-to-run noise and the floor is $K=13$''. On the same nominal contrast here, the noise share
+is $0.5\%$ and the floor is $K=668$.
+
+This is a reversed mechanism rather than a magnitude error, and it survives three independent changes:
+of estimator, which widens it to 130.7\% noise and $K=0$; of apparatus and workspace isolation, where the
+two collections give 0.1\%/705 and 0.5\%/668; and the other high-variance contrast, 9.3\%/487 against
+9.1\%/380. The artifact carries each recomputation.
+
+\textbf{The 84\% comes from the batch in which a validity flag failed, and the three robustness checks above
+do not touch that.} Crashed rows were averaged as zeroes there (\S\ref{sec:method}), and the released
+snapshot lets a reader reconstruct both computations. We claim no direction for that defect: independent
+reconstructions disagree, and on that corpus the corrected estimator is misspecified in the sense of
+\S\ref{sec:varianza}, so the quantity one would compare against is clamped rather than estimated. What the
+reconstruction does establish is that the inherited 84\% is the \emph{defective} computation, which is why
+the inversion is not read off the comparison: it is established inside this chapter by two collections of
+our own, 0.1\%/705 and 0.5\%/668 on the contrast that carries it.
+
+One caveat is removed by none of the three: the chapters differ in apparatus as well as estimator, and
+exposure to the largest information leak of \S\ref{sec:threats} was asymmetric between arms in the earlier
+chapter --- 100\% of native runs invoked the affected tool against 86.7\% of textual runs --- so the
+comparison does not isolate the estimator. The inversion is larger than 13pp of differential exposure
+makes plausible as a sole cause, but that is an order-of-magnitude argument, not an exclusion. What does
+not depend on the comparison is this chapter's own decomposition: the 0.5\% noise share and the
+668-binary floor are computed on our data alone and under one estimator, so the finding that the binding
+lever is a property of the apparatus stands whether or not the earlier number is right.
+
+\subsection{RQ1--RQ3 \emph{(confirmatory)}: a negative registered result, and the resolving
+power that is the reportable quantity}
+
+This subsection reports a \emph{negative} pre-registered result and reports it as such: hypotheses,
+test family and analysis were fixed before the data existed, the family does not resolve an effect, and
+the outcome is stated before the exploratory findings that did produce something. What it contributes
+is not the absence of an effect but the \emph{resolution} at which the absence was established, which
+differs by a factor of 23.7 between contrasts sharing one design.
+
+Of the ten tests fixed in the pre-registration, \emph{none} passes its Holm threshold at
+$m=10$~\citep{holm1979}. The smallest $p$ is $0.0191$ against a threshold of $0.0050$. No contrast places its
+effect outside the $\pm 3$pp falsifier band with a confidence interval that excludes it.
+
+\textbf{Part of that null follows from the family's fixed composition.} Two of the ten tests are not
+independent of the other eight, so Holm at $m=10$ divides the smallest threshold by ten rather than
+eight --- $0.0050$ instead of $0.0063$. T6's $p$ of $0.0191$ misses both, so no conclusion turns on the
+choice here, though on a study whose smallest $p$ fell between them it would; we keep $m=10$ because the
+pre-registration fixed it and because it is the conservative direction, not as the only defensible
+count. The artifact carries both series.
+
+That answers RQ1--RQ3 in the direction of ``not at this resolution'', and the resolution is the
+reportable quantity: an evaluation that cannot separate 4pp from zero is not free to call two transports
+equivalent. The outcome does not rest on the $t$'s normality assumption either ---
+Appendix~\ref{sec:appendice-permutazione} repeats the family under a distribution-free sign-flip test and
+no test passes Holm there.
+
+We report the family outcome together with the achieved power, never one without the other, because
+the three contrasts with nominal $p<0.05$ are also the three least powered --- and reporting power at
+all is the exception here: 103 software engineering experiments were found systematically below
+accepted norms~\citep{dyba2006power}, a decade after the concern was raised as ``missing and
+misunderstood''~\citep{miller1997power}, and documented again for language-model
+evaluation~\citep{card2020power}.
+
+\input{tables/tests}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{fig1-effetti-potenza.pdf}
+\caption{The ten contrasts, ordered by nominal $p$. Filled and heavier lines are the three
+with $p<0.05$ uncorrected; none survives Holm correction. They are also the three widest
+intervals in the study --- the signature of a winner's curse, not of a larger effect. Dotted
+lines mark the pre-registered $\pm3$pp falsifier band.}
+\label{fig:effects}
+\end{figure}
+
+Table~\ref{tab:tests} and Fig.~\ref{fig:effects} are the whole confirmatory result. T3 reproduces the
+transport difference that motivated this chapter at $-9.83$pp --- different apparatus, isolated
+workspaces, three information leaks closed (\S\ref{sec:threats}) --- and T6 shows $7.94$pp between two
+clouds serving the same nominal model at fixed transport. Neither survives correction for multiplicity,
+and both sit below a third of the power the design was sized for. All three are true together.
+
+$^{\S}$ The frozen script prints no interval for T10; this one is computed outside it with the \emph{model}
+as the unit of replication ($n=4$, $t_3$). Treating the 180 binary-level pairs as independent would give a
+narrower interval and a wrong one: they are four groups of 45.
+
+\subsection{RQ1--RQ3 \emph{(confirmatory)}: the resolving power is per contrast, not a
+single band}
+
+The pre-registration sized the design with a pooled standard deviation of $0.1062$ and a
+conservative $0.1167$, both calibrated on the previous chapter. The observed standard
+deviations of the paired differences span $0.0117$ to $0.2774$ --- a ratio of 23.7 --- so a
+single minimum detectable effect describes the design rather than the data. Computed per
+contrast, the MDE ranges from $0.49$pp (haiku across endpoints) to $11.59$pp (haiku across
+transports), and \emph{five of eight contrasts exceed} the 4.87pp the design assumed.
+
+A null result here therefore reads: no contrast places its effect outside the band its own variance
+permits. It does \emph{not} read as equivalence --- $K=45$ does not power an equivalence test at 3pp,
+which would need 99--119 binaries, and this was declared before the data existed.
+
+\subsection{RQ5 \emph{(exploratory, arose during execution)}: evidence against call
+batching as the explanation}
+\label{sec:rq5}
+
+The pre-registered transport contrast moves two things at once on the models that batch: the format of
+the call and the number a turn admits --- haiku issues 1.438 calls per turn against sonnet's 1.333. A
+declared confound is not a bounded one, so we collected the arm that separates them: native transport
+forced to \emph{one call per turn}, all else held fixed. It is exploratory, does not enter the family of
+ten, and its stopping criterion was fixed before it ran.
+
+\begin{table}[t]
+\centering
+\caption{Constraining the native transport to one call per turn. Paired on binaries, $K=45$,
+eight runs per binary. The arm is exploratory and does not enter the corrected family.}
+\label{tab:batching}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrc@{}}
+\toprule
+model & full & constr. & diff. & 95\% CI \\
+\midrule
+haiku-4-5 & 0.747 & 0.754 & $+0.8$pp & $[-2.6, +4.2]$ \\
+sonnet-4-5 & 0.793 & 0.809 & $+1.6$pp & $[-1.3, +4.4]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Removing batching does not lower the score: both differences are \emph{positive} and both intervals
+contain zero (Table~\ref{tab:batching}), against a transport effect of $-9.83$pp on the same model and
+endpoint. The direction is what the arm supports --- a mechanism cannot explain a decrease it does not
+produce --- and that inference needs only the sign of the two differences, which is why it survives the
+arm's missed validity band (\S\ref{sec:rq5b}): the band governs how much the constraint bit, not which
+way the score moved.
+
+\emph{The magnitude does not follow, and we do not claim it.} ``Not within an order of magnitude''
+would require the arm to have removed batching at the rate the band specified, and it did not. What
+remains is narrower and still useful: the loss of call batching is not a plausible \emph{principal}
+account of T3, and no reading of this arm establishes that the remainder is the protocol and nothing
+else.
+
+Two further cautions belong to the arm and are in the artifact: that the constraint does not remove
+batching alone, so what it bounds is an upper limit rather than an estimate; and that the arm covers
+one infrastructure and the two models that batch at all, since on the other two the rate is exactly
+1.000 calls per turn and there is nothing to remove.
+
+\subsection{RQ5, second finding \emph{(exploratory)}: one refusal reconfigures the model
+for the rest of the run}
+\label{sec:rq5b}
+
+The arm produced a result we were not looking for, and it is sharp. Across 1{,}084 trajectories
+\emph{every} first turn issues more than one call and is constrained; after the first refusal the rate
+collapses to 0.2\%, eight turns out of 4{,}457. The model does not learn the constraint from the tool
+schema, which does not encode it --- it learns it from one rejection, and the lesson holds for the
+remainder of the trajectory.
+
+\textbf{The arm falls outside its pre-declared validity band, and that governs what it licenses.} The
+band required 33--38\% of turns to carry a constrained call, estimated from the unconstrained batching
+rate; the observed figure is 19.7\%, outside it and not marginally. Under the rule fixed in
+\S\ref{sec:design}, the ablation therefore does not license a statement about the \emph{size} of the
+batching effect and we make none. Why the band was wrong is itself a measurement, and it is sharper than a missed target: the band assumed a
+batching rate constant along the trajectory, and the collapse above fixes the achievable share at
+essentially one constrained turn per trajectory. Of the 5{,}541 turns that carry a call, 1{,}084 are first
+turns and every one of them is constrained; eight more are constrained later, for 1{,}092 in total, or
+\textbf{19.7\%} --- which is the structural ceiling of 19.6\% plus the eight turns that still batched after
+a refusal. The band's 33--38\% was never reachable under this constraint, so its premise was wrong rather
+than the data.
+
+The two statements are not interchangeable. \emph{The arm is not evidence about magnitude} --- that
+reading requires the band it missed. \emph{It is evidence about direction}: both constrained cells score
+no lower than unconstrained, which is incompatible with the loss of batching explaining a 9.83pp drop
+whatever its size, since a mechanism cannot explain a decrease it does not produce. A sign survives a
+failed magnitude check; an effect size does not. It also explains an asymmetry in the main comparison:
+under the textual protocol the option to batch never exists, while under constrained native it exists
+for one turn and the model abandons it. A transport is not only a format a call travels in --- it is a
+channel that teaches.
+
+\subsection{What differs between two clouds serving one model identity}
+\label{sec:runtime}
+
+T6 measures 7.94pp between two platforms serving the same model identifier, and \S\ref{sec:threats} states
+that the weights cannot be verified identical --- which says nothing about \emph{how} the two runtimes
+differ. Four quantities in the raw rows are determined by a serving stack rather than a model, and they do
+not concord.
+
+\begin{table}[t]
+\centering
+\caption{T6's two cells, native transport, 360 runs each. Median with first--third quartile; the
+ratio is Bedrock over Databricks. Turn budget and corpus are identical by construction.}
+\label{tab:runtime}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+& Databricks & Bedrock & ratio \\
+\midrule
+input tokens & 20{,}562 & 8{,}853 & 0.43 \\
+latency per run (s) & 13.4 & 8.6 & 0.64 \\
+output tokens & 448 & 303 & 0.68 \\
+candidate characters & 598 & 544 & 0.91 \\
+turns & 12.0 & 12.0 & 1.00 \\
+output tokens per second & 33.2 & 35.1 & 1.06 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The two platforms hand the model \textbf{2.3 times} the input tokens for the same task, corpus and twelve
+turns, while emitting output at within 6\% of the same rate. Throughput agreeing while input diverges
+points away from hardware and towards what each stack \emph{sends} --- prompt scaffolding, tool-schema
+serialisation, history truncation --- and which of the three is not visible from outside. This changes the
+status of T6's confound rather than its size: declared before, documented now, with something in the two
+stacks differing by a factor of 2.3 on the quantity the preceding chapter identified as a free parameter
+in its own right~\citep{companion2026baseline}.
+
+\subsection{Temperature zero is not determinism, and not equally so}
+
+Two properties of the apparatus are usually assumed and turn out to be measurable. \emph{First,
+temperature zero is not determinism.} All cells ran at temperature $0.0$, and across the eight runs of the
+same binary in the same cell haiku returns an identical pass-rate on 91--100\% of binaries against
+gpt-oss's 20--24\%, with 56\% of binaries over the study yielding eight identical runs
+(Fig.~\ref{fig:determinism}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{fig2-determinismo.pdf}
+\caption{Determinism at temperature $0.0$: the share of binaries whose eight runs return an
+identical pass-rate, per model, with one point per cell. The spread within a model is the
+distance between its clouds and transports --- the same nominal model is not equally stable
+on different infrastructures.}
+\label{fig:determinism}
+\end{figure}
+
+Second, \emph{the same nominal model is not equally stable on different clouds}, and on 45 binaries the
+sampling supports that claim in exactly one of eight comparisons: llama on the native transport returns
+identical scores on 24.4\% of binaries at one endpoint $[14.2, 38.7]$ and 66.7\% at the other $[52.1,
+78.6]$, Wilson bands not touching. The other seven overlap and are not used as evidence. One clean case is
+what these data support, on the same model and axis where T6 shows the largest endpoint effect in the
+study, and the original collection isolates the same comparison.
+
+\subsection{What the metric buys, measured}
+
+Pass-rate has a floor reachable without reconstructing anything, and we measured it rather than
+assuming it: the 53 runs that called \emph{no} tool average $0.1132$ against $0.6378$ for the 5{,}756
+that called at least one. The floor exists and does not dominate --- the metric is a lower bound with a
+measured floor, and the artifact carries the distribution.
+\subsection{Declared covariates}
+
+Two confounds were measured before the confirmatory numbers were read and neither is corrected for, since
+correcting a pre-registered design after the fact is the freedom pre-registration exists to remove.
+\emph{Calls per turn} is the one the ablation arm of \S\ref{sec:rq5} isolates, and it binds on two models
+of four (\S\ref{sec:method}). \emph{Material acquired} is the second: replaying what each transport
+actually requested, the native arm asks for more functions per binary in \emph{all eight} cells, most
+strongly on llama at one endpoint ($-1.16$ functions, SD $0.90$), against six of eight originally. We do
+not order that per-cell agreement against the size of the endpoint effect --- with four models the ordering
+is indistinguishable from noise --- and the artifact carries both covariates in full.
+
+\subsection{Scope}
+
+The effect sizes are circumscribed twice over and both bounds are part of the result. They come from
+\emph{one} family of tasks --- decompiled C binaries scored by unit tests --- on four models and two clouds,
+so T3's $-9.83$pp is a measurement on this corpus rather than a quantity transferable elsewhere: a reader
+who needs a number for their own setting should take the method and the variance decomposition, not the
+point estimate. And every statement above concerns \emph{this} text protocol --- one call per turn, one line
+of the response --- not textual tool calling in general, about which a leaderboard reporting both modes
+finds the textual variant \emph{ahead} by 6pp on one model, against the direction that seeded this work.

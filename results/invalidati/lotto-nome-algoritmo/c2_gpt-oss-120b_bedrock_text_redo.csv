@@ -1,0 +1,75 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog41_series_sum,1,0.6000,3,5,True,False,1094,12,0.003766,4347,5190,openai.gpt-oss-120b-1:0,bedrock,35.3,[],2026-08-14T17:31:21,gpt-oss-120b,bedrock,text
+prog41_series_sum,2,0.6000,3,5,True,False,1163,12,0.005368,8533,6813,openai.gpt-oss-120b-1:0,bedrock,88.2,[],2026-08-14T17:32:49,gpt-oss-120b,bedrock,text
+prog41_series_sum,3,0.8000,4,5,True,False,1445,12,0.005108,8536,6380,openai.gpt-oss-120b-1:0,bedrock,59.1,[],2026-08-14T17:33:49,gpt-oss-120b,bedrock,text
+prog41_series_sum,4,0.6000,3,5,True,False,1444,12,0.006678,7727,9199,openai.gpt-oss-120b-1:0,bedrock,62.9,[],2026-08-14T17:34:51,gpt-oss-120b,bedrock,text
+prog41_series_sum,5,0.6000,3,5,True,False,1430,12,0.004378,7047,5535,openai.gpt-oss-120b-1:0,bedrock,58.5,[],2026-08-14T17:35:50,gpt-oss-120b,bedrock,text
+prog41_series_sum,6,1.0000,5,5,True,False,1416,12,0.003045,4431,3967,openai.gpt-oss-120b-1:0,bedrock,56.3,[],2026-08-14T17:36:46,gpt-oss-120b,bedrock,text
+prog41_series_sum,7,1.0000,5,5,True,False,2507,12,0.005220,9655,6286,openai.gpt-oss-120b-1:0,bedrock,45.6,[],2026-08-14T17:37:32,gpt-oss-120b,bedrock,text
+prog41_series_sum,8,0.8000,4,5,True,False,1162,12,0.004799,7727,6067,openai.gpt-oss-120b-1:0,bedrock,78.3,[],2026-08-14T17:38:50,gpt-oss-120b,bedrock,text
+prog47_circular_queue,1,0.2000,1,5,True,False,2384,12,0.002501,4727,2986,openai.gpt-oss-120b-1:0,bedrock,11.2,[],2026-08-14T17:39:01,gpt-oss-120b,bedrock,text
+prog47_circular_queue,2,1.0000,5,5,True,False,1716,12,0.002041,4727,2220,openai.gpt-oss-120b-1:0,bedrock,19.5,[],2026-08-14T17:39:21,gpt-oss-120b,bedrock,text
+prog47_circular_queue,3,0.8000,4,5,True,False,2238,12,0.003159,4727,4083,openai.gpt-oss-120b-1:0,bedrock,32.7,[],2026-08-14T17:39:53,gpt-oss-120b,bedrock,text
+prog47_circular_queue,4,0.8000,4,5,True,False,1832,12,0.002975,4727,3777,openai.gpt-oss-120b-1:0,bedrock,31.5,[],2026-08-14T17:40:25,gpt-oss-120b,bedrock,text
+prog47_circular_queue,5,0.8000,4,5,True,False,1799,12,0.002529,4727,3034,openai.gpt-oss-120b-1:0,bedrock,22.1,[],2026-08-14T17:40:47,gpt-oss-120b,bedrock,text
+prog47_circular_queue,6,1.0000,5,5,True,False,1501,12,0.002118,4727,2349,openai.gpt-oss-120b-1:0,bedrock,38.7,[],2026-08-14T17:41:26,gpt-oss-120b,bedrock,text
+prog47_circular_queue,7,1.0000,5,5,True,False,1655,12,0.002132,4727,2372,openai.gpt-oss-120b-1:0,bedrock,19.1,[],2026-08-14T17:41:45,gpt-oss-120b,bedrock,text
+prog47_circular_queue,8,1.0000,5,5,True,False,1951,12,0.002176,4727,2445,openai.gpt-oss-120b-1:0,bedrock,10.4,[],2026-08-14T17:41:55,gpt-oss-120b,bedrock,text
+prog48_sorted_linked_list,1,1.0000,5,5,True,False,1124,12,0.001560,3074,1832,openai.gpt-oss-120b-1:0,bedrock,10.8,[],2026-08-14T17:42:06,gpt-oss-120b,bedrock,text
+prog48_sorted_linked_list,2,1.0000,5,5,True,False,1388,12,0.001638,3074,1962,openai.gpt-oss-120b-1:0,bedrock,31.6,[],2026-08-14T17:42:38,gpt-oss-120b,bedrock,text
+prog48_sorted_linked_list,3,1.0000,5,5,True,False,2072,12,0.002508,7620,2275,openai.gpt-oss-120b-1:0,bedrock,27.3,[],2026-08-14T17:43:05,gpt-oss-120b,bedrock,text
+prog48_sorted_linked_list,4,0.0000,0,5,False,False,1667,12,0.001740,3074,2132,openai.gpt-oss-120b-1:0,bedrock,18.6,harness_error: IndexError: list index out of range,2026-08-14T17:43:24,gpt-oss-120b,bedrock,text
+prog48_sorted_linked_list,5,1.0000,5,5,True,False,1301,12,0.001560,3074,1832,openai.gpt-oss-120b-1:0,bedrock,14.3,[],2026-08-14T17:43:38,gpt-oss-120b,bedrock,text
+prog48_sorted_linked_list,6,1.0000,5,5,True,False,1773,12,0.002901,7345,2999,openai.gpt-oss-120b-1:0,bedrock,30.2,[],2026-08-14T17:44:08,gpt-oss-120b,bedrock,text
+prog48_sorted_linked_list,7,1.0000,5,5,True,False,1388,12,0.001643,3074,1970,openai.gpt-oss-120b-1:0,bedrock,26.8,[],2026-08-14T17:44:35,gpt-oss-120b,bedrock,text
+prog48_sorted_linked_list,8,1.0000,5,5,True,False,1946,12,0.002322,5650,2457,openai.gpt-oss-120b-1:0,bedrock,11.8,[],2026-08-14T17:44:47,gpt-oss-120b,bedrock,text
+prog49_bst,1,0.8000,4,5,True,False,2815,12,0.005576,15086,5521,openai.gpt-oss-120b-1:0,bedrock,61.8,[],2026-08-14T17:45:49,gpt-oss-120b,bedrock,text
+prog49_bst,2,0.0000,0,5,True,False,4771,12,0.008697,21923,9015,openai.gpt-oss-120b-1:0,bedrock,45.1,[],2026-08-14T17:46:34,gpt-oss-120b,bedrock,text
+prog49_bst,3,0.8000,4,5,True,False,4371,12,0.008062,27168,6645,openai.gpt-oss-120b-1:0,bedrock,32.2,[],2026-08-14T17:47:06,gpt-oss-120b,bedrock,text
+prog49_bst,4,1.0000,5,5,True,False,3034,12,0.005259,16522,4634,openai.gpt-oss-120b-1:0,bedrock,58.5,[],2026-08-14T17:48:04,gpt-oss-120b,bedrock,text
+prog49_bst,5,0.4000,2,5,True,False,3222,12,0.004906,12071,5159,openai.gpt-oss-120b-1:0,bedrock,29.8,[],2026-08-14T17:48:34,gpt-oss-120b,bedrock,text
+prog49_bst,6,1.0000,5,5,True,False,3180,12,0.007445,27840,5449,openai.gpt-oss-120b-1:0,bedrock,38.6,[],2026-08-14T17:49:13,gpt-oss-120b,bedrock,text
+prog49_bst,7,0.2000,1,5,True,False,3053,12,0.007895,31322,5328,openai.gpt-oss-120b-1:0,bedrock,42.2,[],2026-08-14T17:49:55,gpt-oss-120b,bedrock,text
+prog49_bst,8,0.8000,4,5,True,False,3420,12,0.006067,17927,5630,openai.gpt-oss-120b-1:0,bedrock,67.5,[],2026-08-14T17:51:02,gpt-oss-120b,bedrock,text
+prog50_binary_heap,1,1.0000,5,5,True,False,2542,12,0.002430,5836,2591,openai.gpt-oss-120b-1:0,bedrock,38.0,[],2026-08-14T17:51:40,gpt-oss-120b,bedrock,text
+prog50_binary_heap,2,0.8000,4,5,True,False,2143,12,0.003869,11502,3573,openai.gpt-oss-120b-1:0,bedrock,14.1,[],2026-08-14T17:51:55,gpt-oss-120b,bedrock,text
+prog50_binary_heap,3,1.0000,5,5,True,False,2168,12,0.002509,5836,2722,openai.gpt-oss-120b-1:0,bedrock,19.6,[],2026-08-14T17:52:14,gpt-oss-120b,bedrock,text
+prog50_binary_heap,4,0.4000,2,5,True,False,2712,12,0.004836,11502,5184,openai.gpt-oss-120b-1:0,bedrock,33.6,[],2026-08-14T17:52:48,gpt-oss-120b,bedrock,text
+prog50_binary_heap,5,1.0000,5,5,True,False,2486,12,0.003868,10705,3770,openai.gpt-oss-120b-1:0,bedrock,27.7,[],2026-08-14T17:53:16,gpt-oss-120b,bedrock,text
+prog50_binary_heap,6,0.4000,2,5,True,False,3200,12,0.002620,5836,2907,openai.gpt-oss-120b-1:0,bedrock,21.2,[],2026-08-14T17:53:37,gpt-oss-120b,bedrock,text
+prog50_binary_heap,7,0.2000,1,5,True,False,2286,12,0.004899,11519,5285,openai.gpt-oss-120b-1:0,bedrock,35.8,[],2026-08-14T17:54:13,gpt-oss-120b,bedrock,text
+prog50_binary_heap,8,0.6000,3,5,True,False,2176,12,0.004556,11502,4717,openai.gpt-oss-120b-1:0,bedrock,72.6,[],2026-08-14T17:55:25,gpt-oss-120b,bedrock,text
+prog51_union_find,1,0.2000,1,5,True,False,3290,12,0.005796,12985,6413,openai.gpt-oss-120b-1:0,bedrock,20.2,[],2026-08-14T17:55:45,gpt-oss-120b,bedrock,text
+prog51_union_find,2,1.0000,5,5,True,False,2913,12,0.003410,6326,4101,openai.gpt-oss-120b-1:0,bedrock,13.2,[],2026-08-14T17:55:59,gpt-oss-120b,bedrock,text
+prog51_union_find,3,1.0000,5,5,True,False,2864,12,0.003045,6326,3494,openai.gpt-oss-120b-1:0,bedrock,34.3,[],2026-08-14T17:56:33,gpt-oss-120b,bedrock,text
+prog51_union_find,4,0.6000,3,5,True,False,5636,12,0.004899,9480,5795,openai.gpt-oss-120b-1:0,bedrock,43.1,[],2026-08-14T17:57:16,gpt-oss-120b,bedrock,text
+prog51_union_find,5,0.8000,4,5,True,False,2794,12,0.003070,6326,3535,openai.gpt-oss-120b-1:0,bedrock,14.1,[],2026-08-14T17:57:30,gpt-oss-120b,bedrock,text
+prog51_union_find,6,0.0000,0,5,False,False,4220,12,0.004196,9575,4600,openai.gpt-oss-120b-1:0,bedrock,63.7,harness_error: IndexError: list index out of range,2026-08-14T17:58:34,gpt-oss-120b,bedrock,text
+prog51_union_find,7,0.2000,1,5,True,False,2089,12,0.003334,6326,3976,openai.gpt-oss-120b-1:0,bedrock,29.2,[],2026-08-14T17:59:03,gpt-oss-120b,bedrock,text
+prog51_union_find,8,0.2000,1,5,True,False,2385,12,0.003302,6326,3922,openai.gpt-oss-120b-1:0,bedrock,13.2,[],2026-08-14T17:59:16,gpt-oss-120b,bedrock,text
+prog52_bfs_grid,1,0.8000,4,5,True,False,1937,12,0.006066,17767,5668,openai.gpt-oss-120b-1:0,bedrock,57.4,[],2026-08-14T18:00:13,gpt-oss-120b,bedrock,text
+prog52_bfs_grid,2,0.6000,3,5,True,False,2941,12,0.004385,11936,4324,openai.gpt-oss-120b-1:0,bedrock,24.6,[],2026-08-14T18:00:38,gpt-oss-120b,bedrock,text
+prog52_bfs_grid,3,0.0000,0,5,False,False,2571,12,0.004616,17228,3387,openai.gpt-oss-120b-1:0,bedrock,23.4,"/w/candidate.c:33:23: error: expected ')'
+   33 |         if (scanf(""%"" STR(MAX_C) ""s"", grid[i]) != 1) {
+      |                       ^
+/w/candidate.c:33:18: note: to match this '('
+   33 |         if (scanf(""%"" STR(MAX_C) ""s"", grid[i]) != 1) {
+      |                  ^
+1 error generated.
+",2026-08-14T18:01:01,gpt-oss-120b,bedrock,text
+prog52_bfs_grid,4,0.8000,4,5,True,False,1922,12,0.005600,17767,4891,openai.gpt-oss-120b-1:0,bedrock,50.7,[],2026-08-14T18:01:52,gpt-oss-120b,bedrock,text
+prog52_bfs_grid,5,0.0000,0,5,True,False,2250,12,0.003476,9275,3475,openai.gpt-oss-120b-1:0,bedrock,17.7,[],2026-08-14T18:02:10,gpt-oss-120b,bedrock,text
+prog52_bfs_grid,6,0.0000,0,5,True,False,2464,12,0.004331,16520,3088,openai.gpt-oss-120b-1:0,bedrock,23.9,[],2026-08-14T18:02:34,gpt-oss-120b,bedrock,text
+prog52_bfs_grid,7,0.8000,4,5,True,False,2552,12,0.003796,11143,3541,openai.gpt-oss-120b-1:0,bedrock,45.3,[],2026-08-14T18:03:19,gpt-oss-120b,bedrock,text
+prog52_bfs_grid,8,0.0000,0,5,True,False,2253,12,0.002068,5217,2142,openai.gpt-oss-120b-1:0,bedrock,14.3,[],2026-08-14T18:03:33,gpt-oss-120b,bedrock,text
+prog53_dfs_cycle,1,0.8000,4,5,True,False,3205,12,0.005946,18026,5403,openai.gpt-oss-120b-1:0,bedrock,37.7,[],2026-08-14T18:04:11,gpt-oss-120b,bedrock,text
+prog53_dfs_cycle,2,1.0000,5,5,True,False,2587,12,0.004873,18169,3579,openai.gpt-oss-120b-1:0,bedrock,43.1,[],2026-08-14T18:04:54,gpt-oss-120b,bedrock,text
+prog53_dfs_cycle,3,1.0000,5,5,True,False,2238,12,0.004578,15974,3636,openai.gpt-oss-120b-1:0,bedrock,20.6,[],2026-08-14T18:05:15,gpt-oss-120b,bedrock,text
+prog53_dfs_cycle,4,0.0000,0,5,True,False,2697,12,0.004902,18002,3669,openai.gpt-oss-120b-1:0,bedrock,46.8,[],2026-08-14T18:06:01,gpt-oss-120b,bedrock,text
+prog53_dfs_cycle,5,1.0000,5,5,True,False,2363,12,0.004608,15426,3823,openai.gpt-oss-120b-1:0,bedrock,26.0,[],2026-08-14T18:06:28,gpt-oss-120b,bedrock,text
+prog53_dfs_cycle,6,1.0000,5,5,True,False,4150,12,0.005439,18031,4558,openai.gpt-oss-120b-1:0,bedrock,43.4,[],2026-08-14T18:07:11,gpt-oss-120b,bedrock,text
+prog53_dfs_cycle,7,1.0000,5,5,True,False,2688,12,0.005392,16794,4788,openai.gpt-oss-120b-1:0,bedrock,62.1,[],2026-08-14T18:08:13,gpt-oss-120b,bedrock,text
+prog53_dfs_cycle,8,1.0000,5,5,True,False,3032,12,0.003689,9460,3783,openai.gpt-oss-120b-1:0,bedrock,24.8,[],2026-08-14T18:08:38,gpt-oss-120b,bedrock,text
+prog54_topo_sort,1,0.0000,0,5,True,False,2379,12,0.002821,6405,3101,openai.gpt-oss-120b-1:0,bedrock,40.1,[],2026-08-14T18:09:18,gpt-oss-120b,bedrock,text
+prog54_topo_sort,2,0.8000,4,5,True,False,2129,12,0.003219,6405,3764,openai.gpt-oss-120b-1:0,bedrock,37.5,[],2026-08-14T18:09:55,gpt-oss-120b,bedrock,text
+prog54_topo_sort,3,0.0000,0,5,True,False,2458,12,0.002299,6405,2230,openai.gpt-oss-120b-1:0,bedrock,42.7,[],2026-08-14T18:10:38,gpt-oss-120b,bedrock,text

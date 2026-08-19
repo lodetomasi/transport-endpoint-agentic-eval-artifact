@@ -1,0 +1,7 @@
+{"program": "prog16_word_count_fsm", "tests": [
+  {"id": 1, "args": [], "stdin": "hello world\nfoo bar baz\n", "expected_stdout": "LINES=2 WORDS=5 CHARS=24\n"},
+  {"id": 2, "args": [], "stdin": "", "expected_stdout": "LINES=0 WORDS=0 CHARS=0\n"},
+  {"id": 3, "args": [], "stdin": "no newline at end", "expected_stdout": "LINES=0 WORDS=4 CHARS=17\n"},
+  {"id": 4, "args": [], "stdin": "   \n\n  \n", "expected_stdout": "LINES=3 WORDS=0 CHARS=8\n"},
+  {"id": 5, "args": [], "stdin": "a\nb\nc\n", "expected_stdout": "LINES=3 WORDS=3 CHARS=6\n"}
+]}

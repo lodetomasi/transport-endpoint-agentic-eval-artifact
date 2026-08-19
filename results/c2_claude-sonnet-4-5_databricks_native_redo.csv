@@ -1,0 +1,4 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog32_prime_factorization,1,1.0000,5,5,True,False,1228,12,0.036270,7315,955,databricks-claude-sonnet-4-5,databricks,20.8,[],2026-08-15T12:52:04,claude-sonnet-4-5,databricks,native
+prog32_prime_factorization,2,1.0000,5,5,True,False,1158,12,0.036315,7315,958,databricks-claude-sonnet-4-5,databricks,19.9,[],2026-08-15T12:52:24,claude-sonnet-4-5,databricks,native
+prog32_prime_factorization,3,1.0000,5,5,True,False,1183,12,0.036315,7315,958,databricks-claude-sonnet-4-5,databricks,18.5,[],2026-08-15T12:52:43,claude-sonnet-4-5,databricks,native

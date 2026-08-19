@@ -1,0 +1,7 @@
+{"program": "prog45_josephus", "tests": [
+  {"id": 1, "args": ["7", "3"], "stdin": "", "expected_stdout": "4\n"},
+  {"id": 2, "args": ["1", "5"], "stdin": "", "expected_stdout": "1\n"},
+  {"id": 3, "args": ["2", "1"], "stdin": "", "expected_stdout": "2\n"},
+  {"id": 4, "args": ["1000000", "2"], "stdin": "", "expected_stdout": "951425\n"},
+  {"id": 5, "args": ["5", "0"], "stdin": "", "expected_stdout": "BAD_INPUT\n"}
+]}

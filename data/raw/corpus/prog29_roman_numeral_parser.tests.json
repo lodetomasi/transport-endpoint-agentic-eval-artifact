@@ -1,0 +1,7 @@
+{"program": "prog29_roman_numeral_parser", "tests": [
+  {"id": 1, "args": ["MCMXCIV"], "stdin": "", "expected_stdout": "1994\n"},
+  {"id": 2, "args": ["iv"], "stdin": "", "expected_stdout": "4\n"},
+  {"id": 3, "args": ["IIII"], "stdin": "", "expected_stdout": "INVALID\n"},
+  {"id": 4, "args": ["MMMCMXCIX"], "stdin": "", "expected_stdout": "3999\n"},
+  {"id": 5, "args": [""], "stdin": "", "expected_stdout": "INVALID\n"}
+]}

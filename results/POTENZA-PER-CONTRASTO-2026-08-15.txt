@@ -1,0 +1,26 @@
+Potenza raggiunta per contrasto, a MDE pre-registrato 4,87pp e K=45
+
+  id   contrasto                   SD   normale  t non centr.
+  T1   gpt-oss, transport      0.1950     38.8%         37.4%
+  T2   llama, transport        0.1374     66.2%         64.3%
+  T3   haiku, transport        0.2844     21.0%         20.3%
+  T4   sonnet, transport       0.1232     75.5%         73.7%
+  T5   gpt-oss, endpoint       0.1339     68.4%         66.5%
+  T6   llama, endpoint         0.2481     26.1%         25.1%
+  T7   haiku, endpoint         0.0037    100.0%        100.0%
+  T8   sonnet, endpoint        0.0630     99.9%         99.9%
+
+  In tabella entra la t non centrale: e' la distribuzione che il test usa, e il
+  suo valore critico t(0,975; 44) = 2.0154 e' piu' alto di
+  z(0,975) = 1.9600, quindi la potenza e' piu' bassa. La normale
+  la gonfierebbe, e in un paper che dichiara la propria sotto-potenza sarebbe
+  l'errore nella direzione sbagliata.
+
+  CONTROLLO con risposta nota: la tabella del paper riporta 19,4% per T3.
+    t non centrale per T3: 20.3% -> NON COINCIDE, la tabella va corretta
+    (la normale darebbe 21.0%, ed e' il numero che un
+     revisore ottiene se applica la formula standard senza specificare la df)
+
+  T10, intervallo con il MODELLO come unita' di replicazione (n=4, t_3=3.182):
+    delta -3.85pp   IC95 [-12.05, +4.35]
+    CONTROLLO: la tabella del paper riporta -3,85pp [-12,1, +4,4] -> COINCIDE

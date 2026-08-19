@@ -1,0 +1,137 @@
+\section{RQ4 \emph{(pre-registered as exploratory)}: What the Endpoint Removes Before a
+Score Exists}
+\label{sec:census}
+
+This section reports the result that does not depend on a $p$-value: an endpoint either returned
+the message we quote or it did not. Building the sample required probing which models each
+infrastructure would serve, and that probe returned six mechanisms by which an endpoint removes a
+model from an evaluation. Two more appeared from inside the confirmatory arm, where a probe cannot
+reach them: eight in total, none sought. The split is the practical finding: a pre-flight reaches the first six, not the last two.
+
+We report the six from the probe separately from the two found by collecting, because the
+distinction is the practical finding. A pre-flight check reaches the first six; the last two
+fire only in a conversational state that a check does not construct, and one of them is visible
+on one transport and invisible on the other.
+
+\subsection{The six a probe reaches, with the endpoint's own words}
+
+\begin{table}[t]
+\caption{Mechanisms observed while constructing the roster. Each is an existence proof with its
+own denominator, not a rate. \textbf{Level} says where the decision that removes the model is
+taken, and it is the column that decides whether a reader can do anything about it: \emph{vendor}
+holds for everyone using that platform; \emph{region} depends on where the request originates;
+\emph{tenant} depends on the account's own history and quota, so two teams on one platform can
+see different rosters; \emph{conversational state} fires only inside a session and is invisible to
+any check made before one starts.}
+\label{tab:mechanisms}
+\centering
+\small
+\begin{tabular}{@{}p{0.16\linewidth}p{0.11\linewidth}p{0.68\linewidth}@{}}
+\toprule
+mechanism & level & evidence \\
+\midrule
+protocol refusal & vendor & \texttt{400}: multi-turn tool calls unsupported, on 43 of 45 binaries \\
+deprecation & vendor & \texttt{ServiceModelDeprecated \ldots\ since 06/13/2026} --- while a second cloud still serves the same nominal model \\
+absent quota & tenant & the catalogue advertises the deployment type; the quota system has no row for it, and creation is refused \\
+disuse & tenant & \emph{``marked by provider as Legacy and you have not been actively using the model in the last 30 days''} \\
+jurisdiction & region & \emph{``Access to Meta Llama models is not allowed from unsupported countries, regions, or territories''} --- while two other models of the same family run \\
+parallel calls & conv.\ state & \texttt{400 UnsupportedToolUse}: \emph{``This model does not support more than one tool call at this time''} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:mechanisms} is not a taxonomy derived from documentation: every row is a message an
+endpoint returned to a request we made, and the artifact carries the request that produced it.
+
+\subsection{The one a probe reports healthy}
+
+Five of the six are found by asking the endpoint an ordinary question. The sixth --- the refusal of more
+than one tool call in a turn --- is not: it needs a history in which the model has already emitted two
+calls in one assistant message, a state no single request constructs. The useful consequence is that the
+state is nonetheless \emph{constructible}, and hand-assembling that history is a probe: send it and the
+endpoint answers before any collection has been paid for. The mechanism was found by collecting and only
+then reduced to something findable by asking.
+
+\subsection{A seventh case, inside the confirmatory arm}
+
+One more constraint belongs here rather than in the threats, being the same phenomenon observed from
+inside our own design. The protocol we pre-registered ends each trajectory with a turn that offers no
+tools, and on Bedrock that turn \emph{cannot be expressed}: the API requires a tool configuration whenever
+the history contains a tool call, and its tool-choice parameter admits ``auto'', ``any'' and a named tool
+--- but not ``none''.
+
+The exposure was not where it first appeared. The broken rows carried an infrastructure-failure flag and
+were already excluded from every mean; what survived was structural. A trajectory reaches the final turn
+with a tool call in its history only if it has \emph{not} already submitted through a tool, so the runs
+that completed were exactly those that had submitted early --- a second selection effect, inside the axis
+this study exists to measure cleanly. We discarded that batch and re-collected the cell against a
+corrected client. It is the sixth mechanism's twin: a constraint a pre-flight probe reports as healthy,
+because it fires only in a conversational state a probe does not reach.
+
+\subsection{Four further cases, in the artifact}
+
+Four observations belong to the census and not to a paper of this length, and the artifact carries each
+with its verbatim evidence: how the roster was assembled and what each denominator is; the same model
+returning \emph{two different refusals} one minute apart, depending which of the vendor's own identifier
+conventions is used; one model comparable on one cloud, refused by a second, fully functional on a third;
+and a service control policy permitting invocation while denying enumeration. The last carries the only
+obligation that transfers --- under such a policy the roster cannot be recovered from the account and must
+be declared by explicit enumeration, which is what \S\ref{sec:design} does --- and is a property of our
+account rather than of the platform, labelled as such.
+
+\subsection{An eighth case: the endpoint rejects the output of the model it serves}
+\label{sec:ottavo}
+
+The re-collection produced one more, the sharpest of the set because neither party is malfunctioning.
+The open-weights model emits tool calls in its own chat format, which uses special tokens to separate
+reasoning channels; the serving layer does not strip that token from the tool name, so the name reaches
+the API as \texttt{decompile\_function<|channel|>commentary} --- eleven occurrences with that exact
+value. The API then validates the name it was just handed:
+
+\begin{quote}\footnotesize\ttfamily\raggedright
+ValidationException: Value at\\
+'messages.10.member.content.1.member.toolUse.name'\\
+failed to satisfy constraint: Member must satisfy\\
+regular expression pattern: [a-zA-Z0-9\_-]+
+\end{quote}
+
+\noindent
+and rejects the entire request. Not the turn --- the trajectory. \emph{The endpoint refuses the output of
+the model it is itself serving}, and no party is at fault: the model emits its native format, the client
+sends a valid request, the validator does its job. The serving stack does not close the loop between the
+format of the model it hosts and the validation of its own API, and retrying does not help --- seven valid
+runs on one binary took fifteen.
+
+\subsection{How far a removal moves a published comparison}
+\label{sec:bound}
+
+That a refused model has no row to correct is an argument, and an argument does not say how much a
+reader's conclusion changes. The census documents real cases --- a Llama variant deprecated on one
+platform while another serves it, a second blocked by jurisdiction while its siblings run --- so
+someone evaluating on one endpoint reads a table with rows missing and does not know which. We bound
+the consequence on the four models where a score exists on both clouds, removing one model at a time
+and recomputing the comparison the way a leaderboard reports it.
+
+The \emph{order} survives: all pairwise orderings between the two clouds agree before and after every
+removal. The \emph{scale} does not. Removing the lowest-scoring model collapses the first-to-last spread
+from 54.3pp to 6.7pp on one cloud and from 47.3pp to 10.4pp on the other, and across all eight removals
+the largest change is \textbf{47.6pp} --- against the $-9.83$pp that is the largest transport effect this
+study measures, derived in \S\ref{sec:results}. A single missing row moves what a benchmark reports as ``the distance between the systems
+compared'' by roughly five times what the apparatus effect moves it.
+
+This is a \emph{lower} bound and the direction of the extrapolation is worth stating: with four
+models there is little room to move, and the same mechanism on a twenty-model leaderboard has more,
+not less. What our data support is the sign and the order of magnitude, not a coefficient.
+
+\subsection{Why this is the part that is new}
+\label{sec:tassonomia}
+
+The closest neighbour is a taxonomy of failure modes in multi-provider serving, classified by origin layer
+and detectability~\citep{failureatlas}. Our eight mechanisms do not sit inside it, for a reason sharper than a
+gap in coverage: that taxonomy classifies \emph{faults}, each entry something that stops happening once
+repaired. The question none of its layers asks is the one deciding whether a model appears in a benchmark at
+all --- \emph{will this endpoint serve this model identity?} --- so what we offer is a missing layer rather
+than an empty cell, with Table~\ref{tab:mechanisms} as its evidence: eight instances, each with the verbatim
+message of the endpoint that produced it. We do not claim nobody has catalogued serving failures; we claim
+the catalogues begin one step after a model can vanish from a study. The artifact carries the layer-by-layer
+comparison.

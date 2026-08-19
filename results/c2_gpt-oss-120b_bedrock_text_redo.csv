@@ -1,0 +1,5 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog21_date_validator,1,0.6000,3,5,True,False,765,12,0.002315,7383,2012,openai.gpt-oss-120b-1:0,bedrock,24.9,[],2026-08-15T13:25:49,gpt-oss-120b,bedrock,text
+prog22_snake_camel_convert,1,0.8000,4,5,True,False,1786,12,0.003580,5454,4603,openai.gpt-oss-120b-1:0,bedrock,22.4,[],2026-08-15T13:26:11,gpt-oss-120b,bedrock,text
+prog41_series_sum,1,1.0000,5,5,True,False,1756,12,0.003859,4341,5347,openai.gpt-oss-120b-1:0,bedrock,35.4,[],2026-08-15T13:26:47,gpt-oss-120b,bedrock,text
+prog49_bst,1,0.4000,2,5,True,False,2502,12,0.005126,12172,5500,openai.gpt-oss-120b-1:0,bedrock,30.0,[],2026-08-15T13:27:17,gpt-oss-120b,bedrock,text

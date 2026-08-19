@@ -1,0 +1,84 @@
+\section{Related Work}
+\label{sec:related}
+
+We position this work against its neighbours and state the delta at the width the evidence
+supports.
+
+\subsection{Measurement bias, and the harness as its current object}
+
+The shape of our finding is old in systems research and new only in the evaluation of agents: that a
+measurement depends on the stack under it is unremarkable in performance work, where declaring the
+configuration is a norm. What agentic evaluation lacks is that norm. The argument has been made for the
+harness as a whole~\citep{zhang2026harness,yao2026harnessbench}; we are downstream of it and supply the
+measurement it lacks --- what the undeclared choices are worth, one axis at a time.
+
+Four lines of work bound this one, and the artifact expands each with the figures we take from it.
+\textbf{Apparatus variance is established methodology elsewhere}: rigorous performance measurement has
+long required reporting the configuration and treating run-to-run variation as first
+class~\citep{georges2007rigorous,iosup2011variability}, and measurement bias from unreported setup
+choices was demonstrated two decades ago~\citep{mytkowicz2009wrongdata} --- what is missing here is not
+the method but its application. \textbf{Non-determinism at nominal temperature zero} has been measured for repeated
+sampling~\citep{atil-nondeterminism} and traced to the batch size a server happens to be
+running~\citep{he2025nondeterminism} --- the class of mechanism our \S\ref{sec:runtime} finds diverging by
+a factor of 2.3 in input tokens. \textbf{The endpoint is already known to be a service rather than an artifact}: a measurement study of
+hosted open-weight APIs finds one model differing across providers in protocol support, error semantics,
+context capacity and throughput~\citep{li2026service}, which is our T5--T8 axis arrived at independently.
+\textbf{And the transport axis is visible to the field, in no fixed direction}: a leaderboard ranks every
+model in a native and a prompted mode~\citep{bfcl2025}; on one model the prompted variant is \emph{ahead}
+by 6pp~\citep{bfcl-leaderboard,bfcl-issue606}; and a third transport, tools as typed code stubs rather
+than JSON, matches or exceeds native calling on 11 of 14~\citep{bitterlesson2026}. Three transports, three
+directions. \textbf{And the task family has its own literature}:
+reconstruction from stripped binaries is active~\citep{tan2024llm4decompile,jiang2025nova}, semantic
+equivalence under transformation has been studied on the corpus we
+reuse~\citep{detomasi2025obfuscation}, test-based equivalence has known
+limits~\citep{liu-wang-issta2020}, and the reproducibility of published results built on
+commercial models has been assessed directly, with model deprecation as a leading cause of
+failure~\citep{angermeir2026reproducibility}.
+
+\subsection{The transport: known to move the number, in no fixed direction}
+
+The nearest thing to a counterexample is a public leaderboard ranking every model in both a native and
+a prompted mode: the axis is not invisible to the field. It reports the two modes side by side rather
+than crossing them with the serving endpoint, and on one model finds the textual variant \emph{ahead} by
+6pp --- the opposite direction to what seeded this work~\citep{bfcl-leaderboard,bfcl-issue606}, which is
+why we treat it as a constraint on our claim rather than support. Designing on an effect size estimated
+from earlier data is known to miss its target power~\citep{albers2018power}, and non-determinism at
+nominal temperature zero has been measured for repeated sampling~\citep{atil-nondeterminism}; what this
+case adds to both is a failure that reverses rather than drifts, at a rate differing by cloud at fixed
+model identity.
+
+The reporting obligation is already settled and we do not argue for it: community guidelines for
+empirical work with language models require the harness to be described when it goes beyond bare
+API calls~\citep{baltes2026guidelines}. Our contribution is not the rule but the measurement it
+lacks --- how much the undeclared choices move, and that its threshold is set too high.
+
+\subsection{The endpoint: a unit of measurement, and a unit of selection}
+
+Holding weights, decoding and hardware fixed while varying only the inference engine produces measurable
+differences in output, which establishes the mechanism we extend: if an engine moves a number at fixed
+weights, a managed platform choosing engine, version and scaffolding without disclosing any of them can
+move it too, and a reader has no way to know by how much~\citep{silent-hyperparameter}.
+
+Removal also breaks reproduction downstream, and its scale has been measured on one public arena's
+own roster: of 243 models, 205 had been silently deprecated against 47 marked as such, at rates of
+87.8\% for open-weight and 80\% for proprietary models~\citep{leaderboard-illusion}. That audit
+names the mechanism --- ``Chatbot Arena may be forced to deprecate a model when a provider no longer
+supports it via its API'' --- and counts the outcome after the fact, aggregated over a roster; we
+measure the refusals themselves, verbatim and case by case, before a score exists.
+
+\subsection{Where the failure taxonomies stop}
+
+The nearest neighbour to our census is a taxonomy of failure modes in multi-provider serving
+infrastructure, classified by origin layer and detectability~\citep{failureatlas}. Two of its
+five layers already reach failures occurring before generation --- network and transport covers
+``TCP timeouts, TLS handshake failures, DNS resolution issues'', governance and cost covers
+``rate-limit counters that leak and never recover'' --- so the distinction we draw is not about
+\emph{when} the failure lands.
+
+It is about whether anything is broken. Every entry in that catalogue is a \emph{malfunction} --- an
+operator could in principle repair it, and the leaking counter we just quoted is a bug precisely because
+it should recover and does not. The mechanisms of \S\ref{sec:census} are the other kind: an endpoint
+behaving exactly as configured, refusing by policy, with nothing for anyone to fix. That is why they
+persist for the duration of a study. We develop that distinction, and what it implies for the taxonomy, in
+\S\ref{sec:tassonomia} where the mechanisms are on the page.
+

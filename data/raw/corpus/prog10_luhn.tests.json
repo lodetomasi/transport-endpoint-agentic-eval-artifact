@@ -1,0 +1,7 @@
+{"program": "prog10_luhn", "tests": [
+  {"id": 1, "args": ["79927398713"], "stdin": "", "expected_stdout": "VALID\n"},
+  {"id": 2, "args": ["111111111111111111111111111111111"], "stdin": "", "expected_stdout": "TOO_LONG\n"},
+  {"id": 3, "args": ["1"], "stdin": "", "expected_stdout": "INVALID\n"},
+  {"id": 4, "args": ["4532015112830366"], "stdin": "", "expected_stdout": "VALID\n"},
+  {"id": 5, "args": ["abcd1234"], "stdin": "", "expected_stdout": "INVALID\n"}
+]}

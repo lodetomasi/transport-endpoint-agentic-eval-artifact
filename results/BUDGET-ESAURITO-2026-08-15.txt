@@ -1,0 +1,23 @@
+Budget dei turni esaurito — soglia 13 righe (N=12 piu' il turno finale)
+
+  traiettorie totali: 5873
+  che esauriscono il budget: 55  (0.9%)
+
+  braccio       totali   al budget    quota
+  nativo          2955          55     1.9%
+  testuale        2918           0     0.0%
+
+  Qualche caso concreto nel braccio che li esaurisce:
+    13 righe   c2_llama-3.3-70b_databricks_native/prog45_josephus_r6.jsonl
+    13 righe   c2_llama-3.3-70b_databricks_native/prog45_josephus_r4.jsonl
+    13 righe   c2_llama-3.3-70b_databricks_native/prog45_josephus_r2.jsonl
+    13 righe   c2_llama-3.3-70b_databricks_native/prog35_perfect_numbers_r8.jsonl
+    13 righe   c2_llama-3.3-70b_databricks_native/prog19_palindrome_checker_r4.jsonl
+
+  LETTURA. La card v6 diceva che nessuna run esaurisce il budget, e ne concludeva
+  che il batching e' opportunita' persa per il testuale invece che turni bruciati.
+  E' vero il contrario di quel che serviva all'argomento: il budget si esaurisce
+  SOLO nel braccio nativo, cioe' quello che puo' raggruppare le chiamate. Per
+  quelle 55 run il batching non e' un vantaggio inutilizzato: e' cio' che ha
+  permesso di arrivare in fondo. Il confondimento di T3 e T4 e' piu' forte, non
+  delimitato, e va riportato cosi'.

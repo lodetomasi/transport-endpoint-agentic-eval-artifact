@@ -1,0 +1,7 @@
+{"program": "prog02_quicksort", "tests": [
+  {"id": 1, "args": ["9", "2", "7", "1", "8", "3"], "stdin": "", "expected_stdout": "1 2 3 7 8 9\n"},
+  {"id": 2, "args": ["42"], "stdin": "", "expected_stdout": "42\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "EMPTY\n"},
+  {"id": 4, "args": ["15", "14", "13", "12", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"], "stdin": "", "expected_stdout": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15\n"},
+  {"id": 5, "args": ["-5", "-5", "0", "-5", "5"], "stdin": "", "expected_stdout": "-5 -5 -5 0 5\n"}
+]}

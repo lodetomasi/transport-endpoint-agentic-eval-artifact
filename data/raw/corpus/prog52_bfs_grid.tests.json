@@ -1,0 +1,7 @@
+{"program": "prog52_bfs_grid", "tests": [
+  {"id": 1, "args": ["0", "0", "4", "4"], "stdin": "", "expected_stdout": "dist=8\n"},
+  {"id": 2, "args": ["0", "0", "0", "0"], "stdin": "", "expected_stdout": "dist=0\n"},
+  {"id": 3, "args": ["0", "0"], "stdin": "", "expected_stdout": "INVALID_CELL\n"},
+  {"id": 4, "args": ["4", "0", "0", "1"], "stdin": "", "expected_stdout": "dist=5\n"},
+  {"id": 5, "args": ["0", "0", "2", "5"], "stdin": "", "expected_stdout": "UNREACHABLE\n"}
+]}

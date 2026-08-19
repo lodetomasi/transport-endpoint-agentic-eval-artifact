@@ -1,0 +1,7 @@
+{"program": "prog50_binary_heap", "tests": [
+  {"id": 1, "args": ["I5", "I3", "I8", "X", "X"], "stdin": "", "expected_stdout": "INS 5\nINS 3\nINS 8\nMIN 3\nMIN 5\n"},
+  {"id": 2, "args": ["X"], "stdin": "", "expected_stdout": "EMPTY\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "NOOP\n"},
+  {"id": 4, "args": ["I9", "I7", "I5", "I3", "I1", "X", "X", "X", "X", "X"], "stdin": "", "expected_stdout": "INS 9\nINS 7\nINS 5\nINS 3\nINS 1\nMIN 1\nMIN 3\nMIN 5\nMIN 7\nMIN 9\n"},
+  {"id": 5, "args": ["I1", "I2", "I3", "I4", "I5", "I6", "I7", "I8", "I9", "I10", "I11", "I12", "I13", "I14", "I15", "I16", "I17", "I18", "I19", "I20"], "stdin": "", "expected_stdout": "INS 1\nINS 2\nINS 3\nINS 4\nINS 5\nINS 6\nINS 7\nINS 8\nINS 9\nINS 10\nINS 11\nINS 12\nINS 13\nINS 14\nINS 15\nINS 16\nFULL\nFULL\nFULL\nFULL\n"}
+]}

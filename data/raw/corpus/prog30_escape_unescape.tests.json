@@ -1,0 +1,7 @@
+{"program": "prog30_escape_unescape", "tests": [
+  {"id": 1, "args": ["escape", "Line1\tTab\"Quote\\Back\nNewline"], "stdin": "", "expected_stdout": "Line1\\tTab\\\"Quote\\\\Back\\nNewline\n"},
+  {"id": 2, "args": ["unescape", "Line1\\tTab\\\"Quote\\\\\\\\Back\\nNewline"], "stdin": "", "expected_stdout": "Line1\tTab\"Quote\\\\Back\nNewline\n"},
+  {"id": 3, "args": ["unescape", "bad\\x"], "stdin": "", "expected_stdout": "INVALID\n"},
+  {"id": 4, "args": ["escape", "plain text"], "stdin": "", "expected_stdout": "plain text\n"},
+  {"id": 5, "args": ["unescape", "trailing\\"], "stdin": "", "expected_stdout": "INVALID\n"}
+]}

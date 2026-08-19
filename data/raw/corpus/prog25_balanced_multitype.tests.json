@@ -1,0 +1,7 @@
+{"program": "prog25_balanced_multitype", "tests": [
+  {"id": 1, "args": ["{[()()]}"], "stdin": "", "expected_stdout": "BALANCED\n"},
+  {"id": 2, "args": ["([)]"], "stdin": "", "expected_stdout": "UNBALANCED\n"},
+  {"id": 3, "args": [""], "stdin": "", "expected_stdout": "BALANCED\n"},
+  {"id": 4, "args": ["foo(bar[baz]{qux})"], "stdin": "", "expected_stdout": "BALANCED\n"},
+  {"id": 5, "args": ["((("], "stdin": "", "expected_stdout": "UNBALANCED\n"}
+]}

@@ -1,0 +1,48 @@
+% R8 — sensibilita' NON pre-registrata. Sta in appendice e non nei risultati per una ragione
+% precisa: il paper si regge sulla distinzione fra cio' che era congelato e cio' che non lo era,
+% e mettere un test aggiunto dopo accanto a quelli pre-registrati la cancellerebbe.
+\appendix
+\section{Distribution-free sensitivity for the pre-registered family}
+\label{sec:appendice-permutazione}
+
+The pre-registered test is a paired $t$ over 45 binaries, which assumes approximately normal paired
+differences. On this metric they are not: pass-rate over five unit tests takes six values, 53\% of rows
+sit at an extreme, and the paired difference of two such means is discrete with short tails. If a test
+assuming no distribution reaches the same conclusion, the assumption was not carrying the result. For
+paired differences the exact permutation test is the sign flip --- under the null the sign of each
+binary's difference is exchangeable --- and with $2^{45}$ assignments we sample 50{,}000 at a declared
+seed and report the Monte Carlo error of the $p$ itself, a sampled $p$ being an estimate.
+
+\begin{table}[h]
+\centering
+\caption{Sign-flip permutation against the pre-registered Student's $t$. Holm applies the same
+fixed $m=10$ as the pre-registered family.}
+\label{tab:permutazione}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& $p$ Student & $p$ permutation & MC error & difference \\
+\midrule
+T6 & 0.0191 & 0.0135 & 0.0008 & $-0.0055$ \\
+T3 & 0.0218 & 0.0228 & 0.0011 & $+0.0010$ \\
+T1 & 0.0334 & 0.0319 & 0.0012 & $-0.0014$ \\
+T2 & 0.1107 & 0.1194 & 0.0023 & $+0.0087$ \\
+T5 & 0.1159 & 0.1205 & 0.0023 & $+0.0046$ \\
+T8 & 0.2844 & 0.3267 & 0.0033 & $+0.0423$ \\
+T7 & 0.2095 & 0.5032 & 0.0035 & $+0.2937$ \\
+T4 & 0.6363 & 0.7754 & 0.0030 & $+0.1391$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{No test passes Holm under either series}, so the family outcome does not depend on the
+distributional assumption and the objection closes without altering anything pre-registered.
+
+Two contrasts disagree by more than the Monte Carlo error, informatively: T7 moves from 0.21 to 0.50 and
+T4 from 0.64 to 0.78, and both are the contrasts with the smallest observed variance, where the $t$
+divides by a standard error the permutation test never uses. That the $t$ reports smaller $p$ exactly
+where variance is smallest is the mechanism rather than a coincidence, and it supports the reading of
+\S\ref{sec:results}: T7's narrow interval reflects absence of noise rather than power. This analysis is
+not pre-registered and does not replace the frozen one --- had the two diverged on the family outcome the
+reportable conclusion would still be the pre-registered one, with the divergence declared.

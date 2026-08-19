@@ -1,0 +1,7 @@
+{"program": "prog18_caesar_cipher", "tests": [
+  {"id": 1, "args": ["3", "Hello, World!"], "stdin": "", "expected_stdout": "Khoor, Zruog!\n"},
+  {"id": 2, "args": ["0", "abc"], "stdin": "", "expected_stdout": "abc\n"},
+  {"id": 3, "args": ["-3", "Khoor"], "stdin": "", "expected_stdout": "Hello\n"},
+  {"id": 4, "args": ["29", "xyz XYZ"], "stdin": "", "expected_stdout": "abc ABC\n"},
+  {"id": 5, "args": ["abc", "text"], "stdin": "", "expected_stdout": "USAGE\n"}
+]}

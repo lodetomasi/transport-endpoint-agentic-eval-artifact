@@ -1,0 +1,35 @@
+{
+  "program": "prog14_game_of_life",
+  "tests": [
+    {
+      "id": 1,
+      "args": [],
+      "stdin": "1 3 3\n...\n###\n...\n",
+      "expected_stdout": ".#.\n.#.\n.#.\n"
+    },
+    {
+      "id": 2,
+      "args": [],
+      "stdin": "0 3 3\n...\n###\n...\n",
+      "expected_stdout": "...\n###\n...\n"
+    },
+    {
+      "id": 3,
+      "args": [],
+      "stdin": "abc\n",
+      "expected_stdout": "BAD_INPUT\n"
+    },
+    {
+      "id": 4,
+      "args": [],
+      "stdin": "4 8 8\n........\n.#......\n..#.....\n###.....\n........\n........\n........\n........\n",
+      "expected_stdout": "........\n........\n..#.....\n...#....\n.###....\n........\n........\n........\n"
+    },
+    {
+      "id": 5,
+      "args": [],
+      "stdin": "3 4 4\n....\n....\n....\n....\n",
+      "expected_stdout": "....\n....\n....\n....\n"
+    }
+  ]
+}

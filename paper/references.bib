@@ -1,0 +1,407 @@
+% Le voci qui sotto portano SOLO campi verificati per fetch, con la data della verifica.
+% Dove un campo non e' stato verificato porta un marcatore % CITE e resta incompleto:
+% inventare un elenco di autori plausibile e' il modo piu' rapido di perdere il paper, e
+% la coppia claim-citazione la controlla comunque una passata separata (IR-1), mai chi
+% ha scritto la frase.
+
+@inproceedings{bfcl2025,
+  author    = {Patil, Shishir G. and Mao, Huanzhi and Yan, Fanjia and Ji, Charlie Cheng-Jie
+               and Suresh, Vishnu and Stoica, Ion and Gonzalez, Joseph E.},
+  title     = {The {Berkeley} Function Calling Leaderboard ({BFCL}): From Tool Use to
+               Agentic Evaluation of Large Language Models},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {267},
+  pages     = {48371--48392},
+  year      = {2025},
+  % Verificato 2026-08-15. NOTA per chi scrive la frase: il confronto fra modalita'
+  % FC e Prompt NON e' nell'abstract di questo paper. Sta nella leaderboard e nella
+  % discussione #606 del repository, che si citano separatamente (voci qui sotto).
+}
+
+@misc{bfcl-leaderboard,
+  title        = {Berkeley Function-Calling Leaderboard, version V4},
+  howpublished = {\url{https://gorilla.cs.berkeley.edu/leaderboard.html}},
+  note = {Modes defined verbatim on the leaderboard: ``FC = native support for
+          function/tool calling. Prompt = walk-around for function calling.''
+          Accessed 15 August 2026},
+  year         = {2026},
+}
+
+@misc{bfcl-issue606,
+  title        = {Why Does Function Calling Lower Model Accuracy on {B}erkeley
+                  {L}eaderboard? Discussion \#606, gorilla repository},
+  howpublished = {\url{https://github.com/ShishirPatil/gorilla/discussions/606}},
+%  [nota di verifica, non stampata]
+%   85,65 (Prompt) contro 79,65 (FC), risposta del maintainer.
+%   GPT-4-1106-Preview non compare piu' nella leaderboard V4: il confronto
+%   e' verificabile qui, non nella pagina corrente. Consultata il 2026-08-15
+
+}
+
+@misc{silent-hyperparameter,
+  author = {Pape, David and Evertz, Jonathan and Sch\"onherr, Lea},
+  title  = {The Silent Hyperparameter: Quantifying the Impact of Inference Backends on
+            {LLM} Reproducibility},
+  year   = {2026},
+  eprint = {2605.19537},
+  archivePrefix = {arXiv},
+%  [nota di verifica, non stampata]
+%   Fino a 16,6pp di scarto dal solo motore di inferenza, a pesi, decoding e
+%   hardware fissi. Cinque motori self-hosted, non cloud gestiti, non agentico.
+%   Verificato 2026-08-15
+
+}
+
+@misc{leaderboard-illusion,
+  author = {Singh, Shivalika and Nan, Yiyang and Wang, Alex and D'Souza, Daniel and
+            Kapoor, Sayash and {\"U}st{\"u}n, Ahmet and Koyejo, Sanmi and Deng, Yuntian and
+            Longpre, Shayne and Smith, Noah A. and Ermis, Beyza and Fadaee, Marzieh and
+            Hooker, Sara},
+  title  = {The Leaderboard Illusion},
+  year   = {2025},
+  eprint = {2504.20879},
+  archivePrefix = {arXiv},
+  % CITE: l'elenco completo degli autori va compilato dalla passata di verifica. Il peer
+  % ha verificato per fetch data (29 apr. 2025, v2 il 12 mag.) e i numeri (19,2% / 20,4%
+  % Fetch del 2026-08-19 su arxiv.org/html/2504.20879v2 per i numeri che il paper STAMPA in
+  % 02-related.tex: 243 modelli, 205 deprecati in silenzio contro 47 dichiarati, 87,8% sui
+  % pesi aperti (89% sull'open source) e 80% sui proprietari; la citazione verbatim sul
+  % provider che smette di servire e' alla lettera. Lo stesso fetch ha corretto un difetto
+  % piu' grande del numero mancante: il paper presentava questa fonte come «an attempt to
+  % rerun published evaluations», e non lo e' — e' un audit del roster di un'arena. Un
+  % revisore che apre la fonte trova il disegno sbagliato prima del numero assente.
+  % Affiliazione Cohere Labs / Cohere: ESPLICITA in copertina, verificata per fetch il
+% 2026-08-15. Una nota precedente diceva il contrario ed e' stata corretta.
+  % non si scrive.
+  % Formulazione corretta il 2026-08-15 dopo un secondo fetch. La versione precedente
+  % diceva "livello causale diverso: curatoriale, non rifiuto tecnico". Non era falsa, ma
+  % faceva sembrare il vicino piu' lontano di quanto sia: il paper NOMINA la causa tecnica
+  % -- "Chatbot Arena may be forced to deprecate a model when a provider no longer supports
+  % it via its API". Presentare un vicino come piu' distante di quello che e' e' un appiglio
+  % che un revisore trova aprendo la fonte.
+%   [nota di verifica, non stampata]
+%   Tratta la rimozione differenziale di un modello come effetto di selezione.
+%   Nomina il rifiuto tecnico come una delle due vie di rimozione ma non lo
+%   elabora: la sua evidenza quantitativa e' sull'asimmetria curatoriale
+%   aggregata, non sul meccanismo tecnico caso per caso
+}
+
+@misc{failureatlas,
+  author = {Pandey, Vishal and Singh, Gopal},
+  title  = {{FailureAtlas}: A Taxonomy of Failure Modes in Multi-Provider {LLM} Serving
+            Infrastructure},
+  year   = {2026},
+  eprint = {2607.17525},
+  archivePrefix = {arXiv},
+  % Verificato per fetch dal peer il 2026-08-15; la passata IR-1 lo riconferma in proprio.
+  % Il posizionamento si scrive cosi': "riempie una casella che un lavoro precedente
+  % dichiara di non essere riuscito a riempire", mai "nessuno ha catalogato" -- e' piu'
+  % preciso, piu' difendibile, e piu' forte. Verbatim dalla fonte:
+  %   "The Model Behavior row (L4) is intentionally empty reflecting the difficulty of
+  %    documenting this failure class to evidence grade."
+  %   "Despite widespread anecdotal reports [...] we were unable to find a single
+  %    evidence-grade, reproducible bug report that met our inclusion criteria for an
+  %    infrastructure-level failure in model behaviour."
+%  [nota di verifica, non stampata]
+%   Cinque voci verificate nel catalogo, nessun vendor nominato, e la riga sul
+%   comportamento del modello dichiarata vuota per mancanza di evidenza
+
+}
+
+@misc{atil-nondeterminism,
+  author = {Atil, Berk and Aykent, Sarp and Chittams, Alexa and Fu, Lisheng and
+            Passonneau, Rebecca J. and Radcliffe, Evan and Rajagopal, Guru Rajan and
+            Sloan, Adam and Tudrej, Tomasz and Ture, Ferhan and Wu, Zhe and Xu, Lixinyu and
+            Baldwin, Breck},
+  title  = {Non-Determinism of ``Deterministic'' {LLM} Settings},
+  year   = {2024},
+  eprint = {2408.04667},
+  archivePrefix = {arXiv},
+  % CITE: tredici autori, l'elenco completo va compilato dalla passata di verifica.
+  % Ultima versione 2 apr. 2025. Vicino metodologico piu' stretto per il nostro risultato
+  % sul determinismo: 5 modelli, 8 task, 10 run a temperatura zero, "accuracy variations
+  % up to 15%". La differenza specifica che ci resta: modelli diversi ciascuno su UN solo
+  % host, mai lo stesso modello su due cloud nominati.
+%   [nota di verifica, non stampata]
+%   Variazioni di accuratezza fino al 15\% a temperatura zero, su un host per
+%   modello
+}
+
+% agentcompass RIMOSSA il 2026-08-15: fetchata per intero, non sostiene la claim a cui
+% era agganciata (trasporto come confondimento noto). E' un lavoro di architettura di
+% harness. La claim ora e' riportata come esito di una ricerca, senza citazione.
+@inproceedings{liu-wang-issta2020,
+  author    = {Liu, Zhibo and Wang, Shuai},
+  title     = {How Far We Have Come: Testing Decompilation Correctness of {C} Decompilers},
+  booktitle = {Proceedings of the 29th ACM SIGSOFT International Symposium on Software
+               Testing and Analysis (ISSTA)},
+  year      = {2020},
+%  [nota di verifica, non stampata]
+%   Fonda il limite dichiarato sul proxy di rieseguibilita': la pass-rate e' un
+%   lower bound dell'equivalenza semantica, mai equivalenza
+
+}
+
+% Verificata per fetch il 2026-08-15: titolo, tredici autori, venue, pagine e DOI dalla pagina
+% ACL Anthology. Le due frasi citate nel testo sono verbatim dall'abstract.
+@inproceedings{card2020power,
+  author    = {Card, Dallas and Henderson, Peter and Khandelwal, Urvashi and
+               Jia, Robin and Mahowald, Kyle and Jurafsky, Dan},
+  title     = {With Little Power Comes Great Responsibility},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in
+               Natural Language Processing (EMNLP)},
+  year      = {2020},
+  pages     = {9263--9274},
+  doi       = {10.18653/v1/2020.emnlp-main.745}
+}
+
+% Verificata per fetch il 2026-08-15: autori e numeri dall'abstract arXiv.
+@misc{bitterlesson2026,
+  author       = {Patel, Ishan and Sen, Sahil and Lumer, Elias and Subbiah, Vamse Kumar},
+  title        = {The Bitter Lesson of Tool Calling},
+  year         = {2026},
+  eprint       = {2608.06370},
+  archivePrefix= {arXiv}
+}
+
+% Verificata per fetch il 2026-08-15. Non e' peer-reviewed ed e' citata come tale: e' la
+% fonte che ESPONE il meccanismo, e il paper lo dice invece di prenderla per un articolo.
+@misc{he2025nondeterminism,
+  author       = {He, Horace and {Thinking Machines Lab}},
+  title        = {Defeating Nondeterminism in {LLM} Inference},
+  year         = {2025},
+  month        = sep,
+  note         = {Blog post, 10 September 2025},
+  url          = {https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/}
+}
+
+% Verificata per fetch il 2026-08-15: dieci autori, titolo e definizione di "service object"
+% verbatim dall'abstract arXiv.
+@misc{li2026service,
+  author       = {Li, Haorui and He, Zhenghui and Liu, Xuanzi and Xu, Yang and
+                  Liu, Dongsheng and Ma, Jiakang and Wu, Lupan and Wu, Yangjie and
+                  Tang, Xiongchao and Shi, Tianhui},
+  title        = {When Is the Same Model Not the Same Service? {A} Measurement Study
+                  of Hosted Open-Weight {LLM} {API}s},
+  year         = {2026},
+  eprint       = {2605.02821},
+  archivePrefix= {arXiv}
+}
+
+% Verificata per fetch il 2026-08-15: sei autori e le due frasi verbatim dall'abstract arXiv.
+% E' il vicino piu' stretto alla tesi generale di questo paper.
+@misc{zhang2026harness,
+  author       = {Zhang, Yunbei and Wang, Janet and Ge, Yingqiang and Xu, Weijie and
+                  Hamm, Jihun and Reddy, Chandan K.},
+  title        = {Stop Comparing {LLM} Agents Without Disclosing the Harness},
+  year         = {2026},
+  eprint       = {2605.23950},
+  archivePrefix= {arXiv}
+}
+
+% Verificata per fetch il 2026-08-15: dodici autori, 106 task e 5.194 traiettorie dall'abstract.
+@misc{yao2026harnessbench,
+  author       = {Yao, Yilun and Tan, Xinyu and Liu, Chao-Hsuan and Li, Yaoming and
+                  Wang, Zhengyang and Yu, Wenhan and Tan, Zhewen and Tian, Yuxuan and
+                  Zhao, Guangxiang and Sun, Lin and Zhang, Xiangzheng and Yang, Tong},
+  title        = {Harness-Bench: Measuring Harness Effects across Models in Realistic
+                  Agent Workflows},
+  year         = {2026},
+  eprint       = {2605.27922},
+  archivePrefix= {arXiv}
+}
+
+% ---- Il compito: ricostruzione da binario. Verificata per fetch il 2026-08-15 su ACL
+% Anthology (autori, pagine, anthology ID).
+@inproceedings{tan2024llm4decompile,
+  author    = {Tan, Hanzhuo and Luo, Qi and Li, Jing and Zhang, Yuqun},
+  title     = {{LLM4Decompile}: Decompiling Binary Code with Large Language Models},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural
+               Language Processing (EMNLP)},
+  year      = {2024},
+  pages     = {3473--3487}
+}
+
+@inproceedings{jiang2025nova,
+  author    = {Jiang, Nan and Wang, Chengxiao and Liu, Kevin and Xu, Xiangzhe and
+               Tan, Lin and Zhang, Xiangyu and Babkin, Petr},
+  title     = {Nova: Generative Language Models for Assembly Code with Hierarchical
+               Attention and Contrastive Learning},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025}
+}
+
+% ---- L'antecedente diretto, e il piu' importante fra le aggiunte. Verificato leggendo la
+% prima pagina del PDF: titolo, quattro autori con affiliazioni, ASPLOS'09, pagina 265.
+% Le due frasi citate nel testo sono verbatim dall'abstract.
+@inproceedings{mytkowicz2009wrongdata,
+  author    = {Mytkowicz, Todd and Diwan, Amer and Hauswirth, Matthias and
+               Sweeney, Peter F.},
+  title     = {Producing Wrong Data Without Doing Anything Obviously Wrong!},
+  booktitle = {Proceedings of the 14th International Conference on Architectural Support
+               for Programming Languages and Operating Systems (ASPLOS)},
+  year      = {2009},
+  pages     = {265--276},
+  doi       = {10.1145/1508244.1508275}
+}
+
+@inproceedings{georges2007rigorous,
+  author    = {Georges, Andy and Buytaert, Dries and Eeckhout, Lieven},
+  title     = {Statistically Rigorous {Java} Performance Evaluation},
+  booktitle = {Proceedings of the 22nd ACM SIGPLAN Conference on Object-Oriented
+               Programming Systems, Languages and Applications (OOPSLA)},
+  year      = {2007},
+  pages     = {57--76},
+  doi       = {10.1145/1297027.1297033}
+}
+
+@inproceedings{iosup2011variability,
+  author    = {Iosup, Alexandru and Yigitbasi, Nezih and Epema, Dick H. J.},
+  title     = {On the Performance Variability of Production Cloud Services},
+  booktitle = {11th IEEE/ACM International Symposium on Cluster, Cloud and Grid
+               Computing (CCGrid)},
+  year      = {2011},
+  pages     = {104--113},
+  doi       = {10.1109/CCGrid.2011.22}
+}
+
+% ---- Pre-registrazione e potenza nella ricerca su software
+@article{ernst2023registered,
+  author    = {Ernst, Neil A. and Baldassarre, Maria Teresa},
+  title     = {Registered Reports in Software Engineering},
+  journal   = {Empirical Software Engineering},
+  year      = {2023},
+  doi       = {10.1007/s10664-022-10277-5}
+}
+
+@article{dyba2006power,
+  author    = {Dyb{\aa}, Tore and Kampenes, Vigdis By and Sj{\o}berg, Dag I. K.},
+  title     = {A Systematic Review of Statistical Power in Software Engineering Experiments},
+  journal   = {Information and Software Technology},
+  volume    = {48},
+  number    = {8},
+  year      = {2006},
+  pages     = {745--755},
+  doi       = {10.1016/j.infsof.2005.08.009}
+}
+
+@article{miller1997power,
+  author    = {Miller, James and Daly, John and Wood, Murray and Roper, Marc and
+               Brooks, Andrew},
+  title     = {Statistical Power and Its Subcomponents --- Missing and Misunderstood
+               Concepts in Empirical Software Engineering Research},
+  journal   = {Information and Software Technology},
+  volume    = {39},
+  number    = {4},
+  year      = {1997},
+  pages     = {285--295},
+  doi       = {10.1016/S0950-5849(96)01139-1}
+}
+
+@article{baltes2026guidelines,
+  author = {Baltes, Sebastian and Angermeir, Florian and Arora, Chetan and
+            Mu{\~n}oz Bar{\'o}n, Marvin and Chen, Chunyang and B{\"o}hme, Lukas and
+            Calefato, Fabio and Ernst, Neil and Falessi, Davide and Fitzgerald, Brian and
+            Fucci, Davide and He, Junda and Treude, Christoph and Kalinowski, Marcos and
+            Lambiase, Stefano and Russo, Daniel and Lungu, Mircea and
+            Martinez Montes, Cristina and Prechelt, Lutz and Ralph, Paul and
+            van Tonder, Rijnard and Wagner, Stefan},
+  title  = {Guidelines for Empirical Studies in Software Engineering involving
+            Large Language Models},
+  journal = {Empirical Software Engineering},
+  year   = {2026},
+  note   = {Accepted manuscript. Community guidelines from 22 researchers: seven study
+            types and eight guidelines separating requirements (must) from
+            recommendations (should)},
+  eprint = {2508.15503},
+  archivePrefix = {arXiv},
+%  [nota di verifica, non stampata] PDF letto in proprio il 2026-08-15, v7 del 12/06/2026.
+%   Verbatim usati nel testo, dalla linea guida 5.3 «Report System and Prompt Design»:
+%     "For Benchmarking LLMs, researchers must describe the evaluation harness and
+%      infrastructure when it goes beyond bare model API calls (e.g., custom sandboxing,
+%      orchestration layers, or post-processing pipelines)"
+%   e dalla 5.6 «Use an Open LLM as a Baseline»:
+%     "For Benchmarking LLMs, an open LLM should be one of the models under evaluation,
+%      so that the reported scores can be independently re-run"
+%   Le otto linee guida sono 5.1 Declare Usage, 5.2 Model Version, 5.3 Design,
+%   5.4 Session Traces, 5.5 Benchmarks, 5.6 Open LLM, 5.7 Human Validation,
+%   5.8 Limitations. Conteggi verificati sul PDF: temperature 12 occorrenze,
+%   tool call 9, infrastructure 11 — l'abstract non le nomina, il corpo si'.
+}
+
+@inproceedings{detomasi2025obfuscation,
+  author    = {De Tomasi, Lorenzo and Di Sipio, Claudio and Di Marco, Antinisca and
+               Nguyen, Phuong T.},
+  title     = {Simplicity by Obfuscation: Evaluating {LLM}-Driven Code Transformation
+               with Semantic Elasticity},
+  booktitle = {Proc. 29th Int. Conf. on Evaluation and Assessment in Software Engineering
+               (EASE)},
+  year      = {2025},
+  doi       = {10.1145/3756681.3757041},
+  eprint    = {2504.14024},
+  archivePrefix = {arXiv},
+%  [nota di verifica, non stampata] PDF letto in proprio il 2026-08-15. Verbatim:
+%    "Our findings reveal GPT-4-Turbo's remarkable effectiveness with few-shot prompting
+%     (81% pass rate versus 29% standard prompting)"
+%   Stesso primo autore di questo capitolo: EMSE fa revisione a cieco singolo, quindi la
+%   citazione si scrive in chiaro.
+}
+
+@inproceedings{angermeir2026reproducibility,
+  author = {Angermeir, Florian and Amougou, Maximilian and Kreitz, Mark and Bauer, Andreas and
+            Linhuber, Matthias and Fucci, Davide},
+  title  = {Reflections on the Reproducibility of Commercial {LLM} Performance in Empirical
+            Software Engineering Studies},
+  booktitle = {Proc. 48th Int. Conf. on Software Engineering (ICSE)},
+  year   = {2026},
+  eprint = {2510.25506},
+  archivePrefix = {arXiv},
+%  [nota di verifica, non stampata] PDF letto in proprio il 2026-08-16, v3 del 17/11/2025.
+%   Verbatim: "a major cause for reproduction failure was the deprecation of LLMs. In at least
+%   four studies, we faced the issue of deprecated models, which, of course, we could not
+%   solve." Su 18 studi ICSE/ASE 2024 basati su OpenAI, solo cinque sufficientemente
+%   documentati. Segnalato dal seggio novita' come il vicino piu' stretto NON citato: e'
+%   diacronico (deprecazione fra pubblicazione e replica), single-provider, non agentico.
+}
+
+% Verificata il 2026-08-19. E' la procedura di correzione centrale del paper --- «Holm» compare
+% 12 volte nel testo --- e non era citata: ogni altro metodo statistico nominato lo era. Riferimento
+% confermato su due fonti indipendenti (JSTOR 4615733, MR 0538597).
+@article{holm1979,
+  author  = {Holm, Sture},
+  title   = {A simple sequentially rejective multiple test procedure},
+  journal = {Scandinavian Journal of Statistics},
+  volume  = {6},
+  number  = {2},
+  pages   = {65--70},
+  year    = {1979}
+}
+
+@article{albers2018power,
+  author  = {Albers, Casper and Lakens, Dani{\"e}l},
+  title   = {When power analyses based on pilot data are biased: Inaccurate effect size
+             estimators and follow-up bias},
+  journal = {Journal of Experimental Social Psychology},
+  volume  = {74},
+  pages   = {187--195},
+  year    = {2018},
+%  [nota di verifica, non stampata] Metadati verificati il 2026-08-16. Documenta che una
+%   calibrazione di potenza da dati pilota fallisce per accuracy bias e follow-up bias. E'
+%   una famiglia vicina ma NON identica al nostro caso: li' la stima e' distorta perche' il
+%   pilota e' piccolo, qui la quantita' calibrata appartiene all'apparato. La distinzione va
+%   scritta, non lasciata al lettore.
+}
+
+@unpublished{companion2026baseline,
+  author    = {{Author(s) withheld}},
+  title     = {<titolo-capitolo-precedente>},
+  note      = {Companion study, under double-anonymous review at the time of writing, so
+               author and venue are withheld here rather than in the interest of our own
+               anonymity: naming them would compromise a submission that is not this one.
+               The two numbers this paper reuses --- the power calibration and the
+               tool-exposure asymmetry --- do not depend on that manuscript being available:
+               both recompute from the snapshot of its cells included in this paper's
+               replication package, with their per-turn logs},
+  year      = {2026},
+}

@@ -1,0 +1,2 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,1.0000,5,5,True,False,487,12,0.004992,6451,483,us.meta.llama3-3-70b-instruct-v1:0,bedrock,9.5,[],2026-08-14T19:43:55,llama-3.3-70b,bedrock,text

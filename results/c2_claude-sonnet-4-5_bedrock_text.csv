@@ -1,0 +1,4 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,1.0000,5,5,True,False,557,12,0.029985,7245,550,us.anthropic.claude-sonnet-4-5-20250929-v1:0,bedrock,18.7,[],2026-08-15T12:52:04,claude-sonnet-4-5,bedrock,text
+prog16_word_count_fsm,2,1.0000,5,5,True,False,763,12,0.030435,7245,580,us.anthropic.claude-sonnet-4-5-20250929-v1:0,bedrock,18.3,[],2026-08-15T12:52:23,claude-sonnet-4-5,bedrock,text
+prog16_word_count_fsm,3,1.0000,5,5,True,False,945,12,0.033684,7298,786,us.anthropic.claude-sonnet-4-5-20250929-v1:0,bedrock,20.4,[],2026-08-15T12:52:43,claude-sonnet-4-5,bedrock,text

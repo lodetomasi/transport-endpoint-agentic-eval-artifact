@@ -1,0 +1,49 @@
+# I 45 binari held-out del confermativo di C1, riusati identici da C2.
+# Congelati per NOME: 'i primi 45' non e' una specifica, e' un ordinamento
+# che cambia se cambia il filesystem.
+# sha256 dell'elenco: 972e11f3c183043207145815aef0cab48afff2115f7fc847acf846f335ca980a
+prog16_word_count_fsm
+prog17_whitespace_trim
+prog18_caesar_cipher
+prog19_palindrome_checker
+prog20_anagram_checker
+prog21_date_validator
+prog22_snake_camel_convert
+prog23_longest_common_prefix
+prog24_query_string_parser
+prog25_balanced_multitype
+prog26_wildcard_match
+prog27_soundex
+prog28_levenshtein
+prog29_roman_numeral_parser
+prog30_escape_unescape
+prog31_gcd_lcm
+prog32_prime_factorization
+prog33_mod_pow
+prog34_fibonacci_memo
+prog35_perfect_numbers
+prog36_pascal_triangle
+prog37_binomial_coefficient
+prog38_continued_fraction
+prog39_horner
+prog40_bisection_root
+prog41_series_sum
+prog42_collatz
+prog43_catalan
+prog44_miller_rabin
+prog45_josephus
+prog46_postfix_stack
+prog47_circular_queue
+prog48_sorted_linked_list
+prog49_bst
+prog50_binary_heap
+prog51_union_find
+prog52_bfs_grid
+prog53_dfs_cycle
+prog54_topo_sort
+prog55_connected_components
+prog56_kruskal_mst
+prog57_elevator_fsm
+prog58_turing_increment
+prog59_rule110
+prog60_inventory_sim

@@ -1,0 +1,361 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00104010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nchar * fgets(char *__s,int __n,FILE *__stream)\n\n{\n  char *pcVar1;\n  \n  pcVar1 = (char *)(*_DAT_00104030)();\n  return pcVar1;\n}\n\n", 
+   "signature": "char * fgets(char * __s, int __n, FILE * __stream)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "fgets", 
+   "entry_point": "00101060"
+  }, 
+  {
+   "decompiled": "\nundefined8 main(void)\n\n{\n  uint uVar1;\n  uint uVar2;\n  char *pcVar3;\n  uint uVar4;\n  long lVar5;\n  ulong unaff_RBX;\n  uint unaff_EBP;\n  size_t unaff_R12;\n  int unaff_R13D;\n  int unaff_R14D;\n  char unaff_R15B;\n  bool bVar6;\n  byte local_41;\n  int local_40;\n  uint local_3c;\n  char local_38;\n  \n  pcVar3 = fgets(main_line,0x800,*(FILE **)PTR_stdin_00103fd8);\n  uVar4 = 0xc51a8903;\n  if (pcVar3 == (char *)0x0) {\n    uVar4 = 0x9649d60c;\n  }\n  local_3c = uVar4;\n  uVar2 = 0x1e3f8188;\nLAB_001011e0:\n  do {\n    while (uVar1 = uVar2, uVar2 = uVar1, (int)uVar1 < 0x6b7561d) {\n      if ((int)uVar1 < -0x2f4a79ee) {\n        if ((int)uVar1 < -0x5468dbd8) {\n          if ((int)uVar1 < -0x69b629f4) {\n            if (uVar1 == 0x8c3a60a8) {\n              uVar2 = 0x230c5e0c;\n              if (unaff_R13D < 0x1ff) {\n                uVar2 = 0x3f5bece6;\n              }\n            }\n            else if (uVar1 == 0x8cf05a35) {\n              (&DAT_0010405f)[unaff_R12] = 0;\n              unaff_R12 = unaff_R12 - 1;\n              uVar2 = 0x5e55c5f4;\n            }\n            else if (uVar1 == 0x9039d966) {\n              bVar6 = unaff_R15B == ',';\n              uVar2 = 0x102b1bf6;\nLAB_001011cb:\n              if (bVar6) {\n                uVar2 = 0xf432d602;\n              }\n            }\n          }\n          else if (uVar1 == 0x9649d60c) {\n            puts(\"NO_INPUT\");\n            uVar2 = 0x4ee8bdcd;\n          }\n          else if (uVar1 == 0xa0faafe2) {\n            uVar2 = 0x5446acfe;\n            if (main_line[unaff_RBX + 1] == '\\\"') {\n              uVar2 = 0x7faf14b5;\n            }\n          }\n          else if (uVar1 == 0xa5bf8ac3) {\n            uVar2 = 0x1b64c89f;\n            if ((&DAT_0010405f)[unaff_R12] == '\\n') {\n              uVar2 = 0x12129aba;\n            }\n            local_41 = 1;\n          }\n        }\n        else if ((int)uVar1 < -0x3ae576fd) {\n          if (uVar1 == 0xab972428) {\n            uVar2 = 0xe425613e;\n          }\n          else if (uVar1 == 0xb6b84dae) {\n            uVar2 = 0xffd0bfd;\n            if (unaff_R13D < 0x1ff) {\n              uVar2 = 0x2380cc6c;\n            }\n          }\n          else if (uVar1 == 0xb7961cab) {\n            local_40 = 0;\n            uVar2 = 0xe8175708;\n          }\n        }\n        else if (uVar1 == 0xc51a8903) {\n          unaff_R12 = strlen(main_line);\n          uVar2 = 0x5e55c5f4;\n        }\n        else if (uVar1 == 0xc65f797e) {\n          uVar2 = 0xab972428;\n        }\n        else if ((uVar1 == 0xcb882cdc) && (uVar2 = 0x3a6b7e87, unaff_RBX < unaff_R12)) {\n          uVar2 = 0xe5692341;\n        }\n      }\n      else if ((int)uVar1 < -0x17e8a8f8) {\n        if ((int)uVar1 < -0x1e7b6e68) {\n          if (uVar1 == 0xd0b58612) {\n            unaff_EBP = 0;\n            uVar2 = 0x3a20b7a1;\n          }\n          else if (uVar1 == 0xd692ab01) {\n            unaff_EBP = unaff_EBP + 1;\n            uVar2 = 0x3a20b7a1;\n          }\n          else if ((uVar1 == 0xdef84a8e) && (uVar2 = 0x9039d966, unaff_R15B == '\\\"')) {\n            uVar2 = 0xf51afbb2;\n          }\n        }\n        else if (uVar1 == 0xe1849198) {\n          unaff_R14D = unaff_R14D + 1;\n          uVar2 = 0xf1d301d2;\n        }\n        else if (uVar1 == 0xe425613e) {\n          unaff_RBX = unaff_RBX + 1;\n          uVar2 = 0x25cd2f2;\n        }\n        else if (uVar1 == 0xe5692341) {\n          local_38 = main_line[unaff_RBX];\n          uVar2 = 0x32ecd28b;\n        }\n      }\n      else if ((int)uVar1 < -0xbcd29fe) {\n        if (uVar1 == 0xe8175708) {\n          uVar2 = 0xab972428;\n        }\n        else if (uVar1 == 0xeffa71d3) {\n          uVar2 = 0x761801f;\n        }\n        else if (uVar1 == 0xf1d301d2) {\n          unaff_R13D = 0;\n          uVar2 = 0xeffa71d3;\n        }\n      }\n      else if ((int)uVar1 < 0xc55912) {\n        if (uVar1 == 0xf432d602) {\n          main_fields[(long)unaff_R13D + (long)unaff_R14D * 0x200] = 0;\n          uVar2 = 0xf1d301d2;\n          if (unaff_R14D < 0x3f) {\n            uVar2 = 0xe1849198;\n          }\n        }\n        else if ((uVar1 == 0xf51afbb2) && (uVar2 = 0x9039d966, unaff_R13D == 0)) {\n          uVar2 = 0x6b7561d;\n        }\n      }\n      else if (uVar1 == 0xc55912) {\n        uVar2 = 0x5446acfe;\n        if (unaff_RBX + 1 < unaff_R12) {\n          uVar2 = 0xa0faafe2;\n        }\n      }\n      else if ((uVar1 == 0x25cd2f2) && (uVar2 = 0xcb882cdc, unaff_R12 < unaff_RBX)) {\n        uVar2 = 0xd0b58612;\n      }\n    }\n    if (0x31185109 < (int)uVar1) {\n      if ((int)uVar1 < 0x452a8d40) {\n        if ((int)uVar1 < 0x3a6b7e87) {\n          if (uVar1 == 0x3118510a) {\n            uVar2 = 0x3a767052;\n            if (unaff_R15B == '\\\"') {\n              uVar2 = 0xc55912;\n            }\n          }\n          else if (uVar1 == 0x32ecd28b) {\n            uVar2 = 0x3118510a;\n            unaff_R15B = local_38;\n            if (local_40 == 0) {\n              uVar2 = 0xdef84a8e;\n            }\n          }\n          else if ((uVar1 == 0x3a20b7a1) && (uVar2 = 0xd8b4026, (int)unaff_EBP < unaff_R14D)) {\n            uVar2 = 0x2bfc2977;\n          }\n        }\n        else if (uVar1 == 0x3a6b7e87) {\n          local_38 = '\\0';\n          uVar2 = 0x32ecd28b;\n        }\n        else if (uVar1 == 0x3a767052) {\n          uVar2 = 0xb6b84dae;\n          if (unaff_R15B == '\\0') {\n            uVar2 = 0xb7961cab;\n          }\n        }\n        else if (uVar1 == 0x3f5bece6) {\n          lVar5 = (long)unaff_R13D;\n          unaff_R13D = unaff_R13D + 1;\n          main_fields[lVar5 + (long)unaff_R14D * 0x200] = unaff_R15B;\n          uVar2 = 0x230c5e0c;\n        }\n      }\n      else if ((int)uVar1 < 0x5e55c5f4) {\n        if ((int)uVar1 < 0x4ee8bdcd) {\n          if (uVar1 == 0x452a8d40) {\n            uVar2 = 0x4ee8bdcd;\n          }\n          else if (uVar1 == 0x47c7a208) {\n            unaff_R14D = 0;\n            unaff_R13D = 0;\n            local_40 = 0;\n            unaff_RBX = 0;\n            uVar2 = 0x25cd2f2;\n          }\n        }\n        else if (uVar1 == 0x5446acfe) {\n          local_40 = 0;\n          uVar2 = 0xc65f797e;\n        }\n        else if (uVar1 == 0x4ee8bdcd) {\n          return 0;\n        }\n      }\n      else if (uVar1 == 0x5e55c5f4) {\n        uVar2 = 0xa5bf8ac3;\n        if (unaff_R12 == 0) {\n          uVar2 = 0xf7ee393;\n        }\n        local_3c = 0;\n      }\n      else if (uVar1 == 0x6a32ff2f) {\n        lVar5 = (long)unaff_R13D;\n        unaff_R13D = unaff_R13D + 1;\n        main_fields[lVar5 + (long)unaff_R14D * 0x200] = 0x22;\n        uVar2 = 0x1868d32f;\n      }\n      else if ((uVar1 == 0x7faf14b5) && (uVar2 = 0x1868d32f, unaff_R13D < 0x1ff)) {\n        uVar2 = 0x6a32ff2f;\n      }\n      goto LAB_001011e0;\n    }\n    if ((int)uVar1 < 0x12129aba) {\n      if ((int)uVar1 < 0xf7ee393) {\n        if (uVar1 == 0x6b7561d) {\n          local_40 = 1;\n          uVar2 = 0x761801f;\n        }\n        else if (uVar1 == 0x761801f) {\n          uVar2 = 0xe425613e;\n        }\n        else if (uVar1 == 0xd8b4026) {\n          uVar2 = 0x452a8d40;\n        }\n      }\n      else if (uVar1 == 0xf7ee393) {\n        uVar2 = 0x47c7a208;\n        if ((local_3c & 1) != 0) {\n          uVar2 = 0x8cf05a35;\n        }\n      }\n      else if (uVar1 == 0xffd0bfd) {\n        uVar2 = 0xe8175708;\n      }\n      else if (uVar1 == 0x102b1bf6) {\n        bVar6 = unaff_R15B == '\\0';\n        uVar2 = 0x8c3a60a8;\n        goto LAB_001011cb;\n      }\n    }\n    else if ((int)uVar1 < 0x1e3f8188) {\n      if (uVar1 == 0x12129aba) {\n        local_3c = (uint)local_41;\n        uVar2 = 0xf7ee393;\n      }\n      else if (uVar1 == 0x1868d32f) {\n        unaff_RBX = unaff_RBX + 1;\n        uVar2 = 0xc65f797e;\n      }\n      else if (uVar1 == 0x1b64c89f) {\n        local_41 = (&DAT_0010405f)[unaff_R12] == '\\r';\n        uVar2 = 0x12129aba;\n      }\n    }\n    else if ((int)uVar1 < 0x2380cc6c) {\n      uVar2 = uVar4;\n      if ((uVar1 != 0x1e3f8188) && (uVar2 = uVar1, uVar1 == 0x230c5e0c)) {\n        uVar2 = 0xeffa71d3;\n      }\n    }\n    else if (uVar1 == 0x2380cc6c) {\n      lVar5 = (long)unaff_R13D;\n      unaff_R13D = unaff_R13D + 1;\n      main_fields[lVar5 + (long)unaff_R14D * 0x200] = unaff_R15B;\n      uVar2 = 0xffd0bfd;\n    }\n    else if (uVar1 == 0x2bfc2977) {\n      printf(\"%d:%s\\n\",(ulong)unaff_EBP,main_fields + (long)(int)unaff_EBP * 0x200);\n      uVar2 = 0xd692ab01;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined main(void)", 
+   "is_thunk": false, 
+   "size": 1990, 
+   "name": "main", 
+   "entry_point": "00101170"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nchar * fgets(char *__s,int __n,FILE *__stream)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n                    /* fgets@GLIBC_2.2.5 */\n  halt_baddata();\n}\n\n", 
+   "signature": "char * fgets(char * __s, int __n, FILE * __stream)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "fgets", 
+   "entry_point": "0010d030"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "prog12_csv_tokenizer", 
+ "n_functions": 4, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "00100419", 
+   "value": "puts"
+  }, 
+  {
+   "address": "0010041e", 
+   "value": "stdin"
+  }, 
+  {
+   "address": "00100424", 
+   "value": "printf"
+  }, 
+  {
+   "address": "0010042b", 
+   "value": "fgets"
+  }, 
+  {
+   "address": "00100431", 
+   "value": "strlen"
+  }, 
+  {
+   "address": "00100438", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "00100447", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "00100459", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100463", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "0010046f", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "0010048b", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "0010049a", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00102004", 
+   "value": "%d:%s\n"
+  }, 
+  {
+   "address": "0010200b", 
+   "value": "NO_INPUT"
+  }, 
+  {
+   "address": "00102059", 
+   "value": "zR"
+  }, 
+  {
+   "address": "00102089", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".comment::00000000", 
+   "value": "GCC: (Debian 10.2.1-6) 10.2.1 20210110"
+  }, 
+  {
+   "address": ".comment::00000027", 
+   "value": "clang version 16.0.0 (https://github.com/rust-lang/llvm-project 2b9c52f66815bb8d6ea74a4b26df3410602be9b0)"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".symtab"
+  }, 
+  {
+   "address": ".shstrtab::00000009", 
+   "value": ".strtab"
+  }, 
+  {
+   "address": ".shstrtab::00000011", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::0000001b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000023", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000043", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004b", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::00000058", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::00000067", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::00000071", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000007b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000081", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::00000090", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000096", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::0000009e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::000000ac", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000b6", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::000000c2", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::000000ce", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000d7", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::000000e0", 
+   "value": ".data"
+  }, 
+  {
+   "address": ".shstrtab::000000e6", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::000000eb", 
+   "value": ".comment"
+  }, 
+  {
+   "address": ".strtab::00000001", 
+   "value": "crtstuff.c"
+  }, 
+  {
+   "address": ".strtab::0000000c", 
+   "value": "deregister_tm_clones"
+  }, 
+  {
+   "address": ".strtab::00000021", 
+   "value": "__do_global_dtors_aux"
+  }, 
+  {
+   "address": ".strtab::00000037", 
+   "value": "completed.0"
+  }, 
+  {
+   "address": ".strtab::00000043", 
+   "value": "__do_global_dtors_aux_fini_array_entry"
+  }, 
+  {
+   "address": ".strtab::0000006a", 
+   "value": "frame_dummy"
+  }, 
+  {
+   "address": ".strtab::00000076", 
+   "value": "__frame_dummy_init_array_entry"
+  }, 
+  {
+   "address": ".strtab::00000095", 
+   "value": "prog12_csv_tokenizer.c"
+  }, 
+  {
+   "address": ".strtab::000000ac", 
+   "value": "main.line"
+  }, 
+  {
+   "address": ".strtab::000000b6", 
+   "value": "main.fields"
+  }, 
+  {
+   "address": ".strtab::000000c2", 
+   "value": "__FRAME_END__"
+  }, 
+  {
+   "address": ".strtab::000000d0", 
+   "value": "__init_array_end"
+  }, 
+  {
+   "address": ".strtab::000000e1", 
+   "value": "_DYNAMIC"
+  }, 
+  {
+   "address": ".strtab::000000ea", 
+   "value": "__init_array_start"
+  }, 
+  {
+   "address": ".strtab::000000fd", 
+   "value": "__GNU_EH_FRAME_HDR"
+  }, 
+  {
+   "address": ".strtab::00000110", 
+   "value": "_GLOBAL_OFFSET_TABLE_"
+  }, 
+  {
+   "address": ".strtab::00000126", 
+   "value": "__libc_csu_fini"
+  }, 
+  {
+   "address": ".strtab::00000136", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000152", 
+   "value": "puts@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000163", 
+   "value": "stdin@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000175", 
+   "value": "_edata"
+  }, 
+  {
+   "address": ".strtab::0000017c", 
+   "value": "strlen@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::0000018f", 
+   "value": "printf@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001a2", 
+   "value": "__libc_start_main@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001c0", 
+   "value": "fgets@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001d2", 
+   "value": "__data_start"
+  }, 
+  {
+   "address": ".strtab::000001df", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": ".strtab::000001ee", 
+   "value": "__dso_handle"
+  }, 
+  {
+   "address": ".strtab::000001fb", 
+   "value": "_IO_stdin_used"
+  }, 
+  {
+   "address": ".strtab::0000020a", 
+   "value": "__libc_csu_init"
+  }, 
+  {
+   "address": ".strtab::0000021a", 
+   "value": "__bss_start"
+  }, 
+  {
+   "address": ".strtab::00000226", 
+   "value": "main"
+  }, 
+  {
+   "address": ".strtab::0000022b", 
+   "value": "__TMC_END__"
+  }, 
+  {
+   "address": ".strtab::00000237", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000251", 
+   "value": "__cxa_finalize@GLIBC_2.2.5"
+  }
+ ]
+}

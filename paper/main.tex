@@ -1,0 +1,75 @@
+% COLONNA SINGOLA E AUTORE-DATA, non IEEEtran a due colonne.
+% La destinazione e' EMSE. `registro/EMENDAMENTO-07` aveva posto una condizione invece di una
+% preferenza: «non si converte al template Springer prima di sapere se la prima sottomissione lo
+% richiede... da verificare sulle istruzioni per autori prima di spendere lavoro di
+% impaginazione». La verifica non era mai stata fatta, e un seggio di presentazione ha segnalato
+% che la prima cosa che ogni pagina dice a un editor e' il formato sbagliato.
+% Verificato il 19/08: il template Springer NON e' obbligatorio alla prima tornata, ma lo stile
+% dei riferimenti e' autore-data e l'impaginazione e' a colonna singola (le figure si preparano
+% per un'area di testo a colonna singola da 174 mm). Quindi si converte il formato, non il
+% template: `article` a colonna singola con `natbib`/`plainnat`, che soddisfa entrambe le
+% convenzioni senza dipendere da un file di classe che non ho.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.6cm]{geometry}
+\usepackage[round]{natbib}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+% L'UNICO punto in cui inserire il link al deposito anonimo. Il paper dichiara che
+% l'artefatto e' citato nella sottomissione, e quella frase e' vera solo se qui c'e' un
+% URL. Finche' e' vuoto, la macro stampa un segnaposto ben visibile e la build RIFIUTA di
+% produrre l'archivio: e' l'unico modo per non spedire per distrazione una promessa non
+% mantenuta, che in C1 il pannello di riproducibilita' ha classificato come fatale.
+% `xurl` al posto di `url`: in colonna singola l'URL del deposito sbordava di 80,9pt perche'
+% `url` non spezza dentro un percorso. `xurl` lo spezza dove capita, che per un URL e' corretto.
+\usepackage{xurl}
+\newcommand{\artifacturl}{\url{https://github.com/<utente>/transport-endpoint-agentic-eval}}
+% Il repository e' il deposito operativo; il DOI permanente si ottiene all'accettazione,
+% ed e' l'unico modo di ottenerlo. La sezione Data Availability dichiara entrambe le cose
+% invece di promettere un DOI come se esistesse.
+
+\begin{document}
+
+% Ordine di lettura. Il censimento dei meccanismi di cancellazione sta DOPO i risultati e
+% PRIMA della discussione: riporta sull'apparato che ha prodotto i numeri appena dati, e
+% le sue voci si leggono solo una volta che i risultati le hanno rese concrete.
+\input{sections/00-front}
+\input{sections/01-introduction}
+\input{sections/02-related}
+\input{sections/03-method}
+\input{sections/04-design}
+% L'ORDINE E' DELIBERATO, e segue quello delle Contributions in §I invece di contraddirlo.
+% Il censimento viene prima dei contrasti perche' e' il risultato che non dipende da un p-value:
+% un endpoint ha restituito quel messaggio o non l'ha fatto. Nella versione precedente il lettore
+% incontrava dieci test che non superano la correzione PRIMA della parte che regge, e l'elenco dei
+% contributi diceva l'opposto dell'ordine in cui il corpo li presentava.
+\input{sections/06-census}
+\input{sections/05-results}
+\input{sections/07-discussion}
+\input{sections/08-threats}
+\input{sections/09-conclusion}
+% sections/10-artifact: assorbita nelle Declarations il 2026-08-16.
+% Ripeteva parola per parola append-only, documenti di successione e catena
+% degli hash, che EMSE vuole sotto «Statements and Declarations». Il raddoppio
+% faceva sembrare il paper occupato dalla propria igiene piu' che dai risultati.
+\input{sections/11-declarations}
+
+% Il \nocite{*} e' stato tolto il 2026-08-15: le sezioni citano davvero, e la verifica dice
+% La verifica si rifa' a ogni compilazione: e' uno script, non questo commento,
+% a dire quante chiavi sono citate e quante definite.
+% Nota storica di quando serviva: uno
+% scheletro senza una sola \cite produce una bibliografia vuota, che non compila: senza
+% questa riga non potrei dire "lo scheletro compila", potrei solo scriverlo.
+% Lasciarlo nel paper finito elencherebbe opere mai citate.
+\input{sections/12-appendice}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

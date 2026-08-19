@@ -1,0 +1,107 @@
+% IL TITOLO E L'ORDINE VENGONO DALLA LETTERA DI RITORNO, non dalle istruzioni per autori.
+% La prima sottomissione (EMSE-D-26-00987) e' stata restituita per completezza: le istruzioni
+% pubbliche dicono «Statements and Declarations», l'ufficio editoriale chiede «Declarations» con
+% sei sottosezioni nominate e in quest'ordine. Dove le due fonti divergono vince la lettera, che
+% e' la piu' specifica e la piu' recente. Nessuna di queste sei si omette: se una non si applica
+% si scrive che non si applica, ed e' esattamente cio' che la lettera prescrive.
+\section*{Declarations}
+
+\subsection*{Funding}
+
+This work received no specific grant from any funding agency. Inference costs were borne by the
+author's institution and are itemised per arm in the replication package, so the cost of each
+number is auditable beside the number.
+
+There are no acknowledgements: the author is the sole contributor, and this statement is therefore
+already separate from any.
+
+\subsection*{Ethical approval}
+
+Not applicable. The study involves no human participants and no personal data. It measures
+commercial inference endpoints under their ordinary terms of use, at a request rate below the
+published limits of both platforms, and reports the responses those endpoints returned.
+
+\subsection*{Informed consent}
+
+Not applicable. The study has no human participants, so there is no one from whom consent could
+be sought. The subjects of measurement are four commercial inference endpoints, and what was
+collected from them is the text they returned to documented requests.
+
+\subsection*{Author contributions}
+
+<autore> is the sole author and carried out the whole of the work: conceptualisation,
+the pre-registration and its frozen analysis plan, the harness for both transports, data
+collection across both clouds, the analysis scripts, the interpretation, and the writing of the
+manuscript. There are no other authors.
+
+\subsection*{Data availability statement}
+
+\label{sec:artifact}
+
+The replication package contains the 45 stripped binaries and their test suites, the decompilations, the
+harness with both transports, every raw result row including the two invalidated batches, the per-turn
+session traces, the frozen pre-registration and analysis script with their content hashes, and the dated
+succession documents accounting for every change to a frozen file. Each number in this paper is produced
+by a script released with it, re-running from the released rows; no figure is drawn by hand.
+
+% Il repository e' il deposito operativo, citato per URL; il DOI permanente si deposita
+% all'accettazione, perche' un DOI si ottiene depositando e non prima. La frase sotto dice
+% quello che e' vero oggi invece di promettere un identificatore che non esiste ancora.
+The two numbers this paper takes from the preceding chapter are re-runnable here: the deposit carries a
+snapshot of exactly the cells they need with their per-turn logs, so both the calibration inversion and the
+tool-exposure asymmetry recompute without leaving the artifact. It does not carry the rest of that chapter,
+and says so.
+
+Three commands regenerate everything a reader might want to check, and they are the ones we ran:
+
+\begin{quote}\footnotesize\ttfamily\raggedright
+python3 analysis/numeri\_paper.py \textrm{--- every number in prose}\\
+python3 analysis/tabella\_principale.py \textrm{--- Table \ref{tab:tests}}\\
+python3 analysis/tabella\_principale.py -{}-varianza \textrm{--- Table \ref{tab:variance}}
+\end{quote}
+
+\noindent
+The first carries its own known-answer check: pointed at the original collection it must reproduce the
+numbers this paper reported before the re-collection, and exits non-zero otherwise --- which is what
+makes the new series trustworthy rather than merely recomputed, and what caught a ratio reported as 77
+whose value is 76.3. Each collection is selected by the same three environment variables
+(\texttt{C2\_RESULTS}, \texttt{C2\_PATTERN}, \texttt{C2\_PREFISSO}); setting only one yields an index
+built on one batch and queried with the keys of the other, which returns zero rather than raising.
+
+The package is openly available at \artifacturl{}\ and will be deposited on a permanent archive with a
+DOI on acceptance. Cloud workspace and profile names, absolute paths and one internal account identifier
+are replaced by placeholders, because infrastructure names belong to an employer rather than to a study,
+and \texttt{REDAZIONE.md} lists every substitution; nothing else is redacted, the venue being
+single-blind. Redaction changes the content hash of a frozen file and this paper quotes those hashes, so
+the deposit carries its own recomputed table alongside that document, with the integrity guard run inside
+the deposit and passing there. Two further properties are checkable rather than asserted: the result
+directory is append-only, invalidated batches moved and annotated with the recomputation beside each
+rather than deleted; and every change to a frozen file carries a document written before the change,
+declaring the previous and the new hash, with a guard rejecting any divergence no document accounts
+for.
+
+\subsection*{Conflict of interest}
+
+The author declares no competing interests. The two serving platforms measured in this study
+were selected because the institution already held accounts on both; neither vendor was
+contacted, informed, or involved at any stage, and neither reviewed this manuscript.
+
+\subsection*{Reporting checklist}
+
+The study follows the community guidelines for empirical studies involving language
+models~\citep{baltes2026guidelines}: model identifiers, versions and configuration are reported
+per cell (\S\ref{sec:method}); the system and harness design is described and released; per-turn
+session traces are published for every run rather than summarised; and two of the four models
+under evaluation are open-weight, so that their scores can be independently re-run on
+infrastructure the reader controls. The guidelines' requirement that we sharpen --- reporting
+the transport --- is the subject of the paper rather than only its practice.
+
+\subsection*{Use of language models in this work}
+
+Language models are the object of study here, and they were also used as a tool while
+conducting it --- to draft and review code and prose --- which the community guidelines ask to
+be declared separately from their role as
+subject~\citep{baltes2026guidelines}. No measurement, no number, and no decision reported in
+this paper was produced by that use: every quantity comes from a committed script run against
+committed rows, and the guards described above exist precisely because an author who accepts a
+generated number without recomputing it has no way to notice when it is wrong.

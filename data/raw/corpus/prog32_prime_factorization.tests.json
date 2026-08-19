@@ -1,0 +1,7 @@
+{"program": "prog32_prime_factorization", "tests": [
+  {"id": 1, "args": ["360"], "stdin": "", "expected_stdout": "2^3 3^2 5^1\n"},
+  {"id": 2, "args": ["97"], "stdin": "", "expected_stdout": "97^1\n"},
+  {"id": 3, "args": ["1"], "stdin": "", "expected_stdout": "NONE\n"},
+  {"id": 4, "args": ["999999937"], "stdin": "", "expected_stdout": "999999937^1\n"},
+  {"id": 5, "args": [], "stdin": "", "expected_stdout": "NO_INPUT\n"}
+]}

@@ -1,0 +1,7 @@
+{"program": "prog54_topo_sort", "tests": [
+  {"id": 1, "args": ["0", "1", "1", "2", "2", "3"], "stdin": "", "expected_stdout": "0 1 2 3 4 5 6 7\n"},
+  {"id": 2, "args": ["7", "6", "6", "5", "5", "4", "4", "3", "3", "2", "2", "1", "1", "0"], "stdin": "", "expected_stdout": "7 6 5 4 3 2 1 0\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "0 1 2 3 4 5 6 7\n"},
+  {"id": 4, "args": ["5", "0", "6", "1", "7", "2", "3", "4"], "stdin": "", "expected_stdout": "3 4 5 0 6 1 7 2\n"},
+  {"id": 5, "args": ["0", "1", "1", "2", "2", "0"], "stdin": "", "expected_stdout": "CYCLE\n"}
+]}

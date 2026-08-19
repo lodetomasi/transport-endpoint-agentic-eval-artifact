@@ -1,0 +1,3 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog36_pascal_triangle,1,0.2000,1,5,True,False,489,12,0.005201,6970,566,databricks-meta-llama-3-3-70b-instruct,databricks,13.0,[],2026-08-16T17:25:02,llama-3.3-70b,databricks,text
+prog52_bfs_grid,1,0.2000,1,5,True,False,2147,12,0.011799,16176,1163,databricks-meta-llama-3-3-70b-instruct,databricks,20.1,[],2026-08-16T17:25:22,llama-3.3-70b,databricks,text

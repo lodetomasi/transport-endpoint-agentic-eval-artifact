@@ -1,0 +1,7 @@
+{"program": "prog27_soundex", "tests": [
+  {"id": 1, "args": ["Robert"], "stdin": "", "expected_stdout": "R163\n"},
+  {"id": 2, "args": ["Ashcraft"], "stdin": "", "expected_stdout": "A261\n"},
+  {"id": 3, "args": ["Tymczak"], "stdin": "", "expected_stdout": "T522\n"},
+  {"id": 4, "args": ["A"], "stdin": "", "expected_stdout": "A000\n"},
+  {"id": 5, "args": ["123"], "stdin": "", "expected_stdout": "EMPTY\n"}
+]}

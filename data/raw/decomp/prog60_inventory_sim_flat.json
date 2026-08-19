@@ -1,0 +1,373 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00104010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint putchar(int __c)\n\n{\n  int iVar1;\n  \n  iVar1 = (*(code *)PTR_putchar_00104018)();\n  return iVar1;\n}\n\n", 
+   "signature": "int putchar(int __c)", 
+   "is_thunk": true, 
+   "size": 6, 
+   "name": "putchar", 
+   "entry_point": "00101030"
+  }, 
+  {
+   "decompiled": "\nundefined8 main(int param_1,ulong param_2)\n\n{\n  int iVar1;\n  int iVar2;\n  int unaff_EBX;\n  int iVar3;\n  long lVar4;\n  ulong uVar5;\n  ulong unaff_R12;\n  long unaff_R13;\n  char *unaff_R14;\n  int unaff_R15D;\n  int local_44;\n  long local_40;\n  \n  iVar3 = 1;\n  iVar1 = -0x481a48b1;\n  local_40 = 0;\n  uVar5 = param_2;\nLAB_001011d0:\n  do {\n    while (iVar1 < -0x2cd9e56) {\n      if (iVar1 < -0x441d9bb9) {\n        if (iVar1 < -0x53794104) {\n          if (iVar1 == -0x71b8c7fb) goto LAB_001011ab;\n          if (iVar1 == -0x6ae4950a) {\n            iVar1 = 0x67a70eee;\n            if (-1 < (long)unaff_R12) {\n              iVar1 = 0x48643266;\n            }\n            iVar2 = -0x73f093b3;\n            while( true ) {\n              while (iVar2 == -0x73f093b3) {\n                uVar5 = 0;\n                iVar2 = iVar1;\n              }\n              if (iVar2 == 0x67a70eee) break;\n              if (iVar2 == 0x48643266) {\n                uVar5 = (ulong)((long)unaff_R12 < 5);\n                iVar2 = 0x67a70eee;\n              }\n            }\n            iVar1 = 0x1f329790;\n            if ((uVar5 & 1) != 0) {\n              iVar1 = 0x51f0d71f;\n            }\n          }\n          else if (iVar1 == -0x6a055ebd) {\n            uVar5 = unaff_R12;\n            printf(\"INSUFFICIENT_STOCK sku=%ld\\n\");\nLAB_001011b7:\n            unaff_EBX = 2;\n            iVar1 = 0x27e66f83;\n          }\n        }\n        else if (iVar1 < -0x49da4ad0) {\n          if (iVar1 == -0x53794104) {\n            *(long *)(stock + unaff_R12 * 8) = *(long *)(stock + unaff_R12 * 8) + unaff_R13;\n            uVar5 = unaff_R12;\n            printf(\"RESTOCK sku=%ld qty=%ld\\n\",unaff_R12,unaff_R13);\n            iVar1 = -0x49da4ad0;\n          }\n          else if (iVar1 == -0x4b86a009) {\n            unaff_EBX = 0;\n            iVar1 = 0x27e66f83;\n          }\n        }\n        else if (iVar1 == -0x49da4ad0) {\n          iVar1 = -0x4b86a009;\n        }\n        else if ((iVar1 == -0x481a48b1) && (iVar1 = -0x42e53092, 2 < param_1 - iVar3)) {\n          iVar1 = 0x114ffab5;\n        }\n      }\n      else if (iVar1 < -0x299f468c) {\n        if (iVar1 < -0x409289a0) {\n          if (iVar1 == -0x441d9bb9) goto LAB_001011ab;\n          if (iVar1 == -0x42e53092) {\n            unaff_R15D = 0;\n            printf(\"FINAL stock=\");\n            iVar1 = 0x49a34203;\n          }\n        }\n        else if (iVar1 == -0x409289a0) {\n          uVar5 = *(ulong *)(stock + (long)unaff_R15D * 8);\n          printf(\"%ld\");\n          iVar1 = 0x6fac1c66;\n        }\n        else if ((iVar1 == -0x2e72c3bd) && (iVar1 = 0x34779135, unaff_R14[1] == '\\0')) {\n          iVar1 = 0x11b50362;\n        }\n      }\n      else if (iVar1 < -0x18e891b8) {\n        if (iVar1 == -0x299f468c) {\n          iVar1 = 0x560e04ca;\n          if (*(long *)(stock + unaff_R12 * 8) < unaff_R13) {\n            iVar1 = -0x6a055ebd;\n          }\n        }\n        else if (iVar1 == -0x1f421e6f) {\n          puts(\"INVALID_OP\");\n          iVar1 = -0x49da4ad0;\n        }\n      }\n      else if (iVar1 == -0x18e891b8) {\n        iVar1 = -0x481a48b1;\n      }\n      else if ((iVar1 == -0x152a278e) && (iVar1 = -0x18e891b8, local_44 == 2)) {\n        iVar1 = -0x481a48b1;\n      }\n    }\n    if (0x34779134 < iVar1) {\n      if (iVar1 < 0x51f0d71f) {\n        if (iVar1 < 0x419f9ce7) {\n          if (iVar1 == 0x34779135) {\n            iVar1 = -0x1f421e6f;\n            if (*unaff_R14 == 'R') {\n              iVar1 = -0x2cd9e56;\n            }\n          }\n          else if (iVar1 == 0x4118f043) {\n            putchar(0x2c);\n            iVar1 = -0x409289a0;\n          }\n        }\n        else if (iVar1 == 0x419f9ce7) {\n          iVar1 = -0x299f468c;\n          if (unaff_R13 < 0) {\n            iVar1 = -0x6a055ebd;\n          }\n        }\n        else if ((iVar1 == 0x49a34203) && (iVar1 = 0x2f491eeb, unaff_R15D < 5)) {\n          iVar1 = -0x1778a7c;\n        }\n      }\n      else if (iVar1 < 0x6fac1c66) {\n        if (iVar1 == 0x51f0d71f) {\n          iVar1 = -0x53794104;\n          if (unaff_R13 < 0) {\n            iVar1 = -0x71b8c7fb;\n          }\n        }\n        else if (iVar1 == 0x560e04ca) {\n          *(long *)(stock + unaff_R12 * 8) = *(long *)(stock + unaff_R12 * 8) - unaff_R13;\n          local_40 = local_40 + *(long *)(price + unaff_R12 * 8) * unaff_R13;\n          uVar5 = unaff_R12;\n          printf(\"SELL sku=%ld qty=%ld revenue+=%ld\\n\",unaff_R12,unaff_R13);\n          iVar1 = -0x4b86a009;\n        }\n      }\n      else if (iVar1 == 0x6fac1c66) {\n        unaff_R15D = unaff_R15D + 1;\n        iVar1 = 0x49a34203;\n      }\n      else if (iVar1 == 0x70aa8e7c) {\n        printf(\" revenue=%ld\\n\",local_40);\n        return 0;\n      }\n      goto LAB_001011d0;\n    }\n    if (iVar1 < 0x11b50362) {\n      if (iVar1 == -0x2cd9e56) {\n        iVar1 = -0x1f421e6f;\n        if (unaff_R14[1] == '\\0') {\n          iVar1 = -0x6ae4950a;\n        }\n      }\n      else if (iVar1 == -0x1778a7c) {\n        iVar1 = -0x409289a0;\n        if (0 < unaff_R15D) {\n          iVar1 = 0x4118f043;\n        }\n      }\n      else if (iVar1 == 0x114ffab5) {\n        lVar4 = (long)iVar3;\n        unaff_R14 = *(char **)(param_2 + lVar4 * 8);\n        unaff_R12 = strtol(*(char **)(param_2 + 8 + lVar4 * 8),(char **)0x0,10);\n        uVar5 = 0;\n        unaff_R13 = strtol(*(char **)(param_2 + 0x10 + lVar4 * 8),(char **)0x0,10);\n        iVar3 = iVar3 + 3;\n        iVar1 = 0x34779135;\n        if (*unaff_R14 == 'S') {\n          iVar1 = -0x2e72c3bd;\n        }\n      }\n    }\n    else if (iVar1 < 0x27e66f83) {\n      if (iVar1 == 0x11b50362) {\n        iVar1 = 0x67a70eee;\n        if (-1 < (long)unaff_R12) {\n          iVar1 = 0x48643266;\n        }\n        iVar2 = -0x73f093b3;\n        while( true ) {\n          while (iVar2 == -0x73f093b3) {\n            uVar5 = 0;\n            iVar2 = iVar1;\n          }\n          if (iVar2 == 0x67a70eee) break;\n          if (iVar2 == 0x48643266) {\n            uVar5 = (ulong)((long)unaff_R12 < 5);\n            iVar2 = 0x67a70eee;\n          }\n        }\n        iVar1 = -0x441d9bb9;\n        if ((uVar5 & 1) != 0) {\n          iVar1 = 0x419f9ce7;\n        }\n      }\n      else if (iVar1 == 0x1f329790) {\nLAB_001011ab:\n        puts(\"INVALID_SKU\");\n        goto LAB_001011b7;\n      }\n    }\n    else if (iVar1 == 0x27e66f83) {\n      iVar1 = -0x152a278e;\n      local_44 = unaff_EBX;\n    }\n    else if (iVar1 == 0x2f491eeb) {\n      unaff_EBX = 4;\n      iVar1 = 0x70aa8e7c;\n    }\n  } while( true );\n}\n\n", 
+   "signature": "undefined main(void)", 
+   "is_thunk": false, 
+   "size": 1378, 
+   "name": "main", 
+   "entry_point": "00101170"
+  }, 
+  {
+   "decompiled": "\n/* WARNING: Control flow encountered bad instruction data */\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n\nint putchar(int __c)\n\n{\n                    /* WARNING: Bad instruction - Truncating control flow here */\n                    /* putchar@GLIBC_2.2.5 */\n  halt_baddata();\n}\n\n", 
+   "signature": "int putchar(int __c)", 
+   "is_thunk": true, 
+   "size": 1, 
+   "name": "putchar", 
+   "entry_point": "00105000"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "prog60_inventory_sim", 
+ "n_functions": 4, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "00100401", 
+   "value": "puts"
+  }, 
+  {
+   "address": "00100406", 
+   "value": "putchar"
+  }, 
+  {
+   "address": "0010040e", 
+   "value": "printf"
+  }, 
+  {
+   "address": "00100415", 
+   "value": "strtol"
+  }, 
+  {
+   "address": "0010041c", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "0010042b", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "0010043d", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100447", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "00100453", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "0010046f", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "0010047e", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00102004", 
+   "value": "INSUFFICIENT_STOCK sku=%ld\n"
+  }, 
+  {
+   "address": "00102020", 
+   "value": "SELL sku=%ld qty=%ld revenue+=%ld\n"
+  }, 
+  {
+   "address": "00102043", 
+   "value": "RESTOCK sku=%ld qty=%ld\n"
+  }, 
+  {
+   "address": "0010205c", 
+   "value": "FINAL stock="
+  }, 
+  {
+   "address": "0010206d", 
+   "value": " revenue=%ld\n"
+  }, 
+  {
+   "address": "0010207b", 
+   "value": "INVALID_OP"
+  }, 
+  {
+   "address": "00102086", 
+   "value": "INVALID_SKU"
+  }, 
+  {
+   "address": "00102111", 
+   "value": "zR"
+  }, 
+  {
+   "address": "00102141", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".comment::00000000", 
+   "value": "GCC: (Debian 10.2.1-6) 10.2.1 20210110"
+  }, 
+  {
+   "address": ".comment::00000027", 
+   "value": "clang version 16.0.0 (https://github.com/rust-lang/llvm-project 2b9c52f66815bb8d6ea74a4b26df3410602be9b0)"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".symtab"
+  }, 
+  {
+   "address": ".shstrtab::00000009", 
+   "value": ".strtab"
+  }, 
+  {
+   "address": ".shstrtab::00000011", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::0000001b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000023", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000043", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004b", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::00000058", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::00000067", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::00000071", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000007b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000081", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::00000090", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000096", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::0000009e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::000000ac", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000b6", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::000000c2", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::000000ce", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000d7", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::000000e0", 
+   "value": ".data"
+  }, 
+  {
+   "address": ".shstrtab::000000e6", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::000000eb", 
+   "value": ".comment"
+  }, 
+  {
+   "address": ".strtab::00000001", 
+   "value": "crtstuff.c"
+  }, 
+  {
+   "address": ".strtab::0000000c", 
+   "value": "deregister_tm_clones"
+  }, 
+  {
+   "address": ".strtab::00000021", 
+   "value": "__do_global_dtors_aux"
+  }, 
+  {
+   "address": ".strtab::00000037", 
+   "value": "completed.0"
+  }, 
+  {
+   "address": ".strtab::00000043", 
+   "value": "__do_global_dtors_aux_fini_array_entry"
+  }, 
+  {
+   "address": ".strtab::0000006a", 
+   "value": "frame_dummy"
+  }, 
+  {
+   "address": ".strtab::00000076", 
+   "value": "__frame_dummy_init_array_entry"
+  }, 
+  {
+   "address": ".strtab::00000095", 
+   "value": "prog60_inventory_sim.c"
+  }, 
+  {
+   "address": ".strtab::000000ac", 
+   "value": "stock"
+  }, 
+  {
+   "address": ".strtab::000000b2", 
+   "value": "price"
+  }, 
+  {
+   "address": ".strtab::000000b8", 
+   "value": "__FRAME_END__"
+  }, 
+  {
+   "address": ".strtab::000000c6", 
+   "value": "__init_array_end"
+  }, 
+  {
+   "address": ".strtab::000000d7", 
+   "value": "_DYNAMIC"
+  }, 
+  {
+   "address": ".strtab::000000e0", 
+   "value": "__init_array_start"
+  }, 
+  {
+   "address": ".strtab::000000f3", 
+   "value": "__GNU_EH_FRAME_HDR"
+  }, 
+  {
+   "address": ".strtab::00000106", 
+   "value": "_GLOBAL_OFFSET_TABLE_"
+  }, 
+  {
+   "address": ".strtab::0000011c", 
+   "value": "__libc_csu_fini"
+  }, 
+  {
+   "address": ".strtab::0000012c", 
+   "value": "putchar@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000140", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::0000015c", 
+   "value": "puts@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::0000016d", 
+   "value": "_edata"
+  }, 
+  {
+   "address": ".strtab::00000174", 
+   "value": "printf@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000187", 
+   "value": "__libc_start_main@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001a5", 
+   "value": "__data_start"
+  }, 
+  {
+   "address": ".strtab::000001b2", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": ".strtab::000001c1", 
+   "value": "strtol@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::000001d4", 
+   "value": "__dso_handle"
+  }, 
+  {
+   "address": ".strtab::000001e1", 
+   "value": "_IO_stdin_used"
+  }, 
+  {
+   "address": ".strtab::000001f0", 
+   "value": "__libc_csu_init"
+  }, 
+  {
+   "address": ".strtab::00000200", 
+   "value": "__bss_start"
+  }, 
+  {
+   "address": ".strtab::0000020c", 
+   "value": "main"
+  }, 
+  {
+   "address": ".strtab::00000211", 
+   "value": "__TMC_END__"
+  }, 
+  {
+   "address": ".strtab::0000021d", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000237", 
+   "value": "__cxa_finalize@GLIBC_2.2.5"
+  }
+ ]
+}

@@ -1,0 +1,443 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog16_word_count_fsm,1,0.0000,0,5,True,False,970,12,0.000456,1047,371,databricks-gpt-oss-120b,databricks,6.3,[],2026-08-14T05:19:14,gpt-oss-120b,databricks,text
+prog16_word_count_fsm,2,0.0000,0,5,True,False,558,12,0.000472,1047,394,databricks-gpt-oss-120b,databricks,4.4,[],2026-08-14T05:19:18,gpt-oss-120b,databricks,text
+prog16_word_count_fsm,3,1.0000,5,5,True,False,513,12,0.001360,3408,1037,databricks-gpt-oss-120b,databricks,8.6,[],2026-08-14T05:19:27,gpt-oss-120b,databricks,text
+prog16_word_count_fsm,4,1.0000,5,5,True,False,531,12,0.001447,3408,1158,databricks-gpt-oss-120b,databricks,9.3,[],2026-08-14T05:19:36,gpt-oss-120b,databricks,text
+prog16_word_count_fsm,5,1.0000,5,5,True,False,531,12,0.001781,3408,1621,databricks-gpt-oss-120b,databricks,11.2,[],2026-08-14T05:19:47,gpt-oss-120b,databricks,text
+prog16_word_count_fsm,6,1.0000,5,5,True,False,663,12,0.001545,3408,1294,databricks-gpt-oss-120b,databricks,11.6,[],2026-08-14T05:19:59,gpt-oss-120b,databricks,text
+prog16_word_count_fsm,7,1.0000,5,5,True,False,612,12,0.001680,3408,1481,databricks-gpt-oss-120b,databricks,11.4,[],2026-08-14T05:20:10,gpt-oss-120b,databricks,text
+prog16_word_count_fsm,8,0.0000,0,5,True,False,684,12,0.000404,1047,300,databricks-gpt-oss-120b,databricks,5.1,[],2026-08-14T05:20:16,gpt-oss-120b,databricks,text
+prog17_whitespace_trim,1,0.0000,0,5,True,False,1718,12,0.000607,1024,587,databricks-gpt-oss-120b,databricks,6.7,[],2026-08-14T05:20:22,gpt-oss-120b,databricks,text
+prog17_whitespace_trim,2,0.0000,0,5,True,False,1219,12,0.000503,1024,443,databricks-gpt-oss-120b,databricks,6.1,[],2026-08-14T05:20:28,gpt-oss-120b,databricks,text
+prog17_whitespace_trim,3,0.0000,0,5,True,False,1576,12,0.000734,1024,764,databricks-gpt-oss-120b,databricks,6.3,[],2026-08-14T05:20:35,gpt-oss-120b,databricks,text
+prog17_whitespace_trim,4,0.0000,0,5,True,False,982,12,0.000630,1024,619,databricks-gpt-oss-120b,databricks,6.6,[],2026-08-14T05:20:41,gpt-oss-120b,databricks,text
+prog17_whitespace_trim,5,0.2000,1,5,True,False,1224,12,0.000670,1024,675,databricks-gpt-oss-120b,databricks,6.9,[],2026-08-14T05:20:48,gpt-oss-120b,databricks,text
+prog17_whitespace_trim,6,0.0000,0,5,True,False,1478,12,0.000572,1024,538,databricks-gpt-oss-120b,databricks,7.2,[],2026-08-14T05:20:55,gpt-oss-120b,databricks,text
+prog17_whitespace_trim,7,0.0000,0,5,True,False,2731,12,0.000850,1024,925,databricks-gpt-oss-120b,databricks,6.7,[],2026-08-14T05:21:02,gpt-oss-120b,databricks,text
+prog17_whitespace_trim,8,0.0000,0,5,True,False,1676,12,0.000837,1024,907,databricks-gpt-oss-120b,databricks,10.2,[],2026-08-14T05:21:12,gpt-oss-120b,databricks,text
+prog18_caesar_cipher,1,0.0000,0,5,True,False,1313,12,0.002143,4512,1848,databricks-gpt-oss-120b,databricks,15.6,[],2026-08-14T05:21:28,gpt-oss-120b,databricks,text
+prog18_caesar_cipher,2,1.0000,5,5,True,False,1015,12,0.002142,4512,1847,databricks-gpt-oss-120b,databricks,15.2,[],2026-08-14T05:21:43,gpt-oss-120b,databricks,text
+prog18_caesar_cipher,3,0.0000,0,5,True,False,1255,12,0.000526,1048,469,databricks-gpt-oss-120b,databricks,6.3,[],2026-08-14T05:21:49,gpt-oss-120b,databricks,text
+prog18_caesar_cipher,4,1.0000,5,5,True,False,1647,12,0.002710,4512,2636,databricks-gpt-oss-120b,databricks,15.3,[],2026-08-14T05:22:05,gpt-oss-120b,databricks,text
+prog18_caesar_cipher,5,0.8000,4,5,True,False,1220,12,0.002665,4512,2574,databricks-gpt-oss-120b,databricks,16.0,[],2026-08-14T05:22:21,gpt-oss-120b,databricks,text
+prog18_caesar_cipher,6,1.0000,5,5,True,False,1162,12,0.002004,4512,1656,databricks-gpt-oss-120b,databricks,15.2,[],2026-08-14T05:22:36,gpt-oss-120b,databricks,text
+prog18_caesar_cipher,7,0.8000,4,5,True,False,1007,12,0.002315,4512,2087,databricks-gpt-oss-120b,databricks,12.2,[],2026-08-14T05:22:48,gpt-oss-120b,databricks,text
+prog18_caesar_cipher,8,1.0000,5,5,True,False,1431,12,0.002706,4512,2631,databricks-gpt-oss-120b,databricks,16.2,[],2026-08-14T05:23:04,gpt-oss-120b,databricks,text
+prog19_palindrome_checker,1,1.0000,5,5,True,False,1073,12,0.002436,4287,2311,databricks-gpt-oss-120b,databricks,17.2,[],2026-08-14T05:23:21,gpt-oss-120b,databricks,text
+prog19_palindrome_checker,2,1.0000,5,5,True,False,1004,12,0.002055,4287,1782,databricks-gpt-oss-120b,databricks,13.4,[],2026-08-14T05:23:35,gpt-oss-120b,databricks,text
+prog19_palindrome_checker,3,0.0000,0,5,False,False,1124,12,0.001943,4287,1627,databricks-gpt-oss-120b,databricks,9.7,harness_error: IndexError: list index out of range,2026-08-14T05:23:45,gpt-oss-120b,databricks,text
+prog19_palindrome_checker,4,1.0000,5,5,True,False,977,12,0.002529,4287,2441,databricks-gpt-oss-120b,databricks,13.2,[],2026-08-14T05:23:58,gpt-oss-120b,databricks,text
+prog19_palindrome_checker,5,1.0000,5,5,True,False,1219,12,0.002287,4287,2105,databricks-gpt-oss-120b,databricks,15.7,[],2026-08-14T05:24:14,gpt-oss-120b,databricks,text
+prog19_palindrome_checker,6,1.0000,5,5,True,False,1146,12,0.002495,4287,2393,databricks-gpt-oss-120b,databricks,20.8,[],2026-08-14T05:24:34,gpt-oss-120b,databricks,text
+prog19_palindrome_checker,7,0.0000,0,5,True,False,1328,12,0.000540,1024,494,databricks-gpt-oss-120b,databricks,6.7,[],2026-08-14T05:24:41,gpt-oss-120b,databricks,text
+prog19_palindrome_checker,8,1.0000,5,5,True,False,1118,12,0.002413,4287,2279,databricks-gpt-oss-120b,databricks,13.0,[],2026-08-14T05:24:54,gpt-oss-120b,databricks,text
+prog20_anagram_checker,1,0.0000,0,5,True,False,1621,12,0.000824,1024,888,databricks-gpt-oss-120b,databricks,13.3,[],2026-08-14T05:25:07,gpt-oss-120b,databricks,text
+prog20_anagram_checker,2,0.0000,0,5,False,False,1421,12,0.002136,4301,1891,databricks-gpt-oss-120b,databricks,22.5,"/w/candidate.c:29:45: error: function definition is not allowed here
+   29 |     auto void fill(const char *s, int *cnt) {
+      |                                             ^
+/w/candidate.c:40:5: error: call to undeclared function 'fill'; ISO C99 and later do not support implicit function declarat",2026-08-14T05:25:30,gpt-oss-120b,databricks,text
+prog20_anagram_checker,3,0.0000,0,5,True,False,1615,12,0.000848,1024,922,databricks-gpt-oss-120b,databricks,9.3,[],2026-08-14T05:25:39,gpt-oss-120b,databricks,text
+prog20_anagram_checker,4,1.0000,5,5,True,False,1140,12,0.002339,4301,2173,databricks-gpt-oss-120b,databricks,23.4,[],2026-08-14T05:26:02,gpt-oss-120b,databricks,text
+prog20_anagram_checker,5,1.0000,5,5,True,False,1308,12,0.002935,4301,3001,databricks-gpt-oss-120b,databricks,30.1,[],2026-08-14T05:26:33,gpt-oss-120b,databricks,text
+prog20_anagram_checker,6,0.0000,0,5,True,False,1630,12,0.000676,1024,683,databricks-gpt-oss-120b,databricks,9.1,[],2026-08-14T05:26:42,gpt-oss-120b,databricks,text
+prog20_anagram_checker,7,0.0000,0,5,False,False,1300,12,0.002133,4301,1887,databricks-gpt-oss-120b,databricks,19.2,"/w/candidate.c:29:52: error: function definition is not allowed here
+   29 |     auto void fill_counts(const char *s, int *cnt) {
+      |                                                    ^
+/w/candidate.c:39:5: error: call to undeclared function 'fill_counts'; ISO C99 and later do not support impli",2026-08-14T05:27:01,gpt-oss-120b,databricks,text
+prog20_anagram_checker,8,0.0000,0,5,True,False,1513,12,0.000870,1024,953,databricks-gpt-oss-120b,databricks,7.4,[],2026-08-14T05:27:08,gpt-oss-120b,databricks,text
+prog21_date_validator,1,1.0000,5,5,True,False,1476,12,0.003216,4838,3257,databricks-gpt-oss-120b,databricks,16.6,[],2026-08-14T05:27:25,gpt-oss-120b,databricks,text
+prog21_date_validator,2,0.8000,4,5,True,False,2051,12,0.003790,4838,4055,databricks-gpt-oss-120b,databricks,26.3,[],2026-08-14T05:27:51,gpt-oss-120b,databricks,text
+prog21_date_validator,3,1.0000,5,5,True,False,1698,12,0.002642,4838,2460,databricks-gpt-oss-120b,databricks,13.6,[],2026-08-14T05:28:05,gpt-oss-120b,databricks,text
+prog21_date_validator,4,1.0000,5,5,True,False,1707,12,0.004239,4838,4678,databricks-gpt-oss-120b,databricks,24.9,[],2026-08-14T05:28:30,gpt-oss-120b,databricks,text
+prog21_date_validator,5,0.8000,4,5,True,False,1351,12,0.002950,4838,2888,databricks-gpt-oss-120b,databricks,16.7,[],2026-08-14T05:28:46,gpt-oss-120b,databricks,text
+prog21_date_validator,6,1.0000,5,5,True,False,1553,12,0.003091,4838,3084,databricks-gpt-oss-120b,databricks,16.4,[],2026-08-14T05:29:03,gpt-oss-120b,databricks,text
+prog21_date_validator,7,1.0000,5,5,True,False,1445,12,0.003528,4838,3690,databricks-gpt-oss-120b,databricks,25.8,[],2026-08-14T05:29:29,gpt-oss-120b,databricks,text
+prog21_date_validator,8,0.8000,4,5,True,False,1395,12,0.002777,4838,2647,databricks-gpt-oss-120b,databricks,18.1,[],2026-08-14T05:29:47,gpt-oss-120b,databricks,text
+prog22_snake_camel_convert,1,0.0000,0,5,True,False,2573,12,0.000875,1028,959,databricks-gpt-oss-120b,databricks,7.4,[],2026-08-14T05:29:54,gpt-oss-120b,databricks,text
+prog22_snake_camel_convert,2,0.0000,0,5,False,False,1870,12,0.000943,1028,1053,databricks-gpt-oss-120b,databricks,8.8,"/w/candidate.c:61:28: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   61 |     char *output = (char *)malloc(len * 2 + 1);
+      |                            ^
+",2026-08-14T05:30:03,gpt-oss-120b,databricks,text
+prog22_snake_camel_convert,3,0.0000,0,5,True,False,1049,12,0.000472,1028,399,databricks-gpt-oss-120b,databricks,4.5,[],2026-08-14T05:30:07,gpt-oss-120b,databricks,text
+prog22_snake_camel_convert,4,0.0000,0,5,True,False,1126,12,0.000479,1028,408,databricks-gpt-oss-120b,databricks,4.4,[],2026-08-14T05:30:12,gpt-oss-120b,databricks,text
+prog22_snake_camel_convert,5,0.0000,0,5,True,False,774,12,0.000415,1028,320,databricks-gpt-oss-120b,databricks,4.4,[],2026-08-14T05:30:16,gpt-oss-120b,databricks,text
+prog22_snake_camel_convert,6,0.0000,0,5,True,False,1182,12,0.000472,1028,399,databricks-gpt-oss-120b,databricks,5.0,[],2026-08-14T05:30:21,gpt-oss-120b,databricks,text
+prog22_snake_camel_convert,7,0.0000,0,5,True,False,1182,12,0.000472,1028,399,databricks-gpt-oss-120b,databricks,4.7,[],2026-08-14T05:30:26,gpt-oss-120b,databricks,text
+prog22_snake_camel_convert,8,0.0000,0,5,True,False,1144,12,0.000480,1028,409,databricks-gpt-oss-120b,databricks,4.5,[],2026-08-14T05:30:30,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,1,1.0000,5,5,True,False,997,12,0.001995,4098,1746,databricks-gpt-oss-120b,databricks,10.7,[],2026-08-14T05:30:41,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,2,1.0000,5,5,True,False,1282,12,0.002541,4098,2505,databricks-gpt-oss-120b,databricks,15.8,[],2026-08-14T05:30:57,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,3,0.0000,0,5,False,False,1172,12,0.000491,1050,419,databricks-gpt-oss-120b,databricks,4.4,"/w/candidate.c:33:5: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   33 |     free(result);
+      |     ^
+/w/candidate.c:33:5: note: include the header <stdlib.h> or expl",2026-08-14T05:31:01,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,4,1.0000,5,5,True,False,1184,12,0.002217,4098,2055,databricks-gpt-oss-120b,databricks,17.3,[],2026-08-14T05:31:19,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,5,1.0000,5,5,True,False,1225,12,0.003083,4098,3257,databricks-gpt-oss-120b,databricks,29.3,[],2026-08-14T05:31:48,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,6,1.0000,5,5,True,False,1174,12,0.004184,4098,4787,databricks-gpt-oss-120b,databricks,31.9,[],2026-08-14T05:32:20,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,7,0.0000,0,5,True,False,1097,12,0.000489,1050,416,databricks-gpt-oss-120b,databricks,6.4,[],2026-08-14T05:32:26,gpt-oss-120b,databricks,text
+prog23_longest_common_prefix,8,0.0000,0,5,True,False,716,12,0.000446,1050,357,databricks-gpt-oss-120b,databricks,6.1,[],2026-08-14T05:32:32,gpt-oss-120b,databricks,text
+prog24_query_string_parser,1,0.0000,0,5,True,False,2249,12,0.000703,1060,712,databricks-gpt-oss-120b,databricks,6.9,[],2026-08-14T05:32:39,gpt-oss-120b,databricks,text
+prog24_query_string_parser,2,0.8000,4,5,True,False,3983,12,0.003217,4063,3452,databricks-gpt-oss-120b,databricks,20.3,[],2026-08-14T05:33:00,gpt-oss-120b,databricks,text
+prog24_query_string_parser,3,0.8000,4,5,True,False,4062,12,0.003469,4063,3803,databricks-gpt-oss-120b,databricks,22.6,[],2026-08-14T05:33:22,gpt-oss-120b,databricks,text
+prog24_query_string_parser,4,0.8000,4,5,True,False,2653,12,0.003940,4063,4456,databricks-gpt-oss-120b,databricks,35.5,[],2026-08-14T05:33:58,gpt-oss-120b,databricks,text
+prog24_query_string_parser,5,0.8000,4,5,True,False,2562,12,0.002338,4063,2231,databricks-gpt-oss-120b,databricks,17.0,[],2026-08-14T05:34:15,gpt-oss-120b,databricks,text
+prog24_query_string_parser,6,0.0000,0,5,True,False,3431,12,0.000909,1060,997,databricks-gpt-oss-120b,databricks,8.8,[],2026-08-14T05:34:23,gpt-oss-120b,databricks,text
+prog24_query_string_parser,7,0.0000,0,5,True,False,1745,12,0.000648,1060,635,databricks-gpt-oss-120b,databricks,6.7,[],2026-08-14T05:34:30,gpt-oss-120b,databricks,text
+prog24_query_string_parser,8,0.2000,1,5,True,False,2608,12,0.001780,4063,1456,databricks-gpt-oss-120b,databricks,13.6,[],2026-08-14T05:34:44,gpt-oss-120b,databricks,text
+prog25_balanced_multitype,1,1.0000,5,5,True,False,1544,12,0.002465,4525,2292,databricks-gpt-oss-120b,databricks,21.4,[],2026-08-14T05:35:05,gpt-oss-120b,databricks,text
+prog25_balanced_multitype,2,0.0000,0,5,False,False,1459,12,0.002257,4525,2003,databricks-gpt-oss-120b,databricks,15.3,"/w/candidate.c:16:27: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |     char *stack = (char *)malloc(len + 1);
+      |                           ^
+/w/can",2026-08-14T05:35:21,gpt-oss-120b,databricks,text
+prog25_balanced_multitype,3,0.0000,0,5,True,False,517,12,0.000351,1028,231,databricks-gpt-oss-120b,databricks,4.7,[],2026-08-14T05:35:25,gpt-oss-120b,databricks,text
+prog25_balanced_multitype,4,0.0000,0,5,True,False,372,12,0.000331,1028,203,databricks-gpt-oss-120b,databricks,4.4,[],2026-08-14T05:35:30,gpt-oss-120b,databricks,text
+prog25_balanced_multitype,5,1.0000,5,5,True,False,1472,12,0.002319,4525,2090,databricks-gpt-oss-120b,databricks,17.7,[],2026-08-14T05:35:47,gpt-oss-120b,databricks,text
+prog25_balanced_multitype,6,0.8000,4,5,True,False,1718,12,0.003404,4525,3596,databricks-gpt-oss-120b,databricks,39.0,[],2026-08-14T05:36:26,gpt-oss-120b,databricks,text
+prog25_balanced_multitype,7,0.0000,0,5,True,False,309,12,0.000313,1028,178,databricks-gpt-oss-120b,databricks,4.8,[],2026-08-14T05:36:31,gpt-oss-120b,databricks,text
+prog25_balanced_multitype,8,0.0000,0,5,True,False,401,12,0.000334,1028,207,databricks-gpt-oss-120b,databricks,5.2,[],2026-08-14T05:36:36,gpt-oss-120b,databricks,text
+prog26_wildcard_match,1,0.0000,0,5,True,False,1941,12,0.000834,1026,902,databricks-gpt-oss-120b,databricks,8.8,[],2026-08-14T05:36:45,gpt-oss-120b,databricks,text
+prog26_wildcard_match,2,0.0000,0,5,True,False,2346,12,0.000843,1026,914,databricks-gpt-oss-120b,databricks,8.2,[],2026-08-14T05:36:53,gpt-oss-120b,databricks,text
+prog26_wildcard_match,3,0.0000,0,5,True,False,1734,12,0.000970,1026,1091,databricks-gpt-oss-120b,databricks,12.0,[],2026-08-14T05:37:05,gpt-oss-120b,databricks,text
+prog26_wildcard_match,4,1.0000,5,5,True,False,2024,12,0.002589,4435,2487,databricks-gpt-oss-120b,databricks,17.1,[],2026-08-14T05:37:22,gpt-oss-120b,databricks,text
+prog26_wildcard_match,5,0.6000,3,5,True,False,2712,12,0.000874,1026,958,databricks-gpt-oss-120b,databricks,10.0,[],2026-08-14T05:37:32,gpt-oss-120b,databricks,text
+prog26_wildcard_match,6,1.0000,5,5,True,False,1447,12,0.002524,4435,2397,databricks-gpt-oss-120b,databricks,19.5,[],2026-08-14T05:37:52,gpt-oss-120b,databricks,text
+prog26_wildcard_match,7,0.0000,0,5,True,False,2332,12,0.000676,1026,682,databricks-gpt-oss-120b,databricks,9.2,[],2026-08-14T05:38:01,gpt-oss-120b,databricks,text
+prog26_wildcard_match,8,0.0000,0,5,True,False,1135,12,0.000787,1026,837,databricks-gpt-oss-120b,databricks,9.6,[],2026-08-14T05:38:11,gpt-oss-120b,databricks,text
+prog27_soundex,1,0.0000,0,5,False,False,2469,12,0.001374,1036,1649,databricks-gpt-oss-120b,databricks,9.9,harness_error: IndexError: list index out of range,2026-08-14T05:38:21,gpt-oss-120b,databricks,text
+prog27_soundex,2,0.0000,0,5,False,False,2169,12,0.000726,1036,750,databricks-gpt-oss-120b,databricks,6.0,"/w/candidate.c:35:20: error: call to undeclared library function 'toupper' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   35 |     out[0] = (char)toupper((unsigned char)word[0]);
+      |                    ^
+/w/candidate.c:",2026-08-14T05:38:27,gpt-oss-120b,databricks,text
+prog27_soundex,3,0.0000,0,5,False,False,2121,12,0.000710,1036,727,databricks-gpt-oss-120b,databricks,6.0,"/w/candidate.c:32:14: error: call to undeclared library function 'toupper' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   32 |     out[0] = toupper((unsigned char)word[0]);
+      |              ^
+/w/candidate.c:32:14: note:",2026-08-14T05:38:33,gpt-oss-120b,databricks,text
+prog27_soundex,4,0.0000,0,5,False,False,2291,12,0.000717,1036,737,databricks-gpt-oss-120b,databricks,6.7,"/w/candidate.c:28:20: error: call to undeclared library function 'toupper' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |     out[0] = (char)toupper((unsigned char)word[0]);
+      |                    ^
+/w/candidate.c:",2026-08-14T05:38:39,gpt-oss-120b,databricks,text
+prog27_soundex,5,0.6000,3,5,True,False,2188,12,0.001628,5683,840,databricks-gpt-oss-120b,databricks,7.2,[],2026-08-14T05:38:47,gpt-oss-120b,databricks,text
+prog27_soundex,6,0.0000,0,5,False,False,2220,12,0.000715,1036,734,databricks-gpt-oss-120b,databricks,6.7,"/w/candidate.c:36:14: error: call to undeclared library function 'toupper' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |     out[0] = toupper((unsigned char)word[0]);
+      |              ^
+/w/candidate.c:36:14: note:",2026-08-14T05:38:53,gpt-oss-120b,databricks,text
+prog27_soundex,7,0.0000,0,5,False,False,839,12,0.001091,1036,1256,databricks-gpt-oss-120b,databricks,12.4,"/w/candidate.c:3:9: error: call to undeclared function 'puts'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |         puts(""Usage: prog27_soundex <word>"");
+      |         ^
+/w/candidate.c:11:14: error: call to undeclared library function 't",2026-08-14T05:39:06,gpt-oss-120b,databricks,text
+prog27_soundex,8,0.6000,3,5,True,False,2249,12,0.001095,1036,1262,databricks-gpt-oss-120b,databricks,8.8,[],2026-08-14T05:39:14,gpt-oss-120b,databricks,text
+prog28_levenshtein,1,0.8000,4,5,True,False,1609,12,0.000858,1028,935,databricks-gpt-oss-120b,databricks,8.2,[],2026-08-14T05:39:23,gpt-oss-120b,databricks,text
+prog28_levenshtein,2,1.0000,5,5,True,False,1251,12,0.001676,4069,1310,databricks-gpt-oss-120b,databricks,9.6,[],2026-08-14T05:39:32,gpt-oss-120b,databricks,text
+prog28_levenshtein,3,0.8000,4,5,True,False,1652,12,0.000937,1028,1044,databricks-gpt-oss-120b,databricks,8.3,[],2026-08-14T05:39:41,gpt-oss-120b,databricks,text
+prog28_levenshtein,4,1.0000,5,5,True,False,942,12,0.001667,4069,1298,databricks-gpt-oss-120b,databricks,11.5,[],2026-08-14T05:39:52,gpt-oss-120b,databricks,text
+prog28_levenshtein,5,1.0000,5,5,True,False,1252,12,0.001691,4069,1331,databricks-gpt-oss-120b,databricks,11.1,[],2026-08-14T05:40:03,gpt-oss-120b,databricks,text
+prog28_levenshtein,6,1.0000,5,5,True,False,1125,12,0.001806,4069,1491,databricks-gpt-oss-120b,databricks,11.5,[],2026-08-14T05:40:15,gpt-oss-120b,databricks,text
+prog28_levenshtein,7,0.8000,4,5,True,False,1956,12,0.000713,1028,733,databricks-gpt-oss-120b,databricks,7.6,[],2026-08-14T05:40:22,gpt-oss-120b,databricks,text
+prog28_levenshtein,8,1.0000,5,5,True,False,932,12,0.001987,4069,1743,databricks-gpt-oss-120b,databricks,10.4,[],2026-08-14T05:40:33,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,1,0.4000,2,5,True,False,3035,12,0.001062,1052,1212,databricks-gpt-oss-120b,databricks,9.0,[],2026-08-14T05:40:42,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,2,0.0000,0,5,True,False,2433,12,0.000787,1052,830,databricks-gpt-oss-120b,databricks,6.3,[],2026-08-14T05:40:48,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,3,0.6000,3,5,True,False,2259,12,0.000696,1052,704,databricks-gpt-oss-120b,databricks,5.8,[],2026-08-14T05:40:54,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,4,0.6000,3,5,True,False,2259,12,0.000698,1052,707,databricks-gpt-oss-120b,databricks,5.5,[],2026-08-14T05:40:59,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,5,0.0000,0,5,True,False,2327,12,0.000723,1052,741,databricks-gpt-oss-120b,databricks,6.3,[],2026-08-14T05:41:06,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,6,1.0000,5,5,True,False,6077,12,0.003783,6375,3660,databricks-gpt-oss-120b,databricks,18.3,[],2026-08-14T05:41:24,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,7,1.0000,5,5,True,False,2567,12,0.002968,6375,2528,databricks-gpt-oss-120b,databricks,15.2,[],2026-08-14T05:41:39,gpt-oss-120b,databricks,text
+prog29_roman_numeral_parser,8,1.0000,5,5,True,False,2155,12,0.002686,6375,2137,databricks-gpt-oss-120b,databricks,13.0,[],2026-08-14T05:41:52,gpt-oss-120b,databricks,text
+prog30_escape_unescape,1,0.0000,0,5,True,False,5657,12,0.001409,1024,1701,databricks-gpt-oss-120b,databricks,10.0,[],2026-08-14T05:42:02,gpt-oss-120b,databricks,text
+prog30_escape_unescape,2,0.0000,0,5,True,False,4316,12,0.001174,1024,1375,databricks-gpt-oss-120b,databricks,8.4,[],2026-08-14T05:42:11,gpt-oss-120b,databricks,text
+prog30_escape_unescape,3,0.0000,0,5,False,False,1660,12,0.000588,1024,561,databricks-gpt-oss-120b,databricks,4.9,"/w/candidate.c:47:48: error: incompatible pointer to integer conversion passing 'size_t *' (aka 'unsigned long *') to parameter of type 'size_t' (aka 'unsigned long'); remove & [-Wint-conversion]
+   47 |     ssize_t nread = read(STDIN_FILENO, &input, &len);
+      |                                   ",2026-08-14T05:42:15,gpt-oss-120b,databricks,text
+prog30_escape_unescape,4,0.0000,0,5,False,False,1660,12,0.000588,1024,561,databricks-gpt-oss-120b,databricks,4.8,"/w/candidate.c:47:48: error: incompatible pointer to integer conversion passing 'size_t *' (aka 'unsigned long *') to parameter of type 'size_t' (aka 'unsigned long'); remove & [-Wint-conversion]
+   47 |     ssize_t nread = read(STDIN_FILENO, &input, &len);
+      |                                   ",2026-08-14T05:42:20,gpt-oss-120b,databricks,text
+prog30_escape_unescape,5,0.0000,0,5,True,False,2481,12,0.000793,1024,845,databricks-gpt-oss-120b,databricks,6.2,[],2026-08-14T05:42:26,gpt-oss-120b,databricks,text
+prog30_escape_unescape,6,0.0000,0,5,True,False,2922,12,0.000974,1024,1097,databricks-gpt-oss-120b,databricks,7.2,[],2026-08-14T05:42:34,gpt-oss-120b,databricks,text
+prog30_escape_unescape,7,0.0000,0,5,False,False,1660,12,0.000588,1024,561,databricks-gpt-oss-120b,databricks,4.9,"/w/candidate.c:47:48: error: incompatible pointer to integer conversion passing 'size_t *' (aka 'unsigned long *') to parameter of type 'size_t' (aka 'unsigned long'); remove & [-Wint-conversion]
+   47 |     ssize_t nread = read(STDIN_FILENO, &input, &len);
+      |                                   ",2026-08-14T05:42:39,gpt-oss-120b,databricks,text
+prog30_escape_unescape,8,0.0000,0,5,True,False,2922,12,0.000974,1024,1097,databricks-gpt-oss-120b,databricks,7.1,[],2026-08-14T05:42:46,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,1,1.0000,5,5,True,False,1255,12,0.006070,3964,7440,databricks-gpt-oss-120b,databricks,32.3,[],2026-08-14T05:43:18,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,2,0.8000,4,5,True,False,1429,12,0.005910,3964,7218,databricks-gpt-oss-120b,databricks,35.5,[],2026-08-14T05:43:53,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,3,1.0000,5,5,True,False,1981,12,0.004164,3964,4792,databricks-gpt-oss-120b,databricks,23.1,[],2026-08-14T05:44:16,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,4,1.0000,5,5,True,False,1567,12,0.004897,3964,5810,databricks-gpt-oss-120b,databricks,28.3,[],2026-08-14T05:44:45,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,5,1.0000,5,5,True,False,1696,12,0.004346,3964,5045,databricks-gpt-oss-120b,databricks,23.0,[],2026-08-14T05:45:08,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,6,1.0000,5,5,True,False,1699,12,0.004623,3964,5430,databricks-gpt-oss-120b,databricks,28.6,[],2026-08-14T05:45:36,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,7,1.0000,5,5,True,False,1321,12,0.003005,3964,3183,databricks-gpt-oss-120b,databricks,19.5,[],2026-08-14T05:45:56,gpt-oss-120b,databricks,text
+prog31_gcd_lcm,8,1.0000,5,5,True,False,1752,12,0.005635,3964,6835,databricks-gpt-oss-120b,databricks,31.5,[],2026-08-14T05:46:27,gpt-oss-120b,databricks,text
+prog32_prime_factorization,1,1.0000,5,5,True,False,921,12,0.003110,3504,3443,databricks-gpt-oss-120b,databricks,21.5,[],2026-08-14T05:46:49,gpt-oss-120b,databricks,text
+prog32_prime_factorization,2,1.0000,5,5,True,False,974,12,0.002781,3504,2987,databricks-gpt-oss-120b,databricks,17.2,[],2026-08-14T05:47:06,gpt-oss-120b,databricks,text
+prog32_prime_factorization,3,1.0000,5,5,True,False,1134,12,0.003393,3504,3836,databricks-gpt-oss-120b,databricks,21.6,[],2026-08-14T05:47:28,gpt-oss-120b,databricks,text
+prog32_prime_factorization,4,1.0000,5,5,True,False,1517,12,0.003010,3504,3304,databricks-gpt-oss-120b,databricks,18.1,[],2026-08-14T05:47:46,gpt-oss-120b,databricks,text
+prog32_prime_factorization,5,1.0000,5,5,True,False,1410,12,0.003038,3504,3344,databricks-gpt-oss-120b,databricks,16.7,[],2026-08-14T05:48:03,gpt-oss-120b,databricks,text
+prog32_prime_factorization,6,0.0000,0,5,True,False,1584,12,0.000587,1048,553,databricks-gpt-oss-120b,databricks,7.8,[],2026-08-14T05:48:10,gpt-oss-120b,databricks,text
+prog32_prime_factorization,7,1.0000,5,5,True,False,1170,12,0.003239,3504,3623,databricks-gpt-oss-120b,databricks,21.8,[],2026-08-14T05:48:32,gpt-oss-120b,databricks,text
+prog32_prime_factorization,8,1.0000,5,5,True,False,1277,12,0.002833,3504,3059,databricks-gpt-oss-120b,databricks,22.0,[],2026-08-14T05:48:54,gpt-oss-120b,databricks,text
+prog33_mod_pow,1,1.0000,5,5,True,False,1553,12,0.002859,3578,3076,databricks-gpt-oss-120b,databricks,16.6,[],2026-08-14T05:49:11,gpt-oss-120b,databricks,text
+prog33_mod_pow,2,1.0000,5,5,True,False,1357,12,0.002829,3578,3035,databricks-gpt-oss-120b,databricks,19.2,[],2026-08-14T05:49:30,gpt-oss-120b,databricks,text
+prog33_mod_pow,3,1.0000,5,5,True,False,1379,12,0.003021,3578,3301,databricks-gpt-oss-120b,databricks,16.8,[],2026-08-14T05:49:47,gpt-oss-120b,databricks,text
+prog33_mod_pow,4,1.0000,5,5,True,False,1879,12,0.003840,3578,4439,databricks-gpt-oss-120b,databricks,25.4,[],2026-08-14T05:50:12,gpt-oss-120b,databricks,text
+prog33_mod_pow,5,1.0000,5,5,True,False,1546,12,0.004223,3578,4971,databricks-gpt-oss-120b,databricks,28.5,[],2026-08-14T05:50:41,gpt-oss-120b,databricks,text
+prog33_mod_pow,6,1.0000,5,5,True,False,1237,12,0.003147,3578,3477,databricks-gpt-oss-120b,databricks,18.7,[],2026-08-14T05:50:59,gpt-oss-120b,databricks,text
+prog33_mod_pow,7,1.0000,5,5,True,False,1365,12,0.003130,3578,3453,databricks-gpt-oss-120b,databricks,18.3,[],2026-08-14T05:51:18,gpt-oss-120b,databricks,text
+prog33_mod_pow,8,1.0000,5,5,True,False,1501,12,0.003232,3578,3594,databricks-gpt-oss-120b,databricks,17.6,[],2026-08-14T05:51:35,gpt-oss-120b,databricks,text
+prog34_fibonacci_memo,1,1.0000,5,5,True,False,1310,12,0.002319,2474,2602,databricks-gpt-oss-120b,databricks,13.9,[],2026-08-14T05:51:49,gpt-oss-120b,databricks,text
+prog34_fibonacci_memo,2,1.0000,5,5,True,False,1548,12,0.002126,2474,2335,databricks-gpt-oss-120b,databricks,13.8,[],2026-08-14T05:52:03,gpt-oss-120b,databricks,text
+prog34_fibonacci_memo,3,1.0000,5,5,True,False,1186,12,0.005789,4602,6890,databricks-gpt-oss-120b,databricks,31.6,[],2026-08-14T05:52:34,gpt-oss-120b,databricks,text
+prog34_fibonacci_memo,4,1.0000,5,5,True,False,1029,12,0.001838,2474,1935,databricks-gpt-oss-120b,databricks,12.2,[],2026-08-14T05:52:47,gpt-oss-120b,databricks,text
+prog34_fibonacci_memo,5,0.0000,0,5,True,False,2007,12,0.000788,1036,835,databricks-gpt-oss-120b,databricks,6.7,[],2026-08-14T05:52:53,gpt-oss-120b,databricks,text
+prog34_fibonacci_memo,6,0.0000,0,5,True,False,1891,12,0.000838,1036,905,databricks-gpt-oss-120b,databricks,7.5,[],2026-08-14T05:53:01,gpt-oss-120b,databricks,text
+prog34_fibonacci_memo,7,1.0000,5,5,True,False,1781,12,0.003606,2474,4390,databricks-gpt-oss-120b,databricks,20.3,[],2026-08-14T05:53:21,gpt-oss-120b,databricks,text
+prog34_fibonacci_memo,8,1.0000,5,5,True,False,1040,12,0.002517,2474,2878,databricks-gpt-oss-120b,databricks,16.8,[],2026-08-14T05:53:38,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,1,0.0000,0,5,True,False,1586,12,0.000812,1024,872,databricks-gpt-oss-120b,databricks,26.5,"[""Command '['/tmp/cand', '999999']' timed out after 10 seconds"", ""Command '['/tmp/cand', '-7']' timed out after 10 seconds""]",2026-08-14T05:54:04,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,2,1.0000,5,5,True,False,1071,12,0.005901,3628,7289,databricks-gpt-oss-120b,databricks,40.5,[],2026-08-14T05:54:45,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,3,0.0000,0,5,True,False,1793,12,0.000847,1024,921,databricks-gpt-oss-120b,databricks,27.8,"[""Command '['/tmp/cand', '999999']' timed out after 10 seconds"", ""Command '['/tmp/cand', '-7']' timed out after 10 seconds""]",2026-08-14T05:55:13,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,4,0.0000,0,5,True,False,1170,12,0.000742,1024,774,databricks-gpt-oss-120b,databricks,11.5,[],2026-08-14T05:55:24,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,5,0.0000,0,5,True,False,2199,12,0.000847,1024,921,databricks-gpt-oss-120b,databricks,18.3,"[""Command '['/tmp/cand', '999999']' timed out after 10 seconds""]",2026-08-14T05:55:42,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,6,1.0000,5,5,True,False,877,12,0.003347,3628,3742,databricks-gpt-oss-120b,databricks,26.2,[],2026-08-14T05:56:09,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,7,1.0000,5,5,True,False,1172,12,0.002008,3628,1882,databricks-gpt-oss-120b,databricks,19.1,[],2026-08-14T05:56:28,gpt-oss-120b,databricks,text
+prog35_perfect_numbers,8,0.8000,4,5,True,False,1201,12,0.002365,3628,2378,databricks-gpt-oss-120b,databricks,27.4,[],2026-08-14T05:56:55,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,1,0.0000,0,5,True,False,802,12,0.000442,1048,352,databricks-gpt-oss-120b,databricks,6.8,[],2026-08-14T05:57:02,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,2,0.6000,3,5,True,False,1424,12,0.000527,1048,470,databricks-gpt-oss-120b,databricks,7.6,[],2026-08-14T05:57:10,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,3,0.6000,3,5,True,False,629,12,0.000416,1048,316,databricks-gpt-oss-120b,databricks,6.0,[],2026-08-14T05:57:16,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,4,0.6000,3,5,True,False,1657,12,0.000583,1048,548,databricks-gpt-oss-120b,databricks,5.8,[],2026-08-14T05:57:21,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,5,0.6000,3,5,True,False,549,12,0.000377,1048,262,databricks-gpt-oss-120b,databricks,4.8,[],2026-08-14T05:57:26,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,6,0.6000,3,5,True,False,549,12,0.000377,1048,262,databricks-gpt-oss-120b,databricks,4.6,[],2026-08-14T05:57:31,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,7,0.6000,3,5,True,False,1776,12,0.000629,1048,612,databricks-gpt-oss-120b,databricks,7.2,[],2026-08-14T05:57:38,gpt-oss-120b,databricks,text
+prog36_pascal_triangle,8,0.6000,3,5,True,False,1553,12,0.000582,1048,546,databricks-gpt-oss-120b,databricks,6.1,[],2026-08-14T05:57:44,gpt-oss-120b,databricks,text
+prog37_binomial_coefficient,1,1.0000,5,5,True,False,2187,12,0.003538,2666,4247,databricks-gpt-oss-120b,databricks,29.5,[],2026-08-14T05:58:14,gpt-oss-120b,databricks,text
+prog37_binomial_coefficient,2,1.0000,5,5,True,False,1371,12,0.006592,5199,7856,databricks-gpt-oss-120b,databricks,51.9,[],2026-08-14T05:59:06,gpt-oss-120b,databricks,text
+prog37_binomial_coefficient,3,1.0000,5,5,True,False,1189,12,0.003559,5199,3643,databricks-gpt-oss-120b,databricks,27.1,[],2026-08-14T05:59:33,gpt-oss-120b,databricks,text
+prog37_binomial_coefficient,4,1.0000,5,5,True,False,2121,12,0.003317,2666,3941,databricks-gpt-oss-120b,databricks,21.2,[],2026-08-14T05:59:54,gpt-oss-120b,databricks,text
+prog37_binomial_coefficient,5,0.0000,0,5,True,False,1470,12,0.000924,1038,1024,databricks-gpt-oss-120b,databricks,8.5,[],2026-08-14T06:00:02,gpt-oss-120b,databricks,text
+prog37_binomial_coefficient,6,0.8000,4,5,True,False,1777,12,0.004219,2666,5194,databricks-gpt-oss-120b,databricks,29.8,[],2026-08-14T06:00:32,gpt-oss-120b,databricks,text
+prog37_binomial_coefficient,7,1.0000,5,5,True,False,1697,12,0.004337,2666,5358,databricks-gpt-oss-120b,databricks,32.3,[],2026-08-14T06:01:04,gpt-oss-120b,databricks,text
+prog37_binomial_coefficient,8,1.0000,5,5,True,False,1952,12,0.002295,2666,2521,databricks-gpt-oss-120b,databricks,17.4,[],2026-08-14T06:01:22,gpt-oss-120b,databricks,text
+prog38_continued_fraction,1,0.0000,0,5,True,False,1733,12,0.000605,1050,578,databricks-gpt-oss-120b,databricks,5.6,[],2026-08-14T06:01:27,gpt-oss-120b,databricks,text
+prog38_continued_fraction,2,0.0000,0,5,True,False,1862,12,0.000612,1050,588,databricks-gpt-oss-120b,databricks,6.2,[],2026-08-14T06:01:34,gpt-oss-120b,databricks,text
+prog38_continued_fraction,3,0.0000,0,5,True,False,2363,12,0.000687,1050,691,databricks-gpt-oss-120b,databricks,8.3,[],2026-08-14T06:01:42,gpt-oss-120b,databricks,text
+prog38_continued_fraction,4,0.0000,0,5,True,False,2369,12,0.000705,1050,716,databricks-gpt-oss-120b,databricks,6.4,[],2026-08-14T06:01:48,gpt-oss-120b,databricks,text
+prog38_continued_fraction,5,0.0000,0,5,True,False,1774,12,0.000564,1050,521,databricks-gpt-oss-120b,databricks,6.0,[],2026-08-14T06:01:54,gpt-oss-120b,databricks,text
+prog38_continued_fraction,6,0.0000,0,5,True,False,1699,12,0.000627,1050,608,databricks-gpt-oss-120b,databricks,6.1,[],2026-08-14T06:02:01,gpt-oss-120b,databricks,text
+prog38_continued_fraction,7,0.0000,0,5,True,False,2726,12,0.000766,1050,802,databricks-gpt-oss-120b,databricks,7.6,"[""'utf-8' codec can't decode byte 0xfc in position 4377: invalid start byte"", ""'utf-8' codec can't decode byte 0xfc in position 4377: invalid start byte"", ""'utf-8' codec can't decode byte 0xfc in position 4377: invalid start byte""]",2026-08-14T06:02:08,gpt-oss-120b,databricks,text
+prog38_continued_fraction,8,0.8000,4,5,True,False,1543,12,0.004239,4617,4733,databricks-gpt-oss-120b,databricks,31.9,[],2026-08-14T06:02:40,gpt-oss-120b,databricks,text
+prog39_horner,1,0.0000,0,5,False,False,702,12,0.006773,4439,8298,databricks-gpt-oss-120b,databricks,51.3,"/w/candidate.c:30:67: error: expected '}'
+   30 |     /* ----- the remaining arguments are the coefficients ----- */
+      |                                                                   ^
+/w/candidate.c:7:1: note: to match this '{'
+    7 | {
+      | ^
+1 error generated.
+",2026-08-14T06:03:31,gpt-oss-120b,databricks,text
+prog39_horner,2,0.0000,0,5,True,False,729,12,0.000721,1022,746,databricks-gpt-oss-120b,databricks,7.9,[],2026-08-14T06:03:39,gpt-oss-120b,databricks,text
+prog39_horner,3,1.0000,5,5,True,False,1311,12,0.002676,4439,2607,databricks-gpt-oss-120b,databricks,19.6,[],2026-08-14T06:03:59,gpt-oss-120b,databricks,text
+prog39_horner,4,0.4000,2,5,True,False,1264,12,0.003672,4439,3991,databricks-gpt-oss-120b,databricks,22.9,[],2026-08-14T06:04:22,gpt-oss-120b,databricks,text
+prog39_horner,5,1.0000,5,5,True,False,2121,12,0.004433,4439,5047,databricks-gpt-oss-120b,databricks,27.7,[],2026-08-14T06:04:49,gpt-oss-120b,databricks,text
+prog39_horner,6,1.0000,5,5,True,False,1362,12,0.006247,4439,7567,databricks-gpt-oss-120b,databricks,33.8,[],2026-08-14T06:05:23,gpt-oss-120b,databricks,text
+prog39_horner,7,0.0000,0,5,False,False,2469,12,0.000952,1022,1067,databricks-gpt-oss-120b,databricks,6.8,"/w/candidate.c:22:22: error: call to undeclared library function 'isspace' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |         while (*p && isspace((unsigned char)*p)) p++;
+      |                      ^
+/w/candidat",2026-08-14T06:05:30,gpt-oss-120b,databricks,text
+prog39_horner,8,0.0000,0,5,True,False,1350,12,0.000740,1022,772,databricks-gpt-oss-120b,databricks,5.9,[],2026-08-14T06:05:36,gpt-oss-120b,databricks,text
+prog40_bisection_root,1,0.0000,0,5,True,False,1739,12,0.000793,1025,845,databricks-gpt-oss-120b,databricks,6.9,[],2026-08-14T06:05:43,gpt-oss-120b,databricks,text
+prog40_bisection_root,2,0.0000,0,5,True,False,3128,12,0.001043,1025,1192,databricks-gpt-oss-120b,databricks,12.2,[],2026-08-14T06:05:55,gpt-oss-120b,databricks,text
+prog40_bisection_root,3,0.0000,0,5,True,False,1852,12,0.000951,1025,1065,databricks-gpt-oss-120b,databricks,7.4,[],2026-08-14T06:06:03,gpt-oss-120b,databricks,text
+prog40_bisection_root,4,0.0000,0,5,True,False,871,12,0.000678,1025,686,databricks-gpt-oss-120b,databricks,7.0,[],2026-08-14T06:06:10,gpt-oss-120b,databricks,text
+prog40_bisection_root,5,0.0000,0,5,True,False,1593,12,0.000589,1025,562,databricks-gpt-oss-120b,databricks,6.4,[],2026-08-14T06:06:16,gpt-oss-120b,databricks,text
+prog40_bisection_root,6,0.0000,0,5,False,False,1797,12,0.000637,1025,628,databricks-gpt-oss-120b,databricks,8.1,"/w/candidate.c:31:10: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   31 |     auto f = [](double x) { return x * x * x - x - 2.0; };
+      |     ~~~~ ^
+      |     int
+/w/candidate.c:31:14: error: expected expression
+   31 |     au",2026-08-14T06:06:24,gpt-oss-120b,databricks,text
+prog40_bisection_root,7,0.0000,0,5,True,False,1615,12,0.000615,1025,598,databricks-gpt-oss-120b,databricks,6.8,[],2026-08-14T06:06:31,gpt-oss-120b,databricks,text
+prog40_bisection_root,8,0.0000,0,5,True,False,991,12,0.000701,1025,718,databricks-gpt-oss-120b,databricks,6.9,[],2026-08-14T06:06:38,gpt-oss-120b,databricks,text
+prog41_series_sum,1,0.0000,0,5,True,False,898,12,0.000704,1022,722,databricks-gpt-oss-120b,databricks,7.8,[],2026-08-14T06:06:46,gpt-oss-120b,databricks,text
+prog41_series_sum,2,0.2000,1,5,True,False,1273,12,0.003170,4354,3315,databricks-gpt-oss-120b,databricks,30.3,[],2026-08-14T06:07:16,gpt-oss-120b,databricks,text
+prog41_series_sum,3,0.0000,0,5,False,False,735,12,0.006753,4354,8291,databricks-gpt-oss-120b,databricks,74.5,"/w/candidate.c:34:14: warning: missing terminating '""' character [-Winvalid-pp-token]
+   34 |         puts(""OUT
+      |              ^
+/w/candidate.c:34:14: error: expected expression
+/w/candidate.c:34:18: error: expected '}'
+   34 |         puts(""OUT
+      |                  ^
+/w/candidate.c:33:21:",2026-08-14T06:08:30,gpt-oss-120b,databricks,text
+prog41_series_sum,4,0.6000,3,5,True,False,1241,12,0.004059,4354,4549,databricks-gpt-oss-120b,databricks,46.1,[],2026-08-14T06:09:16,gpt-oss-120b,databricks,text
+prog41_series_sum,5,1.0000,5,5,True,False,1431,12,0.009709,7882,11514,databricks-gpt-oss-120b,databricks,92.7,[],2026-08-14T06:10:49,gpt-oss-120b,databricks,text
+prog41_series_sum,6,0.0000,0,5,True,False,597,12,0.000387,1022,282,databricks-gpt-oss-120b,databricks,4.8,[],2026-08-14T06:10:54,gpt-oss-120b,databricks,text
+prog41_series_sum,7,0.4000,2,5,True,False,1258,12,0.003589,4354,3896,databricks-gpt-oss-120b,databricks,28.4,[],2026-08-14T06:11:22,gpt-oss-120b,databricks,text
+prog41_series_sum,8,0.0000,0,5,True,False,2003,12,0.003163,4354,3304,databricks-gpt-oss-120b,databricks,19.5,[],2026-08-14T06:11:42,gpt-oss-120b,databricks,text
+prog42_collatz,1,0.0000,0,5,True,False,1067,12,0.000475,1021,405,databricks-gpt-oss-120b,databricks,5.8,[],2026-08-14T06:11:48,gpt-oss-120b,databricks,text
+prog42_collatz,2,0.0000,0,5,False,False,2253,12,0.000711,1021,732,databricks-gpt-oss-120b,databricks,9.8,"/w/candidate.c:56:20: error: expected ')'
+   56 |         printf(""%"" PRIu64 ""\n"", collatz_len(n));
+      |                    ^
+/w/candidate.c:56:15: note: to match this '('
+   56 |         printf(""%"" PRIu64 ""\n"", collatz_len(n));
+      |               ^
+/w/candidate.c:68:20: error: expected ')'
+   ",2026-08-14T06:11:57,gpt-oss-120b,databricks,text
+prog42_collatz,3,0.0000,0,5,False,False,1508,12,0.002268,3115,2371,databricks-gpt-oss-120b,databricks,19.5,"/w/candidate.c:61:26: error: use of undeclared identifier 'LONG_MAX'
+   61 |             if (value > (LONG_MAX - 1) / 3) {
+      |                          ^
+1 error generated.
+",2026-08-14T06:12:17,gpt-oss-120b,databricks,text
+prog42_collatz,4,0.0000,0,5,True,False,1635,12,0.000568,1021,534,databricks-gpt-oss-120b,databricks,7.7,[],2026-08-14T06:12:25,gpt-oss-120b,databricks,text
+prog42_collatz,5,1.0000,5,5,True,False,1425,12,0.003356,3115,3883,databricks-gpt-oss-120b,databricks,24.3,[],2026-08-14T06:12:49,gpt-oss-120b,databricks,text
+prog42_collatz,6,0.0000,0,5,True,False,1794,12,0.000787,1021,838,databricks-gpt-oss-120b,databricks,17.7,"[""Command '['/tmp/cand', '0']' timed out after 10 seconds""]",2026-08-14T06:13:07,gpt-oss-120b,databricks,text
+prog42_collatz,7,0.0000,0,5,True,False,2199,12,0.000838,1021,909,databricks-gpt-oss-120b,databricks,7.8,[],2026-08-14T06:13:14,gpt-oss-120b,databricks,text
+prog42_collatz,8,0.0000,0,5,True,False,2074,12,0.001036,1021,1184,databricks-gpt-oss-120b,databricks,9.3,[],2026-08-14T06:13:24,gpt-oss-120b,databricks,text
+prog43_catalan,1,0.4000,2,5,True,False,1179,12,0.000817,1023,879,databricks-gpt-oss-120b,databricks,8.6,[],2026-08-14T06:13:32,gpt-oss-120b,databricks,text
+prog43_catalan,2,0.8000,4,5,True,False,506,12,0.000369,1023,257,databricks-gpt-oss-120b,databricks,14.8,"[""Command '['/tmp/cand', '-2']' timed out after 10 seconds""]",2026-08-14T06:13:47,gpt-oss-120b,databricks,text
+prog43_catalan,3,0.6000,3,5,True,False,1252,12,0.000515,1023,460,databricks-gpt-oss-120b,databricks,6.3,[],2026-08-14T06:13:53,gpt-oss-120b,databricks,text
+prog43_catalan,4,0.6000,3,5,True,False,572,12,0.000390,1023,286,databricks-gpt-oss-120b,databricks,14.9,"[""Command '['/tmp/cand', '30']' timed out after 10 seconds""]",2026-08-14T06:14:08,gpt-oss-120b,databricks,text
+prog43_catalan,5,0.8000,4,5,True,False,1066,12,0.003636,3360,4210,databricks-gpt-oss-120b,databricks,35.5,[],2026-08-14T06:14:44,gpt-oss-120b,databricks,text
+prog43_catalan,6,0.8000,4,5,True,False,1421,12,0.000774,1023,819,databricks-gpt-oss-120b,databricks,10.4,[],2026-08-14T06:14:54,gpt-oss-120b,databricks,text
+prog43_catalan,7,0.8000,4,5,True,False,1484,12,0.000791,1023,843,databricks-gpt-oss-120b,databricks,22.1,"[""Command '['/tmp/cand', '-2']' timed out after 10 seconds""]",2026-08-14T06:15:16,gpt-oss-120b,databricks,text
+prog43_catalan,8,0.8000,4,5,True,False,2220,12,0.000896,1023,989,databricks-gpt-oss-120b,databricks,14.7,[],2026-08-14T06:15:31,gpt-oss-120b,databricks,text
+prog44_miller_rabin,1,1.0000,5,5,True,False,2533,12,0.003322,6184,3068,databricks-gpt-oss-120b,databricks,29.3,[],2026-08-14T06:16:00,gpt-oss-120b,databricks,text
+prog44_miller_rabin,2,1.0000,5,5,True,False,1948,12,0.003694,6184,3584,databricks-gpt-oss-120b,databricks,48.1,[],2026-08-14T06:16:48,gpt-oss-120b,databricks,text
+prog44_miller_rabin,3,1.0000,5,5,True,False,2532,12,0.003781,6184,3706,databricks-gpt-oss-120b,databricks,34.9,[],2026-08-14T06:17:23,gpt-oss-120b,databricks,text
+prog44_miller_rabin,4,1.0000,5,5,True,False,1914,12,0.004668,6184,4938,databricks-gpt-oss-120b,databricks,36.9,[],2026-08-14T06:18:00,gpt-oss-120b,databricks,text
+prog44_miller_rabin,5,1.0000,5,5,True,False,2455,12,0.003668,6184,3549,databricks-gpt-oss-120b,databricks,27.3,[],2026-08-14T06:18:28,gpt-oss-120b,databricks,text
+prog44_miller_rabin,6,1.0000,5,5,True,False,2809,12,0.004287,6184,4408,databricks-gpt-oss-120b,databricks,42.7,[],2026-08-14T06:19:10,gpt-oss-120b,databricks,text
+prog44_miller_rabin,7,1.0000,5,5,True,False,2308,12,0.003931,6184,3914,databricks-gpt-oss-120b,databricks,40.5,[],2026-08-14T06:19:51,gpt-oss-120b,databricks,text
+prog44_miller_rabin,8,1.0000,5,5,True,False,3625,12,0.003750,6184,3663,databricks-gpt-oss-120b,databricks,35.1,[],2026-08-14T06:20:26,gpt-oss-120b,databricks,text
+prog45_josephus,1,0.8000,4,5,True,False,966,12,0.002587,3569,2701,databricks-gpt-oss-120b,databricks,25.9,[],2026-08-14T06:20:52,gpt-oss-120b,databricks,text
+prog45_josephus,2,0.8000,4,5,True,False,973,12,0.002751,3569,2928,databricks-gpt-oss-120b,databricks,31.0,[],2026-08-14T06:21:23,gpt-oss-120b,databricks,text
+prog45_josephus,3,0.8000,4,5,True,False,945,12,0.002624,3569,2752,databricks-gpt-oss-120b,databricks,25.3,[],2026-08-14T06:21:48,gpt-oss-120b,databricks,text
+prog45_josephus,4,0.8000,4,5,True,False,963,12,0.002385,3569,2420,databricks-gpt-oss-120b,databricks,25.5,[],2026-08-14T06:22:13,gpt-oss-120b,databricks,text
+prog45_josephus,5,0.0000,0,5,True,False,1050,12,0.000584,1025,555,databricks-gpt-oss-120b,databricks,8.2,[],2026-08-14T06:22:22,gpt-oss-120b,databricks,text
+prog45_josephus,6,0.8000,4,5,True,False,1195,12,0.002872,3569,3097,databricks-gpt-oss-120b,databricks,38.7,[],2026-08-14T06:23:00,gpt-oss-120b,databricks,text
+prog45_josephus,7,0.0000,0,5,True,False,1048,12,0.000609,1025,590,databricks-gpt-oss-120b,databricks,7.0,[],2026-08-14T06:23:07,gpt-oss-120b,databricks,text
+prog45_josephus,8,1.0000,5,5,True,False,1087,12,0.003480,3569,3941,databricks-gpt-oss-120b,databricks,33.3,[],2026-08-14T06:23:41,gpt-oss-120b,databricks,text
+prog46_postfix_stack,1,1.0000,5,5,True,False,2851,12,0.004943,6312,5288,databricks-gpt-oss-120b,databricks,50.0,[],2026-08-14T06:24:31,gpt-oss-120b,databricks,text
+prog46_postfix_stack,2,1.0000,5,5,True,False,2476,12,0.003260,6312,2950,databricks-gpt-oss-120b,databricks,24.9,[],2026-08-14T06:24:56,gpt-oss-120b,databricks,text
+prog46_postfix_stack,3,1.0000,5,5,True,False,1871,12,0.003568,6312,3378,databricks-gpt-oss-120b,databricks,33.8,[],2026-08-14T06:25:29,gpt-oss-120b,databricks,text
+prog46_postfix_stack,4,1.0000,5,5,True,False,1788,12,0.002773,6312,2274,databricks-gpt-oss-120b,databricks,21.1,[],2026-08-14T06:25:50,gpt-oss-120b,databricks,text
+prog46_postfix_stack,5,1.0000,5,5,True,False,2131,12,0.005379,6312,5893,databricks-gpt-oss-120b,databricks,44.2,[],2026-08-14T06:26:35,gpt-oss-120b,databricks,text
+prog46_postfix_stack,6,1.0000,5,5,True,False,1958,12,0.004619,6312,4838,databricks-gpt-oss-120b,databricks,41.3,[],2026-08-14T06:27:16,gpt-oss-120b,databricks,text
+prog46_postfix_stack,7,1.0000,5,5,True,False,2124,12,0.002274,6312,1581,databricks-gpt-oss-120b,databricks,16.9,[],2026-08-14T06:27:33,gpt-oss-120b,databricks,text
+prog46_postfix_stack,8,1.0000,5,5,True,False,2112,12,0.003052,6312,2661,databricks-gpt-oss-120b,databricks,21.2,[],2026-08-14T06:27:54,gpt-oss-120b,databricks,text
+prog47_circular_queue,1,1.0000,5,5,True,False,1865,12,0.002735,4734,2615,databricks-gpt-oss-120b,databricks,24.8,[],2026-08-14T06:28:19,gpt-oss-120b,databricks,text
+prog47_circular_queue,2,0.8000,4,5,True,False,3393,12,0.002078,4734,1702,databricks-gpt-oss-120b,databricks,15.2,[],2026-08-14T06:28:34,gpt-oss-120b,databricks,text
+prog47_circular_queue,3,0.8000,4,5,True,False,1722,12,0.003642,9256,2745,databricks-gpt-oss-120b,databricks,23.5,[],2026-08-14T06:28:58,gpt-oss-120b,databricks,text
+prog47_circular_queue,4,1.0000,5,5,True,False,1810,12,0.002452,4734,2222,databricks-gpt-oss-120b,databricks,19.6,[],2026-08-14T06:29:17,gpt-oss-120b,databricks,text
+prog47_circular_queue,5,1.0000,5,5,True,False,1951,12,0.003024,4734,3017,databricks-gpt-oss-120b,databricks,27.4,[],2026-08-14T06:29:45,gpt-oss-120b,databricks,text
+prog47_circular_queue,6,0.4000,2,5,True,False,2456,12,0.003190,4734,3247,databricks-gpt-oss-120b,databricks,32.8,[],2026-08-14T06:30:17,gpt-oss-120b,databricks,text
+prog47_circular_queue,7,0.8000,4,5,True,False,2838,12,0.001743,4734,1237,databricks-gpt-oss-120b,databricks,14.7,[],2026-08-14T06:30:32,gpt-oss-120b,databricks,text
+prog47_circular_queue,8,1.0000,5,5,True,False,1767,12,0.002987,4734,2965,databricks-gpt-oss-120b,databricks,25.7,[],2026-08-14T06:30:58,gpt-oss-120b,databricks,text
+prog48_sorted_linked_list,1,0.0000,0,5,True,False,1387,12,0.000536,1049,482,databricks-gpt-oss-120b,databricks,6.5,[],2026-08-14T06:31:04,gpt-oss-120b,databricks,text
+prog48_sorted_linked_list,2,0.0000,0,5,True,False,1383,12,0.000539,1049,486,databricks-gpt-oss-120b,databricks,5.3,[],2026-08-14T06:31:10,gpt-oss-120b,databricks,text
+prog48_sorted_linked_list,3,0.2000,1,5,True,False,1196,12,0.002009,3081,2020,databricks-gpt-oss-120b,databricks,12.2,[],2026-08-14T06:31:22,gpt-oss-120b,databricks,text
+prog48_sorted_linked_list,4,0.0000,0,5,True,False,1408,12,0.000543,1049,492,databricks-gpt-oss-120b,databricks,4.9,[],2026-08-14T06:31:27,gpt-oss-120b,databricks,text
+prog48_sorted_linked_list,5,0.0000,0,5,True,False,1336,12,0.000530,1049,474,databricks-gpt-oss-120b,databricks,5.8,[],2026-08-14T06:31:33,gpt-oss-120b,databricks,text
+prog48_sorted_linked_list,6,1.0000,5,5,True,False,1727,12,0.002223,3081,2318,databricks-gpt-oss-120b,databricks,15.1,[],2026-08-14T06:31:48,gpt-oss-120b,databricks,text
+prog48_sorted_linked_list,7,0.0000,0,5,True,False,1408,12,0.000543,1049,492,databricks-gpt-oss-120b,databricks,5.6,[],2026-08-14T06:31:53,gpt-oss-120b,databricks,text
+prog48_sorted_linked_list,8,0.0000,0,5,True,False,1454,12,0.000552,1049,504,databricks-gpt-oss-120b,databricks,5.2,[],2026-08-14T06:31:58,gpt-oss-120b,databricks,text
+prog49_bst,1,0.0000,0,5,True,False,1718,12,0.000613,1085,580,databricks-gpt-oss-120b,databricks,7.0,[],2026-08-14T06:32:05,gpt-oss-120b,databricks,text
+prog49_bst,2,0.4000,2,5,True,False,2767,12,0.002397,5028,2072,databricks-gpt-oss-120b,databricks,17.4,[],2026-08-14T06:32:23,gpt-oss-120b,databricks,text
+prog49_bst,3,0.0000,0,5,True,False,1636,12,0.000595,1085,555,databricks-gpt-oss-120b,databricks,5.5,[],2026-08-14T06:32:28,gpt-oss-120b,databricks,text
+prog49_bst,4,0.0000,0,5,True,False,1489,12,0.000571,1085,522,databricks-gpt-oss-120b,databricks,4.9,[],2026-08-14T06:32:33,gpt-oss-120b,databricks,text
+prog49_bst,5,0.0000,0,5,True,False,1652,12,0.000593,1085,552,databricks-gpt-oss-120b,databricks,6.4,[],2026-08-14T06:32:40,gpt-oss-120b,databricks,text
+prog49_bst,6,0.0000,0,5,True,False,1416,12,0.000564,1085,512,databricks-gpt-oss-120b,databricks,5.9,[],2026-08-14T06:32:46,gpt-oss-120b,databricks,text
+prog49_bst,7,0.0000,0,5,True,False,1510,12,0.000573,1085,524,databricks-gpt-oss-120b,databricks,5.3,[],2026-08-14T06:32:51,gpt-oss-120b,databricks,text
+prog49_bst,8,0.0000,0,5,False,False,1662,12,0.000605,1085,569,databricks-gpt-oss-120b,databricks,5.0,"/w/candidate.c:63:9: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   63 |     if (strstr(argv[0], ""inorder""))
+      |         ^
+/w/candidate.c:63:9",2026-08-14T06:32:56,gpt-oss-120b,databricks,text
+prog50_binary_heap,1,0.0000,0,5,True,False,1434,12,0.000540,1022,495,databricks-gpt-oss-120b,databricks,5.3,[],2026-08-14T06:33:01,gpt-oss-120b,databricks,text
+prog50_binary_heap,2,0.0000,0,5,True,False,1380,12,0.000535,1022,488,databricks-gpt-oss-120b,databricks,4.9,[],2026-08-14T06:33:06,gpt-oss-120b,databricks,text
+prog50_binary_heap,3,0.2000,1,5,True,False,3071,12,0.002397,5843,1869,databricks-gpt-oss-120b,databricks,11.4,[],2026-08-14T06:33:17,gpt-oss-120b,databricks,text
+prog50_binary_heap,4,0.0000,0,5,True,False,1406,12,0.000535,1022,488,databricks-gpt-oss-120b,databricks,4.6,[],2026-08-14T06:33:22,gpt-oss-120b,databricks,text
+prog50_binary_heap,5,0.8000,4,5,True,False,2268,12,0.002896,5843,2562,databricks-gpt-oss-120b,databricks,14.5,[],2026-08-14T06:33:36,gpt-oss-120b,databricks,text
+prog50_binary_heap,6,0.0000,0,5,True,False,1450,12,0.000544,1022,500,databricks-gpt-oss-120b,databricks,5.1,[],2026-08-14T06:33:42,gpt-oss-120b,databricks,text
+prog50_binary_heap,7,0.0000,0,5,True,False,1435,12,0.000542,1022,497,databricks-gpt-oss-120b,databricks,4.8,[],2026-08-14T06:33:46,gpt-oss-120b,databricks,text
+prog50_binary_heap,8,1.0000,5,5,True,False,2440,12,0.003632,5843,3584,databricks-gpt-oss-120b,databricks,17.6,[],2026-08-14T06:34:04,gpt-oss-120b,databricks,text
+prog51_union_find,1,0.0000,0,5,True,False,1363,12,0.000580,1022,550,databricks-gpt-oss-120b,databricks,4.9,[],2026-08-14T06:34:09,gpt-oss-120b,databricks,text
+prog51_union_find,2,1.0000,5,5,True,False,3160,12,0.003842,6333,3753,databricks-gpt-oss-120b,databricks,19.3,[],2026-08-14T06:34:28,gpt-oss-120b,databricks,text
+prog51_union_find,3,0.8000,4,5,True,False,2589,12,0.004381,12468,2968,databricks-gpt-oss-120b,databricks,16.5,[],2026-08-14T06:34:45,gpt-oss-120b,databricks,text
+prog51_union_find,4,0.0000,0,5,True,False,1203,12,0.000551,1022,510,databricks-gpt-oss-120b,databricks,5.1,[],2026-08-14T06:34:50,gpt-oss-120b,databricks,text
+prog51_union_find,5,0.0000,0,5,True,False,1203,12,0.000551,1022,510,databricks-gpt-oss-120b,databricks,4.8,[],2026-08-14T06:34:55,gpt-oss-120b,databricks,text
+prog51_union_find,6,0.0000,0,5,True,False,1203,12,0.000551,1022,510,databricks-gpt-oss-120b,databricks,4.9,[],2026-08-14T06:34:59,gpt-oss-120b,databricks,text
+prog51_union_find,7,0.0000,0,5,True,False,2199,12,0.000708,1022,728,databricks-gpt-oss-120b,databricks,5.9,[],2026-08-14T06:35:05,gpt-oss-120b,databricks,text
+prog51_union_find,8,0.0000,0,5,True,False,1203,12,0.000551,1022,510,databricks-gpt-oss-120b,databricks,4.7,[],2026-08-14T06:35:10,gpt-oss-120b,databricks,text
+prog52_bfs_grid,1,0.0000,0,5,True,False,2200,12,0.000906,1024,1002,databricks-gpt-oss-120b,databricks,6.7,[],2026-08-14T06:35:17,gpt-oss-120b,databricks,text
+prog52_bfs_grid,2,0.0000,0,5,True,False,3122,12,0.000935,1024,1042,databricks-gpt-oss-120b,databricks,7.1,[],2026-08-14T06:35:24,gpt-oss-120b,databricks,text
+prog52_bfs_grid,3,0.0000,0,5,True,False,2821,12,0.001122,1024,1303,databricks-gpt-oss-120b,databricks,8.4,[],2026-08-14T06:35:32,gpt-oss-120b,databricks,text
+prog52_bfs_grid,4,0.0000,0,5,True,False,2811,12,0.001107,1024,1282,databricks-gpt-oss-120b,databricks,9.5,[],2026-08-14T06:35:42,gpt-oss-120b,databricks,text
+prog52_bfs_grid,5,0.0000,0,5,True,False,1677,12,0.000868,1024,950,databricks-gpt-oss-120b,databricks,6.5,[],2026-08-14T06:35:48,gpt-oss-120b,databricks,text
+prog52_bfs_grid,6,0.0000,0,5,True,False,1966,12,0.001025,1024,1168,databricks-gpt-oss-120b,databricks,8.7,[],2026-08-14T06:35:57,gpt-oss-120b,databricks,text
+prog52_bfs_grid,7,0.0000,0,5,True,False,1668,12,0.000922,1024,1025,databricks-gpt-oss-120b,databricks,7.4,[],2026-08-14T06:36:04,gpt-oss-120b,databricks,text
+prog52_bfs_grid,8,0.0000,0,5,True,False,1884,12,0.000939,1024,1048,databricks-gpt-oss-120b,databricks,10.4,[],2026-08-14T06:36:15,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,1,0.0000,0,5,True,False,2261,12,0.000961,1036,1076,databricks-gpt-oss-120b,databricks,10.6,[],2026-08-14T06:36:25,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,2,0.0000,0,5,True,False,1931,12,0.001909,4828,1445,databricks-gpt-oss-120b,databricks,17.5,[],2026-08-14T06:36:43,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,3,0.0000,0,5,True,False,2696,12,0.002014,4828,1590,databricks-gpt-oss-120b,databricks,14.1,[],2026-08-14T06:36:57,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,4,0.0000,0,5,True,False,2358,12,0.001889,4828,1417,databricks-gpt-oss-120b,databricks,9.8,[],2026-08-14T06:37:07,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,5,0.0000,0,5,False,False,2164,12,0.001739,4828,1208,databricks-gpt-oss-120b,databricks,12.3,"/w/candidate.c:35:42: error: use of undeclared identifier 'INT_MAX'
+   35 |     if (*end != '\0' || val < 0 || val > INT_MAX) return false;
+      |                                          ^
+1 error generated.
+",2026-08-14T06:37:19,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,6,0.0000,0,5,True,False,2078,12,0.000765,1036,804,databricks-gpt-oss-120b,databricks,8.2,[],2026-08-14T06:37:27,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,7,0.8000,4,5,True,False,1804,12,0.003749,9886,2735,databricks-gpt-oss-120b,databricks,22.1,[],2026-08-14T06:37:49,gpt-oss-120b,databricks,text
+prog53_dfs_cycle,8,0.0000,0,5,True,False,3142,12,0.002146,4828,1774,databricks-gpt-oss-120b,databricks,15.8,[],2026-08-14T06:38:05,gpt-oss-120b,databricks,text
+prog54_topo_sort,1,0.0000,0,5,True,False,2156,12,0.000703,1048,714,databricks-gpt-oss-120b,databricks,10.2,[],2026-08-14T06:38:15,gpt-oss-120b,databricks,text
+prog54_topo_sort,2,0.0000,0,5,True,False,2027,12,0.002960,6412,2508,databricks-gpt-oss-120b,databricks,25.5,[],2026-08-14T06:38:41,gpt-oss-120b,databricks,text
+prog54_topo_sort,3,0.0000,0,5,True,False,1949,12,0.003424,6412,3153,databricks-gpt-oss-120b,databricks,37.9,[],2026-08-14T06:39:19,gpt-oss-120b,databricks,text
+prog54_topo_sort,4,0.0000,0,5,True,False,2714,12,0.004663,6412,4873,databricks-gpt-oss-120b,databricks,35.6,[],2026-08-14T06:39:54,gpt-oss-120b,databricks,text
+prog54_topo_sort,5,0.0000,0,5,True,False,2858,12,0.004198,6412,4228,databricks-gpt-oss-120b,databricks,24.0,[],2026-08-14T06:40:18,gpt-oss-120b,databricks,text
+prog54_topo_sort,6,0.0000,0,5,True,False,1913,12,0.003421,6412,3148,databricks-gpt-oss-120b,databricks,21.5,[],2026-08-14T06:40:40,gpt-oss-120b,databricks,text
+prog54_topo_sort,7,0.0000,0,5,True,False,2344,12,0.003666,6412,3489,databricks-gpt-oss-120b,databricks,18.8,[],2026-08-14T06:40:59,gpt-oss-120b,databricks,text
+prog54_topo_sort,8,0.0000,0,5,True,False,2851,12,0.004160,6412,4175,databricks-gpt-oss-120b,databricks,23.3,[],2026-08-14T06:41:22,gpt-oss-120b,databricks,text
+prog55_connected_components,1,0.2000,1,5,True,False,1939,12,0.004931,14048,3337,databricks-gpt-oss-120b,databricks,22.2,[],2026-08-14T06:41:44,gpt-oss-120b,databricks,text
+prog55_connected_components,2,0.0000,0,5,True,False,2648,12,0.000793,1046,840,databricks-gpt-oss-120b,databricks,8.2,[],2026-08-14T06:41:52,gpt-oss-120b,databricks,text
+prog55_connected_components,3,0.0000,0,5,True,False,2260,12,0.000746,1046,774,databricks-gpt-oss-120b,databricks,6.5,[],2026-08-14T06:41:59,gpt-oss-120b,databricks,text
+prog55_connected_components,4,0.0000,0,5,True,False,2985,12,0.000884,1046,967,databricks-gpt-oss-120b,databricks,7.8,[],2026-08-14T06:42:07,gpt-oss-120b,databricks,text
+prog55_connected_components,5,0.0000,0,5,False,False,1945,12,0.000658,1046,653,databricks-gpt-oss-120b,databricks,6.9,"/w/candidate.c:33:21: error: function definition is not allowed here
+   33 |     int find(int x) {
+      |                     ^
+/w/candidate.c:42:30: error: function definition is not allowed here
+   42 |     void unite(int a, int b) {
+      |                              ^
+/w/candidate.c:60:9: err",2026-08-14T06:42:14,gpt-oss-120b,databricks,text
+prog55_connected_components,6,0.2000,1,5,True,False,2041,12,0.003602,7137,3218,databricks-gpt-oss-120b,databricks,24.7,[],2026-08-14T06:42:38,gpt-oss-120b,databricks,text
+prog55_connected_components,7,0.0000,0,5,True,False,2309,12,0.000718,1046,736,databricks-gpt-oss-120b,databricks,8.0,[],2026-08-14T06:42:46,gpt-oss-120b,databricks,text
+prog55_connected_components,8,0.2000,1,5,True,False,2380,12,0.002360,7137,1494,databricks-gpt-oss-120b,databricks,11.5,[],2026-08-14T06:42:58,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,1,0.0000,0,5,True,False,2283,12,0.000751,1054,780,databricks-gpt-oss-120b,databricks,7.0,[],2026-08-14T06:43:05,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,2,0.4000,2,5,True,False,2712,12,0.008856,10088,9779,databricks-gpt-oss-120b,databricks,54.7,[],2026-08-14T06:44:00,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,3,0.0000,0,5,True,False,2581,12,0.000818,1054,872,databricks-gpt-oss-120b,databricks,6.5,[],2026-08-14T06:44:06,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,4,0.0000,0,5,True,False,2141,12,0.000731,1054,752,databricks-gpt-oss-120b,databricks,7.0,[],2026-08-14T06:44:13,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,5,0.0000,0,5,True,False,2611,12,0.000818,1054,872,databricks-gpt-oss-120b,databricks,6.6,[],2026-08-14T06:44:20,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,6,0.2000,1,5,True,False,3501,12,0.001976,5165,1453,databricks-gpt-oss-120b,databricks,10.6,[],2026-08-14T06:44:30,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,7,0.0000,0,5,True,False,2462,12,0.000789,1054,833,databricks-gpt-oss-120b,databricks,8.0,[],2026-08-14T06:44:38,gpt-oss-120b,databricks,text
+prog56_kruskal_mst,8,0.4000,2,5,True,False,2712,12,0.004130,5165,4445,databricks-gpt-oss-120b,databricks,23.9,[],2026-08-14T06:45:02,gpt-oss-120b,databricks,text
+prog57_elevator_fsm,1,1.0000,5,5,True,False,941,12,0.003040,3069,3455,databricks-gpt-oss-120b,databricks,19.9,[],2026-08-14T06:45:22,gpt-oss-120b,databricks,text
+prog57_elevator_fsm,2,0.0000,0,5,True,False,2570,12,0.001260,1025,1494,databricks-gpt-oss-120b,databricks,9.2,[],2026-08-14T06:45:31,gpt-oss-120b,databricks,text
+prog57_elevator_fsm,3,0.0000,0,5,True,False,2125,12,0.000645,1025,639,databricks-gpt-oss-120b,databricks,5.4,[],2026-08-14T06:45:37,gpt-oss-120b,databricks,text
+prog57_elevator_fsm,4,1.0000,5,5,True,False,991,12,0.004152,3069,4999,databricks-gpt-oss-120b,databricks,28.1,[],2026-08-14T06:46:05,gpt-oss-120b,databricks,text
+prog57_elevator_fsm,5,1.0000,5,5,True,False,1056,12,0.002842,3069,3180,databricks-gpt-oss-120b,databricks,18.4,[],2026-08-14T06:46:23,gpt-oss-120b,databricks,text
+prog57_elevator_fsm,6,0.0000,0,5,True,False,1320,12,0.000686,1025,697,databricks-gpt-oss-120b,databricks,7.0,[],2026-08-14T06:46:30,gpt-oss-120b,databricks,text
+prog57_elevator_fsm,7,0.0000,0,5,True,False,2925,12,0.000763,1025,803,databricks-gpt-oss-120b,databricks,8.9,[],2026-08-14T06:46:39,gpt-oss-120b,databricks,text
+prog57_elevator_fsm,8,0.0000,0,5,True,False,1248,12,0.000789,1025,840,databricks-gpt-oss-120b,databricks,8.0,[],2026-08-14T06:46:47,gpt-oss-120b,databricks,text
+prog58_turing_increment,1,0.0000,0,5,True,False,393,12,0.000336,1048,205,databricks-gpt-oss-120b,databricks,5.0,[],2026-08-14T06:46:52,gpt-oss-120b,databricks,text
+prog58_turing_increment,2,0.2000,1,5,True,False,4782,12,0.004066,4621,4492,databricks-gpt-oss-120b,databricks,31.6,[],2026-08-14T06:47:24,gpt-oss-120b,databricks,text
+prog58_turing_increment,3,0.2000,1,5,True,False,4838,12,0.004846,4621,5576,databricks-gpt-oss-120b,databricks,47.4,[],2026-08-14T06:48:11,gpt-oss-120b,databricks,text
+prog58_turing_increment,4,0.2000,1,5,True,False,1759,12,0.004060,4621,4484,databricks-gpt-oss-120b,databricks,44.4,[],2026-08-14T06:48:56,gpt-oss-120b,databricks,text
+prog58_turing_increment,5,0.2000,1,5,True,False,2337,12,0.004481,4621,5068,databricks-gpt-oss-120b,databricks,57.9,[],2026-08-14T06:49:53,gpt-oss-120b,databricks,text
+prog58_turing_increment,6,0.2000,1,5,True,False,2283,12,0.005691,4621,6749,databricks-gpt-oss-120b,databricks,83.9,[],2026-08-14T06:51:17,gpt-oss-120b,databricks,text
+prog58_turing_increment,7,0.2000,1,5,True,False,2065,12,0.005443,4621,6405,databricks-gpt-oss-120b,databricks,45.1,[],2026-08-14T06:52:02,gpt-oss-120b,databricks,text
+prog58_turing_increment,8,0.2000,1,5,True,False,1735,12,0.004300,4621,4817,databricks-gpt-oss-120b,databricks,23.9,[],2026-08-14T06:52:26,gpt-oss-120b,databricks,text
+prog59_rule110,1,0.2000,1,5,True,False,2129,12,0.003618,5255,3712,databricks-gpt-oss-120b,databricks,20.6,[],2026-08-14T06:52:47,gpt-oss-120b,databricks,text
+prog59_rule110,2,0.0000,0,5,True,False,2945,12,0.000869,1046,946,databricks-gpt-oss-120b,databricks,7.2,[],2026-08-14T06:52:54,gpt-oss-120b,databricks,text
+prog59_rule110,3,0.8000,4,5,True,False,1841,12,0.003570,5255,3645,databricks-gpt-oss-120b,databricks,21.6,[],2026-08-14T06:53:16,gpt-oss-120b,databricks,text
+prog59_rule110,4,1.0000,5,5,True,False,2329,12,0.003143,5255,3052,databricks-gpt-oss-120b,databricks,18.4,[],2026-08-14T06:53:34,gpt-oss-120b,databricks,text
+prog59_rule110,5,0.6000,3,5,True,False,1889,12,0.004492,5255,4925,databricks-gpt-oss-120b,databricks,34.7,[],2026-08-14T06:54:09,gpt-oss-120b,databricks,text
+prog59_rule110,6,0.2000,1,5,True,False,2072,12,0.004628,5255,5114,databricks-gpt-oss-120b,databricks,27.5,[],2026-08-14T06:54:36,gpt-oss-120b,databricks,text
+prog59_rule110,7,1.0000,5,5,True,False,2500,12,0.002140,5255,1659,databricks-gpt-oss-120b,databricks,10.9,[],2026-08-14T06:54:47,gpt-oss-120b,databricks,text
+prog59_rule110,8,0.0000,0,5,True,False,2780,12,0.000818,1046,874,databricks-gpt-oss-120b,databricks,7.5,[],2026-08-14T06:54:55,gpt-oss-120b,databricks,text
+prog60_inventory_sim,1,0.0000,0,5,True,False,2804,12,0.004099,4181,4648,databricks-gpt-oss-120b,databricks,30.0,[],2026-08-14T06:55:25,gpt-oss-120b,databricks,text
+prog60_inventory_sim,2,0.0000,0,5,True,False,1880,12,0.003275,4181,3504,databricks-gpt-oss-120b,databricks,17.9,[],2026-08-14T06:55:43,gpt-oss-120b,databricks,text
+prog60_inventory_sim,3,0.0000,0,5,True,False,4016,12,0.001008,1046,1139,databricks-gpt-oss-120b,databricks,7.8,[],2026-08-14T06:55:51,gpt-oss-120b,databricks,text
+prog60_inventory_sim,4,0.0000,0,5,True,False,3373,12,0.000866,1046,942,databricks-gpt-oss-120b,databricks,57.5,"[""Command '['/tmp/cand', 'S', '0', '5', 'R', '1', '10']' timed out after 10 seconds"", ""Command '['/tmp/cand', 'S', '4', '5']' timed out after 10 seconds"", ""Command '['/tmp/cand']' timed out after 10 seconds""]",2026-08-14T06:56:48,gpt-oss-120b,databricks,text
+prog60_inventory_sim,5,0.0000,0,5,True,False,2020,12,0.002720,4181,2732,databricks-gpt-oss-120b,databricks,14.9,[],2026-08-14T06:57:03,gpt-oss-120b,databricks,text
+prog60_inventory_sim,6,0.0000,0,5,True,False,2769,12,0.000757,1046,790,databricks-gpt-oss-120b,databricks,58.4,"[""Command '['/tmp/cand', 'S', '0', '5', 'R', '1', '10']' timed out after 10 seconds"", ""Command '['/tmp/cand', 'S', '4', '5']' timed out after 10 seconds"", ""Command '['/tmp/cand']' timed out after 10 seconds""]",2026-08-14T06:58:01,gpt-oss-120b,databricks,text
+prog60_inventory_sim,7,0.0000,0,5,True,False,1838,12,0.006476,8132,6962,databricks-gpt-oss-120b,databricks,40.6,[],2026-08-14T06:58:42,gpt-oss-120b,databricks,text
+prog60_inventory_sim,8,0.0000,0,5,True,False,2344,12,0.003882,4181,4347,databricks-gpt-oss-120b,databricks,23.4,[],2026-08-14T06:59:05,gpt-oss-120b,databricks,text

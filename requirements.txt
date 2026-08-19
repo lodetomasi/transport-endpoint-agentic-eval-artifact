@@ -1,0 +1,16 @@
+# Dipendenze di C2. Le due righe non sono equivalenti, ed e' il punto.
+#
+# OBBLIGATORIE: niente. L'analisi pre-registrata (analysis/analyze_c2.py) gira sulla sola
+# libreria standard di Python 3.9+, per una ragione scritta nel suo commento: un'analisi che
+# non gira dove girano i dati e' un'analisi che qualcuno rifara' a mano. I suoi import di
+# statsmodels e pandas sono protetti e il codice degrada senza di essi.
+#
+# OPZIONALI: servono solo agli script che le dichiarano. Senza, quegli script si rifiutano
+# di partire con un messaggio, invece di crashare con un ImportError.
+scipy>=1.10       # analysis/p_esatti_student.py — t di Student esatta contro l'approssimazione congelata
+statsmodels>=0.14 # analysis/analyze_c2.py — modello misto per T9 e T10, degrada se assente
+pandas>=2.0       # analysis/analyze_c2.py — idem
+matplotlib>=3.7   # analysis/figure_paper.py — le due figure del paper; senza, lo script
+                  # crashava con ModuleNotFoundError invece di rifiutare con un messaggio,
+                  # contraddicendo cio' che questo file dichiara. Trovato dal seggio
+                  # riproducibilita' del gauntlet sul paper.

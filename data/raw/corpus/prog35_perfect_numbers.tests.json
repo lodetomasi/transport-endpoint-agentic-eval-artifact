@@ -1,0 +1,7 @@
+{"program": "prog35_perfect_numbers", "tests": [
+  {"id": 1, "args": ["28"], "stdin": "", "expected_stdout": "n=28 sum=28 perfect\n"},
+  {"id": 2, "args": ["6"], "stdin": "", "expected_stdout": "n=6 sum=6 perfect\n"},
+  {"id": 3, "args": ["1"], "stdin": "", "expected_stdout": "n=1 sum=0 deficient\n"},
+  {"id": 4, "args": ["999999"], "stdin": "", "expected_stdout": "n=999999 sum=1042881 abundant\n"},
+  {"id": 5, "args": ["-7"], "stdin": "", "expected_stdout": "BAD_INPUT\n"}
+]}

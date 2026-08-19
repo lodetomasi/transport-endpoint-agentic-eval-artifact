@@ -1,0 +1,26 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog21_date_validator,1,1.0000,5,5,True,False,1144,12,0.009062,23634,9194,openai.gpt-oss-120b-1:0,bedrock,104.1,[],2026-08-15T12:54:51,gpt-oss-120b,bedrock,native
+prog21_date_validator,2,1.0000,5,5,True,False,1288,12,0.024497,45750,29391,openai.gpt-oss-120b-1:0,bedrock,371.0,[],2026-08-15T13:01:02,gpt-oss-120b,bedrock,native
+prog21_date_validator,3,0.6000,3,5,True,False,1355,12,0.002595,4860,3110,openai.gpt-oss-120b-1:0,bedrock,41.3,[],2026-08-15T13:01:44,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,1,0.6000,3,5,True,False,668,12,0.007825,7193,11243,openai.gpt-oss-120b-1:0,bedrock,84.2,[],2026-08-15T13:03:08,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,2,0.4000,2,5,True,False,1202,12,0.010437,29327,10063,openai.gpt-oss-120b-1:0,bedrock,59.4,[],2026-08-15T13:04:07,gpt-oss-120b,bedrock,native
+prog23_longest_common_prefix,3,0.4000,2,5,True,False,418,12,0.005689,19491,4609,openai.gpt-oss-120b-1:0,bedrock,33.9,[],2026-08-15T13:04:41,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,1,1.0000,5,5,True,False,1403,12,0.004234,12415,3953,openai.gpt-oss-120b-1:0,bedrock,26.5,[],2026-08-15T13:05:08,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,2,1.0000,5,5,True,False,1123,12,0.003323,8869,3321,openai.gpt-oss-120b-1:0,bedrock,18.4,[],2026-08-15T13:05:26,gpt-oss-120b,bedrock,native
+prog25_balanced_multitype,3,1.0000,5,5,True,False,1081,12,0.004400,12139,4298,openai.gpt-oss-120b-1:0,bedrock,27.7,[],2026-08-15T13:05:54,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,1,1.0000,5,5,True,False,971,12,0.004446,6533,5777,openai.gpt-oss-120b-1:0,bedrock,38.6,[],2026-08-15T13:06:32,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,2,0.8000,4,5,True,False,2251,12,0.010919,25428,11842,openai.gpt-oss-120b-1:0,bedrock,158.6,[],2026-08-15T13:09:11,gpt-oss-120b,bedrock,native
+prog32_prime_factorization,3,0.6000,3,5,True,False,1759,12,0.005570,6918,7554,openai.gpt-oss-120b-1:0,bedrock,20.2,[],2026-08-15T13:09:31,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,1,1.0000,5,5,True,False,1172,12,0.008730,13569,11157,openai.gpt-oss-120b-1:0,bedrock,60.3,[],2026-08-15T13:10:31,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,2,1.0000,5,5,True,False,1172,12,0.008290,13569,10424,openai.gpt-oss-120b-1:0,bedrock,101.8,[],2026-08-15T13:12:13,gpt-oss-120b,bedrock,native
+prog37_binomial_coefficient,3,1.0000,5,5,True,False,3070,12,0.005778,15483,5759,openai.gpt-oss-120b-1:0,bedrock,58.4,[],2026-08-15T13:13:12,gpt-oss-120b,bedrock,native
+prog39_horner,1,1.0000,5,5,True,False,955,12,0.007980,22786,7604,openai.gpt-oss-120b-1:0,bedrock,59.3,[],2026-08-15T13:14:11,gpt-oss-120b,bedrock,native
+prog39_horner,2,0.0000,0,5,False,True,0,12,0.005186,17004,4393,openai.gpt-oss-120b-1:0,bedrock,70.9,"ValidationException: An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'messages.10.member.content.1.member.toolUse.name' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_-]+
+Traceback (most rece",2026-08-15T13:15:22,gpt-oss-120b,bedrock,native
+prog39_horner,3,1.0000,5,5,True,False,1130,12,0.010414,24771,11164,openai.gpt-oss-120b-1:0,bedrock,282.1,[],2026-08-15T13:20:04,gpt-oss-120b,bedrock,native
+prog45_josephus,1,1.0000,5,5,True,False,745,12,0.004686,6153,6271,openai.gpt-oss-120b-1:0,bedrock,51.2,[],2026-08-15T13:20:55,gpt-oss-120b,bedrock,native
+prog45_josephus,2,0.8000,4,5,True,False,958,12,0.005027,11529,5496,openai.gpt-oss-120b-1:0,bedrock,19.8,[],2026-08-15T13:21:15,gpt-oss-120b,bedrock,native
+prog45_josephus,3,0.8000,4,5,True,False,734,12,0.002683,3585,3576,openai.gpt-oss-120b-1:0,bedrock,36.7,[],2026-08-15T13:21:52,gpt-oss-120b,bedrock,native
+prog58_turing_increment,1,0.2000,1,5,True,False,1616,12,0.005321,8970,6625,openai.gpt-oss-120b-1:0,bedrock,71.0,[],2026-08-15T13:23:03,gpt-oss-120b,bedrock,native
+prog58_turing_increment,2,0.2000,1,5,True,False,614,12,0.007450,13829,8959,openai.gpt-oss-120b-1:0,bedrock,55.5,[],2026-08-15T13:23:58,gpt-oss-120b,bedrock,native
+prog58_turing_increment,3,0.2000,1,5,True,False,3031,12,0.008815,9319,12362,openai.gpt-oss-120b-1:0,bedrock,80.7,[],2026-08-15T13:25:19,gpt-oss-120b,bedrock,native

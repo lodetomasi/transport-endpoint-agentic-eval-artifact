@@ -1,0 +1,7 @@
+{"program": "prog31_gcd_lcm", "tests": [
+  {"id": 1, "args": ["48", "18"], "stdin": "", "expected_stdout": "gcd=6 lcm=144\n"},
+  {"id": 2, "args": ["0", "5"], "stdin": "", "expected_stdout": "gcd=5 lcm=0\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "USAGE\n"},
+  {"id": 4, "args": ["-1000000", "999999"], "stdin": "", "expected_stdout": "gcd=1 lcm=999999000000\n"},
+  {"id": 5, "args": ["17", "abc"], "stdin": "", "expected_stdout": "BAD_INPUT\n"}
+]}

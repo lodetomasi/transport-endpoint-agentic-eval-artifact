@@ -1,0 +1,7 @@
+{"program": "prog39_horner", "tests": [
+  {"id": 1, "args": ["2", "3", "-1", "2"], "stdin": "", "expected_stdout": "12\n"},
+  {"id": 2, "args": ["0", "5", "-2", "9"], "stdin": "", "expected_stdout": "9\n"},
+  {"id": 3, "args": ["1", "1"], "stdin": "", "expected_stdout": "1\n"},
+  {"id": 4, "args": ["10", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"], "stdin": "", "expected_stdout": "100000000000\n"},
+  {"id": 5, "args": ["999", "1", "2"], "stdin": "", "expected_stdout": "OUT_OF_RANGE\n"}
+]}

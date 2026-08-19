@@ -1,0 +1,70 @@
+\section{Introduction}
+\label{sec:intro}
+
+An agentic evaluation reports a number for a model. That number is produced by an apparatus:
+a transport that carries tool calls between the model and the harness, an endpoint that serves
+the weights, a set of tools with a particular return format, and a decoding configuration. The
+model's name appears in the table. The apparatus does not.
+
+This paper measures how much of the number belongs to the apparatus rather than to the model,
+and finds that the question has two answers of different kinds. The transport moves a number,
+which is a bias: it can be bounded, and a reader who knows its size can correct for it. The
+endpoint deletes a row, which is a selection: it cannot be bounded, because the model that was
+refused has no line in the table to correct.
+
+\subsection{The confound this chapter removes}
+
+The preceding chapter of this programme~\citep{companion2026baseline} measured a 10.4pp drop when one
+model moved from native function calling to a textual protocol. That chapter is a companion manuscript
+under double-anonymous review, so a reader cannot obtain it and we do not ask anyone to take its numbers
+on trust: both figures this paper draws from it recompute from a snapshot of the exact cells they need,
+released here with their per-turn logs. On a single infrastructure that number admits two readings no
+further collection on that infrastructure can separate --- a property of the model, or of that
+provider's shim --- because model and infrastructure are perfectly confounded when there is only one
+endpoint.
+
+Serving the same nominal model from two managed clouds separates them: if the difference persists it
+belongs to the model, if it moves it belongs to the infrastructure. That cell --- same nominal model,
+two commercial endpoints, transport manipulated as a paired factor, on a multi-turn downstream task ---
+is what this study contributes as a design, and to our knowledge it has not been run.
+
+\subsection{Contributions}
+
+The order below is the one in which we would have a reader weigh them, not the one in which they were
+planned.
+
+\begin{enumerate}
+\item \textbf{A power calibration does not transfer between apparatuses}, even holding model, corpus and
+  metric fixed: inherited from the preceding chapter, ours did not mis-estimate a magnitude, it inverted
+  which of two levers binds (\S\ref{sec:results}) --- a claim about how experiments of this kind should be
+  sized, and the finding we did not go looking for.
+\item \textbf{Eight mechanisms by which a serving endpoint removes a model from an evaluation before
+  it produces a score} --- six reachable by a pre-flight probe, two that fire only in a conversational
+  state a probe does not construct --- each with the endpoint's verbatim message
+  (\S\ref{sec:census}). The split is the operational finding: a harness certified healthy before
+  collection can still lose a cell after the money is spent. Existing taxonomies classify
+  \emph{faults}, things that stop happening once repaired; these are refusals by a healthy endpoint
+  behaving as configured, so they persist for a whole study~\citep{failureatlas}. For the one any
+  single-call pre-flight reports healthy we give the constructed probe that catches it first.
+\item \textbf{Two properties of the apparatus usually assumed rather than measured}: temperature zero is
+  not determinism, and the same nominal model is not equally stable on two clouds --- which makes score
+  stability a property of the serving stack rather than of a decoding parameter (\S\ref{sec:results}).
+\item \textbf{A pre-registered $4\times2\times2$ design} --- four models, two named managed clouds, two
+  transports, 45 held-out binaries, 8 runs each --- with the analysis script frozen by hash
+  \emph{together with} the hypotheses before any data existed, one documented exception covering two of
+  the ten tests (\S\ref{sec:method}), and the confirmatory outcome reported with the power that produced
+  it: no test survives Holm, and the three reaching nominal significance are the three least powered.
+  We report the minimum detectable effect per contrast, because the observed standard deviations span a
+  factor of 23.7 and no single band describes them.
+\item \textbf{An artifact} carrying every raw row including the invalidated batches, the per-turn session
+  traces, the frozen documents with their hashes, and the amendment log (\S\ref{sec:artifact}).
+\end{enumerate}
+
+\subsection{What this paper does not claim}
+
+Not that one transport is better: we measure that the choice moves the number, not which choice is
+right. Not semantic equivalence: pass-rate is a lower bound with a floor we measure. Not that the
+eight mechanisms are exhaustive --- each is an existence proof with its own denominator, never a
+rate. And not that the effect sizes travel: they belong to one task family, four models and two
+clouds. What we do claim is narrower and harder to escape: an evaluation that does not report its transport is
+not reproducible from its method section, whatever the task.

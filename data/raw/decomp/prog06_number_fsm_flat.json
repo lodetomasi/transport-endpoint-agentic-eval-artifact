@@ -1,0 +1,309 @@
+{
+ "functions": [
+  {
+   "decompiled": "\nvoid FUN_00101020(void)\n\n{\n  (*(code *)PTR_00104010)();\n  return;\n}\n\n", 
+   "signature": "undefined FUN_00101020(void)", 
+   "is_thunk": false, 
+   "size": 12, 
+   "name": "FUN_00101020", 
+   "entry_point": "00101020"
+  }, 
+  {
+   "decompiled": "\nundefined8 main(int param_1,ulong param_2)\n\n{\n  int iVar1;\n  int iVar2;\n  int iVar3;\n  byte unaff_BL;\n  int unaff_EBP;\n  ulong uVar4;\n  char *__s;\n  int unaff_R12D;\n  int unaff_R13D;\n  char unaff_R14B;\n  ulong unaff_R15;\n  bool bVar5;\n  int local_50;\n  ulong local_40;\n  char *local_38;\n  \n  iVar2 = -0x3d71dbf7;\n  if (param_1 < 2) {\n    iVar2 = 0x5e20e57d;\n  }\n  uVar4 = param_2;\n  iVar1 = 0x2c2fe132;\nLAB_001011a0:\n  while (iVar3 = iVar1, iVar1 = iVar3, -0x3554c97 < iVar3) {\n    if (iVar3 < 0x39c97b0b) {\n      if (iVar3 < 0x1f88e637) {\n        if (iVar3 < 0x6e76da6) {\n          if (iVar3 < 0x4564765) {\n            if (iVar3 == -0x3554c96) {\n              unaff_R12D = 0;\n              iVar1 = -0x2dfb1007;\n            }\n            else if (iVar3 == -0x2af75d7) {\n              unaff_R14B = local_38[unaff_R15];\n              iVar1 = -0x598e01f0;\n              unaff_EBP = unaff_R13D;\n            }\n          }\n          else if (iVar3 == 0x4564765) {\n            unaff_BL = unaff_R13D == 7;\n            iVar1 = -0x28359f59;\n          }\n          else {\n            if (iVar3 == 0x484f981) {\n              bVar5 = unaff_R14B == '+';\n              iVar1 = 0x705b47cf;\n              goto LAB_0010118c;\n            }\n            if (iVar3 == 0x4cf1a3b) {\n              return 0;\n            }\n          }\n        }\n        else if (iVar3 < 0xe71fecc) {\n          if (iVar3 == 0x6e76da6) {\n            bVar5 = unaff_R13D == 4;\n            iVar1 = 0x4564765;\n            goto LAB_00101db7;\n          }\n          if (iVar3 == 0xbfeca6f) {\n            iVar1 = -0x18380845;\n            if ('/' < unaff_R14B) {\n              iVar1 = 0x34bec667;\n            }\n            iVar3 = -0x60eed9ba;\n            while( true ) {\n              while (iVar3 == -0x60eed9ba) {\n                uVar4 = 0;\n                iVar3 = iVar1;\n              }\n              if (iVar3 == -0x18380845) break;\n              if (iVar3 == 0x34bec667) {\n                uVar4 = (ulong)(unaff_R14B < ':');\n                iVar3 = -0x18380845;\n              }\n            }\n            iVar1 = 0x2d2af6f0;\n            if ((uVar4 & 1) != 0) {\n              iVar1 = -0x6f416375;\n            }\n          }\n        }\n        else if (iVar3 == 0xe71fecc) {\n          iVar1 = 0x7ca27580;\n          if (unaff_EBP < 6) {\n            iVar1 = 0x36f586f9;\n          }\n        }\n        else if (iVar3 == 0x111bd229) {\n          unaff_R13D = 5;\n          iVar1 = -0x47dbc1c3;\n        }\n        else if (iVar3 == 0x118068b1) {\n          unaff_R13D = 8;\n          iVar1 = -0x47dbc1c3;\n        }\n      }\n      else if (iVar3 < 0x2c2fe132) {\n        if (iVar3 < 0x24cb0607) {\n          if (iVar3 == 0x1f88e637) {\n            iVar1 = -0x629c79a4;\n            if (unaff_R14B == '.') {\n              iVar1 = 0x6a6f4d2e;\n            }\n          }\n          else if (iVar3 == 0x201de1c7) {\n            bVar5 = unaff_R14B == '-';\n            iVar1 = 0x3ba7e397;\n            goto LAB_00101df9;\n          }\n        }\n        else if (iVar3 == 0x24cb0607) {\n          unaff_R13D = 2;\n          iVar1 = -0x46be11d3;\n        }\n        else if (iVar3 == 0x262dfdd6) {\n          iVar1 = -0x18380845;\n          if ('/' < unaff_R14B) {\n            iVar1 = 0x34bec667;\n          }\n          iVar3 = -0x60eed9ba;\n          while( true ) {\n            while (iVar3 == -0x60eed9ba) {\n              uVar4 = 0;\n              iVar3 = iVar1;\n            }\n            if (iVar3 == -0x18380845) break;\n            if (iVar3 == 0x34bec667) {\n              uVar4 = (ulong)(unaff_R14B < ':');\n              iVar3 = -0x18380845;\n            }\n          }\n          iVar1 = 0x1f88e637;\n          if ((uVar4 & 1) != 0) {\n            iVar1 = 0x24cb0607;\n          }\n        }\n        else if (iVar3 == 0x26f1a71c) {\n          iVar1 = 0x749409e5;\n        }\n      }\n      else if (iVar3 < 0x2db1230e) {\n        iVar1 = iVar2;\n        if ((iVar3 != 0x2c2fe132) && (iVar1 = iVar3, iVar3 == 0x2d2af6f0)) {\n          unaff_R13D = 8;\n          iVar1 = -0x605d8f2d;\n        }\n      }\n      else if (iVar3 == 0x2db1230e) {\n        bVar5 = unaff_R13D == 2;\n        iVar1 = 0x6e76da6;\nLAB_00101db7:\n        if (bVar5) {\n          iVar1 = -0x28359f59;\n        }\n        unaff_BL = 1;\n      }\n      else if (iVar3 == 0x333d36a7) {\n        unaff_R12D = 2;\n        iVar1 = -0x13762293;\n      }\n      else if ((iVar3 == 0x36f586f9) && (iVar1 = 0x484f981, unaff_EBP < 5)) {\n        iVar1 = -0x1568079e;\n      }\n    }\n    else if (iVar3 < 0x6a6f4d2e) {\n      if (iVar3 < 0x4f50fc2a) {\n        if (iVar3 < 0x3f5651bb) {\n          if (iVar3 == 0x39c97b0b) {\n            iVar1 = -0x5d42ccaf;\n            if (unaff_EBP < 2) {\n              iVar1 = -0x344171f4;\n            }\n          }\n          else if (iVar3 == 0x3ba7e397) {\n            iVar1 = -0x18380845;\n            if ('/' < unaff_R14B) {\n              iVar1 = 0x34bec667;\n            }\n            iVar3 = -0x60eed9ba;\n            while( true ) {\n              while (iVar3 == -0x60eed9ba) {\n                uVar4 = 0;\n                iVar3 = iVar1;\n              }\n              if (iVar3 == -0x18380845) break;\n              if (iVar3 == 0x34bec667) {\n                uVar4 = (ulong)(unaff_R14B < ':');\n                iVar3 = -0x18380845;\n              }\n            }\n            iVar1 = -0x5af250f6;\n            if ((uVar4 & 1) != 0) {\n              iVar1 = 0x43cd103d;\n            }\n          }\n        }\n        else if (iVar3 == 0x3f5651bb) {\n          unaff_R13D = 6;\n          iVar1 = 0x26f1a71c;\n        }\n        else if (iVar3 == 0x3fd42bb3) {\n          unaff_R13D = 4;\n          iVar1 = -0x9fcd4a0;\n        }\n        else if (iVar3 == 0x43cd103d) {\n          unaff_R13D = 2;\n          iVar1 = -0x1e1d2ce0;\n        }\n      }\n      else if (iVar3 < 0x5e20e57d) {\n        if (iVar3 == 0x4f50fc2a) {\n          bVar5 = unaff_R14B == '+';\n          iVar1 = 0x201de1c7;\nLAB_00101df9:\n          if (bVar5) {\n            iVar1 = -0xd717396;\n          }\n        }\n        else if (iVar3 == 0x54d165be) {\n          iVar1 = 0x26f1a71c;\n        }\n      }\n      else if (iVar3 == 0x5e20e57d) {\n        puts(\"INVALID\");\n        iVar1 = 0x4cf1a3b;\n      }\n      else if (iVar3 == 0x62360dc0) {\n        iVar1 = -0x46be11d3;\n      }\n      else if (iVar3 == 0x643a0411) {\n        unaff_R13D = 8;\n        iVar1 = -0x654bf230;\n      }\n    }\n    else if (iVar3 < 0x74057600) {\n      if (iVar3 < 0x70487633) {\n        if (iVar3 == 0x6a6f4d2e) {\n          unaff_R13D = 3;\n          iVar1 = 0x62360dc0;\n        }\n        else if (iVar3 == 0x6ed02255) {\n          iVar1 = -0x18380845;\n          if ('/' < unaff_R14B) {\n            iVar1 = 0x34bec667;\n          }\n          iVar3 = -0x60eed9ba;\n          while( true ) {\n            while (iVar3 == -0x60eed9ba) {\n              uVar4 = 0;\n              iVar3 = iVar1;\n            }\n            if (iVar3 == -0x18380845) break;\n            if (iVar3 == 0x34bec667) {\n              uVar4 = (ulong)(unaff_R14B < ':');\n              iVar3 = -0x18380845;\n            }\n          }\n          iVar1 = 0x643a0411;\n          if ((uVar4 & 1) != 0) {\n            iVar1 = -0x204f097c;\n          }\n        }\n      }\n      else if (iVar3 == 0x70487633) {\n        iVar1 = 0x749409e5;\n        if (unaff_EBP == 7) {\n          iVar1 = 0x6ed02255;\n        }\n      }\n      else if (iVar3 == 0x705b47cf) {\n        bVar5 = unaff_R14B == '-';\n        iVar1 = -0x91020c2;\nLAB_0010118c:\n        if (bVar5) {\n          iVar1 = 0x3f5651bb;\n        }\n      }\n      else if (iVar3 == 0x7096ce1a) {\n        iVar1 = 0x749409e5;\n      }\n    }\n    else if (iVar3 < 0x75a3bf52) {\n      if (iVar3 == 0x74057600) {\n        bVar5 = unaff_R14B == 'E';\n        iVar1 = 0x118068b1;\nLAB_00101e33:\n        if (bVar5) {\n          iVar1 = 0x111bd229;\n        }\n      }\n      else if ((iVar3 == 0x749409e5) && (iVar1 = -0x3554c96, unaff_R13D == 8)) {\n        iVar1 = 0x75a3bf52;\n      }\n    }\n    else if (iVar3 == 0x75a3bf52) {\n      unaff_R12D = 2;\n      iVar1 = -0x2dfb1007;\n    }\n    else if (iVar3 == 0x7ca27580) {\n      iVar1 = 0x70487633;\n      if (unaff_EBP < 7) {\n        iVar1 = 0xbfeca6f;\n      }\n    }\n    else if ((iVar3 == 0x7f2ebd84) && (iVar1 = -0x13762293, local_50 == 0)) {\n      iVar1 = -0x3b286ce0;\n    }\n  }\n  if (iVar3 < -0x40941c1f) {\n    if (iVar3 < -0x5d42ccaf) {\n      if (iVar3 < -0x6db52997) {\n        if (iVar3 < -0x71915d27) {\n          if (iVar3 == -0x79173759) {\n            iVar1 = -0x18380845;\n            if ('/' < unaff_R14B) {\n              iVar1 = 0x34bec667;\n            }\n            iVar3 = -0x60eed9ba;\n            while( true ) {\n              while (iVar3 == -0x60eed9ba) {\n                uVar4 = 0;\n                iVar3 = iVar1;\n              }\n              if (iVar3 == -0x18380845) break;\n              if (iVar3 == 0x34bec667) {\n                uVar4 = (ulong)(unaff_R14B < ':');\n                iVar3 = -0x18380845;\n              }\n            }\n            iVar1 = -0x756d69a7;\n            if ((uVar4 & 1) != 0) {\n              iVar1 = -0x49e3d8fe;\n            }\n          }\n          else if (iVar3 == -0x756d69a7) {\n            unaff_R13D = 8;\n            iVar1 = -0x3380965a;\n          }\n        }\n        else if (iVar3 == -0x71915d27) {\n          unaff_R13D = 5;\n          iVar1 = -0x584684dc;\n        }\n        else if (iVar3 == -0x6f416375) {\n          unaff_R13D = 7;\n          iVar1 = -0x605d8f2d;\n        }\n      }\n      else if (iVar3 < -0x629c79a4) {\n        if (iVar3 == -0x6db52997) {\n          iVar1 = 0x749409e5;\n          if (unaff_EBP == 0) {\n            iVar1 = 0x4f50fc2a;\n          }\n        }\n        else if (iVar3 == -0x654bf230) {\n          iVar1 = 0x749409e5;\n        }\n      }\n      else {\n        if (iVar3 == -0x629c79a4) {\n          bVar5 = unaff_R14B == 'e';\n          iVar1 = 0x74057600;\n          goto LAB_00101e33;\n        }\n        if (iVar3 == -0x605d8f2d) {\n          iVar1 = 0x749409e5;\n        }\n        else if (iVar3 == -0x5e1a634b) {\n          unaff_R15 = unaff_R15 + 1;\n          iVar1 = -0x40941c1f;\n        }\n      }\n      goto LAB_001011a0;\n    }\n    if (-0x514b2bce < iVar3) {\n      if (iVar3 < -0x47fc2cbd) {\n        if (iVar3 == -0x514b2bcd) {\n          unaff_R13D = 8;\n          iVar1 = -0x584684dc;\n        }\n        else if (iVar3 == -0x49e3d8fe) {\n          unaff_R13D = 2;\n          iVar1 = -0x3380965a;\n        }\n      }\n      else if (iVar3 == -0x47fc2cbd) {\n        unaff_R13D = 4;\n        iVar1 = 0x7096ce1a;\n      }\n      else if (iVar3 == -0x47dbc1c3) {\n        iVar1 = 0x62360dc0;\n      }\n      else if (iVar3 == -0x46be11d3) {\n        iVar1 = 0x749409e5;\n      }\n      goto LAB_001011a0;\n    }\n    if (iVar3 < -0x598e01f0) {\n      if (iVar3 == -0x5d42ccaf) {\n        iVar1 = -0x1c62be4b;\n        if (unaff_EBP < 3) {\n          iVar1 = 0x262dfdd6;\n        }\n      }\n      else if (iVar3 == -0x5af250f6) {\n        unaff_R13D = 8;\n        iVar1 = -0x1e1d2ce0;\n      }\n      goto LAB_001011a0;\n    }\n    if (iVar3 == -0x598e01f0) {\n      iVar1 = 0xe71fecc;\n      if (unaff_EBP < 4) {\n        iVar1 = 0x39c97b0b;\n      }\n      goto LAB_001011a0;\n    }\n    if (iVar3 == -0x584684dc) {\n      iVar1 = 0x7096ce1a;\n      goto LAB_001011a0;\n    }\n    if (iVar3 != -0x56ec7153) goto LAB_001011a0;\n    bVar5 = unaff_R14B == 'e';\n    iVar1 = -0x34395998;\n  }\n  else {\n    if (-0x204f097d < iVar3) {\n      if (iVar3 < -0x152aab33) {\n        if (iVar3 < -0x1c62be4b) {\n          if (iVar3 == -0x204f097c) {\n            unaff_R13D = 7;\n            iVar1 = -0x654bf230;\n          }\n          else if (iVar3 == -0x1e1d2ce0) {\n            iVar1 = -0x152aab33;\n          }\n        }\n        else if (iVar3 == -0x1c62be4b) {\n          iVar1 = -0x18380845;\n          if ('/' < unaff_R14B) {\n            iVar1 = 0x34bec667;\n          }\n          iVar3 = -0x60eed9ba;\n          while( true ) {\n            while (iVar3 == -0x60eed9ba) {\n              uVar4 = 0;\n              iVar3 = iVar1;\n            }\n            if (iVar3 == -0x18380845) break;\n            if (iVar3 == 0x34bec667) {\n              uVar4 = (ulong)(unaff_R14B < ':');\n              iVar3 = -0x18380845;\n            }\n          }\n          iVar1 = -0x385ff9f2;\n          if ((uVar4 & 1) != 0) {\n            iVar1 = 0x3fd42bb3;\n          }\n        }\n        else if (iVar3 == -0x17aec79a) {\n          unaff_R13D = 8;\n          iVar1 = 0x54d165be;\n        }\n        else if (iVar3 == -0x1568079e) {\n          iVar1 = -0x18380845;\n          if ('/' < unaff_R14B) {\n            iVar1 = 0x34bec667;\n          }\n          iVar3 = -0x60eed9ba;\n          while( true ) {\n            while (iVar3 == -0x60eed9ba) {\n              uVar4 = 0;\n              iVar3 = iVar1;\n            }\n            if (iVar3 == -0x18380845) break;\n            if (iVar3 == 0x34bec667) {\n              uVar4 = (ulong)(unaff_R14B < ':');\n              iVar3 = -0x18380845;\n            }\n          }\n          iVar1 = -0x56ec7153;\n          if ((uVar4 & 1) != 0) {\n            iVar1 = -0x47fc2cbd;\n          }\n        }\n      }\n      else if (iVar3 < -0xd717396) {\n        if (iVar3 == -0x152aab33) {\n          iVar1 = 0x749409e5;\n        }\n        else if (iVar3 == -0x13762293) {\n          iVar1 = 0x2db1230e;\n        }\n      }\n      else if (iVar3 == -0xd717396) {\n        unaff_R13D = 1;\n        iVar1 = -0x152aab33;\n      }\n      else if (iVar3 == -0x9fcd4a0) {\n        iVar1 = 0x749409e5;\n      }\n      else if (iVar3 == -0x91020c2) {\n        iVar1 = -0x18380845;\n        if ('/' < unaff_R14B) {\n          iVar1 = 0x34bec667;\n        }\n        iVar3 = -0x60eed9ba;\n        while( true ) {\n          while (iVar3 == -0x60eed9ba) {\n            uVar4 = 0;\n            iVar3 = iVar1;\n          }\n          if (iVar3 == -0x18380845) break;\n          if (iVar3 == 0x34bec667) {\n            uVar4 = (ulong)(unaff_R14B < ':');\n            iVar3 = -0x18380845;\n          }\n        }\n        iVar1 = -0x17aec79a;\n        if ((uVar4 & 1) != 0) {\n          iVar1 = -0x36740b0f;\n        }\n      }\n      goto LAB_001011a0;\n    }\n    if (iVar3 < -0x344171f4) {\n      if (iVar3 < -0x3b286ce0) {\n        if (iVar3 == -0x40941c1f) {\n          iVar1 = 0x333d36a7;\n          if (unaff_R15 < local_40) {\n            iVar1 = -0x2af75d7;\n          }\n        }\n        else if (iVar3 == -0x3d71dbf7) {\n          local_38 = *(char **)(param_2 + 8);\n          local_40 = strlen(local_38);\n          unaff_R13D = 0;\n          unaff_R15 = 0;\n          iVar1 = -0x40941c1f;\n        }\n      }\n      else if (iVar3 == -0x3b286ce0) {\n        iVar1 = -0x5e1a634b;\n      }\n      else if (iVar3 == -0x385ff9f2) {\n        unaff_R13D = 8;\n        iVar1 = -0x9fcd4a0;\n      }\n      else if (iVar3 == -0x36740b0f) {\n        unaff_R13D = 7;\n        iVar1 = 0x54d165be;\n      }\n      goto LAB_001011a0;\n    }\n    if (-0x3380965b < iVar3) {\n      if (iVar3 == -0x3380965a) {\n        iVar1 = 0x749409e5;\n      }\n      else if (iVar3 == -0x2dfb1007) {\n        iVar1 = 0x7f2ebd84;\n        local_50 = unaff_R12D;\n      }\n      else if (iVar3 == -0x28359f59) {\n        __s = \"INVALID\";\n        if ((unaff_BL & 1) != 0) {\n          __s = \"VALID\";\n        }\n        puts(__s);\n        unaff_R12D = 1;\n        iVar1 = 0x4cf1a3b;\n      }\n      goto LAB_001011a0;\n    }\n    if (iVar3 == -0x344171f4) {\n      iVar1 = -0x79173759;\n      if (unaff_EBP < 1) {\n        iVar1 = -0x6db52997;\n      }\n      goto LAB_001011a0;\n    }\n    if (iVar3 != -0x34395998) goto LAB_001011a0;\n    bVar5 = unaff_R14B == 'E';\n    iVar1 = -0x514b2bcd;\n  }\n  if (bVar5) {\n    iVar1 = -0x71915d27;\n  }\n  goto LAB_001011a0;\n}\n\n", 
+   "signature": "undefined main(void)", 
+   "is_thunk": false, 
+   "size": 3418, 
+   "name": "main", 
+   "entry_point": "00101150"
+  }
+ ], 
+ "language": "x86:LE:64:default", 
+ "program": "prog06_number_fsm", 
+ "n_functions": 2, 
+ "strings": [
+  {
+   "address": "001002a8", 
+   "value": "/lib64/ld-linux-x86-64.so.2"
+  }, 
+  {
+   "address": "001003d1", 
+   "value": "puts"
+  }, 
+  {
+   "address": "001003d6", 
+   "value": "strlen"
+  }, 
+  {
+   "address": "001003dd", 
+   "value": "__cxa_finalize"
+  }, 
+  {
+   "address": "001003ec", 
+   "value": "__libc_start_main"
+  }, 
+  {
+   "address": "001003fe", 
+   "value": "libc.so.6"
+  }, 
+  {
+   "address": "00100408", 
+   "value": "GLIBC_2.2.5"
+  }, 
+  {
+   "address": "00100414", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": "00100430", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": "0010043f", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": "00102004", 
+   "value": "INVALID"
+  }, 
+  {
+   "address": "00102051", 
+   "value": "zR"
+  }, 
+  {
+   "address": "00102081", 
+   "value": "zR"
+  }, 
+  {
+   "address": ".comment::00000000", 
+   "value": "GCC: (Debian 10.2.1-6) 10.2.1 20210110"
+  }, 
+  {
+   "address": ".comment::00000027", 
+   "value": "clang version 16.0.0 (https://github.com/rust-lang/llvm-project 2b9c52f66815bb8d6ea74a4b26df3410602be9b0)"
+  }, 
+  {
+   "address": ".shstrtab::00000001", 
+   "value": ".symtab"
+  }, 
+  {
+   "address": ".shstrtab::00000009", 
+   "value": ".strtab"
+  }, 
+  {
+   "address": ".shstrtab::00000011", 
+   "value": ".shstrtab"
+  }, 
+  {
+   "address": ".shstrtab::0000001b", 
+   "value": ".interp"
+  }, 
+  {
+   "address": ".shstrtab::00000023", 
+   "value": ".note.ABI-tag"
+  }, 
+  {
+   "address": ".shstrtab::00000031", 
+   "value": ".gnu.hash"
+  }, 
+  {
+   "address": ".shstrtab::0000003b", 
+   "value": ".dynsym"
+  }, 
+  {
+   "address": ".shstrtab::00000043", 
+   "value": ".dynstr"
+  }, 
+  {
+   "address": ".shstrtab::0000004b", 
+   "value": ".gnu.version"
+  }, 
+  {
+   "address": ".shstrtab::00000058", 
+   "value": ".gnu.version_r"
+  }, 
+  {
+   "address": ".shstrtab::00000067", 
+   "value": ".rela.dyn"
+  }, 
+  {
+   "address": ".shstrtab::00000071", 
+   "value": ".rela.plt"
+  }, 
+  {
+   "address": ".shstrtab::0000007b", 
+   "value": ".init"
+  }, 
+  {
+   "address": ".shstrtab::00000081", 
+   "value": ".plt.got"
+  }, 
+  {
+   "address": ".shstrtab::0000008a", 
+   "value": ".text"
+  }, 
+  {
+   "address": ".shstrtab::00000090", 
+   "value": ".fini"
+  }, 
+  {
+   "address": ".shstrtab::00000096", 
+   "value": ".rodata"
+  }, 
+  {
+   "address": ".shstrtab::0000009e", 
+   "value": ".eh_frame_hdr"
+  }, 
+  {
+   "address": ".shstrtab::000000ac", 
+   "value": ".eh_frame"
+  }, 
+  {
+   "address": ".shstrtab::000000b6", 
+   "value": ".init_array"
+  }, 
+  {
+   "address": ".shstrtab::000000c2", 
+   "value": ".fini_array"
+  }, 
+  {
+   "address": ".shstrtab::000000ce", 
+   "value": ".dynamic"
+  }, 
+  {
+   "address": ".shstrtab::000000d7", 
+   "value": ".got.plt"
+  }, 
+  {
+   "address": ".shstrtab::000000e0", 
+   "value": ".data"
+  }, 
+  {
+   "address": ".shstrtab::000000e6", 
+   "value": ".bss"
+  }, 
+  {
+   "address": ".shstrtab::000000eb", 
+   "value": ".comment"
+  }, 
+  {
+   "address": ".strtab::00000001", 
+   "value": "crtstuff.c"
+  }, 
+  {
+   "address": ".strtab::0000000c", 
+   "value": "deregister_tm_clones"
+  }, 
+  {
+   "address": ".strtab::00000021", 
+   "value": "__do_global_dtors_aux"
+  }, 
+  {
+   "address": ".strtab::00000037", 
+   "value": "completed.0"
+  }, 
+  {
+   "address": ".strtab::00000043", 
+   "value": "__do_global_dtors_aux_fini_array_entry"
+  }, 
+  {
+   "address": ".strtab::0000006a", 
+   "value": "frame_dummy"
+  }, 
+  {
+   "address": ".strtab::00000076", 
+   "value": "__frame_dummy_init_array_entry"
+  }, 
+  {
+   "address": ".strtab::00000095", 
+   "value": "prog06_number_fsm.c"
+  }, 
+  {
+   "address": ".strtab::000000a9", 
+   "value": "__FRAME_END__"
+  }, 
+  {
+   "address": ".strtab::000000b7", 
+   "value": "__init_array_end"
+  }, 
+  {
+   "address": ".strtab::000000c8", 
+   "value": "_DYNAMIC"
+  }, 
+  {
+   "address": ".strtab::000000d1", 
+   "value": "__init_array_start"
+  }, 
+  {
+   "address": ".strtab::000000e4", 
+   "value": "__GNU_EH_FRAME_HDR"
+  }, 
+  {
+   "address": ".strtab::000000f7", 
+   "value": "_GLOBAL_OFFSET_TABLE_"
+  }, 
+  {
+   "address": ".strtab::0000010d", 
+   "value": "__libc_csu_fini"
+  }, 
+  {
+   "address": ".strtab::0000011d", 
+   "value": "_ITM_deregisterTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000139", 
+   "value": "puts@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::0000014a", 
+   "value": "_edata"
+  }, 
+  {
+   "address": ".strtab::00000151", 
+   "value": "strlen@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000164", 
+   "value": "__libc_start_main@GLIBC_2.2.5"
+  }, 
+  {
+   "address": ".strtab::00000182", 
+   "value": "__data_start"
+  }, 
+  {
+   "address": ".strtab::0000018f", 
+   "value": "__gmon_start__"
+  }, 
+  {
+   "address": ".strtab::0000019e", 
+   "value": "__dso_handle"
+  }, 
+  {
+   "address": ".strtab::000001ab", 
+   "value": "_IO_stdin_used"
+  }, 
+  {
+   "address": ".strtab::000001ba", 
+   "value": "__libc_csu_init"
+  }, 
+  {
+   "address": ".strtab::000001ca", 
+   "value": "__bss_start"
+  }, 
+  {
+   "address": ".strtab::000001d6", 
+   "value": "main"
+  }, 
+  {
+   "address": ".strtab::000001db", 
+   "value": "__TMC_END__"
+  }, 
+  {
+   "address": ".strtab::000001e7", 
+   "value": "_ITM_registerTMCloneTable"
+  }, 
+  {
+   "address": ".strtab::00000201", 
+   "value": "__cxa_finalize@GLIBC_2.2.5"
+  }
+ ]
+}

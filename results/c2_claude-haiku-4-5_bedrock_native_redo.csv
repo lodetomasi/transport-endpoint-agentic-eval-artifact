@@ -1,0 +1,5 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog24_query_string_parser,1,0.6000,3,5,True,False,2684,12,0.041766,33771,1599,us.anthropic.claude-haiku-4-5-20251001-v1:0,bedrock,18.7,[],2026-08-15T13:28:24,claude-haiku-4-5,bedrock,native
+prog35_perfect_numbers,1,1.0000,5,5,True,False,1212,12,0.012034,7579,891,us.anthropic.claude-haiku-4-5-20251001-v1:0,bedrock,11.2,[],2026-08-15T13:28:35,claude-haiku-4-5,bedrock,native
+prog40_bisection_root,1,1.0000,5,5,True,False,781,12,0.021399,15454,1189,us.anthropic.claude-haiku-4-5-20251001-v1:0,bedrock,17.1,[],2026-08-15T13:28:52,claude-haiku-4-5,bedrock,native
+prog57_elevator_fsm,1,0.8000,4,5,True,False,1184,12,0.011389,6919,894,us.anthropic.claude-haiku-4-5-20251001-v1:0,bedrock,11.0,[],2026-08-15T13:29:03,claude-haiku-4-5,bedrock,native

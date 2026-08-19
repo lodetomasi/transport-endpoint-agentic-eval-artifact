@@ -1,0 +1,7 @@
+{"program": "prog55_connected_components", "tests": [
+  {"id": 1, "args": ["0", "1", "1", "2", "3", "4"], "stdin": "", "expected_stdout": "5: {0,1,2} {3,4} {5} {6} {7}\n"},
+  {"id": 2, "args": ["0", "7"], "stdin": "", "expected_stdout": "7: {0,7} {1} {2} {3} {4} {5} {6}\n"},
+  {"id": 3, "args": [], "stdin": "", "expected_stdout": "8: {0} {1} {2} {3} {4} {5} {6} {7}\n"},
+  {"id": 4, "args": ["0", "1", "1", "2", "2", "3", "3", "4", "4", "5", "5", "6", "6", "7"], "stdin": "", "expected_stdout": "1: {0,1,2,3,4,5,6,7}\n"},
+  {"id": 5, "args": ["0", "1", "2"], "stdin": "", "expected_stdout": "INVALID_INPUT\n"}
+]}

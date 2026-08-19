@@ -1,0 +1,7 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog21_date_validator,1,1.0000,5,5,True,False,1896,12,0.003006,4825,3804,openai.gpt-oss-120b-1:0,bedrock,20.7,[],2026-08-16T23:42:06,gpt-oss-120b,bedrock,text
+prog23_longest_common_prefix,1,0.4000,2,5,True,False,1424,12,0.003524,7171,4080,openai.gpt-oss-120b-1:0,bedrock,30.1,[],2026-08-16T23:42:36,gpt-oss-120b,bedrock,text
+prog32_prime_factorization,1,0.8000,4,5,True,False,1402,12,0.002581,3488,3430,openai.gpt-oss-120b-1:0,bedrock,60.2,[],2026-08-16T23:43:36,gpt-oss-120b,bedrock,text
+prog36_pascal_triangle,1,0.4000,2,5,True,False,1453,12,0.004261,5818,5648,openai.gpt-oss-120b-1:0,bedrock,37.8,[],2026-08-16T23:44:14,gpt-oss-120b,bedrock,text
+prog39_horner,1,0.2000,1,5,True,False,410,12,0.004338,7749,5292,openai.gpt-oss-120b-1:0,bedrock,67.8,[],2026-08-16T23:45:22,gpt-oss-120b,bedrock,text
+prog41_series_sum,1,1.0000,5,5,True,False,2833,12,0.006885,10430,8868,openai.gpt-oss-120b-1:0,bedrock,186.8,[],2026-08-16T23:48:28,gpt-oss-120b,bedrock,text

@@ -1,0 +1,2 @@
+binary_id,run_id,pass_rate,n_passed,n_tests,compiled,infra_failure,candidate_chars,n_turns,cost_usd,in_tokens,out_tokens,model,provider,elapsed_s,error,timestamp,modello,infra,trasporto
+prog27_soundex,1,0.0000,0,5,True,False,1009,12,0.013920,18574,760,us.meta.llama3-3-70b-instruct-v1:0,bedrock,12.5,[],2026-08-16T23:48:41,llama-3.3-70b,bedrock,text

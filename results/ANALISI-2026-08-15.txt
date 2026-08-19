@@ -1,0 +1,32 @@
+<home>/Library/Python/3.9/lib/python/site-packages/statsmodels/regression/mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+  warnings.warn(msg, ConvergenceWarning)
+  id   contrasto                                          K    delta                IC95         p
+  T1   gpt-oss-120b — testo vs nativo su databricks      45  -6.39pp        [-12.2,-0.5]    0.0289
+  T2   llama-3.3-70b — testo vs nativo su databricks     45  +3.50pp         [-0.6,+7.6]    0.0893
+  T3   claude-haiku-4-5 — testo vs nativo su databrick   45 -10.44pp        [-19.0,-1.9]    0.0143
+  T4   claude-sonnet-4-5 — testo vs nativo su databric   45  +2.11pp         [-1.6,+5.8]    0.2529
+  T5   gpt-oss-120b — bedrock vs databricks, trasporto   45  +3.44pp         [-0.6,+7.5]    0.0862
+  T6   llama-3.3-70b — bedrock vs databricks, trasport   45  -8.89pp        [-16.3,-1.4]    0.0169
+  T7   claude-haiku-4-5 — bedrock vs databricks, trasp   45  -0.06pp         [-0.2,+0.1]    0.3201
+  T8   claude-sonnet-4-5 — bedrock vs databricks, tras   45  -0.72pp         [-2.6,+1.2]    0.4443
+  T9   eterogeneita' dell'effetto trasporto fra modell  720        —                   —    0.0661
+       ^ test esatto sulle stesse quantita'                                                 0.0017
+  T10  interazione trasporto x infrastruttura           720  -3.85pp                   —    0.3830
+       ^ test esatto sulle stesse quantita'                                                 0.0258
+
+  Holm step-down, m=10 FISSO (0 non calcolabili restano nella famiglia e non abbassano nessuna soglia)
+    rango  1  T3    p=0.0143  soglia=0.0050  no
+    rango  2  T6    p=0.0169  soglia=0.0056  no
+    rango  3  T1    p=0.0289  soglia=0.0063  no
+    rango  4  T9    p=0.0661  soglia=0.0071  no
+    rango  5  T5    p=0.0862  soglia=0.0083  no
+    rango  6  T2    p=0.0893  soglia=0.0100  no
+    rango  7  T4    p=0.2529  soglia=0.0125  no
+    rango  8  T7    p=0.3201  soglia=0.0167  no
+    rango  9  T10   p=0.3830  soglia=0.0250  no
+    rango 10  T8    p=0.4443  soglia=0.0500  no
+
+  Fuori dalla banda del falsificatore (±3pp, IC95 che la esclude):
+    nessuno. NB: K=45 non alimenta un test di equivalenza a 3pp (serve K>=99),
+    quindi questo NON e' 'nessuna differenza': e' 'l'IC esclude effetti sopra
+    4,9pp'. La distinzione e' pre-registrata, non scelta adesso.

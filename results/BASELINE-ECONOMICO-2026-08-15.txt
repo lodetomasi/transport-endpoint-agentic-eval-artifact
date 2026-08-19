@@ -1,0 +1,18 @@
+Baseline economico — pass-rate delle run che non hanno chiamato nessun tool
+
+  run senza nessuna tool call :    58
+  run con almeno una          :  5747
+
+  pass-rate medio SENZA tool call : 0.1103   mediana 0.00   massimo 0.40
+  pass-rate medio CON tool call   : 0.6358
+
+  guadagno dell'aver guardato il binario: +0.5254
+
+  I binari su cui si prende qualcosa senza guardare (il pavimento non e' zero):
+    prog34_fibonacci_memo              0.40 su 16 run
+
+  LETTURA. Il pavimento esiste e non e' zero: su alcuni binari il modello prende
+  punti senza aver letto una riga di decompilato, perche' cinque test unitari
+  premiano anche una firma di funzione plausibile. Ma il confronto e' netto:
+  0.11 contro 0.64. La metrica non e' vuota — e' un lower bound
+  con un pavimento misurato, che e' esattamente come va riportata.

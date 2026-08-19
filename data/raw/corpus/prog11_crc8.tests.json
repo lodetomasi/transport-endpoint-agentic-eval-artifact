@@ -1,0 +1,7 @@
+{"program": "prog11_crc8", "tests": [
+  {"id": 1, "args": ["123456789"], "stdin": "", "expected_stdout": "F4\n"},
+  {"id": 2, "args": ["A"], "stdin": "", "expected_stdout": "C0\n"},
+  {"id": 3, "args": [""], "stdin": "", "expected_stdout": "00\n"},
+  {"id": 4, "args": ["The quick brown fox jumps over the lazy dog"], "stdin": "", "expected_stdout": "C1\n"},
+  {"id": 5, "args": ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], "stdin": "", "expected_stdout": "TOO_LONG\n"}
+]}

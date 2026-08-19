@@ -1,0 +1,7 @@
+{"program": "prog42_collatz", "tests": [
+  {"id": 1, "args": ["27"], "stdin": "", "expected_stdout": "n=27 steps=111\n"},
+  {"id": 2, "args": ["1"], "stdin": "", "expected_stdout": "n=1 steps=0\n"},
+  {"id": 3, "args": ["2"], "stdin": "", "expected_stdout": "n=2 steps=1\n"},
+  {"id": 4, "args": ["999999999"], "stdin": "", "expected_stdout": "n=999999999 steps=361\n"},
+  {"id": 5, "args": ["0"], "stdin": "", "expected_stdout": "BAD_INPUT\n"}
+]}
